@@ -49,14 +49,6 @@ Nếu tweak hữu ích, hãy ủng hộ để duy trì repo.
 
 VietQR: scan the code on the [homepage](https://tientrieu19892025.github.io/#donate).
 
-## Upload a new `.deb`
-
-1. Drop files into `debs/` using `package_version_architecture.deb`
-2. Run `python3 scripts/update-repo.py`
-3. `git add -A && git commit -m "Add tweak" && git push`
-
-Or rebuild from local Theos trees in `~/Documents/code/*/packages`.
-
 ## License
 
 MIT — Jinken Nguyen - 1989
