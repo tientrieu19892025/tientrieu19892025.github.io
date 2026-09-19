@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jinken Repo — Jinken Nguyen - 1989</title>
+<meta name="description" content="Cydia / Sileo / Zebra repo. Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 Nguyễn Tiến Triều.">
+<link rel="icon" href="CydiaIcon.png">
+<style>
+:root {
+  --bg:#07080f; --card:#101826cc; --line:rgba(255,255,255,.1);
+  --text:#eef2ff; --muted:#93c5fd; --accent:#38bdf8; --good:#34d399;
+}
+* {box-sizing:border-box}
+body {
+  margin:0; font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
+  background:var(--bg); color:var(--text);
+}
+.hero {
+  position:relative; min-height:280px; padding:48px 20px 32px;
+  background:url("assets/banner.jpg") center/cover no-repeat;
+}
+.hero::after {
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(7,8,15,.25), rgba(7,8,15,.92));
+}
+.hero-inner {position:relative; z-index:1; max-width:980px; margin:0 auto}
+.badge {
+  display:inline-block; padding:4px 10px; border-radius:999px;
+  border:1px solid rgba(56,189,248,.4); color:var(--accent); font-size:12px;
+  letter-spacing:.08em; text-transform:uppercase;
+}
+h1 {font-size:clamp(28px,5vw,44px); margin:12px 0 6px}
+.sub {color:var(--muted); max-width:640px}
+.wrap {max-width:980px; margin:0 auto; padding:0 20px 64px}
+.row {display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 8px}
+.btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:650;
+  border:1px solid var(--line); color:var(--text); background:#0b1220aa;
+}
+.btn.primary {background:var(--accent); color:#042033; border-color:transparent}
+.grid {display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; margin-top:18px}
+.card {
+  background:var(--card); backdrop-filter:blur(16px);
+  border:1px solid var(--line); border-radius:16px; padding:16px;
+}
+.card h3 {margin:0 0 4px; font-size:18px}
+.meta {color:var(--muted); font-size:13px; margin:0 0 8px}
+.en {color:#cbd5e1; font-size:14px}
+.more {color:var(--accent); text-decoration:none; font-weight:600}
+.donate {
+  display:grid; grid-template-columns:180px 1fr; gap:20px; align-items:center;
+}
+.donate img {width:180px; background:#fff; border-radius:12px}
+.copy {
+  cursor:pointer; border:1px dashed rgba(56,189,248,.5); border-radius:10px;
+  padding:8px 10px; display:inline-block; margin:4px 0; color:var(--accent);
+}
+h2 {margin:36px 0 10px}
+footer {color:#64748b; font-size:13px; margin-top:40px}
+code.src {
+  display:block; background:#0b1220; border-radius:10px; padding:10px 12px;
+  overflow:auto; color:#7dd3fc; margin:8px 0 16px;
+}
+@media (max-width:640px) {
+  .donate {grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <span class="badge">Cydia · Sileo · Zebra</span>
+    <h1>Jinken Repo</h1>
+    <p class="sub">Tweaks jailbreak bởi <strong>Jinken Nguyen - 1989</strong>. Rootless, rootful và RootHide. Miễn phí — nếu hữu ích, hãy donate.</p>
+    <div class="row">
+      <a class="btn primary" id="add-sileo" href="#">Thêm vào Sileo</a>
+      <a class="btn" id="add-zebra" href="#">Thêm vào Zebra</a>
+      <a class="btn" href="#donate">Donate</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <h2>Thêm source</h2>
+  <p>Sileo / Zebra / Cydia → Sources → + → dán URL:</p>
+  <code class="src" id="source-url">https://tientrieu19892025.github.io</code>
+  <p class="en">Add this URL as a package source, then install one package per tweak matching your jailbreak (rootless / rootful / RootHide).</p>
+
+  <h2>Tweaks</h2>
+  <div class="grid">
+    
+<article class="card">
+  <h3>AdShield</h3>
+  <p class="meta">1.4.0 · rootful · rootless · RootHide</p>
+  <p>Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.</p>
+  <p class="en">System-wide ad blocker for apps, Safari, WebViews and video ads.</p>
+  <a class="more" href="depictions/com.jinkennguyen.adshield/">Chi tiết</a>
+</article>
+<article class="card">
+  <h3>DuoFrame</h3>
+  <p class="meta">3.4.9 · rootful · rootless · RootHide</p>
+  <p>Màn hình chính iOS 27: khung kính lỏng cho status, icon grid và dock.</p>
+  <p class="en">iOS 27 Home Screen: liquid-glass frames for status, icon grid and dock.</p>
+  <a class="more" href="depictions/com.jinkennguyen.duoframe/">Chi tiết</a>
+</article>
+<article class="card">
+  <h3>LookGlass</h3>
+  <p class="meta">3.1.3 · rootful · rootless · RootHide</p>
+  <p>Ô tìm kính lỏng trên màn hình chính. Google, Wikipedia, nhạc, phim, YouTube.</p>
+  <p class="en">Liquid-glass Home Screen search. Google, Wikipedia, music, films, YouTube.</p>
+  <a class="more" href="depictions/com.jinkennguyen.lookglass/">Chi tiết</a>
+</article>
+  </div>
+
+  <h2 id="credit">Credit</h2>
+  <div class="card">
+    <p><strong>Tác giả / Author:</strong> Jinken Nguyen - 1989</p>
+    <p><strong>Maintainer:</strong> Jinken Nguyen - 1989</p>
+    <p>Mọi tweak trong repo này do Jinken Nguyen - 1989 phát triển. Không liên kết với Apple.</p>
+    <p class="en">All tweaks in this repo are by Jinken Nguyen - 1989. Not affiliated with Apple.</p>
+  </div>
+
+  <h2 id="donate">Donate</h2>
+  <div class="card donate">
+    <img src="assets/vietqr.png" alt="VietQR MB Bank 0345140889 Nguyễn Tiến Triều">
+    <div>
+      <p>Nếu thấy tweak hữu ích, hãy ủng hộ để duy trì và phát triển repo.</p>
+      <p><strong>Ngân hàng:</strong> MB Bank<br>
+      <strong>Chủ TK:</strong> Nguyễn Tiến Triều<br>
+      <strong>STK:</strong> <span class="copy" data-copy="0345140889">0345140889 · copy</span><br>
+      <strong>Nội dung:</strong> <span class="copy" data-copy="Donate Jinken Nguyen 1989">Donate Jinken Nguyen 1989 · copy</span></p>
+      <p class="en">MB Bank · 0345140889 · Nguyen Tien Trieu</p>
+    </div>
+  </div>
+
+  <footer>
+    Credit: Jinken Nguyen - 1989 · Donate: MB Bank 0345140889 Nguyễn Tiến Triều<br>
+    MIT License · iOS 14+ · rootless / rootful / RootHide
+  </footer>
+</main>
+<script>
+const base = location.origin + location.pathname.replace(/index\.html$/, "").replace(/\/$/, "");
+const src = base + "/";
+document.getElementById("source-url").textContent = src;
+document.getElementById("add-sileo").href = "sileo://source/" + src;
+document.getElementById("add-zebra").href = "zbra://sources/add/" + src;
+document.querySelectorAll(".copy").forEach(el => {
+  el.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(el.dataset.copy);
+      el.textContent = el.dataset.copy + " · đã copy";
+    } catch (e) {
+      alert(el.dataset.copy);
+    }
+  });
+});
+</script>
+</body>
+</html>

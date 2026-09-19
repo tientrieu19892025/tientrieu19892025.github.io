@@ -1,0 +1,78 @@
+Jinken Repo
+Credit: Jinken Nguyen - 1989
+Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+
+============================================================
+1. Thêm source trên iPhone (Sileo / Zebra / Cydia)
+============================================================
+URL:
+
+  https://tientrieu19892025.github.io
+
+Sileo: Sources → + → dán URL
+Zebra: Sources → + → dán URL
+Hoặc mở trang web repo trên Safari rồi bấm "Thêm vào Sileo".
+
+Cài ĐÚNG 1 file theo loại jailbreak:
+  iphoneos-arm64   = rootless (Dopamine, palera1n rootless)
+  iphoneos-arm     = rootful  (unc0ver, checkra1n, palera1n rootful)
+  iphoneos-arm64e  = RootHide (Dopamine-roothide / RootHide Bootstrap)
+
+Sau khi cài: Respring. Mở Cài đặt → tên tweak.
+
+============================================================
+2. Credit
+============================================================
+Tác giả / Maintainer: Jinken Nguyen - 1989
+Mọi tweak trong repo này do Jinken Nguyen - 1989 phát triển.
+Không liên kết với Apple.
+
+============================================================
+3. Donate
+============================================================
+Ngân hàng : MB Bank
+STK       : 0345140889
+Chủ TK    : Nguyễn Tiến Triều
+Nội dung  : Donate Jinken Nguyen 1989
+
+Quét VietQR trên trang chủ repo (#donate).
+
+============================================================
+4. Đưa repo lên GitHub (một lần)
+============================================================
+GitHub: tientrieu19892025
+Repo:   tientrieu19892025.github.io
+Pages:  https://tientrieu19892025.github.io
+
+1. Đăng nhập CLI (nếu chưa):
+
+     export PATH="$HOME/.local/bin:$PATH"
+     gh auth login --hostname github.com --git-protocol https --web
+
+2. Đẩy repo lên GitHub Pages:
+
+     cd ~/Documents/code/jinkennguyen.github.io
+     zsh scripts/publish.sh
+
+3. Đợi 1–2 phút, mở https://tientrieu19892025.github.io
+
+============================================================
+5. Up thêm tweak .deb
+============================================================
+Cách A — từ project Theos (khuyên dùng):
+  Build 3 gói rootless / rootful / RootHide vào packages/
+  rồi:
+
+     python3 scripts/update-repo.py
+     git add -A
+     git commit -m "Add/update <tên tweak>"
+     git push
+
+Cách B — thả file thủ công:
+  Copy .deb vào debs/ với tên:
+     package_version_architecture.deb
+  ví dụ:
+     com.jinkennguyen.miraos_2.0.0_iphoneos-arm64.deb
+  rồi chạy python3 scripts/update-repo.py và git push.
+
+IPA (TrollStore / sideload) bỏ vào extras/.

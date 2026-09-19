@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#38BDF8",
+  "headerImage": "https://tientrieu19892025.github.io/assets/banner.jpg",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "DuoFrame",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**DuoFrame** — Màn hình chính iOS 27: khung kính lỏng cho status, icon grid và dock.\n\niOS 27 Home Screen: liquid-glass frames for status, icon grid and dock.\n\n**Phiên bản / Version:** 3.1.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → DuoFrame**.\n\nIf you find this tweak useful, please donate via **MB Bank - 0345140889 - Nguyễn Tiến Triều**.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "3.1.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Jinken Nguyen - 1989"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Donate**  \nMB Bank - 0345140889 - Nguyễn Tiến Triều  \nQuét VietQR trên trang repo / scan the QR on the repo site.",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "3.1.0",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "DuoFrame 3.1.0 — hướng dẫn cài\n================================\n\nCredit: Jinken Nguyen - 1989\nDonate: MB Bank - 0345140889 - Nguyễn Tiến Triều\n\nChọn ĐÚNG một file, khớp loại jailbreak:\n\n  Rootless (Dopamine, palera1n rootless)\n    → packages/DuoFrame-rootless.deb   (iphoneos-arm64)\n\n  Rootful (unc0ver, checkra1n, palera1n rootful)\n    → packages/DuoFrame-rootful.deb    (iphoneos-arm)\n\n  RootHide / Bootstrap\n    → packages/DuoFrame-roothide.deb   (iphoneos-arm64e)\n\nCài bằng Sileo / Zebra / Filza. Nếu báo không cài được: gỡ bản cũ,\nchọn đúng file ở trên, cài lại. KHÔNG cài nhầm rootless lên máy rootful.\n\nSau khi cài: Respring. Mở Cài đặt → DuoFrame.\nBấm preset đời máy (SE → Pro Max, tai thỏ → Dynamic Island) — chỉ đổi thanh status,\nkhông đụng lưới icon / dock. Hoặc \"Máy này (tự động)\" để khớp màn hình đang dùng.\nKiểu thanh: một viên / hai cánh / ôm Island / mảnh / hai tầng.\nNên bấm \"Khôi phục an toàn\" nếu setup bị lệch.\n\nNếu treo máy / Safe Mode\n  1. Vào Safe Mode (Volume lên khi respring, tuỳ jailbreak).\n  2. Tạo tệp rỗng:\n       /var/mobile/Library/Preferences/.duoframe-disable\n  3. Respring. Tweak tắt. Xoá tệp khi muốn bật lại.\n\nChip trên thanh status mới chỉ gồm lối tắt mở được app\n(Lịch, Đồng hồ, Camera, Ảnh…). Bấm chip = mở app.\n\nKéo icon Home: giữ ~0,2 giây rồi kéo. Vuốt trang không bị cản.",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    },
+    {
+      "tabname": "Donate",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Donate",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Nếu tweak hữu ích, hãy ủng hộ để duy trì repo.\n\n- Ngân hàng: **MB Bank**\n- STK: **0345140889**\n- Chủ TK: **Nguyễn Tiến Triều**\n- Nội dung: `Donate Jinken Nguyen 1989`\n\nScan VietQR on the [repo homepage](https://tientrieu19892025.github.io#donate).",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

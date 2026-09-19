@@ -1,0 +1,1226 @@
+Package: com.jinkennguyen.adshield
+Version: 1.4.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 748
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.adshield_1.4.0_iphoneos-arm64.deb
+Size: 107192
+MD5sum: 557a7ccebda1a971f31530d2781b597c
+SHA1: 6999aba78d8af1d59f3ce63b612c6877910eaf78
+SHA256: 963d5aa0cde261a92dfd2b3536ec0062dba2860befff9f36e4e3135eef9228ec
+Section: Tweaks
+Description: AdShield 1.4.0 — ad blocker + full Sileo changelog. Credit: Jinken Nguyen - 1989.
+ AdShield chặn quảng cáo app, Safari, WebView và video trên máy jailbreak.
+ AdShield blocks ads in apps, Safari, WebViews and video on jailbroken iOS.
+ Credit: Jinken Nguyen - 1989.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.4.0 (2026-09-14)
+  * Hết Safe Mode / treo táo: không load WebKit/AVFoundation lúc boot, không link libroothide vào SpringBoard.
+  * Constructor C chặn SplashBoard, SpringBoard, Sileo và daemon hệ thống trước khi chạy Objective-C.
+  * Ổn định trên iOS 14–18 / RootHide / rootless / rootful.
+  * No more Safe Mode / Apple-logo hangs: WebKit/AVFoundation are not loaded at boot; libroothide is not linked into SpringBoard.
+  * A C constructor blocks SplashBoard, SpringBoard, Sileo and system daemons before any Objective-C runs.
+  * Stable on iOS 14–18 / RootHide / rootless / rootful.
+ .
+ 1.3.3 (2026-09-14)
+  * Sửa treo Sileo / SpringBoard: không còn inject vào SpringBoard, Sileo, Zebra, Cydia, WebKit.Networking.
+  * Gỡ hook NSURLSessionTask resume (gây deadlock CFNetwork).
+  * Bỏ quét view nặng trên didMoveToSuperview / viewDidAppear.
+  * Fixed Sileo / SpringBoard freezes: no longer injects into SpringBoard, Sileo, Zebra, Cydia, or WebKit.Networking.
+  * Removed NSURLSessionTask resume hook (CFNetwork deadlock).
+  * Dropped heavy view walking on didMoveToSuperview / viewDidAppear.
+ .
+ 1.3.2 (2026-09-14)
+  * Sửa QC thỉnh thoảng vẫn hiện: chặn cả process WebKit.Networking (Safari/WebView).
+  * Bơm lại CSS/JS nếu app gỡ script; quét WebView khi app mở lại.
+  * Load tweak cả khi app chưa có bundle ID; chặn NSURLSessionTask lúc resume.
+  * Fixed ads sometimes showing: also hooks WebKit.Networking (Safari/WebView traffic).
+  * Re-injects CSS/JS if the app strips scripts; rescans WebViews when returning to the app.
+  * Starts even if the bundle ID is not ready yet; cancels ad NSURLSessionTasks on resume.
+ .
+ 1.3.1 (2026-09-14)
+  * Sửa lỗi thỉnh thoảng không chặn được quảng cáo (tweak load lúc app chưa có bundle ID).
+  * Bơm lại CSS/JS khi WebView điều hướng; biên dịch content rule có retry.
+  * Hook SDK/IMA khi dylib quảng cáo load muộn; chặn download task và Safari View.
+  * Fixed ads sometimes slipping through when the tweak loaded before the app bundle ID was ready.
+  * Re-injects CSS/JS on WebView navigations and retries content-rule compile.
+  * Hooks ad SDKs/IMA if they load late; blocks download tasks and Safari View Service.
+ .
+ 1.3.0 (2026-09-14)
+  * Sileo hiện nhật ký mọi phiên bản khi xem/cài gói (mô tả + depiction native).
+  * Cài đặt → AdShield → Nhật ký phiên bản để theo dõi update trên máy.
+  * Đóng gói changelog Debian và trang depiction HTML cho Zebra/Cydia.
+  * Sileo now shows a full version history on the package page (description + native depiction).
+  * Settings → AdShield → Changelog to follow updates on-device.
+  * Ships a Debian changelog and an HTML depiction for Zebra/Cydia.
+ .
+ 1.2.2 (2026-09-14)
+  * Sửa Cài đặt tự thoát khi bấm App/Web trong Whitelist và Blacklist.
+  * Mở list bằng nút action + màn hình thường, không dùng detail PreferenceLoader.
+  * Fixed Settings crashing when opening App/Web in Whitelist and Blacklist.
+  * Lists open via button actions and a normal screen, not PreferenceLoader detail pages.
+ .
+ 1.2.1 (2026-09-14)
+  * Sửa crash PreferenceLoader khi mở whitelist/blacklist (chuyển sang PSListController).
+  * Fixed PreferenceLoader crash on whitelist/blacklist (PSListController).
+ .
+ 1.2.0 (2026-09-14)
+  * Whitelist: chọn app đã cài hoặc nhập domain để không chặn quảng cáo.
+  * Blacklist: thêm app luôn chặn (kể cả app Apple) và thêm host quảng cáo.
+  * Cài đặt → Tài trợ: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Whitelist: pick installed apps or domains that should keep ads.
+  * Blacklist: force-block extra apps (including Apple apps) and extra ad hosts.
+  * Settings → Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.1.1 (2026-09-14)
+  * Gói RootHide (iphoneos-arm64e) cho Dopamine-roothide / RootHide Bootstrap.
+  * Tự tìm jbroot nên prefs, relay plist và Respring chạy khi đường dẫn jailbreak bị random.
+  * RootHide package (iphoneos-arm64e) for Dopamine-roothide / RootHide Bootstrap.
+  * Runtime jbroot so prefs, relay plist and Respring work with a randomized jailbreak root.
+ .
+ 1.1.0 (2026-09-13)
+  * Chặn video quảng cáo: Google IMA / VAST, URL player native, skip preroll YouTube trên web.
+  * Bơm CSS/JS lúc trang bắt đầu tải trên Safari, SFSafariViewController và WebView trong app.
+  * MutationObserver và nút Skip Ad cho quảng cáo chèn muộn.
+  * Video ads: Google IMA / VAST, native player ad URLs, YouTube web preroll skip.
+  * CSS/JS at document-start on Safari, SFSafariViewController and in-app WebViews.
+  * MutationObserver and Skip Ad tap for late-inserted units.
+ .
+ 1.0.0 (2026-09-13)
+  * Bản đầu: chặn request mạng, SDK (AdMob, FAN, AppLovin, Unity, ironSource, …), WebView và banner native.
+  * Gói rootless (Dopamine) và rootful.
+  * Initial release: network requests, ad SDKs (AdMob, FAN, AppLovin, Unity, ironSource, …), WebView and native banners.
+  * Rootless (Dopamine) and rootful packages.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: AdShield
+Sileodepiction: file:///var/jb/Library/AdShield/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.adshield/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.adshield/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.adshield.png
+
+Package: com.jinkennguyen.adshield
+Version: 1.4.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 748
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.adshield_1.4.0_iphoneos-arm64e.deb
+Size: 106726
+MD5sum: 758ee9969f56398ee447e1b5c1051511
+SHA1: f2109024c5605fda2b66179948ec49782d9aa78f
+SHA256: ec2b1b967872c191f4215e7511ac2e3ba897e5cf80916763ef5cbe60081e032c
+Section: Tweaks
+Description: AdShield 1.4.0 — ad blocker + full Sileo changelog. Credit: Jinken Nguyen - 1989.
+ AdShield chặn quảng cáo app, Safari, WebView và video trên máy jailbreak.
+ AdShield blocks ads in apps, Safari, WebViews and video on jailbroken iOS.
+ Credit: Jinken Nguyen - 1989.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.4.0 (2026-09-14)
+  * Hết Safe Mode / treo táo: không load WebKit/AVFoundation lúc boot, không link libroothide vào SpringBoard.
+  * Constructor C chặn SplashBoard, SpringBoard, Sileo và daemon hệ thống trước khi chạy Objective-C.
+  * Ổn định trên iOS 14–18 / RootHide / rootless / rootful.
+  * No more Safe Mode / Apple-logo hangs: WebKit/AVFoundation are not loaded at boot; libroothide is not linked into SpringBoard.
+  * A C constructor blocks SplashBoard, SpringBoard, Sileo and system daemons before any Objective-C runs.
+  * Stable on iOS 14–18 / RootHide / rootless / rootful.
+ .
+ 1.3.3 (2026-09-14)
+  * Sửa treo Sileo / SpringBoard: không còn inject vào SpringBoard, Sileo, Zebra, Cydia, WebKit.Networking.
+  * Gỡ hook NSURLSessionTask resume (gây deadlock CFNetwork).
+  * Bỏ quét view nặng trên didMoveToSuperview / viewDidAppear.
+  * Fixed Sileo / SpringBoard freezes: no longer injects into SpringBoard, Sileo, Zebra, Cydia, or WebKit.Networking.
+  * Removed NSURLSessionTask resume hook (CFNetwork deadlock).
+  * Dropped heavy view walking on didMoveToSuperview / viewDidAppear.
+ .
+ 1.3.2 (2026-09-14)
+  * Sửa QC thỉnh thoảng vẫn hiện: chặn cả process WebKit.Networking (Safari/WebView).
+  * Bơm lại CSS/JS nếu app gỡ script; quét WebView khi app mở lại.
+  * Load tweak cả khi app chưa có bundle ID; chặn NSURLSessionTask lúc resume.
+  * Fixed ads sometimes showing: also hooks WebKit.Networking (Safari/WebView traffic).
+  * Re-injects CSS/JS if the app strips scripts; rescans WebViews when returning to the app.
+  * Starts even if the bundle ID is not ready yet; cancels ad NSURLSessionTasks on resume.
+ .
+ 1.3.1 (2026-09-14)
+  * Sửa lỗi thỉnh thoảng không chặn được quảng cáo (tweak load lúc app chưa có bundle ID).
+  * Bơm lại CSS/JS khi WebView điều hướng; biên dịch content rule có retry.
+  * Hook SDK/IMA khi dylib quảng cáo load muộn; chặn download task và Safari View.
+  * Fixed ads sometimes slipping through when the tweak loaded before the app bundle ID was ready.
+  * Re-injects CSS/JS on WebView navigations and retries content-rule compile.
+  * Hooks ad SDKs/IMA if they load late; blocks download tasks and Safari View Service.
+ .
+ 1.3.0 (2026-09-14)
+  * Sileo hiện nhật ký mọi phiên bản khi xem/cài gói (mô tả + depiction native).
+  * Cài đặt → AdShield → Nhật ký phiên bản để theo dõi update trên máy.
+  * Đóng gói changelog Debian và trang depiction HTML cho Zebra/Cydia.
+  * Sileo now shows a full version history on the package page (description + native depiction).
+  * Settings → AdShield → Changelog to follow updates on-device.
+  * Ships a Debian changelog and an HTML depiction for Zebra/Cydia.
+ .
+ 1.2.2 (2026-09-14)
+  * Sửa Cài đặt tự thoát khi bấm App/Web trong Whitelist và Blacklist.
+  * Mở list bằng nút action + màn hình thường, không dùng detail PreferenceLoader.
+  * Fixed Settings crashing when opening App/Web in Whitelist and Blacklist.
+  * Lists open via button actions and a normal screen, not PreferenceLoader detail pages.
+ .
+ 1.2.1 (2026-09-14)
+  * Sửa crash PreferenceLoader khi mở whitelist/blacklist (chuyển sang PSListController).
+  * Fixed PreferenceLoader crash on whitelist/blacklist (PSListController).
+ .
+ 1.2.0 (2026-09-14)
+  * Whitelist: chọn app đã cài hoặc nhập domain để không chặn quảng cáo.
+  * Blacklist: thêm app luôn chặn (kể cả app Apple) và thêm host quảng cáo.
+  * Cài đặt → Tài trợ: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Whitelist: pick installed apps or domains that should keep ads.
+  * Blacklist: force-block extra apps (including Apple apps) and extra ad hosts.
+  * Settings → Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.1.1 (2026-09-14)
+  * Gói RootHide (iphoneos-arm64e) cho Dopamine-roothide / RootHide Bootstrap.
+  * Tự tìm jbroot nên prefs, relay plist và Respring chạy khi đường dẫn jailbreak bị random.
+  * RootHide package (iphoneos-arm64e) for Dopamine-roothide / RootHide Bootstrap.
+  * Runtime jbroot so prefs, relay plist and Respring work with a randomized jailbreak root.
+ .
+ 1.1.0 (2026-09-13)
+  * Chặn video quảng cáo: Google IMA / VAST, URL player native, skip preroll YouTube trên web.
+  * Bơm CSS/JS lúc trang bắt đầu tải trên Safari, SFSafariViewController và WebView trong app.
+  * MutationObserver và nút Skip Ad cho quảng cáo chèn muộn.
+  * Video ads: Google IMA / VAST, native player ad URLs, YouTube web preroll skip.
+  * CSS/JS at document-start on Safari, SFSafariViewController and in-app WebViews.
+  * MutationObserver and Skip Ad tap for late-inserted units.
+ .
+ 1.0.0 (2026-09-13)
+  * Bản đầu: chặn request mạng, SDK (AdMob, FAN, AppLovin, Unity, ironSource, …), WebView và banner native.
+  * Gói rootless (Dopamine) và rootful.
+  * Initial release: network requests, ad SDKs (AdMob, FAN, AppLovin, Unity, ironSource, …), WebView and native banners.
+  * Rootless (Dopamine) and rootful packages.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: AdShield
+Sileodepiction: file:///Library/AdShield/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.adshield/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.adshield/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.adshield.png
+
+Package: com.jinkennguyen.adshield
+Version: 1.4.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 748
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.adshield_1.4.0_iphoneos-arm.deb
+Size: 106942
+MD5sum: 44b51ba84e95d9ff1e3d25f563ea7ae5
+SHA1: 6c49d97c4fa9d32545aed9b6af2d5975a0cdeb92
+SHA256: 3ad1a55b6fe515b8068dd13b96d92af38fe3805dce59b2b94a9f616c5e369754
+Section: Tweaks
+Description: AdShield 1.4.0 — ad blocker + full Sileo changelog. Credit: Jinken Nguyen - 1989.
+ AdShield chặn quảng cáo app, Safari, WebView và video trên máy jailbreak.
+ AdShield blocks ads in apps, Safari, WebViews and video on jailbroken iOS.
+ Credit: Jinken Nguyen - 1989.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.4.0 (2026-09-14)
+  * Hết Safe Mode / treo táo: không load WebKit/AVFoundation lúc boot, không link libroothide vào SpringBoard.
+  * Constructor C chặn SplashBoard, SpringBoard, Sileo và daemon hệ thống trước khi chạy Objective-C.
+  * Ổn định trên iOS 14–18 / RootHide / rootless / rootful.
+  * No more Safe Mode / Apple-logo hangs: WebKit/AVFoundation are not loaded at boot; libroothide is not linked into SpringBoard.
+  * A C constructor blocks SplashBoard, SpringBoard, Sileo and system daemons before any Objective-C runs.
+  * Stable on iOS 14–18 / RootHide / rootless / rootful.
+ .
+ 1.3.3 (2026-09-14)
+  * Sửa treo Sileo / SpringBoard: không còn inject vào SpringBoard, Sileo, Zebra, Cydia, WebKit.Networking.
+  * Gỡ hook NSURLSessionTask resume (gây deadlock CFNetwork).
+  * Bỏ quét view nặng trên didMoveToSuperview / viewDidAppear.
+  * Fixed Sileo / SpringBoard freezes: no longer injects into SpringBoard, Sileo, Zebra, Cydia, or WebKit.Networking.
+  * Removed NSURLSessionTask resume hook (CFNetwork deadlock).
+  * Dropped heavy view walking on didMoveToSuperview / viewDidAppear.
+ .
+ 1.3.2 (2026-09-14)
+  * Sửa QC thỉnh thoảng vẫn hiện: chặn cả process WebKit.Networking (Safari/WebView).
+  * Bơm lại CSS/JS nếu app gỡ script; quét WebView khi app mở lại.
+  * Load tweak cả khi app chưa có bundle ID; chặn NSURLSessionTask lúc resume.
+  * Fixed ads sometimes showing: also hooks WebKit.Networking (Safari/WebView traffic).
+  * Re-injects CSS/JS if the app strips scripts; rescans WebViews when returning to the app.
+  * Starts even if the bundle ID is not ready yet; cancels ad NSURLSessionTasks on resume.
+ .
+ 1.3.1 (2026-09-14)
+  * Sửa lỗi thỉnh thoảng không chặn được quảng cáo (tweak load lúc app chưa có bundle ID).
+  * Bơm lại CSS/JS khi WebView điều hướng; biên dịch content rule có retry.
+  * Hook SDK/IMA khi dylib quảng cáo load muộn; chặn download task và Safari View.
+  * Fixed ads sometimes slipping through when the tweak loaded before the app bundle ID was ready.
+  * Re-injects CSS/JS on WebView navigations and retries content-rule compile.
+  * Hooks ad SDKs/IMA if they load late; blocks download tasks and Safari View Service.
+ .
+ 1.3.0 (2026-09-14)
+  * Sileo hiện nhật ký mọi phiên bản khi xem/cài gói (mô tả + depiction native).
+  * Cài đặt → AdShield → Nhật ký phiên bản để theo dõi update trên máy.
+  * Đóng gói changelog Debian và trang depiction HTML cho Zebra/Cydia.
+  * Sileo now shows a full version history on the package page (description + native depiction).
+  * Settings → AdShield → Changelog to follow updates on-device.
+  * Ships a Debian changelog and an HTML depiction for Zebra/Cydia.
+ .
+ 1.2.2 (2026-09-14)
+  * Sửa Cài đặt tự thoát khi bấm App/Web trong Whitelist và Blacklist.
+  * Mở list bằng nút action + màn hình thường, không dùng detail PreferenceLoader.
+  * Fixed Settings crashing when opening App/Web in Whitelist and Blacklist.
+  * Lists open via button actions and a normal screen, not PreferenceLoader detail pages.
+ .
+ 1.2.1 (2026-09-14)
+  * Sửa crash PreferenceLoader khi mở whitelist/blacklist (chuyển sang PSListController).
+  * Fixed PreferenceLoader crash on whitelist/blacklist (PSListController).
+ .
+ 1.2.0 (2026-09-14)
+  * Whitelist: chọn app đã cài hoặc nhập domain để không chặn quảng cáo.
+  * Blacklist: thêm app luôn chặn (kể cả app Apple) và thêm host quảng cáo.
+  * Cài đặt → Tài trợ: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Whitelist: pick installed apps or domains that should keep ads.
+  * Blacklist: force-block extra apps (including Apple apps) and extra ad hosts.
+  * Settings → Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.1.1 (2026-09-14)
+  * Gói RootHide (iphoneos-arm64e) cho Dopamine-roothide / RootHide Bootstrap.
+  * Tự tìm jbroot nên prefs, relay plist và Respring chạy khi đường dẫn jailbreak bị random.
+  * RootHide package (iphoneos-arm64e) for Dopamine-roothide / RootHide Bootstrap.
+  * Runtime jbroot so prefs, relay plist and Respring work with a randomized jailbreak root.
+ .
+ 1.1.0 (2026-09-13)
+  * Chặn video quảng cáo: Google IMA / VAST, URL player native, skip preroll YouTube trên web.
+  * Bơm CSS/JS lúc trang bắt đầu tải trên Safari, SFSafariViewController và WebView trong app.
+  * MutationObserver và nút Skip Ad cho quảng cáo chèn muộn.
+  * Video ads: Google IMA / VAST, native player ad URLs, YouTube web preroll skip.
+  * CSS/JS at document-start on Safari, SFSafariViewController and in-app WebViews.
+  * MutationObserver and Skip Ad tap for late-inserted units.
+ .
+ 1.0.0 (2026-09-13)
+  * Bản đầu: chặn request mạng, SDK (AdMob, FAN, AppLovin, Unity, ironSource, …), WebView và banner native.
+  * Gói rootless (Dopamine) và rootful.
+  * Initial release: network requests, ad SDKs (AdMob, FAN, AppLovin, Unity, ironSource, …), WebView and native banners.
+  * Rootless (Dopamine) and rootful packages.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: AdShield
+Sileodepiction: file:///Library/AdShield/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.adshield/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.adshield/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.adshield.png
+
+Package: com.jinkennguyen.duoframe
+Version: 3.4.9
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1052
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
+Filename: debs/com.jinkennguyen.duoframe_3.4.9_iphoneos-arm64.deb
+Size: 313290
+MD5sum: a7b6700fc5927d1ada1583ed659982df
+SHA1: a875c630582afd36059b40667eef63d2912df111
+SHA256: fd996a0c001e32046411ece9d7a3e35b3e0b76558e67ba6ad66d8ea7c5091bb4
+Section: Tweaks
+Description: DuoFrame 3.4.9 — Search page uses stock layout (no glass). Home and App Library unchanged. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.4.9 — Bỏ khung trang Tìm kiếm. Home và Thư viện giữ nguyên.
+ Credit: Jinken Nguyen - 1989
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.9 ===
+ .
+  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
+  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.8 ===
+ .
+  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
+  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.7 ===
+ .
+  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
+ .
+ === Changelog / Nhật ký phiên bản 3.4.6 ===
+ .
+  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
+  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
+  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
+ .
+ === Changelog / Nhật ký phiên bản 3.4.5 ===
+ .
+  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
+  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
+  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.4 ===
+ .
+  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
+  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.3 ===
+ .
+  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
+  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.2 ===
+ .
+  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
+  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.1 ===
+ .
+  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
+  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
+  * Less lag on scroll. Search page uses the same full-page glass as App Library.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.0 ===
+ .
+  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
+  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
+  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.3 ===
+ .
+  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
+  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.2 ===
+ .
+  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
+  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
+  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.1 ===
+ .
+  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
+  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
+  * Smoother Duo-style fade. Content sits under the rim. App Library included.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.0 ===
+ .
+  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
+  * Không che viền khung (status / icon / dock / Search / Thư viện).
+  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.1 ===
+ .
+  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
+  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
+  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.0 ===
+ .
+  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
+  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
+  * Centered dock icons. Search and App Library match the Home glass frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.1.0 ===
+ .
+  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
+  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
+  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
+ .
+ === Changelog / Nhật ký phiên bản 3.0.0 ===
+ .
+  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
+  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
+  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
+  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
+  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
+  * Status chips that launch apps only. Presets and per-setting help text.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: DuoFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
+
+Package: com.jinkennguyen.duoframe
+Version: 3.4.9
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1052
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
+Filename: debs/com.jinkennguyen.duoframe_3.4.9_iphoneos-arm.deb
+Size: 312632
+MD5sum: 351afd83163d62b5d881db7c3414532c
+SHA1: ce915dcc17fdb088ebe371c865f7d138432d43bd
+SHA256: 301c98dcf1e278210e847974bbb7d462096685b6f6cdb9f22ef3b81030005fa0
+Section: Tweaks
+Description: DuoFrame 3.4.9 — Search page uses stock layout (no glass). Home and App Library unchanged. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.4.9 — Bỏ khung trang Tìm kiếm. Home và Thư viện giữ nguyên.
+ Credit: Jinken Nguyen - 1989
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.9 ===
+ .
+  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
+  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.8 ===
+ .
+  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
+  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.7 ===
+ .
+  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
+ .
+ === Changelog / Nhật ký phiên bản 3.4.6 ===
+ .
+  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
+  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
+  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
+ .
+ === Changelog / Nhật ký phiên bản 3.4.5 ===
+ .
+  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
+  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
+  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.4 ===
+ .
+  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
+  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.3 ===
+ .
+  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
+  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.2 ===
+ .
+  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
+  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.1 ===
+ .
+  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
+  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
+  * Less lag on scroll. Search page uses the same full-page glass as App Library.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.0 ===
+ .
+  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
+  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
+  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.3 ===
+ .
+  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
+  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.2 ===
+ .
+  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
+  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
+  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.1 ===
+ .
+  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
+  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
+  * Smoother Duo-style fade. Content sits under the rim. App Library included.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.0 ===
+ .
+  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
+  * Không che viền khung (status / icon / dock / Search / Thư viện).
+  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.1 ===
+ .
+  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
+  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
+  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.0 ===
+ .
+  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
+  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
+  * Centered dock icons. Search and App Library match the Home glass frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.1.0 ===
+ .
+  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
+  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
+  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
+ .
+ === Changelog / Nhật ký phiên bản 3.0.0 ===
+ .
+  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
+  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
+  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
+  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
+  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
+  * Status chips that launch apps only. Presets and per-setting help text.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: DuoFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
+
+Package: com.jinkennguyen.duoframe
+Version: 3.4.9
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1052
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
+Filename: debs/com.jinkennguyen.duoframe_3.4.9_iphoneos-arm64e.deb
+Size: 313530
+MD5sum: e749590a074e64c43c39706d1889f85e
+SHA1: bd0e7e953fc4e71069ae0a4f18825e9a8c0cc998
+SHA256: 05f28f1bad01553545c18293d6bb835a6400e565428ba45521e700023e354812
+Section: Tweaks
+Description: DuoFrame 3.4.9 — Search page uses stock layout (no glass). Home and App Library unchanged. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.4.9 — Bỏ khung trang Tìm kiếm. Home và Thư viện giữ nguyên.
+ Credit: Jinken Nguyen - 1989
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.9 ===
+ .
+  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
+  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.8 ===
+ .
+  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
+  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.7 ===
+ .
+  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
+ .
+ === Changelog / Nhật ký phiên bản 3.4.6 ===
+ .
+  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
+  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
+  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
+ .
+ === Changelog / Nhật ký phiên bản 3.4.5 ===
+ .
+  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
+  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
+  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.4 ===
+ .
+  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
+  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.3 ===
+ .
+  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
+  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.2 ===
+ .
+  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
+  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.1 ===
+ .
+  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
+  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
+  * Less lag on scroll. Search page uses the same full-page glass as App Library.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.0 ===
+ .
+  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
+  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
+  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.3 ===
+ .
+  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
+  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.2 ===
+ .
+  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
+  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
+  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.1 ===
+ .
+  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
+  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
+  * Smoother Duo-style fade. Content sits under the rim. App Library included.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.0 ===
+ .
+  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
+  * Không che viền khung (status / icon / dock / Search / Thư viện).
+  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.1 ===
+ .
+  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
+  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
+  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.0 ===
+ .
+  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
+  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
+  * Centered dock icons. Search and App Library match the Home glass frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.1.0 ===
+ .
+  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
+  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
+  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
+ .
+ === Changelog / Nhật ký phiên bản 3.0.0 ===
+ .
+  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
+  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
+  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
+  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
+  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
+  * Status chips that launch apps only. Presets and per-setting help text.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: DuoFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
+
+Package: com.jinkennguyen.lookglass
+Version: 3.1.3
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 636
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.lookglass_3.1.3_iphoneos-arm.deb
+Size: 147886
+MD5sum: 475cb4315a9456abe32da8da2d313833
+SHA1: 2079ee55770dea0156e148de89229cf96d819994
+SHA256: cb2b56e8c4c263a2fb5ed5d77446aaf716c16cadde9aa89bbb3463129ce31001
+Section: Tweaks
+Description: LookGlass 3.1.3 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+ LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
+ LookGlass — iOS 27 liquid-glass search on the Home Screen.
+ Credit: Jinken Nguyen - 1989.
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 3.1.3 (2026-09-17)
+  * Sửa thanh player: nút Phát / Tạm dừng / tua ±10s / tốc độ / hẹn giờ hoạt động thật (AVPlayer + iframe YouTube qua JS API). Thanh không còn bị danh sách video đè mất chạm.
+  * Thêm thanh tiến trình và thời gian; bấm vào hình video để play/pause.
+  * Player bar works: Play / Pause / skip ±10s / speed / sleep actually control AVPlayer and the YouTube iframe. The related list no longer eats taps on the controls.
+  * Added a scrubber and time label; tap the video image to play/pause.
+ .
+ 3.1.2 (2026-09-17)
+  * Sửa iOS 14 rootful / RootHide không chạy: gói rootful và RootHide chỉ còn arm64 (slice arm64e ABI mới của Xcode không load được SpringBoard iOS 14).
+  * Ô tìm hiện trên iOS 14: cửa sổ không còn bắt buộc UIWindowScene lúc launch (SpringBoard 14 thường chưa có scene). Fallback initWithFrame.
+  * iOS 14 rootful / RootHide now loads: those packages are arm64-only (Xcode's new arm64e ABI is rejected by iOS 14 SpringBoard).
+  * Search pill appears on iOS 14: overlay windows no longer require a UIWindowScene at launch (SpringBoard 14 often has none). Falls back to initWithFrame.
+ .
+ 3.1.1 (2026-09-17)
+  * Sửa không phát được YouTube: lấy thêm luồng (HLS/mp4 360–720, nhiều Invidious/Piped), chờ đủ 14s; nếu native fail thì phát iframe trong cửa sổ (autoplay tắt, bấm Play trong khung) thay vì chỉ mở app.
+  * Sửa phim/nhạc: trailer iTunes được phát trong cửa sổ; không còn mở nhầm trang YouTube search trong SpringBoard. Watchdog web 18s.
+  * YouTube plays again: more stream sources (HLS / 360–720 mp4, extra Invidious/Piped), 14s wait; if native fails, in-window iframe (autoplay off, tap Play in the frame) instead of only opening the app.
+  * Movies/music: iTunes trailers play in-window; YouTube search pages are not loaded in SpringBoard. Web watchdog 18s.
+ .
+ 3.1.0 (2026-09-17)
+  * Sửa treo SpringBoard khi vào YouTube: không còn iframe youtube-nocookie / WKWebView trong SpringBoard. Player native (ảnh bìa + AVPlayer); không lấy được luồng thì mở app YouTube.
+  * Thêm tua ±10s, tốc độ 1×–2×, hẹn giờ tắt 15–60 phút, video liên quan, lịch sử đã xem, nhớ tab, nhấn giữ kết quả (Phát / Chép / Mở YouTube).
+  * Fixed SpringBoard freeze on YouTube: no youtube-nocookie iframe / WKWebView in SpringBoard. Native player (poster + AVPlayer); if no stream, open the YouTube app.
+  * Added skip ±10s, 1×–2× speed, 15–60 min sleep timer, related videos, watch history, remember last tab, long-press a result (Play / Copy / Open YouTube).
+ .
+ 3.0.4 (2026-09-16)
+  * Sửa iOS 14 / RootHide: tìm và mở nội dung không còn load mãi. WebView dùng cấu hình WebKit cũ (không process pool / data store riêng, không chờ render xong mới vẽ), tìm có timeout 7s, YouTube fallback embed sau 4s.
+  * Kéo ô tìm mọi chỗ như bản cũ: kéo từ toàn bộ ô (kể cả ô gõ), không bị cố định khi cửa sổ không phải key window.
+  * iOS 14 / RootHide: search and opening a result no longer spin forever. WebView uses the system WebKit defaults (no private process pool/data store, paints while loading), search times out at 7s, YouTube falls back to embed after 4s.
+  * Drag the search pill anywhere again, including from the text field. It no longer sticks because the overlay was not the key window.
+ .
+ 3.0.3 (2026-09-16)
+  * Sửa PiP: cửa sổ nổi hiện đúng video (AVPlayer gắn lại lớp hình; YouTube embed đưa WebView vào thẻ PiP sau khi cửa sổ đã hiện).
+  * Thêm chọn Có hình hoặc Chỉ tiếng trong Cài đặt và nút loa/video trên cửa sổ PiP. Chỉ tiếng dùng thanh điều khiển nhỏ, không còn khung 16:9 đen trống.
+  * PiP now shows the actual video (AVPlayer layer rebound; YouTube embed moves into the PiP card after the window is on screen).
+  * Choose Video or Audio only in Settings, or tap the speaker/video button on the floating player. Audio only uses a compact bar instead of an empty 16:9 box.
+ .
+ 3.0.2 (2026-09-16)
+  * Sửa treo máy khi phát video: không còn PiP hệ thống, MPNowPlayingSession, audio session độc quyền, iframe autoplay, hay chuyển WKWebView sang cửa sổ khác trong SpringBoard.
+  * Phát native bất đồng bộ (load playable rồi mới play). Embed YouTube không tự phát. PiP overlay vẫn dùng được với AVPlayer.
+  * Fixed freeze on play: no system PiP, no MPNowPlayingSession, no exclusive audio session, no iframe autoplay, no WKWebView reparent in SpringBoard.
+  * Native playback loads asynchronously. YouTube embed does not autoplay. Overlay PiP still works with AVPlayer.
+ .
+ 3.0.1 (2026-09-16)
+  * Sửa PiP: cửa sổ nổi luôn hiện (kể cả khi YouTube chạy bằng WebView), chỉ nhận chạm trên thẻ video nên vẫn dùng app khác được.
+  * Vào app khác không còn tắt video — chuyển sang PiP hệ thống (AVPlayer) hoặc cửa sổ LookGlass, phát nền tiếp.
+  * Màn hình khoá hiện player (Now Playing + MediaRemote, iOS 16 MPNowPlayingSession). Tắt màn vẫn nghe.
+  * PiP fix: the floating card always appears (including WebView YouTube) and only swallows touches on the card so other apps stay usable.
+  * Leaving Home no longer kills video — system PiP when native, LookGlass overlay otherwise; playback continues.
+  * Lock Screen now-playing works (Now Playing + MediaRemote, MPNowPlayingSession on iOS 16). Screen off keeps audio.
+ .
+ 3.0.0 (2026-09-16)
+  * YouTube Premium-like: phát nền khi tắt màn hình, khoá máy, hoặc vào app khác. Điều khiển trên màn hình khoá.
+  * Picture in Picture: cửa sổ video nổi trên Home và app khác, kéo được, phát tiếp khi làm việc khác.
+  * Giao diện 3.0 mượt hơn (spring, khung kính DuoFrame, player 16:9). Nút PiP trên thanh video.
+  * YouTube Premium-like: keep playing with the screen off, on the lock screen, or in other apps. Lock-screen media controls.
+  * Picture in Picture: a floating video window over Home and other apps, draggable, so you can keep working.
+  * Smoother 3.0 UI (spring motion, DuoFrame glass, 16:9 player). PiP button on the video bar.
+ .
+ 2.0.0 (2026-09-15)
+  * Giao diện kiểu DuoFrame: khung kính lỏng iOS 27 (viền kép, ánh kính) cho ô tìm, thẻ kết quả và dock trang.
+  * Ít nhất 100 kết quả, chia 5 trang (20 mục/trang), vuốt hoặc chấm trang. Tab Google/Ảnh/Maps cũng là danh sách trang, bấm mới mở web đầy đủ.
+  * YouTube tự phát khi vào video; nút mở app YouTube; dán clipboard trên ô tìm; lịch sử tìm gần đây.
+  * DuoFrame-style UI: iOS 27 liquid-glass frames (dual rim, specular) for the search capsule, results card and page dock.
+  * At least 100 results across 5 pages (20 each). Swipe or use page dots. Google/Images/Maps tabs are paged lists; tap to open the full site.
+  * YouTube autoplays; Open in YouTube app; paste-from-clipboard on the pill; recent searches.
+ .
+ 1.7.0 (2026-09-14)
+  * Mở lại web đầy đủ trong cửa sổ: Google (nhiều trang), Ảnh, Maps, tin, shop, MXH — không còn chặn trang nặng.
+  * Nhiều kết quả hơn: Google/Bing/DuckDuckGo, Wiki 15 mục, YouTube 40 video, nhạc (bài + album + Spotify/YT Music/Zing), phim (iTunes + Netflix/Disney+/FPT…).
+  * Cửa sổ kết quả lớn hơn, có ảnh bìa, nút Trở lại đi trong web (trang 2, 3 của Google).
+  * Full websites load in the window again: Google (multi-page), Images, Maps, news, shop, social — heavy pages are no longer blocked.
+  * More results: Google/Bing/DuckDuckGo, 15 Wiki hits, 40 YouTube videos, music (tracks + albums + Spotify/YT Music/Zing), movies (iTunes + Netflix/Disney+/FPT…).
+  * Larger results window, cover art, and Back walks the in-window browser (Google page 2, 3, …).
+ .
+ 1.6.1 (2026-09-14)
+  * Chữ trong nội dung (danh sách, Wiki, trang chi tiết, YouTube) đổi thành màu đen trên nền sáng cho dễ đọc.
+  * Ô tìm theo sáng/tối: chế độ sáng dùng chữ đen, không còn chữ trắng trên kính trắng.
+  * Content text (lists, Wiki, detail pages, YouTube info) is now black on a light paper background so it is easy to read.
+  * The search pill follows light/dark: light mode uses black text instead of white-on-white glass.
+ .
+ 1.6.0 (2026-09-14)
+  * Sửa xung đột hệ thống gây treo máy và cửa sổ đen ngẫu nhiên: overlay chỉ gắn UIWindowScene, host view luôn trong suốt (UIKit không còn đổi thành nền đen).
+  * Không tạo WebView sẵn trong SpringBoard; Google / Ảnh / Maps / MXH không tự mở site nặng. WebView chỉ khi cần, có watchdog 7s, gỡ hẳn khi đóng.
+  * Bỏ dispatch_sync khi tìm, giảm reload khi xoay/scene, tắt bóng đổ overlay. Kéo ô tìm và gõ vẫn như 1.5.2.
+  * Fixed system conflicts that froze the device and left random black windows: overlays attach only to a UIWindowScene, and the host view stays clear so UIKit cannot reset it to an opaque black background.
+  * No eager WKWebView in SpringBoard. Google / Images / Maps / Social no longer auto-load heavy sites. WebView is created on demand, watched for 7s, and torn down on close.
+  * Search no longer uses dispatch_sync; scene/rotate no longer storm-reload; overlay shadows removed. Drag and typing stay as in 1.5.2.
+ .
+ 1.5.2 (2026-09-14)
+  * Kéo ô tìm để dời — không còn hộp thoại credit khi nhấn giữ (trước đó chiếm key window nên không bấm được Mở rộng / Ẩn / Tài trợ / Đóng).
+  * Tap và kéo tách nhau: chạm để gõ, kéo để di chuyển. Credit / donate vẫn ở Cài đặt.
+  * Drag the search pill to move it. Long-press no longer shows the credit alert that stole the key window and froze Expand / Hide / Donate / Close.
+  * Tap vs drag are separated: tap to type, drag to move. Credit / donate stay in Settings.
+ .
+ 1.5.1 (2026-09-14)
+  * Sửa toàn diện iOS 15+: màn hình đen (bỏ blur overlay), bàn phím kẹt (trả key window về SpringBoard, hit-test cho phép bấm phím), treo máy (tắt CoreMotion, animation kính, biên dịch content-rule trong SpringBoard).
+  * Cửa sổ tìm chỉ chiếm key khi đang gõ; xong tìm là trả lại Home ngay.
+  * iOS 15+ stability: black screen (no overlay blur), stuck keyboard (return key window to SpringBoard and pass taps to the keyboard), SpringBoard hangs (no CoreMotion, no glass animation, no in-process content-rule compile).
+  * The search window is key only while typing; Home gets the key window back as soon as search runs.
+ .
+ 1.5.0 (2026-09-14)
+  * Sửa màn hình đen trên một số máy khi hiện kết quả: không dùng CABackdropLayer trên overlay, thẻ có nền đặc, WebView không còn nền đen.
+  * Thu gọn cửa sổ kết quả (nút – hoặc bấm ra ngoài); mở lại hiện đúng trang / video đang xem.
+  * Nhật ký phiên bản trong Cài đặt và trên Sileo. Gói rootless, rootful, RootHide.
+  * Fixed a black screen on some devices when showing results: no CABackdropLayer in the overlay window, solid card fill, WebView no longer uses a black background.
+  * Minimize the results window (– or tap outside); restore it at the same page or video.
+  * Full changelog in Settings and Sileo. Rootless, rootful and RootHide packages.
+ .
+ 1.4.1 (2026-09-14)
+  * Gói RootHide (iphoneos-arm64e) cho Dopamine-roothide / RootHide Bootstrap.
+  * Tự tìm jbroot nên prefs, relay plist và Respring chạy khi đường dẫn jailbreak bị random.
+  * RootHide package (iphoneos-arm64e) for Dopamine-roothide / RootHide Bootstrap.
+  * Runtime jbroot so prefs, relay plist and Respring work with a randomized jailbreak root.
+ .
+ 1.4.0 (2026-09-14)
+  * Tab YouTube duyệt danh sách video (ảnh, tiêu đề, kênh) rồi phát embed trong cửa sổ.
+  * Không mở web YouTube nên không có quảng cáo preroll.
+  * YouTube tab browses a native video list (thumb, title, channel) and plays an in-window embed.
+  * Does not open the YouTube website, so preroll ads do not appear.
+ .
+ 1.3.0 (2026-09-14)
+  * Chặn quảng cáo trong LookGlass (banner, popup, preroll) theo hướng AdShield.
+  * Công tắc Cài đặt → Quảng cáo.
+  * In-window ad blocking (banners, popups, preroll) in the AdShield style.
+  * Toggle in Settings → Ads.
+ .
+ 1.2.0 (2026-09-14)
+  * Thêm tab Ảnh, Tin, Bản đồ, Mua sắm, MXH. Mục Phim liệt kê web phim.
+  * Sửa nút Trở lại / Đóng đè nhau.
+  * Added Images, News, Maps, Shop and Social tabs. Movie tab lists film sites.
+  * Fixed overlapping Back / Close buttons.
+ .
+ 1.1.0 (2026-09-14)
+  * Chỉ tìm khi bấm Tìm. Kéo ô mọi chỗ, ẩn sát mép trái/phải.
+  * Credit và donate (MB Bank 0345140889 - Nguyễn Tiến Triều).
+  * Search only after tapping Search. Drag anywhere; fling to an edge to hide.
+  * Credit and donate (MB Bank 0345140889 - Nguyễn Tiến Triều).
+ .
+ 1.0.0 (2026-09-14)
+  * Bản đầu: ô tìm kính lỏng iOS 27 trên màn hình chính. Google, Wikipedia, nhạc, phim trong cửa sổ nhỏ.
+  * Initial release: iOS 27 liquid-glass search on the Home Screen. Google, Wikipedia, music and movies in a small window.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: LookGlass
+Sileodepiction: file:///Library/LookGlass/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.lookglass/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.lookglass/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
+
+Package: com.jinkennguyen.lookglass
+Version: 3.1.3
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 636
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.lookglass_3.1.3_iphoneos-arm64e.deb
+Size: 148270
+MD5sum: 35085f1b2d997bda0923f168e1889211
+SHA1: 0cb4bebeb4dc5bb90162f43f2819b0f5142c8a5c
+SHA256: 0df6caeadbed7acc2812f25cf2fc5e59cd7dc07e29eea51f87ad760be53c2e9e
+Section: Tweaks
+Description: LookGlass 3.1.3 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+ LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
+ LookGlass — iOS 27 liquid-glass search on the Home Screen.
+ Credit: Jinken Nguyen - 1989.
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 3.1.3 (2026-09-17)
+  * Sửa thanh player: nút Phát / Tạm dừng / tua ±10s / tốc độ / hẹn giờ hoạt động thật (AVPlayer + iframe YouTube qua JS API). Thanh không còn bị danh sách video đè mất chạm.
+  * Thêm thanh tiến trình và thời gian; bấm vào hình video để play/pause.
+  * Player bar works: Play / Pause / skip ±10s / speed / sleep actually control AVPlayer and the YouTube iframe. The related list no longer eats taps on the controls.
+  * Added a scrubber and time label; tap the video image to play/pause.
+ .
+ 3.1.2 (2026-09-17)
+  * Sửa iOS 14 rootful / RootHide không chạy: gói rootful và RootHide chỉ còn arm64 (slice arm64e ABI mới của Xcode không load được SpringBoard iOS 14).
+  * Ô tìm hiện trên iOS 14: cửa sổ không còn bắt buộc UIWindowScene lúc launch (SpringBoard 14 thường chưa có scene). Fallback initWithFrame.
+  * iOS 14 rootful / RootHide now loads: those packages are arm64-only (Xcode's new arm64e ABI is rejected by iOS 14 SpringBoard).
+  * Search pill appears on iOS 14: overlay windows no longer require a UIWindowScene at launch (SpringBoard 14 often has none). Falls back to initWithFrame.
+ .
+ 3.1.1 (2026-09-17)
+  * Sửa không phát được YouTube: lấy thêm luồng (HLS/mp4 360–720, nhiều Invidious/Piped), chờ đủ 14s; nếu native fail thì phát iframe trong cửa sổ (autoplay tắt, bấm Play trong khung) thay vì chỉ mở app.
+  * Sửa phim/nhạc: trailer iTunes được phát trong cửa sổ; không còn mở nhầm trang YouTube search trong SpringBoard. Watchdog web 18s.
+  * YouTube plays again: more stream sources (HLS / 360–720 mp4, extra Invidious/Piped), 14s wait; if native fails, in-window iframe (autoplay off, tap Play in the frame) instead of only opening the app.
+  * Movies/music: iTunes trailers play in-window; YouTube search pages are not loaded in SpringBoard. Web watchdog 18s.
+ .
+ 3.1.0 (2026-09-17)
+  * Sửa treo SpringBoard khi vào YouTube: không còn iframe youtube-nocookie / WKWebView trong SpringBoard. Player native (ảnh bìa + AVPlayer); không lấy được luồng thì mở app YouTube.
+  * Thêm tua ±10s, tốc độ 1×–2×, hẹn giờ tắt 15–60 phút, video liên quan, lịch sử đã xem, nhớ tab, nhấn giữ kết quả (Phát / Chép / Mở YouTube).
+  * Fixed SpringBoard freeze on YouTube: no youtube-nocookie iframe / WKWebView in SpringBoard. Native player (poster + AVPlayer); if no stream, open the YouTube app.
+  * Added skip ±10s, 1×–2× speed, 15–60 min sleep timer, related videos, watch history, remember last tab, long-press a result (Play / Copy / Open YouTube).
+ .
+ 3.0.4 (2026-09-16)
+  * Sửa iOS 14 / RootHide: tìm và mở nội dung không còn load mãi. WebView dùng cấu hình WebKit cũ (không process pool / data store riêng, không chờ render xong mới vẽ), tìm có timeout 7s, YouTube fallback embed sau 4s.
+  * Kéo ô tìm mọi chỗ như bản cũ: kéo từ toàn bộ ô (kể cả ô gõ), không bị cố định khi cửa sổ không phải key window.
+  * iOS 14 / RootHide: search and opening a result no longer spin forever. WebView uses the system WebKit defaults (no private process pool/data store, paints while loading), search times out at 7s, YouTube falls back to embed after 4s.
+  * Drag the search pill anywhere again, including from the text field. It no longer sticks because the overlay was not the key window.
+ .
+ 3.0.3 (2026-09-16)
+  * Sửa PiP: cửa sổ nổi hiện đúng video (AVPlayer gắn lại lớp hình; YouTube embed đưa WebView vào thẻ PiP sau khi cửa sổ đã hiện).
+  * Thêm chọn Có hình hoặc Chỉ tiếng trong Cài đặt và nút loa/video trên cửa sổ PiP. Chỉ tiếng dùng thanh điều khiển nhỏ, không còn khung 16:9 đen trống.
+  * PiP now shows the actual video (AVPlayer layer rebound; YouTube embed moves into the PiP card after the window is on screen).
+  * Choose Video or Audio only in Settings, or tap the speaker/video button on the floating player. Audio only uses a compact bar instead of an empty 16:9 box.
+ .
+ 3.0.2 (2026-09-16)
+  * Sửa treo máy khi phát video: không còn PiP hệ thống, MPNowPlayingSession, audio session độc quyền, iframe autoplay, hay chuyển WKWebView sang cửa sổ khác trong SpringBoard.
+  * Phát native bất đồng bộ (load playable rồi mới play). Embed YouTube không tự phát. PiP overlay vẫn dùng được với AVPlayer.
+  * Fixed freeze on play: no system PiP, no MPNowPlayingSession, no exclusive audio session, no iframe autoplay, no WKWebView reparent in SpringBoard.
+  * Native playback loads asynchronously. YouTube embed does not autoplay. Overlay PiP still works with AVPlayer.
+ .
+ 3.0.1 (2026-09-16)
+  * Sửa PiP: cửa sổ nổi luôn hiện (kể cả khi YouTube chạy bằng WebView), chỉ nhận chạm trên thẻ video nên vẫn dùng app khác được.
+  * Vào app khác không còn tắt video — chuyển sang PiP hệ thống (AVPlayer) hoặc cửa sổ LookGlass, phát nền tiếp.
+  * Màn hình khoá hiện player (Now Playing + MediaRemote, iOS 16 MPNowPlayingSession). Tắt màn vẫn nghe.
+  * PiP fix: the floating card always appears (including WebView YouTube) and only swallows touches on the card so other apps stay usable.
+  * Leaving Home no longer kills video — system PiP when native, LookGlass overlay otherwise; playback continues.
+  * Lock Screen now-playing works (Now Playing + MediaRemote, MPNowPlayingSession on iOS 16). Screen off keeps audio.
+ .
+ 3.0.0 (2026-09-16)
+  * YouTube Premium-like: phát nền khi tắt màn hình, khoá máy, hoặc vào app khác. Điều khiển trên màn hình khoá.
+  * Picture in Picture: cửa sổ video nổi trên Home và app khác, kéo được, phát tiếp khi làm việc khác.
+  * Giao diện 3.0 mượt hơn (spring, khung kính DuoFrame, player 16:9). Nút PiP trên thanh video.
+  * YouTube Premium-like: keep playing with the screen off, on the lock screen, or in other apps. Lock-screen media controls.
+  * Picture in Picture: a floating video window over Home and other apps, draggable, so you can keep working.
+  * Smoother 3.0 UI (spring motion, DuoFrame glass, 16:9 player). PiP button on the video bar.
+ .
+ 2.0.0 (2026-09-15)
+  * Giao diện kiểu DuoFrame: khung kính lỏng iOS 27 (viền kép, ánh kính) cho ô tìm, thẻ kết quả và dock trang.
+  * Ít nhất 100 kết quả, chia 5 trang (20 mục/trang), vuốt hoặc chấm trang. Tab Google/Ảnh/Maps cũng là danh sách trang, bấm mới mở web đầy đủ.
+  * YouTube tự phát khi vào video; nút mở app YouTube; dán clipboard trên ô tìm; lịch sử tìm gần đây.
+  * DuoFrame-style UI: iOS 27 liquid-glass frames (dual rim, specular) for the search capsule, results card and page dock.
+  * At least 100 results across 5 pages (20 each). Swipe or use page dots. Google/Images/Maps tabs are paged lists; tap to open the full site.
+  * YouTube autoplays; Open in YouTube app; paste-from-clipboard on the pill; recent searches.
+ .
+ 1.7.0 (2026-09-14)
+  * Mở lại web đầy đủ trong cửa sổ: Google (nhiều trang), Ảnh, Maps, tin, shop, MXH — không còn chặn trang nặng.
+  * Nhiều kết quả hơn: Google/Bing/DuckDuckGo, Wiki 15 mục, YouTube 40 video, nhạc (bài + album + Spotify/YT Music/Zing), phim (iTunes + Netflix/Disney+/FPT…).
+  * Cửa sổ kết quả lớn hơn, có ảnh bìa, nút Trở lại đi trong web (trang 2, 3 của Google).
+  * Full websites load in the window again: Google (multi-page), Images, Maps, news, shop, social — heavy pages are no longer blocked.
+  * More results: Google/Bing/DuckDuckGo, 15 Wiki hits, 40 YouTube videos, music (tracks + albums + Spotify/YT Music/Zing), movies (iTunes + Netflix/Disney+/FPT…).
+  * Larger results window, cover art, and Back walks the in-window browser (Google page 2, 3, …).
+ .
+ 1.6.1 (2026-09-14)
+  * Chữ trong nội dung (danh sách, Wiki, trang chi tiết, YouTube) đổi thành màu đen trên nền sáng cho dễ đọc.
+  * Ô tìm theo sáng/tối: chế độ sáng dùng chữ đen, không còn chữ trắng trên kính trắng.
+  * Content text (lists, Wiki, detail pages, YouTube info) is now black on a light paper background so it is easy to read.
+  * The search pill follows light/dark: light mode uses black text instead of white-on-white glass.
+ .
+ 1.6.0 (2026-09-14)
+  * Sửa xung đột hệ thống gây treo máy và cửa sổ đen ngẫu nhiên: overlay chỉ gắn UIWindowScene, host view luôn trong suốt (UIKit không còn đổi thành nền đen).
+  * Không tạo WebView sẵn trong SpringBoard; Google / Ảnh / Maps / MXH không tự mở site nặng. WebView chỉ khi cần, có watchdog 7s, gỡ hẳn khi đóng.
+  * Bỏ dispatch_sync khi tìm, giảm reload khi xoay/scene, tắt bóng đổ overlay. Kéo ô tìm và gõ vẫn như 1.5.2.
+  * Fixed system conflicts that froze the device and left random black windows: overlays attach only to a UIWindowScene, and the host view stays clear so UIKit cannot reset it to an opaque black background.
+  * No eager WKWebView in SpringBoard. Google / Images / Maps / Social no longer auto-load heavy sites. WebView is created on demand, watched for 7s, and torn down on close.
+  * Search no longer uses dispatch_sync; scene/rotate no longer storm-reload; overlay shadows removed. Drag and typing stay as in 1.5.2.
+ .
+ 1.5.2 (2026-09-14)
+  * Kéo ô tìm để dời — không còn hộp thoại credit khi nhấn giữ (trước đó chiếm key window nên không bấm được Mở rộng / Ẩn / Tài trợ / Đóng).
+  * Tap và kéo tách nhau: chạm để gõ, kéo để di chuyển. Credit / donate vẫn ở Cài đặt.
+  * Drag the search pill to move it. Long-press no longer shows the credit alert that stole the key window and froze Expand / Hide / Donate / Close.
+  * Tap vs drag are separated: tap to type, drag to move. Credit / donate stay in Settings.
+ .
+ 1.5.1 (2026-09-14)
+  * Sửa toàn diện iOS 15+: màn hình đen (bỏ blur overlay), bàn phím kẹt (trả key window về SpringBoard, hit-test cho phép bấm phím), treo máy (tắt CoreMotion, animation kính, biên dịch content-rule trong SpringBoard).
+  * Cửa sổ tìm chỉ chiếm key khi đang gõ; xong tìm là trả lại Home ngay.
+  * iOS 15+ stability: black screen (no overlay blur), stuck keyboard (return key window to SpringBoard and pass taps to the keyboard), SpringBoard hangs (no CoreMotion, no glass animation, no in-process content-rule compile).
+  * The search window is key only while typing; Home gets the key window back as soon as search runs.
+ .
+ 1.5.0 (2026-09-14)
+  * Sửa màn hình đen trên một số máy khi hiện kết quả: không dùng CABackdropLayer trên overlay, thẻ có nền đặc, WebView không còn nền đen.
+  * Thu gọn cửa sổ kết quả (nút – hoặc bấm ra ngoài); mở lại hiện đúng trang / video đang xem.
+  * Nhật ký phiên bản trong Cài đặt và trên Sileo. Gói rootless, rootful, RootHide.
+  * Fixed a black screen on some devices when showing results: no CABackdropLayer in the overlay window, solid card fill, WebView no longer uses a black background.
+  * Minimize the results window (– or tap outside); restore it at the same page or video.
+  * Full changelog in Settings and Sileo. Rootless, rootful and RootHide packages.
+ .
+ 1.4.1 (2026-09-14)
+  * Gói RootHide (iphoneos-arm64e) cho Dopamine-roothide / RootHide Bootstrap.
+  * Tự tìm jbroot nên prefs, relay plist và Respring chạy khi đường dẫn jailbreak bị random.
+  * RootHide package (iphoneos-arm64e) for Dopamine-roothide / RootHide Bootstrap.
+  * Runtime jbroot so prefs, relay plist and Respring work with a randomized jailbreak root.
+ .
+ 1.4.0 (2026-09-14)
+  * Tab YouTube duyệt danh sách video (ảnh, tiêu đề, kênh) rồi phát embed trong cửa sổ.
+  * Không mở web YouTube nên không có quảng cáo preroll.
+  * YouTube tab browses a native video list (thumb, title, channel) and plays an in-window embed.
+  * Does not open the YouTube website, so preroll ads do not appear.
+ .
+ 1.3.0 (2026-09-14)
+  * Chặn quảng cáo trong LookGlass (banner, popup, preroll) theo hướng AdShield.
+  * Công tắc Cài đặt → Quảng cáo.
+  * In-window ad blocking (banners, popups, preroll) in the AdShield style.
+  * Toggle in Settings → Ads.
+ .
+ 1.2.0 (2026-09-14)
+  * Thêm tab Ảnh, Tin, Bản đồ, Mua sắm, MXH. Mục Phim liệt kê web phim.
+  * Sửa nút Trở lại / Đóng đè nhau.
+  * Added Images, News, Maps, Shop and Social tabs. Movie tab lists film sites.
+  * Fixed overlapping Back / Close buttons.
+ .
+ 1.1.0 (2026-09-14)
+  * Chỉ tìm khi bấm Tìm. Kéo ô mọi chỗ, ẩn sát mép trái/phải.
+  * Credit và donate (MB Bank 0345140889 - Nguyễn Tiến Triều).
+  * Search only after tapping Search. Drag anywhere; fling to an edge to hide.
+  * Credit and donate (MB Bank 0345140889 - Nguyễn Tiến Triều).
+ .
+ 1.0.0 (2026-09-14)
+  * Bản đầu: ô tìm kính lỏng iOS 27 trên màn hình chính. Google, Wikipedia, nhạc, phim trong cửa sổ nhỏ.
+  * Initial release: iOS 27 liquid-glass search on the Home Screen. Google, Wikipedia, music and movies in a small window.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: LookGlass
+Sileodepiction: file:///Library/LookGlass/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.lookglass/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.lookglass/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
+
+Package: com.jinkennguyen.lookglass
+Version: 3.1.3
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1196
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.lookglass_3.1.3_iphoneos-arm64.deb
+Size: 215150
+MD5sum: 0e72028325b38d31af575acca414e6a4
+SHA1: 8fc5ec2177c1e21e9e0e4687da9f360dc9268bc6
+SHA256: 9b2ce20b51d48f6ace7fecffd46098b08e8343e9615e72aa87632f624c012c35
+Section: Tweaks
+Description: LookGlass 3.1.3 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+ LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
+ LookGlass — iOS 27 liquid-glass search on the Home Screen.
+ Credit: Jinken Nguyen - 1989.
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 3.1.3 (2026-09-17)
+  * Sửa thanh player: nút Phát / Tạm dừng / tua ±10s / tốc độ / hẹn giờ hoạt động thật (AVPlayer + iframe YouTube qua JS API). Thanh không còn bị danh sách video đè mất chạm.
+  * Thêm thanh tiến trình và thời gian; bấm vào hình video để play/pause.
+  * Player bar works: Play / Pause / skip ±10s / speed / sleep actually control AVPlayer and the YouTube iframe. The related list no longer eats taps on the controls.
+  * Added a scrubber and time label; tap the video image to play/pause.
+ .
+ 3.1.2 (2026-09-17)
+  * Sửa iOS 14 rootful / RootHide không chạy: gói rootful và RootHide chỉ còn arm64 (slice arm64e ABI mới của Xcode không load được SpringBoard iOS 14).
+  * Ô tìm hiện trên iOS 14: cửa sổ không còn bắt buộc UIWindowScene lúc launch (SpringBoard 14 thường chưa có scene). Fallback initWithFrame.
+  * iOS 14 rootful / RootHide now loads: those packages are arm64-only (Xcode's new arm64e ABI is rejected by iOS 14 SpringBoard).
+  * Search pill appears on iOS 14: overlay windows no longer require a UIWindowScene at launch (SpringBoard 14 often has none). Falls back to initWithFrame.
+ .
+ 3.1.1 (2026-09-17)
+  * Sửa không phát được YouTube: lấy thêm luồng (HLS/mp4 360–720, nhiều Invidious/Piped), chờ đủ 14s; nếu native fail thì phát iframe trong cửa sổ (autoplay tắt, bấm Play trong khung) thay vì chỉ mở app.
+  * Sửa phim/nhạc: trailer iTunes được phát trong cửa sổ; không còn mở nhầm trang YouTube search trong SpringBoard. Watchdog web 18s.
+  * YouTube plays again: more stream sources (HLS / 360–720 mp4, extra Invidious/Piped), 14s wait; if native fails, in-window iframe (autoplay off, tap Play in the frame) instead of only opening the app.
+  * Movies/music: iTunes trailers play in-window; YouTube search pages are not loaded in SpringBoard. Web watchdog 18s.
+ .
+ 3.1.0 (2026-09-17)
+  * Sửa treo SpringBoard khi vào YouTube: không còn iframe youtube-nocookie / WKWebView trong SpringBoard. Player native (ảnh bìa + AVPlayer); không lấy được luồng thì mở app YouTube.
+  * Thêm tua ±10s, tốc độ 1×–2×, hẹn giờ tắt 15–60 phút, video liên quan, lịch sử đã xem, nhớ tab, nhấn giữ kết quả (Phát / Chép / Mở YouTube).
+  * Fixed SpringBoard freeze on YouTube: no youtube-nocookie iframe / WKWebView in SpringBoard. Native player (poster + AVPlayer); if no stream, open the YouTube app.
+  * Added skip ±10s, 1×–2× speed, 15–60 min sleep timer, related videos, watch history, remember last tab, long-press a result (Play / Copy / Open YouTube).
+ .
+ 3.0.4 (2026-09-16)
+  * Sửa iOS 14 / RootHide: tìm và mở nội dung không còn load mãi. WebView dùng cấu hình WebKit cũ (không process pool / data store riêng, không chờ render xong mới vẽ), tìm có timeout 7s, YouTube fallback embed sau 4s.
+  * Kéo ô tìm mọi chỗ như bản cũ: kéo từ toàn bộ ô (kể cả ô gõ), không bị cố định khi cửa sổ không phải key window.
+  * iOS 14 / RootHide: search and opening a result no longer spin forever. WebView uses the system WebKit defaults (no private process pool/data store, paints while loading), search times out at 7s, YouTube falls back to embed after 4s.
+  * Drag the search pill anywhere again, including from the text field. It no longer sticks because the overlay was not the key window.
+ .
+ 3.0.3 (2026-09-16)
+  * Sửa PiP: cửa sổ nổi hiện đúng video (AVPlayer gắn lại lớp hình; YouTube embed đưa WebView vào thẻ PiP sau khi cửa sổ đã hiện).
+  * Thêm chọn Có hình hoặc Chỉ tiếng trong Cài đặt và nút loa/video trên cửa sổ PiP. Chỉ tiếng dùng thanh điều khiển nhỏ, không còn khung 16:9 đen trống.
+  * PiP now shows the actual video (AVPlayer layer rebound; YouTube embed moves into the PiP card after the window is on screen).
+  * Choose Video or Audio only in Settings, or tap the speaker/video button on the floating player. Audio only uses a compact bar instead of an empty 16:9 box.
+ .
+ 3.0.2 (2026-09-16)
+  * Sửa treo máy khi phát video: không còn PiP hệ thống, MPNowPlayingSession, audio session độc quyền, iframe autoplay, hay chuyển WKWebView sang cửa sổ khác trong SpringBoard.
+  * Phát native bất đồng bộ (load playable rồi mới play). Embed YouTube không tự phát. PiP overlay vẫn dùng được với AVPlayer.
+  * Fixed freeze on play: no system PiP, no MPNowPlayingSession, no exclusive audio session, no iframe autoplay, no WKWebView reparent in SpringBoard.
+  * Native playback loads asynchronously. YouTube embed does not autoplay. Overlay PiP still works with AVPlayer.
+ .
+ 3.0.1 (2026-09-16)
+  * Sửa PiP: cửa sổ nổi luôn hiện (kể cả khi YouTube chạy bằng WebView), chỉ nhận chạm trên thẻ video nên vẫn dùng app khác được.
+  * Vào app khác không còn tắt video — chuyển sang PiP hệ thống (AVPlayer) hoặc cửa sổ LookGlass, phát nền tiếp.
+  * Màn hình khoá hiện player (Now Playing + MediaRemote, iOS 16 MPNowPlayingSession). Tắt màn vẫn nghe.
+  * PiP fix: the floating card always appears (including WebView YouTube) and only swallows touches on the card so other apps stay usable.
+  * Leaving Home no longer kills video — system PiP when native, LookGlass overlay otherwise; playback continues.
+  * Lock Screen now-playing works (Now Playing + MediaRemote, MPNowPlayingSession on iOS 16). Screen off keeps audio.
+ .
+ 3.0.0 (2026-09-16)
+  * YouTube Premium-like: phát nền khi tắt màn hình, khoá máy, hoặc vào app khác. Điều khiển trên màn hình khoá.
+  * Picture in Picture: cửa sổ video nổi trên Home và app khác, kéo được, phát tiếp khi làm việc khác.
+  * Giao diện 3.0 mượt hơn (spring, khung kính DuoFrame, player 16:9). Nút PiP trên thanh video.
+  * YouTube Premium-like: keep playing with the screen off, on the lock screen, or in other apps. Lock-screen media controls.
+  * Picture in Picture: a floating video window over Home and other apps, draggable, so you can keep working.
+  * Smoother 3.0 UI (spring motion, DuoFrame glass, 16:9 player). PiP button on the video bar.
+ .
+ 2.0.0 (2026-09-15)
+  * Giao diện kiểu DuoFrame: khung kính lỏng iOS 27 (viền kép, ánh kính) cho ô tìm, thẻ kết quả và dock trang.
+  * Ít nhất 100 kết quả, chia 5 trang (20 mục/trang), vuốt hoặc chấm trang. Tab Google/Ảnh/Maps cũng là danh sách trang, bấm mới mở web đầy đủ.
+  * YouTube tự phát khi vào video; nút mở app YouTube; dán clipboard trên ô tìm; lịch sử tìm gần đây.
+  * DuoFrame-style UI: iOS 27 liquid-glass frames (dual rim, specular) for the search capsule, results card and page dock.
+  * At least 100 results across 5 pages (20 each). Swipe or use page dots. Google/Images/Maps tabs are paged lists; tap to open the full site.
+  * YouTube autoplays; Open in YouTube app; paste-from-clipboard on the pill; recent searches.
+ .
+ 1.7.0 (2026-09-14)
+  * Mở lại web đầy đủ trong cửa sổ: Google (nhiều trang), Ảnh, Maps, tin, shop, MXH — không còn chặn trang nặng.
+  * Nhiều kết quả hơn: Google/Bing/DuckDuckGo, Wiki 15 mục, YouTube 40 video, nhạc (bài + album + Spotify/YT Music/Zing), phim (iTunes + Netflix/Disney+/FPT…).
+  * Cửa sổ kết quả lớn hơn, có ảnh bìa, nút Trở lại đi trong web (trang 2, 3 của Google).
+  * Full websites load in the window again: Google (multi-page), Images, Maps, news, shop, social — heavy pages are no longer blocked.
+  * More results: Google/Bing/DuckDuckGo, 15 Wiki hits, 40 YouTube videos, music (tracks + albums + Spotify/YT Music/Zing), movies (iTunes + Netflix/Disney+/FPT…).
+  * Larger results window, cover art, and Back walks the in-window browser (Google page 2, 3, …).
+ .
+ 1.6.1 (2026-09-14)
+  * Chữ trong nội dung (danh sách, Wiki, trang chi tiết, YouTube) đổi thành màu đen trên nền sáng cho dễ đọc.
+  * Ô tìm theo sáng/tối: chế độ sáng dùng chữ đen, không còn chữ trắng trên kính trắng.
+  * Content text (lists, Wiki, detail pages, YouTube info) is now black on a light paper background so it is easy to read.
+  * The search pill follows light/dark: light mode uses black text instead of white-on-white glass.
+ .
+ 1.6.0 (2026-09-14)
+  * Sửa xung đột hệ thống gây treo máy và cửa sổ đen ngẫu nhiên: overlay chỉ gắn UIWindowScene, host view luôn trong suốt (UIKit không còn đổi thành nền đen).
+  * Không tạo WebView sẵn trong SpringBoard; Google / Ảnh / Maps / MXH không tự mở site nặng. WebView chỉ khi cần, có watchdog 7s, gỡ hẳn khi đóng.
+  * Bỏ dispatch_sync khi tìm, giảm reload khi xoay/scene, tắt bóng đổ overlay. Kéo ô tìm và gõ vẫn như 1.5.2.
+  * Fixed system conflicts that froze the device and left random black windows: overlays attach only to a UIWindowScene, and the host view stays clear so UIKit cannot reset it to an opaque black background.
+  * No eager WKWebView in SpringBoard. Google / Images / Maps / Social no longer auto-load heavy sites. WebView is created on demand, watched for 7s, and torn down on close.
+  * Search no longer uses dispatch_sync; scene/rotate no longer storm-reload; overlay shadows removed. Drag and typing stay as in 1.5.2.
+ .
+ 1.5.2 (2026-09-14)
+  * Kéo ô tìm để dời — không còn hộp thoại credit khi nhấn giữ (trước đó chiếm key window nên không bấm được Mở rộng / Ẩn / Tài trợ / Đóng).
+  * Tap và kéo tách nhau: chạm để gõ, kéo để di chuyển. Credit / donate vẫn ở Cài đặt.
+  * Drag the search pill to move it. Long-press no longer shows the credit alert that stole the key window and froze Expand / Hide / Donate / Close.
+  * Tap vs drag are separated: tap to type, drag to move. Credit / donate stay in Settings.
+ .
+ 1.5.1 (2026-09-14)
+  * Sửa toàn diện iOS 15+: màn hình đen (bỏ blur overlay), bàn phím kẹt (trả key window về SpringBoard, hit-test cho phép bấm phím), treo máy (tắt CoreMotion, animation kính, biên dịch content-rule trong SpringBoard).
+  * Cửa sổ tìm chỉ chiếm key khi đang gõ; xong tìm là trả lại Home ngay.
+  * iOS 15+ stability: black screen (no overlay blur), stuck keyboard (return key window to SpringBoard and pass taps to the keyboard), SpringBoard hangs (no CoreMotion, no glass animation, no in-process content-rule compile).
+  * The search window is key only while typing; Home gets the key window back as soon as search runs.
+ .
+ 1.5.0 (2026-09-14)
+  * Sửa màn hình đen trên một số máy khi hiện kết quả: không dùng CABackdropLayer trên overlay, thẻ có nền đặc, WebView không còn nền đen.
+  * Thu gọn cửa sổ kết quả (nút – hoặc bấm ra ngoài); mở lại hiện đúng trang / video đang xem.
+  * Nhật ký phiên bản trong Cài đặt và trên Sileo. Gói rootless, rootful, RootHide.
+  * Fixed a black screen on some devices when showing results: no CABackdropLayer in the overlay window, solid card fill, WebView no longer uses a black background.
+  * Minimize the results window (– or tap outside); restore it at the same page or video.
+  * Full changelog in Settings and Sileo. Rootless, rootful and RootHide packages.
+ .
+ 1.4.1 (2026-09-14)
+  * Gói RootHide (iphoneos-arm64e) cho Dopamine-roothide / RootHide Bootstrap.
+  * Tự tìm jbroot nên prefs, relay plist và Respring chạy khi đường dẫn jailbreak bị random.
+  * RootHide package (iphoneos-arm64e) for Dopamine-roothide / RootHide Bootstrap.
+  * Runtime jbroot so prefs, relay plist and Respring work with a randomized jailbreak root.
+ .
+ 1.4.0 (2026-09-14)
+  * Tab YouTube duyệt danh sách video (ảnh, tiêu đề, kênh) rồi phát embed trong cửa sổ.
+  * Không mở web YouTube nên không có quảng cáo preroll.
+  * YouTube tab browses a native video list (thumb, title, channel) and plays an in-window embed.
+  * Does not open the YouTube website, so preroll ads do not appear.
+ .
+ 1.3.0 (2026-09-14)
+  * Chặn quảng cáo trong LookGlass (banner, popup, preroll) theo hướng AdShield.
+  * Công tắc Cài đặt → Quảng cáo.
+  * In-window ad blocking (banners, popups, preroll) in the AdShield style.
+  * Toggle in Settings → Ads.
+ .
+ 1.2.0 (2026-09-14)
+  * Thêm tab Ảnh, Tin, Bản đồ, Mua sắm, MXH. Mục Phim liệt kê web phim.
+  * Sửa nút Trở lại / Đóng đè nhau.
+  * Added Images, News, Maps, Shop and Social tabs. Movie tab lists film sites.
+  * Fixed overlapping Back / Close buttons.
+ .
+ 1.1.0 (2026-09-14)
+  * Chỉ tìm khi bấm Tìm. Kéo ô mọi chỗ, ẩn sát mép trái/phải.
+  * Credit và donate (MB Bank 0345140889 - Nguyễn Tiến Triều).
+  * Search only after tapping Search. Drag anywhere; fling to an edge to hide.
+  * Credit and donate (MB Bank 0345140889 - Nguyễn Tiến Triều).
+ .
+ 1.0.0 (2026-09-14)
+  * Bản đầu: ô tìm kính lỏng iOS 27 trên màn hình chính. Google, Wikipedia, nhạc, phim trong cửa sổ nhỏ.
+  * Initial release: iOS 27 liquid-glass search on the Home Screen. Google, Wikipedia, music and movies in a small window.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: LookGlass
+Sileodepiction: file:///var/jb/Library/LookGlass/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.lookglass/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.lookglass/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png

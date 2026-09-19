@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DuoFrame 3.4.9</title>
+<style>
+body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:#93c5fd;margin:0 0 12px}
+.card{background:#111827;border-radius:16px;padding:16px;border:1px solid rgba(255,255,255,.08)}
+.donate{margin-top:12px;padding:12px 14px;border-radius:12px;background:#0b1220;border:1px solid rgba(56,189,248,.35)}
+.donate strong{color:#7dd3fc}
+pre{white-space:pre-wrap;font-size:13px;color:#cbd5e1}
+a{color:#7dd3fc}
+hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>DuoFrame 3.4.9</h1>
+<p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
+<p>Màn hình chính iOS 27: khung kính lỏng cho status, icon grid và dock.</p>
+<p>iOS 27 Home Screen: liquid-glass frames for status, icon grid and dock.</p>
+<div class="donate">
+<strong>Donate</strong><br>
+MB Bank - 0345140889 - Nguyễn Tiến Triều<br>
+Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
+</div>
+</div>
+<hr>
+<p>Gói: rootless · rootful · RootHide (khi có <code>iphoneos-arm64e</code>).</p>
+<p>Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → DuoFrame</strong>.</p>
+<pre>DuoFrame 3.4.9 — hướng dẫn cài
+================================
+
+Credit: Jinken Nguyen - 1989
+Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+
+Chọn ĐÚNG một file, khớp loại jailbreak:
+
+  Rootless (Dopamine, palera1n rootless)
+    → packages/DuoFrame-rootless.deb   (iphoneos-arm64)
+
+  Rootful (unc0ver, checkra1n, palera1n rootful)
+    → packages/DuoFrame-rootful.deb    (iphoneos-arm)
+
+  RootHide / Bootstrap
+    → packages/DuoFrame-roothide.deb   (iphoneos-arm64e)
+
+Cài bằng Sileo / Zebra / Filza. Nếu báo không cài được: gỡ bản cũ,
+chọn đúng file ở trên, cài lại. KHÔNG cài nhầm rootless lên máy rootful.
+
+iOS 14 (unc0ver / checkra1n / RootHide): dùng đúng gói rootful hoặc roothide.
+Bản 3.3.2 sửa khung kính bị khô và icon/widget bị ẩn trên iOS 14.
+
+Sau khi cài: Respring. Mở Cài đặt → DuoFrame.
+Bấm preset đời máy (SE → Pro Max, tai thỏ → Dynamic Island) — chỉ đổi thanh status,
+không đụng lưới icon / dock. Hoặc &quot;Máy này (tự động)&quot; để khớp màn hình đang dùng.
+Kiểu thanh: một viên / hai cánh / ôm Island / mảnh / hai tầng.
+Nên bấm &quot;Khôi phục an toàn&quot; nếu setup bị lệch.
+
+Nếu treo máy / Safe Mode
+  1. Vào Safe Mode (Volume lên khi respring, tuỳ jailbreak).
+  2. Tạo tệp rỗng:
+       /var/mobile/Library/Preferences/.duoframe-disable
+  3. Respring. Tweak tắt. Xoá tệp khi muốn bật lại.
+
+Chip trên thanh status mới chỉ gồm lối tắt mở được app
+(Lịch, Đồng hồ, Camera, Ảnh…). Bấm chip = mở app.
+
+Kéo icon Home: giữ ~0,2 giây rồi kéo. Vuốt trang không bị cản.
+Icon dock luôn căn giữa khay, kể cả khi ít app hơn số cột.
+Vuốt trái (Today / Spotlight) và vuốt phải (Thư viện ứng dụng): một khung kính full trang, không tách status.
+Icon trong folder trên Home không bị kéo xuống — lưới folder căn giữa như gốc.
+Home: một trang icon, vuốt lên/xuống. Vuốt trái (Tìm kiếm) = layout gốc, không khung DuoFrame. Vuốt phải (Thư viện) vẫn có khung kính. Cài đặt → Kiểu khung cho Home/Thư viện. Giao diện: &quot;Mờ theo nghiêng&quot;.
+Tắt thanh status mới + bật status cũ: thanh gốc trở lại, không còn icon Duo 3-in-1.
+Icon, thư mục, widget nằm DƯỚI viền khung (kể cả Thư viện ứng dụng).
+Mờ dần mượt kiểu iPhone Duo; vuốt vào khung thì hiện rõ, không che viền.
+Bật/tắt trong Cài đặt → Khung → Tìm kiếm / Thư viện ứng dụng.</pre>
+<p><a href="../../#donate">← Jinken Repo · Donate</a></p>
+</body>
+</html>

@@ -1,0 +1,264 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#1C7ED6",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "AdShield",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**AdShield** chặn quảng cáo toàn hệ thống cho máy jailbreak: app truyện/báo, Safari, WebView và video.\n\nSystem-wide ad blocker for jailbroken iOS: comic/news apps, Safari, WebViews and video ads.\n\n**Phiên bản / Version:** 1.0.3  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → AdShield**. Đổi tuỳ chọn xong hãy tắt hẳn app đích và Safari.\n\nIf you find this tweak useful, please donate via **MB Bank - 0345140889 - Nguyễn Tiến Triều**.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.3"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Mở tab **Changelog** để xem toàn bộ lịch sử phiên bản.\n\nOpen the **Changelog** tab for the full version history.",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.3  ·  2026-09-16",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sửa web phim: không còn chặn poster/ảnh và HLS/mp4; video phim phát bình thường.\n- Không xoá khung player (jwplayer, video-js, #player) dù class tên ad-container/ads-box.\n- Chặn popup/popunder: chặn window.open sang domain lạ và mạng popads/propeller/exoclick.\n- Ảnh/video chỉ bị chặn khi host là mạng quảng cáo thật (doubleclick…), không chặn vì subdomain ads. của website.\n\n#### English\n- Fixed movie sites: posters/images and HLS/mp4 are no longer blocked; films play.\n- Does not remove player shells (jwplayer, video-js, #player) even if named ad-container/ads-box.\n- Blocks popups/popunders: cross-site window.open and popads/propeller/exoclick networks.\n- Images/video are blocked only on real ad networks, not because a site uses an ads. subdomain.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.2  ·  2026-09-16",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sửa không chặn được QC trên web và trong app; web vẫn vào được.\n- CSS/JS: nhận mẫu QC thì xoá hẳn div khỏi DOM, gấp phần trước/sau lại, không còn lỗ trống chiếm màn hình.\n- Selector QC theo token (ad-unit, ad-container, adsbygoogle…) — không khớp nhầm head-unit / upload-box.\n- Chặn thêm SDK (IMA requestAds, GAM, AppLovin, Adtima) và banner native; không chặn file HTML của website.\n\n#### English\n- Fixed ads not being blocked on the web and in apps, without blocking sites from loading.\n- CSS/JS: matching ad slots are removed from the DOM and neighbors collapse so ads no longer occupy the screen.\n- Ad selectors use class tokens (ad-unit, ad-container, adsbygoogle…) and no longer match head-unit / upload-box.\n- Stronger SDK blocking (IMA requestAds, GAM, AppLovin, Adtima) and native banners; website HTML is not cancelled.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.1  ·  2026-09-15",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sửa một số website bị chặn cả trang, không vào được.\n- Không huỷ navigation HTML trừ khi host là mạng quảng cáo (doubleclick, googlesyndication, …).\n- CSS không còn khớp nhầm class như head-unit, upload-box, load-overlay.\n- JS giữ khung trang (#root, #app, #__next) và khối nội dung lớn; anti-adblock không ẩn cả trang.\n\n#### English\n- Fixed some websites being blocked entirely and failing to load.\n- Main-frame HTML navigation is no longer cancelled unless the host is an ad network.\n- CSS no longer matches page chrome such as head-unit, upload-box, or load-overlay.\n- JS keeps page shells (#root, #app, #__next) and large content; anti-adblock no longer hides the whole page.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.0  ·  2026-09-15",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Giao diện Cài đặt kiểu DuoFrame: thẻ bo góc, hero, switch, chip ngôn ngữ, tài trợ, credit.\n- Nhiều lớp chặn: mạng, SDK, video, banner, popup, interstitial, anti-adblock.\n- CSS + JS injection: xóa hẳn slot QC khỏi DOM, gấp layout, web không bị lỗ trống hay vỡ trang.\n- Whitelist / blacklist app và host; Safari & WebView trong app.\n- An toàn boot: không Safe Mode / treo táo; không hook SpringBoard, Sileo, SplashBoard.\n- Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.\n- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n#### English\n- DuoFrame-style Settings: rounded cards, hero, switches, language chips, donate, credit.\n- Several blocking layers: network, SDKs, video, banners, popups, interstitials, anti-adblock.\n- CSS + JS injection removes ad slots from the DOM so the page layout stays continuous.\n- App/host whitelist and blacklist; Safari and in-app WebViews.\n- Boot-safe: no Safe Mode / Apple-logo hang; does not hook SpringBoard, Sileo or SplashBoard.\n- RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.\n- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.3.3  ·  2026-09-14",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sửa treo Sileo / SpringBoard: không còn inject vào SpringBoard, Sileo, Zebra, Cydia, WebKit.Networking.\n- Gỡ hook NSURLSessionTask resume (gây deadlock CFNetwork).\n- Bỏ quét view nặng trên didMoveToSuperview / viewDidAppear.\n\n#### English\n- Fixed Sileo / SpringBoard freezes: no longer injects into SpringBoard, Sileo, Zebra, Cydia, or WebKit.Networking.\n- Removed NSURLSessionTask resume hook (CFNetwork deadlock).\n- Dropped heavy view walking on didMoveToSuperview / viewDidAppear.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.3.2  ·  2026-09-14",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sửa QC thỉnh thoảng vẫn hiện: chặn cả process WebKit.Networking (Safari/WebView).\n- Bơm lại CSS/JS nếu app gỡ script; quét WebView khi app mở lại.\n- Load tweak cả khi app chưa có bundle ID; chặn NSURLSessionTask lúc resume.\n\n#### English\n- Fixed ads sometimes showing: also hooks WebKit.Networking (Safari/WebView traffic).\n- Re-injects CSS/JS if the app strips scripts; rescans WebViews when returning to the app.\n- Starts even if the bundle ID is not ready yet; cancels ad NSURLSessionTasks on resume.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.3.1  ·  2026-09-14",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sửa lỗi thỉnh thoảng không chặn được quảng cáo (tweak load lúc app chưa có bundle ID).\n- Bơm lại CSS/JS khi WebView điều hướng; biên dịch content rule có retry.\n- Hook SDK/IMA khi dylib quảng cáo load muộn; chặn download task và Safari View.\n\n#### English\n- Fixed ads sometimes slipping through when the tweak loaded before the app bundle ID was ready.\n- Re-injects CSS/JS on WebView navigations and retries content-rule compile.\n- Hooks ad SDKs/IMA if they load late; blocks download tasks and Safari View Service.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.3.0  ·  2026-09-14",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sileo hiện nhật ký mọi phiên bản khi xem/cài gói (mô tả + depiction native).\n- Cài đặt → AdShield → Nhật ký phiên bản để theo dõi update trên máy.\n- Đóng gói changelog Debian và trang depiction HTML cho Zebra/Cydia.\n\n#### English\n- Sileo now shows a full version history on the package page (description + native depiction).\n- Settings → AdShield → Changelog to follow updates on-device.\n- Ships a Debian changelog and an HTML depiction for Zebra/Cydia.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.2.2  ·  2026-09-14",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sửa Cài đặt tự thoát khi bấm App/Web trong Whitelist và Blacklist.\n- Mở list bằng nút action + màn hình thường, không dùng detail PreferenceLoader.\n\n#### English\n- Fixed Settings crashing when opening App/Web in Whitelist and Blacklist.\n- Lists open via button actions and a normal screen, not PreferenceLoader detail pages.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.2.1  ·  2026-09-14",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Sửa crash PreferenceLoader khi mở whitelist/blacklist (chuyển sang PSListController).\n\n#### English\n- Fixed PreferenceLoader crash on whitelist/blacklist (PSListController).",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.2.0  ·  2026-09-14",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Whitelist: chọn app đã cài hoặc nhập domain để không chặn quảng cáo.\n- Blacklist: thêm app luôn chặn (kể cả app Apple) và thêm host quảng cáo.\n- Cài đặt → Tài trợ: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n#### English\n- Whitelist: pick installed apps or domains that should keep ads.\n- Blacklist: force-block extra apps (including Apple apps) and extra ad hosts.\n- Settings → Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.1.1  ·  2026-09-14",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Gói RootHide (iphoneos-arm64e) cho Dopamine-roothide / RootHide Bootstrap.\n- Tự tìm jbroot nên prefs, relay plist và Respring chạy khi đường dẫn jailbreak bị random.\n\n#### English\n- RootHide package (iphoneos-arm64e) for Dopamine-roothide / RootHide Bootstrap.\n- Runtime jbroot so prefs, relay plist and Respring work with a randomized jailbreak root.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.1.0  ·  2026-09-13",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Chặn video quảng cáo: Google IMA / VAST, URL player native, skip preroll YouTube trên web.\n- Bơm CSS/JS lúc trang bắt đầu tải trên Safari, SFSafariViewController và WebView trong app.\n- MutationObserver và nút Skip Ad cho quảng cáo chèn muộn.\n\n#### English\n- Video ads: Google IMA / VAST, native player ad URLs, YouTube web preroll skip.\n- CSS/JS at document-start on Safari, SFSafariViewController and in-app WebViews.\n- MutationObserver and Skip Ad tap for late-inserted units.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.0  ·  2026-09-13",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "#### Tiếng Việt\n- Bản đầu: chặn request mạng, SDK (AdMob, FAN, AppLovin, Unity, ironSource, …), WebView và banner native.\n- Gói rootless (Dopamine) và rootful.\n\n#### English\n- Initial release: network requests, ad SDKs (AdMob, FAN, AppLovin, Unity, ironSource, …), WebView and native banners.\n- Rootless (Dopamine) and rootful packages.",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    }
+  ]
+}
