@@ -3,6 +3,8 @@
 Cydia / Sileo / Zebra repository for jailbreak tweaks.
 
 **Credit: Jinken Nguyen - 1989**  
+Cảm ơn bạn đã dùng tweak. Nếu thấy hữu ích, một chút ủng hộ giúp giữ repo miễn phí.
+
 **Donate: MB Bank `0345140889` — Nguyễn Tiến Triều**
 
 ## Add source
@@ -28,8 +30,9 @@ Install **one** package per tweak that matches your jailbreak:
 | Name | Package | Version | Builds |
 | --- | --- | --- | --- |
 | AdShield | `com.jinkennguyen.adshield` | 1.4.0 | rootful, rootless, RootHide |
-| DuoFrame | `com.jinkennguyen.duoframe` | 3.4.9 | rootful, rootless, RootHide |
+| DuoFrame | `com.jinkennguyen.duoframe` | 3.5.0 | rootful, rootless, RootHide |
 | LookGlass | `com.jinkennguyen.lookglass` | 3.1.3 | rootful, rootless, RootHide |
+| NoxFrame | `com.jinkennguyen.noxframe` | 1.0.1 | rootful, rootless, RootHide |
 
 ## Credit
 
@@ -38,7 +41,9 @@ Install **one** package per tweak that matches your jailbreak:
 
 ## Donate
 
-Nếu tweak hữu ích, hãy ủng hộ để duy trì repo.
+Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc.
+
+Thank you for using these free tweaks. A small donation keeps the repo online. No pressure.
 
 | | |
 | --- | --- |

@@ -5,27 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LookGlass 3.1.3</title>
 <style>
-body{margin:0;padding:16px;font:16px/1.45 -apple-system,BlinkMacSystemFont,sans-serif;background:#0b1220;color:#eef2ff}
+body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
-.sub{color:#93c5fd;margin-bottom:16px}
-h2{font-size:18px;margin:22px 0 8px;color:#fff}
-h2 span{color:#93c5fd;font-weight:500;font-size:14px}
-h3{font-size:14px;color:#cbd5e1;margin:10px 0 4px}
-ul{margin:0 0 8px 18px;padding:0}
-li{margin:4px 0}
-hr{border:0;border-top:1px solid #1f2937;margin:16px 0}
-.card{background:#111827;border-radius:14px;padding:14px 16px}
+.sub{color:#93c5fd;margin:0 0 12px}
+.card{background:#111827;border-radius:16px;padding:16px;border:1px solid rgba(255,255,255,.08)}
+.donate{margin-top:12px;padding:12px 14px;border-radius:12px;background:#0b1220;border:1px solid rgba(56,189,248,.35)}
+.donate strong{color:#7dd3fc}
+pre{white-space:pre-wrap;font-size:13px;color:#cbd5e1}
+a{color:#7dd3fc}
+hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </style>
 </head>
 <body>
 <div class="card">
 <h1>LookGlass 3.1.3</h1>
-<p class="sub">Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
-<p>Ô tìm kính lỏng iOS 27 trên màn hình chính. Kết quả ở cửa sổ nhỏ, không cần Safari.</p>
-<p>Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều</p>
+<p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
+<p>Ô tìm kính lỏng trên màn hình chính. Google, Wikipedia, nhạc, phim, YouTube.</p>
+<p>Liquid-glass Home Screen search. Google, Wikipedia, music, films, YouTube.</p>
+<div class="donate">
+<strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
+</div>
 </div>
 <hr>
-<h1>Changelog / Nhật ký phiên bản</h1>
-<section><h2>3.1.3 <span>2026-09-17</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa thanh player: nút Phát / Tạm dừng / tua ±10s / tốc độ / hẹn giờ hoạt động thật (AVPlayer + iframe YouTube qua JS API). Thanh không còn bị danh sách video đè mất chạm.</li><li>Thêm thanh tiến trình và thời gian; bấm vào hình video để play/pause.</li></ul><h3>English</h3><ul><li>Player bar works: Play / Pause / skip ±10s / speed / sleep actually control AVPlayer and the YouTube iframe. The related list no longer eats taps on the controls.</li><li>Added a scrubber and time label; tap the video image to play/pause.</li></ul></section><section><h2>3.1.2 <span>2026-09-17</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa iOS 14 rootful / RootHide không chạy: gói rootful và RootHide chỉ còn arm64 (slice arm64e ABI mới của Xcode không load được SpringBoard iOS 14).</li><li>Ô tìm hiện trên iOS 14: cửa sổ không còn bắt buộc UIWindowScene lúc launch (SpringBoard 14 thường chưa có scene). Fallback initWithFrame.</li></ul><h3>English</h3><ul><li>iOS 14 rootful / RootHide now loads: those packages are arm64-only (Xcode's new arm64e ABI is rejected by iOS 14 SpringBoard).</li><li>Search pill appears on iOS 14: overlay windows no longer require a UIWindowScene at launch (SpringBoard 14 often has none). Falls back to initWithFrame.</li></ul></section><section><h2>3.1.1 <span>2026-09-17</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa không phát được YouTube: lấy thêm luồng (HLS/mp4 360–720, nhiều Invidious/Piped), chờ đủ 14s; nếu native fail thì phát iframe trong cửa sổ (autoplay tắt, bấm Play trong khung) thay vì chỉ mở app.</li><li>Sửa phim/nhạc: trailer iTunes được phát trong cửa sổ; không còn mở nhầm trang YouTube search trong SpringBoard. Watchdog web 18s.</li></ul><h3>English</h3><ul><li>YouTube plays again: more stream sources (HLS / 360–720 mp4, extra Invidious/Piped), 14s wait; if native fails, in-window iframe (autoplay off, tap Play in the frame) instead of only opening the app.</li><li>Movies/music: iTunes trailers play in-window; YouTube search pages are not loaded in SpringBoard. Web watchdog 18s.</li></ul></section><section><h2>3.1.0 <span>2026-09-17</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa treo SpringBoard khi vào YouTube: không còn iframe youtube-nocookie / WKWebView trong SpringBoard. Player native (ảnh bìa + AVPlayer); không lấy được luồng thì mở app YouTube.</li><li>Thêm tua ±10s, tốc độ 1×–2×, hẹn giờ tắt 15–60 phút, video liên quan, lịch sử đã xem, nhớ tab, nhấn giữ kết quả (Phát / Chép / Mở YouTube).</li></ul><h3>English</h3><ul><li>Fixed SpringBoard freeze on YouTube: no youtube-nocookie iframe / WKWebView in SpringBoard. Native player (poster + AVPlayer); if no stream, open the YouTube app.</li><li>Added skip ±10s, 1×–2× speed, 15–60 min sleep timer, related videos, watch history, remember last tab, long-press a result (Play / Copy / Open YouTube).</li></ul></section><section><h2>3.0.4 <span>2026-09-16</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa iOS 14 / RootHide: tìm và mở nội dung không còn load mãi. WebView dùng cấu hình WebKit cũ (không process pool / data store riêng, không chờ render xong mới vẽ), tìm có timeout 7s, YouTube fallback embed sau 4s.</li><li>Kéo ô tìm mọi chỗ như bản cũ: kéo từ toàn bộ ô (kể cả ô gõ), không bị cố định khi cửa sổ không phải key window.</li></ul><h3>English</h3><ul><li>iOS 14 / RootHide: search and opening a result no longer spin forever. WebView uses the system WebKit defaults (no private process pool/data store, paints while loading), search times out at 7s, YouTube falls back to embed after 4s.</li><li>Drag the search pill anywhere again, including from the text field. It no longer sticks because the overlay was not the key window.</li></ul></section><section><h2>3.0.3 <span>2026-09-16</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa PiP: cửa sổ nổi hiện đúng video (AVPlayer gắn lại lớp hình; YouTube embed đưa WebView vào thẻ PiP sau khi cửa sổ đã hiện).</li><li>Thêm chọn Có hình hoặc Chỉ tiếng trong Cài đặt và nút loa/video trên cửa sổ PiP. Chỉ tiếng dùng thanh điều khiển nhỏ, không còn khung 16:9 đen trống.</li></ul><h3>English</h3><ul><li>PiP now shows the actual video (AVPlayer layer rebound; YouTube embed moves into the PiP card after the window is on screen).</li><li>Choose Video or Audio only in Settings, or tap the speaker/video button on the floating player. Audio only uses a compact bar instead of an empty 16:9 box.</li></ul></section><section><h2>3.0.2 <span>2026-09-16</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa treo máy khi phát video: không còn PiP hệ thống, MPNowPlayingSession, audio session độc quyền, iframe autoplay, hay chuyển WKWebView sang cửa sổ khác trong SpringBoard.</li><li>Phát native bất đồng bộ (load playable rồi mới play). Embed YouTube không tự phát. PiP overlay vẫn dùng được với AVPlayer.</li></ul><h3>English</h3><ul><li>Fixed freeze on play: no system PiP, no MPNowPlayingSession, no exclusive audio session, no iframe autoplay, no WKWebView reparent in SpringBoard.</li><li>Native playback loads asynchronously. YouTube embed does not autoplay. Overlay PiP still works with AVPlayer.</li></ul></section><section><h2>3.0.1 <span>2026-09-16</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa PiP: cửa sổ nổi luôn hiện (kể cả khi YouTube chạy bằng WebView), chỉ nhận chạm trên thẻ video nên vẫn dùng app khác được.</li><li>Vào app khác không còn tắt video — chuyển sang PiP hệ thống (AVPlayer) hoặc cửa sổ LookGlass, phát nền tiếp.</li><li>Màn hình khoá hiện player (Now Playing + MediaRemote, iOS 16 MPNowPlayingSession). Tắt màn vẫn nghe.</li></ul><h3>English</h3><ul><li>PiP fix: the floating card always appears (including WebView YouTube) and only swallows touches on the card so other apps stay usable.</li><li>Leaving Home no longer kills video — system PiP when native, LookGlass overlay otherwise; playback continues.</li><li>Lock Screen now-playing works (Now Playing + MediaRemote, MPNowPlayingSession on iOS 16). Screen off keeps audio.</li></ul></section><section><h2>3.0.0 <span>2026-09-16</span></h2><h3>Tiếng Việt</h3><ul><li>YouTube Premium-like: phát nền khi tắt màn hình, khoá máy, hoặc vào app khác. Điều khiển trên màn hình khoá.</li><li>Picture in Picture: cửa sổ video nổi trên Home và app khác, kéo được, phát tiếp khi làm việc khác.</li><li>Giao diện 3.0 mượt hơn (spring, khung kính DuoFrame, player 16:9). Nút PiP trên thanh video.</li></ul><h3>English</h3><ul><li>YouTube Premium-like: keep playing with the screen off, on the lock screen, or in other apps. Lock-screen media controls.</li><li>Picture in Picture: a floating video window over Home and other apps, draggable, so you can keep working.</li><li>Smoother 3.0 UI (spring motion, DuoFrame glass, 16:9 player). PiP button on the video bar.</li></ul></section><section><h2>2.0.0 <span>2026-09-15</span></h2><h3>Tiếng Việt</h3><ul><li>Giao diện kiểu DuoFrame: khung kính lỏng iOS 27 (viền kép, ánh kính) cho ô tìm, thẻ kết quả và dock trang.</li><li>Ít nhất 100 kết quả, chia 5 trang (20 mục/trang), vuốt hoặc chấm trang. Tab Google/Ảnh/Maps cũng là danh sách trang, bấm mới mở web đầy đủ.</li><li>YouTube tự phát khi vào video; nút mở app YouTube; dán clipboard trên ô tìm; lịch sử tìm gần đây.</li></ul><h3>English</h3><ul><li>DuoFrame-style UI: iOS 27 liquid-glass frames (dual rim, specular) for the search capsule, results card and page dock.</li><li>At least 100 results across 5 pages (20 each). Swipe or use page dots. Google/Images/Maps tabs are paged lists; tap to open the full site.</li><li>YouTube autoplays; Open in YouTube app; paste-from-clipboard on the pill; recent searches.</li></ul></section><section><h2>1.7.0 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Mở lại web đầy đủ trong cửa sổ: Google (nhiều trang), Ảnh, Maps, tin, shop, MXH — không còn chặn trang nặng.</li><li>Nhiều kết quả hơn: Google/Bing/DuckDuckGo, Wiki 15 mục, YouTube 40 video, nhạc (bài + album + Spotify/YT Music/Zing), phim (iTunes + Netflix/Disney+/FPT…).</li><li>Cửa sổ kết quả lớn hơn, có ảnh bìa, nút Trở lại đi trong web (trang 2, 3 của Google).</li></ul><h3>English</h3><ul><li>Full websites load in the window again: Google (multi-page), Images, Maps, news, shop, social — heavy pages are no longer blocked.</li><li>More results: Google/Bing/DuckDuckGo, 15 Wiki hits, 40 YouTube videos, music (tracks + albums + Spotify/YT Music/Zing), movies (iTunes + Netflix/Disney+/FPT…).</li><li>Larger results window, cover art, and Back walks the in-window browser (Google page 2, 3, …).</li></ul></section><section><h2>1.6.1 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Chữ trong nội dung (danh sách, Wiki, trang chi tiết, YouTube) đổi thành màu đen trên nền sáng cho dễ đọc.</li><li>Ô tìm theo sáng/tối: chế độ sáng dùng chữ đen, không còn chữ trắng trên kính trắng.</li></ul><h3>English</h3><ul><li>Content text (lists, Wiki, detail pages, YouTube info) is now black on a light paper background so it is easy to read.</li><li>The search pill follows light/dark: light mode uses black text instead of white-on-white glass.</li></ul></section><section><h2>1.6.0 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa xung đột hệ thống gây treo máy và cửa sổ đen ngẫu nhiên: overlay chỉ gắn UIWindowScene, host view luôn trong suốt (UIKit không còn đổi thành nền đen).</li><li>Không tạo WebView sẵn trong SpringBoard; Google / Ảnh / Maps / MXH không tự mở site nặng. WebView chỉ khi cần, có watchdog 7s, gỡ hẳn khi đóng.</li><li>Bỏ dispatch_sync khi tìm, giảm reload khi xoay/scene, tắt bóng đổ overlay. Kéo ô tìm và gõ vẫn như 1.5.2.</li></ul><h3>English</h3><ul><li>Fixed system conflicts that froze the device and left random black windows: overlays attach only to a UIWindowScene, and the host view stays clear so UIKit cannot reset it to an opaque black background.</li><li>No eager WKWebView in SpringBoard. Google / Images / Maps / Social no longer auto-load heavy sites. WebView is created on demand, watched for 7s, and torn down on close.</li><li>Search no longer uses dispatch_sync; scene/rotate no longer storm-reload; overlay shadows removed. Drag and typing stay as in 1.5.2.</li></ul></section><section><h2>1.5.2 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Kéo ô tìm để dời — không còn hộp thoại credit khi nhấn giữ (trước đó chiếm key window nên không bấm được Mở rộng / Ẩn / Tài trợ / Đóng).</li><li>Tap và kéo tách nhau: chạm để gõ, kéo để di chuyển. Credit / donate vẫn ở Cài đặt.</li></ul><h3>English</h3><ul><li>Drag the search pill to move it. Long-press no longer shows the credit alert that stole the key window and froze Expand / Hide / Donate / Close.</li><li>Tap vs drag are separated: tap to type, drag to move. Credit / donate stay in Settings.</li></ul></section><section><h2>1.5.1 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa toàn diện iOS 15+: màn hình đen (bỏ blur overlay), bàn phím kẹt (trả key window về SpringBoard, hit-test cho phép bấm phím), treo máy (tắt CoreMotion, animation kính, biên dịch content-rule trong SpringBoard).</li><li>Cửa sổ tìm chỉ chiếm key khi đang gõ; xong tìm là trả lại Home ngay.</li></ul><h3>English</h3><ul><li>iOS 15+ stability: black screen (no overlay blur), stuck keyboard (return key window to SpringBoard and pass taps to the keyboard), SpringBoard hangs (no CoreMotion, no glass animation, no in-process content-rule compile).</li><li>The search window is key only while typing; Home gets the key window back as soon as search runs.</li></ul></section><section><h2>1.5.0 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Sửa màn hình đen trên một số máy khi hiện kết quả: không dùng CABackdropLayer trên overlay, thẻ có nền đặc, WebView không còn nền đen.</li><li>Thu gọn cửa sổ kết quả (nút – hoặc bấm ra ngoài); mở lại hiện đúng trang / video đang xem.</li><li>Nhật ký phiên bản trong Cài đặt và trên Sileo. Gói rootless, rootful, RootHide.</li></ul><h3>English</h3><ul><li>Fixed a black screen on some devices when showing results: no CABackdropLayer in the overlay window, solid card fill, WebView no longer uses a black background.</li><li>Minimize the results window (– or tap outside); restore it at the same page or video.</li><li>Full changelog in Settings and Sileo. Rootless, rootful and RootHide packages.</li></ul></section><section><h2>1.4.1 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Gói RootHide (iphoneos-arm64e) cho Dopamine-roothide / RootHide Bootstrap.</li><li>Tự tìm jbroot nên prefs, relay plist và Respring chạy khi đường dẫn jailbreak bị random.</li></ul><h3>English</h3><ul><li>RootHide package (iphoneos-arm64e) for Dopamine-roothide / RootHide Bootstrap.</li><li>Runtime jbroot so prefs, relay plist and Respring work with a randomized jailbreak root.</li></ul></section><section><h2>1.4.0 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Tab YouTube duyệt danh sách video (ảnh, tiêu đề, kênh) rồi phát embed trong cửa sổ.</li><li>Không mở web YouTube nên không có quảng cáo preroll.</li></ul><h3>English</h3><ul><li>YouTube tab browses a native video list (thumb, title, channel) and plays an in-window embed.</li><li>Does not open the YouTube website, so preroll ads do not appear.</li></ul></section><section><h2>1.3.0 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Chặn quảng cáo trong LookGlass (banner, popup, preroll) theo hướng AdShield.</li><li>Công tắc Cài đặt → Quảng cáo.</li></ul><h3>English</h3><ul><li>In-window ad blocking (banners, popups, preroll) in the AdShield style.</li><li>Toggle in Settings → Ads.</li></ul></section><section><h2>1.2.0 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Thêm tab Ảnh, Tin, Bản đồ, Mua sắm, MXH. Mục Phim liệt kê web phim.</li><li>Sửa nút Trở lại / Đóng đè nhau.</li></ul><h3>English</h3><ul><li>Added Images, News, Maps, Shop and Social tabs. Movie tab lists film sites.</li><li>Fixed overlapping Back / Close buttons.</li></ul></section><section><h2>1.1.0 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Chỉ tìm khi bấm Tìm. Kéo ô mọi chỗ, ẩn sát mép trái/phải.</li><li>Credit và donate (MB Bank 0345140889 - Nguyễn Tiến Triều).</li></ul><h3>English</h3><ul><li>Search only after tapping Search. Drag anywhere; fling to an edge to hide.</li><li>Credit and donate (MB Bank 0345140889 - Nguyễn Tiến Triều).</li></ul></section><section><h2>1.0.0 <span>2026-09-14</span></h2><h3>Tiếng Việt</h3><ul><li>Bản đầu: ô tìm kính lỏng iOS 27 trên màn hình chính. Google, Wikipedia, nhạc, phim trong cửa sổ nhỏ.</li></ul><h3>English</h3><ul><li>Initial release: iOS 27 liquid-glass search on the Home Screen. Google, Wikipedia, music and movies in a small window.</li></ul></section>
+<p>Gói: rootless · rootful · RootHide (khi có <code>iphoneos-arm64e</code>).</p>
+<p>Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → LookGlass</strong>.</p>
+<pre># LookGlass changelog
+
+Credit: Jinken Nguyen - 1989
+
+## 3.1.3 (2026-09-17)
+
+### Tiếng Việt
+- Sửa thanh player: nút Phát / Tạm dừng / tua ±10s / tốc độ / hẹn giờ hoạt động thật (AVPlayer + iframe YouTube qua JS API). Thanh không còn bị danh sách video đè mất chạm.
+- Thêm thanh tiến trình và thời gian; bấm vào hình video để play/pause.
+
+### English
+- Player bar works: Play / Pause / skip ±10s / speed / sleep actually control AVPlayer and the YouTube iframe. The related list no longer eats taps on the controls.
+- Added a scrubber and time label; tap the video image to play/pause.
+
+## 3.1.2 (2026-09-17)
+
+### Tiếng Việt
+- Sửa iOS 14 rootful / RootHide không chạy: gói rootful và RootHide chỉ còn arm64 (slice arm64e ABI mới của Xcode không load được SpringBoard iOS 14).
+- Ô tìm hiện trên iOS 14: cửa sổ không còn bắt buộc UIWindowScene lúc launch (SpringBoard 14 thường chưa có scene). Fallback initWithFrame.
+
+### English
+- iOS 14 rootful / RootHide now loads: those packages are arm64-only (Xcode's new arm64e ABI is rejected by iOS 14 SpringBoard).
+- Search pill appears on iOS 14: overlay windows no longer require a UIWindowScene at launch (SpringBoard 14 often has none). Falls back to initWithFrame.
+
+## 3.1.1 (2026-09-17)
+
+### Tiếng Việt
+- Sửa không phát được YouTube: lấy thêm luồng (HLS/mp4 360–720, nhiều Invidious/Piped), chờ đủ 14s; nếu native fail thì phát iframe trong cửa sổ (autoplay tắt, bấm Play trong khung) thay vì chỉ mở app.
+- Sửa phim/nhạc: trailer iTunes được phát trong cửa sổ; không còn mở nhầm trang YouTube search trong SpringBoard. Watchdog web 18s.
+
+### English
+- YouTube plays again: more stream sources (HLS / 360–720 mp4, extra Invidious/Piped), 14s wait; if native fails, in-window iframe (autoplay off, tap Play in the frame) instead of only opening the app.
+- Movies/music: iTunes trailers play in-window; YouTube search pages are not loaded in SpringBoard. Web watchdog 18s.
+
+## 3.1.0 (2026-09-17)
+
+### Tiếng Việt
+- Sửa treo SpringBoard khi vào YouTube: không còn iframe youtube-nocookie / WKWebView trong SpringBoard. Player native (ảnh bìa + AVPlayer); không lấy được luồng thì mở app YouTube.
+- Thêm tua ±10s, tốc độ 1×–2×, hẹn giờ tắt 15–60 phút, video liên quan, lịch sử đã xem, nhớ tab, nhấn giữ kết quả (Phát / Chép / Mở YouTube).
+
+### English
+- Fixed SpringBoard freeze on YouTube: no youtube-nocookie iframe / WKWebView in SpringBoard. Native player (poster + AVPlayer); if no stream, open the YouTube app.
+- Added skip ±10s, 1×–2× speed, 15–60 min sleep timer, related videos, watch history, remember last tab, long-press a result (Play / Copy / Open YouTube).
+
+## 3.0.4 (2026-09-16)
+
+### Tiếng Việt
+- Sửa iOS 14 / RootHide: tìm và mở nội dung không còn load mãi. WebView dùng cấu hình WebKit cũ (không process pool / data store riêng, không chờ render xong mới vẽ), tìm có timeout 7s, YouTube fallback embed sau 4s.
+- Kéo ô tìm mọi chỗ như bản cũ: kéo từ toàn bộ ô (kể cả ô gõ), không bị cố định khi cửa sổ không phải key window.
+
+### English
+- iOS 14 / RootHide: search and opening a result no longer spin forever. WebView uses the system WebKit defaults (no private process pool/data store, paints while loading), search times out at 7s, YouTube falls back to embed after 4s.
+- Drag the search pill anywhere again, including from the text field. It no longer sticks because the overlay was not the key window.
+
+## 3.0.3 (2026-09-16)
+
+### Tiếng Việt
+- Sửa PiP: cửa sổ nổi hiện đúng video (AVPlayer gắn lại lớp hình; YouTube embed đưa WebView vào thẻ PiP sau khi cửa sổ đã hiện).
+- Thêm chọn Có hình hoặc Chỉ tiếng trong Cài đặt và nút loa/video trên cửa sổ PiP. Chỉ tiếng dùng thanh điều khiển nhỏ, không còn khung 16:9 đen trống.
+
+### English
+- PiP now shows the actual video (AVPlayer layer rebound; YouTube embed moves into the PiP card after the window is on screen).
+- Choose Video or Audio only in Settings, or tap the speaker/video button on the floating player. Audio only uses a compact bar instead of an empty 16:9 box.
+
+## 3.0.2 (2026-</pre>
+<p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

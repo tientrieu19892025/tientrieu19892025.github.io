@@ -70,6 +70,10 @@ BLURBS = {
         "Ô tìm kính lỏng trên màn hình chính. Google, Wikipedia, nhạc, phim, YouTube.",
         "Liquid-glass Home Screen search. Google, Wikipedia, music, films, YouTube.",
     ),
+    "com.jinkennguyen.noxframe": (
+        "Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.",
+        "Take photos and record video with the screen off. Side button blanks the display; Camera stays live.",
+    ),
     "com.jinkennguyen.snowglass": (
         "Theme Snowboard kính lỏng: icon squircle iOS 26, viền sáng.",
         "Liquid-glass SnowBoard icon theme with iOS 26 squircles.",
@@ -112,6 +116,7 @@ FEATURED = [
     "com.jinkennguyen.duoframe",
     "com.jinkennguyen.adshield",
     "com.jinkennguyen.lookglass",
+    "com.jinkennguyen.noxframe",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -267,6 +272,33 @@ def read_changelog(pkg: str) -> str:
     return ""
 
 
+def donate_thanks(conf: dict) -> dict[str, str]:
+    bank = f"{conf['DONATE_BANK']} · {conf['DONATE_ACCOUNT']} · {conf['DONATE_NAME']}"
+    vi = (
+        "Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ "
+        "giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng."
+    )
+    en = (
+        "Thank you for using this free tweak. If it helped, a small donation keeps "
+        "the repo online and updates coming. No pressure — using it already means a lot."
+    )
+    md = (
+        f"{vi}\n\n{en}\n\n"
+        f"- Ngân hàng: **{conf['DONATE_BANK']}**\n"
+        f"- STK: **{conf['DONATE_ACCOUNT']}**\n"
+        f"- Chủ TK: **{conf['DONATE_NAME']}**\n"
+        f"- Nội dung: `Donate Jinken Nguyen {conf['YEAR']}`\n\n"
+        f"Quét VietQR trên [trang repo]({conf['BASE_URL']}#donate). Cảm ơn bạn rất nhiều."
+    )
+    html_block = (
+        f"<strong>Cảm ơn bạn</strong><br>{html_escape(vi)}<br><br>"
+        f"{html_escape(en)}<br><br>"
+        f"{html_escape(bank)}<br>"
+        "Quét VietQR trên trang repo hoặc chuyển khoản MB Bank."
+    )
+    return {"vi": vi, "en": en, "bank": bank, "md": md, "html": html_block}
+
+
 def html_escape(s: str) -> str:
     return (
         s.replace("&", "&amp;")
@@ -280,7 +312,7 @@ def depiction_html(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog
     name = meta.get("Name", pkg)
     ver = meta.get("Version", "")
     author = conf["AUTHOR"]
-    donate = f"{conf['DONATE_BANK']} - {conf['DONATE_ACCOUNT']} - {conf['DONATE_NAME']}"
+    thanks = donate_thanks(conf)
     log_html = ""
     if changelog:
         log_html = "<pre>" + html_escape(changelog[:4000]) + "</pre>"
@@ -309,9 +341,7 @@ hr{{border:0;border-top:1px solid #1f2937;margin:18px 0}}
 <p>{html_escape(vi)}</p>
 <p>{html_escape(en)}</p>
 <div class="donate">
-<strong>Donate</strong><br>
-{html_escape(donate)}<br>
-Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
+{thanks['html']}
 </div>
 </div>
 <hr>
@@ -328,7 +358,7 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
     name = meta.get("Name", pkg)
     ver = meta.get("Version", "")
     author = conf["AUTHOR"]
-    donate = f"{conf['DONATE_BANK']} - {conf['DONATE_ACCOUNT']} - {conf['DONATE_NAME']}"
+    thanks = donate_thanks(conf)
     md = (
         f"**{name}** — {vi}\n\n{en}\n\n"
         f"**Phiên bản / Version:** {ver}  \n"
@@ -336,7 +366,7 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
         f"**iOS:** 14+  \n"
         f"**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\n"
         f"Sau khi cài: **Respring**, mở **Cài đặt → {name}**.\n\n"
-        f"If you find this tweak useful, please donate via **{donate}**."
+        f"{thanks['vi']}\n\n{thanks['en']}"
     )
     views = [
         {"class": "DepictionHeaderView", "title": name, "useBoldText": True},
@@ -357,7 +387,7 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
         {"class": "DepictionSpacerView", "spacing": 12},
         {
             "class": "DepictionMarkdownView",
-            "markdown": f"**Donate**  \n{donate}  \nQuét VietQR trên trang repo / scan the QR on the repo site.",
+            "markdown": f"**Cảm ơn bạn / Thank you**  \n{thanks['vi']}  \n\n{thanks['en']}  \n\n{thanks['bank']}",
             "useSpacing": True,
         },
     ]
@@ -382,18 +412,11 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
                 "tabname": "Donate",
                 "class": "DepictionStackView",
                 "views": [
-                    {"class": "DepictionHeaderView", "title": "Donate", "useBoldText": True},
+                    {"class": "DepictionHeaderView", "title": "Cảm ơn bạn", "useBoldText": True},
                     {"class": "DepictionSubheaderView", "title": author, "useBoldText": False},
                     {
                         "class": "DepictionMarkdownView",
-                        "markdown": (
-                            f"Nếu tweak hữu ích, hãy ủng hộ để duy trì repo.\n\n"
-                            f"- Ngân hàng: **{conf['DONATE_BANK']}**\n"
-                            f"- STK: **{conf['DONATE_ACCOUNT']}**\n"
-                            f"- Chủ TK: **{conf['DONATE_NAME']}**\n"
-                            f"- Nội dung: `Donate Jinken Nguyen {conf['YEAR']}`\n\n"
-                            f"Scan VietQR on the [repo homepage]({conf['BASE_URL']}#donate)."
-                        ),
+                        "markdown": thanks["md"],
                         "useSpacing": True,
                     },
                 ],
@@ -492,7 +515,7 @@ code.src {{
   <div class="hero-inner">
     <span class="badge">Cydia · Sileo · Zebra</span>
     <h1>Jinken Repo</h1>
-    <p class="sub">Tweaks jailbreak bởi <strong>Jinken Nguyen - 1989</strong>. Rootless, rootful và RootHide. Miễn phí — nếu hữu ích, hãy donate.</p>
+    <p class="sub">Tweaks jailbreak bởi <strong>Jinken Nguyen - 1989</strong>. Rootless, rootful và RootHide. Miễn phí — cảm ơn bạn đã dùng. Nếu thích, một chút ủng hộ giúp mình làm tiếp.</p>
     <div class="row">
       <a class="btn primary" id="add-sileo" href="#">Thêm vào Sileo</a>
       <a class="btn" id="add-zebra" href="#">Thêm vào Zebra</a>
@@ -523,7 +546,8 @@ code.src {{
   <div class="card donate">
     <img src="assets/vietqr.png" alt="VietQR MB Bank 0345140889 Nguyễn Tiến Triều">
     <div>
-      <p>Nếu thấy tweak hữu ích, hãy ủng hộ để duy trì và phát triển repo.</p>
+      <p>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.</p>
+      <p class="en">Thank you for using these free tweaks. A small donation keeps the repo online. No pressure — using them already means a lot.</p>
       <p><strong>Ngân hàng:</strong> {html_escape(conf['DONATE_BANK'])}<br>
       <strong>Chủ TK:</strong> {html_escape(conf['DONATE_NAME'])}<br>
       <strong>STK:</strong> <span class="copy" data-copy="{html_escape(conf['DONATE_ACCOUNT'])}">{html_escape(conf['DONATE_ACCOUNT'])} · copy</span><br>
@@ -571,6 +595,8 @@ def write_readme(packages: dict[str, dict], conf: dict) -> None:
 Cydia / Sileo / Zebra repository for jailbreak tweaks.
 
 **Credit: Jinken Nguyen - 1989**  
+Cảm ơn bạn đã dùng tweak. Nếu thấy hữu ích, một chút ủng hộ giúp giữ repo miễn phí.
+
 **Donate: {conf['DONATE_BANK']} `{conf['DONATE_ACCOUNT']}` — {conf['DONATE_NAME']}**
 
 ## Add source
@@ -604,7 +630,9 @@ Install **one** package per tweak that matches your jailbreak:
 
 ## Donate
 
-Nếu tweak hữu ích, hãy ủng hộ để duy trì repo.
+Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc.
+
+Thank you for using these free tweaks. A small donation keeps the repo online. No pressure.
 
 | | |
 | --- | --- |
@@ -716,31 +744,14 @@ def main() -> int:
         changelog = read_changelog(pkg)
         folder = dep_dir / pkg
         folder.mkdir(parents=True, exist_ok=True)
-        # Prefer existing native depictions if present
-        proj = project_dir_for(pkg)
-        copied = False
-        if proj:
-            src_json = proj / "depiction" / "sileo.json"
-            src_html = proj / "depiction" / "depiction.html"
-            if src_json.is_file():
-                data = json.loads(src_json.read_text(encoding="utf-8"))
-                folder.joinpath("sileo.json").write_text(
-                    json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-                )
-                copied = True
-            if src_html.is_file():
-                shutil.copy2(src_html, folder / "index.html")
-                copied = True
-        if not copied or not (folder / "index.html").is_file():
-            (folder / "index.html").write_text(
-                depiction_html(pkg, info["fields"], conf, vi, en, changelog), encoding="utf-8"
-            )
-        if not (folder / "sileo.json").is_file():
-            (folder / "sileo.json").write_text(
-                json.dumps(sileo_json(pkg, info["fields"], conf, vi, en, changelog), ensure_ascii=False, indent=2)
-                + "\n",
-                encoding="utf-8",
-            )
+        (folder / "index.html").write_text(
+            depiction_html(pkg, info["fields"], conf, vi, en, changelog), encoding="utf-8"
+        )
+        (folder / "sileo.json").write_text(
+            json.dumps(sileo_json(pkg, info["fields"], conf, vi, en, changelog), ensure_ascii=False, indent=2)
+            + "\n",
+            encoding="utf-8",
+        )
 
     # Packages index
     proc = subprocess.run(

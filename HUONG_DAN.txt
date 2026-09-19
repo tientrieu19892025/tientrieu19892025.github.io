@@ -30,12 +30,15 @@ Không liên kết với Apple.
 ============================================================
 3. Donate
 ============================================================
+Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút
+ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc.
+
 Ngân hàng : MB Bank
 STK       : 0345140889
 Chủ TK    : Nguyễn Tiến Triều
 Nội dung  : Donate Jinken Nguyen 1989
 
-Quét VietQR trên trang chủ repo (#donate).
+Quét VietQR trên trang chủ repo (#donate). Cảm ơn bạn rất nhiều.
 
 ============================================================
 4. Đưa repo lên GitHub (một lần)

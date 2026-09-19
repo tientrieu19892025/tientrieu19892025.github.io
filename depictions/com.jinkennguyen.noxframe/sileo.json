@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#38BDF8",
+  "headerImage": "https://tientrieu19892025.github.io/assets/banner.jpg",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "NoxFrame",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**NoxFrame** — Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.\n\nTake photos and record video with the screen off. Side button blanks the display; Camera stays live.\n\n**Phiên bản / Version:** 1.0.1  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → NoxFrame**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Jinken Nguyen - 1989"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Cảm ơn bạn / Thank you**  \nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.  \n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.  \n\nMB Bank · 0345140889 · Nguyễn Tiến Triều",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.1",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# NoxFrame changelog\n\nCredit: Jinken Nguyen - 1989\nDonate: MB Bank 0345140889 — Nguyễn Tiến Triều\n\n## 1.0.1 (2026-09-19)\n\n### Tiếng Việt\n- Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.\n- Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).\n- Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.\n- Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.\n- Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.\n- SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- Fix: pressing the side button to blank the screen no longer cuts an in-progress video.\n- Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).\n- Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.\n- Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.\n- Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.\n- SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n## 1.0.0 (2026-09-19)\n\n### Tiếng Việt\n- Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.\n- Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.\n- Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.\n- Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.\n- Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.\n- Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.\n- Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.\n- Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.\n- Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.\n- Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.\n- Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.\n- Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.\n- Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    },
+    {
+      "tabname": "Donate",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Cảm ơn bạn",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.\n\n- Ngân hàng: **MB Bank**\n- STK: **0345140889**\n- Chủ TK: **Nguyễn Tiến Triều**\n- Nội dung: `Donate Jinken Nguyen 1989`\n\nQuét VietQR trên [trang repo](https://tientrieu19892025.github.io#donate). Cảm ơn bạn rất nhiều.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}
