@@ -752,18 +752,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.2.0
+Version: 3.2.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1200
+Installed-Size: 1208
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.2.0_iphoneos-arm64.deb
-Size: 214956
-MD5sum: 96ff8669c4a1bd7ea86f5f78e0ea011e
-SHA1: 8d4ed0fb2e5dbf0d73be2b1244ac792679c89c2b
-SHA256: ce7312d406333012ebb4d1c0a7718567aaf0e9859f0041e476c223fefc064285
+Filename: debs/com.jinkennguyen.lookglass_3.2.1_iphoneos-arm64.deb
+Size: 216352
+MD5sum: 7fce88628a5cd6100dbd36830e5eaca9
+SHA1: b61f3debfb458aaeb433448b0dd3ad69a6f49ecf
+SHA256: 74acd6a8dc75cb5db86b8ccafe005255ad5ed85f127a2326035bafc926cadfff
 Section: Tweaks
-Description: LookGlass 3.2.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.2.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -771,6 +771,12 @@ Description: LookGlass 3.2.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.2.1 (2026-09-17)
+  * Sửa Cài đặt LookGlass không mở (gói hỏng/thiếu tài nguyên): prefs không còn link libroothide, Preferences.app load được trên RootHide và iOS 14.
+  * Sửa PiP không có hình và về lại cũng đen: tạo lại lớp AVPlayer khi vào/ra PiP, gắn lại video khi bấm mở lại.
+  * Settings → LookGlass loads again: the prefs bundle no longer links libroothide, so PreferenceLoader can open it on RootHide and iOS 14.
+  * PiP shows video again, and returning from PiP restores the picture: the AVPlayer layer is rebuilt when entering/leaving PiP and when tapping restore.
  .
  3.2.0 (2026-09-17)
   * YouTube: bấm video là phát ngay (lấy luồng song song, tự play). Player đủ nút Phát/Dừng, tua, tốc độ, hẹn giờ, thanh tiến trình.
@@ -929,18 +935,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.2.0
-Architecture: iphoneos-arm
+Version: 3.2.1
+Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 636
+Installed-Size: 644
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.2.0_iphoneos-arm.deb
-Size: 148978
-MD5sum: 521b4a2bd376047d411db9f36dddcc26
-SHA1: 3ffa306c2cf611ed7ba88c3d738c270bc2292433
-SHA256: 4fd6c2f0ceeffe6229aab99bd32b749079233e2fc8b443f7c182cc035cc16f3a
+Filename: debs/com.jinkennguyen.lookglass_3.2.1_iphoneos-arm64e.deb
+Size: 150040
+MD5sum: 79759d444fb264b194a00db6b9929ef7
+SHA1: 8516bcb3b156a53e713d248c448d8604f43ed0c1
+SHA256: d4c5ec3c784aee3c4c1c2b5c686188cc88241e64b4ebf84152d1f9deca7e4716
 Section: Tweaks
-Description: LookGlass 3.2.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.2.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -948,6 +954,12 @@ Description: LookGlass 3.2.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.2.1 (2026-09-17)
+  * Sửa Cài đặt LookGlass không mở (gói hỏng/thiếu tài nguyên): prefs không còn link libroothide, Preferences.app load được trên RootHide và iOS 14.
+  * Sửa PiP không có hình và về lại cũng đen: tạo lại lớp AVPlayer khi vào/ra PiP, gắn lại video khi bấm mở lại.
+  * Settings → LookGlass loads again: the prefs bundle no longer links libroothide, so PreferenceLoader can open it on RootHide and iOS 14.
+  * PiP shows video again, and returning from PiP restores the picture: the AVPlayer layer is rebuilt when entering/leaving PiP and when tapping restore.
  .
  3.2.0 (2026-09-17)
   * YouTube: bấm video là phát ngay (lấy luồng song song, tự play). Player đủ nút Phát/Dừng, tua, tốc độ, hẹn giờ, thanh tiến trình.
@@ -1106,18 +1118,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.2.0
-Architecture: iphoneos-arm64e
+Version: 3.2.1
+Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 636
+Installed-Size: 644
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.2.0_iphoneos-arm64e.deb
-Size: 149144
-MD5sum: 40ece0c4e47d51a5343dcf20d5cc6268
-SHA1: 9ae11e2cd134d8c89178fe601e8229c9c6b6dd01
-SHA256: 6a012a2e7712eadd414d25f1e9655613cdd71f904a344df79a7da4f923cb63f9
+Filename: debs/com.jinkennguyen.lookglass_3.2.1_iphoneos-arm.deb
+Size: 150074
+MD5sum: 6a3e41bb7a5b83e60a2bd0f810386ea8
+SHA1: 522b59e7f9ffa860f7097be9fa4e78ee3e51e909
+SHA256: 5b9fc82349b74d1bd9ad0893e571dcc41241f95f94f8bc12a95c4a4433ff68d1
 Section: Tweaks
-Description: LookGlass 3.2.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.2.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1125,6 +1137,12 @@ Description: LookGlass 3.2.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.2.1 (2026-09-17)
+  * Sửa Cài đặt LookGlass không mở (gói hỏng/thiếu tài nguyên): prefs không còn link libroothide, Preferences.app load được trên RootHide và iOS 14.
+  * Sửa PiP không có hình và về lại cũng đen: tạo lại lớp AVPlayer khi vào/ra PiP, gắn lại video khi bấm mở lại.
+  * Settings → LookGlass loads again: the prefs bundle no longer links libroothide, so PreferenceLoader can open it on RootHide and iOS 14.
+  * PiP shows video again, and returning from PiP restores the picture: the AVPlayer layer is rebuilt when entering/leaving PiP and when tapping restore.
  .
  3.2.0 (2026-09-17)
   * YouTube: bấm video là phát ngay (lấy luồng song song, tự play). Player đủ nút Phát/Dừng, tua, tốc độ, hẹn giờ, thanh tiến trình.

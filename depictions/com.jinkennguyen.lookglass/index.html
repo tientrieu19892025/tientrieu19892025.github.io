@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LookGlass 3.2.0</title>
+<title>LookGlass 3.2.1</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -18,7 +18,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>LookGlass 3.2.0</h1>
+<h1>LookGlass 3.2.1</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.</p>
 <p>Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.</p>
@@ -32,6 +32,16 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <pre># LookGlass changelog
 
 Credit: Jinken Nguyen - 1989
+
+## 3.2.1 (2026-09-17)
+
+### Tiếng Việt
+- Sửa Cài đặt LookGlass không mở (gói hỏng/thiếu tài nguyên): prefs không còn link libroothide, Preferences.app load được trên RootHide và iOS 14.
+- Sửa PiP không có hình và về lại cũng đen: tạo lại lớp AVPlayer khi vào/ra PiP, gắn lại video khi bấm mở lại.
+
+### English
+- Settings → LookGlass loads again: the prefs bundle no longer links libroothide, so PreferenceLoader can open it on RootHide and iOS 14.
+- PiP shows video again, and returning from PiP restores the picture: the AVPlayer layer is rebuilt when entering/leaving PiP and when tapping restore.
 
 ## 3.2.0 (2026-09-17)
 
@@ -86,14 +96,7 @@ Credit: Jinken Nguyen - 1989
 ## 3.0.4 (2026-09-16)
 
 ### Tiếng Việt
-- Sửa iOS 14 / RootHide: tìm và mở nội dung không còn load mãi. WebView dùng cấu hình WebKit cũ (không process pool / data store riêng, không chờ render xong mới vẽ), tìm có timeout 7s, YouTube fallback embed sau 4s.
-- Kéo ô tìm mọi chỗ như bản cũ: kéo từ toàn bộ ô (kể cả ô gõ), không bị cố định khi cửa sổ không phải key window.
-
-### English
-- iOS 14 / RootHide: search and opening a result no longer spin forever. WebView uses the system WebKit defaults (no private process pool/data store, paints while loading), search times out at 7s, YouTube falls back to embed after 4s.
-- Drag the search pill anywhere again, including from the text field. It no longer sticks because the overlay was not the key window.
-
-## 3.0.3 (2026-09</pre>
+- Sửa iOS 14 / RootHide: tìm và mở nội dung không còn load mãi. WebView dùng cấu hình WebKit cũ (không process pool / data store ri</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>
