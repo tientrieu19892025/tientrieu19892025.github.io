@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LookGlass 3.4.0</title>
+<title>LookGlass 3.5.0</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -18,7 +18,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>LookGlass 3.4.0</h1>
+<h1>LookGlass 3.5.0</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.</p>
 <p>Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.</p>
@@ -32,6 +32,18 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <pre># LookGlass changelog
 
 Credit: Jinken Nguyen - 1989
+
+## 3.5.0 (2026-09-20)
+
+### Tiếng Việt
+- Giao diện launcher đúng mockup: sidebar Trang chủ/Nhạc/Phim/YouTube, hero, Đang phát, thẻ mục, Gần đây, playlist, dock app.
+- Video cố định trong khung 16:9 (theater). Không còn chạy lệch khi layout. Player mượt: play/pause, tua, thanh tiến trình, tốc độ, hẹn giờ.
+- Bấm ô tìm hoặc Tìm là vào launcher. Video YouTube/iframe nằm trong cùng khung hero, PiP kéo được.
+
+### English
+- Launcher UI matches the mockup: Home/Music/Movies/YouTube sidebar, hero, Now Playing, category tiles, Recents, playlists, app dock.
+- Video stays locked in a 16:9 theater. It no longer jumps during layout. Smooth player: play/pause, skip, scrubber, speed, sleep timer.
+- Tapping Search opens the launcher. YouTube/iframe stay inside the hero frame; PiP is draggable.
 
 ## 3.4.0 (2026-09-20)
 
@@ -82,20 +94,7 @@ Credit: Jinken Nguyen - 1989
 - Thêm thanh tiến trình và thời gian; bấm vào hình video để play/pause.
 
 ### English
-- Player bar works: Play / Pause / skip ±10s / speed / sleep actually control AVPlayer and the YouTube iframe. The related list no longer eats taps on the controls.
-- Added a scrubber and time label; tap the video image to play/pause.
-
-## 3.1.2 (2026-09-17)
-
-### Tiếng Việt
-- Sửa iOS 14 rootful / RootHide không chạy: gói rootful và RootHide chỉ còn arm64 (slice arm64e ABI mới của Xcode không load được SpringBoard iOS 14).
-- Ô tìm hiện trên iOS 14: cửa sổ không còn bắt buộc UIWindowScene lúc launch (SpringBoard 14 thường chưa có scene). Fallback initWithFrame.
-
-### English
-- iOS 14 rootful / RootHide now loads: those packages are arm64-only (Xcode's new arm64e ABI is rejected by iOS 14 SpringBoard).
-- Search pill appears on iOS 14: overlay windows no longer require a UIWindowScene at launch (SpringBoard 14 often has none). Falls back to initWithFrame.
-
-## 3.1.1 (2</pre>
+- Player bar works: Play / Pause / skip ±10s / speed / sleep actually control AVPlayer</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

@@ -752,18 +752,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.4.0
+Version: 3.5.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1264
+Installed-Size: 1304
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.4.0_iphoneos-arm64.deb
-Size: 226832
-MD5sum: 2bee94882c8fb5a8e4f6716703fef39e
-SHA1: 8716e54fa17c7e02289a9e9eeee0bab0f077023a
-SHA256: 6cc0d69dfef4d1718fd4a5e6c89ea0a1bddeaa5c24cc7cbeb8a028c0124ed2b7
+Filename: debs/com.jinkennguyen.lookglass_3.5.0_iphoneos-arm64.deb
+Size: 240522
+MD5sum: 10d4bf6c332936b0deb3686e6f139ef7
+SHA1: abad9b9574dbf7b400c81121a0cb2d8d1d06f88d
+SHA256: 4460b44db14b59daeff6225cf9e74f2686cb84b7a3bca0f5182d2af47739f212
 Section: Tweaks
-Description: LookGlass 3.4.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.5.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -771,6 +771,14 @@ Description: LookGlass 3.4.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.5.0 (2026-09-20)
+  * Giao diện launcher đúng mockup: sidebar Trang chủ/Nhạc/Phim/YouTube, hero, Đang phát, thẻ mục, Gần đây, playlist, dock app.
+  * Video cố định trong khung 16:9 (theater). Không còn chạy lệch khi layout. Player mượt: play/pause, tua, thanh tiến trình, tốc độ, hẹn giờ.
+  * Bấm ô tìm hoặc Tìm là vào launcher. Video YouTube/iframe nằm trong cùng khung hero, PiP kéo được.
+  * Launcher UI matches the mockup: Home/Music/Movies/YouTube sidebar, hero, Now Playing, category tiles, Recents, playlists, app dock.
+  * Video stays locked in a 16:9 theater. It no longer jumps during layout. Smooth player: play/pause, skip, scrubber, speed, sleep timer.
+  * Tapping Search opens the launcher. YouTube/iframe stay inside the hero frame; PiP is draggable.
  .
  3.4.0 (2026-09-20)
   * PiP có hình thật: không còn chuyển AVPlayerLayer / WKWebView sang cửa sổ khác (nguyên nhân mất hình). YouTube iframe vẫn hiện trong cửa sổ nhỏ. Kéo được, bấm đúp để phóng to.
@@ -949,18 +957,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.4.0
+Version: 3.5.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 688
+Installed-Size: 712
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.4.0_iphoneos-arm64e.deb
-Size: 158768
-MD5sum: f83a8280b5103da49ad86e80219a164b
-SHA1: 197fd4207131faeb0ad87f67eeedc46eceee008b
-SHA256: 498a7ce4a4e20917a67e96c062bdf9c5b74deaa7aef8202b9679a6b0ff9cae0c
+Filename: debs/com.jinkennguyen.lookglass_3.5.0_iphoneos-arm64e.deb
+Size: 166664
+MD5sum: ec273776e0e63dc416dd6390922e6db0
+SHA1: c73fdb6ded0c6b88c57a4bf4512a48a653ac4577
+SHA256: 454ed1da7310dbeb2b37b90161b26dddd60f7949819e0597301cc07b8386359d
 Section: Tweaks
-Description: LookGlass 3.4.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.5.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -968,6 +976,14 @@ Description: LookGlass 3.4.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.5.0 (2026-09-20)
+  * Giao diện launcher đúng mockup: sidebar Trang chủ/Nhạc/Phim/YouTube, hero, Đang phát, thẻ mục, Gần đây, playlist, dock app.
+  * Video cố định trong khung 16:9 (theater). Không còn chạy lệch khi layout. Player mượt: play/pause, tua, thanh tiến trình, tốc độ, hẹn giờ.
+  * Bấm ô tìm hoặc Tìm là vào launcher. Video YouTube/iframe nằm trong cùng khung hero, PiP kéo được.
+  * Launcher UI matches the mockup: Home/Music/Movies/YouTube sidebar, hero, Now Playing, category tiles, Recents, playlists, app dock.
+  * Video stays locked in a 16:9 theater. It no longer jumps during layout. Smooth player: play/pause, skip, scrubber, speed, sleep timer.
+  * Tapping Search opens the launcher. YouTube/iframe stay inside the hero frame; PiP is draggable.
  .
  3.4.0 (2026-09-20)
   * PiP có hình thật: không còn chuyển AVPlayerLayer / WKWebView sang cửa sổ khác (nguyên nhân mất hình). YouTube iframe vẫn hiện trong cửa sổ nhỏ. Kéo được, bấm đúp để phóng to.
@@ -1146,18 +1162,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.4.0
+Version: 3.5.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 688
+Installed-Size: 712
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.4.0_iphoneos-arm.deb
-Size: 158648
-MD5sum: 1cd52045694304368b1cbcd563ee513b
-SHA1: 81c061e3e9cd468167d46fe6bef3143867ee3fa4
-SHA256: cbe732e6c89cb84d875c77b02ddfe82e59b854ce75396ea643367ee4163b3945
+Filename: debs/com.jinkennguyen.lookglass_3.5.0_iphoneos-arm.deb
+Size: 166556
+MD5sum: 6421d9f54ca779c7af19c2589511aa90
+SHA1: d2b8ca0dc077390d2645f7114265156fea805f93
+SHA256: 30a5b0ce1027e0ece7511a7d4c7f5192a5461e3201f26da00959e2ee565f20ba
 Section: Tweaks
-Description: LookGlass 3.4.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.5.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1165,6 +1181,14 @@ Description: LookGlass 3.4.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.5.0 (2026-09-20)
+  * Giao diện launcher đúng mockup: sidebar Trang chủ/Nhạc/Phim/YouTube, hero, Đang phát, thẻ mục, Gần đây, playlist, dock app.
+  * Video cố định trong khung 16:9 (theater). Không còn chạy lệch khi layout. Player mượt: play/pause, tua, thanh tiến trình, tốc độ, hẹn giờ.
+  * Bấm ô tìm hoặc Tìm là vào launcher. Video YouTube/iframe nằm trong cùng khung hero, PiP kéo được.
+  * Launcher UI matches the mockup: Home/Music/Movies/YouTube sidebar, hero, Now Playing, category tiles, Recents, playlists, app dock.
+  * Video stays locked in a 16:9 theater. It no longer jumps during layout. Smooth player: play/pause, skip, scrubber, speed, sleep timer.
+  * Tapping Search opens the launcher. YouTube/iframe stay inside the hero frame; PiP is draggable.
  .
  3.4.0 (2026-09-20)
   * PiP có hình thật: không còn chuyển AVPlayerLayer / WKWebView sang cửa sổ khác (nguyên nhân mất hình). YouTube iframe vẫn hiện trong cửa sổ nhỏ. Kéo được, bấm đúp để phóng to.
