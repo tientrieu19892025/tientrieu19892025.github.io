@@ -67,8 +67,8 @@ BLURBS = {
         "Simulated Dynamic Island at iPhone 18 Pro size. Pin apps, music, charging, timer.",
     ),
     "com.jinkennguyen.lookglass": (
-        "Ô tìm kính lỏng trên màn hình chính. Google, Wikipedia, nhạc, phim, YouTube.",
-        "Liquid-glass Home Screen search. Google, Wikipedia, music, films, YouTube.",
+        "Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.",
+        "Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.",
     ),
     "com.jinkennguyen.noxframe": (
         "Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.",

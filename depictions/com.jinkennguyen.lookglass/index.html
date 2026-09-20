@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LookGlass 3.1.3</title>
+<title>LookGlass 3.2.0</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -18,10 +18,10 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>LookGlass 3.1.3</h1>
+<h1>LookGlass 3.2.0</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
-<p>Ô tìm kính lỏng trên màn hình chính. Google, Wikipedia, nhạc, phim, YouTube.</p>
-<p>Liquid-glass Home Screen search. Google, Wikipedia, music, films, YouTube.</p>
+<p>Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.</p>
+<p>Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.</p>
 <div class="donate">
 <strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
 </div>
@@ -32,6 +32,16 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <pre># LookGlass changelog
 
 Credit: Jinken Nguyen - 1989
+
+## 3.2.0 (2026-09-17)
+
+### Tiếng Việt
+- YouTube: bấm video là phát ngay (lấy luồng song song, tự play). Player đủ nút Phát/Dừng, tua, tốc độ, hẹn giờ, thanh tiến trình.
+- Đóng player để nghe nhạc: chỉ hiện lại khi bấm nút mở lại trên Home. Vào app khác không còn bật cửa sổ PiP đột ngột. PiP chỉ khi bấm nút PiP.
+
+### English
+- YouTube: tap a video and it starts playing (parallel stream fetch, autoplay). Full controls: play/pause, skip, speed, sleep timer, scrubber.
+- Dismiss the player to keep audio: it returns only via the restore chip on Home. Switching apps no longer pops PiP. PiP only from the PiP button.
 
 ## 3.1.3 (2026-09-17)
 
@@ -83,17 +93,7 @@ Credit: Jinken Nguyen - 1989
 - iOS 14 / RootHide: search and opening a result no longer spin forever. WebView uses the system WebKit defaults (no private process pool/data store, paints while loading), search times out at 7s, YouTube falls back to embed after 4s.
 - Drag the search pill anywhere again, including from the text field. It no longer sticks because the overlay was not the key window.
 
-## 3.0.3 (2026-09-16)
-
-### Tiếng Việt
-- Sửa PiP: cửa sổ nổi hiện đúng video (AVPlayer gắn lại lớp hình; YouTube embed đưa WebView vào thẻ PiP sau khi cửa sổ đã hiện).
-- Thêm chọn Có hình hoặc Chỉ tiếng trong Cài đặt và nút loa/video trên cửa sổ PiP. Chỉ tiếng dùng thanh điều khiển nhỏ, không còn khung 16:9 đen trống.
-
-### English
-- PiP now shows the actual video (AVPlayer layer rebound; YouTube embed moves into the PiP card after the window is on screen).
-- Choose Video or Audio only in Settings, or tap the speaker/video button on the floating player. Audio only uses a compact bar instead of an empty 16:9 box.
-
-## 3.0.2 (2026-</pre>
+## 3.0.3 (2026-09</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>
