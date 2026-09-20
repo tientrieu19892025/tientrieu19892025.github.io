@@ -31,7 +31,7 @@ Install **one** package per tweak that matches your jailbreak:
 | --- | --- | --- | --- |
 | AdShield | `com.jinkennguyen.adshield` | 1.4.0 | rootful, rootless, RootHide |
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.2 | rootful, rootless, RootHide |
-| LookGlass | `com.jinkennguyen.lookglass` | 3.8.1 | rootful, rootless, RootHide |
+| LookGlass | `com.jinkennguyen.lookglass` | 3.8.2 | rootful, rootless, RootHide |
 | NoxFrame | `com.jinkennguyen.noxframe` | 1.1.0 | rootful, rootless, RootHide |
 
 ## Credit

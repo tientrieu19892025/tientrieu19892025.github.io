@@ -752,18 +752,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.8.1
+Version: 3.8.2
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1436
+Installed-Size: 1440
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.8.1_iphoneos-arm64.deb
-Size: 265342
-MD5sum: 7b9eca1fd517aa6e5d54b6eb811a35dd
-SHA1: 62671a9c7bde4c24031b857ce7c008fe626c3920
-SHA256: ba902cc34cd666442252f4157c6fdce9a01cc148ee14af8d7bcfa57299066ec5
+Filename: debs/com.jinkennguyen.lookglass_3.8.2_iphoneos-arm64.deb
+Size: 268768
+MD5sum: a41e11aa350ec95a497115f80f45c72c
+SHA1: 6ab2e6e6b1f0e430375cfb284e253a63143b3767
+SHA256: 8a42747916d45cca3f220947d4f7b2e7d549b978c21e3f64d60d9fe4f6ff92ca
 Section: Tweaks
-Description: LookGlass 3.8.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -771,6 +771,12 @@ Description: LookGlass 3.8.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.2 (2026-09-20)
+  * Sửa trình duyệt trong launcher: WebView riêng, tải Google, nút Back / Tải lại / Home. Tìm từ ô LookGlass mở luôn trong ô duyệt.
+  * Tiêu đề LookGlass thu nhỏ, không che icon PiP khi phát YouTube.
+  * Launcher browser works: its own WebView loads Google, with Back / Reload / Home. Searches open in the browse pane.
+  * LookGlass title is smaller and no longer covers the PiP icon during YouTube playback.
  .
  3.8.1 (2026-09-20)
   * Sửa thu nhỏ player (PiP) chặn vuốt màn hình chính: overlay chỉ nhận chạm trong khung nhỏ, chạm ngoài xuyên xuống Home.
@@ -991,18 +997,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.8.1
+Version: 3.8.2
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 780
+Installed-Size: 784
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.8.1_iphoneos-arm.deb
-Size: 183416
-MD5sum: e0ef6490d0650a60541da8e7dcefd069
-SHA1: fcbdef8c1a351bb4452b3d566496a5fab4942f02
-SHA256: e5bd546489bb1abba953e279c1a45b2a1c014e508595673151688eb71e85d059
+Filename: debs/com.jinkennguyen.lookglass_3.8.2_iphoneos-arm.deb
+Size: 185350
+MD5sum: dca38d5b8375f8a4b0f7a3738b8725e0
+SHA1: 9cadc1609417ab70e8fd0ec8aa76b25b4c68a0c1
+SHA256: 934f6f52192e2865daf90da473de988f6745d9f900dd0d4d38ac9d475371ee48
 Section: Tweaks
-Description: LookGlass 3.8.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1010,6 +1016,12 @@ Description: LookGlass 3.8.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.2 (2026-09-20)
+  * Sửa trình duyệt trong launcher: WebView riêng, tải Google, nút Back / Tải lại / Home. Tìm từ ô LookGlass mở luôn trong ô duyệt.
+  * Tiêu đề LookGlass thu nhỏ, không che icon PiP khi phát YouTube.
+  * Launcher browser works: its own WebView loads Google, with Back / Reload / Home. Searches open in the browse pane.
+  * LookGlass title is smaller and no longer covers the PiP icon during YouTube playback.
  .
  3.8.1 (2026-09-20)
   * Sửa thu nhỏ player (PiP) chặn vuốt màn hình chính: overlay chỉ nhận chạm trong khung nhỏ, chạm ngoài xuyên xuống Home.
@@ -1230,18 +1242,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.8.1
+Version: 3.8.2
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 780
+Installed-Size: 784
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.8.1_iphoneos-arm64e.deb
-Size: 183730
-MD5sum: 13c8568bcecc69083ad101b5fb705ffe
-SHA1: 2b79967223fb076389b6d59a490c5ebe73b6b7c0
-SHA256: 21c3d7d3347b615b6097eeebbc07aacaed67d2b39175308ba2e1c34e9e560c45
+Filename: debs/com.jinkennguyen.lookglass_3.8.2_iphoneos-arm64e.deb
+Size: 185370
+MD5sum: 68119a747957587a760c69555159bc65
+SHA1: 19030f5fd2f988a447cec44d5995098e22e87b26
+SHA256: 4954525dbfd169e0fbf9b778a9ef814dc96f5eba92924f55336b11a1c6a8dea8
 Section: Tweaks
-Description: LookGlass 3.8.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1249,6 +1261,12 @@ Description: LookGlass 3.8.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.2 (2026-09-20)
+  * Sửa trình duyệt trong launcher: WebView riêng, tải Google, nút Back / Tải lại / Home. Tìm từ ô LookGlass mở luôn trong ô duyệt.
+  * Tiêu đề LookGlass thu nhỏ, không che icon PiP khi phát YouTube.
+  * Launcher browser works: its own WebView loads Google, with Back / Reload / Home. Searches open in the browse pane.
+  * LookGlass title is smaller and no longer covers the PiP icon during YouTube playback.
  .
  3.8.1 (2026-09-20)
   * Sửa thu nhỏ player (PiP) chặn vuốt màn hình chính: overlay chỉ nhận chạm trong khung nhỏ, chạm ngoài xuyên xuống Home.
