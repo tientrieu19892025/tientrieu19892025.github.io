@@ -752,18 +752,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.7.0
+Version: 3.7.1
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 752
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.7.0_iphoneos-arm64e.deb
-Size: 180808
-MD5sum: c30911fe9e1354a3064a455b2d04001d
-SHA1: dbef8f627eba313860120810e2713ecb23a85116
-SHA256: f1b0aed32bed2c577babff6242f7f495a5e520c8046a525ca90f225249998685
+Filename: debs/com.jinkennguyen.lookglass_3.7.1_iphoneos-arm64e.deb
+Size: 180928
+MD5sum: e8715ae25b79e7988e443ac523220e2c
+SHA1: 480617d59a76885aaefd629bfe905648e91bd832
+SHA256: 12c1a0dc05a4fa74611dffe8d4c450fb8b1885241094bf80f80c3786e3f65425
 Section: Tweaks
-Description: LookGlass 3.7.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -771,6 +771,12 @@ Description: LookGlass 3.7.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.7.1 (2026-09-20)
+  * Sửa bấm Tìm bị Safe Mode: không còn tạo mảng view nil khi mở launcher (SpringBoard crash).
+  * Không tạo WKWebView ngay lúc mở cửa sổ. Layout hub bỏ qua ô thiếu.
+  * Fixed Search sending SpringBoard to Safe Mode: the launcher no longer builds an NSArray of nil tiles during init.
+  * WKWebView is not created when the window first opens. Hub layout skips missing tiles.
  .
  3.7.0 (2026-09-20)
   * Launcher kính lỏng Multimedia Hub: LOOKGLASS PLAYER, hero YouTube/Phim, Quick Play, Nghe nhạc + Trình duyệt Google cạnh nhau.
@@ -973,18 +979,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.7.0
+Version: 3.7.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1408
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.7.0_iphoneos-arm64.deb
-Size: 263504
-MD5sum: 7204eb94fdb3c52f57901f2e77651df7
-SHA1: 1b8bc519acad1cfa28f3e638fcfd1b6b602074dd
-SHA256: 5ac5410377d6c304d8587232a040d14e11e6a04966260377ba101f4857946ffb
+Filename: debs/com.jinkennguyen.lookglass_3.7.1_iphoneos-arm64.deb
+Size: 263330
+MD5sum: 264a7cbef45126213f40b5e938a181e0
+SHA1: 2ef4da6a95ad27d4adddea2cc82b88de0462df23
+SHA256: e2a4b09a32caec4d1d095f5b415fbbe6023da225e6c025587efeb5bc99751ac9
 Section: Tweaks
-Description: LookGlass 3.7.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -992,6 +998,12 @@ Description: LookGlass 3.7.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.7.1 (2026-09-20)
+  * Sửa bấm Tìm bị Safe Mode: không còn tạo mảng view nil khi mở launcher (SpringBoard crash).
+  * Không tạo WKWebView ngay lúc mở cửa sổ. Layout hub bỏ qua ô thiếu.
+  * Fixed Search sending SpringBoard to Safe Mode: the launcher no longer builds an NSArray of nil tiles during init.
+  * WKWebView is not created when the window first opens. Hub layout skips missing tiles.
  .
  3.7.0 (2026-09-20)
   * Launcher kính lỏng Multimedia Hub: LOOKGLASS PLAYER, hero YouTube/Phim, Quick Play, Nghe nhạc + Trình duyệt Google cạnh nhau.
@@ -1194,18 +1206,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.7.0
+Version: 3.7.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 752
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.7.0_iphoneos-arm.deb
-Size: 180208
-MD5sum: 34a0556a4dad09ca4272228576fe7c7a
-SHA1: 17b9872f0f87dbb66b9421f61d77626d2455c6ed
-SHA256: a7c405d558120056c3a54a524bb3a302562fbd87de7016a00d9d3e91ac7b51b8
+Filename: debs/com.jinkennguyen.lookglass_3.7.1_iphoneos-arm.deb
+Size: 180460
+MD5sum: 346961eadf3dd6674bc9b307d1a89e8d
+SHA1: ddf271b9977373fdd345ef688ba0b381f454c05a
+SHA256: bd8e9656b82c12f74c70878496d6000a4911a6ab64339535934ac77d50295d1a
 Section: Tweaks
-Description: LookGlass 3.7.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1213,6 +1225,12 @@ Description: LookGlass 3.7.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.7.1 (2026-09-20)
+  * Sửa bấm Tìm bị Safe Mode: không còn tạo mảng view nil khi mở launcher (SpringBoard crash).
+  * Không tạo WKWebView ngay lúc mở cửa sổ. Layout hub bỏ qua ô thiếu.
+  * Fixed Search sending SpringBoard to Safe Mode: the launcher no longer builds an NSArray of nil tiles during init.
+  * WKWebView is not created when the window first opens. Hub layout skips missing tiles.
  .
  3.7.0 (2026-09-20)
   * Launcher kính lỏng Multimedia Hub: LOOKGLASS PLAYER, hero YouTube/Phim, Quick Play, Nghe nhạc + Trình duyệt Google cạnh nhau.
