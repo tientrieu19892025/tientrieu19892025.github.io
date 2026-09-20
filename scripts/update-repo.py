@@ -70,6 +70,10 @@ BLURBS = {
         "Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.",
         "Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.",
     ),
+    "com.jinkennguyen.slapios": (
+        "Vỗ, gõ, lắc iPhone thì máy kêu vui. 120 hiệu ứng, 8 gói tiếng.",
+        "Slap, tap, shake the iPhone and it groans. 120 effects, 8 sound packs.",
+    ),
     "com.jinkennguyen.noxframe": (
         "Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.",
         "Take photos and record video with the screen off. Side button blanks the display; Camera stays live.",
@@ -115,6 +119,7 @@ BLURBS = {
 FEATURED = [
     "com.jinkennguyen.duoframe",
     "com.jinkennguyen.lookglass",
+    "com.jinkennguyen.slapios",
 ]
 
 DEB_NAME_RE = re.compile(

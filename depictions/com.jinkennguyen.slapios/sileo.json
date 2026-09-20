@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#38BDF8",
+  "headerImage": "https://tientrieu19892025.github.io/assets/banner.jpg",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "SlapIos",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**SlapIos** — Vỗ, gõ, lắc iPhone thì máy kêu vui. 120 hiệu ứng, 8 gói tiếng.\n\nSlap, tap, shake the iPhone and it groans. 120 effects, 8 sound packs.\n\n**Phiên bản / Version:** 1.2.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → SlapIos**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.2.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Jinken Nguyen - 1989"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Cảm ơn bạn / Thank you**  \nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.  \n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.  \n\nMB Bank · 0345140889 · Nguyễn Tiến Triều",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.2.0",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# SlapIos changelog\n\nCredit: Jinken Nguyen - 1989\nDonate: MB Bank 0345140889 — Nguyễn Tiến Triều\n\n## 1.2.0 (2026-09-20)\n\n### Tiếng Việt\n- Tìm đúng từ khóa YouTube (ouch, groan, moan, boing, slap…) rồi lấy bản thu CC0/MIT cùng loại — WAV 44.1 kHz, cắt clip.\n- Gói Rên rỉ ưu tiên pack moan Spank (kiểu SlapMac) + Freesound CC0 groan/ouch, không còn còi synth.\n- Mỗi gói 25–40 tiếng thật. Chọn Rên thì chỉ rên. Dung lượng lớn hơn 3–5 lần để nghe chuẩn.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.\n\n### English\n- YouTube keywords (ouch, groan, moan, boing, slap…) mapped to CC0/MIT recordings, cut to clips at 44.1 kHz.\n- Groan pack leads with Spank moan (SlapMac-style) plus Freesound CC0 ouch/groan — no synth beeps.\n- 25–40 real clips per pack. Groan mode plays only groans. Package is 3–5× larger for quality.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.\n\n## 1.1.0 (2026-09-20)\n\n### Tiếng Việt\n- Âm thanh thật từ internet, không còn synth: Spank pain/moan (kiểu SlapMac), OpenGameArt hurt, Kenney CC0.\n- Chọn gói Rên rỉ thì CHỈ phát tiếng rên — không lẫn cartoon/game. Combo cũng ở trong gói đang chọn.\n- Mặc định gói Rên rỉ. Cài lại copy WAV mới (không giữ file synth cũ).\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.\n\n### English\n- Real internet recordings, no more synth: Spank pain/moan (SlapMac-style), OpenGameArt hurt, Kenney CC0.\n- Picking Groan plays ONLY groans — never cartoon/game. Combo stays inside the selected pack.\n- Default pack is Groan. Reinstall refreshes WAVs so old synth files are replaced.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.\n\n## 1.0.1 (2026-09-20)\n\n### Tiếng Việt\n- Gói Rên rỉ viết lại 100%: synthesizer giọng (thanh môn Rosenberg + formant nguyên âm), không còn sine/còi.\n- 15 tiếng ouch / ahhh / ugh / oof / yeow / rên dài, có tiếng vỗ rồi mới rên — đúng kiểu SlapMac.\n- Tiếng ngáp trong gói Bất ngờ cũng dùng giọng thật. Test phổ F0 70–350 Hz cho cả 15 file rên.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.\n\n### English\n- Groan pack rewritten: glottal-source + vowel formants, not sine beeps.\n- 15 ouch / ahhh / ugh / oof / yeow / long-moan voices, slap-then-groan timing like SlapMac.\n- Extra-pack yawn is voiced too. Tests require F0 in 70–350 Hz on all 15 groan files.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.\n\n## 1.0.0 (2026-09-20)\n\n### Tiếng Việt\n- Tweak mới: SlapIos — iPhone rên rỉ / kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi (ý tưởng SlapMac).\n- Cảm biến gia tốc SpringBoard nhận diện tát, gõ, lắc, rơi và combo 3 phát liên tiếp.\n- 120 hiệu ứng WAV gốc, 8 gói: Rên rỉ, Hoạt hình, Dễ thương, Va đập, Meme, Nhạc vui, Game, Bất ngờ.\n- HUD kính hiện tên tiếng, haptic, độ nhạy / âm lượng / cooldown, tôn trọng Silent hoặc luôn kêu.\n- Preset SlapMac / Cartoon / Cute / Chaos / Yên / Khôi phục. Thư viện 120 tiếng, bấm là nghe thử.\n- Chỉ inject SpringBoard. Kill-switch .slapios-disable. Gói RootHide + rootless + rootful.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.\n\n### English\n- New tweak: SlapIos — the iPhone groans / cheers when slapped, tapped, shaken or dropped (SlapMac idea).\n- SpringBoard accelerometer classifies slap, tap, shake, drop and a 3-hit combo.\n- 120 original WAV effects in 8 packs: Groan, Cartoon, Cute, Smash, Meme, Music, Game, Extra.\n- Glass HUD names the sound, haptics, sensitivity",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    },
+    {
+      "tabname": "Donate",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Cảm ơn bạn",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.\n\n- Ngân hàng: **MB Bank**\n- STK: **0345140889**\n- Chủ TK: **Nguyễn Tiến Triều**\n- Nội dung: `Donate Jinken Nguyen 1989`\n\nQuét VietQR trên [trang repo](https://tientrieu19892025.github.io#donate). Cảm ơn bạn rất nhiều.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

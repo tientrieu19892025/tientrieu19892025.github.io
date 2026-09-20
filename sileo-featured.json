@@ -14,6 +14,12 @@
       "title": "LookGlass",
       "package": "com.jinkennguyen.lookglass",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "SlapIos",
+      "package": "com.jinkennguyen.slapios",
+      "hideShadow": false
     }
   ]
 }
