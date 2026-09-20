@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LookGlass 3.2.1</title>
+<title>LookGlass 3.3.0</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -18,7 +18,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>LookGlass 3.2.1</h1>
+<h1>LookGlass 3.3.0</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.</p>
 <p>Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.</p>
@@ -32,6 +32,16 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <pre># LookGlass changelog
 
 Credit: Jinken Nguyen - 1989
+
+## 3.3.0 (2026-09-17)
+
+### Tiếng Việt
+- PiP có hình, hết lag/treo: player nổi trên Home trong cùng cửa sổ (không chuyển AVPlayerLayer). Bấm PiP không còn tự ẩn overlay. Layout không tạo lại lớp video mỗi frame.
+- Cài đặt LookGlass kiểu DuoFrame: thẻ kính, công tắc, chip, donate, changelog, respring.
+
+### English
+- PiP shows video without lag/hangs: the Home mini-player stays in the same window (no AVPlayerLayer hops). The PiP button no longer immediately dismisses the overlay. Layout no longer rebuilds the video layer every frame.
+- LookGlass Settings match DuoFrame: glass cards, switches, chips, donate, changelog, respring.
 
 ## 3.2.1 (2026-09-17)
 
@@ -87,16 +97,7 @@ Credit: Jinken Nguyen - 1989
 
 ### Tiếng Việt
 - Sửa treo SpringBoard khi vào YouTube: không còn iframe youtube-nocookie / WKWebView trong SpringBoard. Player native (ảnh bìa + AVPlayer); không lấy được luồng thì mở app YouTube.
-- Thêm tua ±10s, tốc độ 1×–2×, hẹn giờ tắt 15–60 phút, video liên quan, lịch sử đã xem, nhớ tab, nhấn giữ kết quả (Phát / Chép / Mở YouTube).
-
-### English
-- Fixed SpringBoard freeze on YouTube: no youtube-nocookie iframe / WKWebView in SpringBoard. Native player (poster + AVPlayer); if no stream, open the YouTube app.
-- Added skip ±10s, 1×–2× speed, 15–60 min sleep timer, related videos, watch history, remember last tab, long-press a result (Play / Copy / Open YouTube).
-
-## 3.0.4 (2026-09-16)
-
-### Tiếng Việt
-- Sửa iOS 14 / RootHide: tìm và mở nội dung không còn load mãi. WebView dùng cấu hình WebKit cũ (không process pool / data store ri</pre>
+- Thêm tua </pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>
