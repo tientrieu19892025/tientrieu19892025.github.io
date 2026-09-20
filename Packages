@@ -428,18 +428,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.8.3
+Version: 3.8.4
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1472
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.8.3_iphoneos-arm64.deb
-Size: 271098
-MD5sum: 2e68e10ed983f87efb0bc8021219c018
-SHA1: 52433395b20fb98f317cf1692c4decf8ede664ab
-SHA256: f497fac3891ad3129d924b3ee8e92f013c26585a68058c0e3015b5c53fcc1234
+Filename: debs/com.jinkennguyen.lookglass_3.8.4_iphoneos-arm64.deb
+Size: 272970
+MD5sum: f0156c2aafbf52df9177f9c0369835d1
+SHA1: 25fb1b2bfb28fb4d902221ecea686c180dd830f2
+SHA256: 96e70c30debeebb213cb87e5dc8a05a0323b6e7023c9cc60d70464e066edfae7
 Section: Tweaks
-Description: LookGlass 3.8.3 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.4 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -447,6 +447,12 @@ Description: LookGlass 3.8.3 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.4 (2026-09-20)
+  * Bấm Tìm hiện danh sách cuộn ít nhất 20 kết quả ngay dưới hero, bấm là chọn. Không còn nhảy sang trình duyệt hay ô nhỏ 4–5 dòng.
+  * Sửa không chọn được hàng: tắt kéo-ô khi không ở chế độ Sửa, danh sách kết quả không còn bị ẩn hay đẩy xuống cuối launcher.
+  * Search shows a scrollable pick list of at least 20 results under the hero. It no longer jumps into the browser or a 4–5 row box.
+  * Rows are tappable again: tile-drag is off unless Edit is on, and the results list stays pinned instead of hidden or buried.
  .
  3.8.3 (2026-09-20)
   * Kết quả tìm hiện ô danh sách cuộn, ít nhất 20 mục để chọn (video, nhạc, phim, web). Hàng Phim/YouTube cũng kéo ngang tối đa 20.
@@ -677,18 +683,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.8.3
-Architecture: iphoneos-arm64e
+Version: 3.8.4
+Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 800
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.8.3_iphoneos-arm64e.deb
-Size: 187160
-MD5sum: 26b27a8499c79c2ce4e6ea91e8157c7f
-SHA1: 89e2fda03ccc985bb0d550570deac7544674d38b
-SHA256: 5e3ae6adbdb11284cea32f8ea6f7105e62ed5db795ce900e40c0df573aab8691
+Filename: debs/com.jinkennguyen.lookglass_3.8.4_iphoneos-arm.deb
+Size: 187828
+MD5sum: 0b5f2755180b4f8065b80771cc30b2bc
+SHA1: bd98ee0745711de8d648992066abb4b4a4f6a939
+SHA256: 321dfccf6d0f0a88f0a7f2478b7ce00e9c93450b0f1f0073574147ff0b5d7f96
 Section: Tweaks
-Description: LookGlass 3.8.3 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.4 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -696,6 +702,12 @@ Description: LookGlass 3.8.3 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.4 (2026-09-20)
+  * Bấm Tìm hiện danh sách cuộn ít nhất 20 kết quả ngay dưới hero, bấm là chọn. Không còn nhảy sang trình duyệt hay ô nhỏ 4–5 dòng.
+  * Sửa không chọn được hàng: tắt kéo-ô khi không ở chế độ Sửa, danh sách kết quả không còn bị ẩn hay đẩy xuống cuối launcher.
+  * Search shows a scrollable pick list of at least 20 results under the hero. It no longer jumps into the browser or a 4–5 row box.
+  * Rows are tappable again: tile-drag is off unless Edit is on, and the results list stays pinned instead of hidden or buried.
  .
  3.8.3 (2026-09-20)
   * Kết quả tìm hiện ô danh sách cuộn, ít nhất 20 mục để chọn (video, nhạc, phim, web). Hàng Phim/YouTube cũng kéo ngang tối đa 20.
@@ -926,18 +938,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.8.3
-Architecture: iphoneos-arm
+Version: 3.8.4
+Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 800
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.8.3_iphoneos-arm.deb
-Size: 186918
-MD5sum: c9745b502bd2eeeb0a1512ebc6f96a8a
-SHA1: 6e802a29f6050c1920169a5c93167ad8ea4833c6
-SHA256: d8c39959858d009f95130646c3313825990a81430089b6568fcf6e89c23d4fff
+Filename: debs/com.jinkennguyen.lookglass_3.8.4_iphoneos-arm64e.deb
+Size: 187982
+MD5sum: 148190a94c7f5a8580f0fb25d2ec910b
+SHA1: dec5eee94902efb9e1d80d1a9619763e1a487353
+SHA256: b63e031ada35d492e960e84063d71a81cbc6e805fe6a36e55ab0a99f72d1f926
 Section: Tweaks
-Description: LookGlass 3.8.3 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.4 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -945,6 +957,12 @@ Description: LookGlass 3.8.3 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.4 (2026-09-20)
+  * Bấm Tìm hiện danh sách cuộn ít nhất 20 kết quả ngay dưới hero, bấm là chọn. Không còn nhảy sang trình duyệt hay ô nhỏ 4–5 dòng.
+  * Sửa không chọn được hàng: tắt kéo-ô khi không ở chế độ Sửa, danh sách kết quả không còn bị ẩn hay đẩy xuống cuối launcher.
+  * Search shows a scrollable pick list of at least 20 results under the hero. It no longer jumps into the browser or a 4–5 row box.
+  * Rows are tappable again: tile-drag is off unless Edit is on, and the results list stays pinned instead of hidden or buried.
  .
  3.8.3 (2026-09-20)
   * Kết quả tìm hiện ô danh sách cuộn, ít nhất 20 mục để chọn (video, nhạc, phim, web). Hàng Phim/YouTube cũng kéo ngang tối đa 20.
