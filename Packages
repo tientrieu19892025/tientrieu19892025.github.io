@@ -323,23 +323,27 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.adshield.png
 
 Package: com.jinkennguyen.duoframe
-Version: 3.5.1
+Version: 3.5.2
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1068
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.1_iphoneos-arm64e.deb
-Size: 323038
-MD5sum: 6d456e805487f30b089d5dcb2bab6327
-SHA1: 6bba083a8a38618ba0a2369317a01d019e5f0d70
-SHA256: 8fb3a3d37196f14444cd7aeb0fb73786833da509a6e9b4c35e2433344ebfd8d4
+Filename: debs/com.jinkennguyen.duoframe_3.5.2_iphoneos-arm64e.deb
+Size: 328476
+MD5sum: ede165aa7587c75bdd5e95459e9f252f
+SHA1: 80373a93ceb4e5c10136bf2f2ca5a4a7448c7406
+SHA256: cdbe2bfc7472f62b02b21b925ec661af947efcb35375ef1616f146cad866b746
 Section: Tweaks
-Description: DuoFrame 3.5.1 — Smoother swipe, icon shapes (circle, rectangle, hexagon…). Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.1 — Vuốt mượt hơn, kiểu icon tròn / chữ nhật / lục giác.
+Description: DuoFrame 3.5.2 — Color pickers for status glyphs, app names, and Home text. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.2 — Chọn màu icon status, tên app và chữ trên Home.
  Credit: Jinken Nguyen - 1989
  .
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.2 ===
+ .
+  * Cài đặt → Màu chữ và icon: giờ/glyph status, tên ứng dụng, chữ khác trên Home.
  .
  === Changelog / Nhật ký phiên bản 3.5.1 ===
  .
@@ -462,23 +466,27 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.duoframe
-Version: 3.5.1
+Version: 3.5.2
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1068
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.1_iphoneos-arm64.deb
-Size: 322894
-MD5sum: 0eaf5eaa7cac7ad30cf845f032ed7385
-SHA1: 445ca28fc1797b5fe089d842e115de12f082258b
-SHA256: cdfccd8e2063369dedf675d14e5d766180444223ae70a48ec6934350469438be
+Filename: debs/com.jinkennguyen.duoframe_3.5.2_iphoneos-arm64.deb
+Size: 328256
+MD5sum: 6026dab721403edb1ae2e41ed49ae990
+SHA1: 992df46c13f618643762e4541e3a259e43c60443
+SHA256: 2f78f1fdc5dcd61b281c7cd199cb716fde8dd23f66f27dce232e6c262dc7e723
 Section: Tweaks
-Description: DuoFrame 3.5.1 — Smoother swipe, icon shapes (circle, rectangle, hexagon…). Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.1 — Vuốt mượt hơn, kiểu icon tròn / chữ nhật / lục giác.
+Description: DuoFrame 3.5.2 — Color pickers for status glyphs, app names, and Home text. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.2 — Chọn màu icon status, tên app và chữ trên Home.
  Credit: Jinken Nguyen - 1989
  .
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.2 ===
+ .
+  * Cài đặt → Màu chữ và icon: giờ/glyph status, tên ứng dụng, chữ khác trên Home.
  .
  === Changelog / Nhật ký phiên bản 3.5.1 ===
  .
@@ -601,23 +609,27 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.duoframe
-Version: 3.5.1
+Version: 3.5.2
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1068
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.1_iphoneos-arm.deb
-Size: 322232
-MD5sum: 4c33bfc04b5e522a6538ec5fddb1cd00
-SHA1: 04dea929816b6fbe7a928189a24ba0a04749d4c2
-SHA256: 53cc3a5016e32da917698aa4303302da9975ddfb433c719612f7e638f2e851d7
+Filename: debs/com.jinkennguyen.duoframe_3.5.2_iphoneos-arm.deb
+Size: 327666
+MD5sum: dfb0113f0122cf748f175f701e639433
+SHA1: e5b1fd0fb2db1d9e4f52c36afa0ea71a7753cc30
+SHA256: ed8d377b4436901d25102caa058258399c96d44dc82c1dc57adecc19834b64cf
 Section: Tweaks
-Description: DuoFrame 3.5.1 — Smoother swipe, icon shapes (circle, rectangle, hexagon…). Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.1 — Vuốt mượt hơn, kiểu icon tròn / chữ nhật / lục giác.
+Description: DuoFrame 3.5.2 — Color pickers for status glyphs, app names, and Home text. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.2 — Chọn màu icon status, tên app và chữ trên Home.
  Credit: Jinken Nguyen - 1989
  .
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.2 ===
+ .
+  * Cài đặt → Màu chữ và icon: giờ/glyph status, tên ứng dụng, chữ khác trên Home.
  .
  === Changelog / Nhật ký phiên bản 3.5.1 ===
  .
