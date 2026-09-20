@@ -323,157 +323,28 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.adshield.png
 
 Package: com.jinkennguyen.duoframe
-Version: 3.5.0
-Architecture: iphoneos-arm
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1052
-Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.0_iphoneos-arm.deb
-Size: 313638
-MD5sum: d8383a58aeb0d45047d7d9f3648468ae
-SHA1: e243b645b0bc03f36bd2d0e07e83b8200efa7a75
-SHA256: 8dee89c3cb4f74984649b9f5e612d1778f28ed15a2320c3204d921a51a7dc541
-Section: Tweaks
-Description: DuoFrame 3.5.0 — Toggle continuous Home scroll on or off. Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.0 — Bật/tắt cuộn trang Home liên tục.
- Credit: Jinken Nguyen - 1989
- .
- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
- Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
- .
- === Changelog / Nhật ký phiên bản 3.5.0 ===
- .
-  * Cài đặt: "Cuộn trang liên tục" — tắt để Home vuốt trang trái/phải như gốc; bật = một trang, vuốt lên/xuống.
- .
- === Changelog / Nhật ký phiên bản 3.4.9 ===
- .
-  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
-  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
- .
- === Changelog / Nhật ký phiên bản 3.4.8 ===
- .
-  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
-  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
- .
- === Changelog / Nhật ký phiên bản 3.4.7 ===
- .
-  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
-  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
- .
- === Changelog / Nhật ký phiên bản 3.4.6 ===
- .
-  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
-  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
-  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
- .
- === Changelog / Nhật ký phiên bản 3.4.5 ===
- .
-  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
-  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
-  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
- .
- === Changelog / Nhật ký phiên bản 3.4.4 ===
- .
-  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
-  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
- .
- === Changelog / Nhật ký phiên bản 3.4.3 ===
- .
-  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
-  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
- .
- === Changelog / Nhật ký phiên bản 3.4.2 ===
- .
-  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
-  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
- .
- === Changelog / Nhật ký phiên bản 3.4.1 ===
- .
-  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
-  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
-  * Less lag on scroll. Search page uses the same full-page glass as App Library.
- .
- === Changelog / Nhật ký phiên bản 3.4.0 ===
- .
-  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
-  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
-  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
- .
- === Changelog / Nhật ký phiên bản 3.3.3 ===
- .
-  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
-  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
- .
- === Changelog / Nhật ký phiên bản 3.3.2 ===
- .
-  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
-  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
-  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
- .
- === Changelog / Nhật ký phiên bản 3.3.1 ===
- .
-  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
-  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
-  * Smoother Duo-style fade. Content sits under the rim. App Library included.
- .
- === Changelog / Nhật ký phiên bản 3.3.0 ===
- .
-  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
-  * Không che viền khung (status / icon / dock / Search / Thư viện).
-  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
- .
- === Changelog / Nhật ký phiên bản 3.2.1 ===
- .
-  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
-  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
-  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
- .
- === Changelog / Nhật ký phiên bản 3.2.0 ===
- .
-  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
-  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
-  * Centered dock icons. Search and App Library match the Home glass frames.
- .
- === Changelog / Nhật ký phiên bản 3.1.0 ===
- .
-  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
-  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
-  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
- .
- === Changelog / Nhật ký phiên bản 3.0.0 ===
- .
-  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
-  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
-  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
-  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
-  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
-  * Status chips that launch apps only. Presets and per-setting help text.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
-Author: Jinken Nguyen - 1989
-Name: DuoFrame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
-
-Package: com.jinkennguyen.duoframe
-Version: 3.5.0
+Version: 3.5.1
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1052
+Installed-Size: 1068
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.0_iphoneos-arm64e.deb
-Size: 314536
-MD5sum: 984d84517d20bcec38eaffd3a29fc8c8
-SHA1: dbd91b5f6e70d07716fcfba4eaaa9489e8d6f9c3
-SHA256: bfb538c4a6121b8fae2d18df89c72820eed1956292b21705524d91fb4faedc52
+Filename: debs/com.jinkennguyen.duoframe_3.5.1_iphoneos-arm64e.deb
+Size: 323038
+MD5sum: 6d456e805487f30b089d5dcb2bab6327
+SHA1: 6bba083a8a38618ba0a2369317a01d019e5f0d70
+SHA256: 8fb3a3d37196f14444cd7aeb0fb73786833da509a6e9b4c35e2433344ebfd8d4
 Section: Tweaks
-Description: DuoFrame 3.5.0 — Toggle continuous Home scroll on or off. Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.0 — Bật/tắt cuộn trang Home liên tục.
+Description: DuoFrame 3.5.1 — Smoother swipe, icon shapes (circle, rectangle, hexagon…). Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.1 — Vuốt mượt hơn, kiểu icon tròn / chữ nhật / lục giác.
  Credit: Jinken Nguyen - 1989
  .
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.1 ===
+ .
+  * Giảm giật khi vuốt: không resize lưới lúc đang kéo, không quét mọi UIScrollView.
+  * Kiểu icon: gốc, tròn, siêu elip, tròn mềm, vuông bo, chữ nhật, vé, lục giác.
  .
  === Changelog / Nhật ký phiên bản 3.5.0 ===
  .
@@ -591,23 +462,167 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.duoframe
-Version: 3.5.0
+Version: 3.5.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1052
+Installed-Size: 1068
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.0_iphoneos-arm64.deb
-Size: 314338
-MD5sum: 80829146294426af08be326cb6d90219
-SHA1: 80d45561f71c34a6689ad961cba09915534f6fd6
-SHA256: cec523336ac5726af34b8f2de816dec31ea9dce700d7626d2a26f6b75a3f748c
+Filename: debs/com.jinkennguyen.duoframe_3.5.1_iphoneos-arm64.deb
+Size: 322894
+MD5sum: 0eaf5eaa7cac7ad30cf845f032ed7385
+SHA1: 445ca28fc1797b5fe089d842e115de12f082258b
+SHA256: cdfccd8e2063369dedf675d14e5d766180444223ae70a48ec6934350469438be
 Section: Tweaks
-Description: DuoFrame 3.5.0 — Toggle continuous Home scroll on or off. Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.0 — Bật/tắt cuộn trang Home liên tục.
+Description: DuoFrame 3.5.1 — Smoother swipe, icon shapes (circle, rectangle, hexagon…). Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.1 — Vuốt mượt hơn, kiểu icon tròn / chữ nhật / lục giác.
  Credit: Jinken Nguyen - 1989
  .
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.1 ===
+ .
+  * Giảm giật khi vuốt: không resize lưới lúc đang kéo, không quét mọi UIScrollView.
+  * Kiểu icon: gốc, tròn, siêu elip, tròn mềm, vuông bo, chữ nhật, vé, lục giác.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.0 ===
+ .
+  * Cài đặt: "Cuộn trang liên tục" — tắt để Home vuốt trang trái/phải như gốc; bật = một trang, vuốt lên/xuống.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.9 ===
+ .
+  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
+  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.8 ===
+ .
+  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
+  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.7 ===
+ .
+  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
+ .
+ === Changelog / Nhật ký phiên bản 3.4.6 ===
+ .
+  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
+  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
+  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
+ .
+ === Changelog / Nhật ký phiên bản 3.4.5 ===
+ .
+  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
+  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
+  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.4 ===
+ .
+  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
+  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.3 ===
+ .
+  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
+  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.2 ===
+ .
+  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
+  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.1 ===
+ .
+  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
+  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
+  * Less lag on scroll. Search page uses the same full-page glass as App Library.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.0 ===
+ .
+  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
+  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
+  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.3 ===
+ .
+  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
+  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.2 ===
+ .
+  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
+  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
+  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.1 ===
+ .
+  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
+  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
+  * Smoother Duo-style fade. Content sits under the rim. App Library included.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.0 ===
+ .
+  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
+  * Không che viền khung (status / icon / dock / Search / Thư viện).
+  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.1 ===
+ .
+  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
+  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
+  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.0 ===
+ .
+  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
+  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
+  * Centered dock icons. Search and App Library match the Home glass frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.1.0 ===
+ .
+  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
+  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
+  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
+ .
+ === Changelog / Nhật ký phiên bản 3.0.0 ===
+ .
+  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
+  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
+  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
+  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
+  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
+  * Status chips that launch apps only. Presets and per-setting help text.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: DuoFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
+
+Package: com.jinkennguyen.duoframe
+Version: 3.5.1
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1068
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
+Filename: debs/com.jinkennguyen.duoframe_3.5.1_iphoneos-arm.deb
+Size: 322232
+MD5sum: 4c33bfc04b5e522a6538ec5fddb1cd00
+SHA1: 04dea929816b6fbe7a928189a24ba0a04749d4c2
+SHA256: 53cc3a5016e32da917698aa4303302da9975ddfb433c719612f7e638f2e851d7
+Section: Tweaks
+Description: DuoFrame 3.5.1 — Smoother swipe, icon shapes (circle, rectangle, hexagon…). Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.1 — Vuốt mượt hơn, kiểu icon tròn / chữ nhật / lục giác.
+ Credit: Jinken Nguyen - 1989
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.1 ===
+ .
+  * Giảm giật khi vuốt: không resize lưới lúc đang kéo, không quét mọi UIScrollView.
+  * Kiểu icon: gốc, tròn, siêu elip, tròn mềm, vuông bo, chữ nhật, vé, lục giác.
  .
  === Changelog / Nhật ký phiên bản 3.5.0 ===
  .
@@ -1238,82 +1253,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.noxframe
-Version: 1.0.1
-Architecture: iphoneos-arm
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 600
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.noxframe_1.0.1_iphoneos-arm.deb
-Size: 85052
-MD5sum: 19ab0cfa050134b8fd598d5d61ae7051
-SHA1: 24e60030ecb8647af66dc2ad9e773b2fc0acf284
-SHA256: b258a48bad5e2ac811bad38461a64022025d112f70743412731dd9a5e02e5ff7
-Section: Tweaks
-Description: NoxFrame 1.0.1 — capture with the screen off. Credit: Jinken Nguyen - 1989.
- NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
- NoxFrame lets you take photos and record video with the screen off, each with its own switch.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.0.1 (2026-09-19)
-  * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
-  * Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).
-  * Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.
-  * Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.
-  * Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
-  * SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix: pressing the side button to blank the screen no longer cuts an in-progress video.
-  * Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).
-  * Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.
-  * Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.
-  * Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
-  * SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-19)
-  * Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.
-  * Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.
-  * Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.
-  * Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.
-  * Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.
-  * Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.
-  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
-  * Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.
-  * Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.
-  * Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.
-  * Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.
-  * Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.
-  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: NoxFrame
-Sileodepiction: file:///Library/NoxFrame/sileo.json
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
-
-Package: com.jinkennguyen.noxframe
-Version: 1.0.1
+Version: 1.1.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 600
+Installed-Size: 756
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.noxframe_1.0.1_iphoneos-arm64e.deb
-Size: 85140
-MD5sum: 6797076b04b9151dbd04b6006562a071
-SHA1: fbf89a0bb3a099e1b817ccb45b700037e26d35ce
-SHA256: 34910ebfdceb75797ef07475954d1a1768cab4db288251caee119c709824abc1
+Filename: debs/com.jinkennguyen.noxframe_1.1.0_iphoneos-arm64e.deb
+Size: 106868
+MD5sum: d3ed4432d61c96443db66ff0b5d71e78
+SHA1: ed5ee49cb34a83b70d26eeb43d67d300ecb60457
+SHA256: b92bd42c37ca8b484641c7efed17c9637e3bde3c2e3970ad78f1d5ac5a29f850
 Section: Tweaks
-Description: NoxFrame 1.0.1 — capture with the screen off. Credit: Jinken Nguyen - 1989.
+Description: NoxFrame 1.1.0 — capture with the screen off. Credit: Jinken Nguyen - 1989.
  NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
  NoxFrame lets you take photos and record video with the screen off, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -1322,6 +1273,18 @@ Description: NoxFrame 1.0.1 — capture with the screen off. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.1.0 (2026-09-20)
+  * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
+  * Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
+  * Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
+  * Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New: Save photo button while watching a video in Photos — one tap stores the current frame.
+  * Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
+  * If StillFrame is installed, NoxFrame yields so two buttons do not stack.
+  * Own switch in Settings → NoxFrame → Photos. On by default.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.1 (2026-09-19)
   * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
@@ -1366,18 +1329,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.noxframe
-Version: 1.0.1
+Version: 1.1.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 600
+Installed-Size: 756
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.noxframe_1.0.1_iphoneos-arm64.deb
-Size: 85412
-MD5sum: e994843b198707873a31e96fe212e8cf
-SHA1: 1a5a58e9e850c7a6f5eb7a1120d92bc7e1e390bc
-SHA256: b8ab318470dffb333fafc5220893d5cbc269d39c9639a75bff68f7d9811d0f12
+Filename: debs/com.jinkennguyen.noxframe_1.1.0_iphoneos-arm64.deb
+Size: 107220
+MD5sum: 7046ce92064d4a1852458c2c76a40d10
+SHA1: cfb71106b3edf8562c66c5eebea7e7529842daa7
+SHA256: 98ff6745ffbb448c106fb543b779202f62d12196c21d374af8e308e5e97a5dcb
 Section: Tweaks
-Description: NoxFrame 1.0.1 — capture with the screen off. Credit: Jinken Nguyen - 1989.
+Description: NoxFrame 1.1.0 — capture with the screen off. Credit: Jinken Nguyen - 1989.
  NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
  NoxFrame lets you take photos and record video with the screen off, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -1386,6 +1349,18 @@ Description: NoxFrame 1.0.1 — capture with the screen off. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.1.0 (2026-09-20)
+  * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
+  * Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
+  * Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
+  * Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New: Save photo button while watching a video in Photos — one tap stores the current frame.
+  * Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
+  * If StillFrame is installed, NoxFrame yields so two buttons do not stack.
+  * Own switch in Settings → NoxFrame → Photos. On by default.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.1 (2026-09-19)
   * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
@@ -1424,6 +1399,82 @@ Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compa
 Author: Jinken Nguyen - 1989
 Name: NoxFrame
 Sileodepiction: file:///var/jb/Library/NoxFrame/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
+
+Package: com.jinkennguyen.noxframe
+Version: 1.1.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 756
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.noxframe_1.1.0_iphoneos-arm.deb
+Size: 106770
+MD5sum: ee546e6b753b1a369d2f8da2435c8c1f
+SHA1: 64e828cfab7fd2a36bf33fc2579bfc2b205aa9f3
+SHA256: 4d89df7a9ffdecdf816263a7b29e7f11f5b20ba0cb7101cbcfc44474bfa4fa30
+Section: Tweaks
+Description: NoxFrame 1.1.0 — capture with the screen off. Credit: Jinken Nguyen - 1989.
+ NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
+ NoxFrame lets you take photos and record video with the screen off, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.1.0 (2026-09-20)
+  * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
+  * Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
+  * Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
+  * Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New: Save photo button while watching a video in Photos — one tap stores the current frame.
+  * Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
+  * If StillFrame is installed, NoxFrame yields so two buttons do not stack.
+  * Own switch in Settings → NoxFrame → Photos. On by default.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-19)
+  * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
+  * Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).
+  * Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.
+  * Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.
+  * Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
+  * SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: pressing the side button to blank the screen no longer cuts an in-progress video.
+  * Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).
+  * Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.
+  * Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.
+  * Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
+  * SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-19)
+  * Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.
+  * Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.
+  * Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.
+  * Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.
+  * Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.
+  * Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
+  * Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.
+  * Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.
+  * Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.
+  * Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.
+  * Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: NoxFrame
+Sileodepiction: file:///Library/NoxFrame/sileo.json
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate

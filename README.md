@@ -30,9 +30,9 @@ Install **one** package per tweak that matches your jailbreak:
 | Name | Package | Version | Builds |
 | --- | --- | --- | --- |
 | AdShield | `com.jinkennguyen.adshield` | 1.4.0 | rootful, rootless, RootHide |
-| DuoFrame | `com.jinkennguyen.duoframe` | 3.5.0 | rootful, rootless, RootHide |
+| DuoFrame | `com.jinkennguyen.duoframe` | 3.5.1 | rootful, rootless, RootHide |
 | LookGlass | `com.jinkennguyen.lookglass` | 3.1.3 | rootful, rootless, RootHide |
-| NoxFrame | `com.jinkennguyen.noxframe` | 1.0.1 | rootful, rootless, RootHide |
+| NoxFrame | `com.jinkennguyen.noxframe` | 1.1.0 | rootful, rootless, RootHide |
 
 ## Credit
 
@@ -53,6 +53,14 @@ Thank you for using these free tweaks. A small donation keeps the repo online. N
 | Nội dung | `Donate Jinken Nguyen 1989` |
 
 VietQR: scan the code on the [homepage](https://tientrieu19892025.github.io/#donate).
+
+## Upload a new `.deb`
+
+1. Drop files into `debs/` using `package_version_architecture.deb`
+2. Run `python3 scripts/update-repo.py`
+3. `git add -A && git commit -m "Add tweak" && git push`
+
+Or rebuild from local Theos trees in `~/Documents/code/*/packages`.
 
 ## License
 
