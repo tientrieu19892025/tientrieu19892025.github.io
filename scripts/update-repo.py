@@ -114,9 +114,7 @@ BLURBS = {
 
 FEATURED = [
     "com.jinkennguyen.duoframe",
-    "com.jinkennguyen.adshield",
     "com.jinkennguyen.lookglass",
-    "com.jinkennguyen.noxframe",
 ]
 
 DEB_NAME_RE = re.compile(
