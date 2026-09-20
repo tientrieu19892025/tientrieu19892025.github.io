@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LookGlass 3.7.1</title>
+<title>LookGlass 3.8.0</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -18,7 +18,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>LookGlass 3.7.1</h1>
+<h1>LookGlass 3.8.0</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.</p>
 <p>Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.</p>
@@ -32,6 +32,16 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <pre># LookGlass changelog
 
 Credit: Jinken Nguyen - 1989
+
+## 3.8.0 (2026-09-20)
+
+### Tiếng Việt
+- Thêm ô Phim, YouTube, Giao diện, Dock app. PiP đủ hình 16:9 trong khung nhỏ, thanh nút icon: tua, play/pause, tốc độ, phóng to.
+- Phát nhanh hơn: embed YouTube chạy ngay, native timeout 2s, AVPlayer không chờ buffer lâu.
+
+### English
+- Added Movies, YouTube, Looks and app-dock tiles. PiP fills a 16:9 mini frame with icon controls: skip, play/pause, speed, expand.
+- Faster start: YouTube embed begins immediately, native timeout 2s, AVPlayer does not wait to minimize stalling.
 
 ## 3.7.1 (2026-09-20)
 
@@ -88,14 +98,7 @@ Credit: Jinken Nguyen - 1989
 
 ### English
 - PiP keeps the picture: AVPlayerLayer / WKWebView no longer hop to a second window (the blank-video bug). YouTube iframe stays visible in the mini player. Drag it; double-tap to expand.
-- PiP no longer lags or hangs: the video layer is not reattached every frame, SF Symbols are not rebuilt twice a second, and a zero-bounds host is not given a wrong frame.
-- LookGlass Settings match DuoFrame: grouped switch cards, chips, donate, changelog, filled Respring button.
-
-## 3.3.0 (2026-09-17)
-
-### Tiếng Việt
-- PiP có hình, hết lag/treo: player nổi trên Home trong cùng cửa sổ (không chuyển AVPlayerLayer). Bấm PiP không còn tự ẩn overlay. Layout không tạo lại lớp video mỗi frame.
-- Cài đặt LookGlass kiểu DuoFrame: thẻ kính, công tắc, chip, donate, change</pre>
+- PiP no longer lags or hangs: the video layer </pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

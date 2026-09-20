@@ -752,18 +752,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.7.1
-Architecture: iphoneos-arm64e
+Version: 3.8.0
+Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 752
+Installed-Size: 776
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.7.1_iphoneos-arm64e.deb
-Size: 180928
-MD5sum: e8715ae25b79e7988e443ac523220e2c
-SHA1: 480617d59a76885aaefd629bfe905648e91bd832
-SHA256: 12c1a0dc05a4fa74611dffe8d4c450fb8b1885241094bf80f80c3786e3f65425
+Filename: debs/com.jinkennguyen.lookglass_3.8.0_iphoneos-arm.deb
+Size: 182522
+MD5sum: baeb88f04985f41ef590b8c4303935da
+SHA1: 7d397c17e5872c8710856bb6735087829f0c05b1
+SHA256: 3fc9b1f195ce97c5bb103eb6f0b8983c42e57aebf08c722e918a52138332246d
 Section: Tweaks
-Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -771,6 +771,12 @@ Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.0 (2026-09-20)
+  * Thêm ô Phim, YouTube, Giao diện, Dock app. PiP đủ hình 16:9 trong khung nhỏ, thanh nút icon: tua, play/pause, tốc độ, phóng to.
+  * Phát nhanh hơn: embed YouTube chạy ngay, native timeout 2s, AVPlayer không chờ buffer lâu.
+  * Added Movies, YouTube, Looks and app-dock tiles. PiP fills a 16:9 mini frame with icon controls: skip, play/pause, speed, expand.
+  * Faster start: YouTube embed begins immediately, native timeout 2s, AVPlayer does not wait to minimize stalling.
  .
  3.7.1 (2026-09-20)
   * Sửa bấm Tìm bị Safe Mode: không còn tạo mảng view nil khi mở launcher (SpringBoard crash).
@@ -979,18 +985,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.7.1
+Version: 3.8.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1408
+Installed-Size: 1432
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.7.1_iphoneos-arm64.deb
-Size: 263330
-MD5sum: 264a7cbef45126213f40b5e938a181e0
-SHA1: 2ef4da6a95ad27d4adddea2cc82b88de0462df23
-SHA256: e2a4b09a32caec4d1d095f5b415fbbe6023da225e6c025587efeb5bc99751ac9
+Filename: debs/com.jinkennguyen.lookglass_3.8.0_iphoneos-arm64.deb
+Size: 265226
+MD5sum: 155c7664bf87e717f18d74485b920d42
+SHA1: 8fb0a280f3bf9dbfe91490eaf61926b34e733afa
+SHA256: 741eee9338250533193056c126fc40899df70df579ac7d22170d112dabfa619e
 Section: Tweaks
-Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -998,6 +1004,12 @@ Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.0 (2026-09-20)
+  * Thêm ô Phim, YouTube, Giao diện, Dock app. PiP đủ hình 16:9 trong khung nhỏ, thanh nút icon: tua, play/pause, tốc độ, phóng to.
+  * Phát nhanh hơn: embed YouTube chạy ngay, native timeout 2s, AVPlayer không chờ buffer lâu.
+  * Added Movies, YouTube, Looks and app-dock tiles. PiP fills a 16:9 mini frame with icon controls: skip, play/pause, speed, expand.
+  * Faster start: YouTube embed begins immediately, native timeout 2s, AVPlayer does not wait to minimize stalling.
  .
  3.7.1 (2026-09-20)
   * Sửa bấm Tìm bị Safe Mode: không còn tạo mảng view nil khi mở launcher (SpringBoard crash).
@@ -1206,18 +1218,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.7.1
-Architecture: iphoneos-arm
+Version: 3.8.0
+Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 752
+Installed-Size: 776
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.7.1_iphoneos-arm.deb
-Size: 180460
-MD5sum: 346961eadf3dd6674bc9b307d1a89e8d
-SHA1: ddf271b9977373fdd345ef688ba0b381f454c05a
-SHA256: bd8e9656b82c12f74c70878496d6000a4911a6ab64339535934ac77d50295d1a
+Filename: debs/com.jinkennguyen.lookglass_3.8.0_iphoneos-arm64e.deb
+Size: 182612
+MD5sum: e9b8298a3d0b06112743d2d326854c69
+SHA1: baa56a5f3dd59f92fc5ee0f8b2c94ce42465c2f0
+SHA256: 354afd2e2663529a551f163525a36b8db4af4a829dbdc660902d0a130d70d115
 Section: Tweaks
-Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.8.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1225,6 +1237,12 @@ Description: LookGlass 3.7.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.8.0 (2026-09-20)
+  * Thêm ô Phim, YouTube, Giao diện, Dock app. PiP đủ hình 16:9 trong khung nhỏ, thanh nút icon: tua, play/pause, tốc độ, phóng to.
+  * Phát nhanh hơn: embed YouTube chạy ngay, native timeout 2s, AVPlayer không chờ buffer lâu.
+  * Added Movies, YouTube, Looks and app-dock tiles. PiP fills a 16:9 mini frame with icon controls: skip, play/pause, speed, expand.
+  * Faster start: YouTube embed begins immediately, native timeout 2s, AVPlayer does not wait to minimize stalling.
  .
  3.7.1 (2026-09-20)
   * Sửa bấm Tìm bị Safe Mode: không còn tạo mảng view nil khi mở launcher (SpringBoard crash).
