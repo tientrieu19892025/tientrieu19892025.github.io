@@ -13,10 +13,10 @@ Sileo: Sources → + → dán URL
 Zebra: Sources → + → dán URL
 Hoặc mở trang web repo trên Safari rồi bấm "Thêm vào Sileo".
 
-Cài ĐÚNG 1 file theo loại jailbreak:
-  iphoneos-arm64   = rootless (Dopamine, palera1n rootless)
-  iphoneos-arm     = rootful  (unc0ver, checkra1n, palera1n rootful)
-  iphoneos-arm64e  = RootHide (Dopamine-roothide / RootHide Bootstrap)
+Sileo / Zebra tự chọn gói đúng máy — không cần chọn file:
+  rootless  = Dopamine, palera1n rootless
+  rootful   = unc0ver, checkra1n, palera1n rootful
+  RootHide  = Dopamine-roothide / RootHide Bootstrap
 
 Sau khi cài: Respring. Mở Cài đặt → tên tweak.
 

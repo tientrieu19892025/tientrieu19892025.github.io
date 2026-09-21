@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lock Frame 1.2.0</title>
+<title>Lock Frame 1.2.1</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>Lock Frame 1.2.0</h1>
+<h1>Lock Frame 1.2.1</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Màn khoá kính full màn kiểu DuoFrame: LOCK · ONLINE, HUD nhìn tương lai.</p>
 <p>Full-screen DuoFrame glass lock HUD: LOCK · ONLINE, a future-looking lock screen.</p>
@@ -30,12 +30,25 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </div>
 </div>
 <hr>
-<p>Gói: rootless · rootful · RootHide (khi có <code>iphoneos-arm64e</code>).</p>
-<p>Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → Lock Frame</strong>.</p>
+<p>Sileo tự cài đúng gói cho máy (rootless / rootful / RootHide). Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → Lock Frame</strong>.</p>
 <pre># Lock Frame changelog
 
 Credit: Jinken Nguyen - 1989
 Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
+
+## 1.2.1 (2026-09-21)
+
+### Tiếng Việt
+- Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
+- Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
+- Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+
+### English
+- Removed the empty full-screen glass frame that covered the large lock-screen clock.
+- The stock iOS clock is visible again. No blank rim over the lock.
+- If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
 
 ## 1.2.0 (2026-09-21)
 
@@ -89,11 +102,7 @@ Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
 - Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
 - Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
 - Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
-- Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
-- Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
-- SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
-- RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
-- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.</pre>
+- Wake scan, optional tilt parallax, wa</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

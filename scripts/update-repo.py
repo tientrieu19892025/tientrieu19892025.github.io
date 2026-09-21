@@ -237,6 +237,91 @@ def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], 
     return {k: v[2] for k, v in latest.items()}
 
 
+REPO_ARCHES = ("iphoneos-arm", "iphoneos-arm64", "iphoneos-arm64e")
+
+
+def write_packages_set(directory: Path, text: str) -> None:
+    directory.mkdir(parents=True, exist_ok=True)
+    pkg_path = directory / "Packages"
+    pkg_path.write_text(text, encoding="utf-8")
+    with gzip.open(directory / "Packages.gz", "wt", encoding="utf-8") as gz:
+        gz.write(text)
+    subprocess.check_call(["bzip2", "-kf", str(pkg_path)])
+
+
+def split_packages_by_arch(packages_text: str) -> dict[str, str]:
+    buckets: dict[str, list[str]] = {a: [] for a in REPO_ARCHES}
+    for block in packages_text.strip().split("\n\n"):
+        if not block.strip():
+            continue
+        arch = ""
+        for line in block.splitlines():
+            if line.startswith("Architecture:"):
+                arch = line.split(":", 1)[1].strip()
+                break
+        if arch in buckets:
+            buckets[arch].append(block)
+    return {arch: ("\n\n".join(blocks) + "\n") if blocks else "" for arch, blocks in buckets.items()}
+
+
+def hash_lines(files: list[tuple[str, Path]]) -> tuple[str, str]:
+    md5_rows = []
+    sha_rows = []
+    for rel, path in files:
+        data = path.read_bytes()
+        md5_rows.append(f" {hashlib.md5(data).hexdigest()} {len(data)} {rel}")
+        sha_rows.append(f" {hashlib.sha256(data).hexdigest()} {len(data)} {rel}")
+    return "\n".join(md5_rows), "\n".join(sha_rows)
+
+
+def write_dists(conf: dict, now: str, by_arch: dict[str, str]) -> None:
+    dists = ROOT / "dists"
+    if dists.exists():
+        shutil.rmtree(dists)
+    suites: list[str] = []
+    for name in (conf.get("SUITE", "stable"), conf.get("CODENAME", "stable")):
+        if name and name not in suites:
+            suites.append(name)
+    for suite in suites:
+        suite_dir = dists / suite
+        hashed: list[tuple[str, Path]] = []
+        for arch, text in by_arch.items():
+            if not text.strip():
+                continue
+            binary = suite_dir / "main" / f"binary-{arch}"
+            write_packages_set(binary, text)
+            (binary / "Release").write_text(
+                f"""Archive: {suite}
+Origin: {conf['ORIGIN']}
+Label: {conf['LABEL']}
+Component: main
+Architecture: {arch}
+Description: {conf['DESCRIPTION']}
+""",
+                encoding="utf-8",
+            )
+            for fname in ("Packages", "Packages.gz", "Packages.bz2", "Release"):
+                hashed.append((f"main/binary-{arch}/{fname}", binary / fname))
+        md5s, shas = hash_lines(hashed)
+        (suite_dir / "Release").write_text(
+            f"""Origin: {conf['ORIGIN']}
+Label: {conf['LABEL']}
+Suite: {suite}
+Version: {conf['VERSION']}
+Codename: {suite}
+Date: {now}
+Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
+Components: main
+Description: {conf['DESCRIPTION']}
+MD5Sum:
+{md5s}
+SHA256:
+{shas}
+""",
+            encoding="utf-8",
+        )
+
+
 def sha256_file(path: Path) -> str:
     h = hashlib.sha256()
     with path.open("rb") as fh:
@@ -405,8 +490,7 @@ hr{{border:0;border-top:1px solid #1f2937;margin:18px 0}}
 </div>
 </div>
 <hr>
-<p>Gói: rootless · rootful · RootHide (khi có <code>iphoneos-arm64e</code>).</p>
-<p>Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → {html_escape(name)}</strong>.</p>
+<p>Sileo tự cài đúng gói cho máy (rootless / rootful / RootHide). Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → {html_escape(name)}</strong>.</p>
 {log_html}
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
@@ -619,7 +703,8 @@ code.src {{
   <h2>Thêm source</h2>
   <p>Sileo / Zebra / Cydia → Sources → + → dán URL:</p>
   <code class="src" id="source-url">{html_escape(conf['BASE_URL'])}</code>
-  <p class="en">Add this URL as a package source, then install one package per tweak matching your jailbreak (rootless / rootful / RootHide).</p>
+  <p>Sileo / Zebra tự chọn gói đúng máy: rootless, rootful hay RootHide — không cần chọn file.</p>
+  <p class="en">Sileo / Zebra install the matching build for your jailbreak (rootless, rootful, or RootHide). You do not pick a file.</p>
 
   <h2>Tweaks</h2>
   <div class="grid">
@@ -701,13 +786,15 @@ Cảm ơn bạn đã dùng tweak. Nếu thấy hữu ích, một chút ủng h�
 - Zebra: `zbra://sources/add/{conf['BASE_URL']}/`
 - Cydia: Sources → Edit → Add
 
-Install **one** package per tweak that matches your jailbreak:
+Sileo / Zebra pick the right build automatically:
 
-| File suffix | Jailbreak |
-| --- | --- |
-| `iphoneos-arm64` | Rootless (Dopamine, palera1n rootless) |
-| `iphoneos-arm` | Rootful (unc0ver, checkra1n, palera1n rootful) |
-| `iphoneos-arm64e` | RootHide (Dopamine-roothide / RootHide Bootstrap) |
+| Device | Architecture | Jailbreak |
+| --- | --- | --- |
+| Rootless | `iphoneos-arm64` | Dopamine, palera1n rootless |
+| Rootful | `iphoneos-arm` | unc0ver, checkra1n, palera1n rootful |
+| RootHide | `iphoneos-arm64e` | Dopamine-roothide / RootHide Bootstrap |
+
+Do not install a `.deb` by hand unless you know your jailbreak type.
 
 ## Packages
 
@@ -865,7 +952,7 @@ def main() -> int:
         for line in block.splitlines():
             if line.startswith("Package:"):
                 pkg = line.split(":", 1)[1].strip()
-            if line.startswith(("Depiction:", "SileoDepiction:", "Homepage:", "Icon:")):
+            if line.startswith(("Depiction:", "SileoDepiction:", "Sileodepiction:", "Homepage:", "Icon:")):
                 continue
             lines.append(line)
         if pkg:
@@ -909,6 +996,7 @@ SHA256:
  {hashlib.sha256(bz_bytes).hexdigest()} {len(bz_bytes)} Packages.bz2
 """
     (ROOT / "Release").write_text(release, encoding="utf-8")
+    write_dists(conf, now, split_packages_by_arch(packages_text))
 
     banners = []
     for pkg in FEATURED:

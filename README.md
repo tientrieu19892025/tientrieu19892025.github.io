@@ -17,13 +17,15 @@ https://tientrieu19892025.github.io
 - Zebra: `zbra://sources/add/https://tientrieu19892025.github.io/`
 - Cydia: Sources → Edit → Add
 
-Install **one** package per tweak that matches your jailbreak:
+Sileo / Zebra pick the right build automatically:
 
-| File suffix | Jailbreak |
-| --- | --- |
-| `iphoneos-arm64` | Rootless (Dopamine, palera1n rootless) |
-| `iphoneos-arm` | Rootful (unc0ver, checkra1n, palera1n rootful) |
-| `iphoneos-arm64e` | RootHide (Dopamine-roothide / RootHide Bootstrap) |
+| Device | Architecture | Jailbreak |
+| --- | --- | --- |
+| Rootless | `iphoneos-arm64` | Dopamine, palera1n rootless |
+| Rootful | `iphoneos-arm` | unc0ver, checkra1n, palera1n rootful |
+| RootHide | `iphoneos-arm64e` | Dopamine-roothide / RootHide Bootstrap |
+
+Do not install a `.deb` by hand unless you know your jailbreak type.
 
 ## Packages
 
@@ -31,7 +33,7 @@ Install **one** package per tweak that matches your jailbreak:
 | --- | --- | --- | --- |
 | CPU Boost | `com.jinkennguyen.cpuboost` | 1.0.0 | rootful, rootless, RootHide |
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.2 | rootful, rootless, RootHide |
-| Lock Frame | `com.jinkennguyen.haloframe` | 1.2.0 | rootful, rootless, RootHide |
+| Lock Frame | `com.jinkennguyen.haloframe` | 1.2.1 | rootful, rootless, RootHide |
 | LookGlass | `com.jinkennguyen.lookglass` | 4.0.0 | rootful, rootless, RootHide |
 | SlapIos | `com.jinkennguyen.slapios` | 1.2.0 | rootful, rootless, RootHide |
 
