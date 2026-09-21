@@ -30,7 +30,7 @@ Install **one** package per tweak that matches your jailbreak:
 | Name | Package | Version | Builds |
 | --- | --- | --- | --- |
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.2 | rootful, rootless, RootHide |
-| LookGlass | `com.jinkennguyen.lookglass` | 3.9.6 | rootful, rootless, RootHide |
+| LookGlass | `com.jinkennguyen.lookglass` | 4.0.0 | rootful, rootless, RootHide |
 | SlapIos | `com.jinkennguyen.slapios` | 1.2.0 | rootful, rootless, RootHide |
 
 ## Credit
