@@ -67,8 +67,8 @@ BLURBS = {
         "Simulated Dynamic Island at iPhone 18 Pro size. Pin apps, music, charging, timer.",
     ),
     "com.jinkennguyen.lookglass": (
-        "Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.",
-        "Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.",
+        "Ô tìm kính lỏng trên Home, YouTube, nghe nền — và Chat cộng đồng: bấm Chat cạnh Tìm, đặt username rồi nhắn tin/link với mọi người dùng LookGlass.",
+        "Liquid-glass Home search, YouTube, background audio — plus Community Chat: tap Chat next to Search, set a username, then text/links with other LookGlass users.",
     ),
     "com.jinkennguyen.slapios": (
         "Vỗ, gõ, lắc iPhone thì máy kêu vui. 120 hiệu ứng, 8 gói tiếng.",
@@ -114,6 +114,44 @@ BLURBS = {
         "Mini-game Trung Thu arcade. Nhân vật retro, nhạc chiptune, hướng dẫn từng trò.",
         "Arcade Mid-Autumn mini-games. Retro characters, chiptune SFX, how-to before each game.",
     ),
+}
+
+FEATURE_GUIDES = {
+    "com.jinkennguyen.lookglass": {
+        "tab": "Chat cộng đồng",
+        "md": (
+            "**Chat cộng đồng** là phòng chat chung của người dùng LookGlass trên máy jailbreak. "
+            "Tin nhắn hiện realtime. Chỉ **chữ và link** — không gửi hình, không gửi video.\n\n"
+            "**Cách dùng (mọi người)**\n"
+            "1. Cài LookGlass → **Respring**.\n"
+            "2. Mở ô LookGlass trên màn hình chính → bấm nút **Chat** (cạnh **Tìm**).\n"
+            "3. Đặt **username** một lần (Cài đặt → LookGlass → Chat cộng đồng, hoặc khi mở chat).\n"
+            "4. Gõ tin hoặc dán link rồi gửi. Không cần dán Firebase URL hay API key — chat đã kết nối sẵn.\n"
+            "5. Bấm vào tin của mình để **Chép** hoặc **Xoá**.\n\n"
+            "**Admin (chủ phòng)**\n"
+            "Bấm **Đăng nhập Admin**. Đây là tài khoản chủ phòng trên Firebase, **không phải** tên chat. "
+            "Xong có **Khoá phòng**, xoá tin người khác, cấm chat, **Thoát admin**.\n\n"
+            "**Community Chat** is a shared room for LookGlass users on jailbroken iPhones. "
+            "Text and links only. Tap **Chat** next to Search, set a username, then type. "
+            "No Firebase URL or API key to paste. Admins tap **Admin login** (the room-owner account, not the chat nickname)."
+        ),
+        "html": (
+            "<h2>Chat cộng đồng</h2>"
+            "<p><strong>Chat cộng đồng</strong> là phòng chat chung của người dùng LookGlass trên máy jailbreak. "
+            "Tin nhắn hiện ngay. Chỉ chữ và link — không gửi hình, không gửi video.</p>"
+            "<p><strong>Cách dùng</strong></p>"
+            "<ol>"
+            "<li>Cài LookGlass → <strong>Respring</strong>.</li>"
+            "<li>Mở ô LookGlass trên Home → bấm <strong>Chat</strong> (cạnh <strong>Tìm</strong>).</li>"
+            "<li>Đặt <strong>username</strong> một lần (Cài đặt → LookGlass → Chat cộng đồng).</li>"
+            "<li>Gõ tin hoặc dán link rồi gửi. Không cần dán Firebase URL / API key.</li>"
+            "<li>Bấm tin của mình để Chép hoặc Xoá.</li>"
+            "</ol>"
+            "<p><strong>Admin:</strong> bấm <strong>Đăng nhập Admin</strong> (tài khoản chủ phòng Firebase, không phải tên chat). "
+            "Có Khoá phòng, xoá tin, cấm chat, Thoát admin.</p>"
+            "<p class=\"en\">Community Chat: tap Chat next to Search, set a username, text/links only. No API key.</p>"
+        ),
+    },
 }
 
 FEATURED = [
@@ -316,6 +354,8 @@ def depiction_html(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog
     ver = meta.get("Version", "")
     author = conf["AUTHOR"]
     thanks = donate_thanks(conf)
+    guide = FEATURE_GUIDES.get(pkg, {})
+    extra_html = guide.get("html", "")
     log_html = ""
     if changelog:
         log_html = "<pre>" + html_escape(changelog[:4000]) + "</pre>"
@@ -328,6 +368,8 @@ def depiction_html(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog
 <style>
 body{{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}}
 h1{{font-size:22px;margin:0 0 4px}}
+h2{{font-size:17px;margin:16px 0 8px;color:#7dd3fc}}
+ol{{padding-left:1.2em;margin:8px 0}}
 .sub{{color:#93c5fd;margin:0 0 12px}}
 .card{{background:#111827;border-radius:16px;padding:16px;border:1px solid rgba(255,255,255,.08)}}
 .donate{{margin-top:12px;padding:12px 14px;border-radius:12px;background:#0b1220;border:1px solid rgba(56,189,248,.35)}}
@@ -343,6 +385,7 @@ hr{{border:0;border-top:1px solid #1f2937;margin:18px 0}}
 <p class="sub">Credit: {html_escape(author)} · iOS 14+ · {html_escape(meta.get("Section","Tweaks"))}</p>
 <p>{html_escape(vi)}</p>
 <p>{html_escape(en)}</p>
+{extra_html}
 <div class="donate">
 {thanks['html']}
 </div>
@@ -362,6 +405,7 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
     ver = meta.get("Version", "")
     author = conf["AUTHOR"]
     thanks = donate_thanks(conf)
+    guide = FEATURE_GUIDES.get(pkg, {})
     md = (
         f"**{name}** — {vi}\n\n{en}\n\n"
         f"**Phiên bản / Version:** {ver}  \n"
@@ -371,6 +415,16 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
         f"Sau khi cài: **Respring**, mở **Cài đặt → {name}**.\n\n"
         f"{thanks['vi']}\n\n{thanks['en']}"
     )
+    if guide.get("md"):
+        md = (
+            f"**{name}** — {vi}\n\n{en}\n\n"
+            + guide["md"]
+            + f"\n\n**Phiên bản / Version:** {ver}  \n"
+            f"**Tác giả / Author:** {author}  \n"
+            f"**iOS:** 14+  \n"
+            f"**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\n"
+            f"Sau khi cài: **Respring**, mở **Cài đặt → {name}**."
+        )
     views = [
         {"class": "DepictionHeaderView", "title": name, "useBoldText": True},
         {"class": "DepictionSubheaderView", "title": author, "useBoldText": False},
@@ -403,13 +457,33 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
             "useRawFormat": False,
         },
     ]
-    return {
+    out = {
         "minVersion": "0.4",
         "class": "DepictionTabView",
         "tintColor": "#38BDF8",
         "headerImage": f"{conf['BASE_URL'].rstrip('/')}/assets/banner.jpg",
         "tabs": [
             {"tabname": "Details", "class": "DepictionStackView", "views": views},
+        ],
+    }
+    if guide.get("md"):
+        out["tabs"].append(
+            {
+                "tabname": guide.get("tab", "Chat cộng đồng"),
+                "class": "DepictionStackView",
+                "views": [
+                    {"class": "DepictionHeaderView", "title": guide.get("tab", "Chat cộng đồng"), "useBoldText": True},
+                    {
+                        "class": "DepictionMarkdownView",
+                        "markdown": guide["md"],
+                        "useSpacing": True,
+                        "useRawFormat": False,
+                    },
+                ],
+            }
+        )
+    out["tabs"].extend(
+        [
             {"tabname": "Changelog", "class": "DepictionStackView", "views": changelog_views},
             {
                 "tabname": "Donate",
@@ -424,8 +498,9 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
                     },
                 ],
             },
-        ],
-    }
+        ]
+    )
+    return out
 
 
 def write_index(packages: dict[str, dict], conf: dict) -> None:
