@@ -74,6 +74,10 @@ BLURBS = {
         "Vỗ, gõ, lắc iPhone thì máy kêu vui. 120 hiệu ứng, 8 gói tiếng.",
         "Slap, tap, shake the iPhone and it groans. 120 effects, 8 sound packs.",
     ),
+    "com.jinkennguyen.cpuboost": (
+        "Chỉnh tốc độ CPU: chậm để tiết pin hoặc nhanh hơn trên máy cũ. Preset Eco / Boost / Turbo.",
+        "Tune CPU speed: slower to save battery, or faster on older phones. Eco / Boost / Turbo presets.",
+    ),
     "com.jinkennguyen.noxframe": (
         "Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.",
         "Take photos and record video with the screen off. Side button blanks the display; Camera stays live.",
@@ -152,6 +156,7 @@ FEATURED = [
     "com.jinkennguyen.duoframe",
     "com.jinkennguyen.lookglass",
     "com.jinkennguyen.slapios",
+    "com.jinkennguyen.cpuboost",
 ]
 
 DEB_NAME_RE = re.compile(

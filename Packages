@@ -1,3 +1,141 @@
+Package: com.jinkennguyen.cpuboost
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 624
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.cpuboost_1.0.0_iphoneos-arm.deb
+Size: 77496
+MD5sum: e569b7775eee741b74139f04082bd54a
+SHA1: f7b56a35d748b0f11a9fff41261be672f7fa15a0
+SHA256: 8dd926f4b062809bbe1198cce7880b99c3336f4a38dcfed27d57366f3df74df6
+Section: Tweaks
+Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+ CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
+ CPU Boost lets you raise or lower CPU performance, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
+  * Thanh 25%–175%: dưới 100% giảm hiệu năng để tiết pin, trên 100% gỡ giới hạn nhiệt/nguồn phần mềm.
+  * Tự động theo pin: Eco khi pin yếu, Boost khi sạc. Preset Đề xuất / Pin / Gốc / Mạnh / Turbo / Khôi phục.
+  * HUD kính khi đổi profile. Tôn trọng nhiệt Critical. Tùy chọn giới hạn GPU khi Eco và giữ CPU thức khi Boost.
+  * Không ép xung PLL, không đâm thermalmonitord / backboardd / mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
+  * Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
+  * Auto by battery: Eco when low, Boost while charging. Presets: Recommended / Battery / Stock / Performance / Turbo / Reset.
+  * Glass HUD on profile change. Respects Critical heat. Optional GPU limit in Eco and keep-awake on Boost.
+  * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: CPU Boost
+Sileodepiction: file:///Library/CPUBoost/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
+
+Package: com.jinkennguyen.cpuboost
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 624
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.cpuboost_1.0.0_iphoneos-arm64.deb
+Size: 77980
+MD5sum: c1e8493f8f7dd07b5e7e764bac7ab9b7
+SHA1: 3d5041f2136246fc61754b0e56ffb137739a47e4
+SHA256: 5cd6aead26356ee98120e8874c56052feaa782640b7d0f3a550553ffe55450bd
+Section: Tweaks
+Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+ CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
+ CPU Boost lets you raise or lower CPU performance, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
+  * Thanh 25%–175%: dưới 100% giảm hiệu năng để tiết pin, trên 100% gỡ giới hạn nhiệt/nguồn phần mềm.
+  * Tự động theo pin: Eco khi pin yếu, Boost khi sạc. Preset Đề xuất / Pin / Gốc / Mạnh / Turbo / Khôi phục.
+  * HUD kính khi đổi profile. Tôn trọng nhiệt Critical. Tùy chọn giới hạn GPU khi Eco và giữ CPU thức khi Boost.
+  * Không ép xung PLL, không đâm thermalmonitord / backboardd / mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
+  * Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
+  * Auto by battery: Eco when low, Boost while charging. Presets: Recommended / Battery / Stock / Performance / Turbo / Reset.
+  * Glass HUD on profile change. Respects Critical heat. Optional GPU limit in Eco and keep-awake on Boost.
+  * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: CPU Boost
+Sileodepiction: file:///var/jb/Library/CPUBoost/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
+
+Package: com.jinkennguyen.cpuboost
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 624
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.cpuboost_1.0.0_iphoneos-arm64e.deb
+Size: 77286
+MD5sum: 3af2c9d5712ecb3aa15346c2dfff8284
+SHA1: 4638573e687a51ac9e9e32cdf1af384e730c24e9
+SHA256: 91e9e371d1ed91bb35e449a48898cd20fc9d0d1cd1785c23029fab209099869e
+Section: Tweaks
+Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+ CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
+ CPU Boost lets you raise or lower CPU performance, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
+  * Thanh 25%–175%: dưới 100% giảm hiệu năng để tiết pin, trên 100% gỡ giới hạn nhiệt/nguồn phần mềm.
+  * Tự động theo pin: Eco khi pin yếu, Boost khi sạc. Preset Đề xuất / Pin / Gốc / Mạnh / Turbo / Khôi phục.
+  * HUD kính khi đổi profile. Tôn trọng nhiệt Critical. Tùy chọn giới hạn GPU khi Eco và giữ CPU thức khi Boost.
+  * Không ép xung PLL, không đâm thermalmonitord / backboardd / mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
+  * Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
+  * Auto by battery: Eco when low, Boost while charging. Presets: Recommended / Battery / Stock / Performance / Turbo / Reset.
+  * Glass HUD on profile change. Respects Critical heat. Optional GPU limit in Eco and keep-awake on Boost.
+  * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: CPU Boost
+Sileodepiction: file:///Library/CPUBoost/sileo.json
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
+
 Package: com.jinkennguyen.duoframe
 Version: 3.5.2
 Architecture: iphoneos-arm64e
