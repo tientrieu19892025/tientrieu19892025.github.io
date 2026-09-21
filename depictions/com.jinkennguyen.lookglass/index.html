@@ -24,7 +24,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Ô tìm kính lỏng trên Home, YouTube, nghe nền — và Chat cộng đồng: bấm Chat cạnh Tìm, đặt username rồi nhắn tin/link với mọi người dùng LookGlass.</p>
 <p>Liquid-glass Home search, YouTube, background audio — plus Community Chat: tap Chat next to Search, set a username, then text/links with other LookGlass users.</p>
-<h2>Chat cộng đồng</h2><p><strong>Chat cộng đồng</strong> là phòng chat chung của người dùng LookGlass trên máy jailbreak. Tin nhắn hiện ngay. Chỉ chữ và link — không gửi hình, không gửi video.</p><p><strong>Cách dùng</strong></p><ol><li>Cài LookGlass → <strong>Respring</strong>.</li><li>Mở ô LookGlass trên Home → bấm <strong>Chat</strong> (cạnh <strong>Tìm</strong>).</li><li>Đặt <strong>username</strong> một lần (Cài đặt → LookGlass → Chat cộng đồng).</li><li>Gõ tin hoặc dán link rồi gửi. Không cần dán Firebase URL / API key.</li><li>Bấm tin của mình để Chép hoặc Xoá.</li></ol><p><strong>Admin:</strong> bấm <strong>Đăng nhập Admin</strong> (tài khoản chủ phòng Firebase, không phải tên chat). Có Khoá phòng, xoá tin, cấm chat, Thoát admin.</p><p class="en">Community Chat: tap Chat next to Search, set a username, text/links only. No API key.</p>
+<h2>Chat cộng đồng</h2><p><strong>Chat cộng đồng</strong> là phòng chat chung của người dùng LookGlass trên máy jailbreak. Tin nhắn hiện ngay. Chỉ chữ và link — không gửi hình, không gửi video.</p><p><strong>Cách vào chat</strong></p><ol><li>Cài LookGlass → <strong>Respring</strong>.</li><li>Mở ô LookGlass trên Home → bấm <strong>Chat</strong> (cạnh <strong>Tìm</strong>).</li><li>Đặt <strong>username</strong> một lần rồi vào phòng.</li><li>Gõ tin hoặc dán link rồi gửi. Không cần dán URL / API key.</li><li>Bấm tin của mình để Chép hoặc Xoá.</li></ol><p class="en">Tap Chat next to Search, set a username, send text or links. No photos.</p>
 <div class="donate">
 <strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
 </div>
@@ -49,10 +49,8 @@ Credit: Jinken Nguyen - 1989
 ## 3.9.6 (2026-09-21)
 
 ### Tiếng Việt
-- Chat tách rõ người dùng và admin. Người dùng: username rồi nhắn tin. Admin: bấm Đăng nhập Admin (tài khoản chủ phòng trên Firebase, không phải tên chat), có Khoá phòng / Thoát admin.
 
 ### English
-- Chat splits member and admin clearly. Members set a username and chat. Admin taps Admin login (the room-owner Firebase account, not the chat name), then Lock room / Leave admin.
 
 ## 3.9.5 (2026-09-21)
 
@@ -83,11 +81,9 @@ Credit: Jinken Nguyen - 1989
 ## 3.9.2 (2026-09-21)
 
 ### Tiếng Việt
-- Trình duyệt trong launcher to hơn, full xuống gần đáy cửa sổ. Nút Chat cạnh Tìm. Cài đặt chỉ còn username; admin xác thực trên Firebase, không lưu mật khẩu trong tweak.
 - Bớt tải mạng khi chưa mở chat, poll chậm hơn — đỡ lag SpringBoard.
 
 ### English
-- Launcher browser is taller and fills down to the bottom of the window. Chat sits next to Search. Settings only ask for a username; admin signs in against Firebase, with no password in the tweak.
 - No chat network until you open Chat, slower polling — less SpringBoard lag.
 
 ## 3.9.1 (2026-09-21)
@@ -102,11 +98,9 @@ Credit: Jinken Nguyen - 1989
 
 ### Tiếng Việt
 - Ô Chat cộng đồng jailbreak trong launcher. Chỉ nhắn tin và dán link (không hình, video). Tin lưu trên Firebase Realtime Database của bạn.
-- Cài đặt: biệt danh, Firebase URL, Web API key. Admin nhập PIN (mặc định 1989) + database secret để xoá tin, cấm chat, khoá phòng.
 
 ### English
 - Jailbreak community Chat tile in the launcher. Text and paste links only (no photos or video). Messages are stored on your Firebase Realtime Database.
-- Settings: nickname, Firebase URL, Web API key. Admin PIN (default 1989) plus the database secret can delete messages, ban users, and lock the room.
 
 ## 3.8.4 (2026-09-20)
 
@@ -115,7 +109,31 @@ Credit: Jinken Nguyen - 1989
 - Sửa không chọn được hàng: tắt kéo-ô khi không ở chế độ Sửa, danh sách kết quả không còn bị ẩn hay đẩy xuống cuối launcher.
 
 ### English
-- Search shows a scrollable pick list of at least 20 results under</pre>
+- Search shows a scrollable pick list of at least 20 results under the hero. It no longer jumps into the browser or a 4–5 row box.
+- Rows are tappable again: tile-drag is off unless Edit is on, and the results list stays pinned instead of hidden or buried.
+
+## 3.8.3 (2026-09-20)
+
+### Tiếng Việt
+- Kết quả tìm hiện ô danh sách cuộn, ít nhất 20 mục để chọn (video, nhạc, phim, web). Hàng Phim/YouTube cũng kéo ngang tối đa 20.
+
+### English
+- Search shows a scrollable results tile with at least 20 items (videos, songs, movies, web). Movies/YouTube rows also scroll up to 20.
+
+## 3.8.2 (2026-09-20)
+
+### Tiếng Việt
+- Sửa trình duyệt trong launcher: WebView riêng, tải Google, nút Back / Tải lại / Home. Tìm từ ô LookGlass mở luôn trong ô duyệt.
+- Tiêu đề LookGlass thu nhỏ, không che icon PiP khi phát YouTube.
+
+### English
+- Launcher browser works: its own WebView loads Google, with Back / Reload / Home. Searches open in the browse pane.
+- LookGlass title is smaller and no longer covers the PiP icon during YouTube playback.
+
+## 3.8.1 (2026-09-20)
+
+### Tiếng Việt
+- Sửa thu nhỏ </pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

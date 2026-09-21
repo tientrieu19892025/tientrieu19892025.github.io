@@ -122,34 +122,28 @@ FEATURE_GUIDES = {
         "md": (
             "**Chat cộng đồng** là phòng chat chung của người dùng LookGlass trên máy jailbreak. "
             "Tin nhắn hiện realtime. Chỉ **chữ và link** — không gửi hình, không gửi video.\n\n"
-            "**Cách dùng (mọi người)**\n"
+            "**Cách vào chat**\n"
             "1. Cài LookGlass → **Respring**.\n"
             "2. Mở ô LookGlass trên màn hình chính → bấm nút **Chat** (cạnh **Tìm**).\n"
-            "3. Đặt **username** một lần (Cài đặt → LookGlass → Chat cộng đồng, hoặc khi mở chat).\n"
-            "4. Gõ tin hoặc dán link rồi gửi. Không cần dán Firebase URL hay API key — chat đã kết nối sẵn.\n"
+            "3. Đặt **username** một lần rồi vào phòng.\n"
+            "4. Gõ tin hoặc dán link rồi gửi. Chat đã kết nối sẵn — không cần dán URL hay API key.\n"
             "5. Bấm vào tin của mình để **Chép** hoặc **Xoá**.\n\n"
-            "**Admin (chủ phòng)**\n"
-            "Bấm **Đăng nhập Admin**. Đây là tài khoản chủ phòng trên Firebase, **không phải** tên chat. "
-            "Xong có **Khoá phòng**, xoá tin người khác, cấm chat, **Thoát admin**.\n\n"
-            "**Community Chat** is a shared room for LookGlass users on jailbroken iPhones. "
-            "Text and links only. Tap **Chat** next to Search, set a username, then type. "
-            "No Firebase URL or API key to paste. Admins tap **Admin login** (the room-owner account, not the chat nickname)."
+            "**Community Chat** is a shared room for LookGlass users. Tap **Chat** next to Search, "
+            "set a username, then send text or links. No photos, no video."
         ),
         "html": (
             "<h2>Chat cộng đồng</h2>"
             "<p><strong>Chat cộng đồng</strong> là phòng chat chung của người dùng LookGlass trên máy jailbreak. "
             "Tin nhắn hiện ngay. Chỉ chữ và link — không gửi hình, không gửi video.</p>"
-            "<p><strong>Cách dùng</strong></p>"
+            "<p><strong>Cách vào chat</strong></p>"
             "<ol>"
             "<li>Cài LookGlass → <strong>Respring</strong>.</li>"
             "<li>Mở ô LookGlass trên Home → bấm <strong>Chat</strong> (cạnh <strong>Tìm</strong>).</li>"
-            "<li>Đặt <strong>username</strong> một lần (Cài đặt → LookGlass → Chat cộng đồng).</li>"
-            "<li>Gõ tin hoặc dán link rồi gửi. Không cần dán Firebase URL / API key.</li>"
+            "<li>Đặt <strong>username</strong> một lần rồi vào phòng.</li>"
+            "<li>Gõ tin hoặc dán link rồi gửi. Không cần dán URL / API key.</li>"
             "<li>Bấm tin của mình để Chép hoặc Xoá.</li>"
             "</ol>"
-            "<p><strong>Admin:</strong> bấm <strong>Đăng nhập Admin</strong> (tài khoản chủ phòng Firebase, không phải tên chat). "
-            "Có Khoá phòng, xoá tin, cấm chat, Thoát admin.</p>"
-            "<p class=\"en\">Community Chat: tap Chat next to Search, set a username, text/links only. No API key.</p>"
+            "<p class=\"en\">Tap Chat next to Search, set a username, send text or links. No photos.</p>"
         ),
     },
 }
@@ -311,6 +305,16 @@ def read_changelog(pkg: str) -> str:
             text = p.read_text(encoding="utf-8", errors="replace")
             return text.strip()[:8000]
     return ""
+
+
+def public_changelog(pkg: str, text: str) -> str:
+    if pkg != "com.jinkennguyen.lookglass" or not text:
+        return text
+    skip = re.compile(
+        r"admin|đăng nhập admin|database secret|pin mặc định|chủ phòng|room-owner",
+        re.I,
+    )
+    return "\n".join(line for line in text.splitlines() if not skip.search(line))
 
 
 def donate_thanks(conf: dict) -> dict[str, str]:
@@ -819,7 +823,7 @@ def main() -> int:
     # Depictions
     for pkg, info in packages.items():
         vi, en = BLURBS.get(pkg, (info["blurb"], info["blurb"]))
-        changelog = read_changelog(pkg)
+        changelog = public_changelog(pkg, read_changelog(pkg))
         folder = dep_dir / pkg
         folder.mkdir(parents=True, exist_ok=True)
         (folder / "index.html").write_text(
