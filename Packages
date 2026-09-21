@@ -428,18 +428,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.9.5
+Version: 3.9.6
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 900
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.9.5_iphoneos-arm64e.deb
-Size: 211448
-MD5sum: c05b00c30b7e606456c421d2934d3eeb
-SHA1: c61371ecf1758c71523f449f9c528c160dd00433
-SHA256: 1191fe4a61ef50b2f1789efa8280082a412079dedbeb162a1a0186f1c7627e12
+Filename: debs/com.jinkennguyen.lookglass_3.9.6_iphoneos-arm64e.deb
+Size: 213966
+MD5sum: e06770e62b7c98a81da90e538fa80d33
+SHA1: 63379ba1400dd12f9730a7e4f6ae74fc7ba59858
+SHA256: 5ed91f65121ec1cf00c13d46354fbe3267813a8568b1990b2ed41d38b2db2487
 Section: Tweaks
-Description: LookGlass 3.9.5 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.9.6 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -447,6 +447,10 @@ Description: LookGlass 3.9.5 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.9.6 (2026-09-21)
+  * Chat tách rõ người dùng và admin. Người dùng: username rồi nhắn tin. Admin: bấm Đăng nhập Admin (tài khoản chủ phòng trên Firebase, không phải tên chat), có Khoá phòng / Thoát admin.
+  * Chat splits member and admin clearly. Members set a username and chat. Admin taps Admin login (the room-owner Firebase account, not the chat name), then Lock room / Leave admin.
  .
  3.9.5 (2026-09-21)
   * Bấm tin nhắn hiện Xoá / Cấm / Chép / Đóng và bấm được. Alert chat không còn nuốt chạm trong SpringBoard.
@@ -713,18 +717,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.9.5
+Version: 3.9.6
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 900
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.9.5_iphoneos-arm.deb
-Size: 211268
-MD5sum: 838c0b00d3a43abd3672bfaa0422c707
-SHA1: 6073d8086f807a87525fe52b3d060ba7c442089e
-SHA256: c00172571e041560c92326484cd58a6c52e5b5757e3320e56e76c3d10777c9f9
+Filename: debs/com.jinkennguyen.lookglass_3.9.6_iphoneos-arm.deb
+Size: 213872
+MD5sum: fb2135eecbaabf90f3081f078fc0964c
+SHA1: 0228c5d9c46c2ab803de79fb7cac47cee8f07b8d
+SHA256: d0c121199d42947eb7f60663c4a5888d7cc9f22104d97d032c0e4b2c5ac786e7
 Section: Tweaks
-Description: LookGlass 3.9.5 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.9.6 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -732,6 +736,10 @@ Description: LookGlass 3.9.5 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.9.6 (2026-09-21)
+  * Chat tách rõ người dùng và admin. Người dùng: username rồi nhắn tin. Admin: bấm Đăng nhập Admin (tài khoản chủ phòng trên Firebase, không phải tên chat), có Khoá phòng / Thoát admin.
+  * Chat splits member and admin clearly. Members set a username and chat. Admin taps Admin login (the room-owner Firebase account, not the chat name), then Lock room / Leave admin.
  .
  3.9.5 (2026-09-21)
   * Bấm tin nhắn hiện Xoá / Cấm / Chép / Đóng và bấm được. Alert chat không còn nuốt chạm trong SpringBoard.
@@ -998,18 +1006,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.9.5
+Version: 3.9.6
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1652
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.9.5_iphoneos-arm64.deb
-Size: 311232
-MD5sum: 943fd402114f6c5103647954d5e20011
-SHA1: 8bfdef5e60e7d7fc6294115caf9f87a40363d549
-SHA256: 01803e1ed1273349231f522142336c931b82381518151476debe92f27e51bcf8
+Filename: debs/com.jinkennguyen.lookglass_3.9.6_iphoneos-arm64.deb
+Size: 314370
+MD5sum: 4dc70a7233822c93c8d47fb54df1fe67
+SHA1: a0efeb1664417def0ab943a8dc3a25d273adc709
+SHA256: 8832a1565869d01da2d46cf71826bb37198e789f781e31661a67b6879d347b37
 Section: Tweaks
-Description: LookGlass 3.9.5 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.9.6 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1017,6 +1025,10 @@ Description: LookGlass 3.9.5 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.9.6 (2026-09-21)
+  * Chat tách rõ người dùng và admin. Người dùng: username rồi nhắn tin. Admin: bấm Đăng nhập Admin (tài khoản chủ phòng trên Firebase, không phải tên chat), có Khoá phòng / Thoát admin.
+  * Chat splits member and admin clearly. Members set a username and chat. Admin taps Admin login (the room-owner Firebase account, not the chat name), then Lock room / Leave admin.
  .
  3.9.5 (2026-09-21)
   * Bấm tin nhắn hiện Xoá / Cấm / Chép / Đóng và bấm được. Alert chat không còn nuốt chạm trong SpringBoard.
