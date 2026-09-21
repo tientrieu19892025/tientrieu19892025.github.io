@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LookGlass 3.9.1</title>
+<title>LookGlass 3.9.2</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -18,7 +18,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>LookGlass 3.9.1</h1>
+<h1>LookGlass 3.9.2</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Ô tìm kính lỏng trên Home. Google, Wikipedia, nhạc, phim. YouTube tự phát, nghe nền, mở lại bằng nút trên Home.</p>
 <p>Liquid-glass Home search. Google, Wikipedia, music, films. YouTube autoplays; background audio restores from Home.</p>
@@ -32,6 +32,16 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <pre># LookGlass changelog
 
 Credit: Jinken Nguyen - 1989
+
+## 3.9.2 (2026-09-21)
+
+### Tiếng Việt
+- Trình duyệt trong launcher to hơn, full xuống gần đáy cửa sổ. Nút Chat cạnh Tìm. Cài đặt chỉ còn username; admin xác thực trên Firebase, không lưu mật khẩu trong tweak.
+- Bớt tải mạng khi chưa mở chat, poll chậm hơn — đỡ lag SpringBoard.
+
+### English
+- Launcher browser is taller and fills down to the bottom of the window. Chat sits next to Search. Settings only ask for a username; admin signs in against Firebase, with no password in the tweak.
+- No chat network until you open Chat, slower polling — less SpringBoard lag.
 
 ## 3.9.1 (2026-09-21)
 
@@ -102,18 +112,7 @@ Credit: Jinken Nguyen - 1989
 ## 3.7.1 (2026-09-20)
 
 ### Tiếng Việt
-- Sửa bấm Tìm bị Safe Mode: không còn tạo mảng view nil khi mở launcher (SpringBoard crash).
-- Không tạo WKWebView ngay lúc mở cửa sổ. Layout hub bỏ qua ô thiếu.
-
-### English
-- Fixed Search sending SpringBoard to Safe Mode: the launcher no longer builds an NSArray of nil tiles during init.
-- WKWebView is not created when the window first opens. Hub layout skips missing tiles.
-
-## 3.7.0 (2026-09-20)
-
-### Tiếng Việt
-- Launcher kính lỏng Multimedia Hub: LOOKGLASS PLAYER, hero YouTube/Phim, Quick Play, Nghe nhạc + Trình duyệt Google cạnh nhau.
-- 6 bố cục bấm là dùng (Hub, Xếp dọc, Gọn, Rạp, Nhạc</pre>
+- Sửa bấm Tìm bị Safe Mode: khô</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

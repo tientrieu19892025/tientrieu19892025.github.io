@@ -428,18 +428,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.9.1
+Version: 3.9.2
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1636
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.9.1_iphoneos-arm64.deb
-Size: 303324
-MD5sum: 91d6d2ac05c8391e984419c90f7f590d
-SHA1: 55946fc8fc1ecbd532ee161f5b33c1c2e0742c1f
-SHA256: 07f06383248a0361c82999dd6f78651ee9f2a314b888827cd3480281663c5a49
+Filename: debs/com.jinkennguyen.lookglass_3.9.2_iphoneos-arm64.deb
+Size: 307660
+MD5sum: 102933175cf13818dbd82cde89e7cda6
+SHA1: c2b2c700becb412642dcce0392334f379cd99667
+SHA256: f69e8ecccf9ed1f1717bc6577958975b85470dadfc3a6f8f4d53bd2451f1a74c
 Section: Tweaks
-Description: LookGlass 3.9.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.9.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -447,6 +447,12 @@ Description: LookGlass 3.9.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.9.2 (2026-09-21)
+  * Trình duyệt trong launcher to hơn, full xuống gần đáy cửa sổ. Nút Chat cạnh Tìm. Cài đặt chỉ còn username; admin xác thực trên Firebase, không lưu mật khẩu trong tweak.
+  * Bớt tải mạng khi chưa mở chat, poll chậm hơn — đỡ lag SpringBoard.
+  * Launcher browser is taller and fills down to the bottom of the window. Chat sits next to Search. Settings only ask for a username; admin signs in against Firebase, with no password in the tweak.
+  * No chat network until you open Chat, slower polling — less SpringBoard lag.
  .
  3.9.1 (2026-09-21)
   * Kết nối chat cộng đồng với Firebase lookglass-jinken: rules đã publish, tin nhắn lưu realtime. Bấm Chat là dùng, không cần dán API key.
@@ -693,18 +699,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.9.1
-Architecture: iphoneos-arm64e
+Version: 3.9.2
+Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 884
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.9.1_iphoneos-arm64e.deb
-Size: 207050
-MD5sum: 44ae873d92dd1f6906dc2ee23989ccd1
-SHA1: 74b93fe34b0f38b3b459c76d3d419b2339429037
-SHA256: ff4ee327bfe4c10cd8982b08619e9c04183a67c8550e062ca73e6fd8aaadbffc
+Filename: debs/com.jinkennguyen.lookglass_3.9.2_iphoneos-arm.deb
+Size: 208808
+MD5sum: 2cbbb704ec13fede19a75cacbef44aef
+SHA1: 2353df64a6ea1091f5e71141bc3b6203805186cf
+SHA256: ff1967a8b6f733934e31fc8d7ad5a3be192dcc96d6a7e450926021a9223d8921
 Section: Tweaks
-Description: LookGlass 3.9.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.9.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -712,6 +718,12 @@ Description: LookGlass 3.9.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.9.2 (2026-09-21)
+  * Trình duyệt trong launcher to hơn, full xuống gần đáy cửa sổ. Nút Chat cạnh Tìm. Cài đặt chỉ còn username; admin xác thực trên Firebase, không lưu mật khẩu trong tweak.
+  * Bớt tải mạng khi chưa mở chat, poll chậm hơn — đỡ lag SpringBoard.
+  * Launcher browser is taller and fills down to the bottom of the window. Chat sits next to Search. Settings only ask for a username; admin signs in against Firebase, with no password in the tweak.
+  * No chat network until you open Chat, slower polling — less SpringBoard lag.
  .
  3.9.1 (2026-09-21)
   * Kết nối chat cộng đồng với Firebase lookglass-jinken: rules đã publish, tin nhắn lưu realtime. Bấm Chat là dùng, không cần dán API key.
@@ -958,18 +970,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 3.9.1
-Architecture: iphoneos-arm
+Version: 3.9.2
+Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 884
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_3.9.1_iphoneos-arm.deb
-Size: 207060
-MD5sum: 4592417ad7e1edd930d6abc74fe830e5
-SHA1: d24239f4d56a108b4c25254ccc1b5ae92cd4eb3d
-SHA256: 0655c3b08b96a6831458c534b4debf13341b8d22b88de186adffefa2c814eb47
+Filename: debs/com.jinkennguyen.lookglass_3.9.2_iphoneos-arm64e.deb
+Size: 208890
+MD5sum: 31eb2a99bbf74d13401e6d758b0947c6
+SHA1: 0b6642fa44c544a833fb79351cfcc506714a12fa
+SHA256: 88e974c4ecacacc681954c0cdf3675350a55dea2346bf689ea91a3abfc5a797b
 Section: Tweaks
-Description: LookGlass 3.9.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 3.9.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -977,6 +989,12 @@ Description: LookGlass 3.9.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.9.2 (2026-09-21)
+  * Trình duyệt trong launcher to hơn, full xuống gần đáy cửa sổ. Nút Chat cạnh Tìm. Cài đặt chỉ còn username; admin xác thực trên Firebase, không lưu mật khẩu trong tweak.
+  * Bớt tải mạng khi chưa mở chat, poll chậm hơn — đỡ lag SpringBoard.
+  * Launcher browser is taller and fills down to the bottom of the window. Chat sits next to Search. Settings only ask for a username; admin signs in against Firebase, with no password in the tweak.
+  * No chat network until you open Chat, slower polling — less SpringBoard lag.
  .
  3.9.1 (2026-09-21)
   * Kết nối chat cộng đồng với Firebase lookglass-jinken: rules đã publish, tin nhắn lưu realtime. Bấm Chat là dùng, không cần dán API key.
