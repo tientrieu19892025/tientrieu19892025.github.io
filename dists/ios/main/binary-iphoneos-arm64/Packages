@@ -187,18 +187,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.2.1
+Version: 1.4.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 744
+Installed-Size: 768
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.2.1_iphoneos-arm64.deb
-Size: 110638
-MD5sum: 224bec5d108473f9169feaa2d843864c
-SHA1: 2d53d3c6dca4866ba446a738088b7977464a4bd6
-SHA256: 6ea3ff588b7e8a3b0779f6f10bbbe3463d30eadac1af1ca1491d39732c7f1a0c
+Filename: debs/com.jinkennguyen.haloframe_1.4.0_iphoneos-arm64.deb
+Size: 113330
+MD5sum: 79622de52df5ebd744fc268c440c47f2
+SHA1: 9fc4b37e7d1cb8855856375bf0bea4c4324e6588
+SHA256: 30bb36883aebfb7ada6ab689603ebb60a7222229cdaf8c79ce6b4a049ac618f7
 Section: Tweaks
-Description: Lock Frame 1.2.1 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 1.4.0 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
  Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -207,6 +207,30 @@ Description: Lock Frame 1.2.1 — full-screen glass lock HUD. Credit: Jinken Ngu
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.4.0 (2026-09-21)
+  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
+  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
+  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
+  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
+  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
+  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
+  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.3.0 (2026-09-21)
+  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
+  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
+  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
+  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
+  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
+  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
+  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.2.1 (2026-09-21)
   * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
@@ -564,6 +588,81 @@ Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.lookg
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.lookglass/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
+
+Package: com.jinkennguyen.noxframe
+Version: 1.1.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 756
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.noxframe_1.1.0_iphoneos-arm64.deb
+Size: 107220
+MD5sum: 7046ce92064d4a1852458c2c76a40d10
+SHA1: cfb71106b3edf8562c66c5eebea7e7529842daa7
+SHA256: 98ff6745ffbb448c106fb543b779202f62d12196c21d374af8e308e5e97a5dcb
+Section: Tweaks
+Description: NoxFrame 1.1.0 — capture with the screen off. Credit: Jinken Nguyen - 1989.
+ NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
+ NoxFrame lets you take photos and record video with the screen off, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.1.0 (2026-09-20)
+  * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
+  * Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
+  * Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
+  * Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New: Save photo button while watching a video in Photos — one tap stores the current frame.
+  * Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
+  * If StillFrame is installed, NoxFrame yields so two buttons do not stack.
+  * Own switch in Settings → NoxFrame → Photos. On by default.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-19)
+  * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
+  * Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).
+  * Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.
+  * Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.
+  * Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
+  * SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: pressing the side button to blank the screen no longer cuts an in-progress video.
+  * Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).
+  * Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.
+  * Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.
+  * Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
+  * SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-19)
+  * Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.
+  * Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.
+  * Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.
+  * Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.
+  * Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.
+  * Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
+  * Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.
+  * Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.
+  * Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.
+  * Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.
+  * Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: NoxFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.slapios
 Version: 1.2.0

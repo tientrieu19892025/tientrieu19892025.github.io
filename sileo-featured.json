@@ -32,6 +32,12 @@
       "title": "Lock Frame",
       "package": "com.jinkennguyen.haloframe",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "NoxFrame",
+      "package": "com.jinkennguyen.noxframe",
+      "hideShadow": false
     }
   ]
 }

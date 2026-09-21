@@ -162,6 +162,7 @@ FEATURED = [
     "com.jinkennguyen.slapios",
     "com.jinkennguyen.cpuboost",
     "com.jinkennguyen.haloframe",
+    "com.jinkennguyen.noxframe",
 ]
 
 DEB_NAME_RE = re.compile(
