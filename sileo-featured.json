@@ -26,6 +26,12 @@
       "title": "CPU Boost",
       "package": "com.jinkennguyen.cpuboost",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "Lock Frame",
+      "package": "com.jinkennguyen.haloframe",
+      "hideShadow": false
     }
   ]
 }

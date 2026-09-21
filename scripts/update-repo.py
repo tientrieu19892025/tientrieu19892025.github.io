@@ -78,6 +78,10 @@ BLURBS = {
         "Chỉnh tốc độ CPU: chậm để tiết pin hoặc nhanh hơn trên máy cũ. Preset Eco / Boost / Turbo.",
         "Tune CPU speed: slower to save battery, or faster on older phones. Eco / Boost / Turbo presets.",
     ),
+    "com.jinkennguyen.haloframe": (
+        "Màn khoá kính full màn kiểu DuoFrame: LOCK · ONLINE, HUD nhìn tương lai.",
+        "Full-screen DuoFrame glass lock HUD: LOCK · ONLINE, a future-looking lock screen.",
+    ),
     "com.jinkennguyen.noxframe": (
         "Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.",
         "Take photos and record video with the screen off. Side button blanks the display; Camera stays live.",
@@ -157,6 +161,7 @@ FEATURED = [
     "com.jinkennguyen.lookglass",
     "com.jinkennguyen.slapios",
     "com.jinkennguyen.cpuboost",
+    "com.jinkennguyen.haloframe",
 ]
 
 DEB_NAME_RE = re.compile(
