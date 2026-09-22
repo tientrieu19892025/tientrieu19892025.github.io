@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**Lock Frame** — Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.\n\nGlass lock screen: sun and moon by the hour, battery, music, next alarm.\n\n**Phiên bản / Version:** 3.2.1  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → Lock Frame**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**Lock Frame** — Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.\n\nGlass lock screen: sun and moon by the hour, battery, music, next alarm.\n\n**Phiên bản / Version:** 3.2.2  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → Lock Frame**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "3.2.1"
+          "text": "3.2.2"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,7 +73,7 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "3.2.1",
+          "title": "3.2.2",
           "useBoldText": true
         },
         {

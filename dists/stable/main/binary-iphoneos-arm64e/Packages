@@ -64,16 +64,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 3.2.1
+Version: 3.2.2
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 768
+Installed-Size: 804
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/roothide/com.jinkennguyen.haloframe_3.2.1_iphoneos-arm64e.deb
-Size: 111070
-MD5sum: 9c2b59e1fc20a23358f2995b48cab883
-SHA1: d5bdea5f2f96222a59b58b8a1651484894b7bc74
-SHA256: a6e19f74edcffbce69c5a3871ec3b72ec637495ba42c3c6825db9f3ff3aa19d3
+Filename: debs/roothide/com.jinkennguyen.haloframe_3.2.2_iphoneos-arm64e.deb
+Size: 118844
+MD5sum: 9e9259b4565d46cf3cf15fa53c83989c
+SHA1: 84caadadc53c43b0cfc0913dd6c1903c9dcf73fc
+SHA256: fe7a93e4393a9d25765e7d1dc958bde779e86dda928314439460ee74139e1944
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
