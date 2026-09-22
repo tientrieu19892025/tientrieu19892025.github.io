@@ -213,7 +213,7 @@ FEATURED = [
     "com.jinkennguyen.noxframe",
     "com.jinkennguyen.settingsz",
     "com.jinkennguyen.appsw",
-    "com.jinkennguyen.videoadsspeed",
+]
 ]
 
 DEB_NAME_RE = re.compile(
