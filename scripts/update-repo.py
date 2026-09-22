@@ -194,7 +194,6 @@ FEATURED = [
     "com.jinkennguyen.lookglass",
     "com.jinkennguyen.slapios",
     "com.jinkennguyen.cpuboost",
-    "com.jinkennguyen.haloframe",
     "com.jinkennguyen.noxframe",
 ]
 
