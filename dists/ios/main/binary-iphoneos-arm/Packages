@@ -296,18 +296,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.0
+Version: 4.0.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 900
+Installed-Size: 916
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_4.0.0_iphoneos-arm.deb
-Size: 215398
-MD5sum: 4753699834169685c8ea67c797ae722a
-SHA1: 1cf5d0de895342e8de20a3b05623905cb84aa898
-SHA256: 4e64dbf31ccadc38303ef46ad849727791fc00ac5b11f6a64a60f857e550656f
+Filename: debs/com.jinkennguyen.lookglass_4.0.1_iphoneos-arm.deb
+Size: 217448
+MD5sum: dfaae41607bc519eb0eb3873652bea41
+SHA1: dfb3ab3d6a6776e1a03214497e8221d1900854bc
+SHA256: f79bcf424dda1a788bd59a4a98c7f7d7b8c778321ab17719bc3156f33ac42752
 Section: Tweaks
-Description: LookGlass 4.0.0 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -315,6 +315,12 @@ Description: LookGlass 4.0.0 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 4.0.1 (2026-09-22)
+  * Sửa chỉ chạy được trên iOS 15: iOS 14 không còn gắn UIWindowScene (mất ô tìm). iOS 16+ gắn đúng scene Home, cửa sổ overlay hiện và gõ được.
+  * WebView YouTube dùng process pool mặc định (hết load mãi trên 14 / trắng trên 16). Bàn phím iOS 16 nhận chạm.
+  * Fixed iOS 15-only: iOS 14 no longer attaches UIWindowScene (search pill vanished). iOS 16+ binds the Home scene so overlays show and typing works.
+  * YouTube WebView uses the default process pool (no infinite load on 14 / blank on 16). iOS 16 keyboard taps work.
  .
  4.0.0 (2026-09-21)
   * Tìm nhanh: thanh tìm + nút Tìm trên launcher. Bấm Tìm chỉ ra video YouTube, ít nhất 20 kết quả để chọn.

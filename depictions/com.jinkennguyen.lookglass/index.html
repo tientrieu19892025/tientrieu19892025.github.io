@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LookGlass 4.0.0</title>
+<title>LookGlass 4.0.1</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>LookGlass 4.0.0</h1>
+<h1>LookGlass 4.0.1</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Ô tìm kính lỏng trên Home, YouTube, nghe nền — và Chat cộng đồng: bấm Chat cạnh Tìm, đặt username rồi nhắn tin/link với mọi người dùng LookGlass.</p>
 <p>Liquid-glass Home search, YouTube, background audio — plus Community Chat: tap Chat next to Search, set a username, then text/links with other LookGlass users.</p>
@@ -34,6 +34,16 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <pre># LookGlass changelog
 
 Credit: Jinken Nguyen - 1989
+
+## 4.0.1 (2026-09-22)
+
+### Tiếng Việt
+- Sửa chỉ chạy được trên iOS 15: iOS 14 không còn gắn UIWindowScene (mất ô tìm). iOS 16+ gắn đúng scene Home, cửa sổ overlay hiện và gõ được.
+- WebView YouTube dùng process pool mặc định (hết load mãi trên 14 / trắng trên 16). Bàn phím iOS 16 nhận chạm.
+
+### English
+- Fixed iOS 15-only: iOS 14 no longer attaches UIWindowScene (search pill vanished). iOS 16+ binds the Home scene so overlays show and typing works.
+- YouTube WebView uses the default process pool (no infinite load on 14 / blank on 16). iOS 16 keyboard taps work.
 
 ## 4.0.0 (2026-09-21)
 
@@ -117,22 +127,7 @@ Credit: Jinken Nguyen - 1989
 - Kết quả tìm hiện ô danh sách cuộn, ít nhất 20 mục để chọn (video, nhạc, phim, web). Hàng Phim/YouTube cũng kéo ngang tối đa 20.
 
 ### English
-- Search shows a scrollable results tile with at least 20 items (videos, songs, movies, web). Movies/YouTube rows also scroll up to 20.
-
-## 3.8.2 (2026-09-20)
-
-### Tiếng Việt
-- Sửa trình duyệt trong launcher: WebView riêng, tải Google, nút Back / Tải lại / Home. Tìm từ ô LookGlass mở luôn trong ô duyệt.
-- Tiêu đề LookGlass thu nhỏ, không che icon PiP khi phát YouTube.
-
-### English
-- Launcher browser works: its own WebView loads Google, with Back / Reload / Home. Searches open in the browse pane.
-- LookGlass title is smaller and no longer covers the PiP icon during YouTube playback.
-
-## 3.8.1 (2026-09-20)
-
-### Tiếng Việt
-- Sửa thu nhỏ </pre>
+- Search shows a scrollable results tile with at least 20 items (videos,</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>
