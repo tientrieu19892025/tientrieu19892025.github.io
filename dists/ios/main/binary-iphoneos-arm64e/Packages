@@ -1,15 +1,15 @@
 Package: com.jinkennguyen.appsw
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 636
+Installed-Size: 640
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/roothide/com.jinkennguyen.appsw_1.0.3_iphoneos-arm64e.deb
-Size: 92594
-MD5sum: 8c149f81dd219904adb3dcdb363acec1
-SHA1: 9bec04aa4e836cb7d49eaa32d3e93a9712b90b54
-SHA256: a3d0d25c3be21f3208217fe6174ffe39f38118eb5d826e9894bc020a41227cc8
+Filename: debs/roothide/com.jinkennguyen.appsw_1.0.4_iphoneos-arm64e.deb
+Size: 94172
+MD5sum: 125eb195ed9aaeff89d14c8160d911d4
+SHA1: e484afc5800229ae5e5c836c6e89e962fa98931f
+SHA256: 2b3baa152e2cd83ea7793072c2de3b4f46568069c3db42465818f761fb38386c
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989

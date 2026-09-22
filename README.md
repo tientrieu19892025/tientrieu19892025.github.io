@@ -33,7 +33,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 
 | Name | Package | Version | Builds |
 | --- | --- | --- | --- |
-| AppSw | `com.jinkennguyen.appsw` | 1.0.3 | rootful, rootless, RootHide |
+| AppSw | `com.jinkennguyen.appsw` | 1.0.4 | rootful, rootless, RootHide |
 | CPU Boost | `com.jinkennguyen.cpuboost` | 1.0.3 | rootful, rootless, RootHide |
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.3 | rootful, rootless, RootHide |
 | Lock Frame | `com.jinkennguyen.haloframe` | 3.2.1 | rootful, rootless, RootHide |

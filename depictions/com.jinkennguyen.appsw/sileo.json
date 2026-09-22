@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**AppSw** — Vuốt lên đa nhiệm: cửa sổ lớn phía trên, năm app gần nhất phía dưới.\n\nApp switcher: large window on top, five recents underneath.\n\n**Phiên bản / Version:** 1.0.3  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → AppSw**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**AppSw** — Vuốt lên đa nhiệm: cửa sổ lớn phía trên, năm app gần nhất phía dưới.\n\nApp switcher: large window on top, five recents underneath.\n\n**Phiên bản / Version:** 1.0.4  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → AppSw**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.0.3"
+          "text": "1.0.4"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,12 +73,12 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "1.0.3",
+          "title": "1.0.4",
           "useBoldText": true
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**1.0.3**\nVuốt lên đa nhiệm thì ra AppSw, không nhảy nhầm lúc mở app.",
+          "markdown": "**1.0.4**\nVuốt lên đa nhiệm thì ra AppSw, che màn gốc — kể cả khi chưa có app gần đây.\n\n**1.0.3**\nKhông nhảy nhầm lúc mở app.",
           "useSpacing": true,
           "useRawFormat": false
         }

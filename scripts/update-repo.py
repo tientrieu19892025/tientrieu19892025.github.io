@@ -488,8 +488,11 @@ Sửa Camera treo trên iOS 18.
 Trong Ảnh, khi xem video có nút lưu đúng khung hình đó.""",
     "com.jinkennguyen.settingsz": """**1.0.10**
 Mở mục trong Cài đặt không còn bị thoát. Tweak hiện đủ trong danh sách và ô tìm.""",
-    "com.jinkennguyen.appsw": """**1.0.3**
-Vuốt lên đa nhiệm thì ra AppSw, không nhảy nhầm lúc mở app.""",
+    "com.jinkennguyen.appsw": """**1.0.4**
+Vuốt lên đa nhiệm thì ra AppSw, che màn gốc — kể cả khi chưa có app gần đây.
+
+**1.0.3**
+Không nhảy nhầm lúc mở app.""",
     "com.jinkennguyen.haloframe": """**3.2.1**
 Giờ trên màn khoá đúng múi giờ máy.
 

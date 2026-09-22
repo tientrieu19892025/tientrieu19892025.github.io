@@ -1,15 +1,15 @@
 Package: com.jinkennguyen.appsw
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 300
+Installed-Size: 304
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/rootful/com.jinkennguyen.appsw_1.0.3_iphoneos-arm.deb
-Size: 67506
-MD5sum: da8c9c9fb0d3f5f2426614ba3b104dbe
-SHA1: 178b18afb874b806f4d3f3f210c57ec6a9cccc5e
-SHA256: a6033087994cc0fc405a9e85fb037037f1539bb6cd58826e824c04c688100136
+Filename: debs/rootful/com.jinkennguyen.appsw_1.0.4_iphoneos-arm.deb
+Size: 68636
+MD5sum: efddd082650355ae85c3057b508ee4fc
+SHA1: f4decd659350bbcbbe97618c2ccdb10fbbc038bd
+SHA256: b8773f2c91e7681546b1bf4400280f33ba912b8e6419f8896bef2eba484bc2bc
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
@@ -169,17 +169,17 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
 
 Package: com.jinkennguyen.appsw
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 636
+Installed-Size: 640
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/rootless/com.jinkennguyen.appsw_1.0.3_iphoneos-arm64.deb
-Size: 93046
-MD5sum: 72d1d19e776b9faf6938a7f3c6c7afe6
-SHA1: 08d9263f5e2591d998650193db8a3237715ba886
-SHA256: f4cd39f0b77529fcb2f4f07b8e3887a5cc7d11c750c29b6f6607f29f3eda56af
+Filename: debs/rootless/com.jinkennguyen.appsw_1.0.4_iphoneos-arm64.deb
+Size: 94490
+MD5sum: de3940d265d7f015dcc7b89ff0983bfa
+SHA1: 46482d7ae30175e27868a4e48529e6e90dd4cbb5
+SHA256: c63b82ae0dec68b3030b520411248205dfc96494d24af93c43bdd2f90e4aaa53
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
@@ -234,16 +234,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 3.2.1
+Version: 3.2.2
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 768
+Installed-Size: 804
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootless/com.jinkennguyen.haloframe_3.2.1_iphoneos-arm64.deb
-Size: 111422
-MD5sum: 53ca0d0ff77560925ff8648af9c9879e
-SHA1: 6aaa23898e980a71d86c43762c09f4b3d86492e8
-SHA256: 96bc155723db9994666d9004f6b4ea7054cb106c3f8418d4b3f6ca8daa83ca4e
+Filename: debs/rootless/com.jinkennguyen.haloframe_3.2.2_iphoneos-arm64.deb
+Size: 119148
+MD5sum: c38d58007d2063b8890e725c5e6966da
+SHA1: 46576be380b0a3c6668aec7b6397d09da3587c6e
+SHA256: 32a6f591c48a638e3943581ea7c56a7cd6ab3ba5dd7948bc83c9e46a7e677640
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
@@ -339,17 +339,17 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
 
 Package: com.jinkennguyen.appsw
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 636
+Installed-Size: 640
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/roothide/com.jinkennguyen.appsw_1.0.3_iphoneos-arm64e.deb
-Size: 92594
-MD5sum: 8c149f81dd219904adb3dcdb363acec1
-SHA1: 9bec04aa4e836cb7d49eaa32d3e93a9712b90b54
-SHA256: a3d0d25c3be21f3208217fe6174ffe39f38118eb5d826e9894bc020a41227cc8
+Filename: debs/roothide/com.jinkennguyen.appsw_1.0.4_iphoneos-arm64e.deb
+Size: 94172
+MD5sum: 125eb195ed9aaeff89d14c8160d911d4
+SHA1: e484afc5800229ae5e5c836c6e89e962fa98931f
+SHA256: 2b3baa152e2cd83ea7793072c2de3b4f46568069c3db42465818f761fb38386c
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
