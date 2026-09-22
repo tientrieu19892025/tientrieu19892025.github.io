@@ -119,6 +119,10 @@ BLURBS = {
         "Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.",
         "Take photos and record video with the screen off. Side button blanks the display; Camera stays live.",
     ),
+    "com.jinkennguyen.settingsz": (
+        "Sắp Cài đặt thành kệ, thẻ trắng trên một nền liền, kéo để đổi cỡ dòng và chọn màu đề mục lớn.",
+        "Arrange Settings into shelves on one continuous background. Drag to resize rows and pick the group-title color.",
+    ),
     "com.jinkennguyen.snowglass": (
         "Theme Snowboard kính lỏng: icon squircle iOS 26, viền sáng.",
         "Liquid-glass SnowBoard icon theme with iOS 26 squircles.",
@@ -195,6 +199,7 @@ FEATURED = [
     "com.jinkennguyen.slapios",
     "com.jinkennguyen.cpuboost",
     "com.jinkennguyen.noxframe",
+    "com.jinkennguyen.settingsz",
 ]
 
 DEB_NAME_RE = re.compile(

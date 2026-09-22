@@ -615,6 +615,107 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
+Package: com.jinkennguyen.settingsz
+Version: 1.0.5
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 844
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.settingsz_1.0.5_iphoneos-arm.deb
+Size: 130854
+MD5sum: c43055d6f2d8647aa1329c2bf5879d73
+SHA1: 5c05f8c764d84f391cee3cb53f76ead3789f8673
+SHA256: 0ab1e141a37bb5e5fd152fdbe2b501fa05e536efb5dcc93bb72e3c2c8521475c
+Section: Tweaks
+Description: SettingSZ 1.0.5 — arrange every Settings row. Credit: Jinken Nguyen - 1989.
+ SettingSZ sắp xếp toàn bộ mục trong Cài đặt iOS: kệ, A–Z, hoặc thứ tự kéo thả.
+ SettingSZ arranges every row in the iOS Settings app: shelves, A–Z, or a dragged order.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.5 (2026-09-22)
+  * Đổi tên tweak thành SettingSZ.
+  * Gói com.jinkennguyen.settingsz. Mở Cài đặt → SettingSZ.
+  * Credit: Jinken Nguyen - 1989.
+  * Renamed the tweak to SettingSZ.
+  * Package com.jinkennguyen.settingsz. Open Settings → SettingSZ.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.4 (2026-09-22)
+  * Nền Cài đặt là một dải màu liền, không còn mỗi dòng một màu.
+  * Chọn màu chữ cho đề mục lớn: Đen, Ngọc, San hô, Tím, Xanh dương, Xanh lá.
+  * Nền và màu đề mục dùng ở trang gốc và các trang bên trong. Wi-Fi và Bluetooth giữ nguyên.
+  * Credit: Jinken Nguyen - 1989.
+  * Settings now sits on one continuous background instead of a different color on every row.
+  * Pick the large group-title color: Black, Teal, Coral, Purple, Blue, or Green.
+  * The background and group color cover the root page and inner menus. Wi-Fi and Bluetooth stay plain.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.3 (2026-09-22)
+  * Chữ trên thẻ Cài đặt chuyển sang đen để dễ đọc.
+  * Nền thẻ nhạt hơn để chữ đen nổi rõ. Mũi tên và thanh kéo cũng dùng màu đen.
+  * Credit: Jinken Nguyen - 1989.
+  * Settings card text is now black so it is easier to read.
+  * Card backgrounds are lighter so the black type stays clear. Chevrons and the size slider use black too.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.2 (2026-09-22)
+  * Giao diện mới cho Cài đặt: thẻ bo tròn màu san hô, ngọc, tím và vàng.
+  * Kéo thanh ở đầu trang Cài đặt để chọn cỡ từng mục, từ thấp đến cao.
+  * Cùng một thanh kéo trong SettingSZ. Tắt Thẻ màu để về giao diện Apple.
+  * Trang Wi-Fi, Bluetooth và các danh sách sóng không bị tô màu.
+  * Credit: Jinken Nguyen - 1989.
+  * New Settings look: rounded coral, teal, purple, and gold cards.
+  * Drag the slider at the top of Settings to choose how tall each row is.
+  * The same slider is in SettingSZ. Turn Color cards off to restore Apple's look.
+  * Wi-Fi, Bluetooth, and other signal lists are not recolored.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.1 (2026-09-22)
+  * Sửa Cài đặt không mở được.
+  * Bỏ quét toàn bộ class và mục lục cạnh lúc app vừa chạy. Hai thứ đó làm Cài đặt thoát ngay.
+  * Lỗi khi sắp xếp thì trả lại đúng danh sách của Apple, không để trang trống.
+  * Credit: Jinken Nguyen - 1989.
+  * Fix Settings failing to open.
+  * Stop scanning every class and stop installing the side index at launch. Both crashed Settings immediately.
+  * If arranging fails, Apple's original list is kept.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.0 (2026-09-22)
+  * Tweak mới: SettingSZ — sắp xếp toàn bộ mục trong Cài đặt iOS 14+.
+  * Bốn cách sắp: Apple, Nhóm, A–Z, Tùy chỉnh. Tài khoản Apple luôn trên cùng.
+  * Kệ: Kết nối, Tập trung, Hệ thống, Bảo mật, Ứng dụng, Tinh chỉnh, Nhà phát triển, Khác.
+  * Kéo để đổi thứ tự kệ và từng mục. Chạm sao để ghim. Chạm dòng để ẩn.
+  * A–Z trong từng kệ, hoặc A–Z cả trang gốc. Chân kệ hiện số mục. Mục lục mép phải.
+  * Sắp trang bên trong: Cài đặt chung, Quyền riêng tư, Trợ năng, Âm thanh, Thông báo.
+  * Giữ công tắc đầu và không đụng trang có thanh trượt.
+  * Không sắp Wi-Fi, Bluetooth, di động, VPN, bàn phím, ngôn ngữ, Control Center, hình nền, mật khẩu, Screen Time.
+  * Chỉ tiêm vào app Cài đặt. Không hook SpringBoard hay UIKit.
+  * Song ngữ Việt / Anh. Preset Đề xuất, A–Z, Apple, Gọn, Khôi phục.
+  * Gói RootHide + rootless + rootful. Kill-switch .settingsz-disable. Credit: Jinken Nguyen - 1989.
+  * New tweak: SettingSZ — arrange every row in Settings on jailbroken iOS 14+.
+  * Four orders: Apple, Shelves, A–Z, Custom. The Apple Account stays on top.
+  * Shelves: Connection, Attention, System, Privacy, Apps, Tweaks, Developer, Other.
+  * Drag shelves and rows. Tap the star to pin. Tap a row to hide it.
+  * A–Z inside each shelf, or A–Z for the whole root. Shelf footers show counts. Side index.
+  * Inner pages sort too: General, Privacy, Accessibility, Sounds, Notifications.
+  * The first switch stays put, and pages with sliders are left alone.
+  * Wi-Fi, Bluetooth, cellular, VPN, keyboards, languages, Control Center, wallpaper, passwords, and Screen Time keep Apple's order.
+  * Injects only into Settings. No SpringBoard or UIKit hook.
+  * Vietnamese and English. Presets: Recommended, A–Z, Apple, Compact, Reset.
+  * RootHide + rootless + rootful packages. Kill-switch .settingsz-disable. Credit: Jinken Nguyen - 1989.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: SettingSZ
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.settingsz/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.settingsz/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.settingsz.png
+
 Package: com.jinkennguyen.slapios
 Version: 1.2.0
 Architecture: iphoneos-arm

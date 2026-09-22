@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#38BDF8",
+  "headerImage": "https://tientrieu19892025.github.io/assets/banner.jpg",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "SettingSZ",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**SettingSZ** — Sắp Cài đặt thành kệ, thẻ trắng trên một nền liền, kéo để đổi cỡ dòng và chọn màu đề mục lớn.\n\nArrange Settings into shelves on one continuous background. Drag to resize rows and pick the group-title color.\n\n**Phiên bản / Version:** 1.0.5  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → SettingSZ**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.5"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Jinken Nguyen - 1989"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Cảm ơn bạn / Thank you**  \nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.  \n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.  \n\nMB Bank · 0345140889 · Nguyễn Tiến Triều",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.5",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# SettingSZ changelog\n\nCredit: Jinken Nguyen - 1989\nDonate: MB Bank 0345140889 — Nguyễn Tiến Triều\n\n## 1.0.5 (2026-09-22)\n\n### Tiếng Việt\n- Đổi tên tweak thành SettingSZ.\n- Gói com.jinkennguyen.settingsz. Mở Cài đặt → SettingSZ.\n- Credit: Jinken Nguyen - 1989.\n\n### English\n- Renamed the tweak to SettingSZ.\n- Package com.jinkennguyen.settingsz. Open Settings → SettingSZ.\n- Credit: Jinken Nguyen - 1989.\n\n## 1.0.4 (2026-09-22)\n\n### Tiếng Việt\n- Nền Cài đặt là một dải màu liền, không còn mỗi dòng một màu.\n- Chọn màu chữ cho đề mục lớn: Đen, Ngọc, San hô, Tím, Xanh dương, Xanh lá.\n- Nền và màu đề mục dùng ở trang gốc và các trang bên trong. Wi-Fi và Bluetooth giữ nguyên.\n- Credit: Jinken Nguyen - 1989.\n\n### English\n- Settings now sits on one continuous background instead of a different color on every row.\n- Pick the large group-title color: Black, Teal, Coral, Purple, Blue, or Green.\n- The background and group color cover the root page and inner menus. Wi-Fi and Bluetooth stay plain.\n- Credit: Jinken Nguyen - 1989.\n\n## 1.0.3 (2026-09-22)\n\n### Tiếng Việt\n- Chữ trên thẻ Cài đặt chuyển sang đen để dễ đọc.\n- Nền thẻ nhạt hơn để chữ đen nổi rõ. Mũi tên và thanh kéo cũng dùng màu đen.\n- Credit: Jinken Nguyen - 1989.\n\n### English\n- Settings card text is now black so it is easier to read.\n- Card backgrounds are lighter so the black type stays clear. Chevrons and the size slider use black too.\n- Credit: Jinken Nguyen - 1989.\n\n## 1.0.2 (2026-09-22)\n\n### Tiếng Việt\n- Giao diện mới cho Cài đặt: thẻ bo tròn màu san hô, ngọc, tím và vàng.\n- Kéo thanh ở đầu trang Cài đặt để chọn cỡ từng mục, từ thấp đến cao.\n- Cùng một thanh kéo trong SettingSZ. Tắt Thẻ màu để về giao diện Apple.\n- Trang Wi-Fi, Bluetooth và các danh sách sóng không bị tô màu.\n- Credit: Jinken Nguyen - 1989.\n\n### English\n- New Settings look: rounded coral, teal, purple, and gold cards.\n- Drag the slider at the top of Settings to choose how tall each row is.\n- The same slider is in SettingSZ. Turn Color cards off to restore Apple's look.\n- Wi-Fi, Bluetooth, and other signal lists are not recolored.\n- Credit: Jinken Nguyen - 1989.\n\n## 1.0.1 (2026-09-22)\n\n### Tiếng Việt\n- Sửa Cài đặt không mở được.\n- Bỏ quét toàn bộ class và mục lục cạnh lúc app vừa chạy. Hai thứ đó làm Cài đặt thoát ngay.\n- Lỗi khi sắp xếp thì trả lại đúng danh sách của Apple, không để trang trống.\n- Credit: Jinken Nguyen - 1989.\n\n### English\n- Fix Settings failing to open.\n- Stop scanning every class and stop installing the side index at launch. Both crashed Settings immediately.\n- If arranging fails, Apple's original list is kept.\n- Credit: Jinken Nguyen - 1989.\n\n## 1.0.0 (2026-09-22)\n\n### Tiếng Việt\n- Tweak mới: SettingSZ — sắp xếp toàn bộ mục trong Cài đặt iOS 14+.\n- Bốn cách sắp: Apple, Nhóm, A–Z, Tùy chỉnh. Tài khoản Apple luôn trên cùng.\n- Kệ: Kết nối, Tập trung, Hệ thống, Bảo mật, Ứng dụng, Tinh chỉnh, Nhà phát triển, Khác.\n- Kéo để đổi thứ tự kệ và từng mục. Chạm sao để ghim. Chạm dòng để ẩn.\n- A–Z trong từng kệ, hoặc A–Z cả trang gốc. Chân kệ hiện số mục. Mục lục mép phải.\n- Sắp trang bên trong: Cài đặt chung, Quyền riêng tư, Trợ năng, Âm thanh, Thông báo.\n- Giữ công tắc đầu và không đụng trang có thanh trượt.\n- Không sắp Wi-Fi, Bluetooth, di động, VPN, bàn phím, ngôn ngữ, Control Center, hình nền, mật khẩu, Screen Time.\n- Chỉ tiêm vào app Cài đặt. Không hook SpringBoard hay UIKit.\n- Song ngữ Việt / Anh. Preset Đề xuất, A–Z, Apple, Gọn, Khôi phục.\n- Gói RootHide + rootless + rootful. Kill-switch .settingsz-disable. ",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    },
+    {
+      "tabname": "Donate",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Cảm ơn bạn",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.\n\n- Ngân hàng: **MB Bank**\n- STK: **0345140889**\n- Chủ TK: **Nguyễn Tiến Triều**\n- Nội dung: `Donate Jinken Nguyen 1989`\n\nQuét VietQR trên [trang repo](https://tientrieu19892025.github.io#donate). Cảm ơn bạn rất nhiều.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}
