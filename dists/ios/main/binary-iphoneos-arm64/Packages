@@ -217,18 +217,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.8.0
+Version: 2.0.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 904
+Installed-Size: 892
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootless/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64.deb
-Size: 146726
-MD5sum: 68256ae61bf7785df797285e0aacb143
-SHA1: dcd81579929bf460870f23377b90b5f2973f55f1
-SHA256: 641a22028fd09875c40017b1c059f088abbcaf75704120070211196f075246a0
+Filename: debs/rootless/com.jinkennguyen.haloframe_2.0.1_iphoneos-arm64.deb
+Size: 133880
+MD5sum: 40d3c73e62d4b22c9a18b2132b5704f8
+SHA1: daf289eb0ae67d8a6ccdfaa9a2987107fc37c90c
+SHA256: 323a6bd9ef15e1d68a593eb27e587342d6d36f9bfd118693989ed925636cc513
 Section: Tweaks
-Description: Lock Frame 1.8.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 2.0.1 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
  Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -237,6 +237,24 @@ Description: Lock Frame 1.8.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 2.0.1 (2026-09-22)
+  * Xoá các khung trống: người, lối tắt, dock giả. Thẻ Đang phát chỉ hiện khi có nhạc.
+  * Sắp lại: đồng hồ 10/09 + ngày bên trái, thẻ kính có nội dung (nhạc / thời tiết / mục tiêu) bên phải.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Empty frames removed: people, shortcuts, fake dock. Now Playing appears only when something is playing.
+  * Tighter layout: stacked 10/09 + date on the left, content cards (media / weather / goals) on the right.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 2.0.0 (2026-09-22)
+  * Làm lại màn khoá theo dashboard aurora: đồng hồ 10/09 chồng trái, thẻ kính Đang phát / Thời tiết / Mục tiêu bên phải, dock neon dưới.
+  * Cài đặt → Sắp xếp bố cục: kéo đổi thứ tự module, bấm hàng để ẩn/hiện, Apply để ghi lên lock.
+  * Không viền mảnh. Lỗ thông báo giữa các thẻ và dock. Face ID / mật mã / vuốt lên giữ nguyên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock rebuilt as an aurora dashboard: stacked 10/09 clock on the left, glass Now Playing / Weather / Goals on the right, neon dock below.
+  * Settings → Arrange layout: drag to reorder modules, tap a row to hide/show, Apply writes the lock.
+  * No hairline rim. Notification hole between cards and dock. Face ID / passcode / swipe-up stay stock.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.8.0 (2026-09-22)
   * Bỏ hẳn viền mảnh quanh màn khoá — không còn stroke, tick, hay khung mép.
@@ -378,18 +396,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.3
+Version: 4.0.4
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1696
+Installed-Size: 1700
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/rootless/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64.deb
-Size: 320088
-MD5sum: 9bb482383a84153cef7a7ba21a0fcd8e
-SHA1: cefbd6e3c3e616103187920fe5709c76ef16f99f
-SHA256: 51d229cccef1ea559156b791b5508f827cace1d62af663b1851db7b461dddf70
+Filename: debs/rootless/com.jinkennguyen.lookglass_4.0.4_iphoneos-arm64.deb
+Size: 321664
+MD5sum: 448cc1bb203b270ba4d04b3b19499375
+SHA1: 12d392e28f606a11d87d27a75231273a38372812
+SHA256: d59a602d7bec083b4da3080cbafaa259f48ef35b9b2c126d29c03be30b604358
 Section: Tweaks
-Description: LookGlass 4.0.3 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 4.0.4 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -397,6 +415,10 @@ Description: LookGlass 4.0.3 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 4.0.4 (2026-09-22)
+  * Tin nhắn hiện ngay khi bấm Gửi (không chờ Firebase). Phòng chat làm mới 2 giây một lần để tin người khác cũng tới nhanh.
+  * Messages appear as soon as you tap Send (no wait for Firebase). Open chat refreshes every 2 seconds so others' messages show up quickly too.
  .
  4.0.3 (2026-09-22)
   * Sửa Cài đặt LookGlass trên iOS 16 RootHide: gói prefs/tweak đủ arm64 + arm64e (trước chỉ arm64 nên Preferences.app báo thiếu tài nguyên).
