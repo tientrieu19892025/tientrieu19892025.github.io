@@ -214,7 +214,6 @@ FEATURED = [
     "com.jinkennguyen.settingsz",
     "com.jinkennguyen.appsw",
 ]
-]
 
 DEB_NAME_RE = re.compile(
     r"^(?P<pkg>.+)_(?P<ver>[^_]+)_(?P<arch>iphoneos-arm(?:64e?)?)\.deb$"

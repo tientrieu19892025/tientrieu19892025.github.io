@@ -40,7 +40,6 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | NoxFrame | `com.jinkennguyen.noxframe` | 1.1.1 | rootful, rootless, RootHide |
 | SettingSZ | `com.jinkennguyen.settingsz` | 1.0.8 | rootful, rootless, RootHide |
 | SlapIos | `com.jinkennguyen.slapios` | 1.2.0 | rootful, rootless, RootHide |
-| VideoAdsSpeed | `com.jinkennguyen.videoadsspeed` | 1.0.1 | rootful, rootless, RootHide |
 
 ## Credit
 
