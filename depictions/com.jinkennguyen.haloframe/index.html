@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lock Frame 2.0.1</title>
+<title>Lock Frame 2.0.3</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>Lock Frame 2.0.1</h1>
+<h1>Lock Frame 2.0.3</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Màn khoá kính full màn kiểu DuoFrame: LOCK · ONLINE, HUD nhìn tương lai.</p>
 <p>Full-screen DuoFrame glass lock HUD: LOCK · ONLINE, a future-looking lock screen.</p>
@@ -35,6 +35,28 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 
 Credit: Jinken Nguyen - 1989
 Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
+
+## 2.0.3 (2026-09-22)
+
+### Tiếng Việt
+- Sửa treo máy lần 2: bỏ hook setAlpha/layout trên đồng hồ iOS, không gọi Now Playing, không CADisplayLink, không blur UIVisualEffect trên overlay.
+- Gắn HUD một lần (sau layout), không walk cây view mỗi frame. Thông báo chỉ dress khi vào window.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+
+### English
+- Second freeze fix: no setAlpha/layout hooks on the stock clock, no Now Playing IPC, no CADisplayLink, no UIVisualEffect on the overlay.
+- HUD attaches once after layout, no per-frame tree walk. Notifications dressed only on didMoveToWindow.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+
+## 2.0.2 (2026-09-22)
+
+### Tiếng Việt
+- Sửa treo máy: không còn vòng reload prefs tự gọi lại chính nó; overlay không chặn chạm; layout/kính không lặp.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+
+### English
+- Fix device freeze: prefs reload no longer notifies itself; overlay does not steal touches; chrome is not reinstalled every layout.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
 
 ## 2.0.1 (2026-09-22)
 
@@ -85,22 +107,7 @@ Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
 - Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
 
 ### English
-- Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
-- Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
-- Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.6.0 (2026-09-22)
-
-### Tiếng Việt
-- Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
-- Ẩn đồng hồ iOS gốc. Kicker LOCK · SYS · ONLINE, ngày in hoa, âm lịch gọn, giây đọc giữa vòng.
-- Viền mảnh trong suốt, chỗ trống không kính đục. Thông báo từng thẻ kính DuoFrame. Telemetry thanh kính trên đèn pin.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Lock clock rebuilt as a sci-fi HUD: ultra-light kerned digits, blinking colons, orbital seconds + battery ring, targeting ticks at corners and mid-edges.
-- Stock iOS clock is hidden. Kicker LOCK · SYS · ONLINE, uppercase date, compact lunar, seconds readout in the ring.</pre>
+- Drag and delete lock layo</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

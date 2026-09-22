@@ -217,18 +217,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 2.0.1
+Version: 2.0.3
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 892
+Installed-Size: 884
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/roothide/com.jinkennguyen.haloframe_2.0.1_iphoneos-arm64e.deb
-Size: 134192
-MD5sum: 68afa8221d775b8fa300e6c1b942f07b
-SHA1: f806916e9993b168ee4a507fe275bf559f742c25
-SHA256: 0dd38c9fe34e6061128ea0bce53492a680779efa598fbafd87233a5e9796bac8
+Filename: debs/roothide/com.jinkennguyen.haloframe_2.0.3_iphoneos-arm64e.deb
+Size: 129458
+MD5sum: 6b97914e66455ca5ec0009dba25b44ef
+SHA1: 2d2933468d54b5b9394ad5151f2f7c3ea22b3328
+SHA256: 45bed3fa7253bea8950049b3ce052370bee22c99e5aa3fab1f9e92578d80d8b5
 Section: Tweaks
-Description: Lock Frame 2.0.1 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 2.0.3 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
  Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -237,6 +237,20 @@ Description: Lock Frame 2.0.1 — cinematic sci-fi lock HUD. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 2.0.3 (2026-09-22)
+  * Sửa treo máy lần 2: bỏ hook setAlpha/layout trên đồng hồ iOS, không gọi Now Playing, không CADisplayLink, không blur UIVisualEffect trên overlay.
+  * Gắn HUD một lần (sau layout), không walk cây view mỗi frame. Thông báo chỉ dress khi vào window.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Second freeze fix: no setAlpha/layout hooks on the stock clock, no Now Playing IPC, no CADisplayLink, no UIVisualEffect on the overlay.
+  * HUD attaches once after layout, no per-frame tree walk. Notifications dressed only on didMoveToWindow.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 2.0.2 (2026-09-22)
+  * Sửa treo máy: không còn vòng reload prefs tự gọi lại chính nó; overlay không chặn chạm; layout/kính không lặp.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix device freeze: prefs reload no longer notifies itself; overlay does not steal touches; chrome is not reinstalled every layout.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  2.0.1 (2026-09-22)
   * Xoá các khung trống: người, lối tắt, dock giả. Thẻ Đang phát chỉ hiện khi có nhạc.
