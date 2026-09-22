@@ -13,10 +13,14 @@ Sileo: Sources → + → dán URL
 Zebra: Sources → + → dán URL
 Hoặc mở trang web repo trên Safari rồi bấm "Thêm vào Sileo".
 
-Sileo / Zebra tự chọn gói đúng máy — không cần chọn file:
-  rootless  = Dopamine, palera1n rootless
-  rootful   = unc0ver, checkra1n, palera1n rootful
-  RootHide  = Dopamine-roothide / RootHide Bootstrap
+Trên web, mở đúng thư mục rồi tải .deb:
+  /rootless/  — Dopamine, palera1n rootless  (file iphoneos-arm64)
+  /rootful/   — unc0ver, checkra1n, palera1n rootful  (file iphoneos-arm)
+  /roothide/  — Dopamine RootHide / Bootstrap  (file iphoneos-arm64e)
+
+Cài tay: Filza → mở .deb → Cài đặt → Respring.
+
+Sileo / Zebra: thêm source, app tự chọn đúng loại — không cần chọn file.
 
 Sau khi cài: Respring. Mở Cài đặt → tên tweak.
 

@@ -5,7 +5,7 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 632
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64e.deb
 Size: 80208
 MD5sum: 5900c9bf7234c8efa51e042870547204
 SHA1: b336e9a6e4f652d2967fde4b9ea61fdf1ab6ddc7
@@ -74,7 +74,7 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1068
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm64e.deb
 Size: 331622
 MD5sum: 6ed781982f20018080bc91d73b860d9f
 SHA1: 96619e02d6ba93ecfeec073336d1b02347696495
@@ -222,7 +222,7 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 888
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64e.deb
 Size: 144676
 MD5sum: 4a745484da4adc5b04519d3fb686e606
 SHA1: 038915c24eea40b227e5bfed3acbb9e1a86e06c9
@@ -383,7 +383,7 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1696
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64e.deb
 Size: 319892
 MD5sum: 6a06abc5c3b0ef7314e246bbe9de3ea4
 SHA1: c7e5830a87905443feb9e1d7d4026d213892b68f
@@ -691,7 +691,7 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 760
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64e.deb
 Size: 107652
 MD5sum: a1e2e21ddeae872e16b75cd3cccd3a8d
 SHA1: ed490d7f4c7c7f913d6bfe6545b29da17c077a69
@@ -778,7 +778,7 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 21588
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.slapios_1.2.0_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.slapios_1.2.0_iphoneos-arm64e.deb
 Size: 13844644
 MD5sum: 377411a7d505176e3d174ac62f5978d7
 SHA1: cec13a3ff6ae0dfdaa9e48d8b75da30f8677b195

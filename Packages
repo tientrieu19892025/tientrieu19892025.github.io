@@ -1,151 +1,11 @@
 Package: com.jinkennguyen.cpuboost
 Version: 1.0.2
-Architecture: iphoneos-arm64
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 632
-Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
-Recommends: preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64.deb
-Size: 80526
-MD5sum: 610f695bdb590ac7932842b1532ae082
-SHA1: 0d2cecae518fb5e23aa662ab30803d5cebf1cc18
-SHA256: d398e7c7476d6f8f9eb7d686f9aedc8cbc9380a4834397a9f2bd6df2eb77857e
-Section: Tweaks
-Description: CPU Boost 1.0.2 — tune CPU speed. Credit: Jinken Nguyen - 1989.
- CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
- CPU Boost lets you raise or lower CPU performance, each with its own switch.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.0.2 (2026-09-22)
-  * Sửa: iOS 17/18 không còn báo thiếu thành phần cần thiết khi cài (Sileo / Filza).
-  * Depends chấp nhận ElleKit / libhooker / Substitute — không bắt buộc gói tên mobilesubstrate hay PreferenceLoader.
-  * Gói rootless/RootHide build min iOS 15 + arm64e đúng ABI; rootful giữ iOS 12 arm64 cho máy cũ.
-  * IOKit weak-link, thiếu framework cũng không chặn load tweak.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix: iOS 17/18 no longer reports a missing required component in Sileo / Filza.
-  * Depends accepts ElleKit / libhooker / Substitute — does not require a package literally named mobilesubstrate or PreferenceLoader.
-  * Rootless/RootHide builds min iOS 15 with a proper arm64e ABI; rootful stays iOS 12 arm64 for older phones.
-  * IOKit is weak-linked so a missing framework does not block the tweak from loading.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.1 (2026-09-22)
-  * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
-  * Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
-  * Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
-  * IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
-  * No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
-  * Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
-  * IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-21)
-  * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
-  * Thanh 25%–175%: dưới 100% giảm hiệu năng để tiết pin, trên 100% gỡ giới hạn nhiệt/nguồn phần mềm.
-  * Tự động theo pin: Eco khi pin yếu, Boost khi sạc. Preset Đề xuất / Pin / Gốc / Mạnh / Turbo / Khôi phục.
-  * HUD kính khi đổi profile. Tôn trọng nhiệt Critical. Tùy chọn giới hạn GPU khi Eco và giữ CPU thức khi Boost.
-  * Không ép xung PLL, không đâm thermalmonitord / backboardd / mediaserverd.
-  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .cpuboost-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
-  * Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
-  * Auto by battery: Eco when low, Boost while charging. Presets: Recommended / Battery / Stock / Performance / Turbo / Reset.
-  * Glass HUD on profile change. Respects Critical heat. Optional GPU limit in Eco and keep-awake on Boost.
-  * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
-  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: CPU Boost
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
-
-Package: com.jinkennguyen.cpuboost
-Version: 1.0.2
-Architecture: iphoneos-arm64e
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 632
-Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
-Recommends: preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64e.deb
-Size: 80208
-MD5sum: 5900c9bf7234c8efa51e042870547204
-SHA1: b336e9a6e4f652d2967fde4b9ea61fdf1ab6ddc7
-SHA256: 7e79c06a402626c42e90f1b9d1dc6a03d0b047f2f5031885d01de03f4bbcba0c
-Section: Tweaks
-Description: CPU Boost 1.0.2 — tune CPU speed. Credit: Jinken Nguyen - 1989.
- CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
- CPU Boost lets you raise or lower CPU performance, each with its own switch.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.0.2 (2026-09-22)
-  * Sửa: iOS 17/18 không còn báo thiếu thành phần cần thiết khi cài (Sileo / Filza).
-  * Depends chấp nhận ElleKit / libhooker / Substitute — không bắt buộc gói tên mobilesubstrate hay PreferenceLoader.
-  * Gói rootless/RootHide build min iOS 15 + arm64e đúng ABI; rootful giữ iOS 12 arm64 cho máy cũ.
-  * IOKit weak-link, thiếu framework cũng không chặn load tweak.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix: iOS 17/18 no longer reports a missing required component in Sileo / Filza.
-  * Depends accepts ElleKit / libhooker / Substitute — does not require a package literally named mobilesubstrate or PreferenceLoader.
-  * Rootless/RootHide builds min iOS 15 with a proper arm64e ABI; rootful stays iOS 12 arm64 for older phones.
-  * IOKit is weak-linked so a missing framework does not block the tweak from loading.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.1 (2026-09-22)
-  * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
-  * Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
-  * Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
-  * IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
-  * No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
-  * Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
-  * IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-21)
-  * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
-  * Thanh 25%–175%: dưới 100% giảm hiệu năng để tiết pin, trên 100% gỡ giới hạn nhiệt/nguồn phần mềm.
-  * Tự động theo pin: Eco khi pin yếu, Boost khi sạc. Preset Đề xuất / Pin / Gốc / Mạnh / Turbo / Khôi phục.
-  * HUD kính khi đổi profile. Tôn trọng nhiệt Critical. Tùy chọn giới hạn GPU khi Eco và giữ CPU thức khi Boost.
-  * Không ép xung PLL, không đâm thermalmonitord / backboardd / mediaserverd.
-  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .cpuboost-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
-  * Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
-  * Auto by battery: Eco when low, Boost while charging. Presets: Recommended / Battery / Stock / Performance / Turbo / Reset.
-  * Glass HUD on profile change. Respects Critical heat. Optional GPU limit in Eco and keep-awake on Boost.
-  * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
-  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: CPU Boost
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
-
-Package: com.jinkennguyen.cpuboost
-Version: 1.0.2
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 296
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm.deb
+Filename: debs/rootful/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm.deb
 Size: 63618
 MD5sum: da7cb806a3a4e0b2f3d750823fa32d57
 SHA1: 5de8f356fcfc046301a76e46ce115eb33133f967
@@ -210,307 +70,11 @@ Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
 
 Package: com.jinkennguyen.duoframe
 Version: 3.5.3
-Architecture: iphoneos-arm64e
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1068
-Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm64e.deb
-Size: 331622
-MD5sum: 6ed781982f20018080bc91d73b860d9f
-SHA1: 96619e02d6ba93ecfeec073336d1b02347696495
-SHA256: 9af9f910193315ba46b4859471bfd66fc8bdfce2e4606135c6ea0ae896bab9f0
-Section: Tweaks
-Description: DuoFrame 3.5.3 — iOS 17/18: no missing-component load failure, find Home views again. Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.3 — iOS 17/18: hết báo thiếu thành phần, tìm lại khung Home.
- Credit: Jinken Nguyen - 1989
- .
- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
- Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
- .
- === Changelog / Nhật ký phiên bản 3.5.3 ===
- .
-  * iOS 17/18: weak-link CoreMotion/CoreTelephony để dylib vẫn nạp; tìm dock/scroll theo ivar + class mới.
-  * Hook SBHRootFolderView, Settings pane không vỡ trên PreferenceLoader iOS 18.
- .
- === Changelog / Nhật ký phiên bản 3.5.2 ===
- .
-  * Cài đặt → Màu chữ và icon: giờ/glyph status, tên ứng dụng, chữ khác trên Home.
- .
- === Changelog / Nhật ký phiên bản 3.5.1 ===
- .
-  * Giảm giật khi vuốt: không resize lưới lúc đang kéo, không quét mọi UIScrollView.
-  * Kiểu icon: gốc, tròn, siêu elip, tròn mềm, vuông bo, chữ nhật, vé, lục giác.
- .
- === Changelog / Nhật ký phiên bản 3.5.0 ===
- .
-  * Cài đặt: "Cuộn trang liên tục" — tắt để Home vuốt trang trái/phải như gốc; bật = một trang, vuốt lên/xuống.
- .
- === Changelog / Nhật ký phiên bản 3.4.9 ===
- .
-  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
-  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
- .
- === Changelog / Nhật ký phiên bản 3.4.8 ===
- .
-  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
-  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
- .
- === Changelog / Nhật ký phiên bản 3.4.7 ===
- .
-  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
-  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
- .
- === Changelog / Nhật ký phiên bản 3.4.6 ===
- .
-  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
-  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
-  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
- .
- === Changelog / Nhật ký phiên bản 3.4.5 ===
- .
-  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
-  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
-  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
- .
- === Changelog / Nhật ký phiên bản 3.4.4 ===
- .
-  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
-  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
- .
- === Changelog / Nhật ký phiên bản 3.4.3 ===
- .
-  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
-  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
- .
- === Changelog / Nhật ký phiên bản 3.4.2 ===
- .
-  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
-  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
- .
- === Changelog / Nhật ký phiên bản 3.4.1 ===
- .
-  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
-  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
-  * Less lag on scroll. Search page uses the same full-page glass as App Library.
- .
- === Changelog / Nhật ký phiên bản 3.4.0 ===
- .
-  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
-  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
-  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
- .
- === Changelog / Nhật ký phiên bản 3.3.3 ===
- .
-  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
-  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
- .
- === Changelog / Nhật ký phiên bản 3.3.2 ===
- .
-  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
-  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
-  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
- .
- === Changelog / Nhật ký phiên bản 3.3.1 ===
- .
-  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
-  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
-  * Smoother Duo-style fade. Content sits under the rim. App Library included.
- .
- === Changelog / Nhật ký phiên bản 3.3.0 ===
- .
-  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
-  * Không che viền khung (status / icon / dock / Search / Thư viện).
-  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
- .
- === Changelog / Nhật ký phiên bản 3.2.1 ===
- .
-  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
-  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
-  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
- .
- === Changelog / Nhật ký phiên bản 3.2.0 ===
- .
-  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
-  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
-  * Centered dock icons. Search and App Library match the Home glass frames.
- .
- === Changelog / Nhật ký phiên bản 3.1.0 ===
- .
-  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
-  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
-  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
- .
- === Changelog / Nhật ký phiên bản 3.0.0 ===
- .
-  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
-  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
-  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
-  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
-  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
-  * Status chips that launch apps only. Presets and per-setting help text.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
-Author: Jinken Nguyen - 1989
-Name: DuoFrame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
-
-Package: com.jinkennguyen.duoframe
-Version: 3.5.3
-Architecture: iphoneos-arm64
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1068
-Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm64.deb
-Size: 331362
-MD5sum: 3c16f1b4a38318ab0d84a73d8638138d
-SHA1: b480b13e55a3e5c192edefabb7025c8b3c5621df
-SHA256: 2f4cad2bbdcecf20012e770470f6a452a9d186537fa79a1ac39c7dab99b125f2
-Section: Tweaks
-Description: DuoFrame 3.5.3 — iOS 17/18: no missing-component load failure, find Home views again. Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.3 — iOS 17/18: hết báo thiếu thành phần, tìm lại khung Home.
- Credit: Jinken Nguyen - 1989
- .
- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
- Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
- .
- === Changelog / Nhật ký phiên bản 3.5.3 ===
- .
-  * iOS 17/18: weak-link CoreMotion/CoreTelephony để dylib vẫn nạp; tìm dock/scroll theo ivar + class mới.
-  * Hook SBHRootFolderView, Settings pane không vỡ trên PreferenceLoader iOS 18.
- .
- === Changelog / Nhật ký phiên bản 3.5.2 ===
- .
-  * Cài đặt → Màu chữ và icon: giờ/glyph status, tên ứng dụng, chữ khác trên Home.
- .
- === Changelog / Nhật ký phiên bản 3.5.1 ===
- .
-  * Giảm giật khi vuốt: không resize lưới lúc đang kéo, không quét mọi UIScrollView.
-  * Kiểu icon: gốc, tròn, siêu elip, tròn mềm, vuông bo, chữ nhật, vé, lục giác.
- .
- === Changelog / Nhật ký phiên bản 3.5.0 ===
- .
-  * Cài đặt: "Cuộn trang liên tục" — tắt để Home vuốt trang trái/phải như gốc; bật = một trang, vuốt lên/xuống.
- .
- === Changelog / Nhật ký phiên bản 3.4.9 ===
- .
-  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
-  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
- .
- === Changelog / Nhật ký phiên bản 3.4.8 ===
- .
-  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
-  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
- .
- === Changelog / Nhật ký phiên bản 3.4.7 ===
- .
-  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
-  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
- .
- === Changelog / Nhật ký phiên bản 3.4.6 ===
- .
-  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
-  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
-  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
- .
- === Changelog / Nhật ký phiên bản 3.4.5 ===
- .
-  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
-  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
-  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
- .
- === Changelog / Nhật ký phiên bản 3.4.4 ===
- .
-  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
-  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
- .
- === Changelog / Nhật ký phiên bản 3.4.3 ===
- .
-  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
-  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
- .
- === Changelog / Nhật ký phiên bản 3.4.2 ===
- .
-  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
-  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
- .
- === Changelog / Nhật ký phiên bản 3.4.1 ===
- .
-  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
-  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
-  * Less lag on scroll. Search page uses the same full-page glass as App Library.
- .
- === Changelog / Nhật ký phiên bản 3.4.0 ===
- .
-  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
-  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
-  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
- .
- === Changelog / Nhật ký phiên bản 3.3.3 ===
- .
-  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
-  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
- .
- === Changelog / Nhật ký phiên bản 3.3.2 ===
- .
-  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
-  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
-  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
- .
- === Changelog / Nhật ký phiên bản 3.3.1 ===
- .
-  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
-  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
-  * Smoother Duo-style fade. Content sits under the rim. App Library included.
- .
- === Changelog / Nhật ký phiên bản 3.3.0 ===
- .
-  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
-  * Không che viền khung (status / icon / dock / Search / Thư viện).
-  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
- .
- === Changelog / Nhật ký phiên bản 3.2.1 ===
- .
-  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
-  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
-  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
- .
- === Changelog / Nhật ký phiên bản 3.2.0 ===
- .
-  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
-  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
-  * Centered dock icons. Search and App Library match the Home glass frames.
- .
- === Changelog / Nhật ký phiên bản 3.1.0 ===
- .
-  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
-  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
-  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
- .
- === Changelog / Nhật ký phiên bản 3.0.0 ===
- .
-  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
-  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
-  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
-  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
-  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
-  * Status chips that launch apps only. Presets and per-setting help text.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
-Author: Jinken Nguyen - 1989
-Name: DuoFrame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
-
-Package: com.jinkennguyen.duoframe
-Version: 3.5.3
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1068
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb
+Filename: debs/rootful/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb
 Size: 330890
 MD5sum: 01cd6370cc9c849bf84a17b00a12a2ff
 SHA1: 07c6f14e41b3537b1311a6c6c16b329291b9a745
@@ -654,337 +218,15 @@ Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
 Version: 1.8.0
-Architecture: iphoneos-arm64
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 904
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64.deb
-Size: 146726
-MD5sum: 68256ae61bf7785df797285e0aacb143
-SHA1: dcd81579929bf460870f23377b90b5f2973f55f1
-SHA256: 641a22028fd09875c40017b1c059f088abbcaf75704120070211196f075246a0
-Section: Tweaks
-Description: Lock Frame 1.8.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
- Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
- Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.8.0 (2026-09-22)
-  * Bỏ hẳn viền mảnh quanh màn khoá — không còn stroke, tick, hay khung mép.
-  * 20 kiểu đồng hồ: thêm Glitch, Morse, La Mã, Hex, Chữ, ECG, Stardate, Pixel, Sóng, Lăng kính.
-  * 6 chế độ độc lạ: Sạch / Glitch / CRT / Holo / Nhịp / Mực — chồng lên mọi kiểu đồng hồ.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Hairline rim is gone — no edge stroke, ticks, or screen frame.
-  * Twenty clocks: added Glitch, Morse, Roman, Hex, Words, ECG, Stardate, Pixel, Wave, Prism.
-  * Six weird looks: Clean / Glitch / CRT / Holo / Pulse / Ink, layered on any clock.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.7.0 (2026-09-22)
-  * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
-  * 10 kiểu đồng hồ viễn tưởng: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Nhị phân, Quỹ đạo, Chồng.
-  * Chọn màu nhấn (11 ô) và 8 kiểu khung như DuoFrame. Kính lỏng đậm hơn (thin material + specular). Bỏ 4 tick vuông ở góc màn.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
-  * Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
-  * Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.6.0 (2026-09-22)
-  * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
-  * Ẩn đồng hồ iOS gốc. Kicker LOCK · SYS · ONLINE, ngày in hoa, âm lịch gọn, giây đọc giữa vòng.
-  * Viền mảnh trong suốt, chỗ trống không kính đục. Thông báo từng thẻ kính DuoFrame. Telemetry thanh kính trên đèn pin.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock clock rebuilt as a sci-fi HUD: ultra-light kerned digits, blinking colons, orbital seconds + battery ring, targeting ticks at corners and mid-edges.
-  * Stock iOS clock is hidden. Kicker LOCK · SYS · ONLINE, uppercase date, compact lunar, seconds readout in the ring.
-  * Hairline transparent rim, empty areas stay clear. Each notification is DuoFrame glass. Telemetry bar above the flashlight.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.5.0 (2026-09-22)
-  * Một chế độ duy nhất: lock cinematic full màn — viền HUD mảnh trong suốt, chỗ trống không kính đục.
-  * Đồng hồ iOS nguyên chỗ. Thông báo từng thẻ kính lỏng DuoFrame. Telemetry thanh kính ultra-thin trên đèn pin.
-  * Không dim, không khung đặc, không đè lớp. Kính lỏng chỉ nơi có nội dung — sáng hơn iOS 27.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * One mode only: a cinematic full-screen lock — hairline transparent HUD rim, empty areas stay clear.
-  * Stock clock stays put. Each notification is DuoFrame liquid glass. Telemetry sits in an ultra-thin bar above the flashlight.
-  * No dim, no solid frames, no overlap. Glass only where there is content — clearer than iOS 27.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.4.1 (2026-09-22)
-  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
-  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
-  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
-  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
-  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
-  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
-  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.4.0 (2026-09-21)
-  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
-  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
-  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
-  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
-  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
-  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
-  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.3.0 (2026-09-21)
-  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
-  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
-  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
-  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
-  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
-  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
-  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.1 (2026-09-21)
-  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
-  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
-  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
-  * The stock iOS clock is visible again. No blank rim over the lock.
-  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.0 (2026-09-21)
-  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
-  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
-  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
-  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
-  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.1.0 (2026-09-21)
-  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
-  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
-  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
-  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
-  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
-  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
-  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
-  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
-  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-21)
-  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
-  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
-  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
-  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
-  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
-  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
-  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
-  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
-  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
-  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
-  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
-  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
-  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
-  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
-  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: Lock Frame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
-
-Package: com.jinkennguyen.haloframe
-Version: 1.8.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 888
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm.deb
+Filename: debs/rootful/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm.deb
 Size: 144580
 MD5sum: 44f8aeb1643456072237ca07727ba11b
 SHA1: 04be620f1ffb23b364f87c3634accfdceee15bfa
 SHA256: 42a16227a61926baf3a1edd5641ff9cc86f489109fc72eda8b043f796337af20
-Section: Tweaks
-Description: Lock Frame 1.8.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
- Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
- Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.8.0 (2026-09-22)
-  * Bỏ hẳn viền mảnh quanh màn khoá — không còn stroke, tick, hay khung mép.
-  * 20 kiểu đồng hồ: thêm Glitch, Morse, La Mã, Hex, Chữ, ECG, Stardate, Pixel, Sóng, Lăng kính.
-  * 6 chế độ độc lạ: Sạch / Glitch / CRT / Holo / Nhịp / Mực — chồng lên mọi kiểu đồng hồ.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Hairline rim is gone — no edge stroke, ticks, or screen frame.
-  * Twenty clocks: added Glitch, Morse, Roman, Hex, Words, ECG, Stardate, Pixel, Wave, Prism.
-  * Six weird looks: Clean / Glitch / CRT / Holo / Pulse / Ink, layered on any clock.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.7.0 (2026-09-22)
-  * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
-  * 10 kiểu đồng hồ viễn tưởng: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Nhị phân, Quỹ đạo, Chồng.
-  * Chọn màu nhấn (11 ô) và 8 kiểu khung như DuoFrame. Kính lỏng đậm hơn (thin material + specular). Bỏ 4 tick vuông ở góc màn.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
-  * Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
-  * Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.6.0 (2026-09-22)
-  * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
-  * Ẩn đồng hồ iOS gốc. Kicker LOCK · SYS · ONLINE, ngày in hoa, âm lịch gọn, giây đọc giữa vòng.
-  * Viền mảnh trong suốt, chỗ trống không kính đục. Thông báo từng thẻ kính DuoFrame. Telemetry thanh kính trên đèn pin.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock clock rebuilt as a sci-fi HUD: ultra-light kerned digits, blinking colons, orbital seconds + battery ring, targeting ticks at corners and mid-edges.
-  * Stock iOS clock is hidden. Kicker LOCK · SYS · ONLINE, uppercase date, compact lunar, seconds readout in the ring.
-  * Hairline transparent rim, empty areas stay clear. Each notification is DuoFrame glass. Telemetry bar above the flashlight.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.5.0 (2026-09-22)
-  * Một chế độ duy nhất: lock cinematic full màn — viền HUD mảnh trong suốt, chỗ trống không kính đục.
-  * Đồng hồ iOS nguyên chỗ. Thông báo từng thẻ kính lỏng DuoFrame. Telemetry thanh kính ultra-thin trên đèn pin.
-  * Không dim, không khung đặc, không đè lớp. Kính lỏng chỉ nơi có nội dung — sáng hơn iOS 27.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * One mode only: a cinematic full-screen lock — hairline transparent HUD rim, empty areas stay clear.
-  * Stock clock stays put. Each notification is DuoFrame liquid glass. Telemetry sits in an ultra-thin bar above the flashlight.
-  * No dim, no solid frames, no overlap. Glass only where there is content — clearer than iOS 27.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.4.1 (2026-09-22)
-  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
-  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
-  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
-  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
-  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
-  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
-  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.4.0 (2026-09-21)
-  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
-  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
-  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
-  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
-  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
-  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
-  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.3.0 (2026-09-21)
-  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
-  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
-  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
-  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
-  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
-  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
-  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.1 (2026-09-21)
-  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
-  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
-  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
-  * The stock iOS clock is visible again. No blank rim over the lock.
-  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.0 (2026-09-21)
-  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
-  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
-  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
-  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
-  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.1.0 (2026-09-21)
-  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
-  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
-  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
-  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
-  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
-  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
-  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
-  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
-  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-21)
-  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
-  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
-  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
-  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
-  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
-  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
-  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
-  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
-  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
-  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
-  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
-  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
-  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
-  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
-  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: Lock Frame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
-
-Package: com.jinkennguyen.haloframe
-Version: 1.8.0
-Architecture: iphoneos-arm64e
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 888
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64e.deb
-Size: 144676
-MD5sum: 4a745484da4adc5b04519d3fb686e606
-SHA1: 038915c24eea40b227e5bfed3acbb9e1a86e06c9
-SHA256: f6d3a2e8f64f12b47a0f7f55744f854d85245232cd61c58ccca42228a127fbc9
 Section: Tweaks
 Description: Lock Frame 1.8.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
@@ -1141,7 +383,7 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1696
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm.deb
+Filename: debs/rootful/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm.deb
 Size: 319628
 MD5sum: c6fcbd7050e49a197f56f56aa510e6f8
 SHA1: 7a64c7144ee49c04b779e4af0560cf5936fa1016
@@ -1443,13 +685,554 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
+Package: com.jinkennguyen.noxframe
+Version: 1.1.1
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 760
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm.deb
+Size: 107314
+MD5sum: 2d6f32b9411ab0c8320d71bc7e297a75
+SHA1: 3c94d27706890732c0586c5b00803fc0d254b161
+SHA256: 98f5dacdab08c63b1e7cce1e18314837e87a1055bf3f4e10dae9764124dad82f
+Section: Tweaks
+Description: NoxFrame 1.1.1 — capture with the screen off. Credit: Jinken Nguyen - 1989.
+ NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
+ NoxFrame lets you take photos and record video with the screen off, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.1.1 (2026-09-20)
+  * Sửa treo Camera trên iOS 18: không chặn stopRunning khi vừa mở máy.
+  * Chỉ giữ phiên/clip khi đang tắt màn hoặc đang quay — Camera được cấu hình lại bình thường.
+  * Bỏ hook NSBundle infoDictionary (gây kẹt Info.plist trên iOS 18).
+  * Không gọi setMultitaskingCameraAccess / audio session lúc startRunning.
+  * Không đi UIKit từ hàng đợi capture. Credit: Jinken Nguyen - 1989.
+  * Fix Camera hang on iOS 18: stopRunning is no longer blocked at launch.
+  * Session/video are held only while blanked or actually recording — Camera can reconfigure.
+  * Removed the NSBundle infoDictionary hook (Info.plist deadlock on iOS 18).
+  * Does not call setMultitaskingCameraAccess / audio session from startRunning.
+  * Does not touch UIKit from the capture queue. Credit: Jinken Nguyen - 1989.
+ .
+ 1.1.0 (2026-09-20)
+  * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
+  * Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
+  * Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
+  * Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New: Save photo button while watching a video in Photos — one tap stores the current frame.
+  * Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
+  * If StillFrame is installed, NoxFrame yields so two buttons do not stack.
+  * Own switch in Settings → NoxFrame → Photos. On by default.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-19)
+  * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
+  * Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).
+  * Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.
+  * Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.
+  * Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
+  * SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: pressing the side button to blank the screen no longer cuts an in-progress video.
+  * Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).
+  * Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.
+  * Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.
+  * Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
+  * SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-19)
+  * Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.
+  * Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.
+  * Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.
+  * Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.
+  * Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.
+  * Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
+  * Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.
+  * Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.
+  * Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.
+  * Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.
+  * Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: NoxFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
+
+Package: com.jinkennguyen.slapios
+Version: 1.2.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 21588
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.slapios_1.2.0_iphoneos-arm.deb
+Size: 13842678
+MD5sum: 42011a552adc6ed328360cf628e9edea
+SHA1: f622328c3480d43103ad3468bcc6b84ee4a075d6
+SHA256: 2208f165a984eccfd2fab87472cbfe975346f128dbbad8d02f84711800125633
+Section: Tweaks
+Description: SlapIos 1.2.0 — slap your iPhone, it groans. Credit: Jinken Nguyen - 1989.
+ iPhone kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi. 120 hiệu ứng, 8 gói tiếng.
+ SlapMac-style comedy: accelerometer detects slaps and plays 120 original sounds.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.2.0 (2026-09-20)
+  * Tìm đúng từ khóa YouTube (ouch, groan, moan, boing, slap…) rồi lấy bản thu CC0/MIT cùng loại — WAV 44.1 kHz, cắt clip.
+  * Gói Rên rỉ ưu tiên pack moan Spank (kiểu SlapMac) + Freesound CC0 groan/ouch, không còn còi synth.
+  * Mỗi gói 25–40 tiếng thật. Chọn Rên thì chỉ rên. Dung lượng lớn hơn 3–5 lần để nghe chuẩn.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+  * YouTube keywords (ouch, groan, moan, boing, slap…) mapped to CC0/MIT recordings, cut to clips at 44.1 kHz.
+  * Groan pack leads with Spank moan (SlapMac-style) plus Freesound CC0 ouch/groan — no synth beeps.
+  * 25–40 real clips per pack. Groan mode plays only groans. Package is 3–5× larger for quality.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+ .
+ 1.1.0 (2026-09-20)
+  * Âm thanh thật từ internet, không còn synth: Spank pain/moan (kiểu SlapMac), OpenGameArt hurt, Kenney CC0.
+  * Chọn gói Rên rỉ thì CHỈ phát tiếng rên — không lẫn cartoon/game. Combo cũng ở trong gói đang chọn.
+  * Mặc định gói Rên rỉ. Cài lại copy WAV mới (không giữ file synth cũ).
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+  * Real internet recordings, no more synth: Spank pain/moan (SlapMac-style), OpenGameArt hurt, Kenney CC0.
+  * Picking Groan plays ONLY groans — never cartoon/game. Combo stays inside the selected pack.
+  * Default pack is Groan. Reinstall refreshes WAVs so old synth files are replaced.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-20)
+  * Gói Rên rỉ viết lại 100%: synthesizer giọng (thanh môn Rosenberg + formant nguyên âm), không còn sine/còi.
+  * 15 tiếng ouch / ahhh / ugh / oof / yeow / rên dài, có tiếng vỗ rồi mới rên — đúng kiểu SlapMac.
+  * Tiếng ngáp trong gói Bất ngờ cũng dùng giọng thật. Test phổ F0 70–350 Hz cho cả 15 file rên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+  * Groan pack rewritten: glottal-source + vowel formants, not sine beeps.
+  * 15 ouch / ahhh / ugh / oof / yeow / long-moan voices, slap-then-groan timing like SlapMac.
+  * Extra-pack yawn is voiced too. Tests require F0 in 70–350 Hz on all 15 groan files.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-20)
+  * Tweak mới: SlapIos — iPhone rên rỉ / kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi (ý tưởng SlapMac).
+  * Cảm biến gia tốc SpringBoard nhận diện tát, gõ, lắc, rơi và combo 3 phát liên tiếp.
+  * 120 hiệu ứng WAV gốc, 8 gói: Rên rỉ, Hoạt hình, Dễ thương, Va đập, Meme, Nhạc vui, Game, Bất ngờ.
+  * HUD kính hiện tên tiếng, haptic, độ nhạy / âm lượng / cooldown, tôn trọng Silent hoặc luôn kêu.
+  * Preset SlapMac / Cartoon / Cute / Chaos / Yên / Khôi phục. Thư viện 120 tiếng, bấm là nghe thử.
+  * Chỉ inject SpringBoard. Kill-switch .slapios-disable. Gói RootHide + rootless + rootful.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+  * New tweak: SlapIos — the iPhone groans / cheers when slapped, tapped, shaken or dropped (SlapMac idea).
+  * SpringBoard accelerometer classifies slap, tap, shake, drop and a 3-hit combo.
+  * 120 original WAV effects in 8 packs: Groan, Cartoon, Cute, Smash, Meme, Music, Game, Extra.
+  * Glass HUD names the sound, haptics, sensitivity / volume / cooldown, Silent-aware or always-on.
+  * Presets: SlapMac / Cartoon / Cute / Chaos / Quiet / Reset. Tap-to-preview library of all 120.
+  * SpringBoard only. Kill-switch .slapios-disable. RootHide + rootless + rootful packages.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: SlapIos
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
+
+Package: com.jinkennguyen.cpuboost
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 632
+Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
+Recommends: preferenceloader
+Filename: debs/rootless/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64.deb
+Size: 80526
+MD5sum: 610f695bdb590ac7932842b1532ae082
+SHA1: 0d2cecae518fb5e23aa662ab30803d5cebf1cc18
+SHA256: d398e7c7476d6f8f9eb7d686f9aedc8cbc9380a4834397a9f2bd6df2eb77857e
+Section: Tweaks
+Description: CPU Boost 1.0.2 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+ CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
+ CPU Boost lets you raise or lower CPU performance, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.2 (2026-09-22)
+  * Sửa: iOS 17/18 không còn báo thiếu thành phần cần thiết khi cài (Sileo / Filza).
+  * Depends chấp nhận ElleKit / libhooker / Substitute — không bắt buộc gói tên mobilesubstrate hay PreferenceLoader.
+  * Gói rootless/RootHide build min iOS 15 + arm64e đúng ABI; rootful giữ iOS 12 arm64 cho máy cũ.
+  * IOKit weak-link, thiếu framework cũng không chặn load tweak.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: iOS 17/18 no longer reports a missing required component in Sileo / Filza.
+  * Depends accepts ElleKit / libhooker / Substitute — does not require a package literally named mobilesubstrate or PreferenceLoader.
+  * Rootless/RootHide builds min iOS 15 with a proper arm64e ABI; rootful stays iOS 12 arm64 for older phones.
+  * IOKit is weak-linked so a missing framework does not block the tweak from loading.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-22)
+  * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
+  * Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
+  * Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
+  * IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
+  * No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
+  * Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
+  * IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
+  * Thanh 25%–175%: dưới 100% giảm hiệu năng để tiết pin, trên 100% gỡ giới hạn nhiệt/nguồn phần mềm.
+  * Tự động theo pin: Eco khi pin yếu, Boost khi sạc. Preset Đề xuất / Pin / Gốc / Mạnh / Turbo / Khôi phục.
+  * HUD kính khi đổi profile. Tôn trọng nhiệt Critical. Tùy chọn giới hạn GPU khi Eco và giữ CPU thức khi Boost.
+  * Không ép xung PLL, không đâm thermalmonitord / backboardd / mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
+  * Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
+  * Auto by battery: Eco when low, Boost while charging. Presets: Recommended / Battery / Stock / Performance / Turbo / Reset.
+  * Glass HUD on profile change. Respects Critical heat. Optional GPU limit in Eco and keep-awake on Boost.
+  * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: CPU Boost
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
+
+Package: com.jinkennguyen.duoframe
+Version: 3.5.3
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1068
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
+Filename: debs/rootless/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm64.deb
+Size: 331362
+MD5sum: 3c16f1b4a38318ab0d84a73d8638138d
+SHA1: b480b13e55a3e5c192edefabb7025c8b3c5621df
+SHA256: 2f4cad2bbdcecf20012e770470f6a452a9d186537fa79a1ac39c7dab99b125f2
+Section: Tweaks
+Description: DuoFrame 3.5.3 — iOS 17/18: no missing-component load failure, find Home views again. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.3 — iOS 17/18: hết báo thiếu thành phần, tìm lại khung Home.
+ Credit: Jinken Nguyen - 1989
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.3 ===
+ .
+  * iOS 17/18: weak-link CoreMotion/CoreTelephony để dylib vẫn nạp; tìm dock/scroll theo ivar + class mới.
+  * Hook SBHRootFolderView, Settings pane không vỡ trên PreferenceLoader iOS 18.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.2 ===
+ .
+  * Cài đặt → Màu chữ và icon: giờ/glyph status, tên ứng dụng, chữ khác trên Home.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.1 ===
+ .
+  * Giảm giật khi vuốt: không resize lưới lúc đang kéo, không quét mọi UIScrollView.
+  * Kiểu icon: gốc, tròn, siêu elip, tròn mềm, vuông bo, chữ nhật, vé, lục giác.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.0 ===
+ .
+  * Cài đặt: "Cuộn trang liên tục" — tắt để Home vuốt trang trái/phải như gốc; bật = một trang, vuốt lên/xuống.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.9 ===
+ .
+  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
+  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.8 ===
+ .
+  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
+  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.7 ===
+ .
+  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
+ .
+ === Changelog / Nhật ký phiên bản 3.4.6 ===
+ .
+  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
+  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
+  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
+ .
+ === Changelog / Nhật ký phiên bản 3.4.5 ===
+ .
+  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
+  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
+  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.4 ===
+ .
+  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
+  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.3 ===
+ .
+  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
+  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.2 ===
+ .
+  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
+  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.1 ===
+ .
+  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
+  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
+  * Less lag on scroll. Search page uses the same full-page glass as App Library.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.0 ===
+ .
+  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
+  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
+  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.3 ===
+ .
+  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
+  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.2 ===
+ .
+  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
+  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
+  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.1 ===
+ .
+  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
+  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
+  * Smoother Duo-style fade. Content sits under the rim. App Library included.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.0 ===
+ .
+  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
+  * Không che viền khung (status / icon / dock / Search / Thư viện).
+  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.1 ===
+ .
+  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
+  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
+  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.0 ===
+ .
+  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
+  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
+  * Centered dock icons. Search and App Library match the Home glass frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.1.0 ===
+ .
+  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
+  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
+  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
+ .
+ === Changelog / Nhật ký phiên bản 3.0.0 ===
+ .
+  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
+  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
+  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
+  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
+  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
+  * Status chips that launch apps only. Presets and per-setting help text.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: DuoFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
+
+Package: com.jinkennguyen.haloframe
+Version: 1.8.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 904
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64.deb
+Size: 146726
+MD5sum: 68256ae61bf7785df797285e0aacb143
+SHA1: dcd81579929bf460870f23377b90b5f2973f55f1
+SHA256: 641a22028fd09875c40017b1c059f088abbcaf75704120070211196f075246a0
+Section: Tweaks
+Description: Lock Frame 1.8.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+ Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
+ Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.8.0 (2026-09-22)
+  * Bỏ hẳn viền mảnh quanh màn khoá — không còn stroke, tick, hay khung mép.
+  * 20 kiểu đồng hồ: thêm Glitch, Morse, La Mã, Hex, Chữ, ECG, Stardate, Pixel, Sóng, Lăng kính.
+  * 6 chế độ độc lạ: Sạch / Glitch / CRT / Holo / Nhịp / Mực — chồng lên mọi kiểu đồng hồ.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Hairline rim is gone — no edge stroke, ticks, or screen frame.
+  * Twenty clocks: added Glitch, Morse, Roman, Hex, Words, ECG, Stardate, Pixel, Wave, Prism.
+  * Six weird looks: Clean / Glitch / CRT / Holo / Pulse / Ink, layered on any clock.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.7.0 (2026-09-22)
+  * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
+  * 10 kiểu đồng hồ viễn tưởng: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Nhị phân, Quỹ đạo, Chồng.
+  * Chọn màu nhấn (11 ô) và 8 kiểu khung như DuoFrame. Kính lỏng đậm hơn (thin material + specular). Bỏ 4 tick vuông ở góc màn.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
+  * Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
+  * Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.6.0 (2026-09-22)
+  * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
+  * Ẩn đồng hồ iOS gốc. Kicker LOCK · SYS · ONLINE, ngày in hoa, âm lịch gọn, giây đọc giữa vòng.
+  * Viền mảnh trong suốt, chỗ trống không kính đục. Thông báo từng thẻ kính DuoFrame. Telemetry thanh kính trên đèn pin.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock clock rebuilt as a sci-fi HUD: ultra-light kerned digits, blinking colons, orbital seconds + battery ring, targeting ticks at corners and mid-edges.
+  * Stock iOS clock is hidden. Kicker LOCK · SYS · ONLINE, uppercase date, compact lunar, seconds readout in the ring.
+  * Hairline transparent rim, empty areas stay clear. Each notification is DuoFrame glass. Telemetry bar above the flashlight.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.5.0 (2026-09-22)
+  * Một chế độ duy nhất: lock cinematic full màn — viền HUD mảnh trong suốt, chỗ trống không kính đục.
+  * Đồng hồ iOS nguyên chỗ. Thông báo từng thẻ kính lỏng DuoFrame. Telemetry thanh kính ultra-thin trên đèn pin.
+  * Không dim, không khung đặc, không đè lớp. Kính lỏng chỉ nơi có nội dung — sáng hơn iOS 27.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * One mode only: a cinematic full-screen lock — hairline transparent HUD rim, empty areas stay clear.
+  * Stock clock stays put. Each notification is DuoFrame liquid glass. Telemetry sits in an ultra-thin bar above the flashlight.
+  * No dim, no solid frames, no overlap. Glass only where there is content — clearer than iOS 27.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.4.1 (2026-09-22)
+  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
+  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
+  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
+  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
+  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
+  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
+  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.4.0 (2026-09-21)
+  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
+  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
+  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
+  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
+  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
+  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
+  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.3.0 (2026-09-21)
+  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
+  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
+  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
+  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
+  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
+  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
+  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.1 (2026-09-21)
+  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
+  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
+  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
+  * The stock iOS clock is visible again. No blank rim over the lock.
+  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.0 (2026-09-21)
+  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
+  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
+  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
+  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
+  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.1.0 (2026-09-21)
+  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
+  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
+  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
+  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
+  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
+  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
+  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
+  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
+  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
+  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
+  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
+  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
+  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
+  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
+  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
+  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
+  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
+  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
+  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
+  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
+  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
+  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: Lock Frame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
+
 Package: com.jinkennguyen.lookglass
 Version: 4.0.3
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1696
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64.deb
+Filename: debs/rootless/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64.deb
 Size: 320088
 MD5sum: 9bb482383a84153cef7a7ba21a0fcd8e
 SHA1: cefbd6e3c3e616103187920fe5709c76ef16f99f
@@ -1751,13 +1534,554 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
+Package: com.jinkennguyen.noxframe
+Version: 1.1.1
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 760
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64.deb
+Size: 107470
+MD5sum: 20cd2ac07c8542d8592c7897ffb3a026
+SHA1: 9b64fc9b5642717adcc77ea8a91c78e399182611
+SHA256: 79e1ed87b235ec6acd0e5761c827f16e97d9d9b8ed0a84bd82332c3f0f01683d
+Section: Tweaks
+Description: NoxFrame 1.1.1 — capture with the screen off. Credit: Jinken Nguyen - 1989.
+ NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
+ NoxFrame lets you take photos and record video with the screen off, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.1.1 (2026-09-20)
+  * Sửa treo Camera trên iOS 18: không chặn stopRunning khi vừa mở máy.
+  * Chỉ giữ phiên/clip khi đang tắt màn hoặc đang quay — Camera được cấu hình lại bình thường.
+  * Bỏ hook NSBundle infoDictionary (gây kẹt Info.plist trên iOS 18).
+  * Không gọi setMultitaskingCameraAccess / audio session lúc startRunning.
+  * Không đi UIKit từ hàng đợi capture. Credit: Jinken Nguyen - 1989.
+  * Fix Camera hang on iOS 18: stopRunning is no longer blocked at launch.
+  * Session/video are held only while blanked or actually recording — Camera can reconfigure.
+  * Removed the NSBundle infoDictionary hook (Info.plist deadlock on iOS 18).
+  * Does not call setMultitaskingCameraAccess / audio session from startRunning.
+  * Does not touch UIKit from the capture queue. Credit: Jinken Nguyen - 1989.
+ .
+ 1.1.0 (2026-09-20)
+  * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
+  * Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
+  * Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
+  * Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New: Save photo button while watching a video in Photos — one tap stores the current frame.
+  * Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
+  * If StillFrame is installed, NoxFrame yields so two buttons do not stack.
+  * Own switch in Settings → NoxFrame → Photos. On by default.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-19)
+  * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
+  * Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).
+  * Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.
+  * Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.
+  * Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
+  * SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: pressing the side button to blank the screen no longer cuts an in-progress video.
+  * Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).
+  * Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.
+  * Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.
+  * Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
+  * SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-19)
+  * Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.
+  * Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.
+  * Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.
+  * Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.
+  * Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.
+  * Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
+  * Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.
+  * Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.
+  * Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.
+  * Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.
+  * Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: NoxFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
+
+Package: com.jinkennguyen.slapios
+Version: 1.2.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 21588
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinkennguyen.slapios_1.2.0_iphoneos-arm64.deb
+Size: 13846696
+MD5sum: 19cefa04aeadbd07891ee03e7b5326df
+SHA1: 43e0e32241826111600237f41e5834b9bd46a3bd
+SHA256: f74d898374a8673e06189f67485a21ebfe67e98901195855344399f4bf3b9371
+Section: Tweaks
+Description: SlapIos 1.2.0 — slap your iPhone, it groans. Credit: Jinken Nguyen - 1989.
+ iPhone kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi. 120 hiệu ứng, 8 gói tiếng.
+ SlapMac-style comedy: accelerometer detects slaps and plays 120 original sounds.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.2.0 (2026-09-20)
+  * Tìm đúng từ khóa YouTube (ouch, groan, moan, boing, slap…) rồi lấy bản thu CC0/MIT cùng loại — WAV 44.1 kHz, cắt clip.
+  * Gói Rên rỉ ưu tiên pack moan Spank (kiểu SlapMac) + Freesound CC0 groan/ouch, không còn còi synth.
+  * Mỗi gói 25–40 tiếng thật. Chọn Rên thì chỉ rên. Dung lượng lớn hơn 3–5 lần để nghe chuẩn.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+  * YouTube keywords (ouch, groan, moan, boing, slap…) mapped to CC0/MIT recordings, cut to clips at 44.1 kHz.
+  * Groan pack leads with Spank moan (SlapMac-style) plus Freesound CC0 ouch/groan — no synth beeps.
+  * 25–40 real clips per pack. Groan mode plays only groans. Package is 3–5× larger for quality.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+ .
+ 1.1.0 (2026-09-20)
+  * Âm thanh thật từ internet, không còn synth: Spank pain/moan (kiểu SlapMac), OpenGameArt hurt, Kenney CC0.
+  * Chọn gói Rên rỉ thì CHỈ phát tiếng rên — không lẫn cartoon/game. Combo cũng ở trong gói đang chọn.
+  * Mặc định gói Rên rỉ. Cài lại copy WAV mới (không giữ file synth cũ).
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+  * Real internet recordings, no more synth: Spank pain/moan (SlapMac-style), OpenGameArt hurt, Kenney CC0.
+  * Picking Groan plays ONLY groans — never cartoon/game. Combo stays inside the selected pack.
+  * Default pack is Groan. Reinstall refreshes WAVs so old synth files are replaced.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-20)
+  * Gói Rên rỉ viết lại 100%: synthesizer giọng (thanh môn Rosenberg + formant nguyên âm), không còn sine/còi.
+  * 15 tiếng ouch / ahhh / ugh / oof / yeow / rên dài, có tiếng vỗ rồi mới rên — đúng kiểu SlapMac.
+  * Tiếng ngáp trong gói Bất ngờ cũng dùng giọng thật. Test phổ F0 70–350 Hz cho cả 15 file rên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+  * Groan pack rewritten: glottal-source + vowel formants, not sine beeps.
+  * 15 ouch / ahhh / ugh / oof / yeow / long-moan voices, slap-then-groan timing like SlapMac.
+  * Extra-pack yawn is voiced too. Tests require F0 in 70–350 Hz on all 15 groan files.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-20)
+  * Tweak mới: SlapIos — iPhone rên rỉ / kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi (ý tưởng SlapMac).
+  * Cảm biến gia tốc SpringBoard nhận diện tát, gõ, lắc, rơi và combo 3 phát liên tiếp.
+  * 120 hiệu ứng WAV gốc, 8 gói: Rên rỉ, Hoạt hình, Dễ thương, Va đập, Meme, Nhạc vui, Game, Bất ngờ.
+  * HUD kính hiện tên tiếng, haptic, độ nhạy / âm lượng / cooldown, tôn trọng Silent hoặc luôn kêu.
+  * Preset SlapMac / Cartoon / Cute / Chaos / Yên / Khôi phục. Thư viện 120 tiếng, bấm là nghe thử.
+  * Chỉ inject SpringBoard. Kill-switch .slapios-disable. Gói RootHide + rootless + rootful.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+  * New tweak: SlapIos — the iPhone groans / cheers when slapped, tapped, shaken or dropped (SlapMac idea).
+  * SpringBoard accelerometer classifies slap, tap, shake, drop and a 3-hit combo.
+  * 120 original WAV effects in 8 packs: Groan, Cartoon, Cute, Smash, Meme, Music, Game, Extra.
+  * Glass HUD names the sound, haptics, sensitivity / volume / cooldown, Silent-aware or always-on.
+  * Presets: SlapMac / Cartoon / Cute / Chaos / Quiet / Reset. Tap-to-preview library of all 120.
+  * SpringBoard only. Kill-switch .slapios-disable. RootHide + rootless + rootful packages.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: SlapIos
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
+
+Package: com.jinkennguyen.cpuboost
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 632
+Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
+Recommends: preferenceloader
+Filename: debs/roothide/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64e.deb
+Size: 80208
+MD5sum: 5900c9bf7234c8efa51e042870547204
+SHA1: b336e9a6e4f652d2967fde4b9ea61fdf1ab6ddc7
+SHA256: 7e79c06a402626c42e90f1b9d1dc6a03d0b047f2f5031885d01de03f4bbcba0c
+Section: Tweaks
+Description: CPU Boost 1.0.2 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+ CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
+ CPU Boost lets you raise or lower CPU performance, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.2 (2026-09-22)
+  * Sửa: iOS 17/18 không còn báo thiếu thành phần cần thiết khi cài (Sileo / Filza).
+  * Depends chấp nhận ElleKit / libhooker / Substitute — không bắt buộc gói tên mobilesubstrate hay PreferenceLoader.
+  * Gói rootless/RootHide build min iOS 15 + arm64e đúng ABI; rootful giữ iOS 12 arm64 cho máy cũ.
+  * IOKit weak-link, thiếu framework cũng không chặn load tweak.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: iOS 17/18 no longer reports a missing required component in Sileo / Filza.
+  * Depends accepts ElleKit / libhooker / Substitute — does not require a package literally named mobilesubstrate or PreferenceLoader.
+  * Rootless/RootHide builds min iOS 15 with a proper arm64e ABI; rootful stays iOS 12 arm64 for older phones.
+  * IOKit is weak-linked so a missing framework does not block the tweak from loading.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-22)
+  * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
+  * Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
+  * Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
+  * IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
+  * No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
+  * Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
+  * IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
+  * Thanh 25%–175%: dưới 100% giảm hiệu năng để tiết pin, trên 100% gỡ giới hạn nhiệt/nguồn phần mềm.
+  * Tự động theo pin: Eco khi pin yếu, Boost khi sạc. Preset Đề xuất / Pin / Gốc / Mạnh / Turbo / Khôi phục.
+  * HUD kính khi đổi profile. Tôn trọng nhiệt Critical. Tùy chọn giới hạn GPU khi Eco và giữ CPU thức khi Boost.
+  * Không ép xung PLL, không đâm thermalmonitord / backboardd / mediaserverd.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
+  * Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
+  * Auto by battery: Eco when low, Boost while charging. Presets: Recommended / Battery / Stock / Performance / Turbo / Reset.
+  * Glass HUD on profile change. Respects Critical heat. Optional GPU limit in Eco and keep-awake on Boost.
+  * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: CPU Boost
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
+
+Package: com.jinkennguyen.duoframe
+Version: 3.5.3
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1068
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
+Filename: debs/roothide/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm64e.deb
+Size: 331622
+MD5sum: 6ed781982f20018080bc91d73b860d9f
+SHA1: 96619e02d6ba93ecfeec073336d1b02347696495
+SHA256: 9af9f910193315ba46b4859471bfd66fc8bdfce2e4606135c6ea0ae896bab9f0
+Section: Tweaks
+Description: DuoFrame 3.5.3 — iOS 17/18: no missing-component load failure, find Home views again. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.3 — iOS 17/18: hết báo thiếu thành phần, tìm lại khung Home.
+ Credit: Jinken Nguyen - 1989
+ .
+ Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
+ Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.3 ===
+ .
+  * iOS 17/18: weak-link CoreMotion/CoreTelephony để dylib vẫn nạp; tìm dock/scroll theo ivar + class mới.
+  * Hook SBHRootFolderView, Settings pane không vỡ trên PreferenceLoader iOS 18.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.2 ===
+ .
+  * Cài đặt → Màu chữ và icon: giờ/glyph status, tên ứng dụng, chữ khác trên Home.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.1 ===
+ .
+  * Giảm giật khi vuốt: không resize lưới lúc đang kéo, không quét mọi UIScrollView.
+  * Kiểu icon: gốc, tròn, siêu elip, tròn mềm, vuông bo, chữ nhật, vé, lục giác.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.0 ===
+ .
+  * Cài đặt: "Cuộn trang liên tục" — tắt để Home vuốt trang trái/phải như gốc; bật = một trang, vuốt lên/xuống.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.9 ===
+ .
+  * Bỏ khung kính trang Tìm kiếm (vuốt trái). Spotlight/Today dùng layout gốc Apple.
+  * Home (status/icon/dock) và Thư viện ứng dụng giữ khung như cũ.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.8 ===
+ .
+  * Trang Tìm kiếm hoàn thiện: search bar + widget + kết quả pin trong kính; bàn phím luôn ngoài khung.
+  * Giả lập 10 đời máy: idle / gõ phím / Huỷ / 8 kiểu khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.7 ===
+ .
+  * Tìm kiếm: search bar, widget, gợi ý nằm gọn trong khung kính. Bàn phím hiện ngoài khung như Thư viện.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông (Cài đặt → Kiểu khung).
+ .
+ === Changelog / Nhật ký phiên bản 3.4.6 ===
+ .
+  * Vuốt trái (Tìm kiếm/widget) cùng khung full trang với Thư viện ứng dụng.
+  * Bấm Huỷ sau khi gõ: khung bung lại toàn trang, không kẹt kích thước bàn phím.
+  * Fade kính mượt hơn (trong suốt, nhám mờ/rõ dần). Tuỳ chọn "Mờ theo nghiêng".
+ .
+ === Changelog / Nhật ký phiên bản 3.4.5 ===
+ .
+  * Sửa icon nhiễu / khung vỡ: khôi phục mask gradient (iOS 14), không dùng ảnh 9-slice.
+  * Khung Tìm kiếm không còn đè lên Home. Bỏ hook setContentOffset gây giật mask.
+  * Tìm kiếm vẫn cùng bố cục Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.4 ===
+ .
+  * Tìm kiếm (vuốt trái) dùng đúng cùng khung kính, mask, inset như Thư viện ứng dụng.
+  * Hiệu ứng mờ/rõ dần bốn cạnh trên Home, Tìm kiếm và Thư viện — cập nhật theo mọi cử chỉ vuốt.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.3 ===
+ .
+  * Vuốt trái (Tìm kiếm): bố cục như Thư viện ứng dụng — search bar, widget, gợi ý nằm trong khung, không còn lệch ra ngoài.
+  * Bàn phím: khung kính ngắn lại sát mép trên bàn phím (đo cửa sổ bàn phím thật), bàn phím không chiếm/che khung.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.2 ===
+ .
+  * Vuốt trái (Tìm kiếm/Today): search bar + widget + gợi ý được ghim vào trong khung kính.
+  * Bàn phím hiện: khung co sát mép trên bàn phím, không chiếm/che khung. Giống Thư viện ứng dụng.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.1 ===
+ .
+  * Giảm lag: không làm việc nặng trên mọi UIScrollView, throttle Home dọc, bỏ hook header Search.
+  * Vuốt trái (Today/Search): một khung full trang như Thư viện, không chrome lên view nhỏ.
+  * Less lag on scroll. Search page uses the same full-page glass as App Library.
+ .
+ === Changelog / Nhật ký phiên bản 3.4.0 ===
+ .
+  * Trang Tìm kiếm khi hiện bàn phím: co khung như Thư viện, app/kết quả nằm trong khung, bàn phím không che.
+  * Home: một trang icon, xếp dọc, vuốt lên/xuống xem hết app (không thêm trang icon). Fade Duo khi duyệt.
+  * Tắt status mới + bật status cũ: khôi phục hoàn toàn thanh gốc, không còn icon 3-in-1 Duo.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.3 ===
+ .
+  * Vuốt Home để tìm / vuốt sang Today / gõ phím: kết quả và widget nằm trong khung, co theo bàn phím — giống Thư viện ứng dụng.
+  * Spotlight overlay + keyboard: remask results, shrink the card above the keyboard.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.2 ===
+ .
+  * iOS 14 rootful / RootHide: icon không còn bị ẩn vì mask (khung bị 'khô'). Mask dùng gradient trực tiếp, chạy trên iOS 14.
+  * Kính liquid: bật UIVisualEffect blur (không chỉ lớp màu phẳng) — iOS 14 nhìn ướt hơn.
+  * iOS 14 rootful/RootHide: icons no longer vanish behind a broken mask. Real blur on the frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.1 ===
+ .
+  * Fade mượt hơn (nhiều nấc như iPhone Duo). Icon/folder/widget nằm dưới viền khung, không che viền.
+  * Thư viện ứng dụng dùng cùng mask + viền nổi phía trên.
+  * Smoother Duo-style fade. Content sits under the rim. App Library included.
+ .
+ === Changelog / Nhật ký phiên bản 3.3.0 ===
+ .
+  * Icon, thư mục, widget nằm trong khung kính. Phần tràn ra ngoài mờ dần, vuốt vào khung thì hiện rõ.
+  * Không che viền khung (status / icon / dock / Search / Thư viện).
+  * Icons, folders and widgets stay inside the glass. Overflow fades; scrolling brings them back in.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.1 ===
+ .
+  * Icon trong folder trên Home không còn bị kéo xuống 60pt. Lưới folder giữ vị trí gốc, căn giữa đúng.
+  * Tìm kiếm và Thư viện ứng dụng: một khung kính bao cả trang, không tách thanh status.
+  * Folder icons no longer inherit the Home drop. Search and App Library use one full-page glass.
+ .
+ === Changelog / Nhật ký phiên bản 3.2.0 ===
+ .
+  * Icon dock luôn căn giữa khay (4/5/6 cột, dù ít app hơn số cột).
+  * Tìm kiếm (vuốt trái / Today / Spotlight) và Thư viện ứng dụng (vuốt phải) dùng cùng kính, màu, bo góc với Home.
+  * Centered dock icons. Search and App Library match the Home glass frames.
+ .
+ === Changelog / Nhật ký phiên bản 3.1.0 ===
+ .
+  * Preset theo đời máy từ nhỏ đến to: SE 4.0\" → 8 Plus → mini → tai thỏ → Island / Plus / Pro Max. Chỉ đổi thanh status.
+  * 7 kiểu status: Auto, Duo, một viên, hai cánh đều, ôm Island, mảnh, hai tầng. Lưới icon và dock không đổi.
+  * Thanh status cân đối: padding trái = phải, glyph sát mép phải, chip không đè tai thỏ / Island.
+ .
+ === Changelog / Nhật ký phiên bản 3.0.0 ===
+ .
+  * Ổn định cài rootless / rootful / RootHide. postinst không làm fail dpkg. Depends ElleKit + Substrate.
+  * Giảm treo / Safe Mode: bỏ hook lưới nguy hiểm, delay gesture, không quét cây icon lúc boot.
+  * Chip status chỉ còn lối tắt mở được app (Lịch, Đồng hồ, Camera…).
+  * Preset một chạm + hướng dẫn ngắn dưới từng chức năng.
+  * Stable install on rootless, rootful and RootHide. Safer SpringBoard load.
+  * Status chips that launch apps only. Presets and per-setting help text.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: DuoFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.duoframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
+
+Package: com.jinkennguyen.haloframe
+Version: 1.8.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 888
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/roothide/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64e.deb
+Size: 144676
+MD5sum: 4a745484da4adc5b04519d3fb686e606
+SHA1: 038915c24eea40b227e5bfed3acbb9e1a86e06c9
+SHA256: f6d3a2e8f64f12b47a0f7f55744f854d85245232cd61c58ccca42228a127fbc9
+Section: Tweaks
+Description: Lock Frame 1.8.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+ Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
+ Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.8.0 (2026-09-22)
+  * Bỏ hẳn viền mảnh quanh màn khoá — không còn stroke, tick, hay khung mép.
+  * 20 kiểu đồng hồ: thêm Glitch, Morse, La Mã, Hex, Chữ, ECG, Stardate, Pixel, Sóng, Lăng kính.
+  * 6 chế độ độc lạ: Sạch / Glitch / CRT / Holo / Nhịp / Mực — chồng lên mọi kiểu đồng hồ.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Hairline rim is gone — no edge stroke, ticks, or screen frame.
+  * Twenty clocks: added Glitch, Morse, Roman, Hex, Words, ECG, Stardate, Pixel, Wave, Prism.
+  * Six weird looks: Clean / Glitch / CRT / Holo / Pulse / Ink, layered on any clock.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.7.0 (2026-09-22)
+  * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
+  * 10 kiểu đồng hồ viễn tưởng: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Nhị phân, Quỹ đạo, Chồng.
+  * Chọn màu nhấn (11 ô) và 8 kiểu khung như DuoFrame. Kính lỏng đậm hơn (thin material + specular). Bỏ 4 tick vuông ở góc màn.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
+  * Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
+  * Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.6.0 (2026-09-22)
+  * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
+  * Ẩn đồng hồ iOS gốc. Kicker LOCK · SYS · ONLINE, ngày in hoa, âm lịch gọn, giây đọc giữa vòng.
+  * Viền mảnh trong suốt, chỗ trống không kính đục. Thông báo từng thẻ kính DuoFrame. Telemetry thanh kính trên đèn pin.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock clock rebuilt as a sci-fi HUD: ultra-light kerned digits, blinking colons, orbital seconds + battery ring, targeting ticks at corners and mid-edges.
+  * Stock iOS clock is hidden. Kicker LOCK · SYS · ONLINE, uppercase date, compact lunar, seconds readout in the ring.
+  * Hairline transparent rim, empty areas stay clear. Each notification is DuoFrame glass. Telemetry bar above the flashlight.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.5.0 (2026-09-22)
+  * Một chế độ duy nhất: lock cinematic full màn — viền HUD mảnh trong suốt, chỗ trống không kính đục.
+  * Đồng hồ iOS nguyên chỗ. Thông báo từng thẻ kính lỏng DuoFrame. Telemetry thanh kính ultra-thin trên đèn pin.
+  * Không dim, không khung đặc, không đè lớp. Kính lỏng chỉ nơi có nội dung — sáng hơn iOS 27.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * One mode only: a cinematic full-screen lock — hairline transparent HUD rim, empty areas stay clear.
+  * Stock clock stays put. Each notification is DuoFrame liquid glass. Telemetry sits in an ultra-thin bar above the flashlight.
+  * No dim, no solid frames, no overlap. Glass only where there is content — clearer than iOS 27.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.4.1 (2026-09-22)
+  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
+  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
+  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
+  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
+  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
+  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
+  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.4.0 (2026-09-21)
+  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
+  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
+  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
+  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
+  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
+  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
+  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.3.0 (2026-09-21)
+  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
+  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
+  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
+  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
+  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
+  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
+  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.1 (2026-09-21)
+  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
+  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
+  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
+  * The stock iOS clock is visible again. No blank rim over the lock.
+  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.0 (2026-09-21)
+  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
+  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
+  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
+  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
+  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.1.0 (2026-09-21)
+  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
+  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
+  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
+  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
+  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
+  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
+  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
+  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
+  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
+  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
+  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
+  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
+  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
+  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
+  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
+  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
+  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
+  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
+  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
+  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
+  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
+  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: Lock Frame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
+
 Package: com.jinkennguyen.lookglass
 Version: 4.0.3
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1696
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64e.deb
 Size: 319892
 MD5sum: 6a06abc5c3b0ef7314e246bbe9de3ea4
 SHA1: c7e5830a87905443feb9e1d7d4026d213892b68f
@@ -2061,185 +2385,11 @@ Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.noxframe
 Version: 1.1.1
-Architecture: iphoneos-arm64
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 760
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64.deb
-Size: 107470
-MD5sum: 20cd2ac07c8542d8592c7897ffb3a026
-SHA1: 9b64fc9b5642717adcc77ea8a91c78e399182611
-SHA256: 79e1ed87b235ec6acd0e5761c827f16e97d9d9b8ed0a84bd82332c3f0f01683d
-Section: Tweaks
-Description: NoxFrame 1.1.1 — capture with the screen off. Credit: Jinken Nguyen - 1989.
- NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
- NoxFrame lets you take photos and record video with the screen off, each with its own switch.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.1.1 (2026-09-20)
-  * Sửa treo Camera trên iOS 18: không chặn stopRunning khi vừa mở máy.
-  * Chỉ giữ phiên/clip khi đang tắt màn hoặc đang quay — Camera được cấu hình lại bình thường.
-  * Bỏ hook NSBundle infoDictionary (gây kẹt Info.plist trên iOS 18).
-  * Không gọi setMultitaskingCameraAccess / audio session lúc startRunning.
-  * Không đi UIKit từ hàng đợi capture. Credit: Jinken Nguyen - 1989.
-  * Fix Camera hang on iOS 18: stopRunning is no longer blocked at launch.
-  * Session/video are held only while blanked or actually recording — Camera can reconfigure.
-  * Removed the NSBundle infoDictionary hook (Info.plist deadlock on iOS 18).
-  * Does not call setMultitaskingCameraAccess / audio session from startRunning.
-  * Does not touch UIKit from the capture queue. Credit: Jinken Nguyen - 1989.
- .
- 1.1.0 (2026-09-20)
-  * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
-  * Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
-  * Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
-  * Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New: Save photo button while watching a video in Photos — one tap stores the current frame.
-  * Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
-  * If StillFrame is installed, NoxFrame yields so two buttons do not stack.
-  * Own switch in Settings → NoxFrame → Photos. On by default.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.1 (2026-09-19)
-  * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
-  * Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).
-  * Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.
-  * Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.
-  * Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
-  * SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix: pressing the side button to blank the screen no longer cuts an in-progress video.
-  * Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).
-  * Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.
-  * Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.
-  * Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
-  * SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-19)
-  * Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.
-  * Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.
-  * Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.
-  * Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.
-  * Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.
-  * Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.
-  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
-  * Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.
-  * Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.
-  * Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.
-  * Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.
-  * Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.
-  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: NoxFrame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
-
-Package: com.jinkennguyen.noxframe
-Version: 1.1.1
-Architecture: iphoneos-arm
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 760
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm.deb
-Size: 107314
-MD5sum: 2d6f32b9411ab0c8320d71bc7e297a75
-SHA1: 3c94d27706890732c0586c5b00803fc0d254b161
-SHA256: 98f5dacdab08c63b1e7cce1e18314837e87a1055bf3f4e10dae9764124dad82f
-Section: Tweaks
-Description: NoxFrame 1.1.1 — capture with the screen off. Credit: Jinken Nguyen - 1989.
- NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
- NoxFrame lets you take photos and record video with the screen off, each with its own switch.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.1.1 (2026-09-20)
-  * Sửa treo Camera trên iOS 18: không chặn stopRunning khi vừa mở máy.
-  * Chỉ giữ phiên/clip khi đang tắt màn hoặc đang quay — Camera được cấu hình lại bình thường.
-  * Bỏ hook NSBundle infoDictionary (gây kẹt Info.plist trên iOS 18).
-  * Không gọi setMultitaskingCameraAccess / audio session lúc startRunning.
-  * Không đi UIKit từ hàng đợi capture. Credit: Jinken Nguyen - 1989.
-  * Fix Camera hang on iOS 18: stopRunning is no longer blocked at launch.
-  * Session/video are held only while blanked or actually recording — Camera can reconfigure.
-  * Removed the NSBundle infoDictionary hook (Info.plist deadlock on iOS 18).
-  * Does not call setMultitaskingCameraAccess / audio session from startRunning.
-  * Does not touch UIKit from the capture queue. Credit: Jinken Nguyen - 1989.
- .
- 1.1.0 (2026-09-20)
-  * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
-  * Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
-  * Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
-  * Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New: Save photo button while watching a video in Photos — one tap stores the current frame.
-  * Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
-  * If StillFrame is installed, NoxFrame yields so two buttons do not stack.
-  * Own switch in Settings → NoxFrame → Photos. On by default.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.1 (2026-09-19)
-  * Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
-  * Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).
-  * Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.
-  * Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.
-  * Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
-  * SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix: pressing the side button to blank the screen no longer cuts an in-progress video.
-  * Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).
-  * Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.
-  * Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.
-  * Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
-  * SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-19)
-  * Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.
-  * Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.
-  * Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.
-  * Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.
-  * Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.
-  * Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.
-  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
-  * Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.
-  * Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.
-  * Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.
-  * Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.
-  * Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.
-  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: NoxFrame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
-
-Package: com.jinkennguyen.noxframe
-Version: 1.1.1
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 760
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64e.deb
 Size: 107652
 MD5sum: a1e2e21ddeae872e16b75cd3cccd3a8d
 SHA1: ed490d7f4c7c7f913d6bfe6545b29da17c077a69
@@ -2322,165 +2472,15 @@ Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.slapios
 Version: 1.2.0
-Architecture: iphoneos-arm
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 21588
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.slapios_1.2.0_iphoneos-arm.deb
-Size: 13842678
-MD5sum: 42011a552adc6ed328360cf628e9edea
-SHA1: f622328c3480d43103ad3468bcc6b84ee4a075d6
-SHA256: 2208f165a984eccfd2fab87472cbfe975346f128dbbad8d02f84711800125633
-Section: Tweaks
-Description: SlapIos 1.2.0 — slap your iPhone, it groans. Credit: Jinken Nguyen - 1989.
- iPhone kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi. 120 hiệu ứng, 8 gói tiếng.
- SlapMac-style comedy: accelerometer detects slaps and plays 120 original sounds.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.2.0 (2026-09-20)
-  * Tìm đúng từ khóa YouTube (ouch, groan, moan, boing, slap…) rồi lấy bản thu CC0/MIT cùng loại — WAV 44.1 kHz, cắt clip.
-  * Gói Rên rỉ ưu tiên pack moan Spank (kiểu SlapMac) + Freesound CC0 groan/ouch, không còn còi synth.
-  * Mỗi gói 25–40 tiếng thật. Chọn Rên thì chỉ rên. Dung lượng lớn hơn 3–5 lần để nghe chuẩn.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-  * YouTube keywords (ouch, groan, moan, boing, slap…) mapped to CC0/MIT recordings, cut to clips at 44.1 kHz.
-  * Groan pack leads with Spank moan (SlapMac-style) plus Freesound CC0 ouch/groan — no synth beeps.
-  * 25–40 real clips per pack. Groan mode plays only groans. Package is 3–5× larger for quality.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
- .
- 1.1.0 (2026-09-20)
-  * Âm thanh thật từ internet, không còn synth: Spank pain/moan (kiểu SlapMac), OpenGameArt hurt, Kenney CC0.
-  * Chọn gói Rên rỉ thì CHỈ phát tiếng rên — không lẫn cartoon/game. Combo cũng ở trong gói đang chọn.
-  * Mặc định gói Rên rỉ. Cài lại copy WAV mới (không giữ file synth cũ).
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-  * Real internet recordings, no more synth: Spank pain/moan (SlapMac-style), OpenGameArt hurt, Kenney CC0.
-  * Picking Groan plays ONLY groans — never cartoon/game. Combo stays inside the selected pack.
-  * Default pack is Groan. Reinstall refreshes WAVs so old synth files are replaced.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
- .
- 1.0.1 (2026-09-20)
-  * Gói Rên rỉ viết lại 100%: synthesizer giọng (thanh môn Rosenberg + formant nguyên âm), không còn sine/còi.
-  * 15 tiếng ouch / ahhh / ugh / oof / yeow / rên dài, có tiếng vỗ rồi mới rên — đúng kiểu SlapMac.
-  * Tiếng ngáp trong gói Bất ngờ cũng dùng giọng thật. Test phổ F0 70–350 Hz cho cả 15 file rên.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-  * Groan pack rewritten: glottal-source + vowel formants, not sine beeps.
-  * 15 ouch / ahhh / ugh / oof / yeow / long-moan voices, slap-then-groan timing like SlapMac.
-  * Extra-pack yawn is voiced too. Tests require F0 in 70–350 Hz on all 15 groan files.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-20)
-  * Tweak mới: SlapIos — iPhone rên rỉ / kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi (ý tưởng SlapMac).
-  * Cảm biến gia tốc SpringBoard nhận diện tát, gõ, lắc, rơi và combo 3 phát liên tiếp.
-  * 120 hiệu ứng WAV gốc, 8 gói: Rên rỉ, Hoạt hình, Dễ thương, Va đập, Meme, Nhạc vui, Game, Bất ngờ.
-  * HUD kính hiện tên tiếng, haptic, độ nhạy / âm lượng / cooldown, tôn trọng Silent hoặc luôn kêu.
-  * Preset SlapMac / Cartoon / Cute / Chaos / Yên / Khôi phục. Thư viện 120 tiếng, bấm là nghe thử.
-  * Chỉ inject SpringBoard. Kill-switch .slapios-disable. Gói RootHide + rootless + rootful.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-  * New tweak: SlapIos — the iPhone groans / cheers when slapped, tapped, shaken or dropped (SlapMac idea).
-  * SpringBoard accelerometer classifies slap, tap, shake, drop and a 3-hit combo.
-  * 120 original WAV effects in 8 packs: Groan, Cartoon, Cute, Smash, Meme, Music, Game, Extra.
-  * Glass HUD names the sound, haptics, sensitivity / volume / cooldown, Silent-aware or always-on.
-  * Presets: SlapMac / Cartoon / Cute / Chaos / Quiet / Reset. Tap-to-preview library of all 120.
-  * SpringBoard only. Kill-switch .slapios-disable. RootHide + rootless + rootful packages.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: SlapIos
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
-
-Package: com.jinkennguyen.slapios
-Version: 1.2.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 21588
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.slapios_1.2.0_iphoneos-arm64e.deb
+Filename: debs/roothide/com.jinkennguyen.slapios_1.2.0_iphoneos-arm64e.deb
 Size: 13844644
 MD5sum: 377411a7d505176e3d174ac62f5978d7
 SHA1: cec13a3ff6ae0dfdaa9e48d8b75da30f8677b195
 SHA256: 3f1d8c96d739cc5fb5a489096968ec33b1478fdef56bbc29be12a1d60bb282ff
-Section: Tweaks
-Description: SlapIos 1.2.0 — slap your iPhone, it groans. Credit: Jinken Nguyen - 1989.
- iPhone kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi. 120 hiệu ứng, 8 gói tiếng.
- SlapMac-style comedy: accelerometer detects slaps and plays 120 original sounds.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.2.0 (2026-09-20)
-  * Tìm đúng từ khóa YouTube (ouch, groan, moan, boing, slap…) rồi lấy bản thu CC0/MIT cùng loại — WAV 44.1 kHz, cắt clip.
-  * Gói Rên rỉ ưu tiên pack moan Spank (kiểu SlapMac) + Freesound CC0 groan/ouch, không còn còi synth.
-  * Mỗi gói 25–40 tiếng thật. Chọn Rên thì chỉ rên. Dung lượng lớn hơn 3–5 lần để nghe chuẩn.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-  * YouTube keywords (ouch, groan, moan, boing, slap…) mapped to CC0/MIT recordings, cut to clips at 44.1 kHz.
-  * Groan pack leads with Spank moan (SlapMac-style) plus Freesound CC0 ouch/groan — no synth beeps.
-  * 25–40 real clips per pack. Groan mode plays only groans. Package is 3–5× larger for quality.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
- .
- 1.1.0 (2026-09-20)
-  * Âm thanh thật từ internet, không còn synth: Spank pain/moan (kiểu SlapMac), OpenGameArt hurt, Kenney CC0.
-  * Chọn gói Rên rỉ thì CHỈ phát tiếng rên — không lẫn cartoon/game. Combo cũng ở trong gói đang chọn.
-  * Mặc định gói Rên rỉ. Cài lại copy WAV mới (không giữ file synth cũ).
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-  * Real internet recordings, no more synth: Spank pain/moan (SlapMac-style), OpenGameArt hurt, Kenney CC0.
-  * Picking Groan plays ONLY groans — never cartoon/game. Combo stays inside the selected pack.
-  * Default pack is Groan. Reinstall refreshes WAVs so old synth files are replaced.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
- .
- 1.0.1 (2026-09-20)
-  * Gói Rên rỉ viết lại 100%: synthesizer giọng (thanh môn Rosenberg + formant nguyên âm), không còn sine/còi.
-  * 15 tiếng ouch / ahhh / ugh / oof / yeow / rên dài, có tiếng vỗ rồi mới rên — đúng kiểu SlapMac.
-  * Tiếng ngáp trong gói Bất ngờ cũng dùng giọng thật. Test phổ F0 70–350 Hz cho cả 15 file rên.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-  * Groan pack rewritten: glottal-source + vowel formants, not sine beeps.
-  * 15 ouch / ahhh / ugh / oof / yeow / long-moan voices, slap-then-groan timing like SlapMac.
-  * Extra-pack yawn is voiced too. Tests require F0 in 70–350 Hz on all 15 groan files.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-20)
-  * Tweak mới: SlapIos — iPhone rên rỉ / kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi (ý tưởng SlapMac).
-  * Cảm biến gia tốc SpringBoard nhận diện tát, gõ, lắc, rơi và combo 3 phát liên tiếp.
-  * 120 hiệu ứng WAV gốc, 8 gói: Rên rỉ, Hoạt hình, Dễ thương, Va đập, Meme, Nhạc vui, Game, Bất ngờ.
-  * HUD kính hiện tên tiếng, haptic, độ nhạy / âm lượng / cooldown, tôn trọng Silent hoặc luôn kêu.
-  * Preset SlapMac / Cartoon / Cute / Chaos / Yên / Khôi phục. Thư viện 120 tiếng, bấm là nghe thử.
-  * Chỉ inject SpringBoard. Kill-switch .slapios-disable. Gói RootHide + rootless + rootful.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-  * New tweak: SlapIos — the iPhone groans / cheers when slapped, tapped, shaken or dropped (SlapMac idea).
-  * SpringBoard accelerometer classifies slap, tap, shake, drop and a 3-hit combo.
-  * 120 original WAV effects in 8 packs: Groan, Cartoon, Cute, Smash, Meme, Music, Game, Extra.
-  * Glass HUD names the sound, haptics, sensitivity / volume / cooldown, Silent-aware or always-on.
-  * Presets: SlapMac / Cartoon / Cute / Chaos / Quiet / Reset. Tap-to-preview library of all 120.
-  * SpringBoard only. Kill-switch .slapios-disable. RootHide + rootless + rootful packages.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: SlapIos
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
-
-Package: com.jinkennguyen.slapios
-Version: 1.2.0
-Architecture: iphoneos-arm64
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 21588
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.slapios_1.2.0_iphoneos-arm64.deb
-Size: 13846696
-MD5sum: 19cefa04aeadbd07891ee03e7b5326df
-SHA1: 43e0e32241826111600237f41e5834b9bd46a3bd
-SHA256: f74d898374a8673e06189f67485a21ebfe67e98901195855344399f4bf3b9371
 Section: Tweaks
 Description: SlapIos 1.2.0 — slap your iPhone, it groans. Credit: Jinken Nguyen - 1989.
  iPhone kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi. 120 hiệu ứng, 8 gói tiếng.

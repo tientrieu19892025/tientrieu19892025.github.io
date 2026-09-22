@@ -33,6 +33,39 @@ ARCH_LABEL = {
     "iphoneos-arm64e": "RootHide",
 }
 
+ARCH_DIR = {
+    "iphoneos-arm": "rootful",
+    "iphoneos-arm64": "rootless",
+    "iphoneos-arm64e": "roothide",
+}
+
+KIND_GUIDES = [
+    {
+        "id": "rootless",
+        "arch": "iphoneos-arm64",
+        "title": "Rootless",
+        "who": "Dopamine (mặc định), palera1n rootless",
+        "how": "Máy có thư mục /var/jb. Đây là Dopamine thông thường, không phải RootHide.",
+        "file": "file .deb kết thúc bằng _iphoneos-arm64.deb",
+    },
+    {
+        "id": "rootful",
+        "arch": "iphoneos-arm",
+        "title": "Rootful",
+        "who": "unc0ver, checkra1n, palera1n rootful, Taurine, Odyssey",
+        "how": "Không có /var/jb. Tweak nằm ở /Library/MobileSubstrate.",
+        "file": "file .deb kết thúc bằng _iphoneos-arm.deb",
+    },
+    {
+        "id": "roothide",
+        "arch": "iphoneos-arm64e",
+        "title": "RootHide",
+        "who": "Dopamine RootHide, RootHide Bootstrap",
+        "how": "Jailbreak ẩn đường dẫn (jbroot). Sileo/Zebra của bản RootHide.",
+        "file": "file .deb kết thúc bằng _iphoneos-arm64e.deb",
+    },
+]
+
 BLURBS = {
     "com.jinkennguyen.adshield": (
         "Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.",
@@ -602,18 +635,188 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
     return out
 
 
+SITE_CSS = """
+:root {
+  --bg:#07080f; --card:#101826cc; --line:rgba(255,255,255,.1);
+  --text:#eef2ff; --muted:#93c5fd; --accent:#38bdf8; --good:#34d399;
+}
+* {box-sizing:border-box}
+body {
+  margin:0; font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
+  background:var(--bg); color:var(--text);
+}
+.hero {
+  position:relative; min-height:220px; padding:40px 20px 28px;
+  background:var(--hero, url("../assets/banner.jpg")) center/cover no-repeat;
+}
+.hero.home { --hero: url("assets/banner.jpg"); min-height:280px; }
+.hero::after {
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(7,8,15,.25), rgba(7,8,15,.92));
+}
+.hero-inner {position:relative; z-index:1; max-width:980px; margin:0 auto}
+.badge {
+  display:inline-block; padding:4px 10px; border-radius:999px;
+  border:1px solid rgba(56,189,248,.4); color:var(--accent); font-size:12px;
+  letter-spacing:.08em; text-transform:uppercase;
+}
+h1 {font-size:clamp(26px,5vw,44px); margin:12px 0 6px}
+.sub {color:var(--muted); max-width:720px}
+.wrap {max-width:980px; margin:0 auto; padding:0 20px 64px}
+.row {display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 8px}
+.btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:650;
+  border:1px solid var(--line); color:var(--text); background:#0b1220aa;
+}
+.btn.primary {background:var(--accent); color:#042033; border-color:transparent}
+.grid {display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; margin-top:18px}
+.card {
+  background:var(--card); backdrop-filter:blur(16px);
+  border:1px solid var(--line); border-radius:16px; padding:16px;
+}
+.card h3 {margin:0 0 4px; font-size:18px}
+.meta {color:var(--muted); font-size:13px; margin:0 0 8px}
+.en {color:#cbd5e1; font-size:14px}
+.more {color:var(--accent); text-decoration:none; font-weight:600; margin-right:12px}
+.donate {
+  display:grid; grid-template-columns:180px 1fr; gap:20px; align-items:center;
+}
+.donate img {width:180px; background:#fff; border-radius:12px}
+.copy {
+  cursor:pointer; border:1px dashed rgba(56,189,248,.5); border-radius:10px;
+  padding:8px 10px; display:inline-block; margin:4px 0; color:var(--accent);
+}
+h2 {margin:36px 0 10px}
+ol.steps {padding-left:1.2em}
+ol.steps li {margin:6px 0}
+footer {color:#64748b; font-size:13px; margin-top:40px}
+code.src, code.file {
+  display:block; background:#0b1220; border-radius:10px; padding:10px 12px;
+  overflow:auto; color:#7dd3fc; margin:8px 0 16px;
+}
+@media (max-width:640px) { .donate {grid-template-columns:1fr} }
+"""
+
+
+def write_kind_pages(packages: dict[str, dict], conf: dict) -> None:
+    for kind in KIND_GUIDES:
+        cards = []
+        for pkg, info in sorted(packages.items(), key=lambda kv: kv[1]["Name"].lower()):
+            href = info.get("files", {}).get(kind["arch"])
+            if not href:
+                continue
+            vi, _en = BLURBS.get(pkg, (info.get("blurb", ""), ""))
+            fname = href.rsplit("/", 1)[-1]
+            cards.append(
+                f"""
+<article class="card">
+  <h3>{html_escape(info['Name'])} {html_escape(info['Version'])}</h3>
+  <p>{html_escape(vi)}</p>
+  <code class="file">{html_escape(fname)}</code>
+  <a class="more" href="../{html_escape(href)}">Tải .deb</a>
+  <a class="more" href="../depictions/{html_escape(pkg)}/">Chi tiết</a>
+</article>"""
+            )
+        (ROOT / kind["id"]).mkdir(parents=True, exist_ok=True)
+        (ROOT / "debs" / kind["id"]).mkdir(parents=True, exist_ok=True)
+        (ROOT / "debs" / kind["id"] / "README.md").write_text(
+            f"""# {kind['title']}
+
+Chỉ tải file trong thư mục này nếu máy của bạn là **{kind['title']}**.
+
+- Dùng cho: {kind['who']}
+- Nhận biết: {kind['how']}
+- File: {kind['file']}
+
+Cài: tải `.deb` → Filza → mở file → Cài đặt → Respring.
+
+Sileo/Zebra: thêm `{conf['BASE_URL']}` — app tự chọn đúng loại, không cần tải tay.
+
+Credit: Jinken Nguyen - 1989
+""",
+            encoding="utf-8",
+        )
+        html = f"""<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html_escape(kind['title'])} — Jinken Repo</title>
+<link rel="icon" href="../CydiaIcon.png">
+<style>{SITE_CSS}</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <span class="badge">{html_escape(kind['title'])} · {html_escape(kind['arch'])}</span>
+    <h1>{html_escape(kind['title'])}</h1>
+    <p class="sub">Chỉ dùng thư mục này nếu máy của bạn đúng loại. Cài nhầm rootful/rootless/RootHide thì tweak không chạy.</p>
+    <div class="row">
+      <a class="btn" href="../">← Về repo</a>
+      <a class="btn primary" href="#files">Tải tweak</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <h2>Máy nào dùng {html_escape(kind['title'])}?</h2>
+  <div class="card">
+    <p><strong>Dùng cho:</strong> {html_escape(kind['who'])}</p>
+    <p><strong>Cách nhận biết:</strong> {html_escape(kind['how'])}</p>
+    <p><strong>File đúng:</strong> {html_escape(kind['file'])}</p>
+    <p class="en">Do not mix folders. Rootless ≠ RootHide ≠ Rootful.</p>
+  </div>
+  <h2>Cài bằng tay (Filza)</h2>
+  <ol class="steps">
+    <li>Xác nhận máy đúng loại <strong>{html_escape(kind['title'])}</strong> ở trên.</li>
+    <li>Bấm <strong>Tải .deb</strong> của tweak bên dưới (Safari trên iPhone).</li>
+    <li>Mở <strong>Filza</strong> → file vừa tải → <strong>Cài đặt</strong>.</li>
+    <li><strong>Respring</strong>. Mở Cài đặt → tên tweak.</li>
+  </ol>
+  <p>Hoặc thêm source Sileo <code>{html_escape(conf['BASE_URL'])}</code> — Sileo tự lấy đúng loại, không cần chọn file.</p>
+  <h2 id="files">Tweaks {html_escape(kind['title'])}</h2>
+  <div class="grid">{''.join(cards) if cards else '<p>Chưa có gói.</p>'}</div>
+  <p><a class="more" href="../rootless/">Rootless</a> · <a class="more" href="../rootful/">Rootful</a> · <a class="more" href="../roothide/">RootHide</a></p>
+  <footer>Credit: Jinken Nguyen - 1989 · Donate: {html_escape(conf['DONATE_BANK'])} {html_escape(conf['DONATE_ACCOUNT'])}</footer>
+</main>
+</body>
+</html>
+"""
+        (ROOT / kind["id"] / "index.html").write_text(html, encoding="utf-8")
+
+
 def write_index(packages: dict[str, dict], conf: dict) -> None:
-    cards = []
+    write_kind_pages(packages, conf)
+    kind_cards = []
+    for kind in KIND_GUIDES:
+        n = sum(1 for info in packages.values() if kind["arch"] in info.get("files", {}))
+        kind_cards.append(
+            f"""
+<article class="card">
+  <h3>{html_escape(kind['title'])}</h3>
+  <p class="meta">{html_escape(kind['arch'])} · {n} tweak</p>
+  <p><strong>Máy:</strong> {html_escape(kind['who'])}</p>
+  <p>{html_escape(kind['how'])}</p>
+  <p class="en">{html_escape(kind['file'])}</p>
+  <a class="more" href="{html_escape(kind['id'])}/">Mở thư mục {html_escape(kind['title'])} →</a>
+</article>"""
+        )
+    tweak_cards = []
     for pkg, info in sorted(packages.items(), key=lambda kv: kv[1]["Name"].lower()):
-        arches = " · ".join(ARCH_LABEL.get(a, a) for a in info["archs"])
         vi, en = BLURBS.get(pkg, (info.get("blurb", ""), ""))
-        cards.append(
+        links = []
+        for kind in KIND_GUIDES:
+            href = info.get("files", {}).get(kind["arch"])
+            if href:
+                links.append(f'<a class="more" href="{html_escape(href)}">{html_escape(kind["title"])}</a>')
+        tweak_cards.append(
             f"""
 <article class="card">
   <h3>{html_escape(info['Name'])}</h3>
-  <p class="meta">{html_escape(info['Version'])} · {html_escape(arches)}</p>
+  <p class="meta">{html_escape(info['Version'])}</p>
   <p>{html_escape(vi)}</p>
   <p class="en">{html_escape(en)}</p>
+  <p>Tải đúng loại máy: {' '.join(links)}</p>
   <a class="more" href="depictions/{html_escape(pkg)}/">Chi tiết</a>
 </article>"""
         )
@@ -623,101 +826,58 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jinken Repo — Jinken Nguyen - 1989</title>
-<meta name="description" content="Cydia / Sileo / Zebra repo. Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 Nguyễn Tiến Triều.">
+<meta name="description" content="Cydia / Sileo / Zebra repo. Rootless, rootful, RootHide. Credit: Jinken Nguyen - 1989.">
 <link rel="icon" href="CydiaIcon.png">
-<style>
-:root {{
-  --bg:#07080f; --card:#101826cc; --line:rgba(255,255,255,.1);
-  --text:#eef2ff; --muted:#93c5fd; --accent:#38bdf8; --good:#34d399;
-}}
-* {{box-sizing:border-box}}
-body {{
-  margin:0; font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
-  background:var(--bg); color:var(--text);
-}}
-.hero {{
-  position:relative; min-height:280px; padding:48px 20px 32px;
-  background:url("assets/banner.jpg") center/cover no-repeat;
-}}
-.hero::after {{
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(7,8,15,.25), rgba(7,8,15,.92));
-}}
-.hero-inner {{position:relative; z-index:1; max-width:980px; margin:0 auto}}
-.badge {{
-  display:inline-block; padding:4px 10px; border-radius:999px;
-  border:1px solid rgba(56,189,248,.4); color:var(--accent); font-size:12px;
-  letter-spacing:.08em; text-transform:uppercase;
-}}
-h1 {{font-size:clamp(28px,5vw,44px); margin:12px 0 6px}}
-.sub {{color:var(--muted); max-width:640px}}
-.wrap {{max-width:980px; margin:0 auto; padding:0 20px 64px}}
-.row {{display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 8px}}
-.btn {{
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:650;
-  border:1px solid var(--line); color:var(--text); background:#0b1220aa;
-}}
-.btn.primary {{background:var(--accent); color:#042033; border-color:transparent}}
-.grid {{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; margin-top:18px}}
-.card {{
-  background:var(--card); backdrop-filter:blur(16px);
-  border:1px solid var(--line); border-radius:16px; padding:16px;
-}}
-.card h3 {{margin:0 0 4px; font-size:18px}}
-.meta {{color:var(--muted); font-size:13px; margin:0 0 8px}}
-.en {{color:#cbd5e1; font-size:14px}}
-.more {{color:var(--accent); text-decoration:none; font-weight:600}}
-.donate {{
-  display:grid; grid-template-columns:180px 1fr; gap:20px; align-items:center;
-}}
-.donate img {{width:180px; background:#fff; border-radius:12px}}
-.copy {{
-  cursor:pointer; border:1px dashed rgba(56,189,248,.5); border-radius:10px;
-  padding:8px 10px; display:inline-block; margin:4px 0; color:var(--accent);
-}}
-h2 {{margin:36px 0 10px}}
-footer {{color:#64748b; font-size:13px; margin-top:40px}}
-code.src {{
-  display:block; background:#0b1220; border-radius:10px; padding:10px 12px;
-  overflow:auto; color:#7dd3fc; margin:8px 0 16px;
-}}
-@media (max-width:640px) {{
-  .donate {{grid-template-columns:1fr}}
-}}
-</style>
+<style>{SITE_CSS}</style>
 </head>
 <body>
-<header class="hero">
+<header class="hero home">
   <div class="hero-inner">
     <span class="badge">Cydia · Sileo · Zebra</span>
     <h1>Jinken Repo</h1>
-    <p class="sub">Tweaks jailbreak bởi <strong>Jinken Nguyen - 1989</strong>. Rootless, rootful và RootHide. Miễn phí — cảm ơn bạn đã dùng. Nếu thích, một chút ủng hộ giúp mình làm tiếp.</p>
+    <p class="sub">Tweaks bởi <strong>Jinken Nguyen - 1989</strong>. Chia 3 thư mục: Rootless, Rootful, RootHide — tải đúng loại máy. Sileo tự chọn nếu thêm source.</p>
     <div class="row">
-      <a class="btn primary" id="add-sileo" href="#">Thêm vào Sileo</a>
-      <a class="btn" id="add-zebra" href="#">Thêm vào Zebra</a>
+      <a class="btn primary" href="rootless/">Rootless</a>
+      <a class="btn primary" href="rootful/">Rootful</a>
+      <a class="btn primary" href="roothide/">RootHide</a>
+      <a class="btn" id="add-sileo" href="#">Thêm Sileo</a>
       <a class="btn" href="#donate">Donate</a>
     </div>
   </div>
 </header>
 <main class="wrap">
-  <h2>Thêm source</h2>
-  <p>Sileo / Zebra / Cydia → Sources → + → dán URL:</p>
-  <code class="src" id="source-url">{html_escape(conf['BASE_URL'])}</code>
-  <p>Sileo / Zebra tự chọn gói đúng máy: rootless, rootful hay RootHide — không cần chọn file.</p>
-  <p class="en">Sileo / Zebra install the matching build for your jailbreak (rootless, rootful, or RootHide). You do not pick a file.</p>
+  <h2>Chọn đúng loại máy</h2>
+  <p>Cài nhầm loại thì tweak không chạy. Mở đúng thư mục, chỉ tải file trong đó.</p>
+  <div class="grid">{''.join(kind_cards)}</div>
 
-  <h2>Tweaks</h2>
-  <div class="grid">
-    {''.join(cards)}
+  <h2>Cách nhận biết máy</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><strong>Rootless</strong> — Dopamine thường, palera1n rootless. Có <code>/var/jb</code>.</li>
+      <li><strong>Rootful</strong> — unc0ver, checkra1n, palera1n rootful. Không có <code>/var/jb</code>.</li>
+      <li><strong>RootHide</strong> — Dopamine RootHide / Bootstrap. Jailbreak ẩn jbroot, file <code>iphoneos-arm64e</code>.</li>
+    </ol>
+    <p>Không chắc? Thêm source Sileo bên dưới — app tự lấy đúng gói, không cần chọn file.</p>
   </div>
+
+  <h2>Thêm source Sileo / Zebra</h2>
+  <p>Sources → + → dán URL:</p>
+  <code class="src" id="source-url">{html_escape(conf['BASE_URL'])}</code>
+
+  <h2>Cài bằng Filza (tải tay)</h2>
+  <ol class="steps">
+    <li>Chọn thư mục Rootless / Rootful / RootHide đúng máy.</li>
+    <li>Tải file <code>.deb</code> của tweak.</li>
+    <li>Filza → mở file → Cài đặt → Respring.</li>
+  </ol>
+
+  <h2>Tất cả tweak</h2>
+  <div class="grid">{''.join(tweak_cards)}</div>
 
   <h2 id="credit">Credit</h2>
   <div class="card">
     <p><strong>Tác giả / Author:</strong> Jinken Nguyen - 1989</p>
-    <p><strong>Maintainer:</strong> Jinken Nguyen - 1989</p>
-    <p>Mọi tweak trong repo này do Jinken Nguyen - 1989 phát triển. Không liên kết với Apple.</p>
-    <p class="en">All tweaks in this repo are by Jinken Nguyen - 1989. Not affiliated with Apple.</p>
+    <p>Mọi tweak do Jinken Nguyen - 1989 phát triển. Không liên kết với Apple.</p>
   </div>
 
   <h2 id="donate">Donate</h2>
@@ -725,26 +885,19 @@ code.src {{
     <img src="assets/vietqr.png" alt="VietQR MB Bank 0345140889 Nguyễn Tiến Triều">
     <div>
       <p>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.</p>
-      <p class="en">Thank you for using these free tweaks. A small donation keeps the repo online. No pressure — using them already means a lot.</p>
       <p><strong>Ngân hàng:</strong> {html_escape(conf['DONATE_BANK'])}<br>
       <strong>Chủ TK:</strong> {html_escape(conf['DONATE_NAME'])}<br>
       <strong>STK:</strong> <span class="copy" data-copy="{html_escape(conf['DONATE_ACCOUNT'])}">{html_escape(conf['DONATE_ACCOUNT'])} · copy</span><br>
       <strong>Nội dung:</strong> <span class="copy" data-copy="Donate Jinken Nguyen {html_escape(conf['YEAR'])}">Donate Jinken Nguyen {html_escape(conf['YEAR'])} · copy</span></p>
-      <p class="en">MB Bank · {html_escape(conf['DONATE_ACCOUNT'])} · {html_escape(conf['DONATE_NAME_ASCII'])}</p>
     </div>
   </div>
-
-  <footer>
-    Credit: Jinken Nguyen - 1989 · Donate: {html_escape(conf['DONATE_BANK'])} {html_escape(conf['DONATE_ACCOUNT'])} {html_escape(conf['DONATE_NAME'])}<br>
-    MIT License · iOS 14+ · rootless / rootful / RootHide
-  </footer>
+  <footer>Credit: Jinken Nguyen - 1989 · Donate: {html_escape(conf['DONATE_BANK'])} {html_escape(conf['DONATE_ACCOUNT'])} {html_escape(conf['DONATE_NAME'])}</footer>
 </main>
 <script>
 const base = location.origin + location.pathname.replace(/index\\.html$/, "").replace(/\\/$/, "");
 const src = base + "/";
 document.getElementById("source-url").textContent = src;
 document.getElementById("add-sileo").href = "sileo://source/" + src;
-document.getElementById("add-zebra").href = "zbra://sources/add/" + src;
 document.querySelectorAll(".copy").forEach(el => {{
   el.addEventListener("click", async () => {{
     try {{
@@ -787,15 +940,17 @@ Cảm ơn bạn đã dùng tweak. Nếu thấy hữu ích, một chút ủng h�
 - Zebra: `zbra://sources/add/{conf['BASE_URL']}/`
 - Cydia: Sources → Edit → Add
 
-Sileo / Zebra pick the right build automatically:
+Chọn **đúng thư mục** rồi tải. Cài nhầm loại thì tweak không chạy.
 
-| Device | Architecture | Jailbreak |
+| Thư mục | File | Máy |
 | --- | --- | --- |
-| Rootless | `iphoneos-arm64` | Dopamine, palera1n rootless |
-| Rootful | `iphoneos-arm` | unc0ver, checkra1n, palera1n rootful |
-| RootHide | `iphoneos-arm64e` | Dopamine-roothide / RootHide Bootstrap |
+| [rootless/](rootless/) | `_iphoneos-arm64.deb` | Dopamine, palera1n rootless (`/var/jb`) |
+| [rootful/](rootful/) | `_iphoneos-arm.deb` | unc0ver, checkra1n, palera1n rootful |
+| [roothide/](roothide/) | `_iphoneos-arm64e.deb` | Dopamine RootHide / RootHide Bootstrap |
 
-Do not install a `.deb` by hand unless you know your jailbreak type.
+Deb files: [`debs/rootless/`](debs/rootless/), [`debs/rootful/`](debs/rootful/), [`debs/roothide/`](debs/roothide/).
+
+Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 
 ## Packages
 
@@ -825,7 +980,7 @@ VietQR: scan the code on the [homepage]({conf['BASE_URL']}/#donate).
 
 ## Upload a new `.deb`
 
-1. Drop files into `debs/` using `package_version_architecture.deb`
+1. Drop files into `debs/rootless/`, `debs/rootful/` or `debs/roothide/`
 2. Run `python3 scripts/update-repo.py`
 3. `git add -A && git commit -m "Add tweak" && git push`
 
@@ -879,10 +1034,12 @@ def main() -> int:
         fields = dpkg_fields(src)
         ver = fields["Version"]
         dest_name = f"{pkg}_{ver}_{arch}.deb"
-        dest = debs_dir / dest_name
+        folder = ARCH_DIR.get(arch, arch)
+        dest = debs_dir / folder / dest_name
+        dest.parent.mkdir(parents=True, exist_ok=True)
         if src.resolve() != dest.resolve():
             shutil.copy2(src, dest)
-        keep_debs.add(dest_name)
+        keep_debs.add(f"{folder}/{dest_name}")
         info = packages.setdefault(
             pkg,
             {
@@ -890,6 +1047,7 @@ def main() -> int:
                 "Version": ver,
                 "Section": fields.get("Section", "Tweaks"),
                 "archs": [],
+                "files": {},
                 "blurb": fields.get("Description", "").split("\n", 1)[0],
                 "fields": fields,
             },
@@ -897,6 +1055,7 @@ def main() -> int:
         if arch not in info["archs"]:
             info["archs"].append(arch)
         info["archs"].sort()
+        info["files"][arch] = f"debs/{folder}/{dest_name}"
 
         icon = find_icon(pkg)
         if icon:
@@ -905,8 +1064,9 @@ def main() -> int:
             except Exception as exc:
                 print(f"icon skip {pkg}: {exc}")
 
-    for leftover in debs_dir.glob("*.deb"):
-        if leftover.name not in keep_debs:
+    for leftover in debs_dir.rglob("*.deb"):
+        rel = leftover.relative_to(debs_dir).as_posix()
+        if rel not in keep_debs:
             leftover.unlink()
     for leftover in extras.glob("*"):
         leftover.unlink()
@@ -933,19 +1093,23 @@ def main() -> int:
             encoding="utf-8",
         )
 
-    # Packages index
-    proc = subprocess.run(
-        ["dpkg-scanpackages", "-m", "debs", "/dev/null"],
-        cwd=ROOT,
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    raw = proc.stderr
-    if raw:
-        sys.stderr.write(raw)
-
-    blocks = [b for b in proc.stdout.strip().split("\n\n") if b.strip()]
+    # Packages index — scan each jailbreak folder so Filename is debs/rootless/...
+    scan_out = []
+    for folder in ("rootful", "rootless", "roothide"):
+        scan_dir = debs_dir / folder
+        if not scan_dir.is_dir() or not any(scan_dir.glob("*.deb")):
+            continue
+        proc = subprocess.run(
+            ["dpkg-scanpackages", "-m", f"debs/{folder}", "/dev/null"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        if proc.stderr:
+            sys.stderr.write(proc.stderr)
+        scan_out.append(proc.stdout.strip())
+    blocks = [b for b in "\n\n".join(scan_out).split("\n\n") if b.strip()]
     rewritten = []
     for block in blocks:
         lines = []

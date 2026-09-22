@@ -17,15 +17,17 @@ https://tientrieu19892025.github.io
 - Zebra: `zbra://sources/add/https://tientrieu19892025.github.io/`
 - Cydia: Sources → Edit → Add
 
-Sileo / Zebra pick the right build automatically:
+Chọn **đúng thư mục** rồi tải. Cài nhầm loại thì tweak không chạy.
 
-| Device | Architecture | Jailbreak |
+| Thư mục | File | Máy |
 | --- | --- | --- |
-| Rootless | `iphoneos-arm64` | Dopamine, palera1n rootless |
-| Rootful | `iphoneos-arm` | unc0ver, checkra1n, palera1n rootful |
-| RootHide | `iphoneos-arm64e` | Dopamine-roothide / RootHide Bootstrap |
+| [rootless/](rootless/) | `_iphoneos-arm64.deb` | Dopamine, palera1n rootless (`/var/jb`) |
+| [rootful/](rootful/) | `_iphoneos-arm.deb` | unc0ver, checkra1n, palera1n rootful |
+| [roothide/](roothide/) | `_iphoneos-arm64e.deb` | Dopamine RootHide / RootHide Bootstrap |
 
-Do not install a `.deb` by hand unless you know your jailbreak type.
+Deb files: [`debs/rootless/`](debs/rootless/), [`debs/rootful/`](debs/rootful/), [`debs/roothide/`](debs/roothide/).
+
+Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 
 ## Packages
 
@@ -60,7 +62,7 @@ VietQR: scan the code on the [homepage](https://tientrieu19892025.github.io/#don
 
 ## Upload a new `.deb`
 
-1. Drop files into `debs/` using `package_version_architecture.deb`
+1. Drop files into `debs/rootless/`, `debs/rootful/` or `debs/roothide/`
 2. Run `python3 scripts/update-repo.py`
 3. `git add -A && git commit -m "Add tweak" && git push`
 

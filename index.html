@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jinken Repo — Jinken Nguyen - 1989</title>
-<meta name="description" content="Cydia / Sileo / Zebra repo. Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 Nguyễn Tiến Triều.">
+<meta name="description" content="Cydia / Sileo / Zebra repo. Rootless, rootful, RootHide. Credit: Jinken Nguyen - 1989.">
 <link rel="icon" href="CydiaIcon.png">
 <style>
 :root {
@@ -17,9 +17,10 @@ body {
   background:var(--bg); color:var(--text);
 }
 .hero {
-  position:relative; min-height:280px; padding:48px 20px 32px;
-  background:url("assets/banner.jpg") center/cover no-repeat;
+  position:relative; min-height:220px; padding:40px 20px 28px;
+  background:var(--hero, url("../assets/banner.jpg")) center/cover no-repeat;
 }
+.hero.home { --hero: url("assets/banner.jpg"); min-height:280px; }
 .hero::after {
   content:""; position:absolute; inset:0;
   background:linear-gradient(180deg, rgba(7,8,15,.25), rgba(7,8,15,.92));
@@ -30,8 +31,8 @@ body {
   border:1px solid rgba(56,189,248,.4); color:var(--accent); font-size:12px;
   letter-spacing:.08em; text-transform:uppercase;
 }
-h1 {font-size:clamp(28px,5vw,44px); margin:12px 0 6px}
-.sub {color:var(--muted); max-width:640px}
+h1 {font-size:clamp(26px,5vw,44px); margin:12px 0 6px}
+.sub {color:var(--muted); max-width:720px}
 .wrap {max-width:980px; margin:0 auto; padding:0 20px 64px}
 .row {display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 8px}
 .btn {
@@ -48,7 +49,7 @@ h1 {font-size:clamp(28px,5vw,44px); margin:12px 0 6px}
 .card h3 {margin:0 0 4px; font-size:18px}
 .meta {color:var(--muted); font-size:13px; margin:0 0 8px}
 .en {color:#cbd5e1; font-size:14px}
-.more {color:var(--accent); text-decoration:none; font-weight:600}
+.more {color:var(--accent); text-decoration:none; font-weight:600; margin-right:12px}
 .donate {
   display:grid; grid-template-columns:180px 1fr; gap:20px; align-items:center;
 }
@@ -58,89 +59,136 @@ h1 {font-size:clamp(28px,5vw,44px); margin:12px 0 6px}
   padding:8px 10px; display:inline-block; margin:4px 0; color:var(--accent);
 }
 h2 {margin:36px 0 10px}
+ol.steps {padding-left:1.2em}
+ol.steps li {margin:6px 0}
 footer {color:#64748b; font-size:13px; margin-top:40px}
-code.src {
+code.src, code.file {
   display:block; background:#0b1220; border-radius:10px; padding:10px 12px;
   overflow:auto; color:#7dd3fc; margin:8px 0 16px;
 }
-@media (max-width:640px) {
-  .donate {grid-template-columns:1fr}
-}
+@media (max-width:640px) { .donate {grid-template-columns:1fr} }
 </style>
 </head>
 <body>
-<header class="hero">
+<header class="hero home">
   <div class="hero-inner">
     <span class="badge">Cydia · Sileo · Zebra</span>
     <h1>Jinken Repo</h1>
-    <p class="sub">Tweaks jailbreak bởi <strong>Jinken Nguyen - 1989</strong>. Rootless, rootful và RootHide. Miễn phí — cảm ơn bạn đã dùng. Nếu thích, một chút ủng hộ giúp mình làm tiếp.</p>
+    <p class="sub">Tweaks bởi <strong>Jinken Nguyen - 1989</strong>. Chia 3 thư mục: Rootless, Rootful, RootHide — tải đúng loại máy. Sileo tự chọn nếu thêm source.</p>
     <div class="row">
-      <a class="btn primary" id="add-sileo" href="#">Thêm vào Sileo</a>
-      <a class="btn" id="add-zebra" href="#">Thêm vào Zebra</a>
+      <a class="btn primary" href="rootless/">Rootless</a>
+      <a class="btn primary" href="rootful/">Rootful</a>
+      <a class="btn primary" href="roothide/">RootHide</a>
+      <a class="btn" id="add-sileo" href="#">Thêm Sileo</a>
       <a class="btn" href="#donate">Donate</a>
     </div>
   </div>
 </header>
 <main class="wrap">
-  <h2>Thêm source</h2>
-  <p>Sileo / Zebra / Cydia → Sources → + → dán URL:</p>
-  <code class="src" id="source-url">https://tientrieu19892025.github.io</code>
-  <p>Sileo / Zebra tự chọn gói đúng máy: rootless, rootful hay RootHide — không cần chọn file.</p>
-  <p class="en">Sileo / Zebra install the matching build for your jailbreak (rootless, rootful, or RootHide). You do not pick a file.</p>
-
-  <h2>Tweaks</h2>
+  <h2>Chọn đúng loại máy</h2>
+  <p>Cài nhầm loại thì tweak không chạy. Mở đúng thư mục, chỉ tải file trong đó.</p>
   <div class="grid">
-    
+<article class="card">
+  <h3>Rootless</h3>
+  <p class="meta">iphoneos-arm64 · 6 tweak</p>
+  <p><strong>Máy:</strong> Dopamine (mặc định), palera1n rootless</p>
+  <p>Máy có thư mục /var/jb. Đây là Dopamine thông thường, không phải RootHide.</p>
+  <p class="en">file .deb kết thúc bằng _iphoneos-arm64.deb</p>
+  <a class="more" href="rootless/">Mở thư mục Rootless →</a>
+</article>
+<article class="card">
+  <h3>Rootful</h3>
+  <p class="meta">iphoneos-arm · 6 tweak</p>
+  <p><strong>Máy:</strong> unc0ver, checkra1n, palera1n rootful, Taurine, Odyssey</p>
+  <p>Không có /var/jb. Tweak nằm ở /Library/MobileSubstrate.</p>
+  <p class="en">file .deb kết thúc bằng _iphoneos-arm.deb</p>
+  <a class="more" href="rootful/">Mở thư mục Rootful →</a>
+</article>
+<article class="card">
+  <h3>RootHide</h3>
+  <p class="meta">iphoneos-arm64e · 6 tweak</p>
+  <p><strong>Máy:</strong> Dopamine RootHide, RootHide Bootstrap</p>
+  <p>Jailbreak ẩn đường dẫn (jbroot). Sileo/Zebra của bản RootHide.</p>
+  <p class="en">file .deb kết thúc bằng _iphoneos-arm64e.deb</p>
+  <a class="more" href="roothide/">Mở thư mục RootHide →</a>
+</article></div>
+
+  <h2>Cách nhận biết máy</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><strong>Rootless</strong> — Dopamine thường, palera1n rootless. Có <code>/var/jb</code>.</li>
+      <li><strong>Rootful</strong> — unc0ver, checkra1n, palera1n rootful. Không có <code>/var/jb</code>.</li>
+      <li><strong>RootHide</strong> — Dopamine RootHide / Bootstrap. Jailbreak ẩn jbroot, file <code>iphoneos-arm64e</code>.</li>
+    </ol>
+    <p>Không chắc? Thêm source Sileo bên dưới — app tự lấy đúng gói, không cần chọn file.</p>
+  </div>
+
+  <h2>Thêm source Sileo / Zebra</h2>
+  <p>Sources → + → dán URL:</p>
+  <code class="src" id="source-url">https://tientrieu19892025.github.io</code>
+
+  <h2>Cài bằng Filza (tải tay)</h2>
+  <ol class="steps">
+    <li>Chọn thư mục Rootless / Rootful / RootHide đúng máy.</li>
+    <li>Tải file <code>.deb</code> của tweak.</li>
+    <li>Filza → mở file → Cài đặt → Respring.</li>
+  </ol>
+
+  <h2>Tất cả tweak</h2>
+  <div class="grid">
 <article class="card">
   <h3>CPU Boost</h3>
-  <p class="meta">1.0.2 · rootful · rootless · RootHide</p>
+  <p class="meta">1.0.2</p>
   <p>Chỉnh tốc độ CPU: chậm để tiết pin hoặc nhanh hơn trên máy cũ. Preset Eco / Boost / Turbo.</p>
   <p class="en">Tune CPU speed: slower to save battery, or faster on older phones. Eco / Boost / Turbo presets.</p>
+  <p>Tải đúng loại máy: <a class="more" href="debs/rootless/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64.deb">Rootless</a> <a class="more" href="debs/rootful/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm.deb">Rootful</a> <a class="more" href="debs/roothide/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64e.deb">RootHide</a></p>
   <a class="more" href="depictions/com.jinkennguyen.cpuboost/">Chi tiết</a>
 </article>
 <article class="card">
   <h3>DuoFrame</h3>
-  <p class="meta">3.5.3 · rootful · rootless · RootHide</p>
+  <p class="meta">3.5.3</p>
   <p>Màn hình chính iOS 27: khung kính lỏng cho status, icon grid và dock.</p>
   <p class="en">iOS 27 Home Screen: liquid-glass frames for status, icon grid and dock.</p>
+  <p>Tải đúng loại máy: <a class="more" href="debs/rootless/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm64.deb">Rootless</a> <a class="more" href="debs/rootful/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb">Rootful</a> <a class="more" href="debs/roothide/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm64e.deb">RootHide</a></p>
   <a class="more" href="depictions/com.jinkennguyen.duoframe/">Chi tiết</a>
 </article>
 <article class="card">
   <h3>Lock Frame</h3>
-  <p class="meta">1.8.0 · rootful · rootless · RootHide</p>
+  <p class="meta">1.8.0</p>
   <p>Màn khoá kính full màn kiểu DuoFrame: LOCK · ONLINE, HUD nhìn tương lai.</p>
   <p class="en">Full-screen DuoFrame glass lock HUD: LOCK · ONLINE, a future-looking lock screen.</p>
+  <p>Tải đúng loại máy: <a class="more" href="debs/rootless/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64.deb">Rootless</a> <a class="more" href="debs/rootful/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm.deb">Rootful</a> <a class="more" href="debs/roothide/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64e.deb">RootHide</a></p>
   <a class="more" href="depictions/com.jinkennguyen.haloframe/">Chi tiết</a>
 </article>
 <article class="card">
   <h3>LookGlass</h3>
-  <p class="meta">4.0.3 · rootful · rootless · RootHide</p>
+  <p class="meta">4.0.3</p>
   <p>Ô tìm kính lỏng trên Home, YouTube, nghe nền — và Chat cộng đồng: bấm Chat cạnh Tìm, đặt username rồi nhắn tin/link với mọi người dùng LookGlass.</p>
   <p class="en">Liquid-glass Home search, YouTube, background audio — plus Community Chat: tap Chat next to Search, set a username, then text/links with other LookGlass users.</p>
+  <p>Tải đúng loại máy: <a class="more" href="debs/rootless/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64.deb">Rootless</a> <a class="more" href="debs/rootful/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm.deb">Rootful</a> <a class="more" href="debs/roothide/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64e.deb">RootHide</a></p>
   <a class="more" href="depictions/com.jinkennguyen.lookglass/">Chi tiết</a>
 </article>
 <article class="card">
   <h3>NoxFrame</h3>
-  <p class="meta">1.1.1 · rootful · rootless · RootHide</p>
+  <p class="meta">1.1.1</p>
   <p>Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.</p>
   <p class="en">Take photos and record video with the screen off. Side button blanks the display; Camera stays live.</p>
+  <p>Tải đúng loại máy: <a class="more" href="debs/rootless/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64.deb">Rootless</a> <a class="more" href="debs/rootful/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm.deb">Rootful</a> <a class="more" href="debs/roothide/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64e.deb">RootHide</a></p>
   <a class="more" href="depictions/com.jinkennguyen.noxframe/">Chi tiết</a>
 </article>
 <article class="card">
   <h3>SlapIos</h3>
-  <p class="meta">1.2.0 · rootful · rootless · RootHide</p>
+  <p class="meta">1.2.0</p>
   <p>Vỗ, gõ, lắc iPhone thì máy kêu vui. 120 hiệu ứng, 8 gói tiếng.</p>
   <p class="en">Slap, tap, shake the iPhone and it groans. 120 effects, 8 sound packs.</p>
+  <p>Tải đúng loại máy: <a class="more" href="debs/rootless/com.jinkennguyen.slapios_1.2.0_iphoneos-arm64.deb">Rootless</a> <a class="more" href="debs/rootful/com.jinkennguyen.slapios_1.2.0_iphoneos-arm.deb">Rootful</a> <a class="more" href="debs/roothide/com.jinkennguyen.slapios_1.2.0_iphoneos-arm64e.deb">RootHide</a></p>
   <a class="more" href="depictions/com.jinkennguyen.slapios/">Chi tiết</a>
-</article>
-  </div>
+</article></div>
 
   <h2 id="credit">Credit</h2>
   <div class="card">
     <p><strong>Tác giả / Author:</strong> Jinken Nguyen - 1989</p>
-    <p><strong>Maintainer:</strong> Jinken Nguyen - 1989</p>
-    <p>Mọi tweak trong repo này do Jinken Nguyen - 1989 phát triển. Không liên kết với Apple.</p>
-    <p class="en">All tweaks in this repo are by Jinken Nguyen - 1989. Not affiliated with Apple.</p>
+    <p>Mọi tweak do Jinken Nguyen - 1989 phát triển. Không liên kết với Apple.</p>
   </div>
 
   <h2 id="donate">Donate</h2>
@@ -148,26 +196,19 @@ code.src {
     <img src="assets/vietqr.png" alt="VietQR MB Bank 0345140889 Nguyễn Tiến Triều">
     <div>
       <p>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.</p>
-      <p class="en">Thank you for using these free tweaks. A small donation keeps the repo online. No pressure — using them already means a lot.</p>
       <p><strong>Ngân hàng:</strong> MB Bank<br>
       <strong>Chủ TK:</strong> Nguyễn Tiến Triều<br>
       <strong>STK:</strong> <span class="copy" data-copy="0345140889">0345140889 · copy</span><br>
       <strong>Nội dung:</strong> <span class="copy" data-copy="Donate Jinken Nguyen 1989">Donate Jinken Nguyen 1989 · copy</span></p>
-      <p class="en">MB Bank · 0345140889 · Nguyen Tien Trieu</p>
     </div>
   </div>
-
-  <footer>
-    Credit: Jinken Nguyen - 1989 · Donate: MB Bank 0345140889 Nguyễn Tiến Triều<br>
-    MIT License · iOS 14+ · rootless / rootful / RootHide
-  </footer>
+  <footer>Credit: Jinken Nguyen - 1989 · Donate: MB Bank 0345140889 Nguyễn Tiến Triều</footer>
 </main>
 <script>
 const base = location.origin + location.pathname.replace(/index\.html$/, "").replace(/\/$/, "");
 const src = base + "/";
 document.getElementById("source-url").textContent = src;
 document.getElementById("add-sileo").href = "sileo://source/" + src;
-document.getElementById("add-zebra").href = "zbra://sources/add/" + src;
 document.querySelectorAll(".copy").forEach(el => {
   el.addEventListener("click", async () => {
     try {
