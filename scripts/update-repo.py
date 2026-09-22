@@ -213,7 +213,6 @@ FEATURED = [
     "com.jinkennguyen.noxframe",
     "com.jinkennguyen.settingsz",
     "com.jinkennguyen.appsw",
-    "com.jinkennguyen.driveframe",
     "com.jinkennguyen.videoadsspeed",
 ]
 
