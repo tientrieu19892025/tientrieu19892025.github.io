@@ -653,159 +653,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.6.0
-Architecture: iphoneos-arm64
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 812
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.6.0_iphoneos-arm64.deb
-Size: 122246
-MD5sum: 835e2254df74687033bcbd389a77c1be
-SHA1: d24ab8c350bc0cff09f91a75323d2c1fceb650ca
-SHA256: a15791ac515dbb0fb87faf7f9a208d19a9b568eee51eb8f35a18f9b145ce18d9
-Section: Tweaks
-Description: Lock Frame 1.6.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
- Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
- Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.6.0 (2026-09-22)
-  * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
-  * Ẩn đồng hồ iOS gốc. Kicker LOCK · SYS · ONLINE, ngày in hoa, âm lịch gọn, giây đọc giữa vòng.
-  * Viền mảnh trong suốt, chỗ trống không kính đục. Thông báo từng thẻ kính DuoFrame. Telemetry thanh kính trên đèn pin.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock clock rebuilt as a sci-fi HUD: ultra-light kerned digits, blinking colons, orbital seconds + battery ring, targeting ticks at corners and mid-edges.
-  * Stock iOS clock is hidden. Kicker LOCK · SYS · ONLINE, uppercase date, compact lunar, seconds readout in the ring.
-  * Hairline transparent rim, empty areas stay clear. Each notification is DuoFrame glass. Telemetry bar above the flashlight.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.5.0 (2026-09-22)
-  * Một chế độ duy nhất: lock cinematic full màn — viền HUD mảnh trong suốt, chỗ trống không kính đục.
-  * Đồng hồ iOS nguyên chỗ. Thông báo từng thẻ kính lỏng DuoFrame. Telemetry thanh kính ultra-thin trên đèn pin.
-  * Không dim, không khung đặc, không đè lớp. Kính lỏng chỉ nơi có nội dung — sáng hơn iOS 27.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * One mode only: a cinematic full-screen lock — hairline transparent HUD rim, empty areas stay clear.
-  * Stock clock stays put. Each notification is DuoFrame liquid glass. Telemetry sits in an ultra-thin bar above the flashlight.
-  * No dim, no solid frames, no overlap. Glass only where there is content — clearer than iOS 27.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.4.1 (2026-09-22)
-  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
-  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
-  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
-  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
-  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
-  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
-  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.4.0 (2026-09-21)
-  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
-  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
-  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
-  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
-  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
-  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
-  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.3.0 (2026-09-21)
-  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
-  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
-  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
-  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
-  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
-  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
-  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.1 (2026-09-21)
-  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
-  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
-  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
-  * The stock iOS clock is visible again. No blank rim over the lock.
-  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.0 (2026-09-21)
-  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
-  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
-  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
-  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
-  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.1.0 (2026-09-21)
-  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
-  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
-  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
-  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
-  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
-  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
-  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
-  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
-  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-21)
-  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
-  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
-  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
-  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
-  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
-  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
-  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
-  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
-  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
-  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
-  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
-  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
-  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
-  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
-  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: Lock Frame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
-
-Package: com.jinkennguyen.haloframe
-Version: 1.6.0
+Version: 1.7.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 812
+Installed-Size: 856
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.6.0_iphoneos-arm64e.deb
-Size: 122050
-MD5sum: 494c12527f5cb14b75286979350a9e9c
-SHA1: 6a271ec932d64ad67aea9bb685a16fdd0af6f565
-SHA256: eefa6f6febdc5ccdcf3f005662e099b3e75a06a540ddc971ad7744faebc449dc
+Filename: debs/com.jinkennguyen.haloframe_1.7.0_iphoneos-arm64e.deb
+Size: 138176
+MD5sum: eeeb991724f688244a9cb5c3efc3e53a
+SHA1: 88243972a338932a75aafdf9f743414ee0726e26
+SHA256: 3435c99e833a94c6f01b01d69d18bf7dcb24f78c2b1e96872e392294897ff849
 Section: Tweaks
-Description: Lock Frame 1.6.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 1.7.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
  Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -814,6 +673,16 @@ Description: Lock Frame 1.6.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.7.0 (2026-09-22)
+  * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
+  * 10 kiểu đồng hồ viễn tưởng: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Nhị phân, Quỹ đạo, Chồng.
+  * Chọn màu nhấn (11 ô) và 8 kiểu khung như DuoFrame. Kính lỏng đậm hơn (thin material + specular). Bỏ 4 tick vuông ở góc màn.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
+  * Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
+  * Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.6.0 (2026-09-22)
   * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
@@ -935,18 +804,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.6.0
+Version: 1.7.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 812
+Installed-Size: 856
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.6.0_iphoneos-arm.deb
-Size: 121984
-MD5sum: 1ed9b008402ddc1e5cd63b48bf093866
-SHA1: b371a7b1aed4021c45884bc6391c2d8d67791227
-SHA256: 518ff1bb187899580a80328db186c7eafa8f494332ea7f2703996d9e7164da21
+Filename: debs/com.jinkennguyen.haloframe_1.7.0_iphoneos-arm.deb
+Size: 138120
+MD5sum: 67267eb384a8aa6abaca5abdc9449233
+SHA1: d7e3d3cd367ce0e65788daf3118fa475b6fe8392
+SHA256: 4e1e42f79447246cc6785b4495754ffaca2200351409a11f13f27934310180d2
 Section: Tweaks
-Description: Lock Frame 1.6.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 1.7.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
  Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -955,6 +824,167 @@ Description: Lock Frame 1.6.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.7.0 (2026-09-22)
+  * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
+  * 10 kiểu đồng hồ viễn tưởng: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Nhị phân, Quỹ đạo, Chồng.
+  * Chọn màu nhấn (11 ô) và 8 kiểu khung như DuoFrame. Kính lỏng đậm hơn (thin material + specular). Bỏ 4 tick vuông ở góc màn.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
+  * Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
+  * Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.6.0 (2026-09-22)
+  * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
+  * Ẩn đồng hồ iOS gốc. Kicker LOCK · SYS · ONLINE, ngày in hoa, âm lịch gọn, giây đọc giữa vòng.
+  * Viền mảnh trong suốt, chỗ trống không kính đục. Thông báo từng thẻ kính DuoFrame. Telemetry thanh kính trên đèn pin.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock clock rebuilt as a sci-fi HUD: ultra-light kerned digits, blinking colons, orbital seconds + battery ring, targeting ticks at corners and mid-edges.
+  * Stock iOS clock is hidden. Kicker LOCK · SYS · ONLINE, uppercase date, compact lunar, seconds readout in the ring.
+  * Hairline transparent rim, empty areas stay clear. Each notification is DuoFrame glass. Telemetry bar above the flashlight.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.5.0 (2026-09-22)
+  * Một chế độ duy nhất: lock cinematic full màn — viền HUD mảnh trong suốt, chỗ trống không kính đục.
+  * Đồng hồ iOS nguyên chỗ. Thông báo từng thẻ kính lỏng DuoFrame. Telemetry thanh kính ultra-thin trên đèn pin.
+  * Không dim, không khung đặc, không đè lớp. Kính lỏng chỉ nơi có nội dung — sáng hơn iOS 27.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * One mode only: a cinematic full-screen lock — hairline transparent HUD rim, empty areas stay clear.
+  * Stock clock stays put. Each notification is DuoFrame liquid glass. Telemetry sits in an ultra-thin bar above the flashlight.
+  * No dim, no solid frames, no overlap. Glass only where there is content — clearer than iOS 27.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.4.1 (2026-09-22)
+  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
+  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
+  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
+  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
+  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
+  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
+  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.4.0 (2026-09-21)
+  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
+  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
+  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
+  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
+  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
+  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
+  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.3.0 (2026-09-21)
+  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
+  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
+  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
+  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
+  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
+  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
+  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.1 (2026-09-21)
+  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
+  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
+  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
+  * The stock iOS clock is visible again. No blank rim over the lock.
+  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.0 (2026-09-21)
+  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
+  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
+  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
+  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
+  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.1.0 (2026-09-21)
+  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
+  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
+  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
+  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
+  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
+  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
+  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
+  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
+  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
+  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
+  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
+  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
+  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
+  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
+  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
+  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
+  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
+  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
+  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
+  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
+  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
+  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: Lock Frame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
+
+Package: com.jinkennguyen.haloframe
+Version: 1.7.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 856
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.haloframe_1.7.0_iphoneos-arm64.deb
+Size: 138190
+MD5sum: 1013f4a193812e6f0a52345307945427
+SHA1: 420a790612f762699aa84812259fd755cd5b7e64
+SHA256: 01d0180259477457e8674f45896c7c53ec5ddb541cf26e7cdcc60951af7a872d
+Section: Tweaks
+Description: Lock Frame 1.7.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+ Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
+ Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.7.0 (2026-09-22)
+  * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
+  * 10 kiểu đồng hồ viễn tưởng: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Nhị phân, Quỹ đạo, Chồng.
+  * Chọn màu nhấn (11 ô) và 8 kiểu khung như DuoFrame. Kính lỏng đậm hơn (thin material + specular). Bỏ 4 tick vuông ở góc màn.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
+  * Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
+  * Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.6.0 (2026-09-22)
   * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.

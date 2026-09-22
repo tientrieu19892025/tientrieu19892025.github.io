@@ -217,18 +217,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.6.0
+Version: 1.7.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 812
+Installed-Size: 856
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.6.0_iphoneos-arm.deb
-Size: 121984
-MD5sum: 1ed9b008402ddc1e5cd63b48bf093866
-SHA1: b371a7b1aed4021c45884bc6391c2d8d67791227
-SHA256: 518ff1bb187899580a80328db186c7eafa8f494332ea7f2703996d9e7164da21
+Filename: debs/com.jinkennguyen.haloframe_1.7.0_iphoneos-arm.deb
+Size: 138120
+MD5sum: 67267eb384a8aa6abaca5abdc9449233
+SHA1: d7e3d3cd367ce0e65788daf3118fa475b6fe8392
+SHA256: 4e1e42f79447246cc6785b4495754ffaca2200351409a11f13f27934310180d2
 Section: Tweaks
-Description: Lock Frame 1.6.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 1.7.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
  Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -237,6 +237,16 @@ Description: Lock Frame 1.6.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.7.0 (2026-09-22)
+  * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
+  * 10 kiểu đồng hồ viễn tưởng: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Nhị phân, Quỹ đạo, Chồng.
+  * Chọn màu nhấn (11 ô) và 8 kiểu khung như DuoFrame. Kính lỏng đậm hơn (thin material + specular). Bỏ 4 tick vuông ở góc màn.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Drag and delete lock layout: hold the clock/telemetry ~0.3s, drag to move, ✕ to hide, DONE to finish. Reset in Settings.
+  * Ten sci-fi clocks: Cinema, Matrix, Analog, Terminal, Neon, Radar, Flip, Binary, Orbit, Stack.
+  * Accent colors (11 swatches) and 8 chrome styles like DuoFrame. Stronger liquid glass. The four square corner ticks are gone.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.6.0 (2026-09-22)
   * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
