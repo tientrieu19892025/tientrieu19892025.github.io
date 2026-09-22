@@ -22,8 +22,8 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <div class="card">
 <h1>SlapIos 1.2.0</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
-<p>Vỗ, gõ, lắc iPhone thì máy kêu vui. 120 hiệu ứng, 8 gói tiếng.</p>
-<p>Slap, tap, shake the iPhone and it groans. 120 effects, 8 sound packs.</p>
+<p>Vỗ, gõ, lắc máy thì kêu. Nhiều gói tiếng; chọn Rên thì chỉ rên.</p>
+<p>Slap, tap or shake the phone. Pick a sound pack — Groan stays groan-only.</p>
 
 <div class="donate">
 <strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
@@ -31,72 +31,8 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </div>
 <hr>
 <p>Sileo tự cài đúng gói cho máy (rootless / rootful / RootHide). Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → SlapIos</strong>.</p>
-<pre># SlapIos changelog
-
-Credit: Jinken Nguyen - 1989
-Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
-
-## 1.2.0 (2026-09-20)
-
-### Tiếng Việt
-- Tìm đúng từ khóa YouTube (ouch, groan, moan, boing, slap…) rồi lấy bản thu CC0/MIT cùng loại — WAV 44.1 kHz, cắt clip.
-- Gói Rên rỉ ưu tiên pack moan Spank (kiểu SlapMac) + Freesound CC0 groan/ouch, không còn còi synth.
-- Mỗi gói 25–40 tiếng thật. Chọn Rên thì chỉ rên. Dung lượng lớn hơn 3–5 lần để nghe chuẩn.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-
-### English
-- YouTube keywords (ouch, groan, moan, boing, slap…) mapped to CC0/MIT recordings, cut to clips at 44.1 kHz.
-- Groan pack leads with Spank moan (SlapMac-style) plus Freesound CC0 ouch/groan — no synth beeps.
-- 25–40 real clips per pack. Groan mode plays only groans. Package is 3–5× larger for quality.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-
-## 1.1.0 (2026-09-20)
-
-### Tiếng Việt
-- Âm thanh thật từ internet, không còn synth: Spank pain/moan (kiểu SlapMac), OpenGameArt hurt, Kenney CC0.
-- Chọn gói Rên rỉ thì CHỈ phát tiếng rên — không lẫn cartoon/game. Combo cũng ở trong gói đang chọn.
-- Mặc định gói Rên rỉ. Cài lại copy WAV mới (không giữ file synth cũ).
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-
-### English
-- Real internet recordings, no more synth: Spank pain/moan (SlapMac-style), OpenGameArt hurt, Kenney CC0.
-- Picking Groan plays ONLY groans — never cartoon/game. Combo stays inside the selected pack.
-- Default pack is Groan. Reinstall refreshes WAVs so old synth files are replaced.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-
-## 1.0.1 (2026-09-20)
-
-### Tiếng Việt
-- Gói Rên rỉ viết lại 100%: synthesizer giọng (thanh môn Rosenberg + formant nguyên âm), không còn sine/còi.
-- 15 tiếng ouch / ahhh / ugh / oof / yeow / rên dài, có tiếng vỗ rồi mới rên — đúng kiểu SlapMac.
-- Tiếng ngáp trong gói Bất ngờ cũng dùng giọng thật. Test phổ F0 70–350 Hz cho cả 15 file rên.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-
-### English
-- Groan pack rewritten: glottal-source + vowel formants, not sine beeps.
-- 15 ouch / ahhh / ugh / oof / yeow / long-moan voices, slap-then-groan timing like SlapMac.
-- Extra-pack yawn is voiced too. Tests require F0 in 70–350 Hz on all 15 groan files.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-
-## 1.0.0 (2026-09-20)
-
-### Tiếng Việt
-- Tweak mới: SlapIos — iPhone rên rỉ / kêu vui mỗi khi bị vỗ, gõ, lắc hoặc rơi (ý tưởng SlapMac).
-- Cảm biến gia tốc SpringBoard nhận diện tát, gõ, lắc, rơi và combo 3 phát liên tiếp.
-- 120 hiệu ứng WAV gốc, 8 gói: Rên rỉ, Hoạt hình, Dễ thương, Va đập, Meme, Nhạc vui, Game, Bất ngờ.
-- HUD kính hiện tên tiếng, haptic, độ nhạy / âm lượng / cooldown, tôn trọng Silent hoặc luôn kêu.
-- Preset SlapMac / Cartoon / Cute / Chaos / Yên / Khôi phục. Thư viện 120 tiếng, bấm là nghe thử.
-- Chỉ inject SpringBoard. Kill-switch .slapios-disable. Gói RootHide + rootless + rootful.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.
-
-### English
-- New tweak: SlapIos — the iPhone groans / cheers when slapped, tapped, shaken or dropped (SlapMac idea).
-- SpringBoard accelerometer classifies slap, tap, shake, drop and a 3-hit combo.
-- 120 original WAV effects in 8 packs: Groan, Cartoon, Cute, Smash, Meme, Music, Game, Extra.
-- Glass HUD names the sound, haptics, sensitivity / volume / cooldown, Silent-aware or always-on.
-- Presets: SlapMac / Cartoon / Cute / Chaos / Quiet / Reset. Tap-to-preview library of all 120.
-- SpringBoard only. Kill-switch .slapios-disable. RootHide + rootless + rootful packages.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank 0345140889 — Nguyễn Tiến Triều.</pre>
+<pre>**1.2.0**
+Gói tiếng thu âm thật. Chọn Rên thì chỉ rên, không lẫn tiếng khác.</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

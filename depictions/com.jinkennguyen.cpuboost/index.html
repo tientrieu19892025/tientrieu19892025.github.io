@@ -22,8 +22,8 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <div class="card">
 <h1>CPU Boost 1.0.3</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
-<p>Chỉnh tốc độ CPU: chậm để tiết pin hoặc nhanh hơn trên máy cũ. Preset Eco / Boost / Turbo.</p>
-<p>Tune CPU speed: slower to save battery, or faster on older phones. Eco / Boost / Turbo presets.</p>
+<p>CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Eco / Boost / Turbo.</p>
+<p>Slow the CPU to save battery, or push it a bit on older phones. Eco / Boost / Turbo.</p>
 
 <div class="donate">
 <strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
@@ -31,74 +31,11 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </div>
 <hr>
 <p>Sileo tự cài đúng gói cho máy (rootless / rootful / RootHide). Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → CPU Boost</strong>.</p>
-<pre># CPU Boost changelog
+<pre>**1.0.3**
+Sửa Safe Mode khi chọn preset rồi Respring.
 
-Credit: Jinken Nguyen - 1989
-Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
-
-## 1.0.3 (2026-09-22)
-
-### Tiếng Việt
-- Sửa Safe Mode khi bấm preset rồi Respring: không còn gọi IOKit trong %ctor, không killall -9 SpringBoard.
-- IOKit chỉ dlsym lúc chạy; bỏ IOServiceOpen. Low Power Mode truyền NSError thật, không NULL.
-- Governor chờ SpringBoard lên xong mới apply. Preset Mạnh 165%, Turbo 175%, gỡ thermal thường xuyên hơn.
-- Vẫn cài được trên iOS 12–18, Depends ElleKit/libhooker, không bắt PreferenceLoader.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Fix Safe Mode after picking a preset and Respring: no IOKit in %ctor, no killall -9 SpringBoard.
-- IOKit is dlsym'd at runtime; IOServiceOpen is gone. Low Power Mode passes a real NSError, not NULL.
-- Governor waits until SpringBoard is up. Performance preset 165%, Turbo 175%, reapplies thermal more often.
-- Still installs on iOS 12–18. Depends accept ElleKit/libhooker; PreferenceLoader is optional.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.0.2 (2026-09-22)
-
-### Tiếng Việt
-- Sửa: iOS 17/18 không còn báo thiếu thành phần cần thiết khi cài (Sileo / Filza).
-- Depends chấp nhận ElleKit / libhooker / Substitute — không bắt buộc gói tên mobilesubstrate hay PreferenceLoader.
-- Gói rootless/RootHide build min iOS 15 + arm64e đúng ABI; rootful giữ iOS 12 arm64 cho máy cũ.
-- IOKit weak-link, thiếu framework cũng không chặn load tweak.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Fix: iOS 17/18 no longer reports a missing required component in Sileo / Filza.
-- Depends accepts ElleKit / libhooker / Substitute — does not require a package literally named mobilesubstrate or PreferenceLoader.
-- Rootless/RootHide builds min iOS 15 with a proper arm64e ABI; rootful stays iOS 12 arm64 for older phones.
-- IOKit is weak-linked so a missing framework does not block the tweak from loading.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.0.1 (2026-09-22)
-
-### Tiếng Việt
-- Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
-- Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
-- Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
-- IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
-- No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
-- Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
-- IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.0.0 (2026-09-21)
-
-### Tiếng Việt
-- Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
-- Thanh 25%–175%: dưới 100% giảm hiệu năng để tiết pin, trên 100% gỡ giới hạn nhiệt/nguồn phần mềm.
-- Tự động theo pin: Eco khi pin yếu, Boost khi sạc. Preset Đề xuất / Pin / Gốc / Mạnh / Turbo / Khôi phục.
-- HUD kính khi đổi profile. Tôn trọng nhiệt Critical. Tùy chọn giới hạn GPU khi Eco và giữ CPU thức khi Boost.
-- Không ép xung PLL, không đâm thermalmonitord / backboardd / mediaserverd.
-- Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .cpuboost-disable.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
-- Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
-- Auto by battery: Eco when low, Boost while charging. Presets: Recommen</pre>
+**1.0.2**
+Cài được trên iOS 17/18.</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

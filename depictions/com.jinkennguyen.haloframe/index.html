@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lock Frame 3.2.0</title>
+<title>Lock Frame 3.2.1</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,10 +20,10 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>Lock Frame 3.2.0</h1>
+<h1>Lock Frame 3.2.1</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
-<p>Màn khoá kính full màn kiểu DuoFrame: LOCK · ONLINE, HUD nhìn tương lai.</p>
-<p>Full-screen DuoFrame glass lock HUD: LOCK · ONLINE, a future-looking lock screen.</p>
+<p>Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.</p>
+<p>Glass lock screen: sun and moon by the hour, battery, music, next alarm.</p>
 
 <div class="donate">
 <strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
@@ -31,79 +31,11 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </div>
 <hr>
 <p>Sileo tự cài đúng gói cho máy (rootless / rootful / RootHide). Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → Lock Frame</strong>.</p>
-<pre># Lock Frame changelog
+<pre>**3.2.1**
+Giờ trên màn khoá đúng múi giờ máy.
 
-Credit: Jinken Nguyen - 1989
-Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
-
-## 3.2.0 (2026-09-22)
-
-### Tiếng Việt
-- Ảnh mặt trời / mặt trăng màu thật từ Wikipedia/Wikimedia (đĩa trắng, FullMoon2010), đổi mỗi ngày, cache mới.
-- Đĩa xoay bằng Core Animation: mặt trời quay ~84s, mặt trăng libration (khóa thủy triều). Không CADisplayLink.
-- Sáng tối theo giờ thật: bình minh/hoàng hôn mờ, giữa trưa / nửa đêm sáng hơn. Trăng theo âm lịch: mồng 1 tối, rằm sáng, bóng terminator.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- True-color Wikipedia/Wikimedia sun and moon discs (white-light sun, FullMoon2010), daily rotation, new cache.
-- Disc motion via Core Animation: sun rotates ~84s, moon librates (tidally locked). No CADisplayLink.
-- Brightness follows clock time; moon also follows the lunar calendar (new moon dark, full moon bright) with a terminator shade.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 3.1.0 (2026-09-22)
-
-### Tiếng Việt
-- Trong vòng quỹ đạo: mặt trời 5h–18h, mặt trăng 18h–5h. Ảnh Wikimedia đổi mỗi ngày, cache local, fallback ☀/☾ nếu mất mạng.
-- Thanh dưới lock: pin, thời gian online, nhiệt độ từ app Thời tiết, hẹn giờ/báo thức kế tiếp.
-- Player gọn: artwork, tên, prev/play/next — bấm được, chỗ khác không cướp vuốt. Không blur, không CADisplayLink.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Orbit disc: sun 05:00–18:00, moon 18:00–05:00. Wikimedia photo changes daily, cached, ☀/☾ fallback offline.
-- Bottom strip: battery, uptime, temperature from the Weather app, next alarm/timer.
-- Compact player: artwork, title, prev/play/next — taps work, everything else passes through. No blur, no CADisplayLink.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 3.0.0 (2026-09-22)
-
-### Tiếng Việt
-- Viết lại từ đầu. NOVA lock: giờ lớn, vòng quỹ đạo giây, không kính blur, không hook layout/setAlpha.
-- Overlay không nhận chạm. Thông báo / Face ID / mật mã / vuốt lên giữ nguyên. Hết đường treo SpringBoard của 2.x.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Rewritten from scratch. NOVA lock: large time, orbital seconds ring, no blur glass, no layout/setAlpha hooks.
-- Overlay never steals taps. Notifications / Face ID / passcode / swipe-up stay stock. 2.x freeze paths removed.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 2.0.3 (2026-09-22)
-
-### Tiếng Việt
-- Sửa treo máy lần 2: bỏ hook setAlpha/layout trên đồng hồ iOS, không gọi Now Playing, không CADisplayLink, không blur UIVisualEffect trên overlay.
-- Gắn HUD một lần (sau layout), không walk cây view mỗi frame. Thông báo chỉ dress khi vào window.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Second freeze fix: no setAlpha/layout hooks on the stock clock, no Now Playing IPC, no CADisplayLink, no UIVisualEffect on the overlay.
-- HUD attaches once after layout, no per-frame tree walk. Notifications dressed only on didMoveToWindow.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 2.0.2 (2026-09-22)
-
-### Tiếng Việt
-- Sửa treo máy: không còn vòng reload prefs tự gọi lại chính nó; overlay không chặn chạm; layout/kính không lặp.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Fix device freeze: prefs reload no longer notifies itself; overlay does not steal touches; chrome is not reinstalled every layout.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 2.0.1 (2026-09-22)
-
-### Tiếng Việt
-- Xoá các khung trống: người, lối tắt, dock giả. Thẻ Đang phát chỉ hiện khi có nhạc.
-- Sắp lại: đồng hồ 10/09 + ngày bên trái, thẻ kính có nội dung (nhạc / thời tiết / mục tiêu) bên phải.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 034514088</pre>
+**3.2.0**
+Mặt trời / mặt trăng đổi theo ngày.</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AppSw 1.0.2</title>
+<title>AppSw 1.0.3</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,10 +20,10 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>AppSw 1.0.2</h1>
+<h1>AppSw 1.0.3</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
-<p>Đa nhiệm kiểu Origin: trên 3/4 cửa sổ lớn, dưới 5 app gần nhất.</p>
-<p>Origin-style app switcher: large window on top, 5 recent apps below.</p>
+<p>Vuốt lên đa nhiệm: cửa sổ lớn phía trên, năm app gần nhất phía dưới.</p>
+<p>App switcher: large window on top, five recents underneath.</p>
 
 <div class="donate">
 <strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
@@ -31,52 +31,8 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </div>
 <hr>
 <p>Sileo tự cài đúng gói cho máy (rootless / rootful / RootHide). Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → AppSw</strong>.</p>
-<pre># AppSw changelog
-
-Credit: Jinken Nguyen - 1989
-Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
-
-## 1.0.2 (2026-09-22)
-
-### Tiếng Việt
-- Sửa: mở app không còn bật đa nhiệm. AppSw chỉ hiện khi màn đa nhiệm thật sự đang mở.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Fix: opening an app no longer brings up the switcher. AppSw appears only while the multitasking shelf is actually open.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.0.1 (2026-09-22)
-
-### Tiếng Việt
-- Cửa sổ lớn hiện đúng nội dung app đang mở, lấy từ ảnh đa nhiệm hệ thống đã vẽ sẵn.
-- Nút × về màn hình chính. Vuốt xuống vẫn thoát về app đang dùng.
-- Mở đa nhiệm và đổi thẻ dùng spring mượt hơn: cửa sổ lớn khép vào, thẻ nhỏ lần lượt trượt lên.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- The large window shows the app that was on screen, using the snapshot the system already drew.
-- The × button goes to the Home Screen. Swiping down still returns to the app you were using.
-- Opening the switcher and swapping cards uses a softer spring: the large window settles in, and the small cards rise in sequence.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.0.0 (2026-09-22)
-
-### Tiếng Việt
-- Tweak mới: AppSw — đa nhiệm kiểu OriginOS 7 trên iPhone jailbreak.
-- Khi vào đa nhiệm, phía trên 3/4 màn hình là cửa sổ lớn của app đang chọn. Phía dưới là tối đa 5 app gần nhất.
-- Chạm thẻ nhỏ để đưa app đó lên cửa sổ lớn. Chạm cửa sổ lớn để mở. Vuốt xuống hoặc nút × để thoát. Vuốt lên để đóng app.
-- Không hook layout mỗi khung hình, không làm mờ từng thẻ, không giữ app sống. Ảnh xem trước đọc ở hàng đợi nền, icon hiện trước.
-- Không đọc được app gần đây thì đa nhiệm gốc vẫn hiện. Kill-switch .appsw-disable. Gói rootful iOS 10+ arm64, rootless và RootHide iOS 15+.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- New tweak: AppSw — an OriginOS 7 style app switcher for jailbroken iPhones.
-- The top three quarters of the switcher is the selected app. The bottom holds up to five recent apps.
-- Tap a small card to promote it. Tap the large window to open it. Swipe down or tap × to leave. Swipe up to close an app.
-- No per-frame layout hooks, no per-card blur, and no live app rendering. Previews load on a background queue after the icon is shown.
-- If recents cannot be read, the original switcher stays. Kill switch .appsw-disable. Rootful is iOS 10+ arm64; rootless and RootHide are iOS 15+.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.</pre>
+<pre>**1.0.3**
+Vuốt lên đa nhiệm thì ra AppSw, không nhảy nhầm lúc mở app.</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

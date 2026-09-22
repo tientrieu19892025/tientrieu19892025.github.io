@@ -22,8 +22,8 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <div class="card">
 <h1>NoxFrame 1.1.1</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
-<p>Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.</p>
-<p>Take photos and record video with the screen off. Side button blanks the display; Camera stays live.</p>
+<p>Tắt màn vẫn chụp và quay. Trong Ảnh có nút lưu đúng khung hình video.</p>
+<p>Shoot with the screen off. In Photos, save the current video frame.</p>
 
 <div class="donate">
 <strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
@@ -31,78 +31,11 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </div>
 <hr>
 <p>Sileo tự cài đúng gói cho máy (rootless / rootful / RootHide). Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → NoxFrame</strong>.</p>
-<pre># NoxFrame changelog
+<pre>**1.1.1**
+Sửa Camera treo trên iOS 18.
 
-Credit: Jinken Nguyen - 1989
-Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
-
-## 1.1.1 (2026-09-20)
-
-### Tiếng Việt
-- Sửa treo Camera trên iOS 18: không chặn stopRunning khi vừa mở máy.
-- Chỉ giữ phiên/clip khi đang tắt màn hoặc đang quay — Camera được cấu hình lại bình thường.
-- Bỏ hook NSBundle infoDictionary (gây kẹt Info.plist trên iOS 18).
-- Không gọi setMultitaskingCameraAccess / audio session lúc startRunning.
-- Không đi UIKit từ hàng đợi capture. Credit: Jinken Nguyen - 1989.
-
-### English
-- Fix Camera hang on iOS 18: stopRunning is no longer blocked at launch.
-- Session/video are held only while blanked or actually recording — Camera can reconfigure.
-- Removed the NSBundle infoDictionary hook (Info.plist deadlock on iOS 18).
-- Does not call setMultitaskingCameraAccess / audio session from startRunning.
-- Does not touch UIKit from the capture queue. Credit: Jinken Nguyen - 1989.
-
-## 1.1.0 (2026-09-20)
-
-### Tiếng Việt
-- Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.
-- Chỉ hiện khi đang xem video (không hiện trên lưới album hay ảnh tĩnh). Toast xác nhận đã lưu.
-- Nếu StillFrame đang cài thì NoxFrame nhường nút, không chồng hai nút.
-- Công tắc riêng trong Cài đặt → NoxFrame → Ảnh. Mặc định bật.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- New: Save photo button while watching a video in Photos — one tap stores the current frame.
-- Shown only on a video (hidden on the album grid and stills). Toast confirms the save.
-- If StillFrame is installed, NoxFrame yields so two buttons do not stack.
-- Own switch in Settings → NoxFrame → Photos. On by default.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.0.1 (2026-09-19)
-
-### Tiếng Việt
-- Sửa: bấm nút nguồn tắt màn không còn cắt clip đang quay.
-- Lớp đen phủ trên cửa sổ Camera, không chiếm key window (Camera không resign).
-- Chặn lockAndDimDevice và SBSleepWakeHardwareButtonInteraction — không khoá máy khi đang blank.
-- Không sleep màn hình phần cứng khi đang quay; chỉ hạ brightness, ISP camera vẫn chạy.
-- Hook stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
-- SpringBoard ghi blanked ngay trước khi Camera nhận lệnh, để skip-stop kịp.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Fix: pressing the side button to blank the screen no longer cuts an in-progress video.
-- Black overlay sits on Camera's own window — it does not steal the key window (Camera stays active).
-- Intercepts lockAndDimDevice and SBSleepWakeHardwareButtonInteraction so blanking does not lock the phone.
-- Does not hardware-sleep the display while recording; only software brightness, camera ISP stays up.
-- Hooks stopVideoRecordingAnimated / viewfinder resign-active / CAMCaptureEngine stopCapturingVideo.
-- SpringBoard writes blanked before Camera sees the command so skip-stop wins the race.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.0.0 (2026-09-19)
-
-### Tiếng Việt
-- Tweak mới: NoxFrame — chụp hình và quay phim khi màn hình tắt trên máy jailbreak iOS 14+.
-- Mở Camera, bấm nút nguồn một lần: màn đen, Camera vẫn chạy. Bấm đúp nguồn để khoá thật.
-- Nút âm lượng là cửa chập khi màn tắt. Preset Đề xuất / Ẩn / Quay / Khôi phục.
-- Giữ phiên AVCapture khi khoá; clip đang quay không bị cắt. Tắt tiếng chụp và flash khi tối.
-- Rung nhẹ khi chụp màn tắt. SpringBoard giữ tiến trình Camera, không ngủ khi đang quay.
-- Hai ngón trên màn đen để hiện lại màn. Không hook UIKit toàn cục, không đâm mediaserverd.
-- Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .noxframe-disable.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
-- Open Camera, press the side button once: the display </pre>
+**1.1.0**
+Trong Ảnh, khi xem video có nút lưu đúng khung hình đó.</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

@@ -88,8 +88,8 @@ BLURBS = {
         "iPhone Duo vs every foldable on the market.",
     ),
     "com.jinkennguyen.duoframe": (
-        "Màn hình chính iOS 27: khung kính lỏng cho status, icon grid và dock.",
-        "iOS 27 Home Screen: liquid-glass frames for status, icon grid and dock.",
+        "Khung kính trên màn hình chính — status, icon, dock. Vuốt, màu chữ và kiểu icon chỉnh trong Cài đặt.",
+        "Glass frames on the Home Screen. Swipe, label color and icon shape live in Settings.",
     ),
     "com.jinkennguyen.haven": (
         "Whitelist app để tweak khác không inject vào. App trong danh sách chạy kiểu safe mode.",
@@ -100,32 +100,32 @@ BLURBS = {
         "Simulated Dynamic Island at iPhone 18 Pro size. Pin apps, music, charging, timer.",
     ),
     "com.jinkennguyen.lookglass": (
-        "Ô tìm kính lỏng trên Home, YouTube, nghe nền — và Chat cộng đồng: bấm Chat cạnh Tìm, đặt username rồi nhắn tin/link với mọi người dùng LookGlass.",
-        "Liquid-glass Home search, YouTube, background audio — plus Community Chat: tap Chat next to Search, set a username, then text/links with other LookGlass users.",
+        "Ô tìm trên Home. YouTube phát ngay trên ô, nghe nền được. Có phòng chat chung — bấm Chat cạnh Tìm.",
+        "Home Screen search, YouTube on the pill, background audio, and a shared chat next to Search.",
     ),
     "com.jinkennguyen.slapios": (
-        "Vỗ, gõ, lắc iPhone thì máy kêu vui. 120 hiệu ứng, 8 gói tiếng.",
-        "Slap, tap, shake the iPhone and it groans. 120 effects, 8 sound packs.",
+        "Vỗ, gõ, lắc máy thì kêu. Nhiều gói tiếng; chọn Rên thì chỉ rên.",
+        "Slap, tap or shake the phone. Pick a sound pack — Groan stays groan-only.",
     ),
     "com.jinkennguyen.cpuboost": (
-        "Chỉnh tốc độ CPU: chậm để tiết pin hoặc nhanh hơn trên máy cũ. Preset Eco / Boost / Turbo.",
-        "Tune CPU speed: slower to save battery, or faster on older phones. Eco / Boost / Turbo presets.",
+        "CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Eco / Boost / Turbo.",
+        "Slow the CPU to save battery, or push it a bit on older phones. Eco / Boost / Turbo.",
     ),
     "com.jinkennguyen.haloframe": (
-        "Màn khoá kính full màn kiểu DuoFrame: LOCK · ONLINE, HUD nhìn tương lai.",
-        "Full-screen DuoFrame glass lock HUD: LOCK · ONLINE, a future-looking lock screen.",
+        "Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.",
+        "Glass lock screen: sun and moon by the hour, battery, music, next alarm.",
     ),
     "com.jinkennguyen.noxframe": (
-        "Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.",
-        "Take photos and record video with the screen off. Side button blanks the display; Camera stays live.",
+        "Tắt màn vẫn chụp và quay. Trong Ảnh có nút lưu đúng khung hình video.",
+        "Shoot with the screen off. In Photos, save the current video frame.",
     ),
     "com.jinkennguyen.settingsz": (
-        "Sắp Cài đặt thành kệ, thẻ trắng trên một nền liền, kéo để đổi cỡ dòng và chọn màu đề mục lớn.",
-        "Arrange Settings into shelves on one continuous background. Drag to resize rows and pick the group-title color.",
+        "Sắp lại Cài đặt: kệ, màu đề mục, kéo đổi cỡ dòng.",
+        "Rearrange Settings: shelves, title color, drag to resize rows.",
     ),
     "com.jinkennguyen.appsw": (
-        "Đa nhiệm kiểu Origin: trên 3/4 cửa sổ lớn, dưới 5 app gần nhất.",
-        "Origin-style app switcher: large window on top, 5 recent apps below.",
+        "Vuốt lên đa nhiệm: cửa sổ lớn phía trên, năm app gần nhất phía dưới.",
+        "App switcher: large window on top, five recents underneath.",
     ),
     "com.jinkennguyen.driveframe": (
         "Mọi app lên CarPlay, chia nhiều cửa sổ trên màn xe.",
@@ -454,14 +454,54 @@ def read_changelog(pkg: str) -> str:
     return ""
 
 
+PUBLIC_LOG = {
+    "com.jinkennguyen.duoframe": """**3.5.3**
+Cài trên iOS 17/18 không còn báo thiếu thành phần.
+
+**3.5.2**
+Đổi màu chữ và icon trên Home.
+
+**3.5.1**
+Vuốt trang mượt hơn. Thêm vài kiểu icon.
+
+**3.5.0**
+Tắt cuộn liên tục nếu muốn vuốt trang trái/phải như iOS gốc.""",
+    "com.jinkennguyen.lookglass": """**4.0.4**
+Chat hiện tin ngay khi gửi.
+
+**4.0.3**
+Sửa Cài đặt LookGlass trên iOS 16 RootHide.
+
+**4.0.0**
+Phòng chat chung. Tìm YouTube rồi phát ngay trên ô, nghe nền được.""",
+    "com.jinkennguyen.slapios": """**1.2.0**
+Gói tiếng thu âm thật. Chọn Rên thì chỉ rên, không lẫn tiếng khác.""",
+    "com.jinkennguyen.cpuboost": """**1.0.3**
+Sửa Safe Mode khi chọn preset rồi Respring.
+
+**1.0.2**
+Cài được trên iOS 17/18.""",
+    "com.jinkennguyen.noxframe": """**1.1.1**
+Sửa Camera treo trên iOS 18.
+
+**1.1.0**
+Trong Ảnh, khi xem video có nút lưu đúng khung hình đó.""",
+    "com.jinkennguyen.settingsz": """**1.0.10**
+Mở mục trong Cài đặt không còn bị thoát. Tweak hiện đủ trong danh sách và ô tìm.""",
+    "com.jinkennguyen.appsw": """**1.0.3**
+Vuốt lên đa nhiệm thì ra AppSw, không nhảy nhầm lúc mở app.""",
+    "com.jinkennguyen.haloframe": """**3.2.1**
+Giờ trên màn khoá đúng múi giờ máy.
+
+**3.2.0**
+Mặt trời / mặt trăng đổi theo ngày.""",
+}
+
+
 def public_changelog(pkg: str, text: str) -> str:
-    if pkg != "com.jinkennguyen.lookglass" or not text:
-        return text
-    skip = re.compile(
-        r"admin|đăng nhập admin|database secret|pin mặc định|chủ phòng|room-owner",
-        re.I,
-    )
-    return "\n".join(line for line in text.splitlines() if not skip.search(line))
+    if pkg in PUBLIC_LOG:
+        return PUBLIC_LOG[pkg]
+    return ""
 
 
 def donate_thanks(conf: dict) -> dict[str, str]:
@@ -1132,13 +1172,23 @@ def main() -> int:
     for block in blocks:
         lines = []
         pkg = None
+        skip_desc = False
         for line in block.splitlines():
             if line.startswith("Package:"):
                 pkg = line.split(":", 1)[1].strip()
+            if line.startswith("Description:"):
+                skip_desc = True
+                continue
+            if skip_desc and (line[:1] in " \t"):
+                continue
+            skip_desc = False
             if line.startswith(("Depiction:", "SileoDepiction:", "Sileodepiction:", "Homepage:", "Icon:")):
                 continue
             lines.append(line)
         if pkg:
+            vi, _en = BLURBS.get(pkg, ("", ""))
+            if vi:
+                lines.append(f"Description: {vi}")
             lines.append(f"Depiction: {base}/depictions/{pkg}/index.html")
             lines.append(f"SileoDepiction: {base}/depictions/{pkg}/sileo.json")
             lines.append(f"Homepage: {base}/#donate")

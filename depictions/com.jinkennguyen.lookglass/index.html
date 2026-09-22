@@ -22,8 +22,8 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 <div class="card">
 <h1>LookGlass 4.0.4</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
-<p>Ô tìm kính lỏng trên Home, YouTube, nghe nền — và Chat cộng đồng: bấm Chat cạnh Tìm, đặt username rồi nhắn tin/link với mọi người dùng LookGlass.</p>
-<p>Liquid-glass Home search, YouTube, background audio — plus Community Chat: tap Chat next to Search, set a username, then text/links with other LookGlass users.</p>
+<p>Ô tìm trên Home. YouTube phát ngay trên ô, nghe nền được. Có phòng chat chung — bấm Chat cạnh Tìm.</p>
+<p>Home Screen search, YouTube on the pill, background audio, and a shared chat next to Search.</p>
 <h2>Chat cộng đồng</h2><p><strong>Chat cộng đồng</strong> là phòng chat chung của người dùng LookGlass trên máy jailbreak. Tin nhắn hiện ngay. Chỉ chữ và link — không gửi hình, không gửi video.</p><p><strong>Cách vào chat</strong></p><ol><li>Cài LookGlass → <strong>Respring</strong>.</li><li>Mở ô LookGlass trên Home → bấm <strong>Chat</strong> (cạnh <strong>Tìm</strong>).</li><li>Đặt <strong>username</strong> một lần rồi vào phòng.</li><li>Gõ tin hoặc dán link rồi gửi. Không cần dán URL / API key.</li><li>Bấm tin của mình để Chép hoặc Xoá.</li></ol><p class="en">Tap Chat next to Search, set a username, send text or links. No photos.</p>
 <div class="donate">
 <strong>Cảm ơn bạn</strong><br>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.<br><br>Thank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.<br><br>MB Bank · 0345140889 · Nguyễn Tiến Triều<br>Quét VietQR trên trang repo hoặc chuyển khoản MB Bank.
@@ -31,109 +31,14 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </div>
 <hr>
 <p>Sileo tự cài đúng gói cho máy (rootless / rootful / RootHide). Sau khi cài: <strong>Respring</strong>, mở <strong>Cài đặt → LookGlass</strong>.</p>
-<pre># LookGlass changelog
+<pre>**4.0.4**
+Chat hiện tin ngay khi gửi.
 
-Credit: Jinken Nguyen - 1989
+**4.0.3**
+Sửa Cài đặt LookGlass trên iOS 16 RootHide.
 
-## 4.0.4 (2026-09-22)
-
-### Tiếng Việt
-- Tin nhắn hiện ngay khi bấm Gửi (không chờ Firebase). Phòng chat làm mới 2 giây một lần để tin người khác cũng tới nhanh.
-
-### English
-- Messages appear as soon as you tap Send (no wait for Firebase). Open chat refreshes every 2 seconds so others' messages show up quickly too.
-
-## 4.0.3 (2026-09-22)
-
-### Tiếng Việt
-- Sửa Cài đặt LookGlass trên iOS 16 RootHide: gói prefs/tweak đủ arm64 + arm64e (trước chỉ arm64 nên Preferences.app báo thiếu tài nguyên).
-
-### English
-- Fixed LookGlass Settings on iOS 16 RootHide: prefs and tweak are fat arm64+arm64e (arm64-only failed dlopen in Preferences.app).
-
-## 4.0.2 (2026-09-22)
-
-### Tiếng Việt
-- Sửa Sileo iOS 17/18 báo thiếu thành phần: Depends nhận ElleKit / libhooker / Substitute chứ không chỉ mobilesubstrate.
-
-### English
-- Fixed Sileo on iOS 17/18 reporting missing components: Depends now accepts ElleKit / libhooker / Substitute, not only mobilesubstrate.
-
-## 4.0.1 (2026-09-22)
-
-### Tiếng Việt
-- Sửa chỉ chạy được trên iOS 15: iOS 14 không còn gắn UIWindowScene (mất ô tìm). iOS 16+ gắn đúng scene Home, cửa sổ overlay hiện và gõ được.
-- WebView YouTube dùng process pool mặc định (hết load mãi trên 14 / trắng trên 16). Bàn phím iOS 16 nhận chạm.
-
-### English
-- Fixed iOS 15-only: iOS 14 no longer attaches UIWindowScene (search pill vanished). iOS 16+ binds the Home scene so overlays show and typing works.
-- YouTube WebView uses the default process pool (no infinite load on 14 / blank on 16). iOS 16 keyboard taps work.
-
-## 4.0.0 (2026-09-21)
-
-### Tiếng Việt
-- Tìm nhanh: thanh tìm + nút Tìm trên launcher. Bấm Tìm chỉ ra video YouTube, ít nhất 20 kết quả để chọn.
-- Player đủ Phát/Dừng, tua ±10s, tốc độ, hẹn giờ. PiP chọn Có hình hoặc Chỉ tiếng. Tắt màn vẫn nghe. Giữ các bản sửa vuốt Home, Safe Mode, chat, trình duyệt.
-
-### English
-- Quick search: a search field plus Search on the launcher. Search lists YouTube videos only, at least 20 picks.
-- Player: play/pause, skip ±10s, speed, sleep. PiP video or audio-only. Screen off keeps audio. Keeps Home-swipe, Safe Mode, chat and browser fixes.
-
-## 3.9.6 (2026-09-21)
-
-### Tiếng Việt
-
-### English
-
-## 3.9.5 (2026-09-21)
-
-### Tiếng Việt
-- Bấm tin nhắn hiện Xoá / Cấm / Chép / Đóng và bấm được. Alert chat không còn nuốt chạm trong SpringBoard.
-
-### English
-- Tap a chat message for Delete / Ban / Copy / Close, and the buttons work. Chat alerts no longer swallow touches in SpringBoard.
-
-## 3.9.4 (2026-09-21)
-
-### Tiếng Việt
-- Chat cộng đồng gửi/nhận ngay: Firebase rules cho phép đăng tin, tweak không còn chờ đăng nhập hay báo URL. Chỉ cần username.
-
-### English
-- Community chat sends and receives immediately: Firebase rules allow posts, the tweak no longer waits for login or asks for a URL. Username only.
-
-## 3.9.3 (2026-09-21)
-
-### Tiếng Việt
-- Chat dùng được chỉ với username: không còn báo nhập URL/API key. Tin gửi bằng tài khoản Firebase ẩn danh.
-- Sửa bấm khoá trong khung chat bị Safe Mode (không còn PUT JSON true trần).
-
-### English
-- Chat works with just a username — no Firebase URL/API key prompt. Messages use anonymous Firebase auth.
-- Fixed Safe Mode when tapping lock in the chat window (bare JSON true is no longer serialized).
-
-## 3.9.2 (2026-09-21)
-
-### Tiếng Việt
-- Bớt tải mạng khi chưa mở chat, poll chậm hơn — đỡ lag SpringBoard.
-
-### English
-- No chat network until you open Chat, slower polling — less SpringBoard lag.
-
-## 3.9.1 (2026-09-21)
-
-### Tiếng Việt
-- Kết nối chat cộng đồng với Firebase lookglass-jinken: rules đã publish, tin nhắn lưu realtime. Bấm Chat là dùng, không cần dán API key.
-
-### English
-- Community chat is connected to the lookglass-jinken Firebase: rules published, messages persist. Open Chat and type — no API key to paste.
-
-## 3.9.0 (2026-09-21)
-
-### Tiếng Việt
-- Ô Chat cộng đồng jailbreak trong launcher. Chỉ nhắn tin và dán link (không hình, video). Tin lưu trên Firebase Realtime Database của bạn.
-
-### English
-- Jailbreak communit</pre>
+**4.0.0**
+Phòng chat chung. Tìm YouTube rồi phát ngay trên ô, nghe nền được.</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>
