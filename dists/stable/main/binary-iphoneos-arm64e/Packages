@@ -217,18 +217,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.7.0
+Version: 1.8.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 856
+Installed-Size: 888
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.7.0_iphoneos-arm64e.deb
-Size: 138176
-MD5sum: eeeb991724f688244a9cb5c3efc3e53a
-SHA1: 88243972a338932a75aafdf9f743414ee0726e26
-SHA256: 3435c99e833a94c6f01b01d69d18bf7dcb24f78c2b1e96872e392294897ff849
+Filename: debs/com.jinkennguyen.haloframe_1.8.0_iphoneos-arm64e.deb
+Size: 144676
+MD5sum: 4a745484da4adc5b04519d3fb686e606
+SHA1: 038915c24eea40b227e5bfed3acbb9e1a86e06c9
+SHA256: f6d3a2e8f64f12b47a0f7f55744f854d85245232cd61c58ccca42228a127fbc9
 Section: Tweaks
-Description: Lock Frame 1.7.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 1.8.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
  Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -237,6 +237,16 @@ Description: Lock Frame 1.7.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.8.0 (2026-09-22)
+  * Bỏ hẳn viền mảnh quanh màn khoá — không còn stroke, tick, hay khung mép.
+  * 20 kiểu đồng hồ: thêm Glitch, Morse, La Mã, Hex, Chữ, ECG, Stardate, Pixel, Sóng, Lăng kính.
+  * 6 chế độ độc lạ: Sạch / Glitch / CRT / Holo / Nhịp / Mực — chồng lên mọi kiểu đồng hồ.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Hairline rim is gone — no edge stroke, ticks, or screen frame.
+  * Twenty clocks: added Glitch, Morse, Roman, Hex, Words, ECG, Stardate, Pixel, Wave, Prism.
+  * Six weird looks: Clean / Glitch / CRT / Holo / Pulse / Ink, layered on any clock.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.7.0 (2026-09-22)
   * Kéo và xoá layout trên màn khoá: giữ đồng hồ/telemetry ~0,3s, kéo dời, ✕ ẩn, DONE xong. Đặt lại vị trí trong Cài đặt.
@@ -368,18 +378,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.2
+Version: 4.0.3
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 916
+Installed-Size: 1696
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/com.jinkennguyen.lookglass_4.0.2_iphoneos-arm64e.deb
-Size: 217828
-MD5sum: 990114f9bcd4db3592e1831546ef6707
-SHA1: 6620145bf6ae342d89d19a0b7ab7869f8c5ece96
-SHA256: d2bbae2a58e21487092d12a6fc70fda496f68c5474f6a04684b195f8e80ba2bf
+Filename: debs/com.jinkennguyen.lookglass_4.0.3_iphoneos-arm64e.deb
+Size: 319892
+MD5sum: 6a06abc5c3b0ef7314e246bbe9de3ea4
+SHA1: c7e5830a87905443feb9e1d7d4026d213892b68f
+SHA256: d36f2bec31a8955b443f152eb239be2a157dae12832be360f07191ae4fe730a6
 Section: Tweaks
-Description: LookGlass 4.0.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 4.0.3 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -387,6 +397,10 @@ Description: LookGlass 4.0.2 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 4.0.3 (2026-09-22)
+  * Sửa Cài đặt LookGlass trên iOS 16 RootHide: gói prefs/tweak đủ arm64 + arm64e (trước chỉ arm64 nên Preferences.app báo thiếu tài nguyên).
+  * Fixed LookGlass Settings on iOS 16 RootHide: prefs and tweak are fat arm64+arm64e (arm64-only failed dlopen in Preferences.app).
  .
  4.0.2 (2026-09-22)
   * Sửa Sileo iOS 17/18 báo thiếu thành phần: Depends nhận ElleKit / libhooker / Substitute chứ không chỉ mobilesubstrate.
