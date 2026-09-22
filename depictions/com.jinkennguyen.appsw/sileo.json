@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#38BDF8",
+  "headerImage": "https://tientrieu19892025.github.io/assets/banner.jpg",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "AppSw",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**AppSw** — Đa nhiệm kiểu Origin: trên 3/4 cửa sổ lớn, dưới 5 app gần nhất.\n\nOrigin-style app switcher: large window on top, 5 recent apps below.\n\n**Phiên bản / Version:** 1.0.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → AppSw**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Jinken Nguyen - 1989"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Cảm ơn bạn / Thank you**  \nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.  \n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.  \n\nMB Bank · 0345140889 · Nguyễn Tiến Triều",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.0",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# AppSw changelog\n\nCredit: Jinken Nguyen - 1989\nDonate: MB Bank 0345140889 — Nguyễn Tiến Triều\n\n## 1.0.0 (2026-09-22)\n\n### Tiếng Việt\n- Tweak mới: AppSw — đa nhiệm kiểu OriginOS 7 trên iPhone jailbreak.\n- Khi vào đa nhiệm, phía trên 3/4 màn hình là cửa sổ lớn của app đang chọn. Phía dưới là tối đa 5 app gần nhất.\n- Chạm thẻ nhỏ để đưa app đó lên cửa sổ lớn. Chạm cửa sổ lớn để mở. Vuốt xuống hoặc nút × để thoát. Vuốt lên để đóng app.\n- Không hook layout mỗi khung hình, không làm mờ từng thẻ, không giữ app sống. Ảnh xem trước đọc ở hàng đợi nền, icon hiện trước.\n- Không đọc được app gần đây thì đa nhiệm gốc vẫn hiện. Kill-switch .appsw-disable. Gói rootful iOS 10+ arm64, rootless và RootHide iOS 15+.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- New tweak: AppSw — an OriginOS 7 style app switcher for jailbroken iPhones.\n- The top three quarters of the switcher is the selected app. The bottom holds up to five recent apps.\n- Tap a small card to promote it. Tap the large window to open it. Swipe down or tap × to leave. Swipe up to close an app.\n- No per-frame layout hooks, no per-card blur, and no live app rendering. Previews load on a background queue after the icon is shown.\n- If recents cannot be read, the original switcher stays. Kill switch .appsw-disable. Rootful is iOS 10+ arm64; rootless and RootHide are iOS 15+.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    },
+    {
+      "tabname": "Donate",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Cảm ơn bạn",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.\n\n- Ngân hàng: **MB Bank**\n- STK: **0345140889**\n- Chủ TK: **Nguyễn Tiến Triều**\n- Nội dung: `Donate Jinken Nguyen 1989`\n\nQuét VietQR trên [trang repo](https://tientrieu19892025.github.io#donate). Cảm ơn bạn rất nhiều.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

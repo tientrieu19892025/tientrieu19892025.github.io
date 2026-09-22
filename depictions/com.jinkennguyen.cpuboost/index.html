@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CPU Boost 1.0.2</title>
+<title>CPU Boost 1.0.3</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>CPU Boost 1.0.2</h1>
+<h1>CPU Boost 1.0.3</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Chỉnh tốc độ CPU: chậm để tiết pin hoặc nhanh hơn trên máy cũ. Preset Eco / Boost / Turbo.</p>
 <p>Tune CPU speed: slower to save battery, or faster on older phones. Eco / Boost / Turbo presets.</p>
@@ -35,6 +35,22 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 
 Credit: Jinken Nguyen - 1989
 Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
+
+## 1.0.3 (2026-09-22)
+
+### Tiếng Việt
+- Sửa Safe Mode khi bấm preset rồi Respring: không còn gọi IOKit trong %ctor, không killall -9 SpringBoard.
+- IOKit chỉ dlsym lúc chạy; bỏ IOServiceOpen. Low Power Mode truyền NSError thật, không NULL.
+- Governor chờ SpringBoard lên xong mới apply. Preset Mạnh 165%, Turbo 175%, gỡ thermal thường xuyên hơn.
+- Vẫn cài được trên iOS 12–18, Depends ElleKit/libhooker, không bắt PreferenceLoader.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+
+### English
+- Fix Safe Mode after picking a preset and Respring: no IOKit in %ctor, no killall -9 SpringBoard.
+- IOKit is dlsym'd at runtime; IOServiceOpen is gone. Low Power Mode passes a real NSError, not NULL.
+- Governor waits until SpringBoard is up. Performance preset 165%, Turbo 175%, reapplies thermal more often.
+- Still installs on iOS 12–18. Depends accept ElleKit/libhooker; PreferenceLoader is optional.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
 
 ## 1.0.2 (2026-09-22)
 
@@ -82,11 +98,7 @@ Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
 ### English
 - New tweak: CPU Boost — tune CPU performance on jailbroken iOS 14+ (including older phones).
 - Slider 25%–175%: below 100% slows the SoC to save battery, above 100% lifts software thermal and power caps.
-- Auto by battery: Eco when low, Boost while charging. Presets: Recommended / Battery / Stock / Performance / Turbo / Reset.
-- Glass HUD on profile change. Respects Critical heat. Optional GPU limit in Eco and keep-awake on Boost.
-- Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
-- Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.</pre>
+- Auto by battery: Eco when low, Boost while charging. Presets: Recommen</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

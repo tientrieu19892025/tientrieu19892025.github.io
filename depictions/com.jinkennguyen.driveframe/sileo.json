@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#38BDF8",
+  "headerImage": "https://tientrieu19892025.github.io/assets/banner.jpg",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "DriveFrame",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**DriveFrame** — Mọi app lên CarPlay, chia nhiều cửa sổ trên màn xe.\n\nAny app on CarPlay, split into panes on the car display.\n\n**Phiên bản / Version:** 1.8.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → DriveFrame**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.8.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Jinken Nguyen - 1989"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Cảm ơn bạn / Thank you**  \nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.  \n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.  \n\nMB Bank · 0345140889 · Nguyễn Tiến Triều",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.8.0",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# DriveFrame changelog\n\nCredit: Jinken Nguyen - 1989\nDonate: MB Bank 0345140889 — Nguyễn Tiến Triều\n\n## 1.8.0 (2026-09-21)\n\n### Tiếng Việt\n- Launcher kiểu Tesla / Android Auto: luôn giữ thanh trạng thái + dock, không thoát khi mở app.\n- Phone / Nhạc / Maps / Tin / Điều hoà chạy ngay trong khung DriveFrame, kết nối điện thoại.\n- App CarPlay khác hiện trong vùng giữa (Maps xe phía dưới), bấm Home là về lưới. Credit: Jinken Nguyen - 1989.\n\n### English\n- Tesla / Android Auto-style shell: status + dock stay up; opening an app never leaves the launcher.\n- Phone / Music / Maps / Messages / climate run inside DriveFrame, wired to the phone.\n- Other CarPlay apps fill the center canvas; Home returns to the grid. Credit: Jinken Nguyen - 1989.\n\n## 1.7.0 (2026-09-20)\n\n### Tiếng Việt\n- Nút Home nổi: chạm app CarPlay xong bấm nhà để về DriveFrame, không kẹt overlay.\n- Nhanh hơn: cache icon/app, không quét toàn bộ thư viện, nền không vẽ lại mỗi frame, phân trang vuốt.\n- Thanh đang phát, chấm trang, animation chạm. Credit: Jinken Nguyen - 1989.\n\n### English\n- Floating Home chip: after opening a CarPlay app, tap Home to return — overlay no longer traps you.\n- Faster: icon/app cache, no full library scan, wallpaper not redrawn every frame, swipe pages.\n- Now Playing bar, page dots, tap animation. Credit: Jinken Nguyen - 1989.\n\n## 1.6.0 (2026-09-20)\n\n### Tiếng Việt\n- Launcher kiểu CarPlay gốc: lưới icon nhỏ (màn 7–9 inch), lấy app Maps/Phone/Music/Messages/Podcasts/Lịch/Cài đặt từ CarPlay.\n- Chạm icon mở app trên xe (ẩn overlay). Giữ icon để dùng bàn phím gọi / nhạc / maps ngay trên DriveFrame. Cỡ icon kéo xuống còn ~20 pt.\n- Cột lưới 4–8, hàng 2–4. Credit: Jinken Nguyen - 1989.\n\n### English\n- Stock-style CarPlay home: small icon grid for 7–9 inch screens, Maps/Phone/Music/Messages/Podcasts/Calendar/Settings from CarPlay.\n- Tap an icon to open the app on the car. Long-press for in-launcher keypad/player/maps. Icon size slider down to ~20 pt.\n- Grid 4–8 columns, 2–4 rows. Credit: Jinken Nguyen - 1989.\n\n## 1.5.0 (2026-09-20)\n\n### Tiếng Việt\n- Làm lại launcher: lưới widget kéo thả, véo đổi cỡ, lưu trên app — lần sau cắm xe tự mở đúng layout.\n- Điện thoại (bàn phím + gọi), Nhạc, Maps, Tin nhắn, Điều hoà, Camera dùng ngay trên launcher, không nhảy sang app CarPlay.\n- Tự mở khi kết nối (công tắc trong Cài đặt). Credit: Jinken Nguyen - 1989.\n\n### English\n- Rebuilt launcher: drag tiles, pinch to resize, saved in the app — plugging in restores that layout.\n- Phone keypad + call, Music, Maps, Messages, climate and camera run on the launcher, not by bouncing to CarPlay apps.\n- Auto-open on connect (Settings toggle). Credit: Jinken Nguyen - 1989.\n\n## 1.4.0 (2026-09-20)\n\n### Tiếng Việt\n- 8 hình nền launcher (đêm, bình minh, carbon, đại dương, rừng, hoàng hôn, cực quang, cẩm thạch).\n- Layout theo hình màn: tự động / ngang / dọc / vuông / tròn / siêu rộng. Chọn trong app, áp dụng ngay.\n- Map, nhạc, app, điều hoà, camera xếp ô riêng, không đè lên nhau — kiểu máy tính bảng. Credit: Jinken Nguyen - 1989.\n\n### English\n- 8 launcher wallpapers (navy, dawn, carbon, ocean, forest, sunset, aurora, marble).\n- Screen-shape layouts: auto / landscape / portrait / square / round / ultrawide. Pick in the app, applies immediately.\n- Map, player, apps, climate and camera sit in separate tiles with no overlap — tablet-style. Credit: Jinken Nguyen - 1989.\n\n## 1.3.0 (2026-09-20)\n\n### Tiếng Việt\n- Icon và dock tỷ lệ kiểu iPhone: không phóng to theo màn xe. Chỉnh cỡ icon/dock ngay trong app D",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    },
+    {
+      "tabname": "Donate",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Cảm ơn bạn",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.\n\n- Ngân hàng: **MB Bank**\n- STK: **0345140889**\n- Chủ TK: **Nguyễn Tiến Triều**\n- Nội dung: `Donate Jinken Nguyen 1989`\n\nQuét VietQR trên [trang repo](https://tientrieu19892025.github.io#donate). Cảm ơn bạn rất nhiều.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

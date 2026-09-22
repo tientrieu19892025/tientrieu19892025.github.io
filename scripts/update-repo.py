@@ -123,6 +123,18 @@ BLURBS = {
         "Sắp Cài đặt thành kệ, thẻ trắng trên một nền liền, kéo để đổi cỡ dòng và chọn màu đề mục lớn.",
         "Arrange Settings into shelves on one continuous background. Drag to resize rows and pick the group-title color.",
     ),
+    "com.jinkennguyen.appsw": (
+        "Đa nhiệm kiểu Origin: trên 3/4 cửa sổ lớn, dưới 5 app gần nhất.",
+        "Origin-style app switcher: large window on top, 5 recent apps below.",
+    ),
+    "com.jinkennguyen.driveframe": (
+        "Mọi app lên CarPlay, chia nhiều cửa sổ trên màn xe.",
+        "Any app on CarPlay, split into panes on the car display.",
+    ),
+    "com.jinkennguyen.videoadsspeed": (
+        "Tăng tốc quảng cáo video trong app, mỗi cái một công tắc.",
+        "Speed up in-app video ads, each with its own switch.",
+    ),
     "com.jinkennguyen.snowglass": (
         "Theme Snowboard kính lỏng: icon squircle iOS 26, viền sáng.",
         "Liquid-glass SnowBoard icon theme with iOS 26 squircles.",
@@ -200,6 +212,9 @@ FEATURED = [
     "com.jinkennguyen.cpuboost",
     "com.jinkennguyen.noxframe",
     "com.jinkennguyen.settingsz",
+    "com.jinkennguyen.appsw",
+    "com.jinkennguyen.driveframe",
+    "com.jinkennguyen.videoadsspeed",
 ]
 
 DEB_NAME_RE = re.compile(

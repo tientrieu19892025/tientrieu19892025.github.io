@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#38BDF8",
+  "headerImage": "https://tientrieu19892025.github.io/assets/banner.jpg",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "VideoAdsSpeed",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**VideoAdsSpeed** — Tăng tốc quảng cáo video trong app, mỗi cái một công tắc.\n\nSpeed up in-app video ads, each with its own switch.\n\n**Phiên bản / Version:** 1.0.1  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → VideoAdsSpeed**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Jinken Nguyen - 1989"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Cảm ơn bạn / Thank you**  \nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.  \n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.  \n\nMB Bank · 0345140889 · Nguyễn Tiến Triều",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.1",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# VideoAdsSpeed changelog\n\nCredit: Jinken Nguyen - 1989\nDonate: MB Bank 0345140889 — Nguyễn Tiến Triều\n\n## 1.0.1 (2026-09-20)\n\n### Tiếng Việt\n- Sửa: quảng cáo video không còn bị kẹt / không chạy trên iOS 18.\n- Không nhân AVPlayer.rate (16×–128× làm item lỗi, màn đen, không tua được).\n- Để clip chạy 1× cho tới khi ReadyToPlay, rồi mới tua thời gian — SDK vẫn thấy video đang phát.\n- Bỏ hook Unity/AppLovin/Vungle/ironSource/Facebook show (sai chữ ký thì ads không bao giờ hiện).\n- HTML5: chỉ tua khi video đã playing, playbackRate tối đa 4×, không đụng clip chưa sẵn sàng.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- Fix: video ads no longer freeze / fail to play on iOS 18.\n- Do not multiply AVPlayer.rate (16×–128× fails the item, black screen, nowhere to skip).\n- Let the clip play at 1× until ReadyToPlay, then seek forward — the SDK still sees a playing video.\n- Drop Unity/AppLovin/Vungle/ironSource/Facebook show hooks (wrong signatures meant ads never appeared).\n- HTML5: only speed videos that are already playing, cap playbackRate at 4×, leave unready clips alone.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n## 1.0.0 (2026-09-20)\n\n### Tiếng Việt\n- Tweak mới: VideoAdsSpeed — tăng tốc quảng cáo video trong app trên máy jailbreak iOS 14+ (kể cả iOS 18).\n- Chọn app hoặc bật mọi app bên thứ ba. Mặc định chỉ ads, 16×, ẩn rate với SDK.\n- Tua AVPlayer và video HTML5 trong WKWebView. Tùy chọn tua tới cuối để callback thưởng vẫn chạy.\n- Đánh dấu màn SDK Google / Unity / AppLovin / Vungle / ironSource / Facebook.\n- Preset Đề xuất / Mạnh / Bỏ qua / Khôi phục. HUD tốc độ nhỏ tùy chọn.\n- Không chặn ads, không đâm SpringBoard / mediaserverd / backboardd / WebContent.\n- Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .videoadsspeed-disable.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- New tweak: VideoAdsSpeed — speed up in-app video ads on jailbroken iOS 14+ (including iOS 18).\n- Pick apps or enable all third-party apps. Default is ads-only, 16×, hide rate from the SDK.\n- Speeds AVPlayer and HTML5 video in WKWebView. Optional seek-to-end so the reward callback still runs.\n- Marks Google / Unity / AppLovin / Vungle / ironSource / Facebook fullscreen ad screens.\n- Presets: Recommended / Aggressive / Skip / Safe reset. Optional tiny speed HUD.\n- Does not block ads, does not inject into SpringBoard / mediaserverd / backboardd / WebContent.\n- Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .videoadsspeed-disable.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    },
+    {
+      "tabname": "Donate",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Cảm ơn bạn",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.\n\n- Ngân hàng: **MB Bank**\n- STK: **0345140889**\n- Chủ TK: **Nguyễn Tiến Triều**\n- Nội dung: `Donate Jinken Nguyen 1989`\n\nQuét VietQR trên [trang repo](https://tientrieu19892025.github.io#donate). Cảm ơn bạn rất nhiều.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

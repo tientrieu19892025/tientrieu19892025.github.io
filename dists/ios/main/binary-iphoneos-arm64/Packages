@@ -1,17 +1,61 @@
-Package: com.jinkennguyen.cpuboost
-Version: 1.0.2
+Package: com.jinkennguyen.appsw
+Version: 1.0.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 632
+Installed-Size: 592
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/rootless/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm64.deb
-Size: 80526
-MD5sum: 610f695bdb590ac7932842b1532ae082
-SHA1: 0d2cecae518fb5e23aa662ab30803d5cebf1cc18
-SHA256: d398e7c7476d6f8f9eb7d686f9aedc8cbc9380a4834397a9f2bd6df2eb77857e
+Filename: debs/rootless/com.jinkennguyen.appsw_1.0.0_iphoneos-arm64.deb
+Size: 79992
+MD5sum: 8bc29c1bea0e9a898a7a82b8faef0a71
+SHA1: f82fc2d2e95aa782c57fe34a383daf153a4bd6f5
+SHA256: b86c8830b137cf1a2bdbab1f7e1045cddafab104e37e9119272df24827aeca5c
 Section: Tweaks
-Description: CPU Boost 1.0.2 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+Description: AppSw 1.0.0 — Origin-style app switcher. Credit: Jinken Nguyen - 1989.
+ AppSw chia đa nhiệm: trên 3/4 là cửa sổ lớn, dưới là 5 app gần nhất.
+ AppSw splits the app switcher: the top 3/4 is the large window, the bottom holds 5 recent apps.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.0 (2026-09-22)
+  * Tweak mới: AppSw — đa nhiệm kiểu OriginOS 7 trên iPhone jailbreak.
+  * Khi vào đa nhiệm, phía trên 3/4 màn hình là cửa sổ lớn của app đang chọn. Phía dưới là tối đa 5 app gần nhất.
+  * Chạm thẻ nhỏ để đưa app đó lên cửa sổ lớn. Chạm cửa sổ lớn để mở. Vuốt xuống hoặc nút × để thoát. Vuốt lên để đóng app.
+  * Không hook layout mỗi khung hình, không làm mờ từng thẻ, không giữ app sống. Ảnh xem trước đọc ở hàng đợi nền, icon hiện trước.
+  * Không đọc được app gần đây thì đa nhiệm gốc vẫn hiện. Kill-switch .appsw-disable. Gói rootful iOS 10+ arm64, rootless và RootHide iOS 15+.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: AppSw — an OriginOS 7 style app switcher for jailbroken iPhones.
+  * The top three quarters of the switcher is the selected app. The bottom holds up to five recent apps.
+  * Tap a small card to promote it. Tap the large window to open it. Swipe down or tap × to leave. Swipe up to close an app.
+  * No per-frame layout hooks, no per-card blur, and no live app rendering. Previews load on a background queue after the icon is shown.
+  * If recents cannot be read, the original switcher stays. Kill switch .appsw-disable. Rootful is iOS 10+ arm64; rootless and RootHide are iOS 15+.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: AppSw
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.appsw/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.appsw/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.appsw.png
+
+Package: com.jinkennguyen.cpuboost
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 640
+Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
+Recommends: preferenceloader
+Filename: debs/rootless/com.jinkennguyen.cpuboost_1.0.3_iphoneos-arm64.deb
+Size: 82896
+MD5sum: 7a32010e71c4b57912a95d3cd41a0433
+SHA1: 322d61ce4a0b0d6b8c82a797f8f038f4d9ac0fd1
+SHA256: c0cc656766c6e692627eb15f21232a334ff216e5d6c753c123b0008e7fd64878
+Section: Tweaks
+Description: CPU Boost 1.0.3 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
  CPU Boost lets you raise or lower CPU performance, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -20,6 +64,18 @@ Description: CPU Boost 1.0.2 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.3 (2026-09-22)
+  * Sửa Safe Mode khi bấm preset rồi Respring: không còn gọi IOKit trong %ctor, không killall -9 SpringBoard.
+  * IOKit chỉ dlsym lúc chạy; bỏ IOServiceOpen. Low Power Mode truyền NSError thật, không NULL.
+  * Governor chờ SpringBoard lên xong mới apply. Preset Mạnh 165%, Turbo 175%, gỡ thermal thường xuyên hơn.
+  * Vẫn cài được trên iOS 12–18, Depends ElleKit/libhooker, không bắt PreferenceLoader.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix Safe Mode after picking a preset and Respring: no IOKit in %ctor, no killall -9 SpringBoard.
+  * IOKit is dlsym'd at runtime; IOServiceOpen is gone. Low Power Mode passes a real NSError, not NULL.
+  * Governor waits until SpringBoard is up. Performance preset 165%, Turbo 175%, reapplies thermal more often.
+  * Still installs on iOS 12–18. Depends accept ElleKit/libhooker; PreferenceLoader is optional.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.2 (2026-09-22)
   * Sửa: iOS 17/18 không còn báo thiếu thành phần cần thiết khi cài (Sileo / Filza).
@@ -67,6 +123,167 @@ Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpubo
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
+
+Package: com.jinkennguyen.driveframe
+Version: 1.8.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1592
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinkennguyen.driveframe_1.8.0_iphoneos-arm64.deb
+Size: 258460
+MD5sum: e2c60be1ceff5754274db2e092d79e41
+SHA1: 8e1766d5a377ab5e6e9ae2e06a9f34d5b073841d
+SHA256: 554eda9e1b6cba7257aad098dc037f08cb2c0f6aabfd00dd6f3eca1a79449e47
+Section: Tweaks
+Description: DriveFrame 1.8.0 — any app on CarPlay, split screen. Credit: Jinken Nguyen - 1989.
+ DriveFrame đưa mọi ứng dụng lên Apple CarPlay, chia nhiều cửa sổ, vừa mọi màn xe.
+ DriveFrame adds any installed app to CarPlay and splits the car display into panes.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.8.0 (2026-09-21)
+  * Launcher kiểu Tesla / Android Auto: luôn giữ thanh trạng thái + dock, không thoát khi mở app.
+  * Phone / Nhạc / Maps / Tin / Điều hoà chạy ngay trong khung DriveFrame, kết nối điện thoại.
+  * App CarPlay khác hiện trong vùng giữa (Maps xe phía dưới), bấm Home là về lưới. Credit: Jinken Nguyen - 1989.
+  * Tesla / Android Auto-style shell: status + dock stay up; opening an app never leaves the launcher.
+  * Phone / Music / Maps / Messages / climate run inside DriveFrame, wired to the phone.
+  * Other CarPlay apps fill the center canvas; Home returns to the grid. Credit: Jinken Nguyen - 1989.
+ .
+ 1.7.0 (2026-09-20)
+  * Nút Home nổi: chạm app CarPlay xong bấm nhà để về DriveFrame, không kẹt overlay.
+  * Nhanh hơn: cache icon/app, không quét toàn bộ thư viện, nền không vẽ lại mỗi frame, phân trang vuốt.
+  * Thanh đang phát, chấm trang, animation chạm. Credit: Jinken Nguyen - 1989.
+  * Floating Home chip: after opening a CarPlay app, tap Home to return — overlay no longer traps you.
+  * Faster: icon/app cache, no full library scan, wallpaper not redrawn every frame, swipe pages.
+  * Now Playing bar, page dots, tap animation. Credit: Jinken Nguyen - 1989.
+ .
+ 1.6.0 (2026-09-20)
+  * Launcher kiểu CarPlay gốc: lưới icon nhỏ (màn 7–9 inch), lấy app Maps/Phone/Music/Messages/Podcasts/Lịch/Cài đặt từ CarPlay.
+  * Chạm icon mở app trên xe (ẩn overlay). Giữ icon để dùng bàn phím gọi / nhạc / maps ngay trên DriveFrame. Cỡ icon kéo xuống còn ~20 pt.
+  * Cột lưới 4–8, hàng 2–4. Credit: Jinken Nguyen - 1989.
+  * Stock-style CarPlay home: small icon grid for 7–9 inch screens, Maps/Phone/Music/Messages/Podcasts/Calendar/Settings from CarPlay.
+  * Tap an icon to open the app on the car. Long-press for in-launcher keypad/player/maps. Icon size slider down to ~20 pt.
+  * Grid 4–8 columns, 2–4 rows. Credit: Jinken Nguyen - 1989.
+ .
+ 1.5.0 (2026-09-20)
+  * Làm lại launcher: lưới widget kéo thả, véo đổi cỡ, lưu trên app — lần sau cắm xe tự mở đúng layout.
+  * Điện thoại (bàn phím + gọi), Nhạc, Maps, Tin nhắn, Điều hoà, Camera dùng ngay trên launcher, không nhảy sang app CarPlay.
+  * Tự mở khi kết nối (công tắc trong Cài đặt). Credit: Jinken Nguyen - 1989.
+  * Rebuilt launcher: drag tiles, pinch to resize, saved in the app — plugging in restores that layout.
+  * Phone keypad + call, Music, Maps, Messages, climate and camera run on the launcher, not by bouncing to CarPlay apps.
+  * Auto-open on connect (Settings toggle). Credit: Jinken Nguyen - 1989.
+ .
+ 1.4.0 (2026-09-20)
+  * 8 hình nền launcher (đêm, bình minh, carbon, đại dương, rừng, hoàng hôn, cực quang, cẩm thạch).
+  * Layout theo hình màn: tự động / ngang / dọc / vuông / tròn / siêu rộng. Chọn trong app, áp dụng ngay.
+  * Map, nhạc, app, điều hoà, camera xếp ô riêng, không đè lên nhau — kiểu máy tính bảng. Credit: Jinken Nguyen - 1989.
+  * 8 launcher wallpapers (navy, dawn, carbon, ocean, forest, sunset, aurora, marble).
+  * Screen-shape layouts: auto / landscape / portrait / square / round / ultrawide. Pick in the app, applies immediately.
+  * Map, player, apps, climate and camera sit in separate tiles with no overlap — tablet-style. Credit: Jinken Nguyen - 1989.
+ .
+ 1.3.0 (2026-09-20)
+  * Icon và dock tỷ lệ kiểu iPhone: không phóng to theo màn xe. Chỉnh cỡ icon/dock ngay trong app DriveFrame.
+  * 10 bộ giao diện: Studio, Lái xe, Nhạc, Lưới app, Đôi, Đêm, Cụm lái, Đỗ xe (camera), Điều hoà, Gọn.
+  * Tích hợp camera lùi (vạch hướng dẫn) + điều hoà: nhiệt độ, quạt, A/C, sấy kính, tuần hoàn. Credit: Jinken Nguyen - 1989.
+  * Phone-density icons and dock: no longer stretch to the car screen. Icon/dock size sliders live in the DriveFrame app.
+  * 10 layouts: Studio, Pilot, Concert, Grid, Twin, Night, Cluster, Park (camera), Climate, Compact.
+  * Rear-camera guidelines plus climate: temp, fan, A/C, defrost, recirculate. Credit: Jinken Nguyen - 1989.
+ .
+ 1.2.0 (2026-09-20)
+  * Launcher dashboard oto đầy đủ: rail trái, Maps vệ tinh, now playing, lưới app, thời tiết, điện thoại, tiện ích, thông báo, dock pill.
+  * Giao diện kính xanh navy giống màn xe: banner rẽ, ETA, A/C, đa cửa sổ, vuốt cạnh trái Quick Overlay.
+  * Smart Layout vẫn đổi trọng tâm Maps/Nhạc/Gọi. Credit: Jinken Nguyen - 1989.
+  * Full car dashboard launcher: left rail, satellite Maps, now playing, app grid, weather, phone, shortcuts, notifications, pill dock.
+  * Navy glass car UI: turn banner, ETA, A/C, multi-window strip, left-edge Quick Overlay.
+  * Smart Layout still emphasizes Maps/Music/Phone. Credit: Jinken Nguyen - 1989.
+ .
+ 1.1.0 (2026-09-20)
+  * Launcher oto iOS 27: status bar giờ/sóng/pin, Maps 55–60%, card kính nổi, dock Nav/Nhạc/Gọi/Tin/Apps.
+  * 4 bố cục: Split 50/50, Maps + thẻ nổi, 3 ứng dụng, Quick Overlay vuốt từ cạnh trái.
+  * Smart Layout: đang lái Maps lớn + nhạc nhỏ; đang gọi Phone lớn; đỗ xe Vehicle + Maps; pill thông báo.
+  * Vuốt đổi cửa sổ, giữ để đổi kích thước, kéo thẻ nổi. Animation 260ms. Credit: Jinken Nguyen - 1989.
+  * iOS 27 car launcher: status time/signal/battery, Maps 55–60%, floating glass cards, dock Nav/Music/Phone/Messages/Apps.
+  * 4 layouts: Split 50/50, Maps + floating Music, three apps, left-edge Quick Overlay.
+  * Smart Layout: driving Maps+Music; in-call Phone large; parked Vehicle+Maps; floating notification pill.
+  * Swipe to switch, long-press to resize, drag the floating card. 260ms motion. Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.5 (2026-09-20)
+  * Launcher hiện trên màn xe: overlay chạy trong CarPlayApp, gắn vào cửa sổ dashboard sẵn có.
+  * Không hook handshake, không UIRootSceneWindow. App trên iPhone xem trước launcher giống trên xe, bấm Mở thì hiện toàn màn hình và gửi lên oto.
+  * Credit: Jinken Nguyen - 1989.
+  * Launcher actually appears on the car: overlay runs inside CarPlayApp on the existing dashboard window.
+  * No handshake hooks, no UIRootSceneWindow. The iPhone app shows the live launcher preview; Open shows it full screen and on the car.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.4 (2026-09-20)
+  * Sửa Safe Mode khi nhấn Mở trên xe: không còn tạo UIRootSceneWindow / FBSDisplayConfiguration.
+  * Gắn UIWindow vào UIWindowScene của màn xe. Không đè màn hình iPhone. Không makeKeyAndVisible.
+  * Bọc activate trong @try. Không host app trống lúc mở launcher.
+  * Credit: Jinken Nguyen - 1989.
+  * Fix Safe Mode on Open on car: no UIRootSceneWindow / FBSDisplayConfiguration.
+  * Attach a UIWindow to the car UIWindowScene. Never cover the iPhone. No makeKeyAndVisible.
+  * activate is @try-wrapped. Launcher no longer hosts an empty app on open.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.3 (2026-09-20)
+  * Launcher kính iOS 27 mặc định khi Mở trên xe: Maps, YouTube, Điện thoại, Cài đặt.
+  * Giữ ô để đổi app. Nút Thêm ô — tối đa 10 ô. Home quay lại lưới, không tắt overlay.
+  * Ô lớn, dễ chạm trên màn oto. Tự nhận Google Maps / YouTube nếu đã cài.
+  * Credit: Jinken Nguyen - 1989.
+  * iOS 27 glass launcher by default on Open on car: Maps, YouTube, Phone, Settings.
+  * Hold a tile to change the app. Add tile — up to 10. Home returns to the grid.
+  * Large car-friendly tiles. Resolves Google Maps / YouTube if installed.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.2 (2026-09-20)
+  * Sửa chắc: không còn inject CarPlayApp / process bắt tay. Tweak chỉ chạy trong SpringBoard, không hook FBScene / BKS / scene view.
+  * Xe nhận CarPlay như gốc khi bật DriveFrame. Overlay chỉ mở khi bạn nhấn Mở trên xe trong app.
+  * App DriveFrame trên màn hình chính: bật/tắt, xem trạng thái CarPlay, mở/đóng overlay.
+  * Cắm xe trước, đợi dashboard gốc lên, rồi mở app. Credit: Jinken Nguyen - 1989.
+  * Hard fix: no inject into CarPlayApp or the handshake process. SpringBoard only, no FBScene / BKS / scene-view hooks.
+  * The car gets stock CarPlay while DriveFrame is on. Overlay opens only from Open on car in the app.
+  * Home Screen DriveFrame app: toggle, CarPlay status, open/close overlay.
+  * Plug in first, wait for the stock dashboard, then open the app. Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.1 (2026-09-20)
+  * Sửa CarPlay không kết nối khi bật tweak: không còn đâm process handshake com.apple.CarPlay.
+  * Giữ library CarPlay gốc khi khởi động; chỉ mở rộng app sau đó và luôn thêm lại app hệ thống (Maps, Phone, Music…).
+  * Bỏ spoof CARAppEntitlements và hook struct icon (dễ crash dashboard lúc bắt tay).
+  * Filter chỉ SpringBoard + CarPlayApp. Credit: Jinken Nguyen - 1989.
+  * Fix: enabling DriveFrame no longer blocks the CarPlay handshake (no inject into com.apple.CarPlay).
+  * Keep the stock CarPlay app library on connect; expand it afterwards and always re-add system apps.
+  * Removed CARAppEntitlements spoof and the icon-struct hook that could crash the dashboard at handshake.
+  * Filter is SpringBoard + CarPlayApp only. Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.0 (2026-09-20)
+  * Tweak mới: DriveFrame — mọi app lên CarPlay, chia 1–4 cửa sổ + PiP, vừa mọi màn xe.
+  * Thêm app không hỗ trợ CarPlay lên dashboard. Ẩn Music/Podcasts/News nếu muốn.
+  * Giữ app gốc để mở layout iPhone. Lưới icon 2–4 hàng × 4–6 cột, ẩn tên và chấm trang.
+  * Hình nền Now Playing, đồng hồ giây + % pin, dock yêu thích, App Switcher trên xe.
+  * Giữ app khi khoá máy, tự ẩn thanh công cụ, nút bấm to, làm tối ban đêm.
+  * Video & mạng xã hội chỉ khi xe đang đỗ. Preset Đề xuất / Dashboard / Khi đỗ / Khôi phục.
+  * Không hook UIKit toàn cục, không mediaserverd / backboardd. Kill-switch .driveframe-disable.
+  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
+  * New tweak: DriveFrame — any app on CarPlay, 1–4 panes + PiP, fits every car display.
+  * Pin non-CarPlay apps on the dashboard. Optionally hide Music/Podcasts/News.
+  * Long-press native apps for iPhone layout. Grid 2–4 rows × 4–6 columns, hide labels and dots.
+  * Now Playing wallpaper, clock seconds + battery %, favorites dock, on-car App Switcher.
+  * Keep hosted apps when the phone locks, auto-hide chrome, large targets, night dim.
+  * Video & social only while parked. Presets: Recommended / Dashboard / Parked / Reset.
+  * No UIKit-wide filter, no mediaserverd / backboardd. Kill-switch .driveframe-disable.
+  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: DriveFrame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.driveframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.driveframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.driveframe.png
 
 Package: com.jinkennguyen.duoframe
 Version: 3.5.3
@@ -616,18 +833,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.settingsz
-Version: 1.0.5
+Version: 1.0.8
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 844
+Installed-Size: 900
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootless/com.jinkennguyen.settingsz_1.0.5_iphoneos-arm64.deb
-Size: 131326
-MD5sum: 72ce431b5bbae8fa752a364aa3c5a4ac
-SHA1: a0bb0cfa023aa16e8dcfa298888fb2677b82e7db
-SHA256: e033c84768cfcef87bdbf17e41e3d498f07d167f5856a0fe7c73019cd7db1f72
+Filename: debs/rootless/com.jinkennguyen.settingsz_1.0.8_iphoneos-arm64.deb
+Size: 143328
+MD5sum: 628f69885d220d952102f7121e23f873
+SHA1: 2c07b20bd53fcfe53bd838c50e5e4ae9905fb662
+SHA256: 28ce027a184fe18d86bd8e0c02ec16baa3e951aecc8b65313e5a0cb21871fcbc
 Section: Tweaks
-Description: SettingSZ 1.0.5 — arrange every Settings row. Credit: Jinken Nguyen - 1989.
+Description: SettingSZ 1.0.8 — arrange every Settings row. Credit: Jinken Nguyen - 1989.
  SettingSZ sắp xếp toàn bộ mục trong Cài đặt iOS: kệ, A–Z, hoặc thứ tự kéo thả.
  SettingSZ arranges every row in the iOS Settings app: shelves, A–Z, or a dragged order.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -636,6 +853,34 @@ Description: SettingSZ 1.0.5 — arrange every Settings row. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.8 (2026-09-22)
+  * Sửa Cài đặt bị văng lúc mở, lúc được lúc không.
+  * Không xóa danh sách và không vẽ lại bảng khi Cài đặt đang hiện.
+  * Credit: Jinken Nguyen - 1989.
+  * Fix Settings quitting on open, sometimes working and sometimes not.
+  * The list is no longer cleared or reloaded while Settings is on screen.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.7 (2026-09-22)
+  * Hiện lại các tweak jailbreak trong Cài đặt.
+  * Mục PreferenceLoader được giữ khi sắp xếp và gom vào kệ Tinh chỉnh.
+  * Credit: Jinken Nguyen - 1989.
+  * Jailbreak tweaks show in Settings again.
+  * PreferenceLoader rows stay in the list and gather on the Tweaks shelf.
+  * Credit: Jinken Nguyen - 1989.
+ .
+ 1.0.6 (2026-09-22)
+  * Sửa Cài đặt thoát đột ngột khi kéo cỡ dòng hoặc đổi màu.
+  * Cỡ, màu và kiểu thiết kế không dựng lại danh sách khi ngón tay còn đang chạm.
+  * Tám kiểu: Nền liền, Khung từng dòng, Nền từng mục, Kính mờ, Sổ tay, Viên bo tròn, Viền bao quanh, Thanh màu bên.
+  * Chọn màu nền cho từng dòng. Khung, viền và thanh màu dùng cùng bảng màu đó.
+  * Credit: Jinken Nguyen - 1989.
+  * Fix Settings quitting when dragging row size or changing a color.
+  * Size, color, and design no longer rebuild the list while a finger is down.
+  * Eight designs: Continuous, Frame each row, Background per row, Frosted glass, Notebook, Rounded pill, Thick outline, Color rail.
+  * Pick a background color for each row. Frames, outlines, and the side rail use that same palette.
+  * Credit: Jinken Nguyen - 1989.
  .
  1.0.5 (2026-09-22)
   * Đổi tên tweak thành SettingSZ.
@@ -790,3 +1035,64 @@ Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapi
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
+
+Package: com.jinkennguyen.videoadsspeed
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 664
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinkennguyen.videoadsspeed_1.0.1_iphoneos-arm64.deb
+Size: 86714
+MD5sum: effd23351d4355e5e62226df644b255b
+SHA1: 2431708597a51a037884e076a411d0aebb3d44d6
+SHA256: ca7ef93dca3268c847b8fe3ed2ec24372e48fce6fe152b95cd663274a91a162e
+Section: Tweaks
+Description: VideoAdsSpeed 1.0.1 — speed up in-app video ads. Credit: Jinken Nguyen - 1989.
+ VideoAdsSpeed tăng tốc quảng cáo video trong app, mỗi cái một công tắc.
+ VideoAdsSpeed speeds up in-app video ads, each with its own switch.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.1 (2026-09-20)
+  * Sửa: quảng cáo video không còn bị kẹt / không chạy trên iOS 18.
+  * Không nhân AVPlayer.rate (16×–128× làm item lỗi, màn đen, không tua được).
+  * Để clip chạy 1× cho tới khi ReadyToPlay, rồi mới tua thời gian — SDK vẫn thấy video đang phát.
+  * Bỏ hook Unity/AppLovin/Vungle/ironSource/Facebook show (sai chữ ký thì ads không bao giờ hiện).
+  * HTML5: chỉ tua khi video đã playing, playbackRate tối đa 4×, không đụng clip chưa sẵn sàng.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: video ads no longer freeze / fail to play on iOS 18.
+  * Do not multiply AVPlayer.rate (16×–128× fails the item, black screen, nowhere to skip).
+  * Let the clip play at 1× until ReadyToPlay, then seek forward — the SDK still sees a playing video.
+  * Drop Unity/AppLovin/Vungle/ironSource/Facebook show hooks (wrong signatures meant ads never appeared).
+  * HTML5: only speed videos that are already playing, cap playbackRate at 4×, leave unready clips alone.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-20)
+  * Tweak mới: VideoAdsSpeed — tăng tốc quảng cáo video trong app trên máy jailbreak iOS 14+ (kể cả iOS 18).
+  * Chọn app hoặc bật mọi app bên thứ ba. Mặc định chỉ ads, 16×, ẩn rate với SDK.
+  * Tua AVPlayer và video HTML5 trong WKWebView. Tùy chọn tua tới cuối để callback thưởng vẫn chạy.
+  * Đánh dấu màn SDK Google / Unity / AppLovin / Vungle / ironSource / Facebook.
+  * Preset Đề xuất / Mạnh / Bỏ qua / Khôi phục. HUD tốc độ nhỏ tùy chọn.
+  * Không chặn ads, không đâm SpringBoard / mediaserverd / backboardd / WebContent.
+  * Mỗi tính năng một công tắc. Gói RootHide + rootless + rootful. Kill-switch .videoadsspeed-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: VideoAdsSpeed — speed up in-app video ads on jailbroken iOS 14+ (including iOS 18).
+  * Pick apps or enable all third-party apps. Default is ads-only, 16×, hide rate from the SDK.
+  * Speeds AVPlayer and HTML5 video in WKWebView. Optional seek-to-end so the reward callback still runs.
+  * Marks Google / Unity / AppLovin / Vungle / ironSource / Facebook fullscreen ad screens.
+  * Presets: Recommended / Aggressive / Skip / Safe reset. Optional tiny speed HUD.
+  * Does not block ads, does not inject into SpringBoard / mediaserverd / backboardd / WebContent.
+  * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .videoadsspeed-disable.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: VideoAdsSpeed
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.videoadsspeed/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.videoadsspeed/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.videoadsspeed.png
