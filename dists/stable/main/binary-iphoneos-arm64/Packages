@@ -1,17 +1,17 @@
 Package: com.jinkennguyen.appsw
-Version: 1.0.0
+Version: 1.0.2
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 592
+Installed-Size: 632
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/rootless/com.jinkennguyen.appsw_1.0.0_iphoneos-arm64.deb
-Size: 79992
-MD5sum: 8bc29c1bea0e9a898a7a82b8faef0a71
-SHA1: f82fc2d2e95aa782c57fe34a383daf153a4bd6f5
-SHA256: b86c8830b137cf1a2bdbab1f7e1045cddafab104e37e9119272df24827aeca5c
+Filename: debs/rootless/com.jinkennguyen.appsw_1.0.2_iphoneos-arm64.deb
+Size: 89860
+MD5sum: b46358a726dab307cfb87786d9f4f663
+SHA1: 984c8e532500cbf7b27f1ac5ece80fdc77336653
+SHA256: d084134516de33892fa360a60bddb94ef8bfd5821abc3dca2f43f11945017b7c
 Section: Tweaks
-Description: AppSw 1.0.0 — Origin-style app switcher. Credit: Jinken Nguyen - 1989.
+Description: AppSw 1.0.2 — Origin-style app switcher. Credit: Jinken Nguyen - 1989.
  AppSw chia đa nhiệm: trên 3/4 là cửa sổ lớn, dưới là 5 app gần nhất.
  AppSw splits the app switcher: the top 3/4 is the large window, the bottom holds 5 recent apps.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -20,6 +20,22 @@ Description: AppSw 1.0.0 — Origin-style app switcher. Credit: Jinken Nguyen - 
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.2 (2026-09-22)
+  * Sửa: mở app không còn bật đa nhiệm. AppSw chỉ hiện khi màn đa nhiệm thật sự đang mở.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: opening an app no longer brings up the switcher. AppSw appears only while the multitasking shelf is actually open.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.1 (2026-09-22)
+  * Cửa sổ lớn hiện đúng nội dung app đang mở, lấy từ ảnh đa nhiệm hệ thống đã vẽ sẵn.
+  * Nút × về màn hình chính. Vuốt xuống vẫn thoát về app đang dùng.
+  * Mở đa nhiệm và đổi thẻ dùng spring mượt hơn: cửa sổ lớn khép vào, thẻ nhỏ lần lượt trượt lên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * The large window shows the app that was on screen, using the snapshot the system already drew.
+  * The × button goes to the Home Screen. Swiping down still returns to the app you were using.
+  * Opening the switcher and swapping cards uses a softer spring: the large window settles in, and the small cards rise in sequence.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.0 (2026-09-22)
   * Tweak mới: AppSw — đa nhiệm kiểu OriginOS 7 trên iPhone jailbreak.
@@ -273,18 +289,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 3.1.0
+Version: 3.2.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 756
+Installed-Size: 764
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootless/com.jinkennguyen.haloframe_3.1.0_iphoneos-arm64.deb
-Size: 105710
-MD5sum: 50ac9bc1a91092cbcf71f989ae96d46f
-SHA1: 0b35a77107641b387bab9e9108e18dd615154f77
-SHA256: 84d34d36ccee5f6ed06570ef77f2c6dc894c3e470274ff1184d617372c78c95c
+Filename: debs/rootless/com.jinkennguyen.haloframe_3.2.0_iphoneos-arm64.deb
+Size: 109934
+MD5sum: 9d1a2ceeed4eafd916beb6672312a3b6
+SHA1: 731898073985a9ada81da5493a896bb7ea62fef0
+SHA256: 86f5e9601d1ab1908ca93ee6e7bb21ece665be9011242d65c1b1eb134c157ebc
 Section: Tweaks
-Description: Lock Frame 3.1.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 3.2.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
  Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -293,6 +309,16 @@ Description: Lock Frame 3.1.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 3.2.0 (2026-09-22)
+  * Ảnh mặt trời / mặt trăng màu thật từ Wikipedia/Wikimedia (đĩa trắng, FullMoon2010), đổi mỗi ngày, cache mới.
+  * Đĩa xoay bằng Core Animation: mặt trời quay ~84s, mặt trăng libration (khóa thủy triều). Không CADisplayLink.
+  * Sáng tối theo giờ thật: bình minh/hoàng hôn mờ, giữa trưa / nửa đêm sáng hơn. Trăng theo âm lịch: mồng 1 tối, rằm sáng, bóng terminator.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * True-color Wikipedia/Wikimedia sun and moon discs (white-light sun, FullMoon2010), daily rotation, new cache.
+  * Disc motion via Core Animation: sun rotates ~84s, moon librates (tidally locked). No CADisplayLink.
+  * Brightness follows clock time; moon also follows the lunar calendar (new moon dark, full moon bright) with a terminator shade.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  3.1.0 (2026-09-22)
   * Trong vòng quỹ đạo: mặt trời 5h–18h, mặt trăng 18h–5h. Ảnh Wikimedia đổi mỗi ngày, cache local, fallback ☀/☾ nếu mất mạng.
@@ -883,18 +909,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.settingsz
-Version: 1.0.8
+Version: 1.0.9
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 900
+Installed-Size: 940
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootless/com.jinkennguyen.settingsz_1.0.8_iphoneos-arm64.deb
-Size: 143328
-MD5sum: 628f69885d220d952102f7121e23f873
-SHA1: 2c07b20bd53fcfe53bd838c50e5e4ae9905fb662
-SHA256: 28ce027a184fe18d86bd8e0c02ec16baa3e951aecc8b65313e5a0cb21871fcbc
+Filename: debs/rootless/com.jinkennguyen.settingsz_1.0.9_iphoneos-arm64.deb
+Size: 152190
+MD5sum: 84be86696d0b944cf2dbf9527c5ce1ba
+SHA1: 7fe822e31d777f007a0653f6782c3b5b9111cb73
+SHA256: 5512ead076c46cba2790e9be3b5807ca28c835fbdceb6304c47998404c432186
 Section: Tweaks
-Description: SettingSZ 1.0.8 — arrange every Settings row. Credit: Jinken Nguyen - 1989.
+Description: SettingSZ 1.0.9 — arrange every Settings row. Credit: Jinken Nguyen - 1989.
  SettingSZ sắp xếp toàn bộ mục trong Cài đặt iOS: kệ, A–Z, hoặc thứ tự kéo thả.
  SettingSZ arranges every row in the iOS Settings app: shelves, A–Z, or a dragged order.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -903,6 +929,14 @@ Description: SettingSZ 1.0.8 — arrange every Settings row. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.9 (2026-09-22)
+  * Tweak jailbreak hiện ổn định trong Cài đặt, không còn lúc có lúc không.
+  * Ô tìm kiếm của Cài đặt hiện các tweak khớp tên.
+  * Credit: Jinken Nguyen - 1989.
+  * Jailbreak tweaks stay visible in Settings instead of appearing only sometimes.
+  * The Settings search field lists matching tweaks.
+  * Credit: Jinken Nguyen - 1989.
  .
  1.0.8 (2026-09-22)
   * Sửa Cài đặt bị văng lúc mở, lúc được lúc không.
