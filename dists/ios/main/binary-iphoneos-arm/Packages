@@ -1,16 +1,16 @@
 Package: com.jinkennguyen.cpuboost
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 624
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.0_iphoneos-arm.deb
-Size: 77496
-MD5sum: e569b7775eee741b74139f04082bd54a
-SHA1: f7b56a35d748b0f11a9fff41261be672f7fa15a0
-SHA256: 8dd926f4b062809bbe1198cce7880b99c3336f4a38dcfed27d57366f3df74df6
+Installed-Size: 576
+Depends: firmware (>= 12.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.cpuboost_1.0.1_iphoneos-arm.deb
+Size: 88116
+MD5sum: f0ffac8596136d3503b931f93518d52d
+SHA1: 0898c7898700433af85734967aa7b139cb94f546
+SHA256: cfd8299e0af83ff61daab0a6269e8a0d6fe824db445ff90979abd823309a6569
 Section: Tweaks
-Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+Description: CPU Boost 1.0.1 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
  CPU Boost lets you raise or lower CPU performance, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -19,6 +19,18 @@ Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.1 (2026-09-22)
+  * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
+  * Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
+  * Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
+  * IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
+  * No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
+  * Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
+  * IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.0 (2026-09-21)
   * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
@@ -35,7 +47,7 @@ Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
   * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
   * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
   * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
 Name: CPU Boost
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
@@ -187,18 +199,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.4.0
+Version: 1.4.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 768
+Installed-Size: 772
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.4.0_iphoneos-arm.deb
-Size: 112996
-MD5sum: b26bd3c0d499f0a08bf379ef3c559d2e
-SHA1: 87db5d4151878f973d0631e3e9f3624c906f217a
-SHA256: c230483c46cd92670943226905545d36826334548204a6347d81ee8039ecdde7
+Filename: debs/com.jinkennguyen.haloframe_1.4.1_iphoneos-arm.deb
+Size: 115270
+MD5sum: 161d17e7b560e0e8f95ea4452cd90b7e
+SHA1: 61dc6cda356fa5dee4396c562a39ad061bbbfec6
+SHA256: 09ea386e517cad45e164f6ebad03fedbbc518b2efdb869512ccee54fa943233d
 Section: Tweaks
-Description: Lock Frame 1.4.0 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 1.4.1 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
  Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -207,6 +219,18 @@ Description: Lock Frame 1.4.0 — full-screen glass lock HUD. Credit: Jinken Ngu
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.4.1 (2026-09-22)
+  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
+  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
+  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
+  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
+  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
+  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
+  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.4.0 (2026-09-21)
   * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
@@ -296,18 +320,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.1
+Version: 4.0.2
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 916
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_4.0.1_iphoneos-arm.deb
-Size: 217448
-MD5sum: dfaae41607bc519eb0eb3873652bea41
-SHA1: dfb3ab3d6a6776e1a03214497e8221d1900854bc
-SHA256: f79bcf424dda1a788bd59a4a98c7f7d7b8c778321ab17719bc3156f33ac42752
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/com.jinkennguyen.lookglass_4.0.2_iphoneos-arm.deb
+Size: 217804
+MD5sum: a21f8ea34a47c91cfeb388c8d5431d83
+SHA1: 38d2862b757908de7bedf579258dfa6fa8daa81f
+SHA256: ef9de19818bc24929d58eaa34d3a2bb09aa9ad2268ca4448f5138f6aca7493b6
 Section: Tweaks
-Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 4.0.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -315,6 +339,10 @@ Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 4.0.2 (2026-09-22)
+  * Sửa Sileo iOS 17/18 báo thiếu thành phần: Depends nhận ElleKit / libhooker / Substitute chứ không chỉ mobilesubstrate.
+  * Fixed Sileo on iOS 17/18 reporting missing components: Depends now accepts ElleKit / libhooker / Substitute, not only mobilesubstrate.
  .
  4.0.1 (2026-09-22)
   * Sửa chỉ chạy được trên iOS 15: iOS 14 không còn gắn UIWindowScene (mất ô tìm). iOS 16+ gắn đúng scene Home, cửa sổ overlay hiện và gõ được.

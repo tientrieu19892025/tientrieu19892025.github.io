@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lock Frame 1.4.0</title>
+<title>Lock Frame 1.4.1</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>Lock Frame 1.4.0</h1>
+<h1>Lock Frame 1.4.1</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Màn khoá kính full màn kiểu DuoFrame: LOCK · ONLINE, HUD nhìn tương lai.</p>
 <p>Full-screen DuoFrame glass lock HUD: LOCK · ONLINE, a future-looking lock screen.</p>
@@ -35,6 +35,22 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 
 Credit: Jinken Nguyen - 1989
 Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
+
+## 1.4.1 (2026-09-22)
+
+### Tiếng Việt
+- Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
+- Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
+- iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
+- Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
+- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+
+### English
+- Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
+- Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
+- iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
+- Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
+- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
 
 ## 1.4.0 (2026-09-21)
 
@@ -92,23 +108,7 @@ Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
 
 ### English
 - Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
-- HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
-- Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-## 1.1.0 (2026-09-21)
-
-### Tiếng Việt
-- Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
-- Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
-- Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
-- Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
-- Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
-- Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-
-### English
-- Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
-- Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notif</pre>
+- HUD strip: LOCK · ONLINE. Debs: LockFrame-</pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

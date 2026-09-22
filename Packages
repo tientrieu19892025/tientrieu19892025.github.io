@@ -1,16 +1,16 @@
 Package: com.jinkennguyen.cpuboost
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 624
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.0_iphoneos-arm.deb
-Size: 77496
-MD5sum: e569b7775eee741b74139f04082bd54a
-SHA1: f7b56a35d748b0f11a9fff41261be672f7fa15a0
-SHA256: 8dd926f4b062809bbe1198cce7880b99c3336f4a38dcfed27d57366f3df74df6
+Installed-Size: 576
+Depends: firmware (>= 12.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.cpuboost_1.0.1_iphoneos-arm.deb
+Size: 88116
+MD5sum: f0ffac8596136d3503b931f93518d52d
+SHA1: 0898c7898700433af85734967aa7b139cb94f546
+SHA256: cfd8299e0af83ff61daab0a6269e8a0d6fe824db445ff90979abd823309a6569
 Section: Tweaks
-Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+Description: CPU Boost 1.0.1 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
  CPU Boost lets you raise or lower CPU performance, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -19,6 +19,18 @@ Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.1 (2026-09-22)
+  * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
+  * Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
+  * Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
+  * IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
+  * No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
+  * Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
+  * IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.0 (2026-09-21)
   * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
@@ -35,7 +47,7 @@ Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
   * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
   * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
   * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
 Name: CPU Boost
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
@@ -44,18 +56,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
 
 Package: com.jinkennguyen.cpuboost
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 624
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.0_iphoneos-arm64.deb
-Size: 77980
-MD5sum: c1e8493f8f7dd07b5e7e764bac7ab9b7
-SHA1: 3d5041f2136246fc61754b0e56ffb137739a47e4
-SHA256: 5cd6aead26356ee98120e8874c56052feaa782640b7d0f3a550553ffe55450bd
+Installed-Size: 576
+Depends: firmware (>= 12.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.cpuboost_1.0.1_iphoneos-arm64.deb
+Size: 88392
+MD5sum: 4daea11a009de55540db1283cb5ce886
+SHA1: a6b027751fe55e47e4f46b031778e05a1fb80616
+SHA256: f5c181ea89cac3add5405fe4ab7eaed6313ff877fde9ef0b9ef252802ec155d7
 Section: Tweaks
-Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+Description: CPU Boost 1.0.1 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
  CPU Boost lets you raise or lower CPU performance, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -64,6 +76,18 @@ Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.1 (2026-09-22)
+  * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
+  * Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
+  * Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
+  * IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
+  * No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
+  * Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
+  * IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.0 (2026-09-21)
   * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
@@ -80,7 +104,7 @@ Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
   * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
   * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
   * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
 Name: CPU Boost
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
@@ -89,18 +113,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
 
 Package: com.jinkennguyen.cpuboost
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 624
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.0_iphoneos-arm64e.deb
-Size: 77286
-MD5sum: 3af2c9d5712ecb3aa15346c2dfff8284
-SHA1: 4638573e687a51ac9e9e32cdf1af384e730c24e9
-SHA256: 91e9e371d1ed91bb35e449a48898cd20fc9d0d1cd1785c23029fab209099869e
+Installed-Size: 576
+Depends: firmware (>= 12.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.cpuboost_1.0.1_iphoneos-arm64e.deb
+Size: 88190
+MD5sum: c3bac608105f0ee61debc8407b11227c
+SHA1: fc2a3fa34c4d475ae61a5e8f90e72d48773fd4bb
+SHA256: a92345696cf46982cf9fc7d27a026f504f491a1acf1d21fcc9d2e2305c17806d
 Section: Tweaks
-Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+Description: CPU Boost 1.0.1 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
  CPU Boost lets you raise or lower CPU performance, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -109,6 +133,18 @@ Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.1 (2026-09-22)
+  * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
+  * Không còn link hằng iOS 13 kCACornerCurveContinuous — dylib load được trên iOS 12.
+  * Tiết kiệm pin dùng setPowerMode:error: (iOS 12–14) lẫn setMode: (iOS mới).
+  * IOKit thêm AppleCLPC. HUD né tai thỏ. Kính Settings dùng ExtraLight khi chưa có Material.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: runs on iOS 12–14 (older phones). Sileo no longer requires firmware 14+.
+  * No longer links the iOS 13 kCACornerCurveContinuous symbol — the dylib loads on iOS 12.
+  * Low Power Mode uses setPowerMode:error: (iOS 12–14) as well as setMode: (newer iOS).
+  * IOKit also talks to AppleCLPC. HUD clears the notch. Settings glass uses ExtraLight before Material exists.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.0 (2026-09-21)
   * Tweak mới: CPU Boost — chỉnh tốc độ CPU trên máy jailbreak iOS 14+ (kể cả máy đời cũ).
@@ -125,7 +161,7 @@ Description: CPU Boost 1.0.0 — tune CPU speed. Credit: Jinken Nguyen - 1989.
   * Does not overclock the PLL, does not inject into thermalmonitord / backboardd / mediaserverd.
   * Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .cpuboost-disable.
   * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
 Name: CPU Boost
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
@@ -563,236 +599,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.4.0
-Architecture: iphoneos-arm
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 768
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.4.0_iphoneos-arm.deb
-Size: 112996
-MD5sum: b26bd3c0d499f0a08bf379ef3c559d2e
-SHA1: 87db5d4151878f973d0631e3e9f3624c906f217a
-SHA256: c230483c46cd92670943226905545d36826334548204a6347d81ee8039ecdde7
-Section: Tweaks
-Description: Lock Frame 1.4.0 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
- Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
- Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.4.0 (2026-09-21)
-  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
-  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
-  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
-  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
-  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
-  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
-  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.3.0 (2026-09-21)
-  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
-  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
-  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
-  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
-  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
-  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
-  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.1 (2026-09-21)
-  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
-  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
-  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
-  * The stock iOS clock is visible again. No blank rim over the lock.
-  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.0 (2026-09-21)
-  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
-  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
-  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
-  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
-  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.1.0 (2026-09-21)
-  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
-  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
-  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
-  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
-  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
-  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
-  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
-  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
-  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-21)
-  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
-  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
-  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
-  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
-  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
-  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
-  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
-  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
-  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
-  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
-  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
-  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
-  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
-  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
-  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: Lock Frame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
-
-Package: com.jinkennguyen.haloframe
-Version: 1.4.0
-Architecture: iphoneos-arm64e
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 768
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.4.0_iphoneos-arm64e.deb
-Size: 113370
-MD5sum: 9f60c3737bd7bbfe1cafd1426011a240
-SHA1: 41d23c17e6756bf83a6582b734783761f2907417
-SHA256: dc6e6444d0b00379a53e50767ccf8ebabc45967cc56da6337394ec0e7adda07f
-Section: Tweaks
-Description: Lock Frame 1.4.0 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
- Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
- Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
- Open the Sileo Changelog tab (or scroll this description) for every version.
- .
- === Changelog / Nhật ký phiên bản ===
- .
- 1.4.0 (2026-09-21)
-  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
-  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
-  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
-  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
-  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
-  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
-  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.3.0 (2026-09-21)
-  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
-  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
-  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
-  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
-  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
-  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
-  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.1 (2026-09-21)
-  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
-  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
-  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
-  * The stock iOS clock is visible again. No blank rim over the lock.
-  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.2.0 (2026-09-21)
-  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
-  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
-  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
-  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
-  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
-  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.1.0 (2026-09-21)
-  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
-  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
-  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
-  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
-  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
-  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
-  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
-  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
-  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
- .
- 1.0.0 (2026-09-21)
-  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
-  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
-  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
-  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
-  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
-  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
-  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
-  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
-  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
-  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
-  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
-  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
-  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
-  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
-  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
-  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
-  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: Lock Frame
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
-
-Package: com.jinkennguyen.haloframe
-Version: 1.4.0
+Version: 1.4.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 768
+Installed-Size: 772
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.4.0_iphoneos-arm64.deb
-Size: 113330
-MD5sum: 79622de52df5ebd744fc268c440c47f2
-SHA1: 9fc4b37e7d1cb8855856375bf0bea4c4324e6588
-SHA256: 30bb36883aebfb7ada6ab689603ebb60a7222229cdaf8c79ce6b4a049ac618f7
+Filename: debs/com.jinkennguyen.haloframe_1.4.1_iphoneos-arm64.deb
+Size: 115432
+MD5sum: cdc89193c233c1e3853d89766c0d5d23
+SHA1: bcbeccab18a630754a760d325df5ac1301af993c
+SHA256: 9849536c737ad5e7c0455e798306e36e01c0db8bb77659ef4e344ed116db585b
 Section: Tweaks
-Description: Lock Frame 1.4.0 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 1.4.1 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
  Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -801,6 +619,260 @@ Description: Lock Frame 1.4.0 — full-screen glass lock HUD. Credit: Jinken Ngu
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.4.1 (2026-09-22)
+  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
+  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
+  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
+  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
+  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
+  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
+  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.4.0 (2026-09-21)
+  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
+  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
+  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
+  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
+  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
+  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
+  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.3.0 (2026-09-21)
+  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
+  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
+  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
+  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
+  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
+  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
+  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.1 (2026-09-21)
+  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
+  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
+  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
+  * The stock iOS clock is visible again. No blank rim over the lock.
+  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.0 (2026-09-21)
+  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
+  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
+  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
+  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
+  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.1.0 (2026-09-21)
+  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
+  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
+  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
+  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
+  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
+  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
+  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
+  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
+  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
+  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
+  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
+  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
+  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
+  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
+  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
+  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
+  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
+  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
+  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
+  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
+  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
+  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: Lock Frame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
+
+Package: com.jinkennguyen.haloframe
+Version: 1.4.1
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 772
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.haloframe_1.4.1_iphoneos-arm.deb
+Size: 115270
+MD5sum: 161d17e7b560e0e8f95ea4452cd90b7e
+SHA1: 61dc6cda356fa5dee4396c562a39ad061bbbfec6
+SHA256: 09ea386e517cad45e164f6ebad03fedbbc518b2efdb869512ccee54fa943233d
+Section: Tweaks
+Description: Lock Frame 1.4.1 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
+ Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
+ Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.4.1 (2026-09-22)
+  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
+  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
+  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
+  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
+  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
+  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
+  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.4.0 (2026-09-21)
+  * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
+  * Mỗi thông báo một thẻ kính DuoFrame — viền trắng kép, bo 24, ẩn nền platter gốc.
+  * Thanh telemetry kính gọn sát trên đèn pin/camera, thông báo chiếm khoảng giữa.
+  * Không reticle/lưới trên thẻ thông báo. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock screen rebuilt: stock large clock stays put, no spare frames, no dim over notifications.
+  * Each notification is its own DuoFrame glass card — double white rim, 24pt corners, stock platter hidden.
+  * A slim telemetry bar sits just above flashlight/camera; notifications keep the middle.
+  * No HUD reticle or grid on notification cards. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.3.0 (2026-09-21)
+  * Làm lại bố cục lock: đồng hồ lớn iOS giữ nguyên chỗ, không bị khung hay HUD đè.
+  * Một thanh telemetry kính dưới đồng hồ (pin / bộ nhớ / uptime / tuần), thông báo ở khoảng trống giữa.
+  * Gợi ý mở khoá nằm giữa hai nút QA, không chồng home indicator. Dim chỉ dưới vùng đồng hồ.
+  * Khoảng cách 12pt, lề 14pt, không chồng QA / tai thỏ / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock layout rebuilt: the large stock clock keeps its place — no frame or HUD over it.
+  * One glass telemetry bar under the clock (battery / storage / uptime / week); notifications keep the middle.
+  * Unlock caption sits between the QA buttons, clear of the home indicator. Dim starts below the clock.
+  * 12pt rhythm, 14pt margins, no overlap with QA / notch / Island. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.1 (2026-09-21)
+  * Bỏ khung kính rỗng full màn — nó che mất đồng hồ lớn trên màn khoá.
+  * Đồng hồ gốc iOS hiện lại. Không còn viền trống ôm cả lock.
+  * Máy đã cài 1.2.0: respring là hết, prefs tự tắt khung và ẩn đồng hồ gốc.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Removed the empty full-screen glass frame that covered the large lock-screen clock.
+  * The stock iOS clock is visible again. No blank rim over the lock.
+  * If you already had 1.2.0: Respring. Prefs turn the empty frame and stock-clock hide off.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.2.0 (2026-09-21)
+  * Đổi tên tweak thành Lock Frame. Cài đặt → Lock Frame. Gói Sileo hiện Lock Frame.
+  * Dải HUD: LOCK · ONLINE. Gói .deb: LockFrame-rootless / rootful / roothide.
+  * Package id giữ com.jinkennguyen.haloframe — cài đè 1.1.0 là nâng cấp, prefs còn nguyên.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Renamed the tweak to Lock Frame. Settings → Lock Frame. Sileo shows Lock Frame.
+  * HUD strip: LOCK · ONLINE. Debs: LockFrame-rootless / rootful / roothide.
+  * Package id stays com.jinkennguyen.haloframe — overlaying 1.1.0 is an upgrade; prefs kept.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.1.0 (2026-09-21)
+  * Màn khoá full màn: khung kính DuoFrame ôm cả lock, hình nền lộ qua kính lỏng.
+  * Bố cục Full: dải HALO ONLINE, HUD đồng hồ, khảy telemetry, lỗ thông báo, gợi ý vuốt xác thực.
+  * Viền sci-fi: góc HUD, lưới, vạch quét, glow cyan. Chip mạng / nhiệt / múi giờ / xung giây.
+  * Công tắc mới: khung full, kính lỏng, lưới, scanline, khảy, giây, mạng, nhiệt, gợi ý mở khoá, bầu sao.
+  * Preset Đề xuất = Full. Face ID / mật mã / SOS / vuốt lên vẫn gốc. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Full-screen lock: a DuoFrame glass rim wraps the whole lock, wallpaper shows through liquid glass.
+  * Full layout: HALO ONLINE strip, clock HUD, telemetry dock, notification hole, sci-fi unlock caption.
+  * Sci-fi rim: HUD corners, grid, scanlines, cyan glow. Chips for link / thermal / zone / pulse.
+  * New switches: full frame, liquid glass, grid, scanlines, dock, seconds, network, thermal, unlock hint, starfield.
+  * Recommended preset is Full. Face ID / passcode / SOS / swipe-up stay stock. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ 1.0.0 (2026-09-21)
+  * Tweak mới: HaloFrame — màn khoá kính hai trang kiểu DuoFrame, nhìn HUD tương lai.
+  * Đồng hồ HUD kính, vòng quỹ đạo giây + pin, âm lịch, telemetry (pin, bộ nhớ, uptime, tuần).
+  * Vuốt ngang thẻ: trang GIỜ / trang TRẠNG THÁI. 3 bố cục Chồng / Hai trang / Quỹ đạo.
+  * 8 kiểu khung: Duo, mềm, pha lê, đặc, viên nang, thu vào, nổi, vuông.
+  * Thông báo short-look và thẻ đang phát bọc kính. Đèn pin / camera kính hoặc ẩn.
+  * Quét khi thức, nghiêng parallax tuỳ chọn, tối hình nền. Face ID / mật mã / SOS giữ nguyên.
+  * Mỗi tính năng một công tắc. Preset Đề xuất / HUD / Tối giản / Khôi phục.
+  * Chỉ SpringBoard. Không hook UIKit, không backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * Gói RootHide + rootless + rootful. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * New tweak: HaloFrame — a dual-page glass lock HUD in the DuoFrame family, built to look like the future.
+  * Glass HUD clock, orbital seconds + battery ring, lunar date, telemetry (battery, storage, uptime, week).
+  * Swipe the card: TIME / STATUS. Three layouts: Stack / Dual / Orbit.
+  * Eight chrome styles: Duo, Soft, Crystal, Solid, Capsule, Inset, Float, Square.
+  * Short-look notifications and Now Playing sit on glass. Flashlight / camera as glass capsules, or hidden.
+  * Wake scan, optional tilt parallax, wallpaper dim. Face ID / passcode / SOS stay stock.
+  * Each feature has its own switch. Presets: Recommended / HUD / Minimal / Safe reset.
+  * SpringBoard only. No UIKit-wide hooks, no backboardd / mediaserverd. Kill-switch .haloframe-disable.
+  * RootHide + rootless + rootful packages. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: Lock Frame
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.haloframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
+
+Package: com.jinkennguyen.haloframe
+Version: 1.4.1
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 772
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/com.jinkennguyen.haloframe_1.4.1_iphoneos-arm64e.deb
+Size: 115844
+MD5sum: 77a72a817ffe56114bbd48cb30565384
+SHA1: bd6fa488681d4c2cdf7f467f17a1dc924d08f809
+SHA256: 0689d34851cc4c766a23a98a9913241a2141fbf2cd7c12b463694b5a3fb4df86
+Section: Tweaks
+Description: Lock Frame 1.4.1 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
+ Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
+ Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
+ Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+ .
+ Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
+ Open the Sileo Changelog tab (or scroll this description) for every version.
+ .
+ === Changelog / Nhật ký phiên bản ===
+ .
+ 1.4.1 (2026-09-22)
+  * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
+  * Mỗi class CoverSheet/thông báo một %group riêng — không hook class thiếu (tránh Safe Mode).
+  * iOS 18: chỉ viền kính, không ẩn MTMaterial. iOS 15-: kính đầy đủ, chỉ ẩn nền trực tiếp của thẻ.
+  * Overlay chỉ bám CSMainPageView, không phủ cả CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix iOS 18 and iOS 15 and older: no longer wrap the whole notification list in one giant frame.
+  * Each CoverSheet/notification class has its own %group — missing classes are not hooked (avoids Safe Mode).
+  * iOS 18: rim-only glass, do not hide MTMaterial. iOS 15-: filled glass, hide only the card’s direct backdrop.
+  * Overlay attaches only to CSMainPageView, never the whole CoverSheet. Credit: Jinken Nguyen - 1989.
+  * Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.4.0 (2026-09-21)
   * Làm lại màn khoá: đồng hồ lớn iOS nguyên chỗ, không khung thừa, không dim phủ thông báo.
@@ -890,18 +962,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.1
+Version: 4.0.2
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 916
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_4.0.1_iphoneos-arm.deb
-Size: 217448
-MD5sum: dfaae41607bc519eb0eb3873652bea41
-SHA1: dfb3ab3d6a6776e1a03214497e8221d1900854bc
-SHA256: f79bcf424dda1a788bd59a4a98c7f7d7b8c778321ab17719bc3156f33ac42752
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/com.jinkennguyen.lookglass_4.0.2_iphoneos-arm.deb
+Size: 217804
+MD5sum: a21f8ea34a47c91cfeb388c8d5431d83
+SHA1: 38d2862b757908de7bedf579258dfa6fa8daa81f
+SHA256: ef9de19818bc24929d58eaa34d3a2bb09aa9ad2268ca4448f5138f6aca7493b6
 Section: Tweaks
-Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 4.0.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -909,6 +981,10 @@ Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 4.0.2 (2026-09-22)
+  * Sửa Sileo iOS 17/18 báo thiếu thành phần: Depends nhận ElleKit / libhooker / Substitute chứ không chỉ mobilesubstrate.
+  * Fixed Sileo on iOS 17/18 reporting missing components: Depends now accepts ElleKit / libhooker / Substitute, not only mobilesubstrate.
  .
  4.0.1 (2026-09-22)
   * Sửa chỉ chạy được trên iOS 15: iOS 14 không còn gắn UIWindowScene (mất ô tìm). iOS 16+ gắn đúng scene Home, cửa sổ overlay hiện và gõ được.
@@ -1190,18 +1266,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.1
+Version: 4.0.2
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 916
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_4.0.1_iphoneos-arm64e.deb
-Size: 217190
-MD5sum: 31453d2f79745edca6b07352111b1909
-SHA1: 409ffd18a8b33916698d80ad7ac4313d81d035b6
-SHA256: d260c386ab40f0ab8ca7a6ec6069e8a2d0257e474029bd7728bcc98b3d347f3b
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/com.jinkennguyen.lookglass_4.0.2_iphoneos-arm64e.deb
+Size: 217828
+MD5sum: 990114f9bcd4db3592e1831546ef6707
+SHA1: 6620145bf6ae342d89d19a0b7ab7869f8c5ece96
+SHA256: d2bbae2a58e21487092d12a6fc70fda496f68c5474f6a04684b195f8e80ba2bf
 Section: Tweaks
-Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 4.0.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1209,6 +1285,10 @@ Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 4.0.2 (2026-09-22)
+  * Sửa Sileo iOS 17/18 báo thiếu thành phần: Depends nhận ElleKit / libhooker / Substitute chứ không chỉ mobilesubstrate.
+  * Fixed Sileo on iOS 17/18 reporting missing components: Depends now accepts ElleKit / libhooker / Substitute, not only mobilesubstrate.
  .
  4.0.1 (2026-09-22)
   * Sửa chỉ chạy được trên iOS 15: iOS 14 không còn gắn UIWindowScene (mất ô tìm). iOS 16+ gắn đúng scene Home, cửa sổ overlay hiện và gõ được.
@@ -1490,18 +1570,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.1
+Version: 4.0.2
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1688
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.lookglass_4.0.1_iphoneos-arm64.deb
-Size: 318628
-MD5sum: b30fe6478c94a4fb887af7c024f2e29b
-SHA1: 288fafd73eb9aaf56bb7ca077966588075150ee1
-SHA256: 6c0cf101c5475769b968cb0bfc4e7b31356aa704329b660ebe648e454231bf9b
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/com.jinkennguyen.lookglass_4.0.2_iphoneos-arm64.deb
+Size: 318824
+MD5sum: 1318388ae0b79637c1b194cb81e9b4c5
+SHA1: bd5f0a7fa71123b22b965000f42149e0875edb6f
+SHA256: ad9177f44d8b685524fc3f8fd3acab5f1203d749ec49331018aa966acce81567
 Section: Tweaks
-Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
+Description: LookGlass 4.0.2 — Home Screen search, changelog, RootHide. Credit: Jinken Nguyen - 1989.
  LookGlass — ô tìm kính lỏng iOS 27 trên màn hình chính.
  LookGlass — iOS 27 liquid-glass search on the Home Screen.
  Credit: Jinken Nguyen - 1989.
@@ -1509,6 +1589,10 @@ Description: LookGlass 4.0.1 — Home Screen search, changelog, RootHide. Credit
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 4.0.2 (2026-09-22)
+  * Sửa Sileo iOS 17/18 báo thiếu thành phần: Depends nhận ElleKit / libhooker / Substitute chứ không chỉ mobilesubstrate.
+  * Fixed Sileo on iOS 17/18 reporting missing components: Depends now accepts ElleKit / libhooker / Substitute, not only mobilesubstrate.
  .
  4.0.1 (2026-09-22)
   * Sửa chỉ chạy được trên iOS 15: iOS 14 không còn gắn UIWindowScene (mất ô tìm). iOS 16+ gắn đúng scene Home, cửa sổ overlay hiện và gõ được.
