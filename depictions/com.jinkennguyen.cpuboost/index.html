@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CPU Boost 1.0.1</title>
+<title>CPU Boost 1.0.2</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>CPU Boost 1.0.1</h1>
+<h1>CPU Boost 1.0.2</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Chỉnh tốc độ CPU: chậm để tiết pin hoặc nhanh hơn trên máy cũ. Preset Eco / Boost / Turbo.</p>
 <p>Tune CPU speed: slower to save battery, or faster on older phones. Eco / Boost / Turbo presets.</p>
@@ -35,6 +35,22 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 
 Credit: Jinken Nguyen - 1989
 Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
+
+## 1.0.2 (2026-09-22)
+
+### Tiếng Việt
+- Sửa: iOS 17/18 không còn báo thiếu thành phần cần thiết khi cài (Sileo / Filza).
+- Depends chấp nhận ElleKit / libhooker / Substitute — không bắt buộc gói tên mobilesubstrate hay PreferenceLoader.
+- Gói rootless/RootHide build min iOS 15 + arm64e đúng ABI; rootful giữ iOS 12 arm64 cho máy cũ.
+- IOKit weak-link, thiếu framework cũng không chặn load tweak.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+
+### English
+- Fix: iOS 17/18 no longer reports a missing required component in Sileo / Filza.
+- Depends accepts ElleKit / libhooker / Substitute — does not require a package literally named mobilesubstrate or PreferenceLoader.
+- Rootless/RootHide builds min iOS 15 with a proper arm64e ABI; rootful stays iOS 12 arm64 for older phones.
+- IOKit is weak-linked so a missing framework does not block the tweak from loading.
+- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
 
 ## 1.0.1 (2026-09-22)
 

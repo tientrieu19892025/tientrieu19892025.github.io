@@ -1,16 +1,17 @@
 Package: com.jinkennguyen.cpuboost
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 576
-Depends: firmware (>= 12.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.cpuboost_1.0.1_iphoneos-arm.deb
-Size: 88116
-MD5sum: f0ffac8596136d3503b931f93518d52d
-SHA1: 0898c7898700433af85734967aa7b139cb94f546
-SHA256: cfd8299e0af83ff61daab0a6269e8a0d6fe824db445ff90979abd823309a6569
+Installed-Size: 296
+Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
+Recommends: preferenceloader
+Filename: debs/com.jinkennguyen.cpuboost_1.0.2_iphoneos-arm.deb
+Size: 63618
+MD5sum: da7cb806a3a4e0b2f3d750823fa32d57
+SHA1: 5de8f356fcfc046301a76e46ce115eb33133f967
+SHA256: 9e3a0f3b393931705fec3e2f0852c2a268157638cc8352cf6ae2f9cc847bbd91
 Section: Tweaks
-Description: CPU Boost 1.0.1 — tune CPU speed. Credit: Jinken Nguyen - 1989.
+Description: CPU Boost 1.0.2 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  CPU Boost chỉnh tốc độ CPU (nhanh hoặc chậm), mỗi cái một công tắc.
  CPU Boost lets you raise or lower CPU performance, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -19,6 +20,18 @@ Description: CPU Boost 1.0.1 — tune CPU speed. Credit: Jinken Nguyen - 1989.
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.0.2 (2026-09-22)
+  * Sửa: iOS 17/18 không còn báo thiếu thành phần cần thiết khi cài (Sileo / Filza).
+  * Depends chấp nhận ElleKit / libhooker / Substitute — không bắt buộc gói tên mobilesubstrate hay PreferenceLoader.
+  * Gói rootless/RootHide build min iOS 15 + arm64e đúng ABI; rootful giữ iOS 12 arm64 cho máy cũ.
+  * IOKit weak-link, thiếu framework cũng không chặn load tweak.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Fix: iOS 17/18 no longer reports a missing required component in Sileo / Filza.
+  * Depends accepts ElleKit / libhooker / Substitute — does not require a package literally named mobilesubstrate or PreferenceLoader.
+  * Rootless/RootHide builds min iOS 15 with a proper arm64e ABI; rootful stays iOS 12 arm64 for older phones.
+  * IOKit is weak-linked so a missing framework does not block the tweak from loading.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.0.1 (2026-09-22)
   * Sửa: chạy trên iOS 12–14 (máy đời cũ). Sileo không còn đòi firmware 14+.
@@ -56,23 +69,28 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.cpuboost.png
 
 Package: com.jinkennguyen.duoframe
-Version: 3.5.2
+Version: 3.5.3
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 1068
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/com.jinkennguyen.duoframe_3.5.2_iphoneos-arm.deb
-Size: 327666
-MD5sum: dfb0113f0122cf748f175f701e639433
-SHA1: e5b1fd0fb2db1d9e4f52c36afa0ea71a7753cc30
-SHA256: ed8d377b4436901d25102caa058258399c96d44dc82c1dc57adecc19834b64cf
+Filename: debs/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb
+Size: 330890
+MD5sum: 01cd6370cc9c849bf84a17b00a12a2ff
+SHA1: 07c6f14e41b3537b1311a6c6c16b329291b9a745
+SHA256: feaff23ed360a1784e522f97f3bd08e335e9cbfb6eee03678f00ba9faf30c659
 Section: Tweaks
-Description: DuoFrame 3.5.2 — Color pickers for status glyphs, app names, and Home text. Credit: Jinken Nguyen - 1989.
- DuoFrame 3.5.2 — Chọn màu icon status, tên app và chữ trên Home.
+Description: DuoFrame 3.5.3 — iOS 17/18: no missing-component load failure, find Home views again. Credit: Jinken Nguyen - 1989.
+ DuoFrame 3.5.3 — iOS 17/18: hết báo thiếu thành phần, tìm lại khung Home.
  Credit: Jinken Nguyen - 1989
  .
  Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều
  Nếu bạn thấy tweak hữu ích, hãy donate giúp tác giả duy trì và phát triển nhiều tweak hay.
+ .
+ === Changelog / Nhật ký phiên bản 3.5.3 ===
+ .
+  * iOS 17/18: weak-link CoreMotion/CoreTelephony để dylib vẫn nạp; tìm dock/scroll theo ivar + class mới.
+  * Hook SBHRootFolderView, Settings pane không vỡ trên PreferenceLoader iOS 18.
  .
  === Changelog / Nhật ký phiên bản 3.5.2 ===
  .
@@ -199,18 +217,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.4.1
+Version: 1.5.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 772
+Installed-Size: 776
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.4.1_iphoneos-arm.deb
-Size: 115270
-MD5sum: 161d17e7b560e0e8f95ea4452cd90b7e
-SHA1: 61dc6cda356fa5dee4396c562a39ad061bbbfec6
-SHA256: 09ea386e517cad45e164f6ebad03fedbbc518b2efdb869512ccee54fa943233d
+Filename: debs/com.jinkennguyen.haloframe_1.5.0_iphoneos-arm.deb
+Size: 116272
+MD5sum: cac394e5008cbe3761c169d1764c1a87
+SHA1: 7d22f86c40022701fc7794969b1673169fff2d3e
+SHA256: df3c3eb8eca58a52f447602cce0e39a2d6518fb4458d5075ccd8a0e6fe4fcb20
 Section: Tweaks
-Description: Lock Frame 1.4.1 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
+Description: Lock Frame 1.5.0 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
  Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
  Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -219,6 +237,16 @@ Description: Lock Frame 1.4.1 — full-screen glass lock HUD. Credit: Jinken Ngu
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.5.0 (2026-09-22)
+  * Một chế độ duy nhất: lock cinematic full màn — viền HUD mảnh trong suốt, chỗ trống không kính đục.
+  * Đồng hồ iOS nguyên chỗ. Thông báo từng thẻ kính lỏng DuoFrame. Telemetry thanh kính ultra-thin trên đèn pin.
+  * Không dim, không khung đặc, không đè lớp. Kính lỏng chỉ nơi có nội dung — sáng hơn iOS 27.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * One mode only: a cinematic full-screen lock — hairline transparent HUD rim, empty areas stay clear.
+  * Stock clock stays put. Each notification is DuoFrame liquid glass. Telemetry sits in an ultra-thin bar above the flashlight.
+  * No dim, no solid frames, no overlap. Glass only where there is content — clearer than iOS 27.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.4.1 (2026-09-22)
   * Sửa lỗi iOS 18 và iOS 15 trở xuống: không còn bọc cả list thông báo thành một khung lớn.
