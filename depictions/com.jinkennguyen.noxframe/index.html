@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NoxFrame 1.1.0</title>
+<title>NoxFrame 1.1.1</title>
 <style>
 body{margin:0;padding:16px;font:16px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#07080f;color:#eef2ff}
 h1{font-size:22px;margin:0 0 4px}
@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 </head>
 <body>
 <div class="card">
-<h1>NoxFrame 1.1.0</h1>
+<h1>NoxFrame 1.1.1</h1>
 <p class="sub">Credit: Jinken Nguyen - 1989 · iOS 14+ · Tweaks</p>
 <p>Chụp hình và quay phim khi màn hình tắt. Nút nguồn làm màn đen, Camera vẫn chạy.</p>
 <p>Take photos and record video with the screen off. Side button blanks the display; Camera stays live.</p>
@@ -35,6 +35,22 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 
 Credit: Jinken Nguyen - 1989
 Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
+
+## 1.1.1 (2026-09-20)
+
+### Tiếng Việt
+- Sửa treo Camera trên iOS 18: không chặn stopRunning khi vừa mở máy.
+- Chỉ giữ phiên/clip khi đang tắt màn hoặc đang quay — Camera được cấu hình lại bình thường.
+- Bỏ hook NSBundle infoDictionary (gây kẹt Info.plist trên iOS 18).
+- Không gọi setMultitaskingCameraAccess / audio session lúc startRunning.
+- Không đi UIKit từ hàng đợi capture. Credit: Jinken Nguyen - 1989.
+
+### English
+- Fix Camera hang on iOS 18: stopRunning is no longer blocked at launch.
+- Session/video are held only while blanked or actually recording — Camera can reconfigure.
+- Removed the NSBundle infoDictionary hook (Info.plist deadlock on iOS 18).
+- Does not call setMultitaskingCameraAccess / audio session from startRunning.
+- Does not touch UIKit from the capture queue. Credit: Jinken Nguyen - 1989.
 
 ## 1.1.0 (2026-09-20)
 
@@ -86,13 +102,7 @@ Donate: MB Bank 0345140889 — Nguyễn Tiến Triều
 
 ### English
 - New tweak: NoxFrame — take photos and record video with the screen off on jailbroken iOS 14+.
-- Open Camera, press the side button once: the display goes black, Camera stays live. Double-press to really lock.
-- Volume is the shutter while blanked. Presets: Recommended / Stealth / Record / Safe reset.
-- Keeps the AVCapture session on lock; an in-progress video is not cut. Silent shutter and no flash when dark.
-- Light haptic on a dark shot. SpringBoard holds Camera alive and skips idle sleep while recording.
-- Two-finger tap on the black overlay to show the screen again. No UIKit-wide filter, no mediaserverd.
-- Each feature has its own switch. RootHide + rootless + rootful packages. Kill-switch .noxframe-disable.
-- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.</pre>
+- Open Camera, press the side button once: the display </pre>
 <p><a href="../../#donate">← Jinken Repo · Donate</a></p>
 </body>
 </html>

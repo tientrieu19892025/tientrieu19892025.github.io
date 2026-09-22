@@ -217,26 +217,36 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.haloframe
-Version: 1.5.0
+Version: 1.6.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 776
+Installed-Size: 812
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.haloframe_1.5.0_iphoneos-arm64.deb
-Size: 116334
-MD5sum: 4e887d276557c1b3e71b09ed0d062909
-SHA1: ffc63a124c1219f22553cd3737e2c1ed779a6951
-SHA256: 97fd342f243b48f2f3e01584216271ad6b0a35f29be1074209e6b486b7d0402f
+Filename: debs/com.jinkennguyen.haloframe_1.6.0_iphoneos-arm64.deb
+Size: 122246
+MD5sum: 835e2254df74687033bcbd389a77c1be
+SHA1: d24ab8c350bc0cff09f91a75323d2c1fceb650ca
+SHA256: a15791ac515dbb0fb87faf7f9a208d19a9b568eee51eb8f35a18f9b145ce18d9
 Section: Tweaks
-Description: Lock Frame 1.5.0 — full-screen glass lock HUD. Credit: Jinken Nguyen - 1989.
- Lock Frame biến màn khoá thành khung kính full màn kiểu DuoFrame, nhìn tương lai.
- Lock Frame turns the lock screen into a full-screen DuoFrame glass HUD.
+Description: Lock Frame 1.6.0 — cinematic sci-fi lock HUD. Credit: Jinken Nguyen - 1989.
+ Lock Frame biến màn khoá thành HUD khoa học viễn tưởng: đồng hồ cinematic, vòng quỹ đạo.
+ Lock Frame turns the lock screen into a cinematic sci-fi HUD clock.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  Mở tab Changelog trên Sileo (hoặc kéo mô tả này) để xem mọi phiên bản.
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.6.0 (2026-09-22)
+  * Làm lại đồng hồ lock thành HUD khoa học viễn tưởng: số mỏng kerned, dấu hai chấm nhấp, vòng quỹ đạo giây + pin, tick ngắm bốn góc và giữa cạnh.
+  * Ẩn đồng hồ iOS gốc. Kicker LOCK · SYS · ONLINE, ngày in hoa, âm lịch gọn, giây đọc giữa vòng.
+  * Viền mảnh trong suốt, chỗ trống không kính đục. Thông báo từng thẻ kính DuoFrame. Telemetry thanh kính trên đèn pin.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
+  * Lock clock rebuilt as a sci-fi HUD: ultra-light kerned digits, blinking colons, orbital seconds + battery ring, targeting ticks at corners and mid-edges.
+  * Stock iOS clock is hidden. Kicker LOCK · SYS · ONLINE, uppercase date, compact lunar, seconds readout in the ring.
+  * Hairline transparent rim, empty areas stay clear. Each notification is DuoFrame glass. Telemetry bar above the flashlight.
+  * Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
  .
  1.5.0 (2026-09-22)
   * Một chế độ duy nhất: lock cinematic full màn — viền HUD mảnh trong suốt, chỗ trống không kính đục.
@@ -652,18 +662,18 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.noxframe
-Version: 1.1.0
+Version: 1.1.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 756
+Installed-Size: 760
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/com.jinkennguyen.noxframe_1.1.0_iphoneos-arm64.deb
-Size: 107220
-MD5sum: 7046ce92064d4a1852458c2c76a40d10
-SHA1: cfb71106b3edf8562c66c5eebea7e7529842daa7
-SHA256: 98ff6745ffbb448c106fb543b779202f62d12196c21d374af8e308e5e97a5dcb
+Filename: debs/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm64.deb
+Size: 107470
+MD5sum: 20cd2ac07c8542d8592c7897ffb3a026
+SHA1: 9b64fc9b5642717adcc77ea8a91c78e399182611
+SHA256: 79e1ed87b235ec6acd0e5761c827f16e97d9d9b8ed0a84bd82332c3f0f01683d
 Section: Tweaks
-Description: NoxFrame 1.1.0 — capture with the screen off. Credit: Jinken Nguyen - 1989.
+Description: NoxFrame 1.1.1 — capture with the screen off. Credit: Jinken Nguyen - 1989.
  NoxFrame cho phép chụp hình và quay phim khi màn hình tắt, mỗi cái một công tắc.
  NoxFrame lets you take photos and record video with the screen off, each with its own switch.
  Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.
@@ -672,6 +682,18 @@ Description: NoxFrame 1.1.0 — capture with the screen off. Credit: Jinken Nguy
  Open the Sileo Changelog tab (or scroll this description) for every version.
  .
  === Changelog / Nhật ký phiên bản ===
+ .
+ 1.1.1 (2026-09-20)
+  * Sửa treo Camera trên iOS 18: không chặn stopRunning khi vừa mở máy.
+  * Chỉ giữ phiên/clip khi đang tắt màn hoặc đang quay — Camera được cấu hình lại bình thường.
+  * Bỏ hook NSBundle infoDictionary (gây kẹt Info.plist trên iOS 18).
+  * Không gọi setMultitaskingCameraAccess / audio session lúc startRunning.
+  * Không đi UIKit từ hàng đợi capture. Credit: Jinken Nguyen - 1989.
+  * Fix Camera hang on iOS 18: stopRunning is no longer blocked at launch.
+  * Session/video are held only while blanked or actually recording — Camera can reconfigure.
+  * Removed the NSBundle infoDictionary hook (Info.plist deadlock on iOS 18).
+  * Does not call setMultitaskingCameraAccess / audio session from startRunning.
+  * Does not touch UIKit from the capture queue. Credit: Jinken Nguyen - 1989.
  .
  1.1.0 (2026-09-20)
   * Thêm: nút Lưu hình khi xem video trong Ảnh — bấm một cái là lưu đúng khung hình lúc đó.

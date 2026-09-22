@@ -33,9 +33,9 @@ Do not install a `.deb` by hand unless you know your jailbreak type.
 | --- | --- | --- | --- |
 | CPU Boost | `com.jinkennguyen.cpuboost` | 1.0.2 | rootful, rootless, RootHide |
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.3 | rootful, rootless, RootHide |
-| Lock Frame | `com.jinkennguyen.haloframe` | 1.5.0 | rootful, rootless, RootHide |
+| Lock Frame | `com.jinkennguyen.haloframe` | 1.6.0 | rootful, rootless, RootHide |
 | LookGlass | `com.jinkennguyen.lookglass` | 4.0.2 | rootful, rootless, RootHide |
-| NoxFrame | `com.jinkennguyen.noxframe` | 1.1.0 | rootful, rootless, RootHide |
+| NoxFrame | `com.jinkennguyen.noxframe` | 1.1.1 | rootful, rootless, RootHide |
 | SlapIos | `com.jinkennguyen.slapios` | 1.2.0 | rootful, rootless, RootHide |
 
 ## Credit
