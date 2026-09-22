@@ -213,6 +213,7 @@ FEATURED = [
     "com.jinkennguyen.noxframe",
     "com.jinkennguyen.settingsz",
     "com.jinkennguyen.appsw",
+    "com.jinkennguyen.haloframe",
 ]
 
 DEB_NAME_RE = re.compile(

@@ -44,6 +44,12 @@
       "title": "AppSw",
       "package": "com.jinkennguyen.appsw",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "Lock Frame",
+      "package": "com.jinkennguyen.haloframe",
+      "hideShadow": false
     }
   ]
 }

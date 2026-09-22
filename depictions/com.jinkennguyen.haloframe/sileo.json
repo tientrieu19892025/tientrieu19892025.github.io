@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#38BDF8",
+  "headerImage": "https://tientrieu19892025.github.io/assets/banner.jpg",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Lock Frame",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Lock Frame** — Màn khoá kính full màn kiểu DuoFrame: LOCK · ONLINE, HUD nhìn tương lai.\n\nFull-screen DuoFrame glass lock HUD: LOCK · ONLINE, a future-looking lock screen.\n\n**Phiên bản / Version:** 3.1.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → Lock Frame**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "useSpacing": true,
+          "useRawFormat": false
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "3.1.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Jinken Nguyen - 1989"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Price",
+          "text": "Free"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Cảm ơn bạn / Thank you**  \nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.  \n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.  \n\nMB Bank · 0345140889 · Nguyễn Tiến Triều",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "3.1.0",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Lock Frame changelog\n\nCredit: Jinken Nguyen - 1989\nDonate: MB Bank 0345140889 — Nguyễn Tiến Triều\n\n## 3.1.0 (2026-09-22)\n\n### Tiếng Việt\n- Trong vòng quỹ đạo: mặt trời 5h–18h, mặt trăng 18h–5h. Ảnh Wikimedia đổi mỗi ngày, cache local, fallback ☀/☾ nếu mất mạng.\n- Thanh dưới lock: pin, thời gian online, nhiệt độ từ app Thời tiết, hẹn giờ/báo thức kế tiếp.\n- Player gọn: artwork, tên, prev/play/next — bấm được, chỗ khác không cướp vuốt. Không blur, không CADisplayLink.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- Orbit disc: sun 05:00–18:00, moon 18:00–05:00. Wikimedia photo changes daily, cached, ☀/☾ fallback offline.\n- Bottom strip: battery, uptime, temperature from the Weather app, next alarm/timer.\n- Compact player: artwork, title, prev/play/next — taps work, everything else passes through. No blur, no CADisplayLink.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n## 3.0.0 (2026-09-22)\n\n### Tiếng Việt\n- Viết lại từ đầu. NOVA lock: giờ lớn, vòng quỹ đạo giây, không kính blur, không hook layout/setAlpha.\n- Overlay không nhận chạm. Thông báo / Face ID / mật mã / vuốt lên giữ nguyên. Hết đường treo SpringBoard của 2.x.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- Rewritten from scratch. NOVA lock: large time, orbital seconds ring, no blur glass, no layout/setAlpha hooks.\n- Overlay never steals taps. Notifications / Face ID / passcode / swipe-up stay stock. 2.x freeze paths removed.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n## 2.0.3 (2026-09-22)\n\n### Tiếng Việt\n- Sửa treo máy lần 2: bỏ hook setAlpha/layout trên đồng hồ iOS, không gọi Now Playing, không CADisplayLink, không blur UIVisualEffect trên overlay.\n- Gắn HUD một lần (sau layout), không walk cây view mỗi frame. Thông báo chỉ dress khi vào window.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- Second freeze fix: no setAlpha/layout hooks on the stock clock, no Now Playing IPC, no CADisplayLink, no UIVisualEffect on the overlay.\n- HUD attaches once after layout, no per-frame tree walk. Notifications dressed only on didMoveToWindow.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n## 2.0.2 (2026-09-22)\n\n### Tiếng Việt\n- Sửa treo máy: không còn vòng reload prefs tự gọi lại chính nó; overlay không chặn chạm; layout/kính không lặp.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- Fix device freeze: prefs reload no longer notifies itself; overlay does not steal touches; chrome is not reinstalled every layout.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n## 2.0.1 (2026-09-22)\n\n### Tiếng Việt\n- Xoá các khung trống: người, lối tắt, dock giả. Thẻ Đang phát chỉ hiện khi có nhạc.\n- Sắp lại: đồng hồ 10/09 + ngày bên trái, thẻ kính có nội dung (nhạc / thời tiết / mục tiêu) bên phải.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n### English\n- Empty frames removed: people, shortcuts, fake dock. Now Playing appears only when something is playing.\n- Tighter layout: stacked 10/09 + date on the left, content cards (media / weather / goals) on the right.\n- Credit: Jinken Nguyen - 1989. Donate: MB Bank - 0345140889 - Nguyễn Tiến Triều.\n\n## 2.0.0 (2026-09-22)\n\n### Tiếng Việt\n- Làm lại màn khoá theo dashboard aurora: đồng hồ 10",
+          "useSpacing": true,
+          "useRawFormat": false
+        }
+      ]
+    },
+    {
+      "tabname": "Donate",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Cảm ơn bạn",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Jinken Nguyen - 1989",
+          "useBoldText": false
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.\n\n- Ngân hàng: **MB Bank**\n- STK: **0345140889**\n- Chủ TK: **Nguyễn Tiến Triều**\n- Nội dung: `Donate Jinken Nguyen 1989`\n\nQuét VietQR trên [trang repo](https://tientrieu19892025.github.io#donate). Cảm ơn bạn rất nhiều.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}
