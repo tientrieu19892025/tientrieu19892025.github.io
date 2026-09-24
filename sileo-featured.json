@@ -62,6 +62,12 @@
       "title": "StatusBarInfo",
       "package": "com.jinkennguyen.statusbarinfo",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "MatteGlass",
+      "package": "com.jinkennguyen.matteglass",
+      "hideShadow": false
     }
   ]
 }
