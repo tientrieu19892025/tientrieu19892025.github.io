@@ -224,7 +224,6 @@ FEATURED = [
     "com.jinkennguyen.haloframe",
     "com.jinkennguyen.prankframe",
     "com.jinkennguyen.statusbarinfo",
-    "com.jinkennguyen.matteglass",
 ]
 
 DEB_NAME_RE = re.compile(
