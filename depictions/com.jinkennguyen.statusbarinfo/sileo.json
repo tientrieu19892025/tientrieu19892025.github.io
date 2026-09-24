@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**StatusBarInfo** — Bảng điều khiển đa năng khi chạm Status Bar: hơn 68 thông số chi tiết hệ thống, pin, mạng, âm lịch, thời tiết, CPU.\n\nVersatile HUD on Status Bar tap: 68+ specs for system, battery, network, lunar calendar, weather, CPU.\n\n**Phiên bản / Version:** 1.1.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → StatusBarInfo**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**StatusBarInfo** — Chạm thanh trạng thái ở Màn hình chính và trong mọi app, trừ game. Hơn 68 thông số.\n\nTap the status bar on the Home Screen and in every app, except games. 68+ specs.\n\n**Phiên bản / Version:** 1.2.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → StatusBarInfo**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.1.0"
+          "text": "1.2.0"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,12 +73,12 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "1.1.0",
+          "title": "1.2.0",
           "useBoldText": true
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**1.1.0**\nBảng điều khiển đa năng khi chạm Status Bar: hơn 68 thông số chi tiết hệ thống, pin, sức khoẻ pin, nhà mạng, Wi-Fi, âm lịch Can Chi, thời tiết, RAM, CPU. Giao diện kính mờ, sao chép 1 chạm, hỗ trợ iOS 10–18.",
+          "markdown": "**1.2.0**\nChạm thanh trạng thái trên Màn hình chính và trong mọi app. Game không bị inject. Cài đặt kiểu kính.\n\n**1.1.0**\nBảng điều khiển khi chạm Status Bar: hơn 68 thông số. Giao diện kính mờ, sao chép 1 chạm.",
           "useSpacing": true,
           "useRawFormat": false
         }

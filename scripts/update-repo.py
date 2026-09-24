@@ -176,8 +176,8 @@ BLURBS = {
         "100 iPhone pranks: stripes, cracked glass, fake battery, odd sounds, haptics. Shake to stop.",
     ),
     "com.jinkennguyen.statusbarinfo": (
-        "Bảng điều khiển đa năng khi chạm Status Bar: hơn 68 thông số chi tiết hệ thống, pin, mạng, âm lịch, thời tiết, CPU.",
-        "Versatile HUD on Status Bar tap: 68+ specs for system, battery, network, lunar calendar, weather, CPU.",
+        "Chạm thanh trạng thái ở Màn hình chính và trong mọi app, trừ game. Hơn 68 thông số.",
+        "Tap the status bar on the Home Screen and in every app, except games. 68+ specs.",
     ),
 }
 
@@ -523,8 +523,11 @@ Giờ trên màn khoá đúng múi giờ máy.
 Mặt trời / mặt trăng đổi theo ngày.""",
     "com.jinkennguyen.prankframe": """**1.0.0**
 100 trò khăm trên iPhone (sọc, màn hình vỡ, giả pin, tiếng lạ, rung, lộn ngược…). Mặc định TẮT. Lắc mạnh để dừng.""",
-    "com.jinkennguyen.statusbarinfo": """**1.1.0**
-Bảng điều khiển đa năng khi chạm Status Bar: hơn 68 thông số chi tiết hệ thống, pin, sức khoẻ pin, nhà mạng, Wi-Fi, âm lịch Can Chi, thời tiết, RAM, CPU. Giao diện kính mờ, sao chép 1 chạm, hỗ trợ iOS 10–18.""",
+    "com.jinkennguyen.statusbarinfo": """**1.2.0**
+Chạm thanh trạng thái trên Màn hình chính và trong mọi app. Game không bị inject. Cài đặt kiểu kính.
+
+**1.1.0**
+Bảng điều khiển khi chạm Status Bar: hơn 68 thông số. Giao diện kính mờ, sao chép 1 chạm.""",
     "com.jinkennguyen.matteglass": """**2.1.1**
 Sửa treo máy. Nhám vẫn hiện. Lật Duo mặc định tắt.
 
