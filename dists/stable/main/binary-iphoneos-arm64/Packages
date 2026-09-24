@@ -1,3 +1,24 @@
+Package: com.jinkennguyen.adshield
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 840
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinkennguyen.adshield_1.0.4_iphoneos-arm64.deb
+Size: 124770
+MD5sum: 579bd160c03310bfa78c8d267b2350e2
+SHA1: db90d5d419af2e6954b90367ed74923b1b69bea6
+SHA256: f89f0fbdfaae2d748f94f59c7e46455889b72a4a222b301fee403a95a2ffd34e
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: AdShield
+Description: Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.adshield/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.adshield/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.adshield.png
+
 Package: com.jinkennguyen.appsw
 Version: 1.0.4
 Architecture: iphoneos-arm64

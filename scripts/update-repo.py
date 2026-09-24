@@ -224,6 +224,7 @@ FEATURED = [
     "com.jinkennguyen.haloframe",
     "com.jinkennguyen.prankframe",
     "com.jinkennguyen.statusbarinfo",
+    "com.jinkennguyen.adshield",
 ]
 
 DEB_NAME_RE = re.compile(
