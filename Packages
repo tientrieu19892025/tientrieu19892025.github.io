@@ -126,6 +126,27 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
+Package: com.jinkennguyen.prankframe
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1516
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.prankframe_1.0.0_iphoneos-arm.deb
+Size: 501086
+MD5sum: 6bd93efdceabe50d42b4c9e45c7af6b6
+SHA1: c5ec532c51f6a59d3728661a68cd4173fa88459c
+SHA256: 338d7b03c0943a7991865b90e5a536eeaa395bf56b0167a35bb8f1a9720a1e84
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: PrankFrame
+Description: 100 trò khăm trên iPhone: sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung. Lắc để dừng.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.prankframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.prankframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.prankframe.png
+
 Package: com.jinkennguyen.settingsz
 Version: 1.0.10
 Architecture: iphoneos-arm
@@ -296,6 +317,27 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
+Package: com.jinkennguyen.prankframe
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1532
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinkennguyen.prankframe_1.0.0_iphoneos-arm64.deb
+Size: 502926
+MD5sum: 902364f1c33ddc0bc2b132ed10fceffd
+SHA1: 20b9272f5bfe827becc699a806027ba4fdd57a48
+SHA256: 778681d97486dbc9da069619c8c5a9a3200811c3cc6c67a44b639c73213f06d5
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: PrankFrame
+Description: 100 trò khăm trên iPhone: sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung. Lắc để dừng.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.prankframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.prankframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.prankframe.png
+
 Package: com.jinkennguyen.settingsz
 Version: 1.0.10
 Architecture: iphoneos-arm64
@@ -465,6 +507,27 @@ Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxfr
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.noxframe/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
+
+Package: com.jinkennguyen.prankframe
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1516
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/roothide/com.jinkennguyen.prankframe_1.0.0_iphoneos-arm64e.deb
+Size: 502420
+MD5sum: 0f50288f21a9b1f08c6bc7fd845f12fe
+SHA1: 3bedff56a699f5b500c980da6efffb6a1d33867c
+SHA256: 4e2e38c57425247348a1f916b7d022cd67ce268072a1e4f5907d5efffddad4d0
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: PrankFrame
+Description: 100 trò khăm trên iPhone: sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung. Lắc để dừng.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.prankframe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.prankframe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.prankframe.png
 
 Package: com.jinkennguyen.settingsz
 Version: 1.0.10

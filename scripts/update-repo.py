@@ -171,6 +171,10 @@ BLURBS = {
         "Mini-game Trung Thu arcade. Nhân vật retro, nhạc chiptune, hướng dẫn từng trò.",
         "Arcade Mid-Autumn mini-games. Retro characters, chiptune SFX, how-to before each game.",
     ),
+    "com.jinkennguyen.prankframe": (
+        "100 trò khăm trên iPhone: sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung. Lắc để dừng.",
+        "100 iPhone pranks: stripes, cracked glass, fake battery, odd sounds, haptics. Shake to stop.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -214,6 +218,7 @@ FEATURED = [
     "com.jinkennguyen.settingsz",
     "com.jinkennguyen.appsw",
     "com.jinkennguyen.haloframe",
+    "com.jinkennguyen.prankframe",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -419,6 +424,7 @@ def project_dir_for(pkg: str) -> Path | None:
         "com.t27.backport": "T27",
         "com.jinkennguyen.trungthulan": "TrungThuLan",
         "com.jinkennguyen.trungthuplay": "TrungThuPlay",
+        "com.jinkennguyen.prankframe": "PrankFrame",
     }
     name = aliases.get(pkg)
     if name and (CODE / name).is_dir():
@@ -498,6 +504,8 @@ Giờ trên màn khoá đúng múi giờ máy.
 
 **3.2.0**
 Mặt trời / mặt trăng đổi theo ngày.""",
+    "com.jinkennguyen.prankframe": """**1.0.0**
+100 trò khăm trên iPhone (sọc, màn hình vỡ, giả pin, tiếng lạ, rung, lộn ngược…). Mặc định TẮT. Lắc mạnh để dừng.""",
 }
 
 

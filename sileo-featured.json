@@ -50,6 +50,12 @@
       "title": "Lock Frame",
       "package": "com.jinkennguyen.haloframe",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "PrankFrame",
+      "package": "com.jinkennguyen.prankframe",
+      "hideShadow": false
     }
   ]
 }
