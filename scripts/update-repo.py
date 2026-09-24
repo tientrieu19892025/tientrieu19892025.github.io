@@ -175,6 +175,10 @@ BLURBS = {
         "100 trò khăm trên iPhone: sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung. Lắc để dừng.",
         "100 iPhone pranks: stripes, cracked glass, fake battery, odd sounds, haptics. Shake to stop.",
     ),
+    "com.jinkennguyen.statusbarinfo": (
+        "Bảng điều khiển đa năng khi chạm Status Bar: hơn 68 thông số chi tiết hệ thống, pin, mạng, âm lịch, thời tiết, CPU.",
+        "Versatile HUD on Status Bar tap: 68+ specs for system, battery, network, lunar calendar, weather, CPU.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -219,6 +223,7 @@ FEATURED = [
     "com.jinkennguyen.appsw",
     "com.jinkennguyen.haloframe",
     "com.jinkennguyen.prankframe",
+    "com.jinkennguyen.statusbarinfo",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -267,7 +272,7 @@ def dpkg_fields(deb: Path) -> dict[str, str]:
 
 def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], Path]:
     latest: dict[tuple[str, str], tuple] = {}
-    search_roots = list(CODE.glob("*/packages")) + [DESKTOP]
+    search_roots = list(CODE.glob("*/packages")) + [Path.home() / "StatusBarInfo" / "packages", DESKTOP]
     for folder in search_roots:
         if not folder.is_dir():
             continue
@@ -415,7 +420,10 @@ def copy_banner(src: Path, dest: Path, size: tuple[int, int]) -> None:
 
 
 def project_dir_for(pkg: str) -> Path | None:
-    for p in CODE.iterdir():
+    search_dirs = list(CODE.iterdir()) + [Path.home() / "StatusBarInfo"]
+    for p in search_dirs:
+        if not p.is_dir():
+            continue
         control = p / "control"
         if control.is_file() and f"Package: {pkg}" in control.read_text(encoding="utf-8", errors="replace"):
             return p
@@ -425,10 +433,13 @@ def project_dir_for(pkg: str) -> Path | None:
         "com.jinkennguyen.trungthulan": "TrungThuLan",
         "com.jinkennguyen.trungthuplay": "TrungThuPlay",
         "com.jinkennguyen.prankframe": "PrankFrame",
+        "com.jinkennguyen.statusbarinfo": "StatusBarInfo",
     }
     name = aliases.get(pkg)
-    if name and (CODE / name).is_dir():
-        return CODE / name
+    if name:
+        for root in (CODE, Path.home()):
+            if (root / name).is_dir():
+                return root / name
     return None
 
 
@@ -509,6 +520,8 @@ Giờ trên màn khoá đúng múi giờ máy.
 Mặt trời / mặt trăng đổi theo ngày.""",
     "com.jinkennguyen.prankframe": """**1.0.0**
 100 trò khăm trên iPhone (sọc, màn hình vỡ, giả pin, tiếng lạ, rung, lộn ngược…). Mặc định TẮT. Lắc mạnh để dừng.""",
+    "com.jinkennguyen.statusbarinfo": """**1.1.0**
+Bảng điều khiển đa năng khi chạm Status Bar: hơn 68 thông số chi tiết hệ thống, pin, sức khoẻ pin, nhà mạng, Wi-Fi, âm lịch Can Chi, thời tiết, RAM, CPU. Giao diện kính mờ, sao chép 1 chạm, hỗ trợ iOS 10–18.""",
 }
 
 

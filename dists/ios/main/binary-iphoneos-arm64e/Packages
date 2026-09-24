@@ -188,3 +188,24 @@ Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapi
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.slapios/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
+
+Package: com.jinkennguyen.statusbarinfo
+Version: 1.1.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 560
+Depends: firmware (>= 10.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/roothide/com.jinkennguyen.statusbarinfo_1.1.0_iphoneos-arm64e.deb
+Size: 104044
+MD5sum: e1fcb0361f6705ab0df2078be5f7774d
+SHA1: 2599bf1452a3dea9c3b405480413d6363a5398e8
+SHA256: 512133ce98947f83e1e5e4c268a8a961bb949483e7340f3bd6ddcfccdee087cb
+Section: Tweaks
+Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: StatusBarInfo
+Description: Bảng điều khiển đa năng khi chạm Status Bar: hơn 68 thông số chi tiết hệ thống, pin, mạng, âm lịch, thời tiết, CPU.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.statusbarinfo.png
