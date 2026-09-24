@@ -179,6 +179,10 @@ BLURBS = {
         "Chạm thanh trạng thái ở Màn hình chính và trong mọi app, trừ game. Hơn 68 thông số.",
         "Tap the status bar on the Home Screen and in every app, except games. 68+ specs.",
     ),
+    "com.jinkennguyen.jinken": (
+        "App trên Home: xem tweak trên repo, cách dùng, donate.",
+        "Home Screen app: repo tweaks, how-to, donate.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -225,6 +229,7 @@ FEATURED = [
     "com.jinkennguyen.prankframe",
     "com.jinkennguyen.statusbarinfo",
     "com.jinkennguyen.adshield",
+    "com.jinkennguyen.jinken",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -529,6 +534,8 @@ Chạm thanh trạng thái trên Màn hình chính và trong mọi app. Game kh�
 
 **1.1.0**
 Bảng điều khiển khi chạm Status Bar: hơn 68 thông số. Giao diện kính mờ, sao chép 1 chạm.""",
+    "com.jinkennguyen.jinken": """**1.0.0**
+App trên Home. Mở để xem tweak trên repo, cách dùng, donate. Kéo xuống để lấy danh sách mới.""",
     "com.jinkennguyen.matteglass": """**2.1.1**
 Sửa treo máy. Nhám vẫn hiện. Lật Duo mặc định tắt.
 
@@ -1292,6 +1299,9 @@ SHA256:
     )
 
     write_index(packages, conf)
+    jcat = CODE / "Jinken" / "app" / "Resources" / "catalog.json"
+    if jcat.is_file():
+        shutil.copy2(jcat, ROOT / "catalog.json")
     write_readme(packages, conf)
 
     print(f"Packages: {len(packages)}")

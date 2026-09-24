@@ -1,0 +1,208 @@
+{
+  "updated": "2026-09-22",
+  "source": "https://tientrieu19892025.github.io",
+  "author": "Jinken Nguyen - 1989",
+  "donate": {
+    "bank": "MB Bank",
+    "account": "0345140889",
+    "name": "Nguyễn Tiến Triều",
+    "note": "Donate Jinken Nguyen 1989",
+    "headline_vi": "Repo này sống nhờ bạn",
+    "body_vi": "LookGlass, DuoFrame, AppSw trên máy bạn là mình làm một mình, miễn phí, không quảng cáo, không khoá tính năng. Chuyển khoản một lần là mình có thêm tuần để vá iOS mới. Không donate cũng không sao — nếu đang dùng hàng ngày, một ly cà phê là đủ.",
+    "cta_vi": "Sao chép số tài khoản",
+    "thanks_vi": "Cảm ơn bạn đã tin dùng. Không bắt buộc."
+  },
+  "tweaks": [
+    {
+      "id": "com.jinkennguyen.lookglass",
+      "name": "LookGlass",
+      "version": "4.0.4",
+      "tag": "Tìm & chat",
+      "summary": "Ô tìm trên Home. YouTube phát ngay trên ô, nghe nền được. Có phòng chat chung.",
+      "detail": "LookGlass là ô tìm kính trên màn hình chính. Gõ từ khoá, mở Wikipedia, nhạc, phim, YouTube. Video phát trên ô, tắt màn vẫn nghe. Chat cộng đồng: bấm Chat cạnh Tìm, đặt username, gửi chữ hoặc link.",
+      "how": [
+        "Cài LookGlass, Respring.",
+        "Ô tìm hiện trên Home. Gõ rồi bấm Tìm.",
+        "YouTube: chọn video, phát trên ô. Có tua, tốc độ, hẹn giờ.",
+        "Chat: bấm Chat cạnh Tìm, đặt username một lần, rồi nhắn."
+      ],
+      "log": [
+        {"v": "4.0.4", "t": "Chat hiện tin ngay khi gửi."},
+        {"v": "4.0.3", "t": "Sửa Cài đặt trên iOS 16 RootHide."},
+        {"v": "4.0.0", "t": "Phòng chat chung. YouTube trên ô LookGlass."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.duoframe",
+      "name": "DuoFrame",
+      "version": "3.5.3",
+      "tag": "Màn hình chính",
+      "summary": "Khung kính trên Home — status, icon, dock. Vuốt, màu chữ và kiểu icon trong Cài đặt.",
+      "detail": "DuoFrame khoác kính lên màn hình chính. Status, lưới icon và dock nằm trong khung. Có cuộn trang liên tục hoặc vuốt trái/phải như iOS gốc. Đổi màu chữ, kiểu icon trong Cài đặt → DuoFrame.",
+      "how": [
+        "Cài, Respring.",
+        "Mở Cài đặt → DuoFrame.",
+        "Chọn kiểu khung, màu chữ, kiểu icon.",
+        "Muốn vuốt trang như gốc: tắt Cuộn trang liên tục."
+      ],
+      "log": [
+        {"v": "3.5.3", "t": "Cài iOS 17/18 không còn báo thiếu thành phần."},
+        {"v": "3.5.2", "t": "Đổi màu chữ và icon trên Home."},
+        {"v": "3.5.1", "t": "Vuốt mượt hơn, thêm kiểu icon."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.appsw",
+      "name": "AppSw",
+      "version": "1.0.5",
+      "tag": "Đa nhiệm",
+      "summary": "Vuốt lên đa nhiệm: cửa sổ lớn phía trên, năm app gần nhất phía dưới.",
+      "detail": "AppSw thay màn đa nhiệm. Phía trên là cửa sổ lớn của app đang chọn. Phía dưới tối đa năm app gần nhất. Chạm thẻ nhỏ để đưa lên. Chạm cửa sổ lớn để mở. Vuốt lên thẻ nhỏ để đóng app.",
+      "how": [
+        "Cài, Respring.",
+        "Vuốt lên từ mép dưới như đa nhiệm bình thường.",
+        "Chạm thẻ nhỏ để đổi app trên cửa sổ lớn.",
+        "Vuốt lên thẻ nhỏ để đóng app đó."
+      ],
+      "log": [
+        {"v": "1.0.5", "t": "Kính rõ hơn. Ô lớn đúng app đang chạy. Vuốt lên thẻ nhỏ để đóng."},
+        {"v": "1.0.4", "t": "Vuốt lên thì ra AppSw, che màn gốc."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.haloframe",
+      "name": "Lock Frame",
+      "version": "3.2.3",
+      "tag": "Màn khoá",
+      "summary": "Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.",
+      "detail": "Lock Frame phủ kính lên màn khoá. Ban ngày mặt trời, ban đêm mặt trăng. Thanh dưới: pin, thời gian online, nhiệt độ, hẹn giờ. Có player nhạc gọn — prev / play / next.",
+      "how": [
+        "Cài, Respring.",
+        "Khoá máy để xem màn khoá mới.",
+        "Cài đặt → Lock Frame để bật/tắt từng phần."
+      ],
+      "log": [
+        {"v": "3.2.3", "t": "Bản ổn định hiện tại."},
+        {"v": "3.2.1", "t": "Giờ trên lock đúng múi giờ máy."},
+        {"v": "3.2.0", "t": "Mặt trời / mặt trăng đổi theo ngày."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.settingsz",
+      "name": "SettingSZ",
+      "version": "1.0.11",
+      "tag": "Cài đặt",
+      "summary": "Sắp lại Cài đặt: kệ, màu đề mục, kéo đổi cỡ dòng.",
+      "detail": "SettingSZ biến danh sách Cài đặt thành kệ trên một nền liền. Đề mục lớn tô màu bạn chọn. Kéo để đổi chiều cao dòng. Tweak jailbreak vẫn hiện trong danh sách và ô tìm.",
+      "how": [
+        "Cài, Respring.",
+        "Mở Cài đặt — giao diện mới hiện ngay.",
+        "Cài đặt → SettingSZ để chọn màu đề mục và bố cục."
+      ],
+      "log": [
+        {"v": "1.0.11", "t": "Bản ổn định hiện tại."},
+        {"v": "1.0.10", "t": "Mở mục trong Cài đặt không còn bị thoát."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.noxframe",
+      "name": "NoxFrame",
+      "version": "1.1.1",
+      "tag": "Camera",
+      "summary": "Tắt màn vẫn chụp và quay. Trong Ảnh có nút lưu đúng khung hình video.",
+      "detail": "NoxFrame để Camera chạy khi màn tối. Bấm nguồn để màn đen, ống kính vẫn quay. Trong app Ảnh, khi xem video có nút lưu khung hình đang dừng.",
+      "how": [
+        "Cài, Respring.",
+        "Mở Camera, bấm nút nguồn để tối màn — Camera vẫn chạy.",
+        "Xem video trong Ảnh, bấm Lưu hình nếu cần khung đó."
+      ],
+      "log": [
+        {"v": "1.1.1", "t": "Sửa Camera treo trên iOS 18."},
+        {"v": "1.1.0", "t": "Nút lưu khung hình khi xem video."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.slapios",
+      "name": "SlapIos",
+      "version": "1.2.0",
+      "tag": "Âm thanh",
+      "summary": "Vỗ, gõ, lắc máy thì kêu. Nhiều gói tiếng; chọn Rên thì chỉ rên.",
+      "detail": "SlapIos phát tiếng khi bạn vỗ, gõ hoặc lắc iPhone. Có nhiều gói. Gói Rên chỉ phát tiếng rên, không lẫn cartoon.",
+      "how": [
+        "Cài, Respring.",
+        "Cài đặt → SlapIos, chọn gói tiếng.",
+        "Vỗ lưng máy, gõ màn, hoặc lắc."
+      ],
+      "log": [
+        {"v": "1.2.0", "t": "Gói tiếng thu âm thật. Chọn Rên thì chỉ rên."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.cpuboost",
+      "name": "CPU Boost",
+      "version": "1.0.3",
+      "tag": "Hệ thống",
+      "summary": "CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Eco / Boost / Turbo.",
+      "detail": "CPU Boost chỉnh tốc độ CPU. Eco tiết pin. Boost và Turbo kéo máy cũ đỡ nặng. Dùng khi cần, đừng để Turbo cả ngày.",
+      "how": [
+        "Cài, Respring.",
+        "Cài đặt → CPU Boost.",
+        "Chọn Eco, Boost hoặc Turbo.",
+        "Respring sau khi đổi preset."
+      ],
+      "log": [
+        {"v": "1.0.3", "t": "Sửa Safe Mode khi chọn preset rồi Respring."},
+        {"v": "1.0.2", "t": "Cài được trên iOS 17/18."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.adshield",
+      "name": "AdShield",
+      "version": "1.0.4",
+      "tag": "Chặn quảng cáo",
+      "summary": "Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.",
+      "detail": "AdShield chặn quảng cáo trong app, Safari và WebView. Bật trong Cài đặt. Có thể tắt từng loại nếu một app bị hỏng trang.",
+      "how": [
+        "Cài, Respring.",
+        "Cài đặt → AdShield, bật chặn.",
+        "Nếu một app lỗi trang, tắt filter của app đó."
+      ],
+      "log": [
+        {"v": "1.0.4", "t": "Bản đang trên repo."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.prankframe",
+      "name": "PrankFrame",
+      "version": "1.0.0",
+      "tag": "Trò đùa",
+      "summary": "100 trò khăm trên iPhone. Mặc định tắt. Lắc mạnh để dừng.",
+      "detail": "PrankFrame có sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung, lộn ngược… Mặc định TẮT. Bật từng trò trong Cài đặt. Lắc mạnh để dừng ngay.",
+      "how": [
+        "Cài, Respring.",
+        "Cài đặt → PrankFrame. Mặc định tắt hết.",
+        "Bật một trò, đưa máy cho bạn.",
+        "Lắc mạnh để dừng."
+      ],
+      "log": [
+        {"v": "1.0.0", "t": "100 trò khăm. Mặc định tắt. Lắc để dừng."}
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.statusbarinfo",
+      "name": "StatusBarInfo",
+      "version": "1.2.0",
+      "tag": "Thanh trạng thái",
+      "summary": "Chạm thanh trạng thái trên Home và trong app — hơn 68 thông số. Game không dính.",
+      "detail": "StatusBarInfo hiện bảng kính khi chạm status bar. Pin, RAM, CPU, mạng, nhiệt… Sao chép một chạm. Không inject vào game.",
+      "how": [
+        "Cài, Respring.",
+        "Chạm thanh trạng thái trên Home hoặc trong app.",
+        "Vuốt bảng để xem thêm. Chạm dòng để copy."
+      ],
+      "log": [
+        {"v": "1.2.0", "t": "Chạm status bar trên Home và trong app. Game không bị inject."}
+      ]
+    }
+  ]
+}
