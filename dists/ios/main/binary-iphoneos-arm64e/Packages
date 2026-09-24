@@ -67,13 +67,13 @@ Package: com.jinkennguyen.haloframe
 Version: 3.2.2
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 804
+Installed-Size: 868
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
 Filename: debs/roothide/com.jinkennguyen.haloframe_3.2.2_iphoneos-arm64e.deb
-Size: 118844
-MD5sum: 9e9259b4565d46cf3cf15fa53c83989c
-SHA1: 84caadadc53c43b0cfc0913dd6c1903c9dcf73fc
-SHA256: fe7a93e4393a9d25765e7d1dc958bde779e86dda928314439460ee74139e1944
+Size: 132246
+MD5sum: 074ca29269b2ebc119ed43005059b450
+SHA1: 3af792103dff766752b9e86f34a4217cbbf9b7ce
+SHA256: 1cb6a4ab9509538fd08ce4a3a5a6ef6f0e3f34bbb32d8619cd60eb9ce71c9ba4
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989

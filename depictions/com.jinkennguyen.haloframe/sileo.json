@@ -78,7 +78,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**3.2.1**\nGiờ trên màn khoá đúng múi giờ máy.\n\n**3.2.0**\nMặt trời / mặt trăng đổi theo ngày.",
+          "markdown": "**3.2.2**\nHẹn giờ lock đọc app Đồng hồ (countdown từng giây). Nhiệt độ đọc app Thời tiết. Cài đặt mượt, không khựng/thoát.\n\n**3.2.1**\nGiờ trên màn khoá đúng múi giờ máy.\n\n**3.2.0**\nMặt trời / mặt trăng đổi theo ngày.",
           "useSpacing": true,
           "useRawFormat": false
         }
