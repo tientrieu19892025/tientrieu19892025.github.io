@@ -144,8 +144,8 @@ BLURBS = {
         "Control Center studio: modules, layout, liquid glass.",
     ),
     "com.jinkennguyen.matteglass": (
-        "Nhám màn hình, e-ink như giấy, lật trang Home kiểu iPhone Duo.",
-        "Matte screen, paper e-ink, iPhone Duo-style Home page fold.",
+        "Nhám màn hình, e-ink như giấy. Không treo máy.",
+        "Matte screen, paper e-ink. Does not freeze the phone.",
     ),
     "com.jinkennguyen.miraos": (
         "Desktop kiểu macOS trên iPhone. App mở bên trong MiraOS.",
@@ -526,10 +526,11 @@ Mặt trời / mặt trăng đổi theo ngày.""",
 100 trò khăm trên iPhone (sọc, màn hình vỡ, giả pin, tiếng lạ, rung, lộn ngược…). Mặc định TẮT. Lắc mạnh để dừng.""",
     "com.jinkennguyen.statusbarinfo": """**1.1.0**
 Bảng điều khiển đa năng khi chạm Status Bar: hơn 68 thông số chi tiết hệ thống, pin, sức khoẻ pin, nhà mạng, Wi-Fi, âm lịch Can Chi, thời tiết, RAM, CPU. Giao diện kính mờ, sao chép 1 chạm, hỗ trợ iOS 10–18.""",
-    "com.jinkennguyen.matteglass": """**2.1.0**
-Nhám tiêu chuẩn nhìn thấy rõ. Cài đặt kiểu kính, có donate.
+    "com.jinkennguyen.matteglass": """**2.1.1**
+Sửa treo máy. Nhám vẫn hiện. Lật Duo mặc định tắt.
 
-E-ink không làm đen màn. Lật trang Home kiểu iPhone Duo, không treo máy.""",
+**2.1.0**
+Nhám tiêu chuẩn nhìn thấy rõ. Cài đặt kiểu kính, có donate.""",
 }
 
 

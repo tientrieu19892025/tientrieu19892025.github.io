@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**MatteGlass** — Nhám màn hình, e-ink như giấy, lật trang Home kiểu iPhone Duo.\n\nMatte screen, paper e-ink, iPhone Duo-style Home page fold.\n\n**Phiên bản / Version:** 2.1.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → MatteGlass**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**MatteGlass** — Nhám màn hình, e-ink như giấy. Không treo máy.\n\nMatte screen, paper e-ink. Does not freeze the phone.\n\n**Phiên bản / Version:** 2.1.1  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → MatteGlass**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "2.1.0"
+          "text": "2.1.1"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,12 +73,12 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "2.1.0",
+          "title": "2.1.1",
           "useBoldText": true
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**2.1.0**\nNhám tiêu chuẩn nhìn thấy rõ. Cài đặt kiểu kính, có donate.\n\nE-ink không làm đen màn. Lật trang Home kiểu iPhone Duo, không treo máy.",
+          "markdown": "**2.1.1**\nSửa treo máy. Nhám vẫn hiện. Lật Duo mặc định tắt.\n\n**2.1.0**\nNhám tiêu chuẩn nhìn thấy rõ. Cài đặt kiểu kính, có donate.",
           "useSpacing": true,
           "useRawFormat": false
         }

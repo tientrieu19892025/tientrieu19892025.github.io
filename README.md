@@ -38,7 +38,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.3 | rootful, rootless, RootHide |
 | Lock Frame | `com.jinkennguyen.haloframe` | 3.2.3 | rootful, rootless, RootHide |
 | LookGlass | `com.jinkennguyen.lookglass` | 4.0.4 | rootful, rootless, RootHide |
-| MatteGlass | `com.jinkennguyen.matteglass` | 2.1.0 | rootful, rootless, RootHide |
+| MatteGlass | `com.jinkennguyen.matteglass` | 2.1.1 | rootful, rootless, RootHide |
 | NoxFrame | `com.jinkennguyen.noxframe` | 1.1.1 | rootful, rootless, RootHide |
 | PrankFrame | `com.jinkennguyen.prankframe` | 1.0.0 | rootful, rootless, RootHide |
 | SettingSZ | `com.jinkennguyen.settingsz` | 1.0.11 | rootful, rootless, RootHide |

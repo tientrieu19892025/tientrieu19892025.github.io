@@ -106,21 +106,21 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.matteglass
-Version: 2.1.0
+Version: 2.1.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 844
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/rootful/com.jinkennguyen.matteglass_2.1.0_iphoneos-arm.deb
-Size: 221028
-MD5sum: 66f5b3141d22150ba16ccfdb8b42d248
-SHA1: 7b7f8b62619439bef8d3ea4994c81287d0f2ad43
-SHA256: c8013c013264b7f87278f1e8592d5d7268b81b72461aef9d0ff25e4adf9b6868
+Filename: debs/rootful/com.jinkennguyen.matteglass_2.1.1_iphoneos-arm.deb
+Size: 213530
+MD5sum: ee3b3ece90f99016f46ee2e6f8694ad7
+SHA1: d30af85c0a2e310edbad02757d02c5f63d814d9a
+SHA256: 2a6e9ea9c8d7bbbd23b3ab1515399ba09ad0d6b2f1a60b4c1f655f6ce21f34ed
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
 Author: Jinken Nguyen - 1989
 Name: MatteGlass
-Description: Nhám màn hình, e-ink như giấy, lật trang Home kiểu iPhone Duo.
+Description: Nhám màn hình, e-ink như giấy. Không treo máy.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.matteglass/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.matteglass/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
@@ -339,21 +339,21 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.matteglass
-Version: 2.1.0
+Version: 2.1.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 844
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/rootless/com.jinkennguyen.matteglass_2.1.0_iphoneos-arm64.deb
-Size: 221270
-MD5sum: a8cefe74bb364199048ce6627960ae56
-SHA1: 7ae26c134f19c13846797f567b46f43e4c1f494e
-SHA256: e9eb0e776055cc69bdb2b344604ea4f1c12447e05a43d64865935c337d8aa62e
+Filename: debs/rootless/com.jinkennguyen.matteglass_2.1.1_iphoneos-arm64.deb
+Size: 213812
+MD5sum: dfe2f4e2ddf1431d120518fa777f50b7
+SHA1: 6a82385d208ed91c82f5b1f5120c32c0cb413ec4
+SHA256: 3e362ce57583ac834fe1dcd8b5d1fb0f34940175e07a0f527dcb37addde18a3b
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
 Author: Jinken Nguyen - 1989
 Name: MatteGlass
-Description: Nhám màn hình, e-ink như giấy, lật trang Home kiểu iPhone Duo.
+Description: Nhám màn hình, e-ink như giấy. Không treo máy.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.matteglass/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.matteglass/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
@@ -572,21 +572,21 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.lookglass.png
 
 Package: com.jinkennguyen.matteglass
-Version: 2.1.0
+Version: 2.1.1
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 844
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/roothide/com.jinkennguyen.matteglass_2.1.0_iphoneos-arm64e.deb
-Size: 221136
-MD5sum: 935cc81269200d355745460557de6070
-SHA1: 1a974fa7c6d81bb9c7089012ae03dcc26ccc4c5b
-SHA256: de3e21005ab01a5e604d3f90c6cd5c52ec8b407eee5d9fdfbc075cd6a693f8d0
+Filename: debs/roothide/com.jinkennguyen.matteglass_2.1.1_iphoneos-arm64e.deb
+Size: 213656
+MD5sum: 4cf7d170f97d4d4939a07733b1b12b4c
+SHA1: a309660b6e424374ce9d838dd450d1fdf835cde2
+SHA256: 502e9a1a4d7c9b19469e2df9ed0a77824fa5c9c34d2e6be12e6940dad8a6cdde
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
 Author: Jinken Nguyen - 1989
 Name: MatteGlass
-Description: Nhám màn hình, e-ink như giấy, lật trang Home kiểu iPhone Duo.
+Description: Nhám màn hình, e-ink như giấy. Không treo máy.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.matteglass/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.matteglass/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
