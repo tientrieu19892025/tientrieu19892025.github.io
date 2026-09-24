@@ -1,3 +1,26 @@
+Package: com.jinken.listapp
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
+Installed-Size: 596
+Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
+Filename: debs/rootful/com.jinken.listapp_1.0.0_iphoneos-arm.deb
+Size: 122840
+MD5sum: cc3d2d30090c6b4f1024dd4a3cdbadfa
+SHA1: eec409f50b76e4ee677abe1953f7c75640cac466
+SHA256: bf2727ad1e3aa91b483c10f270c8824c4e59ebc32d31b0b7914618efe1eaa192
+Section: Tweaks
+Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
+Author: Jin Ken Nguyen
+Dev: Jin Ken Nguyen
+Name: ListApp
+Sponsor: https://ko-fi.com/jinkennguyen
+Description: Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.listapp/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.listapp/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
+
 Package: com.jinkennguyen.adshield
 Version: 1.0.4
 Architecture: iphoneos-arm

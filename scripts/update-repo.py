@@ -183,6 +183,10 @@ BLURBS = {
         "App trên Home: xem tweak trên repo, cách dùng, donate.",
         "Home Screen app: repo tweaks, how-to, donate.",
     ),
+    "com.jinken.listapp": (
+        "Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.",
+        "Modern Liquid Glass App Launcher replacing Home Screen. 2/3 width floating glass pills, real apps only, 5 designs & 7 colors.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -230,6 +234,7 @@ FEATURED = [
     "com.jinkennguyen.statusbarinfo",
     "com.jinkennguyen.adshield",
     "com.jinkennguyen.jinken",
+    "com.jinken.listapp",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -278,7 +283,11 @@ def dpkg_fields(deb: Path) -> dict[str, str]:
 
 def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], Path]:
     latest: dict[tuple[str, str], tuple] = {}
-    search_roots = list(CODE.glob("*/packages")) + [Path.home() / "StatusBarInfo" / "packages", DESKTOP]
+    search_roots = list(CODE.glob("*/packages")) + [
+        Path.home() / "StatusBarInfo" / "packages",
+        Path.home() / "ListApp" / "packages",
+        DESKTOP
+    ]
     for folder in search_roots:
         if not folder.is_dir():
             continue
@@ -426,7 +435,7 @@ def copy_banner(src: Path, dest: Path, size: tuple[int, int]) -> None:
 
 
 def project_dir_for(pkg: str) -> Path | None:
-    search_dirs = list(CODE.iterdir()) + [Path.home() / "StatusBarInfo"]
+    search_dirs = list(CODE.iterdir()) + [Path.home() / "StatusBarInfo", Path.home() / "ListApp"]
     for p in search_dirs:
         if not p.is_dir():
             continue
@@ -440,6 +449,7 @@ def project_dir_for(pkg: str) -> Path | None:
         "com.jinkennguyen.trungthuplay": "TrungThuPlay",
         "com.jinkennguyen.prankframe": "PrankFrame",
         "com.jinkennguyen.statusbarinfo": "StatusBarInfo",
+        "com.jinken.listapp": "ListApp",
     }
     name = aliases.get(pkg)
     if name:
@@ -454,6 +464,9 @@ def find_icon(pkg: str) -> Path | None:
     if not proj:
         return None
     for rel in (
+        "Preferences/Resources/icon@3x.png",
+        "Preferences/Resources/icon@2x.png",
+        "Preferences/Resources/icon.png",
         "prefs/Resources/icon@3x.png",
         "prefs/Resources/icon@2x.png",
         "prefs/Resources/icon.png",
@@ -541,6 +554,8 @@ Sửa treo máy. Nhám vẫn hiện. Lật Duo mặc định tắt.
 
 **2.1.0**
 Nhám tiêu chuẩn nhìn thấy rõ. Cài đặt kiểu kính, có donate.""",
+    "com.jinken.listapp": """**1.0.0**
+Thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng thẻ kính lỏng dài 2/3 màn hình. 5 thiết kế khung bo góc, 7 màu sắc kính lỏng, tìm kiếm tức thì, mở app mượt mà và chống treo máy tuyệt đối.""",
 }
 
 
