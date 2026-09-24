@@ -499,7 +499,7 @@ Vuốt lên đa nhiệm thì ra AppSw, che màn gốc — kể cả khi chưa c�
 
 **1.0.3**
 Không nhảy nhầm lúc mở app.""",
-    "com.jinkennguyen.haloframe": """**3.2.2**
+    "com.jinkennguyen.haloframe": """**3.2.3**
 Hẹn giờ lock đọc app Đồng hồ (countdown từng giây). Nhiệt độ đọc app Thời tiết. Cài đặt mượt, không khựng/thoát.
 
 **3.2.1**
