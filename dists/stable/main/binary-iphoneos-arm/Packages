@@ -148,16 +148,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.prankframe.png
 
 Package: com.jinkennguyen.settingsz
-Version: 1.0.10
+Version: 1.0.11
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 936
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootful/com.jinkennguyen.settingsz_1.0.10_iphoneos-arm.deb
-Size: 150826
-MD5sum: ec02438a0bd64ffe3eda8ce3e019211c
-SHA1: 18fdbfa6c76f490a9e0622e20626cb7d9fafca9d
-SHA256: e25b1a91a858f6736794e687606c66dbedc305f09b2a62164af73a149132eb9c
+Filename: debs/rootful/com.jinkennguyen.settingsz_1.0.11_iphoneos-arm.deb
+Size: 149258
+MD5sum: 0c9b2042b0fa5f4a797f898c914d5200
+SHA1: 8a0d898cbe54815d1aef05e668a0251fe73ad75d
+SHA256: eecef449cfc1f70622b4fbb1ea6a47258673b44429b81360035444d424767ec6
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989

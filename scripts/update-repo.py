@@ -503,7 +503,10 @@ Sửa Camera treo trên iOS 18.
 
 **1.1.0**
 Trong Ảnh, khi xem video có nút lưu đúng khung hình đó.""",
-    "com.jinkennguyen.settingsz": """**1.0.10**
+    "com.jinkennguyen.settingsz": """**1.0.11**
+Cài đặt không còn tự thoát khi đang dùng.
+
+**1.0.10**
 Mở mục trong Cài đặt không còn bị thoát. Tweak hiện đủ trong danh sách và ô tìm.""",
     "com.jinkennguyen.appsw": """**1.0.4**
 Vuốt lên đa nhiệm thì ra AppSw, che màn gốc — kể cả khi chưa có app gần đây.

@@ -40,7 +40,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | LookGlass | `com.jinkennguyen.lookglass` | 4.0.4 | rootful, rootless, RootHide |
 | NoxFrame | `com.jinkennguyen.noxframe` | 1.1.1 | rootful, rootless, RootHide |
 | PrankFrame | `com.jinkennguyen.prankframe` | 1.0.0 | rootful, rootless, RootHide |
-| SettingSZ | `com.jinkennguyen.settingsz` | 1.0.10 | rootful, rootless, RootHide |
+| SettingSZ | `com.jinkennguyen.settingsz` | 1.0.11 | rootful, rootless, RootHide |
 | SlapIos | `com.jinkennguyen.slapios` | 1.2.0 | rootful, rootless, RootHide |
 | StatusBarInfo | `com.jinkennguyen.statusbarinfo` | 1.1.0 | rootful, rootless, RootHide |
 
