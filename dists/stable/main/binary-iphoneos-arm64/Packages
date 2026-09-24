@@ -20,17 +20,17 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.adshield.png
 
 Package: com.jinkennguyen.appsw
-Version: 1.0.4
+Version: 1.0.5
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 640
+Installed-Size: 696
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/rootless/com.jinkennguyen.appsw_1.0.4_iphoneos-arm64.deb
-Size: 94490
-MD5sum: de3940d265d7f015dcc7b89ff0983bfa
-SHA1: 46482d7ae30175e27868a4e48529e6e90dd4cbb5
-SHA256: c63b82ae0dec68b3030b520411248205dfc96494d24af93c43bdd2f90e4aaa53
+Filename: debs/rootless/com.jinkennguyen.appsw_1.0.5_iphoneos-arm64.deb
+Size: 106870
+MD5sum: 9c9ac2ec553e21fe35ce5b9b7127e16a
+SHA1: 44667b308479217d9a61956e36acff9d4b0c096a
+SHA256: 9e03c03a1704d039ea5fb0d60244865d9d8f2f94bdf9097fb58c716c7ba3fafc
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
