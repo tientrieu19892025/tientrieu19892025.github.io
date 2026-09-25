@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-25",
   "source": "https://tientrieu19892025.github.io",
   "author": "Jinken Nguyen - 1989",
   "donate": {
@@ -202,6 +202,22 @@
       ],
       "log": [
         {"v": "1.2.0", "t": "Chạm status bar trên Home và trong app. Game không bị inject."}
+      ]
+    },
+    {
+      "id": "com.jinken.listapp",
+      "name": "ListApp",
+      "version": "1.0.0",
+      "tag": "Màn hình chính",
+      "summary": "Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, mượt mà và chống treo máy.",
+      "detail": "ListApp thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng thẻ kính lỏng dài 2/3 màn hình. Thiết kế đa dạng, chỉ hiển thị app thật, tìm kiếm tức thì, mở app mượt mà và chống treo máy tuyệt đối.",
+      "how": [
+        "Cài ListApp, Respring.",
+        "Mở khoá máy để thấy danh sách ứng dụng kính lỏng.",
+        "Mở Cài đặt → ListApp để đổi kiểu dáng, màu sắc hoặc thiết lập tìm kiếm."
+      ],
+      "log": [
+        {"v": "1.0.0", "t": "Thay thế màn hình chính bằng danh sách kính lỏng 2/3 màn hình. 5 kiểu thiết kế, 7 màu sắc."}
       ]
     }
   ]

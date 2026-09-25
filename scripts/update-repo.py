@@ -180,8 +180,8 @@ BLURBS = {
         "Tap the status bar on the Home Screen and in every app, except games. 68+ specs.",
     ),
     "com.jinkennguyen.jinken": (
-        "App trên Home: xem tweak trên repo, cách dùng, donate.",
-        "Home Screen app: repo tweaks, how-to, donate.",
+        "App trên Home: xem toàn bộ tweak trên repo, cách dùng, donate.",
+        "Home Screen app: browse tweaks on repo, how-to, donate.",
     ),
     "com.jinken.listapp": (
         "Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.",

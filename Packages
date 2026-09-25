@@ -136,15 +136,15 @@ Installed-Size: 392
 Depends: firmware (>= 14.0)
 Recommends: preferenceloader
 Filename: debs/rootful/com.jinkennguyen.jinken_1.0.0_iphoneos-arm.deb
-Size: 160086
-MD5sum: 8c533ed82aba421e60ec2c3c911fbef1
-SHA1: e6ab732ebed7f4d14cc984e9fd3c9d487d1d98c5
-SHA256: f546a00cc3e2fce3906e08a5d7f064e66f09c74b38a486be5d3e172c4e8ffce4
+Size: 160300
+MD5sum: 422478ffa2bd2fd2fe72cf3c6c2f2295
+SHA1: 44b53930ff6e9141b39577a040aa6e73389fa54f
+SHA256: ffa622064ab42919e0ff1f88a6ef01d3e8ed35527a74851d928faa83e5296068
 Section: Utilities
 Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
-Name: Jinken
-Description: App trên Home: xem tweak trên repo, cách dùng, donate.
+Name: Repo
+Description: App trên Home: xem toàn bộ tweak trên repo, cách dùng, donate.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.jinken/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.jinken/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
@@ -414,15 +414,15 @@ Installed-Size: 616
 Depends: firmware (>= 14.0)
 Recommends: preferenceloader
 Filename: debs/rootless/com.jinkennguyen.jinken_1.0.0_iphoneos-arm64.deb
-Size: 168588
-MD5sum: 0357f0c69c02b4d585df534190b75eda
-SHA1: afe8daac295f0ee5753a0e44ebae9057a41fd2ff
-SHA256: c89b5945e799682a79719847c1fd565d94767abdfcfa6242d56af6f714178194
+Size: 168814
+MD5sum: 97694452fa2efb0e377516775ecff313
+SHA1: 8d7743814e8d1e824ed43c147dab7114b068c716
+SHA256: 1f86a9fa54f70220d21bf5020512317d6f48d6604a4218f86422a1f8745d20a6
 Section: Utilities
 Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
-Name: Jinken
-Description: App trên Home: xem tweak trên repo, cách dùng, donate.
+Name: Repo
+Description: App trên Home: xem toàn bộ tweak trên repo, cách dùng, donate.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.jinken/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.jinken/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
@@ -692,15 +692,15 @@ Installed-Size: 616
 Depends: firmware (>= 14.0)
 Recommends: preferenceloader
 Filename: debs/roothide/com.jinkennguyen.jinken_1.0.0_iphoneos-arm64e.deb
-Size: 168536
-MD5sum: 79b61d0b675c1e1240cf6e4b259ecebf
-SHA1: ba90b569662b29a7018568ccd02f36136f362d6d
-SHA256: f6dae350be29247d972498e50a22e76e40af8e9fbeab36da0cba70ec739205ad
+Size: 168744
+MD5sum: f8fffce7175a12ba3e8ccccaceacb266
+SHA1: 83ea49c82e07fa91a91b7177600c0bfca854d7cb
+SHA256: 9b92907b7aa5934b0e314fa7dcfbfed029d24b34a0d68e8ca294a8e578e3e3da
 Section: Utilities
 Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
-Name: Jinken
-Description: App trên Home: xem tweak trên repo, cách dùng, donate.
+Name: Repo
+Description: App trên Home: xem toàn bộ tweak trên repo, cách dùng, donate.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.jinken/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.jinken/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
