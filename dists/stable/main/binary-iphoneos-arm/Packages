@@ -1,14 +1,14 @@
 Package: com.jinken.listapp
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 596
+Installed-Size: 604
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.listapp_1.1.0_iphoneos-arm.deb
-Size: 124562
-MD5sum: f733b45c470c8d15d2cbec72f410e12e
-SHA1: 03e6f52bb6d662f1c47a427542969b1bfb79aa1d
-SHA256: 0be0226b07c6baef40d3d52eb6b1016b009891fe2a1ac865e5b740895821e24b
+Filename: debs/rootful/com.jinken.listapp_1.2.0_iphoneos-arm.deb
+Size: 127490
+MD5sum: b7d6f10203eb726a51988cf40e65da90
+SHA1: 98ae5ff58e22e2ae32f187fb9d5a92a8ff0dc04e
+SHA256: b6bddbba8c1becfac329ef9141348c7ec7e60b97e2b59c75c38813693f74952b
 Section: Tweaks
 Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen

@@ -1,14 +1,14 @@
 Package: com.jinken.listapp
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 596
+Installed-Size: 604
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.listapp_1.1.0_iphoneos-arm.deb
-Size: 124562
-MD5sum: f733b45c470c8d15d2cbec72f410e12e
-SHA1: 03e6f52bb6d662f1c47a427542969b1bfb79aa1d
-SHA256: 0be0226b07c6baef40d3d52eb6b1016b009891fe2a1ac865e5b740895821e24b
+Filename: debs/rootful/com.jinken.listapp_1.2.0_iphoneos-arm.deb
+Size: 127490
+MD5sum: b7d6f10203eb726a51988cf40e65da90
+SHA1: 98ae5ff58e22e2ae32f187fb9d5a92a8ff0dc04e
+SHA256: b6bddbba8c1becfac329ef9141348c7ec7e60b97e2b59c75c38813693f74952b
 Section: Tweaks
 Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -298,16 +298,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.statusbarinfo.png
 
 Package: com.jinken.listapp
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm64
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 596
+Installed-Size: 604
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootless/com.jinken.listapp_1.1.0_iphoneos-arm64.deb
-Size: 124694
-MD5sum: fed1b321f4dc4307cc6574cd04584752
-SHA1: 7f477f987a281c94359f496605448b2fe3dfaf57
-SHA256: 4bfb041dd3b98eca33b0b3ae36999819ee46047a0d88a7f17c8bede0d8b9db98
+Filename: debs/rootless/com.jinken.listapp_1.2.0_iphoneos-arm64.deb
+Size: 127646
+MD5sum: 54a31ab95d8f0e474e858b948f7e8b41
+SHA1: e09e5f643f4f39d123b9f2bd2ce6cea305545fba
+SHA256: aa0a7b46f308f9b0eca13806d3ec919bd5d6a90b26185791773ffffb0101836d
 Section: Tweaks
 Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -597,16 +597,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.statusbarinfo.png
 
 Package: com.jinken.listapp
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm64e
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 596
+Installed-Size: 604
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/roothide/com.jinken.listapp_1.1.0_iphoneos-arm64e.deb
-Size: 124604
-MD5sum: 368742866d64f681db726342e5c86d3e
-SHA1: 43c7a5635b42e202b1e7269850a0bf826c823b31
-SHA256: f15ae5af51cc8cecf5972e33edbc6cd0d69cdca4b89f9c8d0925ddead047a266
+Filename: debs/roothide/com.jinken.listapp_1.2.0_iphoneos-arm64e.deb
+Size: 127464
+MD5sum: 5f78468d1b7118a8935d4c4361e6e25b
+SHA1: 602b484976181b942680b0b2881b504d068b32b0
+SHA256: 81a3f0ed2d279975c32a563e7cdf47fc414dd6e9591c9e342211105d41bc2aeb
 Section: Tweaks
 Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
