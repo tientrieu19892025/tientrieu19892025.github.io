@@ -67,13 +67,13 @@ Package: com.jinken.quickpass
 Version: 1.0.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 464
+Installed-Size: 764
 Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
 Filename: debs/rootful/com.jinken.quickpass_1.0.0_iphoneos-arm.deb
-Size: 100082
-MD5sum: 23c768a347d667c171d17e4216c05121
-SHA1: 430220573183331ef3f394f9e055278b3b41c948
-SHA256: 0c00666f9f85b1b7c8b99f550c666069b29a4fec2eca9d2f82a49d0c310f7d8f
+Size: 409788
+MD5sum: 46d5c17f11a3f93d46fa0482d2a4dd72
+SHA1: b12f92dd4c905a98f5d783a5f333bdd6d9436313
+SHA256: b864facfd9f8d1c952ed089e56c81eec60acd860f431fe339c0a174bac9904bd
 Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
