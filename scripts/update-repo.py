@@ -195,6 +195,10 @@ BLURBS = {
         "Khóa cử chỉ vuốt ngang cạnh đáy (Home bar) đổi app khi đang mở bàn phím gõ. Hỗ trợ bảo vệ cử chỉ vuốt về Home, ẩn Home bar khi gõ, rung phản hồi Haptic.",
         "Disable bottom Home bar horizontal app-switching gestures while the keyboard is open. Protect Home swipe, auto-hide Home bar, and haptics.",
     ),
+    "com.jinken.freezebuster": (
+        "Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.",
+        "Automatic unfreeze rescue when UI hangs or Main Thread freezes, instant RAM purge, and responsiveness optimization for low-end devices.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -245,6 +249,7 @@ FEATURED = [
     "com.jinken.listapp",
     "com.jinken.quickpass",
     "com.jinken.disswipe",
+    "com.jinken.freezebuster",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -299,6 +304,12 @@ def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], 
         Path.home() / "QuickPass" / "packages",
         Path.home() / "OrientFlow" / "packages",
         Path.home() / "dis-swipe" / "packages",
+        Path.home() / "FreezeBuster" / "build_output" / "rootful",
+        Path.home() / "FreezeBuster" / "build_output" / "rootless",
+        Path.home() / "FreezeBuster" / "build_output" / "roothide",
+        ROOT / "debs" / "rootful",
+        ROOT / "debs" / "rootless",
+        ROOT / "debs" / "roothide",
         DESKTOP
     ]
     for folder in search_roots:

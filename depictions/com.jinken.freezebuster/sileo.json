@@ -10,7 +10,7 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "OrientFlow",
+          "title": "FreezeBuster Pro",
           "useBoldText": true
         },
         {
@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**OrientFlow** — Smart rotate suggestion popup when orientation lock is enabled. Smooth, lightweight, zero lag.\n\nSmart rotate suggestion popup when orientation lock is enabled. Smooth, lightweight, zero lag.\n\n**Phiên bản / Version:** 1.0.1  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → OrientFlow**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**FreezeBuster Pro** — Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.\n\nAutomatic unfreeze rescue when UI hangs or Main Thread freezes, instant RAM purge, and responsiveness optimization for low-end devices.\n\n**Phiên bản / Version:** 1.0.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → FreezeBuster Pro**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.0.1"
+          "text": "1.0.0"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,7 +73,7 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "1.0.1",
+          "title": "1.0.0",
           "useBoldText": true
         },
         {

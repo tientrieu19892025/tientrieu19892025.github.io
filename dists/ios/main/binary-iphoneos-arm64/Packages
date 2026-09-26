@@ -19,6 +19,26 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.disswi
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
+Package: com.jinken.freezebuster
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen
+Installed-Size: 440
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinken.freezebuster_1.0.0_iphoneos-arm64.deb
+Size: 61768
+MD5sum: 0b9d61d5bc232216c54d3573c056ec93
+SHA1: cf13cc8bd9390eeb5a247d6e32436a63baea0cde
+SHA256: e7ddf5645acb920103b3093cf9167a5baa52af795cc9ee09ef33731b276e8f99
+Section: Tweaks
+Tag: purpose::extension, role::developer
+Author: Jinken Nguyen
+Name: FreezeBuster Pro
+Description: Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.freezebuster/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.freezebuster/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+
 Package: com.jinken.listapp
 Version: 1.2.2
 Architecture: iphoneos-arm64
@@ -43,16 +63,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm64
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 376
+Installed-Size: 384
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootless/com.jinken.orientflow_1.0.0_iphoneos-arm64.deb
-Size: 61514
-MD5sum: f38b0750eba03142f720c0dd7d6dc98b
-SHA1: 4f1327bb08803aace325d484129bd1f466e32b4b
-SHA256: cc742d6590b47dd5cb4d79f8309c10e17431ed704f7e9bde3a9a7f2809300970
+Filename: debs/rootless/com.jinken.orientflow_1.0.1_iphoneos-arm64.deb
+Size: 61952
+MD5sum: 482d69bd60c1558cb784e0a954c3970a
+SHA1: 7e228cb6b22d213d2c23c46d393370f18e4c4dd8
+SHA256: 59cb8cb7384f621fa15c44cf0e50c2ad276494b76e30c03b485066421abf0be2
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen

@@ -19,6 +19,26 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.disswi
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
+Package: com.jinken.freezebuster
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen
+Installed-Size: 440
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/roothide/com.jinken.freezebuster_1.0.0_iphoneos-arm64e.deb
+Size: 61846
+MD5sum: bf476ad19f4dba8f3f6f0606071e3d56
+SHA1: 430bb2b71f3c7c831450d6466a7f6ca2cc10b526
+SHA256: 21b6c0c32d9c15fd1e3fe8bbda2e159fd88eb6f93559bf8619028c18d98a5fc0
+Section: Tweaks
+Tag: purpose::extension, role::developer
+Author: Jinken Nguyen
+Name: FreezeBuster Pro
+Description: Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.freezebuster/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.freezebuster/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+
 Package: com.jinken.listapp
 Version: 1.2.2
 Architecture: iphoneos-arm64e
@@ -43,16 +63,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm64e
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 376
+Installed-Size: 384
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/roothide/com.jinken.orientflow_1.0.0_iphoneos-arm64e.deb
-Size: 61304
-MD5sum: 4daccaf500f0ea8f811f3007d55c9b3d
-SHA1: 9c37baa982aabffbc4c628956056661d377eeaf5
-SHA256: 94feff0dbb285a25ba71040e9ea4f7b7654abc2afe7f3dd594cb0acdb3f8253c
+Filename: debs/roothide/com.jinken.orientflow_1.0.1_iphoneos-arm64e.deb
+Size: 61744
+MD5sum: 06391c59edd4f708ea732530b14239cd
+SHA1: 1c58943dc8388850a67fdb76a9357ef3da1b538f
+SHA256: 0b8b4db9556f86aaac7985b9136d311a875ef6627bf1e70c3641df4cc0079e0e
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
