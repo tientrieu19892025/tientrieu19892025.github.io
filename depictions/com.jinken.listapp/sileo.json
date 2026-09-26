@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**ListApp** — Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.\n\nModern Liquid Glass App Launcher replacing Home Screen. 2/3 width floating glass pills, real apps only, 5 designs & 7 colors.\n\n**Phiên bản / Version:** 1.2.1  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → ListApp**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**ListApp** — Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.\n\nModern Liquid Glass App Launcher replacing Home Screen. 2/3 width floating glass pills, real apps only, 5 designs & 7 colors.\n\n**Phiên bản / Version:** 1.2.2  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → ListApp**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.2.1"
+          "text": "1.2.2"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,7 +73,7 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "1.2.1",
+          "title": "1.2.2",
           "useBoldText": true
         },
         {

@@ -20,16 +20,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
 Package: com.jinken.listapp
-Version: 1.2.1
+Version: 1.2.2
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 604
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.listapp_1.2.1_iphoneos-arm.deb
-Size: 127572
-MD5sum: 6e559e02ac5f1ab38253867965126272
-SHA1: 451220f307e69b1c7d5c877ddcc638e8ce312a26
-SHA256: 6599c5f503695a37b93ebbdad792d28df5a02719c4c88c4aaadaaae79a6128bb
+Filename: debs/rootful/com.jinken.listapp_1.2.2_iphoneos-arm.deb
+Size: 127452
+MD5sum: 630ddb44d8a22cc69448533095475482
+SHA1: 08c41734e713388a8088bb660fe84f099a4a6d12
+SHA256: 5c26308a15cb6433a4f24704a26a5858e47e9f3f85f1e3dfc143ccefc3c122a0
 Section: Tweaks
 Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -49,10 +49,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 464
 Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
 Filename: debs/rootful/com.jinken.quickpass_1.0.0_iphoneos-arm.deb
-Size: 100084
-MD5sum: c44bfdd910c291d570d7d00cc7da9ecc
-SHA1: 704510e18b4c7120744f3dc050b488d30d1a2a1d
-SHA256: 6be824b9d69c7cde5dcb5d6cb8dc314c3c3a3e1d522f915d13385a580cfbe4cc
+Size: 100082
+MD5sum: 23c768a347d667c171d17e4216c05121
+SHA1: 430220573183331ef3f394f9e055278b3b41c948
+SHA256: 0c00666f9f85b1b7c8b99f550c666069b29a4fec2eca9d2f82a49d0c310f7d8f
 Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -340,16 +340,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
 Package: com.jinken.listapp
-Version: 1.2.1
+Version: 1.2.2
 Architecture: iphoneos-arm64
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 604
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootless/com.jinken.listapp_1.2.1_iphoneos-arm64.deb
-Size: 127944
-MD5sum: 6e6a29e9a202149823b6f654f00bdcfc
-SHA1: 90b3328e49ee9fb323711ebac2de3b2862f50707
-SHA256: ab80b841c8b669e9c018829f3ad9cec1fa14d7e0f34c6ed8401d1a166649ab55
+Filename: debs/rootless/com.jinken.listapp_1.2.2_iphoneos-arm64.deb
+Size: 127648
+MD5sum: 77e6062943dc3a39df029ff32c448f69
+SHA1: e407a4a30619c2642c5a8da528ad8c5eb5394858
+SHA256: 2918eb0ceb21025799e82d8c1c4f73500e7ff5b52d49e6588c3f930dab043a31
 Section: Tweaks
 Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -369,10 +369,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 432
 Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
 Filename: debs/rootless/com.jinken.quickpass_1.0.0_iphoneos-arm64.deb
-Size: 95136
-MD5sum: 43f44b7ec3213a852d4761480b161f73
-SHA1: 1c4a0d0253d1832b4926c8a0d57c8bf332d62c10
-SHA256: 0cbadb04b89f50db990d181c99172266984a409c03def1345b7e734a263fb2f5
+Size: 95142
+MD5sum: 7d51a370314091ccb26433afad3fbaf8
+SHA1: e25c59c48d986c4163d1b8fd9b5737340e27be3d
+SHA256: df6c7c2d9327a4e77190930080e9d37531d7fc0d1bc08b5cc67255c0c68b2626
 Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -660,16 +660,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
 Package: com.jinken.listapp
-Version: 1.2.1
+Version: 1.2.2
 Architecture: iphoneos-arm64e
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 604
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/roothide/com.jinken.listapp_1.2.1_iphoneos-arm64e.deb
-Size: 127568
-MD5sum: d5eed5fe9aa911d210bc8a291d6a1853
-SHA1: 6a57f37cee0cd5ce36431811d52ab83ec80eeaa8
-SHA256: 9b5c09f3bacaae7f8df52f58802e223a6a4adbfb4a0797b9401f731040e683d7
+Filename: debs/roothide/com.jinken.listapp_1.2.2_iphoneos-arm64e.deb
+Size: 127566
+MD5sum: fec23f19187698d8db66d167ff995741
+SHA1: 45daf24c360834e0eda4733db0ddf71a98b08249
+SHA256: 90fd2d00f624b87310210367f1d246c7001de5ab707ccc0436dacef31faa428a
 Section: Tweaks
 Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -689,10 +689,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 432
 Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
 Filename: debs/roothide/com.jinken.quickpass_1.0.0_iphoneos-arm64e.deb
-Size: 93298
-MD5sum: 965326d125e43f70d4e01bed733449e5
-SHA1: 7c0a9364475bee423aada9449080e4edc5fe4727
-SHA256: 3a7e5a55d214c03113c1f422bba48954e4ff8e0285d4a9a64b8bdda183e367cf
+Size: 93308
+MD5sum: ff9300a918071ad697d38a6796a86785
+SHA1: 059f52054b0b55c3dfb02fc8c942d048b6904156
+SHA256: 42b0a86a55fa2ae84f0a1e4093bd5b3663abbfcd384cf2e2e106c2ab0ad71a30
 Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989

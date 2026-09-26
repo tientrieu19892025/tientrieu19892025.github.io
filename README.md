@@ -38,7 +38,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | CPU Boost | `com.jinkennguyen.cpuboost` | 1.0.3 | rootful, rootless, RootHide |
 | dis-swipe | `com.jinken.disswipe` | 1.1.0 | rootful, rootless, RootHide |
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.3 | rootful, rootless, RootHide |
-| ListApp | `com.jinken.listapp` | 1.2.1 | rootful, rootless, RootHide |
+| ListApp | `com.jinken.listapp` | 1.2.2 | rootful, rootless, RootHide |
 | Lock Frame | `com.jinkennguyen.haloframe` | 3.2.3 | rootful, rootless, RootHide |
 | LookGlass | `com.jinkennguyen.lookglass` | 4.0.4 | rootful, rootless, RootHide |
 | NoxFrame | `com.jinkennguyen.noxframe` | 1.1.1 | rootful, rootless, RootHide |
