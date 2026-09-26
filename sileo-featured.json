@@ -80,6 +80,12 @@
       "title": "ListApp",
       "package": "com.jinken.listapp",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "QuickPass",
+      "package": "com.jinken.quickpass",
+      "hideShadow": false
     }
   ]
 }

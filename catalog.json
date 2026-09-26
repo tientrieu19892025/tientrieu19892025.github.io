@@ -219,6 +219,23 @@
       "log": [
         {"v": "1.0.0", "t": "Thay thế màn hình chính bằng danh sách kính lỏng 2/3 màn hình. 5 kiểu thiết kế, 7 màu sắc."}
       ]
+    },
+    {
+      "id": "com.jinken.quickpass",
+      "name": "QuickPass",
+      "version": "1.0.0",
+      "tag": "Màn hình khoá",
+      "summary": "Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.",
+      "detail": "QuickPass thêm nút bấm truy cập nhanh bàn phím số (Passcode) trên Màn hình khoá cho mọi thiết bị Face ID. Chạm giữ để kéo thả đến bất kỳ vị trí nào tuỳ thích, 5 phong cách đồ hoạ Liquid Glass 3D sang trọng, tuỳ biến biểu tượng bàn phím / ổ khoá, rung phản hồi Haptic cực kỳ mượt mà.",
+      "how": [
+        "Cài QuickPass, Respring.",
+        "Mở Màn hình khoá, chạm nút QuickPass để mở ngay bàn phím số mà không cần quét Face ID.",
+        "Chạm giữ nút 0.3s để kéo thả vị trí tuỳ ý trên màn hình.",
+        "Mở Cài đặt → QuickPass để đổi kiểu dáng kính lỏng, biểu tượng hoặc chọn vị trí định sẵn."
+      ],
+      "log": [
+        {"v": "1.0.0", "t": "Nút bấm mở nhanh mật khẩu số cho Face ID, kéo thả vị trí tự do, đồ hoạ Liquid Glass 3D, hỗ trợ Rootful, Rootless, RootHide."}
+      ]
     }
   ]
 }

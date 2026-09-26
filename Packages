@@ -21,6 +21,27 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.listap
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
+Package: com.jinken.quickpass
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 464
+Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/rootful/com.jinken.quickpass_1.0.0_iphoneos-arm.deb
+Size: 100084
+MD5sum: c44bfdd910c291d570d7d00cc7da9ecc
+SHA1: 704510e18b4c7120744f3dc050b488d30d1a2a1d
+SHA256: 6be824b9d69c7cde5dcb5d6cb8dc314c3c3a3e1d522f915d13385a580cfbe4cc
+Section: Tweaks
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: QuickPass
+Description: Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.quickpass/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.quickpass/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.quickpass.png
+
 Package: com.jinkennguyen.adshield
 Version: 1.0.4
 Architecture: iphoneos-arm
@@ -299,6 +320,27 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.listap
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
+Package: com.jinken.quickpass
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 432
+Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/rootless/com.jinken.quickpass_1.0.0_iphoneos-arm64.deb
+Size: 95136
+MD5sum: 43f44b7ec3213a852d4761480b161f73
+SHA1: 1c4a0d0253d1832b4926c8a0d57c8bf332d62c10
+SHA256: 0cbadb04b89f50db990d181c99172266984a409c03def1345b7e734a263fb2f5
+Section: Tweaks
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: QuickPass
+Description: Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.quickpass/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.quickpass/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.quickpass.png
+
 Package: com.jinkennguyen.adshield
 Version: 1.0.4
 Architecture: iphoneos-arm64
@@ -414,10 +456,10 @@ Installed-Size: 620
 Depends: firmware (>= 14.0)
 Recommends: preferenceloader
 Filename: debs/rootless/com.jinkennguyen.jinken_1.0.0_iphoneos-arm64.deb
-Size: 172880
-MD5sum: 43e8948eb7c477957ea512e6e0d8f98c
-SHA1: ae6699ded8267b3e1648fe36925875dcdda00883
-SHA256: 1dad881711ce7117ba8fe92c7045ff071abd6e3cf06fb07eb66cc06ae71b7fac
+Size: 173204
+MD5sum: 5381e1644449beccbe7547ce22a78c3d
+SHA1: ea688581755f26111cba61f56e0e116ba811fc1f
+SHA256: 49306bcb0229ca7b17e3446cb701851152218bd0e051579b1228b01f6fce1916
 Section: Utilities
 Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
@@ -576,6 +618,27 @@ Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.listapp/ind
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.listapp/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
+
+Package: com.jinken.quickpass
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 432
+Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/roothide/com.jinken.quickpass_1.0.0_iphoneos-arm64e.deb
+Size: 93298
+MD5sum: 965326d125e43f70d4e01bed733449e5
+SHA1: 7c0a9364475bee423aada9449080e4edc5fe4727
+SHA256: 3a7e5a55d214c03113c1f422bba48954e4ff8e0285d4a9a64b8bdda183e367cf
+Section: Tweaks
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: QuickPass
+Description: Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.quickpass/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.quickpass/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.quickpass.png
 
 Package: com.jinkennguyen.adshield
 Version: 1.0.4

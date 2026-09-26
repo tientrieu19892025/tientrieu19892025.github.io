@@ -187,6 +187,10 @@ BLURBS = {
         "Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.",
         "Modern Liquid Glass App Launcher replacing Home Screen. 2/3 width floating glass pills, real apps only, 5 designs & 7 colors.",
     ),
+    "com.jinken.quickpass": (
+        "Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.",
+        "Instant passcode keypad button on Lock Screen for Face ID devices with 3D Liquid Glass design and draggable custom positioning.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -235,6 +239,7 @@ FEATURED = [
     "com.jinkennguyen.adshield",
     "com.jinkennguyen.jinken",
     "com.jinken.listapp",
+    "com.jinken.quickpass",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -286,6 +291,7 @@ def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], 
     search_roots = list(CODE.glob("*/packages")) + [
         Path.home() / "StatusBarInfo" / "packages",
         Path.home() / "ListApp" / "packages",
+        Path.home() / "QuickPass" / "packages",
         DESKTOP
     ]
     for folder in search_roots:
@@ -556,6 +562,8 @@ Sửa treo máy. Nhám vẫn hiện. Lật Duo mặc định tắt.
 Nhám tiêu chuẩn nhìn thấy rõ. Cài đặt kiểu kính, có donate.""",
     "com.jinken.listapp": """**1.0.0**
 Thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng thẻ kính lỏng dài 2/3 màn hình. 5 thiết kế khung bo góc, 7 màu sắc kính lỏng, tìm kiếm tức thì, mở app mượt mà và chống treo máy tuyệt đối.""",
+    "com.jinken.quickpass": """**1.0.0**
+Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID. Chạm giữ để kéo thả tuỳ chỉnh vị trí trực tiếp, 5 phong cách đồ hoạ Liquid Glass sang trọng, tuỳ biến biểu tượng và kích thước, rung phản hồi Haptic.""",
 }
 
 
