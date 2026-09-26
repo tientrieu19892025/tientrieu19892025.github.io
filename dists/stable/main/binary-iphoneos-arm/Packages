@@ -2,13 +2,13 @@ Package: com.jinken.disswipe
 Version: 1.1.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 388
+Installed-Size: 452
 Depends: firmware (>= 11.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
 Filename: debs/rootful/com.jinken.disswipe_1.1.0_iphoneos-arm.deb
-Size: 56398
-MD5sum: 1c2838a834b4ce5f643663022ed6cd7e
-SHA1: ee446b1a2bda271db2f57acacbb5dbe77e202247
-SHA256: 8440c125307ac88147981ec48950de68914684ab641f527f19f9d5caa594282c
+Size: 89432
+MD5sum: cbebca39a969b34ca28820743048ae11
+SHA1: 535b67e0347f006fc1fb5861a250b688ce8f709b
+SHA256: 1b356c3df878b9021b61fad7e88f765eded1d2512f18fed343bbca7343218f80
 Section: Tweaks
 Tag: role::tweak, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
