@@ -42,6 +42,27 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.listap
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
+Package: com.jinken.orientflow
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
+Installed-Size: 376
+Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
+Filename: debs/rootful/com.jinken.orientflow_1.0.0_iphoneos-arm.deb
+Size: 61644
+MD5sum: 29d379ac4edb2c4db045d17e6605ac42
+SHA1: 4780909c5c6700aac700f0c030d1872c99f318d0
+SHA256: c65d05fc745d423dfb5a5ab02f051ba3ec9967137bcc97c1737f5b3044805414
+Section: Tweaks
+Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
+Author: Jin Ken Nguyen
+Dev: Jin Ken Nguyen
+Name: OrientFlow
+Sponsor: https://ko-fi.com/jinkennguyen
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.orientflow/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.orientflow/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+
 Package: com.jinken.quickpass
 Version: 1.0.0
 Architecture: iphoneos-arm

@@ -297,6 +297,7 @@ def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], 
         Path.home() / "StatusBarInfo" / "packages",
         Path.home() / "ListApp" / "packages",
         Path.home() / "QuickPass" / "packages",
+        Path.home() / "OrientFlow" / "packages",
         Path.home() / "dis-swipe" / "packages",
         DESKTOP
     ]
