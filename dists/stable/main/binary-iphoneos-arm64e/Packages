@@ -1,3 +1,24 @@
+Package: com.jinken.disswipe
+Version: 1.1.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 388
+Depends: firmware (>= 11.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/roothide/com.jinken.disswipe_1.1.0_iphoneos-arm64e.deb
+Size: 56682
+MD5sum: 7e1cd0e6aa9f9c314c7370bd3d472555
+SHA1: 290034701d838882178cea7ef91602e1e36df538
+SHA256: 42369ae2def70b0f0b259f0c5d9738d2c6cb27caa0af05eff1555f3ceb9a74c6
+Section: Tweaks
+Tag: role::tweak, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: dis-swipe
+Description: Khóa cử chỉ vuốt ngang cạnh đáy (Home bar) đổi app khi đang mở bàn phím gõ. Hỗ trợ bảo vệ cử chỉ vuốt về Home, ẩn Home bar khi gõ, rung phản hồi Haptic.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.disswipe/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.disswipe/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
+
 Package: com.jinken.listapp
 Version: 1.2.1
 Architecture: iphoneos-arm64e

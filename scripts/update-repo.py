@@ -191,6 +191,10 @@ BLURBS = {
         "Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.",
         "Instant passcode keypad button on Lock Screen for Face ID devices with 3D Liquid Glass design and draggable custom positioning.",
     ),
+    "com.jinken.disswipe": (
+        "Khóa cử chỉ vuốt ngang cạnh đáy (Home bar) đổi app khi đang mở bàn phím gõ. Hỗ trợ bảo vệ cử chỉ vuốt về Home, ẩn Home bar khi gõ, rung phản hồi Haptic.",
+        "Disable bottom Home bar horizontal app-switching gestures while the keyboard is open. Protect Home swipe, auto-hide Home bar, and haptics.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -240,6 +244,7 @@ FEATURED = [
     "com.jinkennguyen.jinken",
     "com.jinken.listapp",
     "com.jinken.quickpass",
+    "com.jinken.disswipe",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -292,6 +297,7 @@ def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], 
         Path.home() / "StatusBarInfo" / "packages",
         Path.home() / "ListApp" / "packages",
         Path.home() / "QuickPass" / "packages",
+        Path.home() / "dis-swipe" / "packages",
         DESKTOP
     ]
     for folder in search_roots:

@@ -86,6 +86,12 @@
       "title": "QuickPass",
       "package": "com.jinken.quickpass",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "dis-swipe",
+      "package": "com.jinken.disswipe",
+      "hideShadow": false
     }
   ]
 }
