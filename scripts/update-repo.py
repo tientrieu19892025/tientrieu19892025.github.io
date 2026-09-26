@@ -176,8 +176,8 @@ BLURBS = {
         "100 iPhone pranks: stripes, cracked glass, fake battery, odd sounds, haptics. Shake to stop.",
     ),
     "com.jinkennguyen.statusbarinfo": (
-        "Chạm thanh trạng thái ở Màn hình chính và trong mọi app, trừ game. Hơn 68 thông số.",
-        "Tap the status bar on the Home Screen and in every app, except games. 68+ specs.",
+        "Chạm hoặc nhấn giữ thanh trạng thái ở Màn hình chính và trong mọi app. Hơn 78 thông số & dữ liệu Internet trực tiếp.",
+        "Tap or long-press status bar on Home Screen and in every app. 78+ specs & live internet data.",
     ),
     "com.jinkennguyen.jinken": (
         "App trên Home: xem toàn bộ tweak trên repo, cách dùng, donate.",

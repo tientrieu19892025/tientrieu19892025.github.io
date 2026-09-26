@@ -256,21 +256,21 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
 
 Package: com.jinkennguyen.statusbarinfo
-Version: 1.2.0
+Version: 1.3.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 696
+Installed-Size: 728
 Depends: firmware (>= 10.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/rootful/com.jinkennguyen.statusbarinfo_1.2.0_iphoneos-arm.deb
-Size: 140460
-MD5sum: 4862262ef04a692f984fdd708bd2772c
-SHA1: 0c49b5f9d6ab45675f8abdbe829d9a47e6a8934a
-SHA256: 02acd452420fa275840f40d5820b3dfaeedbff71f203931142db02753a98fbb0
+Filename: debs/rootful/com.jinkennguyen.statusbarinfo_1.3.0_iphoneos-arm.deb
+Size: 163930
+MD5sum: f708680fde9f743cab2501d895edd5fc
+SHA1: 22bb70ca2570aa2c948b0cb8708d67c9586fdbc2
+SHA256: f87285dd8d256dccdc5e9a04a7628e9c7303f7603d8e4ed9de73e41a6074519b
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
 Author: Jinken Nguyen - 1989
 Name: StatusBarInfo
-Description: Chạm thanh trạng thái ở Màn hình chính và trong mọi app, trừ game. Hơn 68 thông số.
+Description: Chạm hoặc nhấn giữ thanh trạng thái ở Màn hình chính và trong mọi app. Hơn 78 thông số & dữ liệu Internet trực tiếp.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
@@ -534,21 +534,21 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
 
 Package: com.jinkennguyen.statusbarinfo
-Version: 1.2.0
+Version: 1.3.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 696
+Installed-Size: 728
 Depends: firmware (>= 10.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/rootless/com.jinkennguyen.statusbarinfo_1.2.0_iphoneos-arm64.deb
-Size: 140714
-MD5sum: e8f1521df9d106df356db22932f747e0
-SHA1: bb69acf722d67a1ae015c46d11d8c256189954f0
-SHA256: f267fc36e4e895a04ca46314afafd8bffe044e72037d362472a102b693613144
+Filename: debs/rootless/com.jinkennguyen.statusbarinfo_1.3.0_iphoneos-arm64.deb
+Size: 164228
+MD5sum: 084ea1d430d019f546e414463bbacaed
+SHA1: dee0a90b6f528e2a1a73d38bc518dc87ca01fc07
+SHA256: 494620f55d179ef25f3786cff059ed73ba75cb7ee0da86e4a46ba8b7f46fdd06
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
 Author: Jinken Nguyen - 1989
 Name: StatusBarInfo
-Description: Chạm thanh trạng thái ở Màn hình chính và trong mọi app, trừ game. Hơn 68 thông số.
+Description: Chạm hoặc nhấn giữ thanh trạng thái ở Màn hình chính và trong mọi app. Hơn 78 thông số & dữ liệu Internet trực tiếp.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
@@ -812,21 +812,21 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.slapios.png
 
 Package: com.jinkennguyen.statusbarinfo
-Version: 1.2.0
+Version: 1.3.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 696
+Installed-Size: 728
 Depends: firmware (>= 10.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/roothide/com.jinkennguyen.statusbarinfo_1.2.0_iphoneos-arm64e.deb
-Size: 140558
-MD5sum: 56d11faf77d6384a141add4e0c7b787a
-SHA1: 214f3b39f37c6ccbe65f3cbbf0e3bd96652a027d
-SHA256: b9eda6278e814426fda82bf5bb6d84535e7e6d60b5f5a16758173b106f912384
+Filename: debs/roothide/com.jinkennguyen.statusbarinfo_1.3.0_iphoneos-arm64e.deb
+Size: 164072
+MD5sum: e8a29fd02e1a341a5c2c79fe0e81fa22
+SHA1: 55bc8b5ecacfa23cea74fab28112c69cd62e615b
+SHA256: f86e3237600528a81cbfe0a191603941aeeb6b85dfebbcff8ff317ce36651294
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
 Author: Jinken Nguyen - 1989
 Name: StatusBarInfo
-Description: Chạm thanh trạng thái ở Màn hình chính và trong mọi app, trừ game. Hơn 68 thông số.
+Description: Chạm hoặc nhấn giữ thanh trạng thái ở Màn hình chính và trong mọi app. Hơn 78 thông số & dữ liệu Internet trực tiếp.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
