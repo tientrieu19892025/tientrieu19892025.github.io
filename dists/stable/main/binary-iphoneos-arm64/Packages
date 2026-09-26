@@ -132,14 +132,14 @@ Package: com.jinkennguyen.jinken
 Version: 1.0.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 616
+Installed-Size: 620
 Depends: firmware (>= 14.0)
 Recommends: preferenceloader
 Filename: debs/rootless/com.jinkennguyen.jinken_1.0.0_iphoneos-arm64.deb
-Size: 168814
-MD5sum: 97694452fa2efb0e377516775ecff313
-SHA1: 8d7743814e8d1e824ed43c147dab7114b068c716
-SHA256: 1f86a9fa54f70220d21bf5020512317d6f48d6604a4218f86422a1f8745d20a6
+Size: 172880
+MD5sum: 43e8948eb7c477957ea512e6e0d8f98c
+SHA1: ae6699ded8267b3e1648fe36925875dcdda00883
+SHA256: 1dad881711ce7117ba8fe92c7045ff071abd6e3cf06fb07eb66cc06ae71b7fac
 Section: Utilities
 Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
