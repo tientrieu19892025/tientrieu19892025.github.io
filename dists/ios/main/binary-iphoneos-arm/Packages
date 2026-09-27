@@ -41,16 +41,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.freezebuster.png
 
 Package: com.jinken.listapp
-Version: 1.2.2
+Version: 1.2.3
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 604
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.listapp_1.2.2_iphoneos-arm.deb
-Size: 127452
-MD5sum: 630ddb44d8a22cc69448533095475482
-SHA1: 08c41734e713388a8088bb660fe84f099a4a6d12
-SHA256: 5c26308a15cb6433a4f24704a26a5858e47e9f3f85f1e3dfc143ccefc3c122a0
+Filename: debs/rootful/com.jinken.listapp_1.2.3_iphoneos-arm.deb
+Size: 127560
+MD5sum: e2ed8c11b9c4b181c506ca25dc118e01
+SHA1: 1a11a8e3172e6950bae8f3f7f387773daa49d902
+SHA256: 5d19df2578e852d5b3f5c00bfc6ec82f9cd536333ca06c78e84bff1d9a537f66
 Section: Tweaks
 Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
