@@ -22,17 +22,17 @@ Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 Package: com.jinken.freezebuster
 Version: 1.0.0
 Architecture: iphoneos-arm
-Maintainer: Jinken Nguyen
-Installed-Size: 440
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 408
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/rootful/com.jinken.freezebuster_1.0.0_iphoneos-arm.deb
-Size: 61848
-MD5sum: 87c48e8e9edc5635891db9f581032095
-SHA1: 46e9342c4a98dd9f4d98cb3391d086ddcba1a23a
-SHA256: 07347a1f344e7d8345ccba98b65679a05e05663d092952f6eb1e1fd1579b7bcb
+Size: 27968
+MD5sum: 51841db35bbaceb22f72206be8d3346f
+SHA1: ba7c80ca22b13f71be853bc881e1588fffccdb81
+SHA256: 11a2df2d912941f969867b785f1166e7fddefb9ac9d99e4ff078f9c377e59a7d
 Section: Tweaks
 Tag: purpose::extension, role::developer
-Author: Jinken Nguyen
+Author: Jinken Nguyen - 1989
 Name: FreezeBuster Pro
 Description: Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.freezebuster/index.html
