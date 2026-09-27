@@ -26,10 +26,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 408
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/rootless/com.jinken.freezebuster_1.0.0_iphoneos-arm64.deb
-Size: 27962
-MD5sum: 3272a8dc94aab226c2a051fab59ffde9
-SHA1: 3925d7355fff6fcae91aa1c23f300bf2e9f64e85
-SHA256: afabc7d52d0b4227f4774df3d85ab73c44740017e1564e36af3596be29d4152b
+Size: 28900
+MD5sum: 6dde01907f7dca874554b26e8183df4f
+SHA1: 38868e45e667422f34819854385a953c7a54804c
+SHA256: b9bc0205f2f646c03b534f946a8bcaa699b742a4de8123625d4fc34e9b5d8d94
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989

@@ -26,10 +26,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 408
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/rootful/com.jinken.freezebuster_1.0.0_iphoneos-arm.deb
-Size: 27968
-MD5sum: 51841db35bbaceb22f72206be8d3346f
-SHA1: ba7c80ca22b13f71be853bc881e1588fffccdb81
-SHA256: 11a2df2d912941f969867b785f1166e7fddefb9ac9d99e4ff078f9c377e59a7d
+Size: 28988
+MD5sum: aa16ec39752a6110c42f9781cc907c98
+SHA1: 8f97d31d749afa17c3205a7e03d0e078b8ff6c8f
+SHA256: 54033b2fdb35cc42b60c29591ded7be79923158e4c969630e774c6b983b09d8c
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
@@ -388,10 +388,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 408
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/rootless/com.jinken.freezebuster_1.0.0_iphoneos-arm64.deb
-Size: 27962
-MD5sum: 3272a8dc94aab226c2a051fab59ffde9
-SHA1: 3925d7355fff6fcae91aa1c23f300bf2e9f64e85
-SHA256: afabc7d52d0b4227f4774df3d85ab73c44740017e1564e36af3596be29d4152b
+Size: 28900
+MD5sum: 6dde01907f7dca874554b26e8183df4f
+SHA1: 38868e45e667422f34819854385a953c7a54804c
+SHA256: b9bc0205f2f646c03b534f946a8bcaa699b742a4de8123625d4fc34e9b5d8d94
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
@@ -750,10 +750,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 408
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/roothide/com.jinken.freezebuster_1.0.0_iphoneos-arm64e.deb
-Size: 27996
-MD5sum: 393594c78d00fd717824e908e12e3b1a
-SHA1: 21d8911943f0187ab11ca5ab85575b32549b6f23
-SHA256: ef154fd2e0218ba62705074dffea5eb666f111bc993eacc5f20d80a2fa0931db
+Size: 29050
+MD5sum: 9dbe61b77b5cad40d3005dcd3e920031
+SHA1: 0a4879e7f9984074fe1498e05dbd297b1cad35ce
+SHA256: 7da4d207bb3108b75f055bd5c30096eecba182e3fe03e97e11f05afc7e5aa2d0
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
