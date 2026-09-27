@@ -199,6 +199,10 @@ BLURBS = {
         "Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.",
         "Automatic unfreeze rescue when UI hangs or Main Thread freezes, instant RAM purge, and responsiveness optimization for low-end devices.",
     ),
+    "com.jinken.orientflow": (
+        "Gợi ý xoay màn hình thông minh khi khoá xoay. Giữ nguyên hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc, thanh kéo tuỳ chọn vị trí tự do.",
+        "Smart rotation suggestion prompt when orientation lock is active. Locks in landscape once tapped, auto-relocks on portrait, custom slider positioning.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -250,6 +254,7 @@ FEATURED = [
     "com.jinken.quickpass",
     "com.jinken.disswipe",
     "com.jinken.freezebuster",
+    "com.jinken.orientflow",
 ]
 
 DEB_NAME_RE = re.compile(
@@ -474,6 +479,7 @@ def project_dir_for(pkg: str) -> Path | None:
         "com.jinkennguyen.prankframe": "PrankFrame",
         "com.jinkennguyen.statusbarinfo": "StatusBarInfo",
         "com.jinken.listapp": "ListApp",
+        "com.jinken.disswipe": "dis-swipe",
     }
     name = aliases.get(pkg)
     if name:
@@ -515,6 +521,11 @@ def read_changelog(pkg: str) -> str:
 
 
 PUBLIC_LOG = {
+    "com.jinken.disswipe": """**1.1.1**
+Ẩn thanh Home Bar ngay lập tức khi mở bàn phím (không cần vuốt). Sửa lỗi vuốt ngang đổi app và vuốt 2 lần về Home. Sửa thanh trượt độ nhạy: hiện badge giá trị, không bị lẹm chữ.
+
+**1.1.0**
+Khóa cử chỉ vuốt ngang cạnh đáy (Home bar) đổi app khi đang mở bàn phím gõ. Hỗ trợ bảo vệ cử chỉ vuốt về Home, ẩn Home bar khi gõ, rung phản hồi Haptic.""",
     "com.jinkennguyen.duoframe": """**3.5.3**
 Cài trên iOS 17/18 không còn báo thiếu thành phần.
 

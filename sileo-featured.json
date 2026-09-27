@@ -98,6 +98,12 @@
       "title": "FreezeBuster Pro",
       "package": "com.jinken.freezebuster",
       "hideShadow": false
+    },
+    {
+      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
+      "title": "OrientFlow",
+      "package": "com.jinken.orientflow",
+      "hideShadow": false
     }
   ]
 }

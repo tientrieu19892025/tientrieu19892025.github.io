@@ -1,14 +1,14 @@
 Package: com.jinken.disswipe
-Version: 1.1.0
+Version: 1.1.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 452
 Depends: firmware (>= 11.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/rootful/com.jinken.disswipe_1.1.0_iphoneos-arm.deb
-Size: 89432
-MD5sum: cbebca39a969b34ca28820743048ae11
-SHA1: 535b67e0347f006fc1fb5861a250b688ce8f709b
-SHA256: 1b356c3df878b9021b61fad7e88f765eded1d2512f18fed343bbca7343218f80
+Filename: debs/rootful/com.jinken.disswipe_1.1.1_iphoneos-arm.deb
+Size: 96628
+MD5sum: 698b312715ee7a607332b7783ae7207a
+SHA1: 7c602e16b479894f9fe5fed19d970c7106f4b536
+SHA256: 2371882ecc0d60816bd211134c32d51f0dccb14d3e5d66be6a084868a3d19c91
 Section: Tweaks
 Tag: role::tweak, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -64,22 +64,23 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 432
+Installed-Size: 456
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.orientflow_1.0.2_iphoneos-arm.deb
-Size: 76450
-MD5sum: 8eb47bf8db855751ffdcafef9cc9284b
-SHA1: 79fbf5be78ecd97947b97baf3466ec1a471bbeb2
-SHA256: 6136e29f198478e137ffd53b83c047556bfc054e935c93a2620fb5b4d04c920f
+Filename: debs/rootful/com.jinken.orientflow_1.0.3_iphoneos-arm.deb
+Size: 86572
+MD5sum: 2eee67c50a742f49520a1c3093085715
+SHA1: 1f1b9e0767b49bee9cc1e6c0d1055ec7587338f6
+SHA256: 3da80310377733bdaeafbd497035201c5cdbe071431437ce3170b830837cbca4
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
 Dev: Jin Ken Nguyen
 Name: OrientFlow
 Sponsor: https://ko-fi.com/jinkennguyen
+Description: Gợi ý xoay màn hình thông minh khi khoá xoay. Giữ nguyên hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc, thanh kéo tuỳ chọn vị trí tự do.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.orientflow/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.orientflow/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
@@ -149,17 +150,17 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.appsw.png
 
 Package: com.jinkennguyen.cpuboost
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 304
+Installed-Size: 320
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/rootful/com.jinkennguyen.cpuboost_1.0.3_iphoneos-arm.deb
-Size: 64900
-MD5sum: eefe723945d8918646753e9e637de627
-SHA1: bc6da9b4282cf6cdc9d52ea9f399b04be46348e4
-SHA256: e8c59d4d1858df99c6584910ea6ce7cd05cf59eb2ab78e57b17c2aa5907ce38a
+Filename: debs/rootful/com.jinkennguyen.cpuboost_1.0.4_iphoneos-arm.deb
+Size: 67756
+MD5sum: c6b3d305b27581c64902f991e96acb9d
+SHA1: 120e031dd855ff122a2bd9863b1af64906309a90
+SHA256: 9c272a6f3be5629a0dd0562c99a472140f4033842cb45f9d601b2150a3bca784
 Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
