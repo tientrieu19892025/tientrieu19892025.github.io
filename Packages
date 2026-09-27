@@ -64,16 +64,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 384
+Installed-Size: 432
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.orientflow_1.0.1_iphoneos-arm.deb
-Size: 62078
-MD5sum: 6022cb47fb01b26fbba680b2671f7a5f
-SHA1: b558538a4c72597bbb7698158b018f9de726d84e
-SHA256: 90a3bc2002ceff23b8e125128a44f265b9043170caaaa14800b693c234513376
+Filename: debs/rootful/com.jinken.orientflow_1.0.2_iphoneos-arm.deb
+Size: 76450
+MD5sum: 8eb47bf8db855751ffdcafef9cc9284b
+SHA1: 79fbf5be78ecd97947b97baf3466ec1a471bbeb2
+SHA256: 6136e29f198478e137ffd53b83c047556bfc054e935c93a2620fb5b4d04c920f
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -91,10 +91,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 764
 Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
 Filename: debs/rootful/com.jinken.quickpass_1.0.0_iphoneos-arm.deb
-Size: 409788
-MD5sum: 46d5c17f11a3f93d46fa0482d2a4dd72
-SHA1: b12f92dd4c905a98f5d783a5f333bdd6d9436313
-SHA256: b864facfd9f8d1c952ed089e56c81eec60acd860f431fe339c0a174bac9904bd
+Size: 411914
+MD5sum: c72e76ad5f44436388f6d19eaf20253e
+SHA1: 104c233d8e94922cf5dee76a8f84b504ed01560c
+SHA256: 6d1608705840c7c139a260e805c2efee83c2cb9c748390b14db7fd9177e057c4
 Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -426,16 +426,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm64
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 384
+Installed-Size: 448
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootless/com.jinken.orientflow_1.0.1_iphoneos-arm64.deb
-Size: 61952
-MD5sum: 482d69bd60c1558cb784e0a954c3970a
-SHA1: 7e228cb6b22d213d2c23c46d393370f18e4c4dd8
-SHA256: 59cb8cb7384f621fa15c44cf0e50c2ad276494b76e30c03b485066421abf0be2
+Filename: debs/rootless/com.jinken.orientflow_1.0.2_iphoneos-arm64.deb
+Size: 75508
+MD5sum: 3b56c6c0a81687dfdd5bce13ea9d23c9
+SHA1: 9ea2cd18f8439b08e666002000e6e558ab04fa04
+SHA256: 9ea1fbc66dc5bb2f5374ea88250092ef68845d0863c145fa7bbd8622027a84f9
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -453,10 +453,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 768
 Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
 Filename: debs/rootless/com.jinken.quickpass_1.0.0_iphoneos-arm64.deb
-Size: 406330
-MD5sum: 6e02f542a795a048d57926056b8a9975
-SHA1: 006f4c8d320873d1b4a50351c01288b37fd09e30
-SHA256: e7bc9e49d441538b5669f94df78525b445c7c8bf1433d0b0c3f883f0440a1a1f
+Size: 408238
+MD5sum: c271075b0dc57565ea32040fd9ffa2fd
+SHA1: cbe056e80eca17e0527e4f1c6d6dfedf0441f608
+SHA256: 18f1ac634806e9c47a9d4b140e581f28aa762c69242d211a660bea38b97039e3
 Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -788,16 +788,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm64e
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 384
+Installed-Size: 448
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/roothide/com.jinken.orientflow_1.0.1_iphoneos-arm64e.deb
-Size: 61744
-MD5sum: 06391c59edd4f708ea732530b14239cd
-SHA1: 1c58943dc8388850a67fdb76a9357ef3da1b538f
-SHA256: 0b8b4db9556f86aaac7985b9136d311a875ef6627bf1e70c3641df4cc0079e0e
+Filename: debs/roothide/com.jinken.orientflow_1.0.2_iphoneos-arm64e.deb
+Size: 75304
+MD5sum: ea9ea6747e0a4afdc4be291c30203e42
+SHA1: 24739c2fe9f879125d8675e963e7edd0e2a32eb7
+SHA256: 51571dce8aac4d700cfb1059594fddd3146911ff4ecd6196541b3b7bf8b247f8
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -815,10 +815,10 @@ Maintainer: Jinken Nguyen - 1989
 Installed-Size: 764
 Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
 Filename: debs/roothide/com.jinken.quickpass_1.0.0_iphoneos-arm64e.deb
-Size: 404424
-MD5sum: 54f0478b3484a39527a50c434a67e381
-SHA1: b00dcf2238a96c45c9950b73f2527638f39f1bae
-SHA256: 7fdc0f9124961492b9ed2e7c78e1c8cdd6284620962ae459fcafcc6efd9f0cd8
+Size: 406572
+MD5sum: ce28557fa0ea7062c6a6056866ed588a
+SHA1: fdc857f781f9ebd4719d35adde97a0b83342eb77
+SHA256: 24a2fa503a80d8e164af976c50f2eaab16b9f3100d9cc15a924e2ca0e4882220
 Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
