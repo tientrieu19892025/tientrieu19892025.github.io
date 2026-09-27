@@ -165,7 +165,7 @@ Section: Tweaks
 Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
 Name: CPU Boost
-Description: CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Eco / Boost / Turbo.
+Description: CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Ngủ sâu khi tắt màn hình, Eco / Boost / Turbo.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.cpuboost/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate

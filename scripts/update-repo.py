@@ -108,8 +108,8 @@ BLURBS = {
         "Slap, tap or shake the phone. Pick a sound pack — Groan stays groan-only.",
     ),
     "com.jinkennguyen.cpuboost": (
-        "CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Eco / Boost / Turbo.",
-        "Slow the CPU to save battery, or push it a bit on older phones. Eco / Boost / Turbo.",
+        "CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Ngủ sâu khi tắt màn hình, Eco / Boost / Turbo.",
+        "Slow the CPU to save battery, or push it a bit on older phones. Deep sleep when locked, Eco / Boost / Turbo.",
     ),
     "com.jinkennguyen.haloframe": (
         "Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.",
