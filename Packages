@@ -20,16 +20,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
 Package: com.jinken.freezebuster
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 408
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/rootful/com.jinken.freezebuster_1.0.0_iphoneos-arm.deb
-Size: 28988
-MD5sum: aa16ec39752a6110c42f9781cc907c98
-SHA1: 8f97d31d749afa17c3205a7e03d0e078b8ff6c8f
-SHA256: 54033b2fdb35cc42b60c29591ded7be79923158e4c969630e774c6b983b09d8c
+Filename: debs/rootful/com.jinken.freezebuster_1.1.0_iphoneos-arm.deb
+Size: 28970
+MD5sum: 2d61b0c5cd4df234c1c7addb5edc3a3b
+SHA1: 5cfb8920da764b50f768ad5724aa54ea927a3473
+SHA256: c2787f3ecf1bebd06eebc1956eff603e6e654ffce66c1521d56637d0ede9134e
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
@@ -382,16 +382,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
 Package: com.jinken.freezebuster
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 408
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/rootless/com.jinken.freezebuster_1.0.0_iphoneos-arm64.deb
-Size: 28900
-MD5sum: 6dde01907f7dca874554b26e8183df4f
-SHA1: 38868e45e667422f34819854385a953c7a54804c
-SHA256: b9bc0205f2f646c03b534f946a8bcaa699b742a4de8123625d4fc34e9b5d8d94
+Filename: debs/rootless/com.jinken.freezebuster_1.1.0_iphoneos-arm64.deb
+Size: 28902
+MD5sum: 965eee5735b18fe708ab386b151d5007
+SHA1: be66df10de92c0277772226d49ee49e046d5cf25
+SHA256: ada7f0632348e690f272f412516c844bdd636b7495a7fb97f388587b6a789d1b
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
@@ -744,16 +744,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
 Package: com.jinken.freezebuster
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 408
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/roothide/com.jinken.freezebuster_1.0.0_iphoneos-arm64e.deb
-Size: 29050
-MD5sum: 9dbe61b77b5cad40d3005dcd3e920031
-SHA1: 0a4879e7f9984074fe1498e05dbd297b1cad35ce
-SHA256: 7da4d207bb3108b75f055bd5c30096eecba182e3fe03e97e11f05afc7e5aa2d0
+Filename: debs/roothide/com.jinken.freezebuster_1.1.0_iphoneos-arm64e.deb
+Size: 29038
+MD5sum: 34b65a6908e0e60a39d98b5cb8fd7b0e
+SHA1: bfaa9b605129927b5635f28cbc27379b4a05512e
+SHA256: 58b18bf81523c25bfd440f794bb97cd8dd9e6e753425c4d0103419ea97bff1a1
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
