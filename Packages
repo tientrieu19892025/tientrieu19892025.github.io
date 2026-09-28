@@ -64,16 +64,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 456
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.orientflow_1.0.3_iphoneos-arm.deb
-Size: 86572
-MD5sum: 2eee67c50a742f49520a1c3093085715
-SHA1: 1f1b9e0767b49bee9cc1e6c0d1055ec7587338f6
-SHA256: 3da80310377733bdaeafbd497035201c5cdbe071431437ce3170b830837cbca4
+Filename: debs/rootful/com.jinken.orientflow_1.0.4_iphoneos-arm.deb
+Size: 90094
+MD5sum: 2a30d5e07ebabedd1f5b2054d3b9b7b9
+SHA1: ad7236e8caf6f0e4107315238c9aaa69e0da0d83
+SHA256: 5921a2e98f00d85b3fd2f751b55c0c5931c49a7cf98e857cdf66efa07e2e6fbb
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -427,16 +427,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm64
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 456
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootless/com.jinken.orientflow_1.0.3_iphoneos-arm64.deb
-Size: 85034
-MD5sum: 4cc406f73b875f6aea8fd831871c5db9
-SHA1: 4522a276af0c0c3f540e6e74d6cd6cbb61871f09
-SHA256: a91e65b2dfafda0157fdd7a0cb84c2c2d294b4e12f5ee4f44a957c13cb86bbda
+Filename: debs/rootless/com.jinken.orientflow_1.0.4_iphoneos-arm64.deb
+Size: 88526
+MD5sum: adbaa8a006bdc76de0c26af5ddf0fa53
+SHA1: fb8431dcb5e01a36e5ca35e7e1c96cc44293caa0
+SHA256: 17f8f19044e31cb04289107f5d9eecc5395fb62a37b88b33d926a4ba0bb95baf
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -790,16 +790,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm64e
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 456
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/roothide/com.jinken.orientflow_1.0.3_iphoneos-arm64e.deb
-Size: 84828
-MD5sum: 4fadf5dbe4984004dde58990e1efaeb2
-SHA1: 4ccf42841a6c158d12571772f07c075e238dc3ec
-SHA256: da519c5f904c2667e5b18e00cb05f6f29b719d2f93b548fffbce110bbb304d51
+Filename: debs/roothide/com.jinken.orientflow_1.0.4_iphoneos-arm64e.deb
+Size: 88340
+MD5sum: e24a661ee7de07d81b6324a17240c835
+SHA1: 740884a2d2c3e97aa383365816a9eee6389f7de6
+SHA256: e27d01dd393791b6f9d4735e0eede555d453c1973f5d80d776e4480268d9593e
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
