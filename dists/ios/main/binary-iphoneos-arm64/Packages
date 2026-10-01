@@ -176,10 +176,10 @@ Maintainer: Jinken Nguyen <tientrieu1989@gmail.com>
 Installed-Size: 2916
 Depends: firmware (>= 10.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
 Filename: debs/rootless/com.jinkennguyen.aurahtml_1.0.0_iphoneos-arm64.deb
-Size: 174322
-MD5sum: 9cfaaf844631add58aa161923af33541
-SHA1: 8654d7e27efa85df598f2fe81b44ed84171e6dd8
-SHA256: 53cfa7dbded81eac45a607bcc9de0d1253df341cb4684a59bc900c56cca98dd6
+Size: 174158
+MD5sum: 51f4424ae5c035f2ee80e9f0f1c6194c
+SHA1: dad87eb12d23a419bded9764cfb1ca500e6fe80d
+SHA256: 7437591ca8a112dc07e16ca50584dbccd1150e694ca2f3fc822d7e4e9a0a6cad
 Section: Tweaks
 Tag: role::hacker, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen
