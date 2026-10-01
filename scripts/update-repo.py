@@ -978,7 +978,9 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
             if href:
                 links.append(f'<a class="more" href="{html_escape(href)}">{html_escape(kind["title"])}</a>')
         ipa_file = ROOT / "extras" / "EnglishKids.ipa" if pkg == "com.jinken.englishkids" else None
-        ipa_link = f' <a class="more" href="extras/EnglishKids.ipa">Tải file .IPA</a>' if ipa_file and ipa_file.is_file() else ""
+        ipa_link = f' <a class="more" href="extras/EnglishKids.ipa">Tải IPA (iOS)</a>' if ipa_file and ipa_file.is_file() else ""
+        apk_file = ROOT / "extras" / "EnglishKids.apk" if pkg == "com.jinken.englishkids" else None
+        apk_link = f' <a class="more" href="extras/EnglishKids.apk">Tải APK (Android)</a>' if apk_file and apk_file.is_file() else ""
         tweak_cards.append(
             f"""
 <article class="card">
@@ -986,7 +988,7 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
   <p class="meta">{html_escape(info['Version'])}</p>
   <p>{html_escape(vi)}</p>
   <p class="en">{html_escape(en)}</p>
-  <p>Tải đúng loại máy: {' '.join(links)}{ipa_link}</p>
+  <p>Tải đúng loại máy: {' '.join(links)}{ipa_link}{apk_link}</p>
   <a class="more" href="depictions/{html_escape(pkg)}/">Chi tiết</a>
 </article>"""
         )
@@ -1044,12 +1046,15 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
   <h2>Tất cả tweak</h2>
   <div class="grid">{''.join(tweak_cards)}</div>
 
-  <h2>Ứng dụng IPA (TrollStore / Sideload / Jailbreak)</h2>
+  <h2>Ứng dụng Trực tiếp (IPA cho iOS &amp; APK cho Android)</h2>
   <div class="card">
     <h3>English Kids — v1.7 (Build 13)</h3>
     <p>Ứng dụng học tiếng Anh tương tác cho trẻ em (từ vựng, phát âm, flashcard, mini-game, chạy offline 100%).</p>
-    <p class="en">Cài đặt trực tiếp qua TrollStore, Filza hoặc phần mềm Sideload (AltStore, Sideloadly):</p>
-    <p><a class="btn primary" href="extras/EnglishKids.ipa">Tải file EnglishKids.ipa (47MB)</a></p>
+    <p class="en">Tải và cài đặt trực tiếp cho thiết bị iOS (TrollStore, Filza, Sideload) hoặc thiết bị Android:</p>
+    <div class="row" style="margin-top:10px;">
+      <a class="btn primary" href="extras/EnglishKids.ipa">Tải file EnglishKids.ipa (47MB - iOS)</a>
+      <a class="btn primary" href="extras/EnglishKids.apk">Tải file EnglishKids.apk (50MB - Android)</a>
+    </div>
   </div>
 
   <h2 id="credit">Credit</h2>
