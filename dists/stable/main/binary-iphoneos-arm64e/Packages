@@ -25,10 +25,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/roothide/com.jinken.englishkids_1.7_iphoneos-arm64e.deb
-Size: 48673850
-MD5sum: c939f98735778ea6895aeda5c14a59d2
-SHA1: 11a0d08ab7aab0435ed2ff3e0d4769b481fd221d
-SHA256: cbe3fd66e9a3da33ec7ae6d74196dc2e4e2017b8093d7bd0befbc9ee723e1bfe
+Size: 48757048
+MD5sum: 1345b07e11adea29380d999537a2333d
+SHA1: 7fffb7ca207c20bef6d917a2b438b77b52bef8bf
+SHA256: 5e65a7cbca69654e52b2e7700cf37ddb8942527bed4e89927e38455b37d2c462
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989

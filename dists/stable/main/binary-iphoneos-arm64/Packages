@@ -25,10 +25,10 @@ Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/rootless/com.jinken.englishkids_1.7_iphoneos-arm64.deb
-Size: 48674516
-MD5sum: 10fbeaf7423504031f71e857cabac258
-SHA1: 4d504f4987d4dbfd570137546014fd1c41638bbc
-SHA256: fc1f7e5986f74fdb3c7f9f58575b89b50b94960b6b1cc5095efc99775ff88d02
+Size: 48758430
+MD5sum: b94ae84bbc279aa1e1ff95b9663369e3
+SHA1: 6cbaf1e0653f97a71938d922a6013782257f0a4f
+SHA256: 18ddf3c9c55cc5ba75c0357034b65b68b79260a7337a4ec77517978466612d26
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
