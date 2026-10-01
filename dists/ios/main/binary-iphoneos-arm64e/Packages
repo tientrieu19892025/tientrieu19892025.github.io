@@ -84,16 +84,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.4
+Version: 1.0.5
 Architecture: iphoneos-arm64e
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 456
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/roothide/com.jinken.orientflow_1.0.4_iphoneos-arm64e.deb
-Size: 88340
-MD5sum: e24a661ee7de07d81b6324a17240c835
-SHA1: 740884a2d2c3e97aa383365816a9eee6389f7de6
-SHA256: e27d01dd393791b6f9d4735e0eede555d453c1973f5d80d776e4480268d9593e
+Filename: debs/roothide/com.jinken.orientflow_1.0.5_iphoneos-arm64e.deb
+Size: 89880
+MD5sum: 0c1c4d3eb9a37949a2124b49ce5dbfd3
+SHA1: 0d3faa0350a2fa2a6e5a1c409b21c42e19c71d60
+SHA256: 767644ecce5225a690308111e5b57ddbac1c236830a67a4d2f1aa1a825ab3ba2
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -168,6 +168,26 @@ Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.appsw
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.appsw/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.appsw.png
+
+Package: com.jinkennguyen.aurahtml
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen <tientrieu1989@gmail.com>
+Installed-Size: 2916
+Depends: firmware (>= 10.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
+Filename: debs/roothide/com.jinkennguyen.aurahtml_1.0.0_iphoneos-arm64e.deb
+Size: 174294
+MD5sum: 672b1ed2f1c7a64350031dce3ea2af48
+SHA1: 1b7e6e8216eb7739d90296ed80ba46d9f296fde4
+SHA256: 096c561d42ab58f27890fc0acc43b6013be741598ce3ec33e1f7a244205e950e
+Section: Tweaks
+Tag: role::hacker, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen
+Name: AuraHTML
+Description: Bộ widget HTML/CSS/JS đỉnh cao cho Màn hình khoá & Màn hình chính. Hơn 100 giao diện đẳng cấp, tuỳ chọn thêm bớt tự do, kéo thả vị trí và tự động giãn icon thông minh.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.aurahtml/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.aurahtml/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
 
 Package: com.jinkennguyen.cpuboost
 Version: 1.0.4

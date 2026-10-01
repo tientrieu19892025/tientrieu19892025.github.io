@@ -207,6 +207,10 @@ BLURBS = {
         "Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh, flashcard, mini-game và thanh chữ chạy.",
         "Interactive English learning app for kids: vocabulary, pronunciation, flashcards, games and live ticker.",
     ),
+    "com.jinkennguyen.aurahtml": (
+        "Bộ widget HTML/CSS/JS đỉnh cao cho Màn hình khoá & Màn hình chính. Hơn 100 giao diện đẳng cấp, tuỳ chọn thêm bớt tự do, kéo thả vị trí và tự động giãn icon thông minh.",
+        "Premium HTML/CSS/JS dynamic widgets for Lock Screen & Home Screen. 100+ luxury themes, bilingual details, free dragging and smart icon pushing.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -242,6 +246,7 @@ FEATURE_GUIDES = {
 }
 
 FEATURED = [
+    "com.jinkennguyen.aurahtml",
     "com.jinkennguyen.duoframe",
     "com.jinkennguyen.lookglass",
     "com.jinkennguyen.slapios",
@@ -309,6 +314,7 @@ def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], 
     latest: dict[tuple[str, str], tuple] = {}
     search_roots = list(CODE.glob("*/packages")) + [
         Path.home() / "StatusBarInfo" / "packages",
+        Path.home() / "AuraHTML" / "packages",
         Path.home() / "ListApp" / "packages",
         Path.home() / "QuickPass" / "packages",
         Path.home() / "OrientFlow" / "packages",
