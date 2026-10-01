@@ -203,6 +203,10 @@ BLURBS = {
         "Gợi ý xoay màn hình thông minh khi khoá xoay. Giữ nguyên hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc, thanh kéo tuỳ chọn vị trí tự do.",
         "Smart rotation suggestion prompt when orientation lock is active. Locks in landscape once tapped, auto-relocks on portrait, custom slider positioning.",
     ),
+    "com.jinken.englishkids": (
+        "Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh, flashcard, mini-game và thanh chữ chạy.",
+        "Interactive English learning app for kids: vocabulary, pronunciation, flashcards, games and live ticker.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -593,6 +597,8 @@ Nhám tiêu chuẩn nhìn thấy rõ. Cài đặt kiểu kính, có donate.""",
 Thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng thẻ kính lỏng dài 2/3 màn hình. 5 thiết kế khung bo góc, 7 màu sắc kính lỏng, tìm kiếm tức thì, mở app mượt mà và chống treo máy tuyệt đối.""",
     "com.jinken.quickpass": """**1.0.0**
 Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID. Chạm giữ để kéo thả tuỳ chỉnh vị trí trực tiếp, 5 phong cách đồ hoạ Liquid Glass sang trọng, tuỳ biến biểu tượng và kích thước, rung phản hồi Haptic.""",
+    "com.jinken.englishkids": """**1.7** (Build 13)
+Ứng dụng học tiếng Anh tương tác cho trẻ em (English Kids). Học từ vựng theo chủ đề, phát âm chuẩn, mini games câu đố tương tác, flashcards, thanh chữ chạy tin tức trực tiếp.""",
 }
 
 
@@ -965,6 +971,8 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
             href = info.get("files", {}).get(kind["arch"])
             if href:
                 links.append(f'<a class="more" href="{html_escape(href)}">{html_escape(kind["title"])}</a>')
+        ipa_file = ROOT / "extras" / "EnglishKids.ipa" if pkg == "com.jinken.englishkids" else None
+        ipa_link = f' <a class="more" href="extras/EnglishKids.ipa">Tải file .IPA</a>' if ipa_file and ipa_file.is_file() else ""
         tweak_cards.append(
             f"""
 <article class="card">
@@ -972,7 +980,7 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
   <p class="meta">{html_escape(info['Version'])}</p>
   <p>{html_escape(vi)}</p>
   <p class="en">{html_escape(en)}</p>
-  <p>Tải đúng loại máy: {' '.join(links)}</p>
+  <p>Tải đúng loại máy: {' '.join(links)}{ipa_link}</p>
   <a class="more" href="depictions/{html_escape(pkg)}/">Chi tiết</a>
 </article>"""
         )
@@ -1029,6 +1037,14 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
 
   <h2>Tất cả tweak</h2>
   <div class="grid">{''.join(tweak_cards)}</div>
+
+  <h2>Ứng dụng IPA (TrollStore / Sideload / Jailbreak)</h2>
+  <div class="card">
+    <h3>English Kids — v1.7 (Build 13)</h3>
+    <p>Ứng dụng học tiếng Anh tương tác cho trẻ em (từ vựng, phát âm, flashcard, mini-game, chạy offline 100%).</p>
+    <p class="en">Cài đặt trực tiếp qua TrollStore, Filza hoặc phần mềm Sideload (AltStore, Sideloadly):</p>
+    <p><a class="btn primary" href="extras/EnglishKids.ipa">Tải file EnglishKids.ipa (47MB)</a></p>
+  </div>
 
   <h2 id="credit">Credit</h2>
   <div class="card">
@@ -1224,8 +1240,7 @@ def main() -> int:
         rel = leftover.relative_to(debs_dir).as_posix()
         if rel not in keep_debs:
             leftover.unlink()
-    for leftover in extras.glob("*"):
-        leftover.unlink()
+    # keep extras/*.ipa if present
     for leftover in icons_dir.glob("*.png"):
         pkg = leftover.stem
         if allow and pkg not in allow:

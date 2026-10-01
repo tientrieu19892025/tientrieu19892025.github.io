@@ -19,6 +19,26 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.disswi
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
+Package: com.jinken.englishkids
+Version: 1.7
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Depends: firmware (>= 15.0)
+Filename: debs/roothide/com.jinken.englishkids_1.7_iphoneos-arm64e.deb
+Size: 48673850
+MD5sum: c939f98735778ea6895aeda5c14a59d2
+SHA1: 11a0d08ab7aab0435ed2ff3e0d4769b481fd221d
+SHA256: cbe3fd66e9a3da33ec7ae6d74196dc2e4e2017b8093d7bd0befbc9ee723e1bfe
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: English Kids
+Description: Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh, flashcard, mini-game và thanh chữ chạy.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.englishkids/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.englishkids/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.englishkids.png
+
 Package: com.jinken.freezebuster
 Version: 1.1.0
 Architecture: iphoneos-arm64e
