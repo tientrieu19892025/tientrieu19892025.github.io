@@ -254,17 +254,17 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.jinken
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 396
+Installed-Size: 420
 Depends: firmware (>= 14.0)
 Recommends: preferenceloader
-Filename: debs/rootful/com.jinkennguyen.jinken_1.0.0_iphoneos-arm.deb
-Size: 163038
-MD5sum: fe6d2b3b8ea7018df58b9f1d4960b8d1
-SHA1: 144dfa4d49f580628c7073f12b0237c350e595ad
-SHA256: eee8fd53e2167f47b57d1ae192a04115204b01f0f25fb94578767b467453d7de
+Filename: debs/rootful/com.jinkennguyen.jinken_1.1.0_iphoneos-arm.deb
+Size: 165740
+MD5sum: 5826dadb52e19b4bbf555c94f0b8c4b8
+SHA1: 24cdfbcc36f5c4d0bb14ff372c053335ec749e10
+SHA256: b1205b8b006e931cfae67d3340fdb834da5591a7a85c5d3179d6e5e662c4ddbc
 Section: Utilities
 Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
@@ -657,17 +657,17 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.jinken
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 620
+Installed-Size: 644
 Depends: firmware (>= 14.0)
 Recommends: preferenceloader
-Filename: debs/rootless/com.jinkennguyen.jinken_1.0.0_iphoneos-arm64.deb
-Size: 173204
-MD5sum: 5381e1644449beccbe7547ce22a78c3d
-SHA1: ea688581755f26111cba61f56e0e116ba811fc1f
-SHA256: 49306bcb0229ca7b17e3446cb701851152218bd0e051579b1228b01f6fce1916
+Filename: debs/rootless/com.jinkennguyen.jinken_1.1.0_iphoneos-arm64.deb
+Size: 175624
+MD5sum: d29fc9bcc43be22c690b092574bd3580
+SHA1: c802965955d9711f99e4bcb68841068bef4f1d8d
+SHA256: 4f72bbdd569a13ce191e361bc6cd7899529b78b134b2ef16b5afb7ac97d86fbf
 Section: Utilities
 Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
@@ -1060,17 +1060,17 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.haloframe.png
 
 Package: com.jinkennguyen.jinken
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 620
+Installed-Size: 644
 Depends: firmware (>= 14.0)
 Recommends: preferenceloader
-Filename: debs/roothide/com.jinkennguyen.jinken_1.0.0_iphoneos-arm64e.deb
-Size: 172870
-MD5sum: 040c6a74b19805ec470306ba7c4f9a1b
-SHA1: 6183afd709342de713cd7e97bf103f760f2e14ae
-SHA256: da9f6c97e2db5206a05da7e45f534f1a3082666b3d81a7a2bd47f53f252bea93
+Filename: debs/roothide/com.jinkennguyen.jinken_1.1.0_iphoneos-arm64e.deb
+Size: 175658
+MD5sum: 5744b280637f7fcb5aa79eefb7226316
+SHA1: f61bd597807361b333a911264202c811ceac65b2
+SHA256: 41540a77ce4f85214445da256bec287374b48587b5a9383feb9ea312f59cc64f
 Section: Utilities
 Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989

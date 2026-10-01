@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-10-01",
   "source": "https://tientrieu19892025.github.io",
   "author": "Jinken Nguyen - 1989",
   "donate": {
@@ -27,9 +27,18 @@
         "Chat: bấm Chat cạnh Tìm, đặt username một lần, rồi nhắn."
       ],
       "log": [
-        {"v": "4.0.4", "t": "Chat hiện tin ngay khi gửi."},
-        {"v": "4.0.3", "t": "Sửa Cài đặt trên iOS 16 RootHide."},
-        {"v": "4.0.0", "t": "Phòng chat chung. YouTube trên ô LookGlass."}
+        {
+          "v": "4.0.4",
+          "t": "Chat hiện tin ngay khi gửi."
+        },
+        {
+          "v": "4.0.3",
+          "t": "Sửa Cài đặt trên iOS 16 RootHide."
+        },
+        {
+          "v": "4.0.0",
+          "t": "Phòng chat chung. YouTube trên ô LookGlass."
+        }
       ]
     },
     {
@@ -46,9 +55,18 @@
         "Muốn vuốt trang như gốc: tắt Cuộn trang liên tục."
       ],
       "log": [
-        {"v": "3.5.3", "t": "Cài iOS 17/18 không còn báo thiếu thành phần."},
-        {"v": "3.5.2", "t": "Đổi màu chữ và icon trên Home."},
-        {"v": "3.5.1", "t": "Vuốt mượt hơn, thêm kiểu icon."}
+        {
+          "v": "3.5.3",
+          "t": "Cài iOS 17/18 không còn báo thiếu thành phần."
+        },
+        {
+          "v": "3.5.2",
+          "t": "Đổi màu chữ và icon trên Home."
+        },
+        {
+          "v": "3.5.1",
+          "t": "Vuốt mượt hơn, thêm kiểu icon."
+        }
       ]
     },
     {
@@ -65,8 +83,14 @@
         "Vuốt lên thẻ nhỏ để đóng app đó."
       ],
       "log": [
-        {"v": "1.0.5", "t": "Kính rõ hơn. Ô lớn đúng app đang chạy. Vuốt lên thẻ nhỏ để đóng."},
-        {"v": "1.0.4", "t": "Vuốt lên thì ra AppSw, che màn gốc."}
+        {
+          "v": "1.0.5",
+          "t": "Kính rõ hơn. Ô lớn đúng app đang chạy. Vuốt lên thẻ nhỏ để đóng."
+        },
+        {
+          "v": "1.0.4",
+          "t": "Vuốt lên thì ra AppSw, che màn gốc."
+        }
       ]
     },
     {
@@ -82,9 +106,18 @@
         "Cài đặt → Lock Frame để bật/tắt từng phần."
       ],
       "log": [
-        {"v": "3.2.3", "t": "Bản ổn định hiện tại."},
-        {"v": "3.2.1", "t": "Giờ trên lock đúng múi giờ máy."},
-        {"v": "3.2.0", "t": "Mặt trời / mặt trăng đổi theo ngày."}
+        {
+          "v": "3.2.3",
+          "t": "Bản ổn định hiện tại."
+        },
+        {
+          "v": "3.2.1",
+          "t": "Giờ trên lock đúng múi giờ máy."
+        },
+        {
+          "v": "3.2.0",
+          "t": "Mặt trời / mặt trăng đổi theo ngày."
+        }
       ]
     },
     {
@@ -100,8 +133,14 @@
         "Cài đặt → SettingSZ để chọn màu đề mục và bố cục."
       ],
       "log": [
-        {"v": "1.0.11", "t": "Bản ổn định hiện tại."},
-        {"v": "1.0.10", "t": "Mở mục trong Cài đặt không còn bị thoát."}
+        {
+          "v": "1.0.11",
+          "t": "Bản ổn định hiện tại."
+        },
+        {
+          "v": "1.0.10",
+          "t": "Mở mục trong Cài đặt không còn bị thoát."
+        }
       ]
     },
     {
@@ -117,8 +156,14 @@
         "Xem video trong Ảnh, bấm Lưu hình nếu cần khung đó."
       ],
       "log": [
-        {"v": "1.1.1", "t": "Sửa Camera treo trên iOS 18."},
-        {"v": "1.1.0", "t": "Nút lưu khung hình khi xem video."}
+        {
+          "v": "1.1.1",
+          "t": "Sửa Camera treo trên iOS 18."
+        },
+        {
+          "v": "1.1.0",
+          "t": "Nút lưu khung hình khi xem video."
+        }
       ]
     },
     {
@@ -134,25 +179,39 @@
         "Vỗ lưng máy, gõ màn, hoặc lắc."
       ],
       "log": [
-        {"v": "1.2.0", "t": "Gói tiếng thu âm thật. Chọn Rên thì chỉ rên."}
+        {
+          "v": "1.2.0",
+          "t": "Gói tiếng thu âm thật. Chọn Rên thì chỉ rên."
+        }
       ]
     },
     {
       "id": "com.jinkennguyen.cpuboost",
       "name": "CPU Boost",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "tag": "Hệ thống",
-      "summary": "CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Eco / Boost / Turbo.",
-      "detail": "CPU Boost chỉnh tốc độ CPU. Eco tiết pin. Boost và Turbo kéo máy cũ đỡ nặng. Dùng khi cần, đừng để Turbo cả ngày.",
+      "summary": "CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Ngủ sâu khi tắt màn hình, Eco / Boost / Turbo.",
+      "detail": "CPU Boost chỉnh tốc độ CPU. Tự động chuyển chế độ Ngủ sâu (Deep Sleep) khi tắt màn hình để tiết kiệm tối đa pin chờ (hạ CPU/GPU xuống 25%, nhả sleep locks). Eco tiết kiệm pin, Boost và Turbo tăng tốc máy mượt mà.",
       "how": [
         "Cài, Respring.",
         "Cài đặt → CPU Boost.",
         "Chọn Eco, Boost hoặc Turbo.",
-        "Respring sau khi đổi preset."
+        "Bật tính năng Ngủ sâu để chống hao pin khi tắt màn hình.",
+        "Respring sau khi đổi thiết lập."
       ],
       "log": [
-        {"v": "1.0.3", "t": "Sửa Safe Mode khi chọn preset rồi Respring."},
-        {"v": "1.0.2", "t": "Cài được trên iOS 17/18."}
+        {
+          "v": "1.0.4",
+          "t": "Chức năng mới: Ngủ sâu khi tắt màn hình — tự động giảm CPU và GPU xuống mức tối thiểu (25%), nhả toàn bộ sleep assertions để chống tụt pin chờ."
+        },
+        {
+          "v": "1.0.3",
+          "t": "Sửa Safe Mode khi chọn preset rồi Respring."
+        },
+        {
+          "v": "1.0.2",
+          "t": "Cài được trên iOS 17/18."
+        }
       ]
     },
     {
@@ -168,7 +227,10 @@
         "Nếu một app lỗi trang, tắt filter của app đó."
       ],
       "log": [
-        {"v": "1.0.4", "t": "Bản đang trên repo."}
+        {
+          "v": "1.0.4",
+          "t": "Bản đang trên repo."
+        }
       ]
     },
     {
@@ -185,39 +247,65 @@
         "Lắc mạnh để dừng."
       ],
       "log": [
-        {"v": "1.0.0", "t": "100 trò khăm. Mặc định tắt. Lắc để dừng."}
+        {
+          "v": "1.0.0",
+          "t": "100 trò khăm. Mặc định tắt. Lắc để dừng."
+        }
       ]
     },
     {
       "id": "com.jinkennguyen.statusbarinfo",
       "name": "StatusBarInfo",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "tag": "Thanh trạng thái",
-      "summary": "Chạm thanh trạng thái trên Home và trong app — hơn 68 thông số. Game không dính.",
-      "detail": "StatusBarInfo hiện bảng kính khi chạm status bar. Pin, RAM, CPU, mạng, nhiệt… Sao chép một chạm. Không inject vào game.",
+      "summary": "Chạm hoặc nhấn giữ thanh trạng thái ở Home và trong app — hơn 78 thông số & dữ liệu Internet trực tiếp. Game không dính.",
+      "detail": "StatusBarInfo hiện bảng kính khi chạm hoặc nhấn giữ status bar. Hơn 78 thông số: pin chi tiết, nhiệt độ, RAM, CPU, mạng, IP công cộng, thời tiết theo toạ độ, giá Bitcoin/Ethereum, tỷ giá USD... Sao chép một chạm. Không inject vào game.",
       "how": [
-        "Cài, Respring.",
-        "Chạm thanh trạng thái trên Home hoặc trong app.",
-        "Vuốt bảng để xem thêm. Chạm dòng để copy."
+        "Cài StatusBarInfo, Respring.",
+        "Chạm hoặc nhấn giữ thanh trạng thái trên Home hoặc trong app.",
+        "Vào Cài đặt → StatusBarInfo để tuỳ chỉnh kiểu cử chỉ và 78 mục thông số.",
+        "Vuốt bảng để xem thêm, chạm dòng để sao chép."
       ],
       "log": [
-        {"v": "1.2.0", "t": "Chạm status bar trên Home và trong app. Game không bị inject."}
+        {
+          "v": "1.3.0",
+          "t": "Hơn 78 thông số. Thêm tuỳ chọn nhấn giữ thanh trạng thái, dữ liệu Internet trực tiếp (thời tiết, giá BTC/ETH, tỷ giá USD), làm mới thời gian thực."
+        },
+        {
+          "v": "1.2.0",
+          "t": "Chạm status bar trên Home và trong app. Game không bị inject."
+        },
+        {
+          "v": "1.1.0",
+          "t": "Bảng điều khiển khi chạm Status Bar: hơn 68 thông số."
+        }
       ]
     },
     {
       "id": "com.jinken.listapp",
       "name": "ListApp",
-      "version": "1.0.0",
+      "version": "1.2.3",
       "tag": "Màn hình chính",
-      "summary": "Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, mượt mà và chống treo máy.",
-      "detail": "ListApp thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng thẻ kính lỏng dài 2/3 màn hình. Thiết kế đa dạng, chỉ hiển thị app thật, tìm kiếm tức thì, mở app mượt mà và chống treo máy tuyệt đối.",
+      "summary": "Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, hiệu ứng 120 FPS siêu mượt và chống treo máy tuyệt đối.",
+      "detail": "ListApp thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng thẻ kính lỏng dài 2/3 màn hình. Hiệu ứng mở và đóng app 120 FPS mượt mà, bộ nhớ đệm icon tức thì, chỉ hiển thị app thật, tìm kiếm nhanh và chống treo máy.",
       "how": [
         "Cài ListApp, Respring.",
         "Mở khoá máy để thấy danh sách ứng dụng kính lỏng.",
         "Mở Cài đặt → ListApp để đổi kiểu dáng, màu sắc hoặc thiết lập tìm kiếm."
       ],
       "log": [
-        {"v": "1.0.0", "t": "Thay thế màn hình chính bằng danh sách kính lỏng 2/3 màn hình. 5 kiểu thiết kế, 7 màu sắc."}
+        {
+          "v": "1.2.3",
+          "t": "Hiệu ứng mở/đóng app 120 FPS siêu mượt, loại bỏ hoàn toàn giật khung hình khi thoát app về Home."
+        },
+        {
+          "v": "1.2.0",
+          "t": "Tối ưu bộ nhớ đệm icon, phản hồi khởi chạy tức thì."
+        },
+        {
+          "v": "1.0.0",
+          "t": "Thay thế màn hình chính bằng danh sách kính lỏng 2/3 màn hình. 5 kiểu thiết kế, 7 màu sắc."
+        }
       ]
     },
     {
@@ -234,7 +322,131 @@
         "Mở Cài đặt → QuickPass để đổi kiểu dáng kính lỏng, biểu tượng hoặc chọn vị trí định sẵn."
       ],
       "log": [
-        {"v": "1.0.0", "t": "Nút bấm mở nhanh mật khẩu số cho Face ID, kéo thả vị trí tự do, đồ hoạ Liquid Glass 3D, hỗ trợ Rootful, Rootless, RootHide."}
+        {
+          "v": "1.0.0",
+          "t": "Nút bấm mở nhanh mật khẩu số cho Face ID, kéo thả vị trí tự do, đồ hoạ Liquid Glass 3D, hỗ trợ Rootful, Rootless, RootHide."
+        }
+      ]
+    },
+    {
+      "id": "com.jinken.englishkids",
+      "name": "English Kids",
+      "version": "1.7",
+      "tag": "Ứng dụng",
+      "summary": "Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh chuẩn, flashcard, mini-game và thanh chữ chạy.",
+      "detail": "English Kids là ứng dụng giáo dục học tiếng Anh tương tác cao dành cho trẻ em. Bé học từ vựng theo chủ đề trực quan, nghe phát âm chuẩn bản ngữ, chơi mini games câu đố tương tác, lật flashcard sinh động và đọc thanh chữ chạy tin tức trực tiếp. Có sẵn icon trên Home Screen sau khi cài đặt.",
+      "how": [
+        "Cài đặt gói deb (hoặc cài IPA) và mở icon English Kids trên Màn hình chính.",
+        "Chọn các chủ đề từ vựng: động vật, màu sắc, số đếm, gia đình...",
+        "Chạm vào thẻ để nghe phát âm chuẩn và xem hình ảnh minh hoạ.",
+        "Chơi mini-game câu đố tương tác để ghi nhớ từ vựng dễ dàng."
+      ],
+      "log": [
+        {
+          "v": "1.7",
+          "t": "Bản phát hành chính thức: học từ vựng đa chủ đề, phát âm chuẩn, flashcards, mini-game câu đố và thanh chữ chạy trực tiếp. Hỗ trợ IPA và gói deb Jailbreak."
+        }
+      ]
+    },
+    {
+      "id": "com.jinken.disswipe",
+      "name": "dis-swipe",
+      "version": "1.1.1",
+      "tag": "Bàn phím & Cử chỉ",
+      "summary": "Khóa cử chỉ vuốt ngang cạnh đáy (Home bar) đổi app khi đang mở bàn phím gõ. Ẩn Home bar khi gõ, chống chạm nhầm.",
+      "detail": "dis-swipe ngăn chặn việc vô tình vuốt trúng thanh Home bar cạnh đáy làm nhảy sang app khác khi bạn đang gõ bàn phím. Tự động ẩn thanh Home bar ngay khi mở bàn phím, bảo vệ cử chỉ vuốt về Home bằng cách yêu cầu vuốt nhanh 2 lần dứt khoát, hỗ trợ rung phản hồi Haptic và tuỳ chỉnh độ nhạy.",
+      "how": [
+        "Cài dis-swipe, Respring.",
+        "Mở bất kỳ app nào có bàn phím soạn thảo (Tin nhắn, Zalo, Safari...).",
+        "Thanh Home bar được ẩn tức thì và cử chỉ vuốt ngang chuyển app bị khoá.",
+        "Vào Cài đặt → dis-swipe để chỉnh độ nhạy hoặc bật/tắt rung Haptic."
+      ],
+      "log": [
+        {
+          "v": "1.1.1",
+          "t": "Ẩn Home Bar ngay lập tức khi mở phím. Sửa triệt để lỗi vuốt ngang và yêu cầu vuốt 2 lần dứt khoát về Home. Thanh trượt độ nhạy có badge thời gian thực."
+        },
+        {
+          "v": "1.1.0",
+          "t": "Khoá vuốt ngang chuyển app khi mở bàn phím, tuỳ biến rung Haptic."
+        }
+      ]
+    },
+    {
+      "id": "com.jinken.freezebuster",
+      "name": "FreezeBuster Pro",
+      "version": "1.1.0",
+      "tag": "Chống đơ & Lag",
+      "summary": "Tự động phát hiện và giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì cho máy yếu.",
+      "detail": "FreezeBuster Pro là tweak chạy ngầm giám sát độ mượt của hệ thống. Khi phát hiện SpringBoard hoặc ứng dụng bị đơ cảm ứng, nghẽn luồng chính (Main Thread Hang) hay tràn RAM, tweak lập tức can thiệp giải phóng tài nguyên, phục hồi khả năng phản hồi cảm ứng ngay lập tức mà không cần buộc khởi động lại.",
+      "how": [
+        "Cài FreezeBuster Pro, Respring.",
+        "Tweak tự động kích hoạt bảo vệ hệ thống chạy nền 24/7.",
+        "Khi máy bị nghẽn lag hoặc đơ cảm ứng, tweak tự động xả RAM và giải cứu tiến trình.",
+        "Vào Cài đặt → FreezeBuster Pro để xem nhật ký cứu máy và tuỳ chỉnh mức độ can thiệp."
+      ],
+      "log": [
+        {
+          "v": "1.1.0",
+          "t": "Khắc phục triệt để lỗi Safe Mode khi cài đặt. Cải tiến thuật toán phát hiện Watchdog timeout và giải phóng bộ nhớ tức thì."
+        },
+        {
+          "v": "1.0.0",
+          "t": "Tự động chống đơ, xả RAM và tối ưu độ mượt cho thiết bị."
+        }
+      ]
+    },
+    {
+      "id": "com.jinken.orientflow",
+      "name": "OrientFlow",
+      "version": "1.0.5",
+      "tag": "Xoay màn hình",
+      "summary": "Gợi ý xoay màn hình thông minh khi đang khoá xoay. Giữ hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc máy.",
+      "detail": "OrientFlow mang tính năng xoay màn hình thông minh lên iOS: ngay cả khi bạn đang bật Khoá xoay hướng dọc, khi nghiêng ngang máy, một nút xoay kính mờ tinh tế sẽ nổi lên. Bấm vào nút để xoay màn hình sang ngang; khi dựng đứng máy trở lại, máy sẽ tự động quay về hướng dọc và khoá xoay.",
+      "how": [
+        "Cài OrientFlow, Respring.",
+        "Bật khoá xoay hướng dọc (Portrait Orientation Lock) trong Control Center.",
+        "Nghiêng máy sang ngang trong Safari, YouTube hoặc Ảnh: một nút kính gợi ý xoay sẽ hiện lên.",
+        "Chạm vào nút để xoay ngang. Dựng thẳng máy đứng lên để tự động trở về dọc.",
+        "Vào Cài đặt → OrientFlow để kéo thả thanh trượt chỉnh toạ độ nút hiển thị tuỳ ý."
+      ],
+      "log": [
+        {
+          "v": "1.0.5",
+          "t": "Tối ưu ổn định trên toàn bộ các phiên bản iOS 13 - 17."
+        },
+        {
+          "v": "1.0.4",
+          "t": "Sửa lỗi crash Safe Mode trên iOS 16 (iPhone 8 Plus Dopamine)."
+        },
+        {
+          "v": "1.0.3",
+          "t": "Khắc phục hiện tượng spam popup, giữ hướng xoay ngang ổn định, thanh kéo vị trí tự do."
+        },
+        {
+          "v": "1.0.2",
+          "t": "Cửa sổ an toàn, menu song ngữ Anh - Việt, chống xung đột."
+        }
+      ]
+    },
+    {
+      "id": "com.jinkennguyen.aurahtml",
+      "name": "AuraHTML",
+      "version": "1.0.0",
+      "tag": "Tuỳ biến Widget",
+      "summary": "Bộ widget HTML/CSS/JS đỉnh cao cho Màn hình khoá & Màn hình chính. Hơn 100 giao diện đẳng cấp, kéo thả tự do.",
+      "detail": "AuraHTML là nền tảng widget HTML/CSS/JS mạnh mẽ và hiện đại (kế thừa phong cách XenHTML) dành cho iOS 10 đến iOS 26+. Hỗ trợ đặt widget động trên LockScreen & HomeScreen, kéo thả tự do, tự động giãn lưới icon tránh đè chữ, tiêu thụ pin cực thấp và tương thích mượt mà trên Rootful, Rootless lẫn RootHide.",
+      "how": [
+        "Cài AuraHTML, Respring.",
+        "Vào Cài đặt → AuraHTML.",
+        "Chọn Màn hình chính (HomeScreen) hoặc Màn hình khoá (LockScreen).",
+        "Thêm widget yêu thích từ kho widget, kéo thả vị trí và xem trực tiếp hiệu ứng."
+      ],
+      "log": [
+        {
+          "v": "1.0.0",
+          "t": "Bản phát hành đầu tiên: hỗ trợ đầy đủ HTML5, CSS3, JavaScript tương tác, tuỳ biến toạ độ kéo thả và tương thích mọi jailbreak."
+        }
       ]
     }
   ]
