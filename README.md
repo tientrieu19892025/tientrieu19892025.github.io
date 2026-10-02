@@ -35,7 +35,6 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | --- | --- | --- | --- |
 | AdShield | `com.jinkennguyen.adshield` | 1.0.4 | rootful, rootless, RootHide |
 | AppSw | `com.jinkennguyen.appsw` | 1.0.5 | rootful, rootless, RootHide |
-| AuraHTML | `com.jinkennguyen.aurahtml` | 1.0.0 | rootful, rootless, RootHide |
 | CPU Boost | `com.jinkennguyen.cpuboost` | 1.0.4 | rootful, rootless, RootHide |
 | dis-swipe | `com.jinken.disswipe` | 1.1.1 | rootful, rootless, RootHide |
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.3 | rootful, rootless, RootHide |

@@ -169,26 +169,6 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.appsw.png
 
-Package: com.jinkennguyen.aurahtml
-Version: 1.0.0
-Architecture: iphoneos-arm64e
-Maintainer: Jinken Nguyen <tientrieu1989@gmail.com>
-Installed-Size: 2916
-Depends: firmware (>= 10.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/roothide/com.jinkennguyen.aurahtml_1.0.0_iphoneos-arm64e.deb
-Size: 174746
-MD5sum: 061b93ca7c1fc8b03b86af0d9c4694aa
-SHA1: 6d0044cf19c90d679fe864a2e2421b89a3535978
-SHA256: 1bba5368164d80013be28ac93541b786a71f71aae098c1f0e054d6da0804fc71
-Section: Tweaks
-Tag: role::hacker, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen
-Name: AuraHTML
-Description: Bộ widget HTML/CSS/JS đỉnh cao cho Màn hình khoá & Màn hình chính. Hơn 100 giao diện đẳng cấp, tuỳ chọn thêm bớt tự do, kéo thả vị trí và tự động giãn icon thông minh.
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.aurahtml/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.aurahtml/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-
 Package: com.jinkennguyen.cpuboost
 Version: 1.0.4
 Architecture: iphoneos-arm64e

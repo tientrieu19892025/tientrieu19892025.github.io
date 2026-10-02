@@ -5,12 +5,6 @@
   "banners": [
     {
       "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
-      "title": "AuraHTML",
-      "package": "com.jinkennguyen.aurahtml",
-      "hideShadow": false
-    },
-    {
-      "url": "https://tientrieu19892025.github.io/assets/featured.jpg",
       "title": "DuoFrame",
       "package": "com.jinkennguyen.duoframe",
       "hideShadow": false
