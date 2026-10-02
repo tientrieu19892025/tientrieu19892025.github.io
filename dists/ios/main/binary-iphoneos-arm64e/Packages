@@ -40,16 +40,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.englishkids.png
 
 Package: com.jinken.freezebuster
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 408
+Installed-Size: 444
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/roothide/com.jinken.freezebuster_1.1.0_iphoneos-arm64e.deb
-Size: 29038
-MD5sum: 34b65a6908e0e60a39d98b5cb8fd7b0e
-SHA1: bfaa9b605129927b5635f28cbc27379b4a05512e
-SHA256: 58b18bf81523c25bfd440f794bb97cd8dd9e6e753425c4d0103419ea97bff1a1
+Filename: debs/roothide/com.jinken.freezebuster_1.2.0_iphoneos-arm64e.deb
+Size: 34722
+MD5sum: 80ad4c5f437fcbfdab7c6f76600e38df
+SHA1: b6e6268a76d6bba34f298f36a54ee8702d93ac8e
+SHA256: 046184970933bde8b0d047c3b89cd75825c2062b3f31ca93f2638ec55fbc87b0
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
@@ -256,16 +256,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.jinken.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.5
+Version: 4.0.6
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 2400
+Installed-Size: 2408
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/roothide/com.jinkennguyen.lookglass_4.0.5_iphoneos-arm64e.deb
-Size: 426950
-MD5sum: c0162ea2b2e8c529221fda7f92210b08
-SHA1: 67e3135b09ffc15557ff82c396514b9d7ec1aa3c
-SHA256: fe4eed8a19be4458a148359fcfd2c9c9ae622b0aecf099b79ba0953d116ab77a
+Filename: debs/roothide/com.jinkennguyen.lookglass_4.0.6_iphoneos-arm64e.deb
+Size: 436100
+MD5sum: fe5990469ad78e23d702b3258ec67aed
+SHA1: 7ef64c4ebbccd2089fdacaf36553b973363b903d
+SHA256: 45084d97c2a0db674b76dd331a0d95539243c5c23496b256a0796c575854f6fc
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
