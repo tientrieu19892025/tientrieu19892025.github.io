@@ -256,16 +256,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.jinken.png
 
 Package: com.jinkennguyen.lookglass
-Version: 4.0.6
+Version: 4.0.7
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 2408
+Installed-Size: 2412
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
-Filename: debs/rootless/com.jinkennguyen.lookglass_4.0.6_iphoneos-arm64.deb
-Size: 436106
-MD5sum: c19e13eaedd25c63e0c52900df03af9b
-SHA1: 8ff08eb7614a2353fb783929dca3e097be983f54
-SHA256: 3d79a45c36a6107e19e4a5719f520918cbacece6492d7843b6319c3f9215bb4d
+Filename: debs/rootless/com.jinkennguyen.lookglass_4.0.7_iphoneos-arm64.deb
+Size: 440904
+MD5sum: c5a2079b188af26d45a6321025f9dd31
+SHA1: e924f6438e3c7425cfcb30a8fcda2aa5ce60e4bf
+SHA256: c9e3e40121d030209b66f2d8065a09bb3f184708f3bc1324ec24d244ce4c4925
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
