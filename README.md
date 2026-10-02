@@ -42,7 +42,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | FreezeBuster Pro | `com.jinken.freezebuster` | 1.1.0 | rootful, rootless, RootHide |
 | ListApp | `com.jinken.listapp` | 1.2.3 | rootful, rootless, RootHide |
 | Lock Frame | `com.jinkennguyen.haloframe` | 3.2.3 | rootful, rootless, RootHide |
-| LookGlass | `com.jinkennguyen.lookglass` | 4.0.4 | rootful, rootless, RootHide |
+| LookGlass | `com.jinkennguyen.lookglass` | 4.0.5 | rootful, rootless, RootHide |
 | NoxFrame | `com.jinkennguyen.noxframe` | 1.1.1 | rootful, rootless, RootHide |
 | OrientFlow | `com.jinken.orientflow` | 1.0.5 | rootful, rootless, RootHide |
 | PrankFrame | `com.jinkennguyen.prankframe` | 1.0.0 | rootful, rootless, RootHide |
