@@ -3,33 +3,33 @@ Label: Jinken Repo
 Suite: stable
 Version: 1.0
 Codename: stable
-Date: Fri, 02 Oct 2026 01:38:11 UTC
+Date: Fri, 02 Oct 2026 02:01:04 UTC
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Jailbreak tweaks by Jinken Nguyen - 1989. Donate: MB Bank 0345140889 Nguyen Tien Trieu.
 MD5Sum:
- 000df48f2846c6b4f8bc7d01289ccdf7 20537 main/binary-iphoneos-arm/Packages
- a6b3f203497a700267df05a2fa6f24dd 4783 main/binary-iphoneos-arm/Packages.gz
- 2d54805bd0fee187aae81d1e9f2cec2e 4558 main/binary-iphoneos-arm/Packages.bz2
+ 06eec0d7f6250eafcf29445486250a91 20537 main/binary-iphoneos-arm/Packages
+ 8bd43d115e06923c03d923d7a9ce4636 4784 main/binary-iphoneos-arm/Packages.gz
+ e66e47cfa962767937d5501239864fb3 4567 main/binary-iphoneos-arm/Packages.bz2
  b3afb622fa6c04bde62cde1fc1509932 201 main/binary-iphoneos-arm/Release
- 080c738c30607f41b35fe40c35ffc8ee 20628 main/binary-iphoneos-arm64/Packages
- 9f53632fbb606203ac9b5818072604fa 4791 main/binary-iphoneos-arm64/Packages.gz
- f68a35187aa150747f77d3896df9b206 4567 main/binary-iphoneos-arm64/Packages.bz2
+ c137deb34cb8bde05a38e4f4c775c9eb 20628 main/binary-iphoneos-arm64/Packages
+ c82c07096103c45870aa27ab0d400fb8 4790 main/binary-iphoneos-arm64/Packages.gz
+ afe33cc53104257bc023ffec5a97bae9 4548 main/binary-iphoneos-arm64/Packages.bz2
  874390e93400dfa1ce5e319de649414e 203 main/binary-iphoneos-arm64/Release
- 0febc80d5d4ec88da2381be316609a71 20664 main/binary-iphoneos-arm64e/Packages
- ff096ba36f41b2c30bc2405cef96af35 4788 main/binary-iphoneos-arm64e/Packages.gz
- 0220140f3a959ec7e0fea1f24c63dbae 4565 main/binary-iphoneos-arm64e/Packages.bz2
+ 5bcb261435236f76b645fa71f961b123 20664 main/binary-iphoneos-arm64e/Packages
+ 67e57e0ea26e6c0a2d6fadfaa10a6873 4787 main/binary-iphoneos-arm64e/Packages.gz
+ dc72d7525e12a752f5f3b091996f63dc 4607 main/binary-iphoneos-arm64e/Packages.bz2
  4289a8170e1b3bce2cd1824a520ae252 204 main/binary-iphoneos-arm64e/Release
 SHA256:
- b7bd41c4e7f91f140194db38d556cd559c26b0dab5515b39884d2badb4014c3b 20537 main/binary-iphoneos-arm/Packages
- 457266fda395509e0074a3aff31bd9fd9c1188f3341dddaee2c4ad8bc3ba6b19 4783 main/binary-iphoneos-arm/Packages.gz
- f0a100830973bbe8b0db3f1ea4732c8a131a5ae2c93198c013cf64b35bd54704 4558 main/binary-iphoneos-arm/Packages.bz2
+ ac58c02f614470a288e6741465eba752012b759ad7b69ce86c234f0fe3e6cf26 20537 main/binary-iphoneos-arm/Packages
+ e5cc428ae36a2fc0e5e4c9e552629aaf2d642ad51349c3737fadf9ba141d2f07 4784 main/binary-iphoneos-arm/Packages.gz
+ 29e53a2c492f08bc0c8e92106c18d96046e33fd7717ec2257358618f78a3f6a5 4567 main/binary-iphoneos-arm/Packages.bz2
  65ef2e85db41aecc6c93d34c06874c9e5603ebe089187fdb9cd36e73284281c9 201 main/binary-iphoneos-arm/Release
- d83ce40a6b9b7779251110ebded5e013382a4f76e6dc34a202b65b92ad864c64 20628 main/binary-iphoneos-arm64/Packages
- 5dc15073dfc1cf2fab99a213652aa350cc26f247d214b50dd30dc70246a2460e 4791 main/binary-iphoneos-arm64/Packages.gz
- b61d4dfa1e775054a1f9b69051ab5747ee9e8b14cabb15286e40e3c163d0efdb 4567 main/binary-iphoneos-arm64/Packages.bz2
+ 8739d39320bb55ecb390e7df7cc681ae86dd98b590a5265b73cce5db3482e8d1 20628 main/binary-iphoneos-arm64/Packages
+ 7f0526cd007a29b05c668e74c5badd966ffe5587d33ef2f4e60156f4356b6d30 4790 main/binary-iphoneos-arm64/Packages.gz
+ f4b466d9dead8f05f088fa61236383d6f275b9bbeb8cfc41f47c809f40f7d4a4 4548 main/binary-iphoneos-arm64/Packages.bz2
  e4cd49933c8898ac2d1fba1042b299436af38f3be06e6134a8127ce540c2f38d 203 main/binary-iphoneos-arm64/Release
- ae87ff63419dad6aa1e20579aff6f509cbaff05dad27fdc00d9c104565a41de4 20664 main/binary-iphoneos-arm64e/Packages
- e84cdf6c67de35bb7504dad582997ef787b7df6c8aca3e38ac892328afba1b82 4788 main/binary-iphoneos-arm64e/Packages.gz
- fae0df1efd4a5795fd815d0594c32a51328913d858ff4165a4a5e95eb673f37b 4565 main/binary-iphoneos-arm64e/Packages.bz2
+ 2ad67b72e1391c490529b553020f133401699e520207e8ffd3fea5be1e859bbe 20664 main/binary-iphoneos-arm64e/Packages
+ 05aacb413df8c3e29a9eab53e5178ad9c56b51f5abc88246eef6f95f758599c8 4787 main/binary-iphoneos-arm64e/Packages.gz
+ a0d558b8333317f127f0a2b5af8f9d42078f52e5e52dc69a6a1e2e5a6c9f4fb4 4607 main/binary-iphoneos-arm64e/Packages.bz2
  21ce835316619151d77039519e33dc8c0c83f5751ef0f6312c051b061c78e268 204 main/binary-iphoneos-arm64e/Release
