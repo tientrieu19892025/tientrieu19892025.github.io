@@ -25,10 +25,10 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/rootful/com.jinken.englishkids_1.7_iphoneos-arm.deb
-Size: 48758128
-MD5sum: a28172c925975cbb7bb145becf6cd302
-SHA1: 55993be16811f08290a07e896e4907734a087454
-SHA256: 28eb5c48a25e58dcef39014f52ef111719fb2658d0cf3d55d61b1ca91981ece5
+Size: 48755886
+MD5sum: b22a03675ae1162941a78b3c3cfa256a
+SHA1: c81ea51fe7bc91a9cafa9be5faaa67dd7db19a86
+SHA256: 6813021234a32bcd6643685fbb28a5045002def5eeca3531c329bbcbd33c667f
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -408,10 +408,10 @@ Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/rootless/com.jinken.englishkids_1.7_iphoneos-arm64.deb
-Size: 48758430
-MD5sum: b94ae84bbc279aa1e1ff95b9663369e3
-SHA1: 6cbaf1e0653f97a71938d922a6013782257f0a4f
-SHA256: 18ddf3c9c55cc5ba75c0357034b65b68b79260a7337a4ec77517978466612d26
+Size: 48757300
+MD5sum: ec5174f3233a2654a62d757859095fbf
+SHA1: 5742e667093a594d0e1343cd55f1b65c324946ed
+SHA256: 7dfc47a2a9594ba234a3f076026fdcac775757dada32d4966cbf6f57d8a254be
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -791,10 +791,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/roothide/com.jinken.englishkids_1.7_iphoneos-arm64e.deb
-Size: 48757048
-MD5sum: 1345b07e11adea29380d999537a2333d
-SHA1: 7fffb7ca207c20bef6d917a2b438b77b52bef8bf
-SHA256: 5e65a7cbca69654e52b2e7700cf37ddb8942527bed4e89927e38455b37d2c462
+Size: 48756042
+MD5sum: f1e8e9e991e38a41af22290e6605e82d
+SHA1: ec7cef9c9af3c9e9506229075e9f498f6989fbff
+SHA256: 0c5d375137c7c2150e42d72862f628044d5df8a788a20ed0073ac6d3b8dbd89c
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
