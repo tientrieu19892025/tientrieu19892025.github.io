@@ -20,15 +20,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
 Package: com.jinken.drawkids
-Version: 1.5
+Version: 1.6
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
-Filename: debs/rootless/com.jinken.drawkids_1.5_iphoneos-arm64.deb
-Size: 7788764
-MD5sum: 158291ecf3054ea17155ade9bf5dfb82
-SHA1: 63979f1d3a628f7a71e85b6ffc31c7554a4d04ac
-SHA256: 27b43379d9e960ddddf0f4b5073d1133eea16fc4ad8d77cd66044fe9e5b1a76a
+Filename: debs/rootless/com.jinken.drawkids_1.6_iphoneos-arm64.deb
+Size: 7811858
+MD5sum: 312974590d9986121e010bb46fdc8224
+SHA1: 29c7bdea502c3d31c1640bcdb43e6c1631628ee1
+SHA256: 0ad1214bb72b20494286cf18bb48b7caaeed4f736d2aa4f510c4187dc3dec0be
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989

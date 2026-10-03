@@ -609,8 +609,8 @@ Thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng t
 Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID. Chạm giữ để kéo thả tuỳ chỉnh vị trí trực tiếp, 5 phong cách đồ hoạ Liquid Glass sang trọng, tuỳ biến biểu tượng và kích thước, rung phản hồi Haptic.""",
     "com.jinken.englishkids": """**1.7** (Build 13)
 Ứng dụng học tiếng Anh tương tác cho trẻ em (English Kids). Học từ vựng theo chủ đề, phát âm chuẩn, mini games câu đố tương tác, flashcards, thanh chữ chạy tin tức trực tiếp.""",
-    "com.jinken.drawkids": """**1.5** (Build 6)
-Ứng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.""",
+    "com.jinken.drawkids": """**1.6** (Build 7)
+Ứng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Sửa triệt để lỗi khởi động, nâng cấp bảo mật container, hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.""",
 }
 
 
@@ -1063,7 +1063,7 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
 
   <h2>Ứng dụng Trực tiếp (IPA cho iOS &amp; APK cho Android)</h2>
   <div class="card" style="margin-bottom:16px;">
-    <h3>Bé học Vẽ — v1.5 (Build 6)</h3>
+    <h3>Bé học Vẽ — v1.6 (Build 7)</h3>
     <p>Ứng dụng học vẽ và tô màu tương tác cho bé (hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%).</p>
     <p class="en">Tải và cài đặt trực tiếp cho thiết bị iOS (TrollStore, Filza, Sideload) hoặc thiết bị Android:</p>
     <div class="row" style="margin-top:10px;">

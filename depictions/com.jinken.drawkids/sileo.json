@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**Bé học Vẽ** — Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu và bảng vẽ sáng tạo.\n\nInteractive drawing and coloring app for kids: step-by-step guides, coloring, color mixing and free canvas.\n\n**Phiên bản / Version:** 1.5  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → Bé học Vẽ**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**Bé học Vẽ** — Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu và bảng vẽ sáng tạo.\n\nInteractive drawing and coloring app for kids: step-by-step guides, coloring, color mixing and free canvas.\n\n**Phiên bản / Version:** 1.6  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → Bé học Vẽ**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.5"
+          "text": "1.6"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,12 +73,12 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "1.5",
+          "title": "1.6",
           "useBoldText": true
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**1.5** (Build 6)\nỨng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.",
+          "markdown": "**1.6** (Build 7)\nỨng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Sửa triệt để lỗi khởi động, nâng cấp bảo mật container, hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.",
           "useSpacing": true,
           "useRawFormat": false
         }
