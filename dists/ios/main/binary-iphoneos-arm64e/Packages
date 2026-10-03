@@ -25,10 +25,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/roothide/com.jinken.drawkids_1.6_iphoneos-arm64e.deb
-Size: 7811334
-MD5sum: e9cca036edd04467a0f4047940b76842
-SHA1: 318228b4a28cb00af002a5d81d1efdb459aa13a7
-SHA256: 0267153d4552a8c88ddc5d94aac9506e67266c515bd90930240e2611a4c0ef40
+Size: 7816526
+MD5sum: b1868e93517fccc7ed92d74c7663a9dd
+SHA1: ff88cb568ee79288e3ead4f3a2f30cff46897dd7
+SHA256: e303fd868134f1419b133026a4ed288961a69922e69c7d6b703c9a9288c9b94b
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -104,16 +104,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.5
+Version: 1.0.6
 Architecture: iphoneos-arm64e
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
-Installed-Size: 456
+Installed-Size: 524
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/roothide/com.jinken.orientflow_1.0.5_iphoneos-arm64e.deb
-Size: 89880
-MD5sum: 0c1c4d3eb9a37949a2124b49ce5dbfd3
-SHA1: 0d3faa0350a2fa2a6e5a1c409b21c42e19c71d60
-SHA256: 767644ecce5225a690308111e5b57ddbac1c236830a67a4d2f1aa1a825ab3ba2
+Filename: debs/roothide/com.jinken.orientflow_1.0.6_iphoneos-arm64e.deb
+Size: 115352
+MD5sum: 4bdc3c89d8adbddab5e4e13baa8d803b
+SHA1: 9518325b5342fe57193f086900fc1238b18101d7
+SHA256: f06765063ccaa4c65b71b319556e0193e9769347994897e95016bb06e0330ca9
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
