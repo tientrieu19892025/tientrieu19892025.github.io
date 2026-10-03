@@ -1047,6 +1047,15 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
   <div class="grid">{''.join(tweak_cards)}</div>
 
   <h2>Ứng dụng Trực tiếp (IPA cho iOS &amp; APK cho Android)</h2>
+  <div class="card" style="margin-bottom:16px;">
+    <h3>Bé học Vẽ — v1.5 (Build 6)</h3>
+    <p>Ứng dụng học vẽ và tô màu tương tác cho bé (hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%).</p>
+    <p class="en">Tải và cài đặt trực tiếp cho thiết bị iOS (TrollStore, Filza, Sideload) hoặc thiết bị Android:</p>
+    <div class="row" style="margin-top:10px;">
+      <a class="btn primary" href="extras/BeHocVe.ipa">Tải file BeHocVe.ipa (7.5MB - iOS)</a>
+      <a class="btn primary" href="extras/BeHocVe.apk">Tải file BeHocVe.apk (7.5MB - Android)</a>
+    </div>
+  </div>
   <div class="card">
     <h3>English Kids — v1.7 (Build 13)</h3>
     <p>Ứng dụng học tiếng Anh tương tác cho trẻ em (từ vựng, phát âm, flashcard, mini-game, chạy offline 100%).</p>
