@@ -207,6 +207,10 @@ BLURBS = {
         "Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh, flashcard, mini-game và thanh chữ chạy.",
         "Interactive English learning app for kids: vocabulary, pronunciation, flashcards, games and live ticker.",
     ),
+    "com.jinken.drawkids": (
+        "Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu và bảng vẽ sáng tạo.",
+        "Interactive drawing and coloring app for kids: step-by-step guides, coloring, color mixing and free canvas.",
+    ),
     "com.jinkennguyen.aurahtml": (
         "Bộ widget HTML/CSS/JS đỉnh cao cho Màn hình khoá & Màn hình chính. Hơn 100 giao diện đẳng cấp, tuỳ chọn thêm bớt tự do, kéo thả vị trí và tự động giãn icon thông minh.",
         "Premium HTML/CSS/JS dynamic widgets for Lock Screen & Home Screen. 100+ luxury themes, bilingual details, free dragging and smart icon pushing.",
@@ -605,6 +609,8 @@ Thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng t
 Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID. Chạm giữ để kéo thả tuỳ chỉnh vị trí trực tiếp, 5 phong cách đồ hoạ Liquid Glass sang trọng, tuỳ biến biểu tượng và kích thước, rung phản hồi Haptic.""",
     "com.jinken.englishkids": """**1.7** (Build 13)
 Ứng dụng học tiếng Anh tương tác cho trẻ em (English Kids). Học từ vựng theo chủ đề, phát âm chuẩn, mini games câu đố tương tác, flashcards, thanh chữ chạy tin tức trực tiếp.""",
+    "com.jinken.drawkids": """**1.5** (Build 6)
+Ứng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.""",
 }
 
 
@@ -977,10 +983,19 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
             href = info.get("files", {}).get(kind["arch"])
             if href:
                 links.append(f'<a class="more" href="{html_escape(href)}">{html_escape(kind["title"])}</a>')
-        ipa_file = ROOT / "extras" / "EnglishKids.ipa" if pkg == "com.jinken.englishkids" else None
-        ipa_link = f' <a class="more" href="extras/EnglishKids.ipa">Tải IPA (iOS)</a>' if ipa_file and ipa_file.is_file() else ""
-        apk_file = ROOT / "extras" / "EnglishKids.apk" if pkg == "com.jinken.englishkids" else None
-        apk_link = f' <a class="more" href="extras/EnglishKids.apk">Tải APK (Android)</a>' if apk_file and apk_file.is_file() else ""
+        ipa_file = None
+        if pkg == "com.jinken.englishkids":
+            ipa_file = ROOT / "extras" / "EnglishKids.ipa"
+        elif pkg == "com.jinken.drawkids":
+            ipa_file = ROOT / "extras" / "BeHocVe.ipa"
+        ipa_link = f' <a class="more" href="{ipa_file.relative_to(ROOT)}">Tải IPA (iOS)</a>' if ipa_file and ipa_file.is_file() else ""
+
+        apk_file = None
+        if pkg == "com.jinken.englishkids":
+            apk_file = ROOT / "extras" / "EnglishKids.apk"
+        elif pkg == "com.jinken.drawkids":
+            apk_file = ROOT / "extras" / "BeHocVe.apk"
+        apk_link = f' <a class="more" href="{apk_file.relative_to(ROOT)}">Tải APK (Android)</a>' if apk_file and apk_file.is_file() else ""
         tweak_cards.append(
             f"""
 <article class="card">

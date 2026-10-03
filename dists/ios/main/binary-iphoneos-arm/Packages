@@ -19,6 +19,26 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.disswi
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.disswipe.png
 
+Package: com.jinken.drawkids
+Version: 1.5
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Depends: firmware (>= 15.0)
+Filename: debs/rootful/com.jinken.drawkids_1.5_iphoneos-arm.deb
+Size: 7789028
+MD5sum: 846ab3a765dfa2c8d489b3bd2a748db3
+SHA1: 069eb411b1bdaca15e157380eee4236182fdfce6
+SHA256: 9ed3a248421766322d65940c1ee3041ad6f9e39b341130bddef84ebfce2f2469
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: Bé học Vẽ
+Description: Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu và bảng vẽ sáng tạo.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.drawkids/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.drawkids/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.drawkids.png
+
 Package: com.jinken.englishkids
 Version: 1.7
 Architecture: iphoneos-arm
