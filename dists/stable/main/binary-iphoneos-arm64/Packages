@@ -25,10 +25,10 @@ Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/rootless/com.jinken.drawkids_1.5_iphoneos-arm64.deb
-Size: 7789724
-MD5sum: 2ee9a4fbfd5e4bb17659e22ab1a4a0d4
-SHA1: 5bd8612bf0fd0d5d2d2d3e4becdbe205b17cced4
-SHA256: a86801788388cfab808c703171b822833ced5456e4cfd40b69b58b471b40f89a
+Size: 7788764
+MD5sum: 158291ecf3054ea17155ade9bf5dfb82
+SHA1: 63979f1d3a628f7a71e85b6ffc31c7554a4d04ac
+SHA256: 27b43379d9e960ddddf0f4b5073d1133eea16fc4ad8d77cd66044fe9e5b1a76a
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
