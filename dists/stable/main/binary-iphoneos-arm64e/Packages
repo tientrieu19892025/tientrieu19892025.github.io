@@ -5,10 +5,10 @@ Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Installed-Size: 704
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/roothide/com.jinken.autobrightclamp_1.0.0_iphoneos-arm64e.deb
-Size: 363694
-MD5sum: 0468bc5d57be6b7e576c07e09fa4f1fd
-SHA1: 98be26fde4c1666a9457aab81f7533d4b61990a9
-SHA256: f31a2bd18e07e61a6f1e932534fc6a44b34eed89ee155ea8057717758e9f331b
+Size: 362234
+MD5sum: e2fd2776c694e5ba4d70e24483b2e34a
+SHA1: 187e012d728b0ff75b9a67a8e22eddfe8c202cec
+SHA256: 91b9fd08029de06116baa71468c7884e34c3fa6e79b5fe3944eb874695917a7d
 Section: Tweaks
 Tag: role::cydia, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen <tientrieu19892025@gmail.com>
@@ -46,10 +46,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/roothide/com.jinken.drawkids_1.6_iphoneos-arm64e.deb
-Size: 7816526
-MD5sum: b1868e93517fccc7ed92d74c7663a9dd
-SHA1: ff88cb568ee79288e3ead4f3a2f30cff46897dd7
-SHA256: e303fd868134f1419b133026a4ed288961a69922e69c7d6b703c9a9288c9b94b
+Size: 7818044
+MD5sum: 6fbf5f87da44529253a591d9e501b7f3
+SHA1: b448997dcf81616c27eeded7644f50642050c9f4
+SHA256: 54013edd6b964dffadbd608802b184417f720da94db73a38f3163f50add70429
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -66,10 +66,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/roothide/com.jinken.englishkids_1.7_iphoneos-arm64e.deb
-Size: 48756042
-MD5sum: f1e8e9e991e38a41af22290e6605e82d
-SHA1: ec7cef9c9af3c9e9506229075e9f498f6989fbff
-SHA256: 0c5d375137c7c2150e42d72862f628044d5df8a788a20ed0073ac6d3b8dbd89c
+Size: 48765126
+MD5sum: 1faf80645e2612e784607460a9428f10
+SHA1: 7ddc5ed9c083340857a3214595691216fc15c48e
+SHA256: f277bf3b41fed08b883bf6bc1ddae5fea421174c99c56bc449924c60ca1f25d0
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -84,13 +84,13 @@ Package: com.jinken.freezebuster
 Version: 1.2.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 444
+Installed-Size: 440
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/roothide/com.jinken.freezebuster_1.2.0_iphoneos-arm64e.deb
-Size: 34132
-MD5sum: e1e73a1e4752831b7e3a687296e2fa0b
-SHA1: bc9a91217d4732488071008dda2ea2e6041ea980
-SHA256: bf7d6ffbaf4bd931c8a9bed98df1af00ce20e38ef86da54144422fd421ee71dc
+Size: 33058
+MD5sum: 89edff122470ec12460cd07f293a0d9c
+SHA1: db7a24309f7a0c7e521518cf3105a30f4828be37
+SHA256: 370b1f7e2987c8e6ca73e3061124ab267f9744d3b5d70df5409ba31b0af85cc8
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
@@ -132,9 +132,9 @@ Installed-Size: 524
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
 Filename: debs/roothide/com.jinken.orientflow_1.0.7_iphoneos-arm64e.deb
 Size: 114278
-MD5sum: 56d2033bf6de6028e85480921acc5405
-SHA1: 7f690e09f29cfe248f9b6d96da305694eff3fbf3
-SHA256: fa058a06b5d026ac945d6b4b6df762578754763cf04ba00d626938b0ae28d788
+MD5sum: 8734c70f2872dff8b7f52114e5354839
+SHA1: 28e3a76da92b72da0dc57028bd4c5d51c6dd69a6
+SHA256: 898444370f84915ef19aefd4acfb07463e4adb10274b1633b0879ea6f35852e8
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen

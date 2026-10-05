@@ -46,10 +46,10 @@ Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/rootless/com.jinken.drawkids_1.6_iphoneos-arm64.deb
-Size: 7817034
-MD5sum: fa39e0ab1443bb7bcc02c038e93bf4ac
-SHA1: 82b81ce51550197a855e90e6603ad1dc14bfff09
-SHA256: 47c8dfbf9cacf18757b56b19f3ba76f850a37932047d4ded2edb45d29fa9df35
+Size: 7818656
+MD5sum: a3d39a373ec766489fb0ff02f12493bf
+SHA1: 7e9f8bf4835b37649ea73c486729a164cf0d947e
+SHA256: c9a62a7b33aa6d83f60d67b9532cb4a457c7c8f88af66c06a39847241c9f9683
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -66,10 +66,10 @@ Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/rootless/com.jinken.englishkids_1.7_iphoneos-arm64.deb
-Size: 48757300
-MD5sum: ec5174f3233a2654a62d757859095fbf
-SHA1: 5742e667093a594d0e1343cd55f1b65c324946ed
-SHA256: 7dfc47a2a9594ba234a3f076026fdcac775757dada32d4966cbf6f57d8a254be
+Size: 48766554
+MD5sum: f413a86ad29a13fd556716e6e6316f08
+SHA1: e0eca2306dfb862e80d0dd811efa0920269740fb
+SHA256: 595bf4484d6a1fe79cc0553ba6bfba335835ba1ab4748ea463e95fb8c967f0c0
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -131,10 +131,10 @@ Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 524
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
 Filename: debs/rootless/com.jinken.orientflow_1.0.7_iphoneos-arm64.deb
-Size: 114544
-MD5sum: 0fb5d753e2c7230235b2701865241134
-SHA1: 730e58674b8ec2348c6f5107cd91809899903238
-SHA256: 697fd5b91e9297e4e4d4dca7854fa8e3439a1f62d83551086674312113abcd7d
+Size: 114534
+MD5sum: 0e2d5aac49c072048c3f5f860c02b7b5
+SHA1: e684aec872bcdbc44eea08363f3026f110f7d69a
+SHA256: 6ed32a483cd6987ec5dec4eaaa1b32ff1970035107c688ab4a4898be1fc04ca0
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen

@@ -46,10 +46,10 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/rootful/com.jinken.drawkids_1.6_iphoneos-arm.deb
-Size: 7816316
-MD5sum: b63c5b1642d632b9c01a6498ed6c8511
-SHA1: de35db999142b7c34792bed672e375f8e38dc636
-SHA256: f4e4f407e423083712702bc608df1481e1fecf00a4cee8173664483f3940b059
+Size: 7818044
+MD5sum: a9193d46675ae4d601a3b6e4f07bd2ad
+SHA1: 4fe3fc53a4f629c389ba696aee7d3a6c8c938235
+SHA256: a071096d79912e46d03d40b5a679724a613b47781f65838e16b1b6133f2d98e0
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -66,10 +66,10 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: debs/rootful/com.jinken.englishkids_1.7_iphoneos-arm.deb
-Size: 48755886
-MD5sum: b22a03675ae1162941a78b3c3cfa256a
-SHA1: c81ea51fe7bc91a9cafa9be5faaa67dd7db19a86
-SHA256: 6813021234a32bcd6643685fbb28a5045002def5eeca3531c329bbcbd33c667f
+Size: 48765116
+MD5sum: dddfb63fc09777399714fa554081e25e
+SHA1: 4d5c16c38155cb7cea125c2525f746164e1c73a1
+SHA256: 492300f1a2afe21ea03d9da80f1f657839ae7f50f37a48b746afbc23d6cbf775
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -132,9 +132,9 @@ Installed-Size: 524
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
 Filename: debs/rootful/com.jinken.orientflow_1.0.7_iphoneos-arm.deb
 Size: 118004
-MD5sum: bce6ea894eca349ce692cd3ec4bdbfa6
-SHA1: 62e6d65b18ca2480306fe08794784532dc80d9be
-SHA256: c467e8ccd7df20bfbae1651d549e416b6dee8dd7e2dde9bd23329a44e2b50fce
+MD5sum: 93fb85f07d157797d11dd98c5158db07
+SHA1: dcb93edfc155da1b4e00aefd8da1f6ff4d275927
+SHA256: b43a9d74b3bcbbf3f5b2a8a5ee9e60489aeb85f45f85e8ef5827ffb06ac61083
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
