@@ -1,3 +1,24 @@
+Package: com.jinken.autobrightclamp
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
+Installed-Size: 704
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinken.autobrightclamp_1.0.0_iphoneos-arm.deb
+Size: 363646
+MD5sum: baba1fc19451a8bbcb4878d299864761
+SHA1: 0ee7e48fc573e15f5d2b7052bfc3939cbb0979f6
+SHA256: f7460493a4215fcc874581e39b7cb5532c941452dd33c43679ec0aeea86adcd0
+Section: Tweaks
+Tag: role::cydia, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen <tientrieu19892025@gmail.com>
+Name: AutoBrightClamp
+Description: Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.autobrightclamp/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.autobrightclamp/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.autobrightclamp.png
+
 Package: com.jinken.disswipe
 Version: 1.1.1
 Architecture: iphoneos-arm
@@ -104,16 +125,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.6
+Version: 1.0.7
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 524
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.orientflow_1.0.6_iphoneos-arm.deb
-Size: 119042
-MD5sum: 352046728d31d16ac1003f19a402dbf1
-SHA1: ea03b3e02140fccc6b81be04078db99d817beaf8
-SHA256: 43d4ba75188b7e42a73e68a6be7350c2267fc25a9bae98d138d58b72cb532d50
+Filename: debs/rootful/com.jinken.orientflow_1.0.7_iphoneos-arm.deb
+Size: 118004
+MD5sum: bce6ea894eca349ce692cd3ec4bdbfa6
+SHA1: 62e6d65b18ca2480306fe08794784532dc80d9be
+SHA256: c467e8ccd7df20bfbae1651d549e416b6dee8dd7e2dde9bd23329a44e2b50fce
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen

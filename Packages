@@ -1,3 +1,24 @@
+Package: com.jinken.autobrightclamp
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
+Installed-Size: 704
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinken.autobrightclamp_1.0.0_iphoneos-arm.deb
+Size: 363646
+MD5sum: baba1fc19451a8bbcb4878d299864761
+SHA1: 0ee7e48fc573e15f5d2b7052bfc3939cbb0979f6
+SHA256: f7460493a4215fcc874581e39b7cb5532c941452dd33c43679ec0aeea86adcd0
+Section: Tweaks
+Tag: role::cydia, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen <tientrieu19892025@gmail.com>
+Name: AutoBrightClamp
+Description: Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.autobrightclamp/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.autobrightclamp/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.autobrightclamp.png
+
 Package: com.jinken.disswipe
 Version: 1.1.1
 Architecture: iphoneos-arm
@@ -104,16 +125,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.6
+Version: 1.0.7
 Architecture: iphoneos-arm
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 524
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootful/com.jinken.orientflow_1.0.6_iphoneos-arm.deb
-Size: 119042
-MD5sum: 352046728d31d16ac1003f19a402dbf1
-SHA1: ea03b3e02140fccc6b81be04078db99d817beaf8
-SHA256: 43d4ba75188b7e42a73e68a6be7350c2267fc25a9bae98d138d58b72cb532d50
+Filename: debs/rootful/com.jinken.orientflow_1.0.7_iphoneos-arm.deb
+Size: 118004
+MD5sum: bce6ea894eca349ce692cd3ec4bdbfa6
+SHA1: 62e6d65b18ca2480306fe08794784532dc80d9be
+SHA256: c467e8ccd7df20bfbae1651d549e416b6dee8dd7e2dde9bd23329a44e2b50fce
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -401,6 +422,27 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.statusbarinfo.png
 
+Package: com.jinken.autobrightclamp
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
+Installed-Size: 704
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootless/com.jinken.autobrightclamp_1.0.0_iphoneos-arm64.deb
+Size: 363560
+MD5sum: b353a79e5f5b51566fb688b7c9c658bf
+SHA1: f39fc4e4723a8e24f86cfb6d98fb3fc80b2c11c3
+SHA256: ae8e8cd8082a81380bbb507233412b80caaffc83629e033a482a204830376168
+Section: Tweaks
+Tag: role::cydia, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen <tientrieu19892025@gmail.com>
+Name: AutoBrightClamp
+Description: Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.autobrightclamp/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.autobrightclamp/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.autobrightclamp.png
+
 Package: com.jinken.disswipe
 Version: 1.1.1
 Architecture: iphoneos-arm64
@@ -507,16 +549,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.6
+Version: 1.0.7
 Architecture: iphoneos-arm64
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 524
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/rootless/com.jinken.orientflow_1.0.6_iphoneos-arm64.deb
-Size: 115584
-MD5sum: d7d3f167b6ab9c10a7088ee50c151c8f
-SHA1: ef4c3b4912968a0fd59cb66c243b5d476fa438a5
-SHA256: 32f41e93ab0fa5169ed01f2c12814ca0b99dcb4f92d0c3ec13650673fcce6284
+Filename: debs/rootless/com.jinken.orientflow_1.0.7_iphoneos-arm64.deb
+Size: 114544
+MD5sum: 0fb5d753e2c7230235b2701865241134
+SHA1: 730e58674b8ec2348c6f5107cd91809899903238
+SHA256: 697fd5b91e9297e4e4d4dca7854fa8e3439a1f62d83551086674312113abcd7d
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen
@@ -804,6 +846,27 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.statusbarinfo.png
 
+Package: com.jinken.autobrightclamp
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
+Installed-Size: 704
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/roothide/com.jinken.autobrightclamp_1.0.0_iphoneos-arm64e.deb
+Size: 363694
+MD5sum: 0468bc5d57be6b7e576c07e09fa4f1fd
+SHA1: 98be26fde4c1666a9457aab81f7533d4b61990a9
+SHA256: f31a2bd18e07e61a6f1e932534fc6a44b34eed89ee155ea8057717758e9f331b
+Section: Tweaks
+Tag: role::cydia, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen <tientrieu19892025@gmail.com>
+Name: AutoBrightClamp
+Description: Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.autobrightclamp/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.autobrightclamp/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.autobrightclamp.png
+
 Package: com.jinken.disswipe
 Version: 1.1.1
 Architecture: iphoneos-arm64e
@@ -910,16 +973,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.listapp.png
 
 Package: com.jinken.orientflow
-Version: 1.0.6
+Version: 1.0.7
 Architecture: iphoneos-arm64e
 Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
 Installed-Size: 524
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
-Filename: debs/roothide/com.jinken.orientflow_1.0.6_iphoneos-arm64e.deb
-Size: 115352
-MD5sum: 4bdc3c89d8adbddab5e4e13baa8d803b
-SHA1: 9518325b5342fe57193f086900fc1238b18101d7
-SHA256: f06765063ccaa4c65b71b319556e0193e9769347994897e95016bb06e0330ca9
+Filename: debs/roothide/com.jinken.orientflow_1.0.7_iphoneos-arm64e.deb
+Size: 114278
+MD5sum: 56d2033bf6de6028e85480921acc5405
+SHA1: 7f690e09f29cfe248f9b6d96da305694eff3fbf3
+SHA256: fa058a06b5d026ac945d6b4b6df762578754763cf04ba00d626938b0ae28d788
 Section: Tweaks
 Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
 Author: Jin Ken Nguyen

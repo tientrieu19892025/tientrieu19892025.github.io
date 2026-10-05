@@ -215,6 +215,10 @@ BLURBS = {
         "Bộ widget HTML/CSS/JS đỉnh cao cho Màn hình khoá & Màn hình chính. Hơn 100 giao diện đẳng cấp, tuỳ chọn thêm bớt tự do, kéo thả vị trí và tự động giãn icon thông minh.",
         "Premium HTML/CSS/JS dynamic widgets for Lock Screen & Home Screen. 100+ luxury themes, bilingual details, free dragging and smart icon pushing.",
     ),
+    "com.jinken.autobrightclamp": (
+        "Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.",
+        "Smart Auto-Brightness Limiter: clamp minimum and maximum brightness boundaries to prevent eye strain at night, avoid overheating in sunlight, and maximize battery life.",
+    ),
 }
 
 FEATURE_GUIDES = {
@@ -326,6 +330,9 @@ def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], 
         Path.home() / "FreezeBuster" / "build_output" / "rootful",
         Path.home() / "FreezeBuster" / "build_output" / "rootless",
         Path.home() / "FreezeBuster" / "build_output" / "roothide",
+        Path.home() / "AutoBrightClamp" / "build_output" / "rootful",
+        Path.home() / "AutoBrightClamp" / "build_output" / "rootless",
+        Path.home() / "AutoBrightClamp" / "build_output" / "roothide",
         ROOT / "debs" / "rootful",
         ROOT / "debs" / "rootless",
         ROOT / "debs" / "roothide",
@@ -494,6 +501,7 @@ def project_dir_for(pkg: str) -> Path | None:
         "com.jinkennguyen.statusbarinfo": "StatusBarInfo",
         "com.jinken.listapp": "ListApp",
         "com.jinken.disswipe": "dis-swipe",
+        "com.jinken.autobrightclamp": "AutoBrightClamp",
     }
     name = aliases.get(pkg)
     if name:
