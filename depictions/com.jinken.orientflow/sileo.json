@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**OrientFlow** — Gợi ý xoay màn hình thông minh khi khoá xoay. Giữ nguyên hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc, thanh kéo tuỳ chọn vị trí tự do.\n\nSmart rotation suggestion prompt when orientation lock is active. Locks in landscape once tapped, auto-relocks on portrait, custom slider positioning.\n\n**Phiên bản / Version:** 1.0.7  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → OrientFlow**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**OrientFlow** — Gợi ý xoay màn hình thông minh khi khoá xoay. Giữ nguyên hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc, thanh kéo tuỳ chọn vị trí tự do.\n\nSmart rotation suggestion prompt when orientation lock is active. Locks in landscape once tapped, auto-relocks on portrait, custom slider positioning.\n\n**Phiên bản / Version:** 1.0.8  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → OrientFlow**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.0.7"
+          "text": "1.0.8"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,12 +73,12 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "1.0.7",
+          "title": "1.0.8",
           "useBoldText": true
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Xem GitHub repo / see the GitHub repo.",
+          "markdown": "**1.0.8**\nNâng cấp khả năng phản hồi cảm ứng, tối ưu kích thước nút xoay và hỗ trợ trọn vẹn RootHide.\n\n**1.0.7**\nTối ưu nút xoay nổi trên iOS 16 & 17, thanh trượt toạ độ mượt mà.",
           "useSpacing": true,
           "useRawFormat": false
         }

@@ -78,7 +78,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**1.7** (Build 13)\nỨng dụng học tiếng Anh tương tác cho trẻ em (English Kids). Học từ vựng theo chủ đề, phát âm chuẩn, mini games câu đố tương tác, flashcards, thanh chữ chạy tin tức trực tiếp.",
+          "markdown": "**1.7** (Build 13)\nỨng dụng học tiếng Anh tương tác cho trẻ em (English Kids). Khắc phục đường dẫn sandbox và tài nguyên trên RootHide, học từ vựng theo chủ đề, phát âm chuẩn, mini games câu đố tương tác, flashcards.",
           "useSpacing": true,
           "useRawFormat": false
         }

@@ -604,21 +604,27 @@ Chạm thanh trạng thái trên Màn hình chính và trong mọi app. Game kh�
 
 **1.1.0**
 Bảng điều khiển khi chạm Status Bar: hơn 68 thông số. Giao diện kính mờ, sao chép 1 chạm.""",
-    "com.jinkennguyen.jinken": """**1.0.0**
-App trên Home. Mở để xem tweak trên repo, cách dùng, donate. Kéo xuống để lấy danh sách mới.""",
-    "com.jinkennguyen.matteglass": """**2.1.1**
-Sửa treo máy. Nhám vẫn hiện. Lật Duo mặc định tắt.
+    "com.jinken.autobrightclamp": """**1.0.0**
+Giới hạn biên độ sáng min/max tự động. Chống chói ban đêm, chống quá nhiệt ban ngày, tiết kiệm pin. Tương thích 100% RootHide, Rootless, Rootful.""",
+    "com.jinken.freezebuster": """**1.2.0**
+Biên dịch lại bằng Theos-RootHide chuẩn, khắc phục hoàn toàn lỗi Substrate crash trên RootHide. Tự động giải cứu khi UI treo cứng hoặc tràn RAM.
 
-**2.1.0**
-Nhám tiêu chuẩn nhìn thấy rõ. Cài đặt kiểu kính, có donate.""",
-    "com.jinken.listapp": """**1.0.0**
-Thay thế hoàn toàn màn hình chính bằng danh sách ứng dụng dạng thẻ kính lỏng dài 2/3 màn hình. 5 thiết kế khung bo góc, 7 màu sắc kính lỏng, tìm kiếm tức thì, mở app mượt mà và chống treo máy tuyệt đối.""",
-    "com.jinken.quickpass": """**1.0.0**
-Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID. Chạm giữ để kéo thả tuỳ chỉnh vị trí trực tiếp, 5 phong cách đồ hoạ Liquid Glass sang trọng, tuỳ biến biểu tượng và kích thước, rung phản hồi Haptic.""",
+**1.1.0**
+Sửa lỗi Safe Mode khi cài đặt. Cải tiến thuật toán phát hiện Watchdog timeout và giải phóng bộ nhớ tức thì.""",
+    "com.jinken.orientflow": """**1.0.8**
+Nâng cấp khả năng phản hồi cảm ứng, tối ưu kích thước nút xoay và hỗ trợ trọn vẹn RootHide.
+
+**1.0.7**
+Tối ưu nút xoay nổi trên iOS 16 & 17, thanh trượt toạ độ mượt mà.""",
+    "com.jinkennguyen.jinken": """**1.1.0**
+Cập nhật danh mục tweak mới nhất, vá giao diện Liquid Glass và hỗ trợ RootHide đầy đủ.
+
+**1.0.0**
+App trên Home. Mở để xem tweak trên repo, cách dùng, donate. Kéo xuống để lấy danh sách mới.""",
     "com.jinken.englishkids": """**1.7** (Build 13)
-Ứng dụng học tiếng Anh tương tác cho trẻ em (English Kids). Học từ vựng theo chủ đề, phát âm chuẩn, mini games câu đố tương tác, flashcards, thanh chữ chạy tin tức trực tiếp.""",
+Ứng dụng học tiếng Anh tương tác cho trẻ em (English Kids). Khắc phục đường dẫn sandbox và tài nguyên trên RootHide, học từ vựng theo chủ đề, phát âm chuẩn, mini games câu đố tương tác, flashcards.""",
     "com.jinken.drawkids": """**1.6** (Build 7)
-Ứng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Sửa triệt để lỗi khởi động, nâng cấp bảo mật container, hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.""",
+Ứng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Sửa triệt để lỗi khởi động, nâng cấp bảo mật container, hỗ trợ uicache trên RootHide, hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.""",
 }
 
 
@@ -819,65 +825,303 @@ def sileo_json(pkg: str, meta: dict, conf: dict, vi: str, en: str, changelog: st
 
 SITE_CSS = """
 :root {
-  --bg:#07080f; --card:#101826cc; --line:rgba(255,255,255,.1);
-  --text:#eef2ff; --muted:#93c5fd; --accent:#38bdf8; --good:#34d399;
+  --bg: #07090e;
+  --bg-gradient: radial-gradient(circle at 50% -20%, #1e293b 0%, #0a0f1d 45%, #05070b 100%);
+  --card: rgba(16, 24, 39, 0.65);
+  --card-hover: rgba(24, 36, 58, 0.85);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-border-glow: rgba(56, 189, 248, 0.35);
+  --text: #f8fafc;
+  --text-secondary: #94a3b8;
+  --muted: #64748b;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.25);
+  --good: #34d399;
+  --gold: #fbbf24;
+  --purple: #a855f7;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
 }
-* {box-sizing:border-box}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
 body {
-  margin:0; font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
-  background:var(--bg); color:var(--text);
+  margin: 0;
+  font: 15px/1.6 var(--font);
+  background: var(--bg);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
 }
+a { color: var(--accent); text-decoration: none; transition: all 0.2s ease; }
+a:hover { opacity: 0.85; }
+
+/* Navbar */
+.nav-bar {
+  position: sticky; top: 0; z-index: 100;
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  background: rgba(7, 9, 14, 0.75);
+  border-bottom: 1px solid var(--card-border);
+  padding: 12px 20px;
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px;
+  color: var(--text);
+}
+.brand-icon {
+  width: 32px; height: 32px; border-radius: 8px; box-shadow: 0 4px 12px rgba(56,189,248,0.25);
+}
+.nav-links { display: flex; gap: 16px; align-items: center; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+/* Hero */
 .hero {
-  position:relative; min-height:220px; padding:40px 20px 28px;
-  background:var(--hero, url("../assets/banner.jpg")) center/cover no-repeat;
+  position: relative; padding: 48px 20px 36px;
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(56, 189, 248, 0.15), transparent 70%);
+  text-align: center;
 }
-.hero.home { --hero: url("assets/banner.jpg"); min-height:280px; }
-.hero::after {
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(7,8,15,.25), rgba(7,8,15,.92));
-}
-.hero-inner {position:relative; z-index:1; max-width:980px; margin:0 auto}
+.hero-inner { max-width: 840px; margin: 0 auto; }
 .badge {
-  display:inline-block; padding:4px 10px; border-radius:999px;
-  border:1px solid rgba(56,189,248,.4); color:var(--accent); font-size:12px;
-  letter-spacing:.08em; text-transform:uppercase;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 14px; border-radius: 999px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--accent); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.05em; text-transform: uppercase;
 }
-h1 {font-size:clamp(26px,5vw,44px); margin:12px 0 6px}
-.sub {color:var(--muted); max-width:720px}
-.wrap {max-width:980px; margin:0 auto; padding:0 20px 64px}
-.row {display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 8px}
+.badge-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--good);
+  box-shadow: 0 0 8px var(--good);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.9); } }
+h1 {
+  font-size: clamp(30px, 6vw, 52px); font-weight: 800;
+  letter-spacing: -0.02em; margin: 16px 0 10px;
+  background: linear-gradient(135deg, #ffffff 30%, #93c5fd 80%, #38bdf8 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.sub {
+  color: var(--text-secondary); font-size: clamp(15px, 2.5vw, 18px);
+  max-width: 680px; margin: 0 auto 24px; line-height: 1.6;
+}
+
+/* Action Buttons */
+.hero-actions {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px;
+}
 .btn {
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:650;
-  border:1px solid var(--line); color:var(--text); background:#0b1220aa;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 11px 20px; border-radius: 12px; font-weight: 600; font-size: 14px;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border);
+  color: var(--text); cursor: pointer; transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-.btn.primary {background:var(--accent); color:#042033; border-color:transparent}
-.grid {display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; margin-top:18px}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.btn.primary {
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+  color: #ffffff; border-color: transparent;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.35);
+}
+.btn.primary:hover {
+  background: linear-gradient(135deg, #60a5fa, #0369a1);
+  box-shadow: 0 6px 24px rgba(56, 189, 248, 0.5);
+}
+.btn.gold {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff; border-color: transparent;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+}
+.btn.gold:hover {
+  background: linear-gradient(135deg, #fbbf24, #b45309);
+  box-shadow: 0 6px 24px rgba(245, 158, 11, 0.45);
+}
+
+/* Wrap */
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px 80px; }
+h2 {
+  font-size: 22px; font-weight: 700; margin: 44px 0 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+h2::before {
+  content: ""; display: inline-block; width: 4px; height: 20px;
+  background: var(--accent); border-radius: 2px;
+}
+
+/* Glass Card */
 .card {
-  background:var(--card); backdrop-filter:blur(16px);
-  border:1px solid var(--line); border-radius:16px; padding:16px;
+  background: var(--card);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  border-radius: 18px; padding: 22px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  position: relative; overflow: hidden;
 }
-.card h3 {margin:0 0 4px; font-size:18px}
-.meta {color:var(--muted); font-size:13px; margin:0 0 8px}
-.en {color:#cbd5e1; font-size:14px}
-.more {color:var(--accent); text-decoration:none; font-weight:600; margin-right:12px}
-.donate {
-  display:grid; grid-template-columns:180px 1fr; gap:20px; align-items:center;
+.card:hover {
+  border-color: var(--card-border-glow);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
 }
-.donate img {width:180px; background:#fff; border-radius:12px}
-.copy {
-  cursor:pointer; border:1px dashed rgba(56,189,248,.5); border-radius:10px;
-  padding:8px 10px; display:inline-block; margin:4px 0; color:var(--accent);
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 18px; margin-top: 18px;
 }
-h2 {margin:36px 0 10px}
-ol.steps {padding-left:1.2em}
-ol.steps li {margin:6px 0}
-footer {color:#64748b; font-size:13px; margin-top:40px}
-code.src, code.file {
-  display:block; background:#0b1220; border-radius:10px; padding:10px 12px;
-  overflow:auto; color:#7dd3fc; margin:8px 0 16px;
+
+/* Architecture Cards */
+.arch-card {
+  display: flex; flex-direction: column; justify-content: space-between;
 }
-@media (max-width:640px) { .donate {grid-template-columns:1fr} }
+.arch-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.arch-title { font-size: 20px; font-weight: 700; margin: 0; color: #fff; }
+.arch-badge {
+  font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08); color: var(--muted); font-family: ui-monospace, monospace;
+}
+.arch-badge.roothide { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+.arch-badge.rootless { background: rgba(52, 211, 153, 0.15); color: #34d399; }
+.arch-badge.rootful { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+.arch-desc { color: var(--text-secondary); font-size: 14px; line-height: 1.5; margin: 0 0 12px; }
+.arch-hint {
+  font-size: 12px; color: var(--muted); font-family: ui-monospace, monospace;
+  background: rgba(0, 0, 0, 0.3); padding: 8px 10px; border-radius: 8px; margin-bottom: 16px;
+  border-left: 2px solid var(--accent);
+}
+
+/* Search & Filters */
+.search-container {
+  margin: 28px 0 20px; display: flex; flex-direction: column; gap: 14px;
+}
+.search-bar-wrap { position: relative; }
+.search-input {
+  width: 100%; padding: 14px 18px 14px 44px; font-size: 15px;
+  background: rgba(16, 24, 39, 0.7);
+  border: 1px solid var(--card-border); border-radius: 14px;
+  color: #fff; outline: none; transition: all 0.25s ease;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+}
+.search-input:focus {
+  border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.search-icon {
+  position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  color: var(--muted); pointer-events: none; width: 18px; height: 18px;
+}
+.filter-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-pill {
+  padding: 7px 14px; font-size: 13px; font-weight: 500; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border);
+  color: var(--text-secondary); cursor: pointer; transition: all 0.2s ease;
+}
+.filter-pill:hover, .filter-pill.active {
+  background: var(--accent); color: #042033; font-weight: 600; border-color: transparent;
+}
+
+/* Tweak Card */
+.tweak-card {
+  display: flex; flex-direction: column; justify-content: space-between;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.tweak-card:hover {
+  transform: translateY(-4px); border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+.tweak-top { margin-bottom: 12px; }
+.tweak-head {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px;
+}
+.tweak-title { font-size: 18px; font-weight: 700; margin: 0; color: #fff; }
+.tweak-ver {
+  font-size: 12px; font-weight: 600; padding: 2px 7px; border-radius: 6px;
+  background: rgba(56, 189, 248, 0.15); color: var(--accent);
+}
+.tweak-tag {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  color: var(--muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;
+}
+.tweak-desc {
+  font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin: 0 0 8px;
+}
+.tweak-en { font-size: 13px; color: var(--muted); margin: 0 0 14px; font-style: italic; }
+.tweak-downloads {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.dl-chip {
+  font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06); border: 1px solid var(--card-border);
+  color: var(--text); display: inline-flex; align-items: center; gap: 4px;
+}
+.dl-chip:hover {
+  background: rgba(56, 189, 248, 0.2); border-color: var(--accent); color: #fff;
+}
+.dl-chip.roothide { border-color: rgba(56, 189, 248, 0.3); color: #7dd3fc; }
+.dl-chip.ipa { border-color: rgba(52, 211, 153, 0.4); color: #6ee7b7; background: rgba(52, 211, 153, 0.1); }
+.dl-chip.apk { border-color: rgba(251, 191, 36, 0.4); color: #fde047; background: rgba(251, 191, 36, 0.1); }
+.tweak-actions {
+  display: flex; align-items: center; justify-content: space-between; margin-top: 12px;
+}
+
+/* Code Snippet */
+.code-box {
+  position: relative; background: #050811; border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px; padding: 14px 16px; margin: 10px 0 16px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.code-box code { color: #7dd3fc; font-family: ui-monospace, monospace; font-size: 14px; }
+.copy-btn {
+  background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--accent); padding: 5px 12px; border-radius: 8px; font-size: 12px;
+  font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+}
+.copy-btn:hover { background: var(--accent); color: #042033; }
+
+/* Steps */
+ol.steps { padding-left: 1.3em; margin: 8px 0; }
+ol.steps li { margin: 8px 0; color: var(--text-secondary); }
+ol.steps strong { color: #fff; }
+
+/* Donate Section */
+.donate-grid {
+  display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: center;
+}
+.donate-qr {
+  width: 200px; height: 200px; background: #fff; border-radius: 16px;
+  padding: 8px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); object-fit: contain;
+}
+.donate-info h3 { margin: 0 0 8px; font-size: 20px; color: #fff; }
+.donate-info p { color: var(--text-secondary); margin: 0 0 14px; line-height: 1.6; }
+.donate-table {
+  background: rgba(0, 0, 0, 0.25); border-radius: 12px; padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.donate-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 6px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); font-size: 14px;
+}
+.donate-row:last-child { border-bottom: none; }
+.donate-label { color: var(--muted); }
+.donate-val { font-weight: 600; color: #fff; }
+
+/* Footer */
+footer {
+  text-align: center; color: var(--muted); font-size: 13px;
+  padding: 40px 20px; border-top: 1px solid var(--card-border);
+}
+
+@media (max-width: 768px) {
+  .donate-grid { grid-template-columns: 1fr; text-align: center; }
+  .donate-qr { margin: 0 auto; }
+  .donate-row { flex-direction: column; gap: 4px; align-items: center; }
+  .hero-actions { flex-direction: column; }
+  .btn { width: 100%; }
+}
 """
 
 
@@ -888,16 +1132,25 @@ def write_kind_pages(packages: dict[str, dict], conf: dict) -> None:
             href = info.get("files", {}).get(kind["arch"])
             if not href:
                 continue
-            vi, _en = BLURBS.get(pkg, (info.get("blurb", ""), ""))
+            vi, en = BLURBS.get(pkg, (info.get("blurb", ""), ""))
             fname = href.rsplit("/", 1)[-1]
             cards.append(
                 f"""
-<article class="card">
-  <h3>{html_escape(info['Name'])} {html_escape(info['Version'])}</h3>
-  <p>{html_escape(vi)}</p>
-  <code class="file">{html_escape(fname)}</code>
-  <a class="more" href="../{html_escape(href)}">Tải .deb</a>
-  <a class="more" href="../depictions/{html_escape(pkg)}/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">{html_escape(info['Name'])}</h3>
+      <span class="tweak-ver">{html_escape(info['Version'])}</span>
+    </div>
+    <p class="tweak-desc">{html_escape(vi)}</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">{html_escape(fname)}</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../{html_escape(href)}">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/{html_escape(pkg)}/">Chi tiết →</a>
+  </div>
 </article>"""
             )
         (ROOT / kind["id"]).mkdir(parents=True, exist_ok=True)
@@ -929,37 +1182,57 @@ Credit: Jinken Nguyen - 1989
 <style>{SITE_CSS}</style>
 </head>
 <body>
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a class="brand" href="../">
+      <img class="brand-icon" src="../CydiaIcon.png" alt="Icon">
+      <span>Jinken Repo</span>
+    </a>
+    <div class="nav-links">
+      <a href="../">Trang chủ</a>
+      <a href="../rootless/" class="{'active' if kind['id']=='rootless' else ''}">Rootless</a>
+      <a href="../rootful/" class="{'active' if kind['id']=='rootful' else ''}">Rootful</a>
+      <a href="../roothide/" class="{'active' if kind['id']=='roothide' else ''}">RootHide</a>
+    </div>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="hero-inner">
-    <span class="badge">{html_escape(kind['title'])} · {html_escape(kind['arch'])}</span>
-    <h1>{html_escape(kind['title'])}</h1>
-    <p class="sub">Chỉ dùng thư mục này nếu máy của bạn đúng loại. Cài nhầm rootful/rootless/RootHide thì tweak không chạy.</p>
-    <div class="row">
-      <a class="btn" href="../">← Về repo</a>
-      <a class="btn primary" href="#files">Tải tweak</a>
+    <span class="badge"><span class="badge-dot"></span> {html_escape(kind['title'])} · {html_escape(kind['arch'])}</span>
+    <h1>Kho Tweak {html_escape(kind['title'])}</h1>
+    <p class="sub">Tối ưu chính xác cho nền tảng {html_escape(kind['title'])}. Không gây xung đột hay văng SpringBoard.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#files">Xem danh sách tweak</a>
+      <a class="btn" href="../">← Về trang chủ</a>
     </div>
   </div>
 </header>
+
 <main class="wrap">
-  <h2>Máy nào dùng {html_escape(kind['title'])}?</h2>
+  <h2>Khả năng tương thích</h2>
   <div class="card">
-    <p><strong>Dùng cho:</strong> {html_escape(kind['who'])}</p>
-    <p><strong>Cách nhận biết:</strong> {html_escape(kind['how'])}</p>
-    <p><strong>File đúng:</strong> {html_escape(kind['file'])}</p>
-    <p class="en">Do not mix folders. Rootless ≠ RootHide ≠ Rootful.</p>
+    <p style="margin:0 0 10px;"><strong>Thiết bị &amp; Bản jailbreak:</strong> {html_escape(kind['who'])}</p>
+    <p style="margin:0 0 10px;"><strong>Dấu hiệu nhận biết:</strong> {html_escape(kind['how'])}</p>
+    <div class="arch-hint" style="margin-bottom:0;">Tên tệp chuẩn: <strong>{html_escape(kind['file'])}</strong></div>
   </div>
-  <h2>Cài bằng tay (Filza)</h2>
-  <ol class="steps">
-    <li>Xác nhận máy đúng loại <strong>{html_escape(kind['title'])}</strong> ở trên.</li>
-    <li>Bấm <strong>Tải .deb</strong> của tweak bên dưới (Safari trên iPhone).</li>
-    <li>Mở <strong>Filza</strong> → file vừa tải → <strong>Cài đặt</strong>.</li>
-    <li><strong>Respring</strong>. Mở Cài đặt → tên tweak.</li>
-  </ol>
-  <p>Hoặc thêm source Sileo <code>{html_escape(conf['BASE_URL'])}</code> — Sileo tự lấy đúng loại, không cần chọn file.</p>
-  <h2 id="files">Tweaks {html_escape(kind['title'])}</h2>
-  <div class="grid">{''.join(cards) if cards else '<p>Chưa có gói.</p>'}</div>
-  <p><a class="more" href="../rootless/">Rootless</a> · <a class="more" href="../rootful/">Rootful</a> · <a class="more" href="../roothide/">RootHide</a></p>
-  <footer>Credit: Jinken Nguyen - 1989 · Donate: {html_escape(conf['DONATE_BANK'])} {html_escape(conf['DONATE_ACCOUNT'])}</footer>
+
+  <h2>Hướng dẫn cài đặt nhanh (Filza)</h2>
+  <div class="card">
+    <ol class="steps">
+      <li>Xác nhận máy đúng chuẩn <strong>{html_escape(kind['title'])}</strong>.</li>
+      <li>Bấm <strong>Tải .deb</strong> của tweak bên dưới (mở bằng Safari trên iPhone).</li>
+      <li>Mở ứng dụng <strong>Filza File Manager</strong> → chọn tệp vừa tải → <strong>Cài đặt (Install)</strong>.</li>
+      <li>Khởi động lại SpringBoard (<strong>Respring</strong>) và mở <strong>Cài đặt (Settings)</strong> để cấu hình tweak.</li>
+    </ol>
+  </div>
+
+  <h2 id="files">Danh sách Tweak {html_escape(kind['title'])}</h2>
+  <div class="grid">{''.join(cards) if cards else '<p>Chưa có gói cho kiến trúc này.</p>'}</div>
+
+  <footer>
+    Credit: Jinken Nguyen - 1989 · Donate: {html_escape(conf['DONATE_BANK'])} {html_escape(conf['DONATE_ACCOUNT'])} {html_escape(conf['DONATE_NAME'])}
+  </footer>
 </main>
 </body>
 </html>
@@ -969,158 +1242,323 @@ Credit: Jinken Nguyen - 1989
 
 def write_index(packages: dict[str, dict], conf: dict) -> None:
     write_kind_pages(packages, conf)
+    
+    # Load tags from catalog.json if available
+    tweak_tags = {}
+    cat_file = ROOT / "catalog.json"
+    if cat_file.is_file():
+        try:
+            with cat_file.open(encoding="utf-8") as f:
+                cat_data = json.load(f)
+                for t in cat_data.get("tweaks", []):
+                    tweak_tags[t["id"]] = t.get("tag", "Tiện ích")
+        except Exception:
+            pass
+
     kind_cards = []
     for kind in KIND_GUIDES:
         n = sum(1 for info in packages.values() if kind["arch"] in info.get("files", {}))
+        badge_cls = kind["id"]
         kind_cards.append(
             f"""
-<article class="card">
-  <h3>{html_escape(kind['title'])}</h3>
-  <p class="meta">{html_escape(kind['arch'])} · {n} tweak</p>
-  <p><strong>Máy:</strong> {html_escape(kind['who'])}</p>
-  <p>{html_escape(kind['how'])}</p>
-  <p class="en">{html_escape(kind['file'])}</p>
-  <a class="more" href="{html_escape(kind['id'])}/">Mở thư mục {html_escape(kind['title'])} →</a>
+<article class="card arch-card">
+  <div>
+    <div class="arch-header">
+      <h3 class="arch-title">{html_escape(kind['title'])}</h3>
+      <span class="arch-badge {badge_cls}">{html_escape(kind['arch'])} · {n} tweak</span>
+    </div>
+    <p class="arch-desc"><strong>Dành cho:</strong> {html_escape(kind['who'])}</p>
+    <p class="arch-desc">{html_escape(kind['how'])}</p>
+    <div class="arch-hint">{html_escape(kind['file'])}</div>
+  </div>
+  <a class="btn" style="margin-top:10px;width:100%;" href="{html_escape(kind['id'])}/">Mở thư mục {html_escape(kind['title'])} →</a>
 </article>"""
         )
+
     tweak_cards = []
     for pkg, info in sorted(packages.items(), key=lambda kv: kv[1]["Name"].lower()):
         vi, en = BLURBS.get(pkg, (info.get("blurb", ""), ""))
+        tag = tweak_tags.get(pkg, "Tiện ích")
         links = []
         for kind in KIND_GUIDES:
             href = info.get("files", {}).get(kind["arch"])
             if href:
-                links.append(f'<a class="more" href="{html_escape(href)}">{html_escape(kind["title"])}</a>')
+                cls = "roothide" if kind["id"] == "roothide" else ""
+                links.append(f'<a class="dl-chip {cls}" href="{html_escape(href)}">{html_escape(kind["title"])}</a>')
+        
         ipa_file = None
         if pkg == "com.jinken.englishkids":
             ipa_file = ROOT / "extras" / "EnglishKids.ipa"
         elif pkg == "com.jinken.drawkids":
             ipa_file = ROOT / "extras" / "BeHocVe.ipa"
-        ipa_link = f' <a class="more" href="{ipa_file.relative_to(ROOT)}">Tải IPA (iOS)</a>' if ipa_file and ipa_file.is_file() else ""
+        ipa_link = f' <a class="dl-chip ipa" href="{ipa_file.relative_to(ROOT)}">IPA (iOS)</a>' if ipa_file and ipa_file.is_file() else ""
 
         apk_file = None
         if pkg == "com.jinken.englishkids":
             apk_file = ROOT / "extras" / "EnglishKids.apk"
         elif pkg == "com.jinken.drawkids":
             apk_file = ROOT / "extras" / "BeHocVe.apk"
-        apk_link = f' <a class="more" href="{apk_file.relative_to(ROOT)}">Tải APK (Android)</a>' if apk_file and apk_file.is_file() else ""
+        apk_link = f' <a class="dl-chip apk" href="{apk_file.relative_to(ROOT)}">APK (Android)</a>' if apk_file and apk_file.is_file() else ""
+
+        is_app = 1 if (ipa_link or apk_link or "com.jinkennguyen.jinken" in pkg) else 0
+
         tweak_cards.append(
             f"""
-<article class="card">
-  <h3>{html_escape(info['Name'])}</h3>
-  <p class="meta">{html_escape(info['Version'])}</p>
-  <p>{html_escape(vi)}</p>
-  <p class="en">{html_escape(en)}</p>
-  <p>Tải đúng loại máy: {' '.join(links)}{ipa_link}{apk_link}</p>
-  <a class="more" href="depictions/{html_escape(pkg)}/">Chi tiết</a>
+<article class="card tweak-card" data-name="{html_escape(info['Name'].lower())}" data-pkg="{html_escape(pkg.lower())}" data-desc="{html_escape(vi.lower())}" data-isapp="{is_app}">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <div>
+        <h3 class="tweak-title">{html_escape(info['Name'])}</h3>
+        <span class="tweak-tag">{html_escape(tag)}</span>
+      </div>
+      <span class="tweak-ver">v{html_escape(info['Version'])}</span>
+    </div>
+    <p class="tweak-desc">{html_escape(vi)}</p>
+    <p class="tweak-en">{html_escape(en)}</p>
+    <div class="tweak-downloads">
+      {' '.join(links)}{ipa_link}{apk_link}
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn" style="padding:6px 14px;font-size:13px;width:100%;" href="depictions/{html_escape(pkg)}/">Xem chi tiết &amp; Hướng dẫn →</a>
+  </div>
 </article>"""
         )
+
     html = f"""<!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jinken Repo — Jinken Nguyen - 1989</title>
-<meta name="description" content="Cydia / Sileo / Zebra repo. Rootless, rootful, RootHide. Credit: Jinken Nguyen - 1989.">
+<meta name="description" content="Official Cydia, Sileo, Zebra repository by Jinken Nguyen - 1989. Fully compatible with Rootless, Rootful, and RootHide (Dopamine & Bootstrap).">
 <link rel="icon" href="CydiaIcon.png">
 <style>{SITE_CSS}</style>
 </head>
 <body>
-<header class="hero home">
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a class="brand" href="#">
+      <img class="brand-icon" src="CydiaIcon.png" alt="Jinken Repo Icon">
+      <span>Jinken Repo</span>
+    </a>
+    <div class="nav-links">
+      <a href="#install">Cài đặt Source</a>
+      <a href="#tweaks">Kho Tweak ({len(packages)})</a>
+      <a href="#apps">Ứng dụng</a>
+      <a href="#donate">Ủng hộ</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
   <div class="hero-inner">
-    <span class="badge">Cydia · Sileo · Zebra</span>
-    <h1>Jinken Repo</h1>
-    <p class="sub">Tweaks bởi <strong>Jinken Nguyen - 1989</strong>. Chia 3 thư mục: Rootless, Rootful, RootHide — tải đúng loại máy. Sileo tự chọn nếu thêm source.</p>
-    <div class="row">
-      <a class="btn primary" href="rootless/">Rootless</a>
-      <a class="btn primary" href="rootful/">Rootful</a>
-      <a class="btn primary" href="roothide/">RootHide</a>
-      <a class="btn" id="add-sileo" href="#">Thêm Sileo</a>
-      <a class="btn" href="#donate">Donate</a>
+    <div class="badge">
+      <span class="badge-dot"></span> Sileo · Zebra · Cydia · TrollStore
+    </div>
+    <h1>Kho Tweak &amp; Ứng Dụng Jailbreak</h1>
+    <p class="sub">Phát triển bởi <strong>Jinken Nguyen - 1989</strong>. Tương thích 100% trên cả 3 nền tảng <strong>Rootless</strong>, <strong>Rootful</strong> và <strong>RootHide</strong> (Dopamine &amp; RootHide Bootstrap).</p>
+    <div class="hero-actions">
+      <a class="btn primary" id="add-sileo" href="#">⚡ Thêm vào Sileo</a>
+      <a class="btn" id="add-zebra" href="#">Thêm vào Zebra</a>
+      <a class="btn" href="roothide/">RootHide (arm64e)</a>
+      <a class="btn" href="rootless/">Rootless (arm64)</a>
+      <a class="btn" href="rootful/">Rootful (arm)</a>
+      <a class="btn gold" href="#donate">✨ Donate</a>
     </div>
   </div>
 </header>
+
 <main class="wrap">
-  <h2>Chọn đúng loại máy</h2>
-  <p>Cài nhầm loại thì tweak không chạy. Mở đúng thư mục, chỉ tải file trong đó.</p>
+  <h2 id="install">1. Chọn Nền Tảng Thiết Bị Của Bạn</h2>
+  <p style="color:var(--text-secondary);margin:0 0 16px;">Để tránh lỗi cài đặt, vui lòng chọn đúng kiến trúc thiết bị nếu bạn tải file thủ công (.deb).</p>
   <div class="grid">{''.join(kind_cards)}</div>
 
-  <h2>Cách nhận biết máy</h2>
+  <h2>Cách Phân Biệt Nhanh Thiết Bị</h2>
   <div class="card">
     <ol class="steps">
-      <li><strong>Rootless</strong> — Dopamine thường, palera1n rootless. Có <code>/var/jb</code>.</li>
-      <li><strong>Rootful</strong> — unc0ver, checkra1n, palera1n rootful. Không có <code>/var/jb</code>.</li>
-      <li><strong>RootHide</strong> — Dopamine RootHide / Bootstrap. Jailbreak ẩn jbroot, file <code>iphoneos-arm64e</code>.</li>
+      <li><strong>RootHide (Dopamine RootHide / RootHide Bootstrap)</strong>: Jailbreak ẩn triệt để đường dẫn jbroot, định dạng file <code>iphoneos-arm64e</code>. Toàn bộ tweak trên repo đều đã được vá chuẩn liên kết <code>libroothide</code> và <code>libsubstrate</code>.</li>
+      <li><strong>Rootless (Dopamine chuẩn, palera1n rootless)</strong>: Máy có thư mục <code>/var/jb</code>, định dạng file kết thúc bằng <code>_iphoneos-arm64.deb</code>.</li>
+      <li><strong>Rootful (unc0ver, checkra1n, Taurine, palera1n rootful)</strong>: Không có <code>/var/jb</code>, thư mục tweak nằm tại <code>/Library/MobileSubstrate</code>, định dạng <code>_iphoneos-arm.deb</code>.</li>
     </ol>
-    <p>Không chắc? Thêm source Sileo bên dưới — app tự lấy đúng gói, không cần chọn file.</p>
+    <p style="color:var(--accent);margin:12px 0 0;font-size:14px;">💡 <em>Mẹo hay: Thêm trực tiếp đường dẫn nguồn vào Sileo hoặc Zebra, ứng dụng sẽ tự động chọn đúng bản vá phù hợp nhất cho máy bạn!</em></p>
   </div>
 
-  <h2>Thêm source Sileo / Zebra</h2>
-  <p>Sources → + → dán URL:</p>
-  <code class="src" id="source-url">{html_escape(conf['BASE_URL'])}</code>
+  <h2>Đường Dẫn Source APT</h2>
+  <div class="code-box">
+    <code id="source-url">{html_escape(conf['BASE_URL'])}</code>
+    <button class="copy-btn copy" data-copy="{html_escape(conf['BASE_URL'])}">Sao chép URL</button>
+  </div>
 
-  <h2>Cài bằng Filza (tải tay)</h2>
-  <ol class="steps">
-    <li>Chọn thư mục Rootless / Rootful / RootHide đúng máy.</li>
-    <li>Tải file <code>.deb</code> của tweak.</li>
-    <li>Filza → mở file → Cài đặt → Respring.</li>
-  </ol>
-
-  <h2>Tất cả tweak</h2>
-  <div class="grid">{''.join(tweak_cards)}</div>
-
-  <h2>Ứng dụng Trực tiếp (IPA cho iOS &amp; APK cho Android)</h2>
-  <div class="card" style="margin-bottom:16px;">
-    <h3>Bé học Vẽ — v1.6 (Build 7)</h3>
-    <p>Ứng dụng học vẽ và tô màu tương tác cho bé (hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%).</p>
-    <p class="en">Tải và cài đặt trực tiếp cho thiết bị iOS (TrollStore, Filza, Sideload) hoặc thiết bị Android:</p>
-    <div class="row" style="margin-top:10px;">
-      <a class="btn primary" href="extras/BeHocVe.ipa">Tải file BeHocVe.ipa (7.5MB - iOS)</a>
-      <a class="btn primary" href="extras/BeHocVe.apk">Tải file BeHocVe.apk (7.5MB - Android)</a>
+  <div class="search-container" id="tweaks">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:10px;">
+      <h2 style="margin:0;">Kho Tweak &amp; Ứng Dụng ({len(packages)})</h2>
+      <span style="font-size:13px;color:var(--muted);" id="tweak-count">Đang hiển thị {len(packages)} mục</span>
     </div>
-  </div>
-  <div class="card">
-    <h3>English Kids — v1.7 (Build 13)</h3>
-    <p>Ứng dụng học tiếng Anh tương tác cho trẻ em (từ vựng, phát âm, flashcard, mini-game, chạy offline 100%).</p>
-    <p class="en">Tải và cài đặt trực tiếp cho thiết bị iOS (TrollStore, Filza, Sideload) hoặc thiết bị Android:</p>
-    <div class="row" style="margin-top:10px;">
-      <a class="btn primary" href="extras/EnglishKids.ipa">Tải file EnglishKids.ipa (47MB - iOS)</a>
-      <a class="btn primary" href="extras/EnglishKids.apk">Tải file EnglishKids.apk (50MB - Android)</a>
+    <div class="search-bar-wrap">
+      <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input type="text" id="search-box" class="search-input" placeholder="Tìm kiếm tweak theo tên, tính năng hoặc package ID...">
+    </div>
+    <div class="filter-pills">
+      <button class="filter-pill active" data-filter="all">Tất cả ({len(packages)})</button>
+      <button class="filter-pill" data-filter="app">Ứng dụng độc lập (IPA/deb)</button>
+      <button class="filter-pill" data-filter="tweak">Tweak hệ thống</button>
+      <button class="filter-pill" data-filter="roothide">Đã vá RootHide 100%</button>
     </div>
   </div>
 
-  <h2 id="credit">Credit</h2>
-  <div class="card">
-    <p><strong>Tác giả / Author:</strong> Jinken Nguyen - 1989</p>
-    <p>Mọi tweak do Jinken Nguyen - 1989 phát triển. Không liên kết với Apple.</p>
-  </div>
+  <div class="grid" id="tweaks-grid">{''.join(tweak_cards)}</div>
 
-  <h2 id="donate">Donate</h2>
-  <div class="card donate">
-    <img src="assets/vietqr.png" alt="VietQR MB Bank 0345140889 Nguyễn Tiến Triều">
-    <div>
-      <p>Cảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.</p>
-      <p><strong>Ngân hàng:</strong> {html_escape(conf['DONATE_BANK'])}<br>
-      <strong>Chủ TK:</strong> {html_escape(conf['DONATE_NAME'])}<br>
-      <strong>STK:</strong> <span class="copy" data-copy="{html_escape(conf['DONATE_ACCOUNT'])}">{html_escape(conf['DONATE_ACCOUNT'])} · copy</span><br>
-      <strong>Nội dung:</strong> <span class="copy" data-copy="Donate Jinken Nguyen {html_escape(conf['YEAR'])}">Donate Jinken Nguyen {html_escape(conf['YEAR'])} · copy</span></p>
+  <h2 id="apps">Ứng Dụng Trực Tiếp (IPA cho iOS &amp; APK cho Android)</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));">
+    <div class="card" style="border-color:rgba(52,211,153,0.3);">
+      <div class="tweak-head">
+        <h3 class="tweak-title">Bé học Vẽ</h3>
+        <span class="tweak-ver" style="background:rgba(52,211,153,0.15);color:var(--good);">v1.6 (Build 7)</span>
+      </div>
+      <p class="tweak-desc">Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.</p>
+      <p class="tweak-en">Đã vá hoàn toàn lỗi sandbox RootHide, nạp tài nguyên an toàn không lo văng màn hình trắng.</p>
+      <div class="tweak-downloads">
+        <a class="btn primary" style="padding:8px 14px;font-size:13px;width:100%;margin-bottom:6px;" href="extras/BeHocVe.ipa">🍏 Tải file BeHocVe.ipa (7.5MB - iOS)</a>
+        <a class="btn" style="padding:8px 14px;font-size:13px;width:100%;" href="extras/BeHocVe.apk">🤖 Tải file BeHocVe.apk (7.5MB - Android)</a>
+      </div>
+    </div>
+
+    <div class="card" style="border-color:rgba(56,189,248,0.3);">
+      <div class="tweak-head">
+        <h3 class="tweak-title">English Kids</h3>
+        <span class="tweak-ver">v1.7 (Build 13)</span>
+      </div>
+      <p class="tweak-desc">Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh chuẩn bản ngữ, flashcard, mini-game, chạy offline 100%.</p>
+      <p class="tweak-en">Đã nâng cấp quyền WebKit bundleURL, hiển thị tức thì trên RootHide, Rootless và TrollStore.</p>
+      <div class="tweak-downloads">
+        <a class="btn primary" style="padding:8px 14px;font-size:13px;width:100%;margin-bottom:6px;" href="extras/EnglishKids.ipa">🍏 Tải file EnglishKids.ipa (47MB - iOS)</a>
+        <a class="btn" style="padding:8px 14px;font-size:13px;width:100%;" href="extras/EnglishKids.apk">🤖 Tải file EnglishKids.apk (50MB - Android)</a>
+      </div>
     </div>
   </div>
-  <footer>Credit: Jinken Nguyen - 1989 · Donate: {html_escape(conf['DONATE_BANK'])} {html_escape(conf['DONATE_ACCOUNT'])} {html_escape(conf['DONATE_NAME'])}</footer>
+
+  <h2>Ủng Hộ Tác Giả (Donate)</h2>
+  <div class="card" id="donate">
+    <div class="donate-grid">
+      <img class="donate-qr" src="assets/vietqr.png" alt="VietQR MB Bank 0345140889 Nguyễn Tiến Triều">
+      <div class="donate-info">
+        <h3>✨ Repo này sống nhờ sự ủng hộ của bạn</h3>
+        <p>Cảm ơn bạn đã tin dùng tweak miễn phí do mình tự tay phát triển. Mọi tweak đều miễn phí 100%, không quảng cáo, không mã độc hại. Một ly cà phê nhỏ sẽ tiếp thêm động lực để mình tiếp tục cập nhật và duy trì repo chạy ổn định lâu dài.</p>
+        <div class="donate-table">
+          <div class="donate-row">
+            <span class="donate-label">Ngân hàng</span>
+            <span class="donate-val">{html_escape(conf['DONATE_BANK'])}</span>
+          </div>
+          <div class="donate-row">
+            <span class="donate-label">Chủ tài khoản</span>
+            <span class="donate-val">{html_escape(conf['DONATE_NAME'])}</span>
+          </div>
+          <div class="donate-row">
+            <span class="donate-label">Số tài khoản</span>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span class="donate-val">{html_escape(conf['DONATE_ACCOUNT'])}</span>
+              <button class="copy-btn copy" data-copy="{html_escape(conf['DONATE_ACCOUNT'])}">Copy STK</button>
+            </div>
+          </div>
+          <div class="donate-row">
+            <span class="donate-label">Nội dung chuyển khoản</span>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span class="donate-val">Donate Jinken Nguyen {html_escape(conf['YEAR'])}</span>
+              <button class="copy-btn copy" data-copy="Donate Jinken Nguyen {html_escape(conf['YEAR'])}">Copy ND</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>Jinken Repo</strong> · Tác giả: <strong>Jinken Nguyen - 1989</strong><br>
+    Được tối ưu chuẩn hoá cho iOS 14 – 18 · Rootless, Rootful &amp; RootHide.<br>
+    Donate: MB Bank {html_escape(conf['DONATE_ACCOUNT'])} ({html_escape(conf['DONATE_NAME'])})
+  </footer>
 </main>
+
 <script>
 const base = location.origin + location.pathname.replace(/index\\.html$/, "").replace(/\\/$/, "");
 const src = base + "/";
-document.getElementById("source-url").textContent = src;
-document.getElementById("add-sileo").href = "sileo://source/" + src;
+const srcBox = document.getElementById("source-url");
+if (srcBox) srcBox.textContent = src;
+
+const sBtn = document.getElementById("add-sileo");
+if (sBtn) sBtn.href = "sileo://source/" + src;
+
+const zBtn = document.getElementById("add-zebra");
+if (zBtn) zBtn.href = "zbr://sources/add/" + src;
+
+// Copy button logic with smooth feedback
 document.querySelectorAll(".copy").forEach(el => {{
   el.addEventListener("click", async () => {{
+    const text = el.dataset.copy || src;
     try {{
-      await navigator.clipboard.writeText(el.dataset.copy);
-      el.textContent = el.dataset.copy + " · đã copy";
+      await navigator.clipboard.writeText(text);
+      const originalText = el.textContent;
+      el.textContent = "✓ Đã copy!";
+      el.style.background = "var(--good)";
+      el.style.color = "#042033";
+      setTimeout(() => {{
+        el.textContent = originalText;
+        el.style.background = "";
+        el.style.color = "";
+      }}, 2000);
     }} catch (e) {{
-      alert(el.dataset.copy);
+      alert(text);
     }}
+  }});
+}});
+
+// Interactive search and filtering
+const searchBox = document.getElementById("search-box");
+const filterPills = document.querySelectorAll(".filter-pill");
+const tweakCards = document.querySelectorAll("#tweaks-grid .tweak-card");
+const counter = document.getElementById("tweak-count");
+
+let activeFilter = "all";
+
+function filterTweaks() {{
+  const query = (searchBox ? searchBox.value : "").trim().toLowerCase();
+  let visible = 0;
+
+  tweakCards.forEach(card => {{
+    const name = card.dataset.name || "";
+    const pkg = card.dataset.pkg || "";
+    const desc = card.dataset.desc || "";
+    const isApp = card.dataset.isapp === "1";
+
+    const matchesQuery = !query || name.includes(query) || pkg.includes(query) || desc.includes(query);
+    let matchesCategory = true;
+    if (activeFilter === "app") matchesCategory = isApp;
+    else if (activeFilter === "tweak") matchesCategory = !isApp;
+    else if (activeFilter === "roothide") matchesCategory = true; // All 20 are RootHide patched!
+
+    if (matchesQuery && matchesCategory) {{
+      card.style.display = "";
+      visible++;
+    }} else {{
+      card.style.display = "none";
+    }}
+  }});
+
+  if (counter) counter.textContent = "Đang hiển thị " + visible + " mục";
+}}
+
+if (searchBox) searchBox.addEventListener("input", filterTweaks);
+
+filterPills.forEach(pill => {{
+  pill.addEventListener("click", () => {{
+    filterPills.forEach(p => p.classList.remove("active"));
+    pill.classList.add("active");
+    activeFilter = pill.dataset.filter;
+    filterTweaks();
   }});
 }});
 </script>

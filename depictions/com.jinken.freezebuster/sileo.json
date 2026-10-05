@@ -78,7 +78,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Xem GitHub repo / see the GitHub repo.",
+          "markdown": "**1.2.0**\nBiên dịch lại bằng Theos-RootHide chuẩn, khắc phục hoàn toàn lỗi Substrate crash trên RootHide. Tự động giải cứu khi UI treo cứng hoặc tràn RAM.\n\n**1.1.0**\nSửa lỗi Safe Mode khi cài đặt. Cải tiến thuật toán phát hiện Watchdog timeout và giải phóng bộ nhớ tức thì.",
           "useSpacing": true,
           "useRawFormat": false
         }

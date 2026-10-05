@@ -78,7 +78,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**1.0.0**\nApp trên Home. Mở để xem tweak trên repo, cách dùng, donate. Kéo xuống để lấy danh sách mới.",
+          "markdown": "**1.1.0**\nCập nhật danh mục tweak mới nhất, vá giao diện Liquid Glass và hỗ trợ RootHide đầy đủ.\n\n**1.0.0**\nApp trên Home. Mở để xem tweak trên repo, cách dùng, donate. Kéo xuống để lấy danh sách mới.",
           "useSpacing": true,
           "useRawFormat": false
         }

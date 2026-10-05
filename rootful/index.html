@@ -7,239 +7,677 @@
 <link rel="icon" href="../CydiaIcon.png">
 <style>
 :root {
-  --bg:#07080f; --card:#101826cc; --line:rgba(255,255,255,.1);
-  --text:#eef2ff; --muted:#93c5fd; --accent:#38bdf8; --good:#34d399;
+  --bg: #07090e;
+  --bg-gradient: radial-gradient(circle at 50% -20%, #1e293b 0%, #0a0f1d 45%, #05070b 100%);
+  --card: rgba(16, 24, 39, 0.65);
+  --card-hover: rgba(24, 36, 58, 0.85);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-border-glow: rgba(56, 189, 248, 0.35);
+  --text: #f8fafc;
+  --text-secondary: #94a3b8;
+  --muted: #64748b;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.25);
+  --good: #34d399;
+  --gold: #fbbf24;
+  --purple: #a855f7;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
 }
-* {box-sizing:border-box}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
 body {
-  margin:0; font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
-  background:var(--bg); color:var(--text);
+  margin: 0;
+  font: 15px/1.6 var(--font);
+  background: var(--bg);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
 }
+a { color: var(--accent); text-decoration: none; transition: all 0.2s ease; }
+a:hover { opacity: 0.85; }
+
+/* Navbar */
+.nav-bar {
+  position: sticky; top: 0; z-index: 100;
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  background: rgba(7, 9, 14, 0.75);
+  border-bottom: 1px solid var(--card-border);
+  padding: 12px 20px;
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px;
+  color: var(--text);
+}
+.brand-icon {
+  width: 32px; height: 32px; border-radius: 8px; box-shadow: 0 4px 12px rgba(56,189,248,0.25);
+}
+.nav-links { display: flex; gap: 16px; align-items: center; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+/* Hero */
 .hero {
-  position:relative; min-height:220px; padding:40px 20px 28px;
-  background:var(--hero, url("../assets/banner.jpg")) center/cover no-repeat;
+  position: relative; padding: 48px 20px 36px;
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(56, 189, 248, 0.15), transparent 70%);
+  text-align: center;
 }
-.hero.home { --hero: url("assets/banner.jpg"); min-height:280px; }
-.hero::after {
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(7,8,15,.25), rgba(7,8,15,.92));
-}
-.hero-inner {position:relative; z-index:1; max-width:980px; margin:0 auto}
+.hero-inner { max-width: 840px; margin: 0 auto; }
 .badge {
-  display:inline-block; padding:4px 10px; border-radius:999px;
-  border:1px solid rgba(56,189,248,.4); color:var(--accent); font-size:12px;
-  letter-spacing:.08em; text-transform:uppercase;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 14px; border-radius: 999px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--accent); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.05em; text-transform: uppercase;
 }
-h1 {font-size:clamp(26px,5vw,44px); margin:12px 0 6px}
-.sub {color:var(--muted); max-width:720px}
-.wrap {max-width:980px; margin:0 auto; padding:0 20px 64px}
-.row {display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 8px}
+.badge-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--good);
+  box-shadow: 0 0 8px var(--good);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.9); } }
+h1 {
+  font-size: clamp(30px, 6vw, 52px); font-weight: 800;
+  letter-spacing: -0.02em; margin: 16px 0 10px;
+  background: linear-gradient(135deg, #ffffff 30%, #93c5fd 80%, #38bdf8 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.sub {
+  color: var(--text-secondary); font-size: clamp(15px, 2.5vw, 18px);
+  max-width: 680px; margin: 0 auto 24px; line-height: 1.6;
+}
+
+/* Action Buttons */
+.hero-actions {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px;
+}
 .btn {
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:650;
-  border:1px solid var(--line); color:var(--text); background:#0b1220aa;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 11px 20px; border-radius: 12px; font-weight: 600; font-size: 14px;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border);
+  color: var(--text); cursor: pointer; transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-.btn.primary {background:var(--accent); color:#042033; border-color:transparent}
-.grid {display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; margin-top:18px}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.btn.primary {
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+  color: #ffffff; border-color: transparent;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.35);
+}
+.btn.primary:hover {
+  background: linear-gradient(135deg, #60a5fa, #0369a1);
+  box-shadow: 0 6px 24px rgba(56, 189, 248, 0.5);
+}
+.btn.gold {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff; border-color: transparent;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+}
+.btn.gold:hover {
+  background: linear-gradient(135deg, #fbbf24, #b45309);
+  box-shadow: 0 6px 24px rgba(245, 158, 11, 0.45);
+}
+
+/* Wrap */
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px 80px; }
+h2 {
+  font-size: 22px; font-weight: 700; margin: 44px 0 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+h2::before {
+  content: ""; display: inline-block; width: 4px; height: 20px;
+  background: var(--accent); border-radius: 2px;
+}
+
+/* Glass Card */
 .card {
-  background:var(--card); backdrop-filter:blur(16px);
-  border:1px solid var(--line); border-radius:16px; padding:16px;
+  background: var(--card);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  border-radius: 18px; padding: 22px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  position: relative; overflow: hidden;
 }
-.card h3 {margin:0 0 4px; font-size:18px}
-.meta {color:var(--muted); font-size:13px; margin:0 0 8px}
-.en {color:#cbd5e1; font-size:14px}
-.more {color:var(--accent); text-decoration:none; font-weight:600; margin-right:12px}
-.donate {
-  display:grid; grid-template-columns:180px 1fr; gap:20px; align-items:center;
+.card:hover {
+  border-color: var(--card-border-glow);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
 }
-.donate img {width:180px; background:#fff; border-radius:12px}
-.copy {
-  cursor:pointer; border:1px dashed rgba(56,189,248,.5); border-radius:10px;
-  padding:8px 10px; display:inline-block; margin:4px 0; color:var(--accent);
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 18px; margin-top: 18px;
 }
-h2 {margin:36px 0 10px}
-ol.steps {padding-left:1.2em}
-ol.steps li {margin:6px 0}
-footer {color:#64748b; font-size:13px; margin-top:40px}
-code.src, code.file {
-  display:block; background:#0b1220; border-radius:10px; padding:10px 12px;
-  overflow:auto; color:#7dd3fc; margin:8px 0 16px;
+
+/* Architecture Cards */
+.arch-card {
+  display: flex; flex-direction: column; justify-content: space-between;
 }
-@media (max-width:640px) { .donate {grid-template-columns:1fr} }
+.arch-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.arch-title { font-size: 20px; font-weight: 700; margin: 0; color: #fff; }
+.arch-badge {
+  font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08); color: var(--muted); font-family: ui-monospace, monospace;
+}
+.arch-badge.roothide { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+.arch-badge.rootless { background: rgba(52, 211, 153, 0.15); color: #34d399; }
+.arch-badge.rootful { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+.arch-desc { color: var(--text-secondary); font-size: 14px; line-height: 1.5; margin: 0 0 12px; }
+.arch-hint {
+  font-size: 12px; color: var(--muted); font-family: ui-monospace, monospace;
+  background: rgba(0, 0, 0, 0.3); padding: 8px 10px; border-radius: 8px; margin-bottom: 16px;
+  border-left: 2px solid var(--accent);
+}
+
+/* Search & Filters */
+.search-container {
+  margin: 28px 0 20px; display: flex; flex-direction: column; gap: 14px;
+}
+.search-bar-wrap { position: relative; }
+.search-input {
+  width: 100%; padding: 14px 18px 14px 44px; font-size: 15px;
+  background: rgba(16, 24, 39, 0.7);
+  border: 1px solid var(--card-border); border-radius: 14px;
+  color: #fff; outline: none; transition: all 0.25s ease;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+}
+.search-input:focus {
+  border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.search-icon {
+  position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  color: var(--muted); pointer-events: none; width: 18px; height: 18px;
+}
+.filter-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-pill {
+  padding: 7px 14px; font-size: 13px; font-weight: 500; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border);
+  color: var(--text-secondary); cursor: pointer; transition: all 0.2s ease;
+}
+.filter-pill:hover, .filter-pill.active {
+  background: var(--accent); color: #042033; font-weight: 600; border-color: transparent;
+}
+
+/* Tweak Card */
+.tweak-card {
+  display: flex; flex-direction: column; justify-content: space-between;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.tweak-card:hover {
+  transform: translateY(-4px); border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+.tweak-top { margin-bottom: 12px; }
+.tweak-head {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px;
+}
+.tweak-title { font-size: 18px; font-weight: 700; margin: 0; color: #fff; }
+.tweak-ver {
+  font-size: 12px; font-weight: 600; padding: 2px 7px; border-radius: 6px;
+  background: rgba(56, 189, 248, 0.15); color: var(--accent);
+}
+.tweak-tag {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  color: var(--muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;
+}
+.tweak-desc {
+  font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin: 0 0 8px;
+}
+.tweak-en { font-size: 13px; color: var(--muted); margin: 0 0 14px; font-style: italic; }
+.tweak-downloads {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.dl-chip {
+  font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06); border: 1px solid var(--card-border);
+  color: var(--text); display: inline-flex; align-items: center; gap: 4px;
+}
+.dl-chip:hover {
+  background: rgba(56, 189, 248, 0.2); border-color: var(--accent); color: #fff;
+}
+.dl-chip.roothide { border-color: rgba(56, 189, 248, 0.3); color: #7dd3fc; }
+.dl-chip.ipa { border-color: rgba(52, 211, 153, 0.4); color: #6ee7b7; background: rgba(52, 211, 153, 0.1); }
+.dl-chip.apk { border-color: rgba(251, 191, 36, 0.4); color: #fde047; background: rgba(251, 191, 36, 0.1); }
+.tweak-actions {
+  display: flex; align-items: center; justify-content: space-between; margin-top: 12px;
+}
+
+/* Code Snippet */
+.code-box {
+  position: relative; background: #050811; border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px; padding: 14px 16px; margin: 10px 0 16px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.code-box code { color: #7dd3fc; font-family: ui-monospace, monospace; font-size: 14px; }
+.copy-btn {
+  background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--accent); padding: 5px 12px; border-radius: 8px; font-size: 12px;
+  font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+}
+.copy-btn:hover { background: var(--accent); color: #042033; }
+
+/* Steps */
+ol.steps { padding-left: 1.3em; margin: 8px 0; }
+ol.steps li { margin: 8px 0; color: var(--text-secondary); }
+ol.steps strong { color: #fff; }
+
+/* Donate Section */
+.donate-grid {
+  display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: center;
+}
+.donate-qr {
+  width: 200px; height: 200px; background: #fff; border-radius: 16px;
+  padding: 8px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); object-fit: contain;
+}
+.donate-info h3 { margin: 0 0 8px; font-size: 20px; color: #fff; }
+.donate-info p { color: var(--text-secondary); margin: 0 0 14px; line-height: 1.6; }
+.donate-table {
+  background: rgba(0, 0, 0, 0.25); border-radius: 12px; padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.donate-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 6px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); font-size: 14px;
+}
+.donate-row:last-child { border-bottom: none; }
+.donate-label { color: var(--muted); }
+.donate-val { font-weight: 600; color: #fff; }
+
+/* Footer */
+footer {
+  text-align: center; color: var(--muted); font-size: 13px;
+  padding: 40px 20px; border-top: 1px solid var(--card-border);
+}
+
+@media (max-width: 768px) {
+  .donate-grid { grid-template-columns: 1fr; text-align: center; }
+  .donate-qr { margin: 0 auto; }
+  .donate-row { flex-direction: column; gap: 4px; align-items: center; }
+  .hero-actions { flex-direction: column; }
+  .btn { width: 100%; }
+}
 </style>
 </head>
 <body>
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a class="brand" href="../">
+      <img class="brand-icon" src="../CydiaIcon.png" alt="Icon">
+      <span>Jinken Repo</span>
+    </a>
+    <div class="nav-links">
+      <a href="../">Trang chủ</a>
+      <a href="../rootless/" class="">Rootless</a>
+      <a href="../rootful/" class="active">Rootful</a>
+      <a href="../roothide/" class="">RootHide</a>
+    </div>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="hero-inner">
-    <span class="badge">Rootful · iphoneos-arm</span>
-    <h1>Rootful</h1>
-    <p class="sub">Chỉ dùng thư mục này nếu máy của bạn đúng loại. Cài nhầm rootful/rootless/RootHide thì tweak không chạy.</p>
-    <div class="row">
-      <a class="btn" href="../">← Về repo</a>
-      <a class="btn primary" href="#files">Tải tweak</a>
+    <span class="badge"><span class="badge-dot"></span> Rootful · iphoneos-arm</span>
+    <h1>Kho Tweak Rootful</h1>
+    <p class="sub">Tối ưu chính xác cho nền tảng Rootful. Không gây xung đột hay văng SpringBoard.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#files">Xem danh sách tweak</a>
+      <a class="btn" href="../">← Về trang chủ</a>
     </div>
   </div>
 </header>
+
 <main class="wrap">
-  <h2>Máy nào dùng Rootful?</h2>
+  <h2>Khả năng tương thích</h2>
   <div class="card">
-    <p><strong>Dùng cho:</strong> unc0ver, checkra1n, palera1n rootful, Taurine, Odyssey</p>
-    <p><strong>Cách nhận biết:</strong> Không có /var/jb. Tweak nằm ở /Library/MobileSubstrate.</p>
-    <p><strong>File đúng:</strong> file .deb kết thúc bằng _iphoneos-arm.deb</p>
-    <p class="en">Do not mix folders. Rootless ≠ RootHide ≠ Rootful.</p>
+    <p style="margin:0 0 10px;"><strong>Thiết bị &amp; Bản jailbreak:</strong> unc0ver, checkra1n, palera1n rootful, Taurine, Odyssey</p>
+    <p style="margin:0 0 10px;"><strong>Dấu hiệu nhận biết:</strong> Không có /var/jb. Tweak nằm ở /Library/MobileSubstrate.</p>
+    <div class="arch-hint" style="margin-bottom:0;">Tên tệp chuẩn: <strong>file .deb kết thúc bằng _iphoneos-arm.deb</strong></div>
   </div>
-  <h2>Cài bằng tay (Filza)</h2>
-  <ol class="steps">
-    <li>Xác nhận máy đúng loại <strong>Rootful</strong> ở trên.</li>
-    <li>Bấm <strong>Tải .deb</strong> của tweak bên dưới (Safari trên iPhone).</li>
-    <li>Mở <strong>Filza</strong> → file vừa tải → <strong>Cài đặt</strong>.</li>
-    <li><strong>Respring</strong>. Mở Cài đặt → tên tweak.</li>
-  </ol>
-  <p>Hoặc thêm source Sileo <code>https://tientrieu19892025.github.io</code> — Sileo tự lấy đúng loại, không cần chọn file.</p>
-  <h2 id="files">Tweaks Rootful</h2>
+
+  <h2>Hướng dẫn cài đặt nhanh (Filza)</h2>
+  <div class="card">
+    <ol class="steps">
+      <li>Xác nhận máy đúng chuẩn <strong>Rootful</strong>.</li>
+      <li>Bấm <strong>Tải .deb</strong> của tweak bên dưới (mở bằng Safari trên iPhone).</li>
+      <li>Mở ứng dụng <strong>Filza File Manager</strong> → chọn tệp vừa tải → <strong>Cài đặt (Install)</strong>.</li>
+      <li>Khởi động lại SpringBoard (<strong>Respring</strong>) và mở <strong>Cài đặt (Settings)</strong> để cấu hình tweak.</li>
+    </ol>
+  </div>
+
+  <h2 id="files">Danh sách Tweak Rootful</h2>
   <div class="grid">
-<article class="card">
-  <h3>AdShield 1.0.4</h3>
-  <p>Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.</p>
-  <code class="file">com.jinkennguyen.adshield_1.0.4_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.adshield_1.0.4_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.adshield/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">AdShield</h3>
+      <span class="tweak-ver">1.0.4</span>
+    </div>
+    <p class="tweak-desc">Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.adshield_1.0.4_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.adshield_1.0.4_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.adshield/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>AppSw 1.0.5</h3>
-  <p>Vuốt lên đa nhiệm: cửa sổ lớn phía trên, năm app gần nhất phía dưới.</p>
-  <code class="file">com.jinkennguyen.appsw_1.0.5_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.appsw_1.0.5_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.appsw/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">AppSw</h3>
+      <span class="tweak-ver">1.0.5</span>
+    </div>
+    <p class="tweak-desc">Vuốt lên đa nhiệm: cửa sổ lớn phía trên, năm app gần nhất phía dưới.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.appsw_1.0.5_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.appsw_1.0.5_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.appsw/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>AutoBrightClamp 1.0.0</h3>
-  <p>Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.</p>
-  <code class="file">com.jinken.autobrightclamp_1.0.0_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinken.autobrightclamp_1.0.0_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinken.autobrightclamp/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">AutoBrightClamp</h3>
+      <span class="tweak-ver">1.0.0</span>
+    </div>
+    <p class="tweak-desc">Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinken.autobrightclamp_1.0.0_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinken.autobrightclamp_1.0.0_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinken.autobrightclamp/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>Bé học Vẽ 1.6</h3>
-  <p>Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu và bảng vẽ sáng tạo.</p>
-  <code class="file">com.jinken.drawkids_1.6_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinken.drawkids_1.6_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinken.drawkids/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">Bé học Vẽ</h3>
+      <span class="tweak-ver">1.6</span>
+    </div>
+    <p class="tweak-desc">Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu và bảng vẽ sáng tạo.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinken.drawkids_1.6_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinken.drawkids_1.6_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinken.drawkids/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>CPU Boost 1.0.4</h3>
-  <p>CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Ngủ sâu khi tắt màn hình, Eco / Boost / Turbo.</p>
-  <code class="file">com.jinkennguyen.cpuboost_1.0.4_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.cpuboost_1.0.4_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.cpuboost/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">CPU Boost</h3>
+      <span class="tweak-ver">1.0.4</span>
+    </div>
+    <p class="tweak-desc">CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Ngủ sâu khi tắt màn hình, Eco / Boost / Turbo.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.cpuboost_1.0.4_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.cpuboost_1.0.4_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.cpuboost/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>dis-swipe 1.1.1</h3>
-  <p>Khóa cử chỉ vuốt ngang cạnh đáy (Home bar) đổi app khi đang mở bàn phím gõ. Hỗ trợ bảo vệ cử chỉ vuốt về Home, ẩn Home bar khi gõ, rung phản hồi Haptic.</p>
-  <code class="file">com.jinken.disswipe_1.1.1_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinken.disswipe_1.1.1_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinken.disswipe/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">dis-swipe</h3>
+      <span class="tweak-ver">1.1.1</span>
+    </div>
+    <p class="tweak-desc">Khóa cử chỉ vuốt ngang cạnh đáy (Home bar) đổi app khi đang mở bàn phím gõ. Hỗ trợ bảo vệ cử chỉ vuốt về Home, ẩn Home bar khi gõ, rung phản hồi Haptic.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinken.disswipe_1.1.1_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinken.disswipe_1.1.1_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinken.disswipe/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>DuoFrame 3.5.3</h3>
-  <p>Khung kính trên màn hình chính — status, icon, dock. Vuốt, màu chữ và kiểu icon chỉnh trong Cài đặt.</p>
-  <code class="file">com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.duoframe/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">DuoFrame</h3>
+      <span class="tweak-ver">3.5.3</span>
+    </div>
+    <p class="tweak-desc">Khung kính trên màn hình chính — status, icon, dock. Vuốt, màu chữ và kiểu icon chỉnh trong Cài đặt.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.duoframe/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>English Kids 1.7</h3>
-  <p>Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh, flashcard, mini-game và thanh chữ chạy.</p>
-  <code class="file">com.jinken.englishkids_1.7_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinken.englishkids_1.7_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinken.englishkids/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">English Kids</h3>
+      <span class="tweak-ver">1.7</span>
+    </div>
+    <p class="tweak-desc">Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh, flashcard, mini-game và thanh chữ chạy.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinken.englishkids_1.7_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinken.englishkids_1.7_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinken.englishkids/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>FreezeBuster Pro 1.2.0</h3>
-  <p>Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.</p>
-  <code class="file">com.jinken.freezebuster_1.2.0_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinken.freezebuster_1.2.0_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinken.freezebuster/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">FreezeBuster Pro</h3>
+      <span class="tweak-ver">1.2.0</span>
+    </div>
+    <p class="tweak-desc">Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinken.freezebuster_1.2.0_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinken.freezebuster_1.2.0_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinken.freezebuster/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>ListApp 1.2.3</h3>
-  <p>Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.</p>
-  <code class="file">com.jinken.listapp_1.2.3_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinken.listapp_1.2.3_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinken.listapp/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">ListApp</h3>
+      <span class="tweak-ver">1.2.3</span>
+    </div>
+    <p class="tweak-desc">Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinken.listapp_1.2.3_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinken.listapp_1.2.3_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinken.listapp/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>Lock Frame 3.2.3</h3>
-  <p>Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.</p>
-  <code class="file">com.jinkennguyen.haloframe_3.2.3_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.haloframe_3.2.3_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.haloframe/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">Lock Frame</h3>
+      <span class="tweak-ver">3.2.3</span>
+    </div>
+    <p class="tweak-desc">Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.haloframe_3.2.3_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.haloframe_3.2.3_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.haloframe/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>LookGlass 4.0.7</h3>
-  <p>Ô tìm trên Home. YouTube phát ngay trên ô, nghe nền được. Có phòng chat chung — bấm Chat cạnh Tìm.</p>
-  <code class="file">com.jinkennguyen.lookglass_4.0.7_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.lookglass_4.0.7_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.lookglass/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">LookGlass</h3>
+      <span class="tweak-ver">4.0.7</span>
+    </div>
+    <p class="tweak-desc">Ô tìm trên Home. YouTube phát ngay trên ô, nghe nền được. Có phòng chat chung — bấm Chat cạnh Tìm.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.lookglass_4.0.7_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.lookglass_4.0.7_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.lookglass/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>NoxFrame 1.1.1</h3>
-  <p>Tắt màn vẫn chụp và quay. Trong Ảnh có nút lưu đúng khung hình video.</p>
-  <code class="file">com.jinkennguyen.noxframe_1.1.1_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.noxframe/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">NoxFrame</h3>
+      <span class="tweak-ver">1.1.1</span>
+    </div>
+    <p class="tweak-desc">Tắt màn vẫn chụp và quay. Trong Ảnh có nút lưu đúng khung hình video.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.noxframe_1.1.1_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.noxframe/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>OrientFlow 1.0.7</h3>
-  <p>Gợi ý xoay màn hình thông minh khi khoá xoay. Giữ nguyên hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc, thanh kéo tuỳ chọn vị trí tự do.</p>
-  <code class="file">com.jinken.orientflow_1.0.7_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinken.orientflow_1.0.7_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinken.orientflow/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">OrientFlow</h3>
+      <span class="tweak-ver">1.0.8</span>
+    </div>
+    <p class="tweak-desc">Gợi ý xoay màn hình thông minh khi khoá xoay. Giữ nguyên hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc, thanh kéo tuỳ chọn vị trí tự do.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinken.orientflow_1.0.8_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinken.orientflow_1.0.8_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinken.orientflow/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>PrankFrame 1.0.0</h3>
-  <p>100 trò khăm trên iPhone: sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung. Lắc để dừng.</p>
-  <code class="file">com.jinkennguyen.prankframe_1.0.0_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.prankframe_1.0.0_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.prankframe/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">PrankFrame</h3>
+      <span class="tweak-ver">1.0.0</span>
+    </div>
+    <p class="tweak-desc">100 trò khăm trên iPhone: sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung. Lắc để dừng.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.prankframe_1.0.0_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.prankframe_1.0.0_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.prankframe/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>QuickPass 1.0.0</h3>
-  <p>Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.</p>
-  <code class="file">com.jinken.quickpass_1.0.0_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinken.quickpass_1.0.0_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinken.quickpass/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">QuickPass</h3>
+      <span class="tweak-ver">1.0.0</span>
+    </div>
+    <p class="tweak-desc">Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinken.quickpass_1.0.0_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinken.quickpass_1.0.0_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinken.quickpass/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>Repo 1.1.0</h3>
-  <p>App trên Home: xem toàn bộ tweak trên repo, cách dùng, donate.</p>
-  <code class="file">com.jinkennguyen.jinken_1.1.0_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.jinken_1.1.0_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.jinken/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">Repo</h3>
+      <span class="tweak-ver">1.1.0</span>
+    </div>
+    <p class="tweak-desc">App trên Home: xem toàn bộ tweak trên repo, cách dùng, donate.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.jinken_1.1.0_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.jinken_1.1.0_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.jinken/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>SettingSZ 1.0.11</h3>
-  <p>Sắp lại Cài đặt: kệ, màu đề mục, kéo đổi cỡ dòng.</p>
-  <code class="file">com.jinkennguyen.settingsz_1.0.11_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.settingsz_1.0.11_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.settingsz/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">SettingSZ</h3>
+      <span class="tweak-ver">1.0.11</span>
+    </div>
+    <p class="tweak-desc">Sắp lại Cài đặt: kệ, màu đề mục, kéo đổi cỡ dòng.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.settingsz_1.0.11_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.settingsz_1.0.11_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.settingsz/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>SlapIos 1.2.0</h3>
-  <p>Vỗ, gõ, lắc máy thì kêu. Nhiều gói tiếng; chọn Rên thì chỉ rên.</p>
-  <code class="file">com.jinkennguyen.slapios_1.2.0_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.slapios_1.2.0_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.slapios/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">SlapIos</h3>
+      <span class="tweak-ver">1.2.0</span>
+    </div>
+    <p class="tweak-desc">Vỗ, gõ, lắc máy thì kêu. Nhiều gói tiếng; chọn Rên thì chỉ rên.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.slapios_1.2.0_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.slapios_1.2.0_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.slapios/">Chi tiết →</a>
+  </div>
 </article>
-<article class="card">
-  <h3>StatusBarInfo 1.3.0</h3>
-  <p>Chạm hoặc nhấn giữ thanh trạng thái ở Màn hình chính và trong mọi app. Hơn 78 thông số &amp; dữ liệu Internet trực tiếp.</p>
-  <code class="file">com.jinkennguyen.statusbarinfo_1.3.0_iphoneos-arm.deb</code>
-  <a class="more" href="../debs/rootful/com.jinkennguyen.statusbarinfo_1.3.0_iphoneos-arm.deb">Tải .deb</a>
-  <a class="more" href="../depictions/com.jinkennguyen.statusbarinfo/">Chi tiết</a>
+<article class="card tweak-card">
+  <div class="tweak-top">
+    <div class="tweak-head">
+      <h3 class="tweak-title">StatusBarInfo</h3>
+      <span class="tweak-ver">1.3.0</span>
+    </div>
+    <p class="tweak-desc">Chạm hoặc nhấn giữ thanh trạng thái ở Màn hình chính và trong mọi app. Hơn 78 thông số &amp; dữ liệu Internet trực tiếp.</p>
+    <div class="code-box" style="margin:8px 0;padding:8px 12px;">
+      <code style="font-size:12px;">com.jinkennguyen.statusbarinfo_1.3.0_iphoneos-arm.deb</code>
+    </div>
+  </div>
+  <div class="tweak-actions">
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../debs/rootful/com.jinkennguyen.statusbarinfo_1.3.0_iphoneos-arm.deb">Tải .deb</a>
+    <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/com.jinkennguyen.statusbarinfo/">Chi tiết →</a>
+  </div>
 </article></div>
-  <p><a class="more" href="../rootless/">Rootless</a> · <a class="more" href="../rootful/">Rootful</a> · <a class="more" href="../roothide/">RootHide</a></p>
-  <footer>Credit: Jinken Nguyen - 1989 · Donate: MB Bank 0345140889</footer>
+
+  <footer>
+    Credit: Jinken Nguyen - 1989 · Donate: MB Bank 0345140889 Nguyễn Tiến Triều
+  </footer>
 </main>
 </body>
 </html>

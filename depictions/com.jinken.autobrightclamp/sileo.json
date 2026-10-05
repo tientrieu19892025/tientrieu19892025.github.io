@@ -78,7 +78,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Xem GitHub repo / see the GitHub repo.",
+          "markdown": "**1.0.0**\nGiới hạn biên độ sáng min/max tự động. Chống chói ban đêm, chống quá nhiệt ban ngày, tiết kiệm pin. Tương thích 100% RootHide, Rootless, Rootful.",
           "useSpacing": true,
           "useRawFormat": false
         }

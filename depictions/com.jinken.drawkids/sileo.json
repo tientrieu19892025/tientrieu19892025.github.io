@@ -78,7 +78,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**1.6** (Build 7)\nỨng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Sửa triệt để lỗi khởi động, nâng cấp bảo mật container, hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.",
+          "markdown": "**1.6** (Build 7)\nỨng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Sửa triệt để lỗi khởi động, nâng cấp bảo mật container, hỗ trợ uicache trên RootHide, hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.",
           "useSpacing": true,
           "useRawFormat": false
         }

@@ -78,7 +78,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**1.0.0**\nNút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID. Chạm giữ để kéo thả tuỳ chỉnh vị trí trực tiếp, 5 phong cách đồ hoạ Liquid Glass sang trọng, tuỳ biến biểu tượng và kích thước, rung phản hồi Haptic.",
+          "markdown": "Xem GitHub repo / see the GitHub repo.",
           "useSpacing": true,
           "useRawFormat": false
         }
