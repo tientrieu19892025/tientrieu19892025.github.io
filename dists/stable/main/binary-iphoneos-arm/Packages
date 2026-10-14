@@ -254,16 +254,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
 Package: com.jinkennguyen.glassvolume
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 428
+Installed-Size: 444
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootful/com.jinkennguyen.glassvolume_1.0.0_iphoneos-arm.deb
-Size: 37912
-MD5sum: cbaf91fee575104d2ac33c9744cd7eb7
-SHA1: 54d23a2e934819d685851757d02157d4194e9b68
-SHA256: 443ccd17088e70c7eee167d90fc5a46e20728ca76819f054d14cad4a3c35d000
+Filename: debs/rootful/com.jinkennguyen.glassvolume_1.0.1_iphoneos-arm.deb
+Size: 40468
+MD5sum: 1121fcb56784b703cede6149518dd9d0
+SHA1: 4f58f93f1d4a99d4e26b21d9e734848baa9ffe8d
+SHA256: becb7c37d75b2110608aeb518646c01ac86187b05575aafaed22f825eea480a3
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989

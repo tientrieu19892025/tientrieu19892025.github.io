@@ -42,7 +42,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | DuoFrame | `com.jinkennguyen.duoframe` | 3.5.3 | rootful, rootless, RootHide |
 | English Kids | `com.jinken.englishkids` | 1.7 | rootful, rootless, RootHide |
 | FreezeBuster Pro | `com.jinken.freezebuster` | 1.2.0 | rootful, rootless, RootHide |
-| GlassVolume | `com.jinkennguyen.glassvolume` | 1.0.0 | rootful, rootless, RootHide |
+| GlassVolume | `com.jinkennguyen.glassvolume` | 1.0.1 | rootful, rootless, RootHide |
 | ListApp | `com.jinken.listapp` | 1.2.3 | rootful, rootless, RootHide |
 | Lock Frame | `com.jinkennguyen.haloframe` | 3.2.3 | rootful, rootless, RootHide |
 | LookGlass | `com.jinkennguyen.lookglass` | 4.0.7 | rootful, rootless, RootHide |
