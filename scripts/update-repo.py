@@ -615,7 +615,10 @@ Biên dịch lại bằng Theos-RootHide chuẩn, khắc phục hoàn toàn lỗ
 
 **1.1.0**
 Sửa lỗi Safe Mode khi cài đặt. Cải tiến thuật toán phát hiện Watchdog timeout và giải phóng bộ nhớ tức thì.""",
-    "com.jinken.orientflow": """**1.0.8**
+    "com.jinken.orientflow": """**1.0.9**
+Khắc phục triệt để lỗi nút xoay tự động lặp lại liên tục sau mỗi 2s khi người dùng đang giữ ngang mà không bấm. Tối ưu góc nghiêng gyro và trải nghiệm ổn định.
+
+**1.0.8**
 Nâng cấp khả năng phản hồi cảm ứng, tối ưu kích thước nút xoay và hỗ trợ trọn vẹn RootHide.
 
 **1.0.7**
