@@ -219,6 +219,10 @@ BLURBS = {
         "Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.",
         "Smart Auto-Brightness Limiter: clamp minimum and maximum brightness boundaries to prevent eye strain at night, avoid overheating in sunlight, and maximize battery life.",
     ),
+    "com.jinkennguyen.glassvolume": (
+        "Tweak chuyển thanh âm lượng sang cạnh phải màn hình với phong cách Liquid Glass (Kính lỏng) đẳng cấp, 5 chủ đề kính, tùy chỉnh 16/32/64/100 bước âm lượng và rung haptic.",
+        "Liquid Glass Volume HUD moved to the right side of the screen with 5 luxury glass themes, 16/32/64/100 precision volume steps, and smooth haptic feedback.",
+    ),
 }
 
 FEATURE_GUIDES = {
