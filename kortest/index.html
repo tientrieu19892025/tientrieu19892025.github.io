@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Trắc nghiệm tiếng Hàn</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="confetti"></canvas>
+
+<!-- ============ TRANG CHỦ ============ -->
+<section id="scr-home" class="screen active">
+  <div class="hero">
+    <div class="hero-emoji">🎧</div>
+    <h1>Trắc nghiệm tiếng Hàn</h1>
+    <p class="hero-sub">Hơn 10.000 câu trắc nghiệm Nghe &amp; Đọc tiếng Hàn<br>6 cấp độ từ Sơ cấp đến Cao cấp</p>
+    <div class="hero-stats"><span id="home-total">0 câu hỏi</span> · <span id="home-done">0 đề đã làm</span></div>
+    <div class="hero-stats2" id="home-stats"></div>
+  </div>
+  <div class="pad">
+    <div class="card resume-card" id="resume-card" style="display:none">
+      <div class="wrong-info">
+        <div class="wrong-title">⏸️ Bài đang làm dở</div>
+        <div class="muted" id="resume-info"></div>
+      </div>
+      <div class="resume-btns">
+        <button class="btn primary" id="btn-resume">Làm tiếp</button>
+        <button class="btn ghost" id="btn-resume-drop">Bỏ</button>
+      </div>
+    </div>
+    <h3 class="sec-t">📚 Chọn cấp độ</h3>
+    <div id="level-grid" class="level-grid"></div>
+    <div class="card wrong-card">
+      <div class="wrong-info">
+        <div class="wrong-title">📝 Câu hay sai</div>
+        <div class="muted" id="home-wrong-count">Chưa có câu nào</div>
+      </div>
+      <button class="btn primary" id="btn-wrong">Ôn lại</button>
+    </div>
+    <!-- Tải App & Cài đặt Mobile -->
+    <div class="card" style="margin-bottom:14px;background:linear-gradient(135deg,rgba(79,109,245,0.08),rgba(124,92,240,0.15));border:1.5px solid var(--acc);border-radius:18px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+        <span style="font-size:34px;">📱</span>
+        <div>
+          <b style="font-size:16px;color:var(--ink);">Tải App Cài Đặt Trực Tiếp (Offline 100%)</b>
+          <div style="font-size:12px;color:var(--muted);">Kèm trọn bộ 5.020 file âm thanh không cần internet</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
+        <a class="btn primary" style="text-decoration:none;text-align:center;padding:10px 6px;font-size:13px;border-radius:10px;" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/TracNghiemHan.ipa">🍏 Tải IPA (iOS TrollStore)</a>
+        <a class="btn primary" style="text-decoration:none;text-align:center;padding:10px 6px;font-size:13px;border-radius:10px;background:#10b981;" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/TracNghiemHan.apk">🤖 Tải APK (Android)</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:10px;">
+        <a class="btn ghost" style="text-decoration:none;text-align:center;padding:6px 2px;font-size:11px;" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm64.deb">Rootless .deb</a>
+        <a class="btn ghost" style="text-decoration:none;text-align:center;padding:6px 2px;font-size:11px;" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm.deb">Rootful .deb</a>
+        <a class="btn ghost" style="text-decoration:none;text-align:center;padding:6px 2px;font-size:11px;" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm64e.deb">RootHide .deb</a>
+      </div>
+      <a class="btn ghost" style="text-decoration:none;display:block;text-align:center;font-size:12px;padding:6px;" href="../#tweaks">🏪 Thêm nguồn Repo Jinken vào Sileo / Zebra / Cydia →</a>
+    </div>
+
+    <h3 class="sec-t">📌 Tiện ích</h3>
+    <div class="menu">
+      <button class="menu-row donate" data-go="donate"><i>❤️</i><div><b>Ủng hộ</b><span>Donate cho mình nhé</span></div><em>›</em></button>
+      <button class="menu-row" data-go="settings"><i>⚙️</i><div><b>Cài đặt</b><span>Giao diện, âm thanh</span></div><em>›</em></button>
+      <button class="menu-row" data-go="about"><i>ℹ️</i><div><b>Giới thiệu</b><span>Về app &amp; liên hệ</span></div><em>›</em></button>
+    </div>
+    <div class="howto">
+      <b>📖 Cách làm bài:</b> Chọn cấp độ → chọn phần <b>🎧 Nghe</b> / <b>📖 Đọc</b> → chọn số câu → Bắt đầu.
+      Trong bài thi, <b>vuốt sang trái</b> để sang câu tiếp theo, <b>vuốt sang phải</b> để quay lại câu trước.
+      Câu nghe có nút <b>🔊 Nghe lại</b> để nghe nhiều lần.
+    </div>
+    <div class="ticker"><div id="ticker-text">🎧 Chào mừng đến với Trắc nghiệm tiếng Hàn! Chúc bạn học vui! 📖</div></div>
+    <footer class="credit">Made with ❤️ by <b>Jinken Nguyễn · 1989</b></footer>
+  </div>
+</section>
+
+<!-- ============ CHỌN ĐỀ ============ -->
+<section id="scr-setup" class="screen">
+  <header class="bar"><button class="back" data-go="home">‹</button><h2 id="setup-title">📝 Chọn đề thi</h2><span class="bar-sp"></span></header>
+  <div class="pad">
+    <div class="card">
+      <h3 class="sec-t first">🎯 Phần thi</h3>
+      <div class="seg" id="skill-seg">
+        <button data-skill="nghe" class="on">🎧 Nghe</button>
+        <button data-skill="doc">📖 Đọc</button>
+        <button data-skill="both">🎲 Cả hai</button>
+      </div>
+      <p class="hint" id="setup-count-hint"></p>
+    </div>
+    <div class="card">
+      <h3 class="sec-t first">🔢 Số câu hỏi</h3>
+      <div class="seg" id="num-seg">
+        <button data-num="10" class="on">10</button>
+        <button data-num="20">20</button>
+        <button data-num="30">30</button>
+        <button data-num="50">50</button>
+      </div>
+    </div>
+    <button class="mbtn big" id="btn-start">▶ Bắt đầu làm bài</button>
+  </div>
+</section>
+
+<!-- ============ LÀM BÀI ============ -->
+<section id="scr-quiz" class="screen">
+  <header class="bar"><button class="back" id="quiz-exit">‹</button><h2 id="quiz-title">📝 Bài thi</h2><span class="bar-sp" id="quiz-timer">00:00</span></header>
+  <div class="qprogress"><div id="qprogress-fill"></div></div>
+  <div class="pad" id="quiz-pad">
+    <div class="qmeta"><span id="q-count">Câu 1/20</span><span id="q-skill" class="qbadge">🎧 Nghe</span><span id="q-answered">Đã làm: 0</span></div>
+    <div id="quiz-card" class="qcard">
+      <div id="q-audio-row" class="audio-row" style="display:none">
+        <button class="mbtn audio-btn" id="btn-replay">🔊 Nghe lại</button>
+        <span class="audio-hint">👆 vuốt ← / → để chuyển câu</span>
+      </div>
+      <div id="q-passage" class="passage" style="display:none"></div>
+      <div id="q-prompt" class="qprompt"></div>
+      <div id="q-options" class="qoptions"></div>
+    </div>
+    <div class="qnav">
+      <button class="mbtn ghost" id="btn-prev">‹ Trước</button>
+      <button class="mbtn ghost" id="btn-next">Sau ›</button>
+      <button class="mbtn" id="btn-submit">✅ Nộp bài</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KẾT QUẢ ============ -->
+<section id="scr-result" class="screen">
+  <header class="bar"><button class="back" data-go="home">‹</button><h2>🏆 Kết quả</h2><span class="bar-sp"></span></header>
+  <div class="pad center">
+    <div class="score-ring"><div id="res-score">0/20</div><div id="res-pct">0%</div></div>
+    <div id="res-msg" class="res-msg"></div>
+    <div class="res-stats">
+      <div class="res-stat"><span>⏱ Thời gian</span><b id="res-time">00:00</b></div>
+      <div class="res-stat"><span>✅ Đúng</span><b id="res-ok">0</b></div>
+      <div class="res-stat"><span>❌ Sai</span><b id="res-bad">0</b></div>
+      <div class="res-stat"><span>🏅 Kỷ lục</span><b id="res-best">—</b></div>
+    </div>
+    <button class="mbtn big" id="btn-review">🔍 Xem đáp án chi tiết</button>
+    <div class="row2">
+      <button class="mbtn ghost" id="btn-retry">🔄 Làm lại</button>
+      <button class="mbtn ghost" data-go="home">🏠 Trang chủ</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ XEM ĐÁP ÁN ============ -->
+<section id="scr-review" class="screen">
+  <header class="bar"><button class="back" id="review-back">‹</button><h2>🔍 Đáp án chi tiết</h2><span class="bar-sp"></span></header>
+  <div class="pad"><div id="review-list"></div></div>
+</section>
+
+<!-- ============ CÂU HAY SAI ============ -->
+<section id="scr-wrong" class="screen">
+  <header class="bar"><button class="back" id="wrong-back">‹</button><h2>📝 Câu hay sai</h2><button class="tbtn danger" id="wrong-clear">Xóa hết</button></header>
+  <div class="pad">
+    <p class="muted" id="wrong-sub"></p>
+    <div id="wrong-list"></div>
+    <button class="mbtn big" id="wrong-practice" style="margin-top:14px">▶ Luyện lại tất cả</button>
+  </div>
+</section>
+
+<!-- ============ ỦNG HỘ ============ -->
+<section id="scr-donate" class="screen">
+  <header class="bar"><button class="back" data-go="home">‹</button><h2>❤️ Ủng hộ</h2><span class="bar-sp"></span></header>
+  <div class="pad">
+    <div class="donate-card">
+      <img src="img/logo.png" class="donate-logo" alt="Trắc nghiệm tiếng Hàn">
+      <h3>❤️ Ủng hộ mình</h3>
+      <p class="donate-thanks">Cảm ơn bạn đã ủng hộ! Nhờ có bạn, mình sẽ làm thêm thật nhiều app học tiếng Hàn hay nữa. Chúc bạn học vui! 🎧</p>
+      <img src="../assets/vietqr.png" style="max-width:240px;width:100%;border-radius:12px;margin:10px auto;display:block;box-shadow:0 4px 12px rgba(0,0,0,0.1);" alt="VietQR MB Bank 0345140889 Nguyễn Tiến Triều">
+      <div class="donate-box">
+        <div class="donate-row"><span>Ngân hàng</span><b>MB BANK</b></div>
+        <div class="donate-row"><span>Số tài khoản</span><b class="donate-acct">0345140889</b></div>
+        <div class="donate-row"><span>Chủ tài khoản</span><b>Nguyễn Tiến Triều</b></div>
+      </div>
+      <button class="mbtn" id="btn-copy-acct">📋 Sao chép số tài khoản</button>
+      <p class="donate-note">Bạn kiểm tra kỹ số tài khoản trước khi chuyển nhé.</p>
+      <button class="zalo-btn" id="btn-zalo2">💬 Nhắn Zalo: 0345 140 889</button>
+      <p class="credit">Phát triển bởi <b>Jinken Nguyễn · 1989</b> ❤️</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CÀI ĐẶT ============ -->
+<section id="scr-settings" class="screen">
+  <header class="bar"><button class="back" data-go="home">‹</button><h2>⚙️ Cài đặt</h2><span class="bar-sp"></span></header>
+  <div class="pad">
+    <div class="card">
+      <div class="set-row"><span>🌙 Giao diện tối</span><button id="set-theme" class="toggle">TẮT</button></div>
+      <div class="set-row"><span>🔊 Tự phát audio câu nghe</span><button id="set-autoplay" class="toggle on">BẬT</button></div>
+      <div class="set-row"><span>🔔 Âm thanh</span><button id="set-sound" class="toggle on">BẬT</button></div>
+    </div>
+    <div class="card">
+      <h3 class="sec-t first">🎨 Cá nhân hóa</h3>
+      <button class="menu-row" data-go="theme"><i>🎨</i><div><b>Giao diện</b><span>Kiểu hiển thị, phong cách, màu sắc</span></div><em>›</em></button>
+    </div>
+    <div class="card">
+      <h3 class="sec-t first">🗑 Dữ liệu</h3>
+      <button class="mbtn ghost danger" id="btn-reset">Xóa toàn bộ tiến độ &amp; kỷ lục</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GIAO DIỆN ============ -->
+<section id="scr-theme" class="screen">
+  <header class="bar"><button class="back" data-go="settings">‹</button><h2>🎨 Giao diện</h2><span class="bar-sp"></span></header>
+  <div class="pad">
+    <h3 class="sec-t first">📐 Kiểu hiển thị câu hỏi</h3>
+    <div id="theme-layout" class="theme-opts"></div>
+    <h3 class="sec-t">✨ Phong cách</h3>
+    <div id="theme-style" class="theme-opts"></div>
+    <h3 class="sec-t">🎨 Màu chủ đạo</h3>
+    <div id="theme-color" class="theme-colors"></div>
+    <p class="hint">Mọi thay đổi áp dụng ngay, không cần khởi động lại app.<br>Kiểu hiển thị áp dụng cho màn <b>🔍 Xem đáp án</b> và <b>📝 Câu hay sai</b>.</p>
+  </div>
+</section>
+
+<!-- ============ GIỚI THIỆU ============ -->
+<section id="scr-about" class="screen">
+  <header class="bar"><button class="back" data-go="home">‹</button><h2>ℹ️ Giới thiệu</h2><span class="bar-sp"></span></header>
+  <div class="pad">
+    <div class="card center">
+      <div class="donate-emoji">🎧</div>
+      <h3>Trắc nghiệm tiếng Hàn v1.4</h3>
+      <p class="muted">App trắc nghiệm Nghe &amp; Đọc tiếng Hàn với hơn 10.000 câu hỏi nguyên bản, chia 6 cấp độ từ Sơ cấp (TOPIK 1-2) qua Trung cấp (TOPIK 3-4) đến Cao cấp (TOPIK 5-6).</p>
+      <p class="muted">Mỗi cấp độ gồm hàng ngàn câu Nghe (từ vựng, hội thoại, đoạn văn — có audio giọng bản xứ) và câu Đọc (từ vựng, ngữ pháp, đọc hiểu). Vuốt để chuyển câu, ôn lại các câu hay sai, lưu kỷ lục từng cấp độ.</p>
+      <button class="zalo-btn" id="btn-zalo3">💬 Nhắn Zalo: 0345 140 889</button>
+      <p class="credit">Phát triển bởi <b>Jinken Nguyễn · 1989</b> ❤️</p>
+    </div>
+  </div>
+</section>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

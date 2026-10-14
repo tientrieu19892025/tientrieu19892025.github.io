@@ -207,6 +207,10 @@ BLURBS = {
         "Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh, flashcard, mini-game và thanh chữ chạy.",
         "Interactive English learning app for kids: vocabulary, pronunciation, flashcards, games and live ticker.",
     ),
+    "com.jinken.koreantest": (
+        "Ứng dụng ôn luyện trắc nghiệm tiếng Hàn chuẩn TOPIK 1-6 với 10.042 câu hỏi đọc & nghe, 5.020 file âm thanh phát âm bản ngữ, chạy mượt mà 100% không văng.",
+        "Korean language test prep app with 10,042 TOPIK 1-6 reading & listening questions, 5,020 native audio clips, smooth offline performance.",
+    ),
     "com.jinken.drawkids": (
         "Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu và bảng vẽ sáng tạo.",
         "Interactive drawing and coloring app for kids: step-by-step guides, coloring, color mixing and free canvas.",
@@ -630,6 +634,14 @@ Cập nhật danh mục tweak mới nhất, vá giao diện Liquid Glass và h�
 App trên Home. Mở để xem tweak trên repo, cách dùng, donate. Kéo xuống để lấy danh sách mới.""",
     "com.jinken.englishkids": """**1.7** (Build 13)
 Ứng dụng học tiếng Anh tương tác cho trẻ em (English Kids). Khắc phục đường dẫn sandbox và tài nguyên trên RootHide, học từ vựng theo chủ đề, phát âm chuẩn, mini games câu đố tương tác, flashcards.""",
+    "com.jinken.koreantest": """**1.4** (Build 5)
+Bản phát hành chính thức Trắc nghiệm tiếng Hàn cho iOS Jailbreak:
+• Đầy đủ 3 bản build tối ưu: Rootless, Rootful, RootHide.
+• Gói trọn 10.042 câu trắc nghiệm (nghe & đọc) phân chia 6 cấp độ (TOPIK 1 đến 6).
+• 5.020 file âm thanh audio giọng nam & nữ chuẩn bản ngữ, hỗ trợ autoplay native mượt mà.
+• Ký fake-sign ldid với entitlement vượt sandbox: không văng app, không màn hình trắng.
+• Tự động chạy uicache sau khi cài đặt qua Cydia, Sileo, Zebra hoặc Filza.
+• Có sẵn file cài đặt IPA cho TrollStore / Sideload và file APK cho Android.""",
     "com.jinken.drawkids": """**1.6** (Build 7)
 Ứng dụng học vẽ và tô màu tương tác cho bé (Bé học Vẽ). Sửa triệt để lỗi khởi động, nâng cấp bảo mật container, hỗ trợ uicache trên RootHide, hướng dẫn từng nét vẽ con vật, đồ vật, pha màu, bảng vẽ tự do, chạy offline 100%.""",
 }
@@ -1137,10 +1149,13 @@ def write_kind_pages(packages: dict[str, dict], conf: dict) -> None:
         cards = []
         for pkg, info in sorted(packages.items(), key=lambda kv: kv[1]["Name"].lower()):
             href = info.get("files", {}).get(kind["arch"])
+            if not href and pkg == "com.jinken.koreantest":
+                href = f"https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/{pkg}_{info['Version']}_{kind['arch']}.deb"
             if not href:
                 continue
             vi, en = BLURBS.get(pkg, (info.get("blurb", ""), ""))
             fname = href.rsplit("/", 1)[-1]
+            dl_link = href if href.startswith("http") else f"../{html_escape(href)}"
             cards.append(
                 f"""
 <article class="card tweak-card">
@@ -1155,7 +1170,7 @@ def write_kind_pages(packages: dict[str, dict], conf: dict) -> None:
     </div>
   </div>
   <div class="tweak-actions">
-    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="../{html_escape(href)}">Tải .deb</a>
+    <a class="btn primary" style="padding:7px 14px;font-size:13px;" href="{dl_link}">Tải .deb</a>
     <a class="btn" style="padding:7px 14px;font-size:13px;" href="../depictions/{html_escape(pkg)}/">Chi tiết →</a>
   </div>
 </article>"""
@@ -1292,22 +1307,38 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
             if href:
                 cls = "roothide" if kind["id"] == "roothide" else ""
                 links.append(f'<a class="dl-chip {cls}" href="{html_escape(href)}">{html_escape(kind["title"])}</a>')
+            elif pkg == "com.jinken.koreantest":
+                rel_url = f"https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/{pkg}_{info['Version']}_{kind['arch']}.deb"
+                cls = "roothide" if kind["id"] == "roothide" else ""
+                links.append(f'<a class="dl-chip {cls}" href="{html_escape(rel_url)}">{html_escape(kind["title"])}</a>')
         
         ipa_file = None
+        ipa_link = ""
         if pkg == "com.jinken.englishkids":
             ipa_file = ROOT / "extras" / "EnglishKids.ipa"
+            if ipa_file.is_file():
+                ipa_link = f' <a class="dl-chip ipa" href="{ipa_file.relative_to(ROOT)}">IPA (iOS)</a>'
         elif pkg == "com.jinken.drawkids":
             ipa_file = ROOT / "extras" / "BeHocVe.ipa"
-        ipa_link = f' <a class="dl-chip ipa" href="{ipa_file.relative_to(ROOT)}">IPA (iOS)</a>' if ipa_file and ipa_file.is_file() else ""
+            if ipa_file.is_file():
+                ipa_link = f' <a class="dl-chip ipa" href="{ipa_file.relative_to(ROOT)}">IPA (iOS)</a>'
+        elif pkg == "com.jinken.koreantest":
+            ipa_link = ' <a class="dl-chip ipa" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/TracNghiemHan.ipa">IPA (iOS)</a>'
 
         apk_file = None
+        apk_link = ""
         if pkg == "com.jinken.englishkids":
             apk_file = ROOT / "extras" / "EnglishKids.apk"
+            if apk_file.is_file():
+                apk_link = f' <a class="dl-chip apk" href="{apk_file.relative_to(ROOT)}">APK (Android)</a>'
         elif pkg == "com.jinken.drawkids":
             apk_file = ROOT / "extras" / "BeHocVe.apk"
-        apk_link = f' <a class="dl-chip apk" href="{apk_file.relative_to(ROOT)}">APK (Android)</a>' if apk_file and apk_file.is_file() else ""
+            if apk_file.is_file():
+                apk_link = f' <a class="dl-chip apk" href="{apk_file.relative_to(ROOT)}">APK (Android)</a>'
+        elif pkg == "com.jinken.koreantest":
+            apk_link = ' <a class="dl-chip apk" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/TracNghiemHan.apk">APK (Android)</a>'
 
-        is_app = 1 if (ipa_link or apk_link or "com.jinkennguyen.jinken" in pkg) else 0
+        is_app = 1 if (ipa_link or apk_link or "com.jinkennguyen.jinken" in pkg or pkg == "com.jinken.koreantest") else 0
 
         tweak_cards.append(
             f"""
@@ -1444,6 +1475,20 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
       <div class="tweak-downloads">
         <a class="btn primary" style="padding:8px 14px;font-size:13px;width:100%;margin-bottom:6px;" href="extras/EnglishKids.ipa">🍏 Tải file EnglishKids.ipa (47MB - iOS)</a>
         <a class="btn" style="padding:8px 14px;font-size:13px;width:100%;" href="extras/EnglishKids.apk">🤖 Tải file EnglishKids.apk (50MB - Android)</a>
+      </div>
+    </div>
+
+    <div class="card" style="border-color:rgba(244,114,182,0.3);">
+      <div class="tweak-head">
+        <h3 class="tweak-title">Trắc nghiệm tiếng Hàn</h3>
+        <span class="tweak-ver" style="background:rgba(244,114,182,0.15);color:#f472b6;">v1.4 (Build 5)</span>
+      </div>
+      <p class="tweak-desc">10.042 câu trắc nghiệm TOPIK 1-6 kèm 5.020 file âm thanh audio giọng đọc bản ngữ. Tự động phát âm thanh, mượt mà không văng app.</p>
+      <p class="tweak-en">Hỗ trợ đầy đủ iOS 15 - 18 Jailbreak (Rootless, Rootful, RootHide), TrollStore và Android APK.</p>
+      <div class="tweak-downloads">
+        <a class="btn primary" style="padding:8px 14px;font-size:13px;width:100%;margin-bottom:6px;" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/TracNghiemHan.ipa">🍏 Tải file TracNghiemHan.ipa (169MB - iOS)</a>
+        <a class="btn" style="padding:8px 14px;font-size:13px;width:100%;margin-bottom:6px;" href="https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/TracNghiemHan.apk">🤖 Tải file TracNghiemHan.apk (172MB - Android)</a>
+        <a class="btn gold" style="padding:8px 14px;font-size:13px;width:100%;" href="kortest/">🌐 Mở Web App Trắc Nghiệm Online (/kortest) →</a>
       </div>
     </div>
   </div>
@@ -1724,6 +1769,34 @@ def main() -> int:
             except Exception as exc:
                 print(f"icon skip {pkg}: {exc}")
 
+    # Inject com.jinken.koreantest
+    if "com.jinken.koreantest" not in packages:
+        packages["com.jinken.koreantest"] = {
+            "Name": "Trắc nghiệm tiếng Hàn",
+            "Version": "1.4",
+            "Section": "Education",
+            "archs": ["iphoneos-arm", "iphoneos-arm64", "iphoneos-arm64e"],
+            "files": {
+                "iphoneos-arm": "https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm.deb",
+                "iphoneos-arm64": "https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm64.deb",
+                "iphoneos-arm64e": "https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm64e.deb",
+            },
+            "blurb": BLURBS["com.jinken.koreantest"][0],
+            "fields": {
+                "Package": "com.jinken.koreantest",
+                "Name": "Trắc nghiệm tiếng Hàn",
+                "Version": "1.4",
+                "Section": "Education",
+                "Architecture": "iphoneos-arm64",
+                "Maintainer": conf["AUTHOR"],
+                "Author": conf["AUTHOR"],
+                "Depends": "firmware (>= 15.0)",
+                "Tag": "role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18",
+                "Icon": f"{base}/icons/com.jinken.koreantest.png",
+                "Description": BLURBS["com.jinken.koreantest"][0],
+            },
+        }
+
     for leftover in debs_dir.rglob("*.deb"):
         rel = leftover.relative_to(debs_dir).as_posix()
         if rel not in keep_debs:
@@ -1801,6 +1874,37 @@ def main() -> int:
             if "Maintainer:" not in block:
                 lines.append(f"Maintainer: {conf['AUTHOR']}")
         rewritten.append("\n".join(lines))
+
+    # com.jinken.koreantest hosted on GitHub Releases
+    kt_vi = BLURBS["com.jinken.koreantest"][0]
+    kt_cfgs = [
+        ("iphoneos-arm", "com.jinken.koreantest_1.4_iphoneos-arm.deb", 172791164, "a6fac6a1f05e85e5ae338fa5814337ae", "6bb61a33b229e225101cc37fa5b52d539f23fbf6", "dea319939b583f8281e19a8ffa9835d1a9b7769a1653eea93d6af95e955eb20c"),
+        ("iphoneos-arm64", "com.jinken.koreantest_1.4_iphoneos-arm64.deb", 172789824, "c95175aef5cca4f87a8228a094aa4bfd", "ff0fddbf141bb8ae3a2cd79376f511d77999a952", "d22c75acf5aef093db8fd62f8b6f8b7fdd4b41fb0f259f52547488a9e4c35150"),
+        ("iphoneos-arm64e", "com.jinken.koreantest_1.4_iphoneos-arm64e.deb", 172791152, "38439c974b261f7093464043e87c7d3e", "0e18ebd5137426d31898cb245bc1e51182cde532", "f75d50541d4bf607262f109e89a4ac4502d363ff97e2768b858a49a0e3f7ad96"),
+    ]
+    for arch, deb_name, size, md5, sha1, sha256 in kt_cfgs:
+        rel_fn = f"https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/{deb_name}"
+        kt_block = f"""Package: com.jinken.koreantest
+Version: 1.4
+Architecture: {arch}
+Maintainer: {conf['AUTHOR']}
+Depends: firmware (>= 15.0)
+Filename: {rel_fn}
+Size: {size}
+MD5sum: {md5}
+SHA1: {sha1}
+SHA256: {sha256}
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: {conf['AUTHOR']}
+Name: Trắc nghiệm tiếng Hàn
+Description: {kt_vi}
+Depiction: {base}/depictions/com.jinken.koreantest/index.html
+SileoDepiction: {base}/depictions/com.jinken.koreantest/sileo.json
+Homepage: {base}/#donate
+Icon: {base}/icons/com.jinken.koreantest.png"""
+        rewritten.append(kt_block)
+
     packages_text = "\n\n".join(rewritten) + "\n"
     (ROOT / "Packages").write_text(packages_text, encoding="utf-8")
     with gzip.open(ROOT / "Packages.gz", "wt", encoding="utf-8") as gz:

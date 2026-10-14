@@ -1332,3 +1332,63 @@ Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statu
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.statusbarinfo/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.statusbarinfo.png
+
+Package: com.jinken.koreantest
+Version: 1.4
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Depends: firmware (>= 15.0)
+Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm.deb
+Size: 172791164
+MD5sum: a6fac6a1f05e85e5ae338fa5814337ae
+SHA1: 6bb61a33b229e225101cc37fa5b52d539f23fbf6
+SHA256: dea319939b583f8281e19a8ffa9835d1a9b7769a1653eea93d6af95e955eb20c
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: Trắc nghiệm tiếng Hàn
+Description: Ứng dụng ôn luyện trắc nghiệm tiếng Hàn chuẩn TOPIK 1-6 với 10.042 câu hỏi đọc & nghe, 5.020 file âm thanh phát âm bản ngữ, chạy mượt mà 100% không văng.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.koreantest/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.koreantest/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.koreantest.png
+
+Package: com.jinken.koreantest
+Version: 1.4
+Architecture: iphoneos-arm64
+Maintainer: Jinken Nguyen - 1989
+Depends: firmware (>= 15.0)
+Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm64.deb
+Size: 172789824
+MD5sum: c95175aef5cca4f87a8228a094aa4bfd
+SHA1: ff0fddbf141bb8ae3a2cd79376f511d77999a952
+SHA256: d22c75acf5aef093db8fd62f8b6f8b7fdd4b41fb0f259f52547488a9e4c35150
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: Trắc nghiệm tiếng Hàn
+Description: Ứng dụng ôn luyện trắc nghiệm tiếng Hàn chuẩn TOPIK 1-6 với 10.042 câu hỏi đọc & nghe, 5.020 file âm thanh phát âm bản ngữ, chạy mượt mà 100% không văng.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.koreantest/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.koreantest/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.koreantest.png
+
+Package: com.jinken.koreantest
+Version: 1.4
+Architecture: iphoneos-arm64e
+Maintainer: Jinken Nguyen - 1989
+Depends: firmware (>= 15.0)
+Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm64e.deb
+Size: 172791152
+MD5sum: 38439c974b261f7093464043e87c7d3e
+SHA1: 0e18ebd5137426d31898cb245bc1e51182cde532
+SHA256: f75d50541d4bf607262f109e89a4ac4502d363ff97e2768b858a49a0e3f7ad96
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: Trắc nghiệm tiếng Hàn
+Description: Ứng dụng ôn luyện trắc nghiệm tiếng Hàn chuẩn TOPIK 1-6 với 10.042 câu hỏi đọc & nghe, 5.020 file âm thanh phát âm bản ngữ, chạy mượt mà 100% không văng.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.koreantest/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.koreantest/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+Icon: https://tientrieu19892025.github.io/icons/com.jinken.koreantest.png
