@@ -253,27 +253,6 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.duoframe.png
 
-Package: com.jinkennguyen.glassvolume
-Version: 1.0.1
-Architecture: iphoneos-arm
-Maintainer: Jinken Nguyen - 1989
-Installed-Size: 444
-Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootful/com.jinkennguyen.glassvolume_1.0.1_iphoneos-arm.deb
-Size: 40468
-MD5sum: 1121fcb56784b703cede6149518dd9d0
-SHA1: 4f58f93f1d4a99d4e26b21d9e734848baa9ffe8d
-SHA256: becb7c37d75b2110608aeb518646c01ac86187b05575aafaed22f825eea480a3
-Section: Tweaks
-Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
-Author: Jinken Nguyen - 1989
-Name: GlassVolume
-Description: Tweak chuyển thanh âm lượng sang cạnh phải màn hình với phong cách Liquid Glass (Kính lỏng) đẳng cấp, 5 chủ đề kính, tùy chỉnh 16/32/64/100 bước âm lượng và rung haptic.
-Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.glassvolume/index.html
-SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.glassvolume/sileo.json
-Homepage: https://tientrieu19892025.github.io/#donate
-Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.glassvolume.png
-
 Package: com.jinkennguyen.haloframe
 Version: 3.2.3
 Architecture: iphoneos-arm
