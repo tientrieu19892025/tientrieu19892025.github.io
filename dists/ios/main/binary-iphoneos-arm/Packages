@@ -443,15 +443,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.statusbarinfo.png
 
 Package: com.jinken.koreantest
-Version: 1.4
+Version: 1.5
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
-Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm.deb
-Size: 172793128
-MD5sum: 3abe11b2476b7a220961fb0bac9e1709
-SHA1: 26aacf76588160b55dbaaf7196d24c4d73490a27
-SHA256: 73564dafe4ec76ea899feb95d3a531da6128f2b4d4b2ac0e5644ab7f0c211c2c
+Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.5/com.jinken.koreantest_1.5_iphoneos-arm.deb
+Size: 173076568
+MD5sum: e8ed590a6dea656a2740ee23fbddb174
+SHA1: 58866e71a9a58dc295613097533589aa7778063c
+SHA256: 952e09ba9101ef55f0ba24b71fdc4b74a06d767feee1c97754f6ec75cba70e66
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989

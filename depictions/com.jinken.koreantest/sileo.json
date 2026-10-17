@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**Trắc nghiệm tiếng Hàn** — Ứng dụng ôn luyện trắc nghiệm tiếng Hàn chuẩn TOPIK 1-6 với 10.042 câu hỏi đọc & nghe, 5.020 file âm thanh phát âm bản ngữ, chạy mượt mà 100% không văng.\n\nKorean language test prep app with 10,042 TOPIK 1-6 reading & listening questions, 5,020 native audio clips, smooth offline performance.\n\n**Phiên bản / Version:** 1.4  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → Trắc nghiệm tiếng Hàn**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**Trắc nghiệm tiếng Hàn** — Ứng dụng ôn luyện trắc nghiệm tiếng Hàn chuẩn TOPIK 1-6 với 10.042 câu hỏi đọc & nghe, 5.020 file âm thanh phát âm bản ngữ, chạy mượt mà 100% không văng.\n\nKorean language test prep app with 10,042 TOPIK 1-6 reading & listening questions, 5,020 native audio clips, smooth offline performance.\n\n**Phiên bản / Version:** 1.5  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → Trắc nghiệm tiếng Hàn**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.4"
+          "text": "1.5"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,12 +73,12 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "1.4",
+          "title": "1.5",
           "useBoldText": true
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**1.4** (Build 5)\nBản phát hành chính thức Trắc nghiệm tiếng Hàn cho iOS Jailbreak:\n• Đầy đủ 3 bản build tối ưu: Rootless, Rootful, RootHide.\n• Gói trọn 10.042 câu trắc nghiệm (nghe & đọc) phân chia 6 cấp độ (TOPIK 1 đến 6).\n• 5.020 file âm thanh audio giọng nam & nữ chuẩn bản ngữ, hỗ trợ autoplay native mượt mà.\n• Ký fake-sign ldid với entitlement vượt sandbox: không văng app, không màn hình trắng.\n• Tự động chạy uicache sau khi cài đặt qua Cydia, Sileo, Zebra hoặc Filza.\n• Có sẵn file cài đặt IPA cho TrollStore / Sideload và file APK cho Android.",
+          "markdown": "**1.5** (Build 7)\nBản cập nhật Trắc nghiệm tiếng Hàn v1.5 fix triệt để lỗi văng app khi khởi động:\n• Viết lại hoàn chỉnh theo chuẩn kiến trúc thuần UIKit AppDelegate (tương thích 100% giống English Kids & Bé học Vẽ).\n• Ký fake-sign ad-hoc và sinh CodeResources đầy đủ cho toàn bộ bundle app, giải quyết dứt điểm lỗi launch trên iOS 15, 16, 17, 18.\n• Tối ưu hệ thống WebKit WebView, phân quyền truy cập file:// và hỗ trợ audio native.\n• Đầy đủ 3 bản build: Rootless, Rootful, RootHide cho mọi môi trường jailbreak.\n• Hỗ trợ file cài đặt IPA cho TrollStore / Sideload và file APK cho Android.",
           "useSpacing": true,
           "useRawFormat": false
         }
