@@ -428,10 +428,10 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm.deb
-Size: 172791164
-MD5sum: a6fac6a1f05e85e5ae338fa5814337ae
-SHA1: 6bb61a33b229e225101cc37fa5b52d539f23fbf6
-SHA256: dea319939b583f8281e19a8ffa9835d1a9b7769a1653eea93d6af95e955eb20c
+Size: 172793128
+MD5sum: 3abe11b2476b7a220961fb0bac9e1709
+SHA1: 26aacf76588160b55dbaaf7196d24c4d73490a27
+SHA256: 73564dafe4ec76ea899feb95d3a531da6128f2b4d4b2ac0e5644ab7f0c211c2c
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989

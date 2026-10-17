@@ -1276,10 +1276,10 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm.deb
-Size: 172791164
-MD5sum: a6fac6a1f05e85e5ae338fa5814337ae
-SHA1: 6bb61a33b229e225101cc37fa5b52d539f23fbf6
-SHA256: dea319939b583f8281e19a8ffa9835d1a9b7769a1653eea93d6af95e955eb20c
+Size: 172793128
+MD5sum: 3abe11b2476b7a220961fb0bac9e1709
+SHA1: 26aacf76588160b55dbaaf7196d24c4d73490a27
+SHA256: 73564dafe4ec76ea899feb95d3a531da6128f2b4d4b2ac0e5644ab7f0c211c2c
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -1296,10 +1296,10 @@ Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm64.deb
-Size: 172789824
-MD5sum: c95175aef5cca4f87a8228a094aa4bfd
-SHA1: ff0fddbf141bb8ae3a2cd79376f511d77999a952
-SHA256: d22c75acf5aef093db8fd62f8b6f8b7fdd4b41fb0f259f52547488a9e4c35150
+Size: 172789596
+MD5sum: e32ba73f8ddfebe84c7724f787568fcf
+SHA1: c23f79b8b618ca3421f0aa2edc7ce076be9dea28
+SHA256: bf23427733455d6e3bbd89a951abbc9cfb50869fd1b532ec7984d1220c52c8dd
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
@@ -1316,10 +1316,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/com.jinken.koreantest_1.4_iphoneos-arm64e.deb
-Size: 172791152
-MD5sum: 38439c974b261f7093464043e87c7d3e
-SHA1: 0e18ebd5137426d31898cb245bc1e51182cde532
-SHA256: f75d50541d4bf607262f109e89a4ac4502d363ff97e2768b858a49a0e3f7ad96
+Size: 172793220
+MD5sum: dd3a34a2a11c6542903a22cc2b0fe6ec
+SHA1: 542af73542fb5d92aad2b364b7e0564519b0a0e4
+SHA256: aef709b863d22b7231655798a88d8252d19c450c152d25dea1a61f746460604d
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989

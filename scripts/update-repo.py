@@ -1874,9 +1874,9 @@ def main() -> int:
     # com.jinken.koreantest hosted on GitHub Releases
     kt_vi = BLURBS["com.jinken.koreantest"][0]
     kt_cfgs = [
-        ("iphoneos-arm", "com.jinken.koreantest_1.4_iphoneos-arm.deb", 172791164, "a6fac6a1f05e85e5ae338fa5814337ae", "6bb61a33b229e225101cc37fa5b52d539f23fbf6", "dea319939b583f8281e19a8ffa9835d1a9b7769a1653eea93d6af95e955eb20c"),
-        ("iphoneos-arm64", "com.jinken.koreantest_1.4_iphoneos-arm64.deb", 172789824, "c95175aef5cca4f87a8228a094aa4bfd", "ff0fddbf141bb8ae3a2cd79376f511d77999a952", "d22c75acf5aef093db8fd62f8b6f8b7fdd4b41fb0f259f52547488a9e4c35150"),
-        ("iphoneos-arm64e", "com.jinken.koreantest_1.4_iphoneos-arm64e.deb", 172791152, "38439c974b261f7093464043e87c7d3e", "0e18ebd5137426d31898cb245bc1e51182cde532", "f75d50541d4bf607262f109e89a4ac4502d363ff97e2768b858a49a0e3f7ad96"),
+        ("iphoneos-arm", "com.jinken.koreantest_1.4_iphoneos-arm.deb", 172793128, "3abe11b2476b7a220961fb0bac9e1709", "26aacf76588160b55dbaaf7196d24c4d73490a27", "73564dafe4ec76ea899feb95d3a531da6128f2b4d4b2ac0e5644ab7f0c211c2c"),
+        ("iphoneos-arm64", "com.jinken.koreantest_1.4_iphoneos-arm64.deb", 172789596, "e32ba73f8ddfebe84c7724f787568fcf", "c23f79b8b618ca3421f0aa2edc7ce076be9dea28", "bf23427733455d6e3bbd89a951abbc9cfb50869fd1b532ec7984d1220c52c8dd"),
+        ("iphoneos-arm64e", "com.jinken.koreantest_1.4_iphoneos-arm64e.deb", 172793220, "dd3a34a2a11c6542903a22cc2b0fe6ec", "542af73542fb5d92aad2b364b7e0564519b0a0e4", "aef709b863d22b7231655798a88d8252d19c450c152d25dea1a61f746460604d"),
     ]
     for arch, deb_name, size, md5, sha1, sha256 in kt_cfgs:
         rel_fn = f"https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.4/{deb_name}"
