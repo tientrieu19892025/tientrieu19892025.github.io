@@ -344,10 +344,10 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
 Filename: debs/rootful/com.jinkennguyen.photosliquid_1.0.0_iphoneos-arm.deb
-Size: 18196
-MD5sum: 1432a330991d4cc97ddf5e65612c951b
-SHA1: 9e817b41b8cb6c8da5b17558548fb8794b6be3db
-SHA256: 413b4c4991e11e8f8954fe9ec1a3f0c2818340bed089b518786570cda625a7bb
+Size: 20912
+MD5sum: a3a73006ae2d6889200f9ffddce7e6f8
+SHA1: ac43cbaa4d57ed2383f1c24579cf90cd7278c3a0
+SHA256: e81020bdb30c15e4ce3a05ee6b590e693a837cbd2d42436bba3eedb7a3a8f6c0
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
