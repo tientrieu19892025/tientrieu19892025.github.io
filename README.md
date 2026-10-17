@@ -47,7 +47,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | LookGlass | `com.jinkennguyen.lookglass` | 4.0.7 | rootful, rootless, RootHide |
 | NoxFrame | `com.jinkennguyen.noxframe` | 1.1.1 | rootful, rootless, RootHide |
 | OrientFlow | `com.jinken.orientflow` | 1.0.9 | rootful, rootless, RootHide |
-| PhotosLiquid | `com.jinkennguyen.photosliquid` | 1.0.0 | rootful, rootless, RootHide |
+| PhotosLiquid | `com.jinkennguyen.photosliquid` | 1.1.0 | rootful, rootless, RootHide |
 | PrankFrame | `com.jinkennguyen.prankframe` | 1.0.0 | rootful, rootless, RootHide |
 | QuickPass | `com.jinken.quickpass` | 1.0.0 | rootful, rootless, RootHide |
 | Repo | `com.jinkennguyen.jinken` | 1.1.0 | rootful, rootless, RootHide |
