@@ -344,10 +344,10 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
 Filename: debs/rootful/com.jinkennguyen.photosliquid_1.0.0_iphoneos-arm.deb
-Size: 36832
-MD5sum: 9f6b7ca94d878dbd1ded3bef42f263fc
-SHA1: c363030885f2deb7e44dd81bb5a94897430c030a
-SHA256: 358724a1f9bab724ae93af4187b63de0daf93fd9d9e89cbde1db3f80d4884aba
+Size: 43272
+MD5sum: 55036f7956dc79e86ea0a5c25fd2381a
+SHA1: 601eab06f56a457da317f13948f23651c9c29482
+SHA256: 1daa3228dc75b67dbef276d1392211d4856f48923aa6a0e67d1197ea649fad83
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
@@ -788,10 +788,10 @@ Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
 Filename: debs/rootless/com.jinkennguyen.photosliquid_1.0.0_iphoneos-arm64.deb
-Size: 36892
-MD5sum: ab2e8d18ec312a7026451bac44c139ed
-SHA1: 76c784a75142f6da9891d6f0a8ce26f87df2a337
-SHA256: 1e119fefd04cafe6bbf48df53a99fb5b96337fbc49768567a51075a54c40564a
+Size: 43180
+MD5sum: b86501bbc4bfc396548a1e756365efe3
+SHA1: 3754fd2185ec61bb9a5530a1b96be9bc4bd2b548
+SHA256: 008f9cbefeff3b22653674924a251edab7fc4fc8a3084c2befdabb047308b9cd
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
@@ -1232,10 +1232,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
 Filename: debs/roothide/com.jinkennguyen.photosliquid_1.0.0_iphoneos-arm64e.deb
-Size: 36836
-MD5sum: b46077973e778ce17320a90616c651aa
-SHA1: d2ee3b3e34b0fe6b4b741a6a9fdec5e4e6cade37
-SHA256: dd4f9ab652acec0b828629a827bdbc4f07a19bdfde4cd6adaadae78eb4772e83
+Size: 43272
+MD5sum: 40e8ad6a3dd0f3f2e5d7e3d27a8a9449
+SHA1: 35b1c6d3031a9c270f569c73053f8b311a7b1c52
+SHA256: 8fa5452ede0ffbc611ed776bcd72b53f8e8730694d28b8209d25da0b2d840cee
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
