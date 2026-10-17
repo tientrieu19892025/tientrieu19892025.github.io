@@ -397,9 +397,23 @@ function renderQ() {
 }
 function playAudio(q) {
   stopAudio();
+  if (!q || !q.audio) return;
   try {
-    curAudio = new Audio('audio/' + q.audio);
-    curAudio.addEventListener('error', function () { toast('🔇 Không tải được audio cho câu này.'); });
+    var file = q.audio;
+    if (file.indexOf('.') === -1) file += '.mp3';
+    curAudio = new Audio('audio/' + file);
+    curAudio.addEventListener('error', function () {
+      // Fallback nếu đang gọi .ogg mà có .mp3 hoặc ngược lại
+      if (file.indexOf('.ogg') !== -1) {
+        var alt = file.replace(/\.ogg$/, '.mp3');
+        curAudio = new Audio('audio/' + alt);
+        curAudio.addEventListener('error', function () { toast('🔇 Không tải được audio cho câu này.'); });
+        var pAlt = curAudio.play();
+        if (pAlt && pAlt.catch) pAlt.catch(function () {});
+      } else {
+        toast('🔇 Không tải được audio cho câu này.');
+      }
+    });
     var p = curAudio.play();
     if (p && p.catch) p.catch(function () {});
   } catch (e) {}
@@ -629,9 +643,20 @@ function renderReview() {
   for (b = 0; b < btns.length; b++) {
     btns[b].addEventListener('click', function () {
       stopAudio();
+      var raw = this.getAttribute('data-audio');
+      if (!raw) return;
+      var file = raw.replace(/\.ogg$/, '.mp3');
       try {
-        curAudio = new Audio('audio/' + this.getAttribute('data-audio'));
-        curAudio.addEventListener('error', function () { toast('🔇 Không tải được audio cho câu này.'); });
+        curAudio = new Audio('audio/' + file);
+        curAudio.addEventListener('error', function () {
+          if (file.indexOf('.mp3') !== -1) {
+            curAudio = new Audio('audio/' + file.replace(/\.mp3$/, '.ogg'));
+            curAudio.addEventListener('error', function () { toast('🔇 Không tải được audio cho câu này.'); });
+            var pAlt = curAudio.play(); if (pAlt && pAlt.catch) pAlt.catch(function () {});
+          } else {
+            toast('🔇 Không tải được audio cho câu này.');
+          }
+        });
         var p = curAudio.play(); if (p && p.catch) p.catch(function () {});
       } catch (e) {}
     });
