@@ -1,4 +1,4 @@
-/* Trắc nghiệm tiếng Hàn v1.4 — ES5 strict cho WebView cũ */
+/* Trắc nghiệm tiếng Hàn v1.5 — ES5 strict cho WebView cũ */
 (function () {
 'use strict';
 
@@ -661,6 +661,13 @@ function confetti() {
 /* ---------- ticker ---------- */
 function loadTicker() {
   try {
+    if (typeof fetch === 'function') {
+      fetch(TICKER_URL).then(function (r) { return r.text(); }).then(function (txt) {
+        var t = (txt || '').replace(/\s+/g, ' ').replace(/^\s+|\s+$/g, '');
+        if (t) $('ticker-text').textContent = '📢 ' + t;
+      }).catch(function () {});
+      return;
+    }
     var xhr = new XMLHttpRequest();
     xhr.timeout = 8000;
     xhr.onreadystatechange = function () {
