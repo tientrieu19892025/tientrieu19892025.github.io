@@ -339,15 +339,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/rootful/com.jinkennguyen.photosliquid_1.1.0_iphoneos-arm.deb
-Size: 45368
-MD5sum: 4a87c812f43b692fc12463cd20c80c73
-SHA1: 71ed191be3f70d4e434548c67b09b15f9b432bf8
-SHA256: b60f8ddb9770db59a05843ce9ebf698765880447566f834e5a0d57b439388e04
+Filename: debs/rootful/com.jinkennguyen.photosliquid_1.2.0_iphoneos-arm.deb
+Size: 45072
+MD5sum: a0cbc1bd9d2ab16e682e5ce920999434
+SHA1: 4138646a11dd5df85c7e8463576f0de1a67e273d
+SHA256: 7ecff4c60dc3fbecfe39c955af8349f6260534928e95a8814ae751b3cb9e0df4
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
@@ -448,10 +448,10 @@ Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Depends: firmware (>= 15.0)
 Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.5/com.jinken.koreantest_1.5_iphoneos-arm.deb
-Size: 173076568
-MD5sum: e8ed590a6dea656a2740ee23fbddb174
-SHA1: 58866e71a9a58dc295613097533589aa7778063c
-SHA256: 952e09ba9101ef55f0ba24b71fdc4b74a06d767feee1c97754f6ec75cba70e66
+Size: 340918908
+MD5sum: 36703a924d43579de51b58ecba6ee076
+SHA1: f45b1eaedf4c0555c4772c9e1b366da415b51e79
+SHA256: bf659ee2a24afccdd44381fd8ff6385684ef675c8eec44209f87dc955077cf59
 Section: Education
 Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
 Author: Jinken Nguyen - 1989
