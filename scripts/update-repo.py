@@ -107,6 +107,10 @@ BLURBS = {
         "Vỗ, gõ, lắc máy thì kêu. Nhiều gói tiếng; chọn Rên thì chỉ rên.",
         "Slap, tap or shake the phone. Pick a sound pack — Groan stays groan-only.",
     ),
+    "com.jinkennguyen.photosliquid": (
+        "Giao diện Liquid Glass mượt mà cho app Ảnh (Photos). Bo góc lưới ảnh, phím tắt nổi.",
+        "Liquid Glass interface for Photos app. Curved photo grid, floating quick HUD.",
+    ),
     "com.jinkennguyen.cpuboost": (
         "CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Ngủ sâu khi tắt màn hình, Eco / Boost / Turbo.",
         "Slow the CPU to save battery, or push it a bit on older phones. Deep sleep when locked, Eco / Boost / Turbo.",
