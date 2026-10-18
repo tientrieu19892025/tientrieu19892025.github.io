@@ -339,15 +339,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 1.3.0
+Version: 1.3.1
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/rootful/com.jinkennguyen.photosliquid_1.3.0_iphoneos-arm.deb
-Size: 46636
-MD5sum: 206cc5cbb467203394e846767cba00e3
-SHA1: 9a53400b16f08e587a01c24526d39349bba1df78
-SHA256: 2e136c30f0f8e75604b4fed91048c60c1491fb65bf340dcda0056646a847708d
+Filename: debs/rootful/com.jinkennguyen.photosliquid_1.3.1_iphoneos-arm.deb
+Size: 43036
+MD5sum: 94dc64e623596b78b422326240e39ba0
+SHA1: 5a0b0ad7d06758fe7f8ac184362268ef06800d88
+SHA256: 4610283b6e6d79f00c9cc86e8cf006d0c91e6a1d1f556e5d52ca1bcdea8ba364
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
@@ -633,17 +633,17 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.adshield.png
 
 Package: com.jinkennguyen.appsw
-Version: 1.0.6
+Version: 1.0.7
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 736
+Installed-Size: 744
 Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
 Recommends: preferenceloader
-Filename: debs/rootless/com.jinkennguyen.appsw_1.0.6_iphoneos-arm64.deb
-Size: 113384
-MD5sum: dedbc3540c24fa07fc9863e76979d857
-SHA1: 9ae8a663e1682ae3a32fa251316cb4bf670b214c
-SHA256: bbaa2be34429a954022c55fecb7e9777b11f6a0edc9398f58a8bb29717a029a3
+Filename: debs/rootless/com.jinkennguyen.appsw_1.0.7_iphoneos-arm64.deb
+Size: 115554
+MD5sum: 3828143c29fbd2b519c022616ab08443
+SHA1: 390c578a6c317f7902286aebca58860bbe6cb312
+SHA256: e75057e8cac7118a8e7de405efc749df605b8019f37ed1eb9b007500d4dc8c5d
 Section: Tweaks
 Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
@@ -783,15 +783,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 1.3.0
+Version: 1.3.1
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/rootless/com.jinkennguyen.photosliquid_1.3.0_iphoneos-arm64.deb
-Size: 46784
-MD5sum: e9c30ce71bf5c223368382c365951dbb
-SHA1: 380fe77b9815a2c84978fa27195a131584eb5381
-SHA256: 8f0c77a4ad0951dad04a880d9cac8294fc41c287b7ca74b4e8621868b54eb9f6
+Filename: debs/rootless/com.jinkennguyen.photosliquid_1.3.1_iphoneos-arm64.deb
+Size: 43148
+MD5sum: 9a03be030073f5b8d1b39f9a1d2c504c
+SHA1: e8fc6401c479d20dbcf6c0c3d48ca7ec3c616f57
+SHA256: a0d9f42635b461c41680259cf068c6177723461e660f3404a03bd3ffc7d9b678
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
@@ -1227,15 +1227,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 1.3.0
+Version: 1.3.1
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/roothide/com.jinkennguyen.photosliquid_1.3.0_iphoneos-arm64e.deb
-Size: 46636
-MD5sum: b635736bbcacffe205a053782ed963b2
-SHA1: d73181698fb75a5619a717cab007d93f0623cd52
-SHA256: a4c00665669bd75bc6628fde48237fee30a1b0303be71f20fd438cee242bad2f
+Filename: debs/roothide/com.jinkennguyen.photosliquid_1.3.1_iphoneos-arm64e.deb
+Size: 43040
+MD5sum: 9347be4ed970cc8a3b464185a4521a30
+SHA1: d7f787ac170f8a82850e371f17f617abd5bb7a09
+SHA256: 1ccd419fc7edc530e3aaed8bc3349b8049a6574c721def17caeeef11f33973d8
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
