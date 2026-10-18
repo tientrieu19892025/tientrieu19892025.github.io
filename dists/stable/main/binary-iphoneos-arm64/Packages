@@ -339,15 +339,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 1.2.0
+Version: 1.3.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/rootless/com.jinkennguyen.photosliquid_1.2.0_iphoneos-arm64.deb
-Size: 45056
-MD5sum: b3fb70d96cfe4d04adb29bdc92c5f08f
-SHA1: 8da1b003e40eac2230522d04c576dc7200511296
-SHA256: f0ab71e7e3931de73ee5254947c9d33aa2843d06475bf18fe82da8ed1f1c26a9
+Filename: debs/rootless/com.jinkennguyen.photosliquid_1.3.0_iphoneos-arm64.deb
+Size: 46784
+MD5sum: e9c30ce71bf5c223368382c365951dbb
+SHA1: 380fe77b9815a2c84978fa27195a131584eb5381
+SHA256: 8f0c77a4ad0951dad04a880d9cac8294fc41c287b7ca74b4e8621868b54eb9f6
 Section: Tweaks
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
