@@ -339,15 +339,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 2.3.0
+Version: 2.4.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0)
-Filename: debs/rootful/com.jinkennguyen.photosliquid_2.3.0_iphoneos-arm.deb
-Size: 218152
-MD5sum: a99142d59e100df66468d16f660a5f4c
-SHA1: ab63b60c09c38d3f47d57e037ec718d74336ed62
-SHA256: d693a030daf1d2e213c633b7f8d858b51d8b5dbcc0d0ec3cf4a6d9ab9dd5ea56
+Filename: debs/rootful/com.jinkennguyen.photosliquid_2.4.0_iphoneos-arm.deb
+Size: 220524
+MD5sum: b5275c8a100c2271d1c0e61e6e815bf4
+SHA1: 43a91a6267e208f8b08a475f34ef2a2333b6e1b1
+SHA256: e5f411a294969b851a2d1338f8a78d5b2925f78589e3a2ef55cf2c71bf597d15
 Section: Applications
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
@@ -783,15 +783,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 2.3.0
+Version: 2.4.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0)
-Filename: debs/rootless/com.jinkennguyen.photosliquid_2.3.0_iphoneos-arm64.deb
-Size: 218140
-MD5sum: 328484e24659d8927571148d2878ce23
-SHA1: d6b1fe4f6174401d64567000d8caf16633e86bd9
-SHA256: 54b3c05a26777b353878da373612cfa6867d4deed05f5f876b0824e48f192c38
+Filename: debs/rootless/com.jinkennguyen.photosliquid_2.4.0_iphoneos-arm64.deb
+Size: 220636
+MD5sum: ddb60cb580e3f286a934ff152b197ac3
+SHA1: b84d373730987baccaba5c7eaf99c0894240d3f5
+SHA256: 5239e79a6eed43fa0bf5620cd4cf69d3d4becf058855eb4651d41034d873b28b
 Section: Applications
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
@@ -1227,15 +1227,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 2.3.0
+Version: 2.4.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0)
-Filename: debs/roothide/com.jinkennguyen.photosliquid_2.3.0_iphoneos-arm64e.deb
-Size: 218092
-MD5sum: 00a7677cb19c31bd1ee9a70f542b698e
-SHA1: de5ab48258d0fa0c46b5dbf5ba8bc34e78debe09
-SHA256: d4925d9b47aeea2c539a746032701531027eb3ce086a4e2e59e8ec1965aa078d
+Filename: debs/roothide/com.jinkennguyen.photosliquid_2.4.0_iphoneos-arm64e.deb
+Size: 220608
+MD5sum: ab66ec59106fb4aa1c3e84d900ee15a3
+SHA1: fd0ba808ec4e2e8ae0882f5058e8721872a6a0dc
+SHA256: 7534b639f1779be6230016f758aab28ac6724c784ed1f9463868536e8d3709cb
 Section: Applications
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
