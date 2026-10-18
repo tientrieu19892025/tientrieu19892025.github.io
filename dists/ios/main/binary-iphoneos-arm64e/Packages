@@ -339,15 +339,15 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 2.2.0
+Version: 2.3.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
 Depends: firmware (>= 14.0)
-Filename: debs/roothide/com.jinkennguyen.photosliquid_2.2.0_iphoneos-arm64e.deb
-Size: 213772
-MD5sum: 213bd9a695e9c1f19235bbd11ec29ebc
-SHA1: 4a8c40f4c55cbe8404f974eb3b1ffbf6b4924d23
-SHA256: 72d4487a2d33c32056ebc6f8676bbf25809865e029e230a10ab7d4ac3b8ebfd6
+Filename: debs/roothide/com.jinkennguyen.photosliquid_2.3.0_iphoneos-arm64e.deb
+Size: 218092
+MD5sum: 00a7677cb19c31bd1ee9a70f542b698e
+SHA1: de5ab48258d0fa0c46b5dbf5ba8bc34e78debe09
+SHA256: d4925d9b47aeea2c539a746032701531027eb3ce086a4e2e59e8ec1965aa078d
 Section: Applications
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
