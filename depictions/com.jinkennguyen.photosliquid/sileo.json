@@ -10,7 +10,7 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "PhotosLiquid",
+          "title": "Photos 27",
           "useBoldText": true
         },
         {
@@ -49,7 +49,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Section",
-          "text": "Tweaks"
+          "text": "Applications"
         },
         {
           "class": "DepictionTableTextView",

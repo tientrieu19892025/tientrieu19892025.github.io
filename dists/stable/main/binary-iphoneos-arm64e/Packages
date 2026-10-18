@@ -339,19 +339,19 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinkennguyen.noxframe.png
 
 Package: com.jinkennguyen.photosliquid
-Version: 1.3.1
+Version: 2.0.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
-Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
-Filename: debs/roothide/com.jinkennguyen.photosliquid_1.3.1_iphoneos-arm64e.deb
-Size: 43040
-MD5sum: 9347be4ed970cc8a3b464185a4521a30
-SHA1: d7f787ac170f8a82850e371f17f617abd5bb7a09
-SHA256: 1ccd419fc7edc530e3aaed8bc3349b8049a6574c721def17caeeef11f33973d8
-Section: Tweaks
+Depends: firmware (>= 14.0)
+Filename: debs/roothide/com.jinkennguyen.photosliquid_2.0.0_iphoneos-arm64e.deb
+Size: 207208
+MD5sum: a1c4e5f918b02a22c89ad66b82cedb73
+SHA1: 8b5d7b2618c8633f88e6b03f34e815673530d9a4
+SHA256: 2a1234379ce761119af1ce64527fe00fc2fe4a14cad9700f78c4c2f02a4de8aa
+Section: Applications
 Tag: role::hacker
 Author: Jinken Nguyen - 1989
-Name: PhotosLiquid
+Name: Photos 27
 Description: Giao diện Liquid Glass mượt mà cho app Ảnh (Photos). Bo góc lưới ảnh, phím tắt nổi.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.photosliquid/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinkennguyen.photosliquid/sileo.json
