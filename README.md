@@ -34,7 +34,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | Name | Package | Version | Builds |
 | --- | --- | --- | --- |
 | AdShield | `com.jinkennguyen.adshield` | 1.0.4 | rootful, rootless, RootHide |
-| AppSw | `com.jinkennguyen.appsw` | 1.0.7 | rootful, rootless, RootHide |
+| AppSw | `com.jinkennguyen.appsw` | 1.0.8 | rootful, rootless, RootHide |
 | AutoBrightClamp | `com.jinken.autobrightclamp` | 1.0.0 | rootful, rootless, RootHide |
 | Bé học Vẽ | `com.jinken.drawkids` | 1.6 | rootful, rootless, RootHide |
 | CPU Boost | `com.jinkennguyen.cpuboost` | 1.0.4 | rootful, rootless, RootHide |
