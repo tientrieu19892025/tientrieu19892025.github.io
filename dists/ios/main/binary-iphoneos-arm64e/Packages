@@ -168,20 +168,21 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.quickpass.png
 
 Package: com.jinken.screentranspro
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 436
+Installed-Size: 536
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/roothide/com.jinken.screentranspro_1.1.0_iphoneos-arm64e.deb
-Size: 44190
-MD5sum: 32782d4c63fe2c664725e6874de6d494
-SHA1: bb61e9c532263974576f002e0b5c26789ea5f0f6
-SHA256: fca53b616d2ae7995073d396ea6cce438980c679b1e6301b94b6569fd8103b32
+Filename: debs/roothide/com.jinken.screentranspro_1.2.0_iphoneos-arm64e.deb
+Size: 66374
+MD5sum: 535ec709b27cd91bc0eabea8c36c8703
+SHA1: 234be5adf7e250dae4fd967ea902fde455e63712
+SHA256: ec217e2869deb91bb14a779385c5cb3f86efb64ec92cf7afc57273b631b9538d
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
 Name: ScreenTrans Pro
+Description: Cỗ máy dịch thuật siêu đỉnh cho iOS: Bôi đen chọn chữ để dịch, tra từ điển chuyên sâu IPA, tự phát âm, dịch màn hình mọi app 21 ngôn ngữ đa chiều.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.screentranspro/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.screentranspro/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate

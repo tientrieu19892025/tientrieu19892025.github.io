@@ -67,6 +67,10 @@ KIND_GUIDES = [
 ]
 
 BLURBS = {
+    "com.jinken.screentranspro": (
+        "Cỗ máy dịch thuật siêu đỉnh cho iOS: Bôi đen chọn chữ để dịch, tra từ điển chuyên sâu IPA, tự phát âm, dịch màn hình mọi app 21 ngôn ngữ đa chiều.",
+        "Ultimate screen translator for iOS: Select text to translate, deep dictionary lookup with IPA, audio TTS speech, and in-place translation for all apps across 21 languages.",
+    ),
     "com.jinkennguyen.adshield": (
         "Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.",
         "System-wide ad blocker for apps, Safari, WebViews and video ads.",

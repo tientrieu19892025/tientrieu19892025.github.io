@@ -23,7 +23,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**ScreenTrans Pro** — Tự động dịch màn hình mọi ứng dụng (Safari, Zebra, MXH...), hỗ trợ 21 ngôn ngữ đa chiều siêu tốc và ổn định.\n\nTự động dịch màn hình mọi ứng dụng (Safari, Zebra, MXH...), hỗ trợ 21 ngôn ngữ đa chiều siêu tốc và ổn định.\n\n**Phiên bản / Version:** 1.1.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → ScreenTrans Pro**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
+          "markdown": "**ScreenTrans Pro** — Cỗ máy dịch thuật siêu đỉnh cho iOS: Bôi đen chọn chữ để dịch, tra từ điển chuyên sâu IPA, tự phát âm, dịch màn hình mọi app 21 ngôn ngữ đa chiều.\n\nUltimate screen translator for iOS: Select text to translate, deep dictionary lookup with IPA, audio TTS speech, and in-place translation for all apps across 21 languages.\n\n**Phiên bản / Version:** 1.2.0  \n**Tác giả / Author:** Jinken Nguyen - 1989  \n**iOS:** 14+  \n**Gói:** rootless · rootful · RootHide (`iphoneos-arm64e`)\n\nSau khi cài: **Respring**, mở **Cài đặt → ScreenTrans Pro**.\n\nCảm ơn bạn đã tin dùng tweak miễn phí. Nếu thấy hữu ích, một chút ủng hộ giúp mình giữ repo chạy và ra bản mới — không bắt buộc, chỉ khi bạn vui lòng.\n\nThank you for using this free tweak. If it helped, a small donation keeps the repo online and updates coming. No pressure — using it already means a lot.",
           "useSpacing": true,
           "useRawFormat": false
         },
@@ -34,7 +34,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.1.0"
+          "text": "1.2.0"
         },
         {
           "class": "DepictionTableTextView",
@@ -73,7 +73,7 @@
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "1.1.0",
+          "title": "1.2.0",
           "useBoldText": true
         },
         {
