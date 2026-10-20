@@ -167,6 +167,25 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.quickp
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.quickpass.png
 
+Package: com.jinken.screentranspro
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 436
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinken.screentranspro_1.0.0_iphoneos-arm.deb
+Size: 39954
+MD5sum: a7c8db34319f23da795644af6c745f00
+SHA1: bd4e6246395e8cfd94d8a6261b8701d8c34e8420
+SHA256: f8dbf7b52f2a5fb885df9d29e35fba1e9f0a68444b48aeaf85e62fe6e45d37f8
+Section: Tweaks
+Tag: purpose::extension, role::developer
+Author: Jinken Nguyen - 1989
+Name: ScreenTrans Pro
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.screentranspro/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.screentranspro/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+
 Package: com.jinkennguyen.adshield
 Version: 1.0.4
 Architecture: iphoneos-arm
