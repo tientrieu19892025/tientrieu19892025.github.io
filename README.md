@@ -51,7 +51,7 @@ Sileo/Zebra vẫn tự chọn gói khi thêm source — không cần tải tay.
 | PrankFrame | `com.jinkennguyen.prankframe` | 1.0.0 | rootful, rootless, RootHide |
 | QuickPass | `com.jinken.quickpass` | 1.0.0 | rootful, rootless, RootHide |
 | Repo | `com.jinkennguyen.jinken` | 1.1.0 | rootful, rootless, RootHide |
-| ScreenTrans Pro | `com.jinken.screentranspro` | 1.7.2 | rootful, rootless, RootHide |
+| ScreenTrans Pro | `com.jinken.screentranspro` | 1.7.3 | rootful, rootless, RootHide |
 | SettingSZ | `com.jinkennguyen.settingsz` | 1.0.11 | rootful, rootless, RootHide |
 | SlapIos | `com.jinkennguyen.slapios` | 1.2.0 | rootful, rootless, RootHide |
 | StatusBarInfo | `com.jinkennguyen.statusbarinfo` | 1.3.0 | rootful, rootless, RootHide |

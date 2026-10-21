@@ -168,16 +168,16 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.quickpass.png
 
 Package: com.jinken.screentranspro
-Version: 1.7.2
+Version: 1.7.3
 Architecture: iphoneos-arm64e
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 608
+Installed-Size: 624
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/roothide/com.jinken.screentranspro_1.7.2_iphoneos-arm64e.deb
-Size: 147246
-MD5sum: ac27b1d1fd91ae580d4bf1f9440a0ca6
-SHA1: a47532ad439fc513e15f1f16ca160933872ab02f
-SHA256: b5f961a9b6a30f5fe4d6a8491674ccd062a02939ee7d2b2c77595db80e61d6c8
+Filename: debs/roothide/com.jinken.screentranspro_1.7.3_iphoneos-arm64e.deb
+Size: 151986
+MD5sum: ab56913e0a7a20a0e82ddd855383c519
+SHA1: 4aced1f729f9c89d41823df1fe8663a0c5ca88a9
+SHA256: df07807f2308fd66bab970e4e91a809eec985640dd7b6764505a72f10ae4558d
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
