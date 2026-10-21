@@ -68,8 +68,8 @@ KIND_GUIDES = [
 
 BLURBS = {
     "com.jinken.screentranspro": (
-        "Cỗ máy dịch thuật siêu đỉnh cho iOS: Bôi đen chọn chữ để dịch, tra từ điển chuyên sâu IPA, tự phát âm, dịch màn hình mọi app 21 ngôn ngữ đa chiều.",
-        "Ultimate screen translator for iOS: Select text to translate, deep dictionary lookup with IPA, audio TTS speech, and in-place translation for all apps across 21 languages.",
+        "Dịch toàn màn hình mọi ứng dụng iOS (UILabel, Button, TextView, Safari, Douyin/TikTok). Bôi đen chọn chữ để dịch với cửa sổ từ điển tra cứu chuyên sâu IPA, tuỳ chỉnh vị trí kéo thả linh hoạt, hỗ trợ 21 ngôn ngữ đa chiều siêu tốc.",
+        "System-wide in-app text translator for iOS (UILabel, Buttons, TextViews, Safari, Douyin/TikTok). Select text to translate with interactive IPA dictionary card, customizable card positioning, and instant bidirectional translation across 21 languages.",
     ),
     "com.jinkennguyen.adshield": (
         "Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.",

@@ -168,21 +168,21 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.quickpass.png
 
 Package: com.jinken.screentranspro
-Version: 1.3.2
+Version: 1.6.0
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 572
+Installed-Size: 624
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/rootless/com.jinken.screentranspro_1.3.2_iphoneos-arm64.deb
-Size: 76740
-MD5sum: 65a9670205ffe776f450cdcdf0e51cfa
-SHA1: 7ba9785e8c3535b104f600ad3e3955e9dfe11966
-SHA256: a5e897f1e84f041db28e6221bdf4259e8e0cb71aa18f92bb03396d7f91bdd336
+Filename: debs/rootless/com.jinken.screentranspro_1.6.0_iphoneos-arm64.deb
+Size: 150090
+MD5sum: ffdb99a011bd700fa22807b314a82e42
+SHA1: cbcababda04fd5906165299492ce72c9d2fb33dc
+SHA256: fa5cbdff4a3f7ae6c94ce19f9f0d9dbe7b259fc687198d481102c8d43f838ddb
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
 Name: ScreenTrans Pro
-Description: Cỗ máy dịch thuật siêu đỉnh cho iOS: Bôi đen chọn chữ để dịch, tra từ điển chuyên sâu IPA, tự phát âm, dịch màn hình mọi app 21 ngôn ngữ đa chiều.
+Description: Dịch toàn màn hình mọi ứng dụng iOS (UILabel, Button, TextView, Safari, Douyin/TikTok). Bôi đen chọn chữ để dịch với cửa sổ từ điển tra cứu chuyên sâu IPA, tuỳ chỉnh vị trí kéo thả linh hoạt, hỗ trợ 21 ngôn ngữ đa chiều siêu tốc.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.screentranspro/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.screentranspro/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
