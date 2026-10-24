@@ -68,8 +68,8 @@ KIND_GUIDES = [
 
 BLURBS = {
     "com.jinken.screentranspro": (
-        "Dịch toàn màn hình mọi ứng dụng iOS (UILabel, Button, TextView, Safari, Douyin/TikTok). Bôi đen chọn chữ để dịch với cửa sổ từ điển tra cứu chuyên sâu IPA, tuỳ chỉnh vị trí kéo thả linh hoạt, hỗ trợ 21 ngôn ngữ đa chiều siêu tốc.",
-        "System-wide in-app text translator for iOS (UILabel, Buttons, TextViews, Safari, Douyin/TikTok). Select text to translate with interactive IPA dictionary card, customizable card positioning, and instant bidirectional translation across 21 languages.",
+        "Dịch toàn màn hình mọi ứng dụng iOS (UILabel, Button, TextView, Safari, Douyin/TikTok). Bôi đen chọn chữ tra từ điển IPA. Hỗ trợ tất cả ngôn ngữ kể cả Tiếng Ả Rập, Tiếng Phạn, CJK, Hebrew, Ba Tư... Tối ưu mẻ dịch thông minh siêu tốc, không nóng máy, không giật lag và tương thích hoàn hảo iOS 16 cùng Roothide.",
+        "System-wide in-app text translator for iOS (UILabel, Buttons, TextViews, Safari, Douyin/TikTok). Select text for deep IPA dictionary. Intelligent ultra-fast translation across ALL languages (Arabic, Sanskrit, CJK, Hebrew, Persian...). Zero lag/overheating, and fully fixed for iOS 16 & Roothide.",
     ),
     "com.jinkennguyen.adshield": (
         "Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.",

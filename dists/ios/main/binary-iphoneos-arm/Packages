@@ -168,36 +168,36 @@ Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.quickpass.png
 
 Package: com.jinken.screentranspro
-Version: 1.7.3
+Version: 1.8.0
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 624
+Installed-Size: 644
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/rootful/com.jinken.screentranspro_1.7.3_iphoneos-arm.deb
-Size: 155110
-MD5sum: f20348f42448b8f3ba1f5117e52afc46
-SHA1: fa4f89d2ca99eba4920bb9f61237aff955ded022
-SHA256: 8ecfc8bde0326b6d749bb0bfa8fe1d57d723b273e56704e2ee9b67d7cec2417a
+Filename: debs/rootful/com.jinken.screentranspro_1.8.0_iphoneos-arm.deb
+Size: 163946
+MD5sum: 8bfffee2a79010add53dcfc68bf4e117
+SHA1: af057a0aab94042c713f1d4b7daa4544fe5c364f
+SHA256: b2af09e1b8cd3ea3fb79463a62715822a5f85a4519378ea957fa5ff9ae8f1162
 Section: Tweaks
 Tag: purpose::extension, role::developer
 Author: Jinken Nguyen - 1989
 Name: ScreenTrans Pro
-Description: Dịch toàn màn hình mọi ứng dụng iOS (UILabel, Button, TextView, Safari, Douyin/TikTok). Bôi đen chọn chữ để dịch với cửa sổ từ điển tra cứu chuyên sâu IPA, tuỳ chỉnh vị trí kéo thả linh hoạt, hỗ trợ 21 ngôn ngữ đa chiều siêu tốc.
+Description: Dịch toàn màn hình mọi ứng dụng iOS (UILabel, Button, TextView, Safari, Douyin/TikTok). Bôi đen chọn chữ tra từ điển IPA. Hỗ trợ tất cả ngôn ngữ kể cả Tiếng Ả Rập, Tiếng Phạn, CJK, Hebrew, Ba Tư... Tối ưu mẻ dịch thông minh siêu tốc, không nóng máy, không giật lag và tương thích hoàn hảo iOS 16 cùng Roothide.
 Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.screentranspro/index.html
 SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.screentranspro/sileo.json
 Homepage: https://tientrieu19892025.github.io/#donate
 
 Package: com.jinkennguyen.adshield
-Version: 1.0.4
+Version: 1.0.5
 Architecture: iphoneos-arm
 Maintainer: Jinken Nguyen - 1989
 Installed-Size: 840
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootful/com.jinkennguyen.adshield_1.0.4_iphoneos-arm.deb
-Size: 124550
-MD5sum: 2f8bd3784d01c96b1372668786520e20
-SHA1: 71c1912ba2a550e3e4165f6331f0dc28e87886da
-SHA256: 6c9a5f0b2c697a83a1d83ad6b134a4071be79d3912927b8cff6c0ab38f170a3f
+Filename: debs/rootful/com.jinkennguyen.adshield_1.0.5_iphoneos-arm.deb
+Size: 127910
+MD5sum: 8bed47c71a2d44387c90be044aca0104
+SHA1: ecedc48934707550e5cca3bbf6989ac24fbb3d8f
+SHA256: 470d97e772bcea1f97fff5e652f161c2c3963189a8ad41b73caec93fd0b84072
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
