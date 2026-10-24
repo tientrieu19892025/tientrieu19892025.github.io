@@ -3,15 +3,15 @@ Label: Jinken Repo
 Suite: stable
 Version: 1.0
 Codename: ios
-Date: Sat, 24 Oct 2026 04:35:46 UTC
+Date: Sat, 24 Oct 2026 04:37:02 UTC
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Jailbreak tweaks by Jinken Nguyen - 1989. Donate: MB Bank 0345140889 Nguyen Tien Trieu.
 MD5Sum:
- 2a339dc2917f59456bcd8d48fbd988c1 78475 Packages
- ca963072ff7947db255408ae0bfcadf4 11668 Packages.gz
- 287c0668ed109427f00137e4f5d13cfd 10763 Packages.bz2
+ b7196201771d126e875d1a07c51f04f4 78458 Packages
+ 6fab690d2caad9b96ecc4dd91378be36 11654 Packages.gz
+ 73ba48c4455cba6e8ed7dd85dbb5e4fb 10750 Packages.bz2
 SHA256:
- b595b309f45ed8cff607a05b6bda67a4a6ace430d1f30bcf9ee164af05588bd2 78475 Packages
- 07fa4fed5255dd17a60dfad592f1cf41841252348c7b8b64c54da41cc783b3a4 11668 Packages.gz
- 26486cee937d09518d5accff36ad6583ad663880869022c8028a20e1dec2e790 10763 Packages.bz2
+ 410fe885f13f64a134e35bd85b424a5b88239378b4950aa67650daf90f25940d 78458 Packages
+ a04ff4ee40989462753af6a3a750e15530bba021342949eaf5f4f3205cdbe62d 11654 Packages.gz
+ ab798d7dcf3f41e3d6a06366fc49b6927d83c863749a748bad106689dc7cc4b5 10750 Packages.bz2

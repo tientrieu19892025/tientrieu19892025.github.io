@@ -188,16 +188,16 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.screen
 Homepage: https://tientrieu19892025.github.io/#donate
 
 Package: com.jinkennguyen.adshield
-Version: 1.0.5-1+debug
+Version: 1.0.5
 Architecture: iphoneos-arm64
 Maintainer: Jinken Nguyen - 1989
-Installed-Size: 1152
+Installed-Size: 840
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
-Filename: debs/rootless/com.jinkennguyen.adshield_1.0.5-1+debug_iphoneos-arm64.deb
-Size: 178632
-MD5sum: c44160019d9187d8c0d6b97c5ce61d3c
-SHA1: 15009d03f004993731a9a5e13fbc3458ddc6c7a6
-SHA256: b2d2f35ca3052d88e19288c999fa07342db86074f491848ff1b44576ec95fa4e
+Filename: debs/rootless/com.jinkennguyen.adshield_1.0.5_iphoneos-arm64.deb
+Size: 127990
+MD5sum: ac8095af97dfe37eda35ab93d6b1a9a3
+SHA1: 40e17f08d8030e220626dd30f3721bdbc9e64ade
+SHA256: fd44946411d6754127bfcd7a58b53afb40c9fda024e563ffd898163e72278e63
 Section: Tweaks
 Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
 Author: Jinken Nguyen - 1989
