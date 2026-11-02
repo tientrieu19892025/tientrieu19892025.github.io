@@ -101,6 +101,25 @@ SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.freeze
 Homepage: https://tientrieu19892025.github.io/#donate
 Icon: https://tientrieu19892025.github.io/icons/com.jinken.freezebuster.png
 
+Package: com.jinken.haptickeys
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen <jinkennguyen@example.com>
+Installed-Size: 392
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinken.haptickeys_1.0.0_iphoneos-arm.deb
+Size: 19652
+MD5sum: d306486efa40ede23966c64f94e16bc8
+SHA1: 6e06afab8173f70d0e344947fb0cf4befd442c7a
+SHA256: 9b4d50b3278e1c0f4f35bbb3331db6183687a5611168688d395490e26ba226a2
+Section: Tweaks
+Author: Jinken Nguyen
+Name: HapticKeys
+Description: Phản hồi rung Taptic Engine chuẩn xác cho bàn phím iOS. Hỗ trợ đầy đủ các mức độ rung (Light, Medium, Heavy, Soft, Rigid, Selection), rung phím Xóa, giao diện Cài đặt đẹp mắt tương thích iOS 13 – iOS 18+.
+Depiction: https://tientrieu19892025.github.io/depictions/com.jinken.haptickeys/index.html
+SileoDepiction: https://tientrieu19892025.github.io/depictions/com.jinken.haptickeys/sileo.json
+Homepage: https://tientrieu19892025.github.io/#donate
+
 Package: com.jinken.listapp
 Version: 1.2.3
 Architecture: iphoneos-arm

@@ -67,6 +67,10 @@ KIND_GUIDES = [
 ]
 
 BLURBS = {
+    "com.jinken.haptickeys": (
+        "Phản hồi rung Taptic Engine chuẩn xác cho bàn phím iOS. Hỗ trợ đầy đủ các mức độ rung (Light, Medium, Heavy, Soft, Rigid, Selection), rung phím Xóa, giao diện Cài đặt đẹp mắt tương thích iOS 13 – iOS 18+.",
+        "Precise Taptic Engine haptic feedback for iOS keyboard. Full feedback styles (Light, Medium, Heavy, Soft, Rigid, Selection), Delete key vibration, elegant Settings pane compatible with iOS 13 – iOS 18+.",
+    ),
     "com.jinken.screentranspro": (
         "Dịch toàn màn hình mọi ứng dụng iOS (UILabel, Button, TextView, Safari, Douyin/TikTok). Bôi đen chọn chữ tra từ điển IPA. Hỗ trợ tất cả ngôn ngữ kể cả Tiếng Ả Rập, Tiếng Phạn, CJK, Hebrew, Ba Tư... Tối ưu mẻ dịch thông minh siêu tốc, không nóng máy, không giật lag và tương thích hoàn hảo iOS 16 cùng Roothide.",
         "System-wide in-app text translator for iOS (UILabel, Buttons, TextViews, Safari, Douyin/TikTok). Select text for deep IPA dictionary. Intelligent ultra-fast translation across ALL languages (Arabic, Sanskrit, CJK, Hebrew, Persian...). Zero lag/overheating, and fully fixed for iOS 16 & Roothide.",
@@ -338,6 +342,7 @@ def collect_latest_debs(allow: set[str] | None = None) -> dict[tuple[str, str], 
         Path.home() / "ListApp" / "packages",
         Path.home() / "QuickPass" / "packages",
         Path.home() / "OrientFlow" / "packages",
+        Path.home() / "HapticKeys" / "packages",
         Path.home() / "dis-swipe" / "packages",
         Path.home() / "FreezeBuster" / "build_output" / "rootful",
         Path.home() / "FreezeBuster" / "build_output" / "rootless",

@@ -14,6 +14,21 @@
   },
   "tweaks": [
     {
+      "id": "com.jinken.haptickeys",
+      "name": "HapticKeys",
+      "version": "1.0.0",
+      "summary": "Phản hồi rung Taptic Engine chuẩn xác cho bàn phím iOS. Hỗ trợ đầy đủ các mức rung từ nhẹ đến mạnh.",
+      "detail": "HapticKeys mang lại cảm giác gõ phím chân thực, đầm và nảy với công nghệ Apple Taptic Engine. Tùy chỉnh trực quan nhiều mức rung (Light, Medium, Heavy, Soft, Rigid, Selection), phản hồi phím xóa riêng biệt, giao diện cài đặt hiện đại tương thích iOS 13 – iOS 18+.",
+      "highlights": [
+        "Hỗ trợ đầy đủ 6 kiểu rung Taptic Engine cao cấp.",
+        "Tùy chọn rung khi nhấn phím (Touch Down) hoặc nhả phím (Touch Up).",
+        "Tùy chỉnh riêng cho phím Xóa (Delete).",
+        "Tương thích hoàn hảo mọi phiên bản iOS (Rootful, Rootless & RootHide)."
+      ],
+      "requiresRespring": true,
+      "hasPreferences": true
+    },
+    {
       "id": "com.jinkennguyen.lookglass",
       "name": "LookGlass",
       "version": "4.0.4",
