@@ -1,0 +1,502 @@
+Package: com.jinken.autobrightclamp
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
+Installed-Size: 704
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinken.autobrightclamp_1.0.0_iphoneos-arm.deb
+Size: 363646
+MD5sum: baba1fc19451a8bbcb4878d299864761
+SHA1: 0ee7e48fc573e15f5d2b7052bfc3939cbb0979f6
+SHA256: f7460493a4215fcc874581e39b7cb5532c941452dd33c43679ec0aeea86adcd0
+Section: Tweaks
+Tag: role::cydia, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen <tientrieu19892025@gmail.com>
+Name: AutoBrightClamp
+Description: Tweak thông minh giới hạn biên độ sáng tự động (set độ sáng tối thiểu và tối đa), chống chói mắt trong bóng tối, chống quá nhiệt ngoài trời nắng và tiết kiệm pin.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.autobrightclamp/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.autobrightclamp/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinken.autobrightclamp.png
+
+Package: com.jinken.disswipe
+Version: 1.1.1
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 452
+Depends: firmware (>= 11.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/rootful/com.jinken.disswipe_1.1.1_iphoneos-arm.deb
+Size: 96628
+MD5sum: 698b312715ee7a607332b7783ae7207a
+SHA1: 7c602e16b479894f9fe5fed19d970c7106f4b536
+SHA256: 2371882ecc0d60816bd211134c32d51f0dccb14d3e5d66be6a084868a3d19c91
+Section: Tweaks
+Tag: role::tweak, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: dis-swipe
+Description: Khóa cử chỉ vuốt ngang cạnh đáy (Home bar) đổi app khi đang mở bàn phím gõ. Hỗ trợ bảo vệ cử chỉ vuốt về Home, ẩn Home bar khi gõ, rung phản hồi Haptic.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.disswipe/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.disswipe/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinken.disswipe.png
+
+Package: com.jinken.drawkids
+Version: 1.6
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Depends: firmware (>= 15.0)
+Filename: debs/rootful/com.jinken.drawkids_1.6_iphoneos-arm.deb
+Size: 7818044
+MD5sum: a9193d46675ae4d601a3b6e4f07bd2ad
+SHA1: 4fe3fc53a4f629c389ba696aee7d3a6c8c938235
+SHA256: a071096d79912e46d03d40b5a679724a613b47781f65838e16b1b6133f2d98e0
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: Bé học Vẽ
+Description: Ứng dụng học vẽ và tô màu tương tác cho bé: hướng dẫn từng nét vẽ con vật, đồ vật, pha màu và bảng vẽ sáng tạo.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.drawkids/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.drawkids/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinken.drawkids.png
+
+Package: com.jinken.englishkids
+Version: 1.7
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Depends: firmware (>= 15.0)
+Filename: debs/rootful/com.jinken.englishkids_1.7_iphoneos-arm.deb
+Size: 48765116
+MD5sum: dddfb63fc09777399714fa554081e25e
+SHA1: 4d5c16c38155cb7cea125c2525f746164e1c73a1
+SHA256: 492300f1a2afe21ea03d9da80f1f657839ae7f50f37a48b746afbc23d6cbf775
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: English Kids
+Description: Ứng dụng học tiếng Anh tương tác cho trẻ em: từ vựng, âm thanh, flashcard, mini-game và thanh chữ chạy.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.englishkids/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.englishkids/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinken.englishkids.png
+
+Package: com.jinken.freezebuster
+Version: 1.2.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 444
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinken.freezebuster_1.2.0_iphoneos-arm.deb
+Size: 34074
+MD5sum: b008fc9699732ab92e669878ad5958c9
+SHA1: a3758f9069a4d196d9d2dcbf7ccc92ea92b54598
+SHA256: c8bdbf412db98cc3855deb7e88866c5ae75a43c7cf4dfee78efb81b15f1c7861
+Section: Tweaks
+Tag: purpose::extension, role::developer
+Author: Jinken Nguyen - 1989
+Name: FreezeBuster Pro
+Description: Phát hiện và tự động giải cứu khi máy bị đơ cảm ứng hoặc nghẽn Main Thread, giải phóng RAM tức thì và tối ưu độ mượt cho thiết bị cấu hình yếu.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.freezebuster/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.freezebuster/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinken.freezebuster.png
+
+Package: com.jinken.haptickeys
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen <jinkennguyen@example.com>
+Installed-Size: 392
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinken.haptickeys_1.0.0_iphoneos-arm.deb
+Size: 19652
+MD5sum: d306486efa40ede23966c64f94e16bc8
+SHA1: 6e06afab8173f70d0e344947fb0cf4befd442c7a
+SHA256: 9b4d50b3278e1c0f4f35bbb3331db6183687a5611168688d395490e26ba226a2
+Section: Tweaks
+Author: Jinken Nguyen
+Name: HapticKeys
+Description: Phản hồi rung Taptic Engine chuẩn xác cho bàn phím iOS. Hỗ trợ đầy đủ các mức độ rung (Light, Medium, Heavy, Soft, Rigid, Selection), rung phím Xóa, giao diện Cài đặt đẹp mắt tương thích iOS 13 – iOS 18+.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.haptickeys/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.haptickeys/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+
+Package: com.jinken.listapp
+Version: 1.2.3
+Architecture: iphoneos-arm
+Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
+Installed-Size: 604
+Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
+Filename: debs/rootful/com.jinken.listapp_1.2.3_iphoneos-arm.deb
+Size: 127560
+MD5sum: e2ed8c11b9c4b181c506ca25dc118e01
+SHA1: 1a11a8e3172e6950bae8f3f7f387773daa49d902
+SHA256: 5d19df2578e852d5b3f5c00bfc6ec82f9cd536333ca06c78e84bff1d9a537f66
+Section: Tweaks
+Tag: compatible_min::ios15.0 compatible_max::ios27.9 purpose::extension role::enduser
+Author: Jin Ken Nguyen
+Dev: Jin Ken Nguyen
+Name: ListApp
+Sponsor: https://ko-fi.com/jinkennguyen
+Description: Thay thế màn hình chính bằng danh sách ứng dụng kính lỏng 2/3 màn hình, thiết kế đa dạng, chỉ hiển thị app thật, mượt mà và chống treo máy.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.listapp/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.listapp/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinken.listapp.png
+
+Package: com.jinken.orientflow
+Version: 1.0.9
+Architecture: iphoneos-arm
+Maintainer: Jin Ken Nguyen <jinkennguyen@users.noreply.github.com>
+Installed-Size: 524
+Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker | science.xnu.substitute | ellekit, preferenceloader
+Filename: debs/rootful/com.jinken.orientflow_1.0.9_iphoneos-arm.deb
+Size: 119686
+MD5sum: 26890669bf0603d58c6cda2bb272eb8c
+SHA1: 1da0c403909e7c59ddec413e1c72993d8bcda519
+SHA256: fa8b49c18415027f0425a04efb6e1fb61d594b28c1dd6fc1eb329ba6b6109fe1
+Section: Tweaks
+Tag: compatible_min::ios13.0 compatible_max::ios26.9 purpose::extension role::enduser
+Author: Jin Ken Nguyen
+Dev: Jin Ken Nguyen
+Name: OrientFlow
+Sponsor: https://ko-fi.com/jinkennguyen
+Description: Gợi ý xoay màn hình thông minh khi khoá xoay. Giữ nguyên hướng xoay ngang sau khi ấn, tự khoá lại khi dựng dọc, thanh kéo tuỳ chọn vị trí tự do.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.orientflow/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.orientflow/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+
+Package: com.jinken.quickpass
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 764
+Depends: firmware (>= 12.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/rootful/com.jinken.quickpass_1.0.0_iphoneos-arm.deb
+Size: 411914
+MD5sum: c72e76ad5f44436388f6d19eaf20253e
+SHA1: 104c233d8e94922cf5dee76a8f84b504ed01560c
+SHA256: 6d1608705840c7c139a260e805c2efee83c2cb9c748390b14db7fd9177e057c4
+Section: Tweaks
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: QuickPass
+Description: Nút bấm đồ hoạ kính lỏng mở ngay bàn phím mật mã số trên Màn hình khoá cho thiết bị Face ID, hỗ trợ kéo thả tuỳ chỉnh vị trí tự do.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.quickpass/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.quickpass/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinken.quickpass.png
+
+Package: com.jinken.screentranspro
+Version: 1.8.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 644
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinken.screentranspro_1.8.0_iphoneos-arm.deb
+Size: 163946
+MD5sum: 8bfffee2a79010add53dcfc68bf4e117
+SHA1: af057a0aab94042c713f1d4b7daa4544fe5c364f
+SHA256: b2af09e1b8cd3ea3fb79463a62715822a5f85a4519378ea957fa5ff9ae8f1162
+Section: Tweaks
+Tag: purpose::extension, role::developer
+Author: Jinken Nguyen - 1989
+Name: ScreenTrans Pro
+Description: Dịch toàn màn hình mọi ứng dụng iOS (UILabel, Button, TextView, Safari, Douyin/TikTok). Bôi đen chọn chữ tra từ điển IPA. Hỗ trợ tất cả ngôn ngữ kể cả Tiếng Ả Rập, Tiếng Phạn, CJK, Hebrew, Ba Tư... Tối ưu mẻ dịch thông minh siêu tốc, không nóng máy, không giật lag và tương thích hoàn hảo iOS 16 cùng Roothide.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.screentranspro/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.screentranspro/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+
+Package: com.jinkennguyen.adshield
+Version: 1.0.5
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 840
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.adshield_1.0.5_iphoneos-arm.deb
+Size: 127910
+MD5sum: 8bed47c71a2d44387c90be044aca0104
+SHA1: ecedc48934707550e5cca3bbf6989ac24fbb3d8f
+SHA256: 470d97e772bcea1f97fff5e652f161c2c3963189a8ad41b73caec93fd0b84072
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: AdShield
+Description: Chặn quảng cáo toàn hệ thống: app, Safari, WebView và video.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.adshield/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.adshield/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.adshield.png
+
+Package: com.jinkennguyen.appsw
+Version: 1.0.8
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 380
+Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
+Recommends: preferenceloader
+Filename: debs/rootful/com.jinkennguyen.appsw_1.0.8_iphoneos-arm.deb
+Size: 86836
+MD5sum: 0fb48419751e22e294aadf889d6278d0
+SHA1: 30d75ea74a523c22a24138adaf6d876bdf700597
+SHA256: 9167bbd717d425d7185ff151602aa113c26d7df515c4fe4051adfc5377396acd
+Section: Tweaks
+Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: AppSw
+Description: Vuốt lên đa nhiệm: cửa sổ lớn phía trên, năm app gần nhất phía dưới.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.appsw/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.appsw/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.appsw.png
+
+Package: com.jinkennguyen.cpuboost
+Version: 1.0.4
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 320
+Depends: mobilesubstrate | org.coolstar.libhooker | science.xnu.substitute | ellekit | firmware
+Recommends: preferenceloader
+Filename: debs/rootful/com.jinkennguyen.cpuboost_1.0.4_iphoneos-arm.deb
+Size: 67756
+MD5sum: c6b3d305b27581c64902f991e96acb9d
+SHA1: 120e031dd855ff122a2bd9863b1af64906309a90
+SHA256: 9c272a6f3be5629a0dd0562c99a472140f4033842cb45f9d601b2150a3bca784
+Section: Tweaks
+Tag: role::tweak, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: CPU Boost
+Description: CPU chậm hơn cho pin, hoặc mạnh hơn một chút trên máy cũ. Ngủ sâu khi tắt màn hình, Eco / Boost / Turbo.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.cpuboost/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.cpuboost/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.cpuboost.png
+
+Package: com.jinkennguyen.duoframe
+Version: 3.5.3
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1068
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit
+Filename: debs/rootful/com.jinkennguyen.duoframe_3.5.3_iphoneos-arm.deb
+Size: 330890
+MD5sum: 01cd6370cc9c849bf84a17b00a12a2ff
+SHA1: 07c6f14e41b3537b1311a6c6c16b329291b9a745
+SHA256: feaff23ed360a1784e522f97f3bd08e335e9cbfb6eee03678f00ba9faf30c659
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: DuoFrame
+Description: Khung kính trên màn hình chính — status, icon, dock. Vuốt, màu chữ và kiểu icon chỉnh trong Cài đặt.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.duoframe/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.duoframe/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.duoframe.png
+
+Package: com.jinkennguyen.haloframe
+Version: 3.2.3
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 876
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.haloframe_3.2.3_iphoneos-arm.deb
+Size: 131964
+MD5sum: f53804dcd20199f2744bb6e190672296
+SHA1: a7fcc8d183f319999de29f0c08c5357b6406e0fe
+SHA256: 80003580d65624ec4f246cbd5e94716c70fee9e51b6bd2ea7c71f97f86f25e84
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: Lock Frame
+Description: Màn khoá kính: mặt trời/mặt trăng theo giờ, pin, nhạc, báo thức.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.haloframe/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.haloframe/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.haloframe.png
+
+Package: com.jinkennguyen.jinken
+Version: 1.1.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 420
+Depends: firmware (>= 14.0)
+Recommends: preferenceloader
+Filename: debs/rootful/com.jinkennguyen.jinken_1.1.0_iphoneos-arm.deb
+Size: 165740
+MD5sum: 5826dadb52e19b4bbf555c94f0b8c4b8
+SHA1: 24cdfbcc36f5c4d0bb14ff372c053335ec749e10
+SHA256: b1205b8b006e931cfae67d3340fdb834da5591a7a85c5d3179d6e5e662c4ddbc
+Section: Utilities
+Tag: role::app, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: Repo
+Description: App trên Home: xem toàn bộ tweak trên repo, cách dùng, donate.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.jinken/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.jinken/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.jinken.png
+
+Package: com.jinkennguyen.lookglass
+Version: 4.0.7
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 2412
+Depends: firmware (>= 14.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/rootful/com.jinkennguyen.lookglass_4.0.7_iphoneos-arm.deb
+Size: 442060
+MD5sum: c0e12cfcbc73319dee95bf1c57a534da
+SHA1: 85a7449dfab6d5cd15a3393af6961f8e3cfb4a96
+SHA256: 8cb0d695345e5f7519c9afd949da8ae00f75a21cddd9e55bc79663ed3de774da
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: LookGlass
+Description: Ô tìm trên Home. YouTube phát ngay trên ô, nghe nền được. Có phòng chat chung — bấm Chat cạnh Tìm.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.lookglass/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.lookglass/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.lookglass.png
+
+Package: com.jinkennguyen.noxframe
+Version: 1.1.1
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 760
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.noxframe_1.1.1_iphoneos-arm.deb
+Size: 107314
+MD5sum: 2d6f32b9411ab0c8320d71bc7e297a75
+SHA1: 3c94d27706890732c0586c5b00803fc0d254b161
+SHA256: 98f5dacdab08c63b1e7cce1e18314837e87a1055bf3f4e10dae9764124dad82f
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: NoxFrame
+Description: Tắt màn vẫn chụp và quay. Trong Ảnh có nút lưu đúng khung hình video.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.noxframe/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.noxframe/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.noxframe.png
+
+Package: com.jinkennguyen.photosliquid
+Version: 2.9.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen <tientrieu19892025@gmail.com>
+Depends: firmware (>= 14.0)
+Filename: debs/rootful/com.jinkennguyen.photosliquid_2.9.0_iphoneos-arm.deb
+Size: 223340
+MD5sum: 9162ac3c3e1ee1c8a141d93b82c36060
+SHA1: 3ea8540843e1d933d7b482f6353639fa03f6605b
+SHA256: e74ab99ddbbed1d368cf28e800d93072374d47b03173450d95bd5de0922e71ee
+Section: Applications
+Tag: role::hacker
+Author: Jinken Nguyen - 1989
+Name: Photos 27
+Description: Giao diện Liquid Glass mượt mà cho app Ảnh (Photos). Bo góc lưới ảnh, phím tắt nổi.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.photosliquid/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.photosliquid/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.photosliquid.png
+
+Package: com.jinkennguyen.prankframe
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 1516
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.prankframe_1.0.0_iphoneos-arm.deb
+Size: 501086
+MD5sum: 6bd93efdceabe50d42b4c9e45c7af6b6
+SHA1: c5ec532c51f6a59d3728661a68cd4173fa88459c
+SHA256: 338d7b03c0943a7991865b90e5a536eeaa395bf56b0167a35bb8f1a9720a1e84
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: PrankFrame
+Description: 100 trò khăm trên iPhone: sọc màn hình, kính vỡ, pin ảo, tiếng lạ, rung. Lắc để dừng.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.prankframe/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.prankframe/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.prankframe.png
+
+Package: com.jinkennguyen.settingsz
+Version: 1.0.11
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 936
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.settingsz_1.0.11_iphoneos-arm.deb
+Size: 149258
+MD5sum: 0c9b2042b0fa5f4a797f898c914d5200
+SHA1: 8a0d898cbe54815d1aef05e668a0251fe73ad75d
+SHA256: eecef449cfc1f70622b4fbb1ea6a47258673b44429b81360035444d424767ec6
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: SettingSZ
+Description: Sắp lại Cài đặt: kệ, màu đề mục, kéo đổi cỡ dòng.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.settingsz/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.settingsz/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.settingsz.png
+
+Package: com.jinkennguyen.slapios
+Version: 1.2.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 21588
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Filename: debs/rootful/com.jinkennguyen.slapios_1.2.0_iphoneos-arm.deb
+Size: 13842678
+MD5sum: 42011a552adc6ed328360cf628e9edea
+SHA1: f622328c3480d43103ad3468bcc6b84ee4a075d6
+SHA256: 2208f165a984eccfd2fab87472cbfe975346f128dbbad8d02f84711800125633
+Section: Tweaks
+Tag: role::tweak, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26
+Author: Jinken Nguyen - 1989
+Name: SlapIos
+Description: Vỗ, gõ, lắc máy thì kêu. Nhiều gói tiếng; chọn Rên thì chỉ rên.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.slapios/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.slapios/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.slapios.png
+
+Package: com.jinkennguyen.statusbarinfo
+Version: 1.3.0
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Installed-Size: 728
+Depends: firmware (>= 10.0), preferenceloader, mobilesubstrate | org.coolstar.libhooker | substitute | com.ex.substitute | ellekit | org.coolstar.ellekit | science.xnu.substitute
+Filename: debs/rootful/com.jinkennguyen.statusbarinfo_1.3.0_iphoneos-arm.deb
+Size: 163930
+MD5sum: f708680fde9f743cab2501d895edd5fc
+SHA1: 22bb70ca2570aa2c948b0cb8708d67c9586fdbc2
+SHA256: f87285dd8d256dccdc5e9a04a7628e9c7303f7603d8e4ed9de73e41a6074519b
+Section: Tweaks
+Tag: role::tweak, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18, compatible::ios26, compatible::ios27
+Author: Jinken Nguyen - 1989
+Name: StatusBarInfo
+Description: Chạm hoặc nhấn giữ thanh trạng thái ở Màn hình chính và trong mọi app. Hơn 78 thông số & dữ liệu Internet trực tiếp.
+Depiction: https://repo.trieustore.com/depictions/com.jinkennguyen.statusbarinfo/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinkennguyen.statusbarinfo/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinkennguyen.statusbarinfo.png
+
+Package: com.jinken.koreantest
+Version: 1.5
+Architecture: iphoneos-arm
+Maintainer: Jinken Nguyen - 1989
+Depends: firmware (>= 15.0)
+Filename: https://github.com/tientrieu19892025/tientrieu19892025.github.io/releases/download/v1.5/com.jinken.koreantest_1.5_iphoneos-arm.deb
+Size: 340918908
+MD5sum: 36703a924d43579de51b58ecba6ee076
+SHA1: f45b1eaedf4c0555c4772c9e1b366da415b51e79
+SHA256: bf659ee2a24afccdd44381fd8ff6385684ef675c8eec44209f87dc955077cf59
+Section: Education
+Tag: role::app, compatible::ios15, compatible::ios16, compatible::ios17, compatible::ios18
+Author: Jinken Nguyen - 1989
+Name: Trắc nghiệm tiếng Hàn
+Description: Ứng dụng ôn luyện trắc nghiệm tiếng Hàn chuẩn TOPIK 1-6 với 10.042 câu hỏi đọc & nghe, 5.020 file âm thanh phát âm bản ngữ, chạy mượt mà 100% không văng.
+Depiction: https://repo.trieustore.com/depictions/com.jinken.koreantest/index.html
+SileoDepiction: https://repo.trieustore.com/depictions/com.jinken.koreantest/sileo.json
+Homepage: https://repo.trieustore.com/#donate
+Icon: https://repo.trieustore.com/icons/com.jinken.koreantest.png

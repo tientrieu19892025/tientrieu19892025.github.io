@@ -8,6 +8,6 @@ Chỉ tải file trong thư mục này nếu máy của bạn là **RootHide**.
 
 Cài: tải `.deb` → Filza → mở file → Cài đặt → Respring.
 
-Sileo/Zebra: thêm `https://tientrieu19892025.github.io` — app tự chọn đúng loại, không cần tải tay.
+Sileo/Zebra: thêm `https://repo.trieustore.com` — app tự chọn đúng loại, không cần tải tay.
 
 Credit: Jinken Nguyen - 1989

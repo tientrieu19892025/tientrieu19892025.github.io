@@ -76,7 +76,7 @@ Thank you for using these free tweaks. A small donation keeps the repo online. N
 | Chủ TK | Nguyễn Tiến Triều |
 | Nội dung | `Donate Jinken Nguyen 1989` |
 
-VietQR: scan the code on the [homepage](https://tientrieu19892025.github.io/#donate).
+VietQR: scan the code on the [homepage](https://repo.trieustore.com/#donate).
 
 ## Upload a new `.deb`
 
