@@ -973,6 +973,15 @@ h1 {
   background: linear-gradient(135deg, #fbbf24, #b45309);
   box-shadow: 0 6px 24px rgba(245, 158, 11, 0.45);
 }
+.btn.store {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff; border-color: transparent;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35);
+}
+.btn.store:hover {
+  background: linear-gradient(135deg, #34d399, #047857);
+  box-shadow: 0 6px 24px rgba(16, 185, 129, 0.5);
+}
 
 /* Wrap */
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px 80px; }
@@ -1222,6 +1231,7 @@ Credit: Jinken Nguyen - 1989
       <span>Jinken Repo</span>
     </a>
     <div class="nav-links">
+      <a href="https://trieustore.com" target="_blank" style="color:#34d399;font-weight:600;">🎧 TrieuStore.com</a>
       <a href="../">Trang chủ</a>
       <a href="../rootless/" class="{'active' if kind['id']=='rootless' else ''}">Rootless</a>
       <a href="../rootful/" class="{'active' if kind['id']=='rootful' else ''}">Rootful</a>
@@ -1393,6 +1403,7 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
       <span>Jinken Repo</span>
     </a>
     <div class="nav-links">
+      <a href="https://trieustore.com" target="_blank" style="color:#34d399;font-weight:600;">🎧 TrieuStore.com</a>
       <a href="#install">Cài đặt Source</a>
       <a href="#tweaks">Kho Tweak ({len(packages)})</a>
       <a href="#apps">Ứng dụng</a>
@@ -1409,6 +1420,7 @@ def write_index(packages: dict[str, dict], conf: dict) -> None:
     <h1>Kho Tweak &amp; Ứng Dụng Jailbreak</h1>
     <p class="sub">Phát triển bởi <strong>Jinken Nguyen - 1989</strong>. Tương thích 100% trên cả 3 nền tảng <strong>Rootless</strong>, <strong>Rootful</strong> và <strong>RootHide</strong> (Dopamine &amp; RootHide Bootstrap).</p>
     <div class="hero-actions">
+      <a class="btn store" href="https://trieustore.com" target="_blank">🎧 Cửa hàng Tai nghe (trieustore.com) →</a>
       <a class="btn primary" id="add-sileo" href="#">⚡ Thêm vào Sileo</a>
       <a class="btn" id="add-zebra" href="#">Thêm vào Zebra</a>
       <a class="btn" href="roothide/">RootHide (arm64e)</a>
