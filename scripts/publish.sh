@@ -19,7 +19,7 @@ echo "GitHub user: $USER"
 
 if [[ "$USER" == "tientrieu19892025" ]]; then
   REPO="tientrieu19892025.github.io"
-  BASE="https://tientrieu19892025.github.io"
+  BASE="https://repo.trieustore.com"
 else
   REPO="${USER}.github.io"
   BASE="https://${USER}.github.io"

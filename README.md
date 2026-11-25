@@ -10,11 +10,11 @@ Cảm ơn bạn đã dùng tweak. Nếu thấy hữu ích, một chút ủng h�
 ## Add source
 
 ```
-https://tientrieu19892025.github.io
+https://repo.trieustore.com
 ```
 
-- Sileo: Sources → + → paste URL, or open `sileo://source/https://tientrieu19892025.github.io/`
-- Zebra: `zbra://sources/add/https://tientrieu19892025.github.io/`
+- Sileo: Sources → + → paste URL, or open `sileo://source/https://repo.trieustore.com/`
+- Zebra: `zbra://sources/add/https://repo.trieustore.com/`
 - Cydia: Sources → Edit → Add
 
 Chọn **đúng thư mục** rồi tải. Cài nhầm loại thì tweak không chạy.

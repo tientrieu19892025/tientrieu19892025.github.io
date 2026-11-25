@@ -23,6 +23,7 @@ def load_conf(path: Path) -> dict[str, str]:
 def hide():
     conf = load_conf(ROOT / "repo.conf")
     now = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S UTC")
+    base = conf.get("BASE_URL", "https://repo.trieustore.com").rstrip("/")
 
     # Backup debs if not already backed up
     debs_dir = ROOT / "debs"
